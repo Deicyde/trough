@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.24 Formal modifications
 
-Section 88.24 of the Stacks Project, [Tag 0GDJ](https://stacks.math.columbia.edu/tag/0GDJ). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 88.24 of the Stacks Project, [Tag 0GDJ](https://stacks.math.columbia.edu/tag/0GDJ). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GDK, a definition
 
 [Tag 0GDK](https://stacks.math.columbia.edu/tag/0GDK) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsFormalModification`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L323).
+**`AlgebraicGeometry.FormalSpace.IsFormalModification`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L323).
 
 > **Stacks 0GDK.** A morphism `f : X ⟶ Y` of locally Noetherian formal algebraic spaces over
 > `S` is a *formal modification* when (1) `f` is proper, (2) `f` is rig-étale, (3) `f` is
@@ -31,7 +31,7 @@ structure IsFormalModification {X Y : FppfSheaf B S hS} (f : X ⟶ Y) : Prop
 
 [Tag 0GDL](https://stacks.math.columbia.edu/tag/0GDL) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.artinConditions_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationArtinComparison.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationArtinComparison.lean#L249).
+**`AlgebraicGeometry.FormalSpace.artinConditions_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationArtinComparison.lean, line 249](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationArtinComparison.lean#L249).
 
 > **Stacks 0GDL.** Let `f : X ⟶ Y` be a proper morphism of locally Noetherian formal
 > algebraic spaces over `S`, and compare the conditions of Artin's Definition 1.7 of a formal
@@ -64,7 +64,7 @@ theorem artinConditions_comparison {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
           (FactorsAdicCompleteDvrPoints B S hS f ↔ IsRigSurjective B S hS f))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isFormalModification_of_factorsAdicCompleteDvrPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationArtinConditions.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationArtinConditions.lean#L115). The attribute's comment: “the implication of Ad (iii) that needs no further input: Artin's condition (iii), a lift of every adic point over the complete discrete valuation ring itself, implies rig-surjectivity, which asks only for a lift over an extension of that ring. Together with the remaining conditions of Artin's Definition 1.7 in the translated form the remark gives them — properness, rig-étaleness for condition (i) by Ad (i), and rig-surjectivity of the relative diagonal for condition (ii) by Ad (ii) — this is the comparison with Definition 0GDK. Not covered: the converse implication of Ad (iii), which the remark obtains from Stacks 0GDA; the two implications of Ad (ii), which it obtains from Stacks 0GD1, Stacks 0GD3 and Stacks 0GD6; and Ad (i), whose equivalence of condition (i) with rig-étaleness is part (7) of Lemma 0AJU, that is Stacks 0AJY, and whose Cramer and Jacobian ideals of a morphism of formal algebraic spaces this library does not have”.
+**`AlgebraicGeometry.FormalSpace.isFormalModification_of_factorsAdicCompleteDvrPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationArtinConditions.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationArtinConditions.lean#L115). The attribute's comment: “the implication of Ad (iii) that needs no further input: Artin's condition (iii), a lift of every adic point over the complete discrete valuation ring itself, implies rig-surjectivity, which asks only for a lift over an extension of that ring. Together with the remaining conditions of Artin's Definition 1.7 in the translated form the remark gives them — properness, rig-étaleness for condition (i) by Ad (i), and rig-surjectivity of the relative diagonal for condition (ii) by Ad (ii) — this is the comparison with Definition 0GDK. Not covered: the converse implication of Ad (iii), which the remark obtains from Stacks 0GDA; the two implications of Ad (ii), which it obtains from Stacks 0GD1, Stacks 0GD3 and Stacks 0GD6; and Ad (i), whose equivalence of condition (i) with rig-étaleness is part (7) of Lemma 0AJU, that is Stacks 0AJY, and whose Cramer and Jacobian ideals of a morphism of formal algebraic spaces this library does not have”.
 
 > **Stacks 0GDL.** Let `f : X ⟶ Y` be a proper rig-étale morphism of locally Noetherian
 > formal algebraic spaces over `S` whose relative diagonal `Δ_f : X ⟶ X ×_Y X` is rig-surjective.
@@ -86,7 +86,7 @@ theorem isFormalModification_of_factorsAdicCompleteDvrPoints {X Y : FppfSheaf B 
 
 [Tag 0GDM](https://stacks.math.columbia.edu/tag/0GDM) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFormalModification_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalModification.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalModification.lean#L52).
+**`AlgebraicGeometry.FormalSpace.isFormalModification_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalModification.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalModification.lean#L52).
 
 > **Stacks 0GDM.** Let `f : X' ⟶ X` be a morphism of algebraic spaces over `S`, let `T ⊆ |X|`
 > be closed and let `U ⊆ X` be the open subspace with `|U| = |X| ∖ T`. If `X` is locally
@@ -106,7 +106,7 @@ theorem isFormalModification_completionSheafMap {X' X : (BigFppfOver B S hS)ᵒ�
 
 [Tag 0GDN](https://stacks.math.columbia.edu/tag/0GDN) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFormalModification_pullback_snd_of_isAdicMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationBaseChangeAdic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationBaseChangeAdic.lean#L130).
+**`AlgebraicGeometry.FormalSpace.isFormalModification_pullback_snd_of_isAdicMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationBaseChangeAdic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalModificationBaseChangeAdic.lean#L130).
 
 > **Stacks 0GDN.** Let `f : X ⟶ Y` be a morphism of locally Noetherian formal algebraic spaces
 > over `S` which is a formal modification. Then for any adic morphism `g : Z ⟶ Y` of locally
@@ -134,4 +134,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.24, Tag 0GDJ](https://stacks.math.columbia.edu/tag/0GDJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

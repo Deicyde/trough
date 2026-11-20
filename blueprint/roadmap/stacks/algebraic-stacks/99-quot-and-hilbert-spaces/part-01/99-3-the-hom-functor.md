@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.3 The Hom functor
 
-Section 99.3 of the Stacks Project, [Tag 08JS](https://stacks.math.columbia.edu/tag/08JS). 10 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 99.3 of the Stacks Project, [Tag 08JS](https://stacks.math.columbia.edu/tag/08JS). 10 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08JT, a situation
 
 [Tag 08JT](https://stacks.math.columbia.edu/tag/08JT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.homSchemeFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L214). The attribute's comment: “the Hom functor on the schemes over the base”.
+**`AlgebraicGeometry.Space.HomSituation.homSchemeFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 214](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L214). The attribute's comment: “the Hom functor on the schemes over the base”.
 
 > **Stacks 08JT.**  The relative Hom functor `Hom(F, G) : (Sch/base)ᵒᵖ ⥤ Sets`: its value at a
 > test scheme `T` over the base is `Hom_{𝒪_{X_T}}(F_T, G_T)`, the homomorphisms of the two modules
@@ -27,7 +27,7 @@ Section 99.3 of the Stacks Project, [Tag 08JS](https://stacks.math.columbia.edu/
 def homSchemeFunctor : (s.SchemesOver)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.homSchemeFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L220). The attribute's comment: “the value of the Hom functor at a scheme over the base”.
+**`AlgebraicGeometry.Space.HomSituation.homSchemeFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 220](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L220). The attribute's comment: “the value of the Hom functor at a scheme over the base”.
 
 > **Stacks 08JT.**  The value of the relative Hom functor at a test scheme `T` over the base
 > is the set of `𝒪_{X_T}`-module homomorphisms `F_T ⟶ G_T`.
@@ -37,7 +37,7 @@ theorem homSchemeFunctor_obj (T : s.SchemesOver) :
     s.homSchemeFunctor.obj (Opposite.op T) = s.homAt T
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.homSchemeFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L227). The attribute's comment: “the action of the Hom functor on a morphism of schemes over the base”.
+**`AlgebraicGeometry.Space.HomSituation.homSchemeFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L227). The attribute's comment: “the action of the Hom functor on a morphism of schemes over the base”.
 
 > **Stacks 08JT.**  The action of the relative Hom functor on a morphism of test schemes is
 > pullback of homomorphisms.
@@ -47,7 +47,7 @@ theorem homSchemeFunctor_map {U T : s.SchemesOver} (g : U ⟶ T) :
     s.homSchemeFunctor.map (Opposite.op g) = TypeCat.ofHom (s.homMap g)
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.homOverSpaceFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorMorphisms.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorMorphisms.lean#L307). The attribute's comment: “the Hom functor indexed by the algebraic spaces over the base”.
+**`AlgebraicGeometry.Space.HomSituation.homOverSpaceFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorMorphisms.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorMorphisms.lean#L307). The attribute's comment: “the Hom functor indexed by the algebraic spaces over the base”.
 
 > **The relative Hom functor of Stacks 08JT, indexed by the algebraic spaces over the
 > base.**  Its value at `T ⟶ base` is `Hom_{𝒪_{X_T}}(F_T, G_T)` and its action is pullback of
@@ -62,7 +62,7 @@ theorem homSchemeFunctor_map {U T : s.SchemesOver} (g : U ⟶ T) :
 def homOverSpaceFunctor : (Over s.base)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.HomSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean#L464). The attribute's comment: “the standing data”.
+**`AlgebraicGeometry.Space.HomSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean, line 464](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean#L464). The attribute's comment: “the standing data”.
 
 > **Stacks 08JT.**  The standing data of the relative Hom functor: a morphism `f : X ⟶ base`
 > of algebraic spaces over `S` and two quasi-coherent `𝒪_X`-modules.
@@ -75,7 +75,7 @@ structure HomSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S
 
 [Tag 08JV](https://stacks.math.columbia.edu/tag/08JV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.existsUnique_homMap_of_restrictionsAgree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L493). The attribute's comment: “the sheaf property elementwise, for an fpqc covering of test schemes; the same property as CategoryTheory.Presieve.IsSheafFor is isSheafFor\_homFunctor”.
+**`AlgebraicGeometry.Space.HomSituation.existsUnique_homMap_of_restrictionsAgree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 493](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L493). The attribute's comment: “the sheaf property elementwise, for an fpqc covering of test schemes; the same property as CategoryTheory.Presieve.IsSheafFor is isSheafFor\_homFunctor”.
 
 > **Stacks 08JV.**  In the standing data of Stacks 08JT the relative Hom functor
 > `Hom(F, G)` satisfies the sheaf property for the fpqc topology: for an fpqc covering
@@ -104,7 +104,7 @@ theorem existsUnique_homMap_of_restrictionsAgree
     ∃! β : s.homAt T, ∀ i, s.homMap (g i) β = α i
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.isSheafFor_homFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 670](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L670). The attribute's comment: “the sheaf property for the presieve of an fpqc covering of test schemes”.
+**`AlgebraicGeometry.Space.HomSituation.isSheafFor_homFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 670](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L670). The attribute's comment: “the sheaf property for the presieve of an fpqc covering of test schemes”.
 
 > **Stacks 08JV, as the sheaf condition for a presieve.**  In the standing data of
 > Stacks 08JT the relative Hom functor `Hom(F, G)` is a sheaf for the presieve generated by an
@@ -129,7 +129,7 @@ theorem isSheafFor_homFunctor (hc : ModulePushforwardCoherence B S hS)
     Presieve.IsSheafFor (s.homFunctor hc) (Presieve.ofArrows U g)
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.isSheaf_homFunctor_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcSheaf.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcSheaf.lean#L52).
+**`AlgebraicGeometry.Space.HomSituation.isSheaf_homFunctor_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcSheaf.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcSheaf.lean#L52).
 
 > **Stacks 08JV.**  In Situation 08JT the relative Hom functor `Hom(F, G)`, sending a scheme
 > `T` over the base to `Hom_{𝒪_{X_T}}(F_T, G_T)`, satisfies the sheaf property for the fpqc
@@ -147,7 +147,7 @@ theorem isSheaf_homFunctor_fpqc :
 
 [Tag 0D3S](https://stacks.math.columbia.edu/tag/0D3S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.bijective_morOfSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L169). The attribute's comment: “Mor(T, Hom(F, G)) = \{(h, u)}: the construction (h, u) ↦ (a ↦ (h ∘ a, a^*u)) is a bijection from the pairs onto the morphisms T ⟶ Hom(F, G), for every algebraic space T”.
+**`AlgebraicGeometry.Space.HomSituation.bijective_morOfSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 169](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L169). The attribute's comment: “Mor(T, Hom(F, G)) = \{(h, u)}: the construction (h, u) ↦ (a ↦ (h ∘ a, a^*u)) is a bijection from the pairs onto the morphisms T ⟶ Hom(F, G), for every algebraic space T”.
 
 > For an algebraic space `T` over `S`, the morphisms of sheaves `T ⟶ Hom(F, G)` are the pairs
 > `(h, u)` of a morphism `h : T ⟶ base` and a homomorphism `u : F_T ⟶ G_T` of the two modules pulled
@@ -163,7 +163,7 @@ theorem bijective_morOfSpaceHom (T : AlgebraicSpaces B S hS) :
 
 [Tag 08JW](https://stacks.math.columbia.edu/tag/08JW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.baseChangedSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean, line 652](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean#L652). The attribute's comment: “the base-changed situation”.
+**`AlgebraicGeometry.Space.HomSituation.baseChangedSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean, line 652](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean#L652). The attribute's comment: “the base-changed situation”.
 
 > **Stacks 08JW.**  The relative Hom situation obtained by changing the base algebraic space
 > along `p : base' ⟶ base`: its source is `X' = X ×_base base'`, its morphism the second
@@ -173,7 +173,7 @@ theorem bijective_morOfSpaceHom (T : AlgebraicSpaces B S hS) :
 def baseChangedSituation : HomSituation B S hS
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.homFunctorBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean#L727). The attribute's comment: “the identification Hom(F',G')(T) = Hom(F,G)(T), natural in T”.
+**`AlgebraicGeometry.Space.HomSituation.homFunctorBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean, line 727](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHom.lean#L727). The attribute's comment: “the identification Hom(F',G')(T) = Hom(F,G)(T), natural in T”.
 
 > **Stacks 08JW.**  For a test scheme `T` over `base'` the two relative Hom sets agree:
 > `Hom(F', G')(T) = Hom(F, G)(T)`, where on the right `T` is read as a scheme over `base`
@@ -195,7 +195,7 @@ def homFunctorBaseChange :
 
 [Tag 08K3](https://stacks.math.columbia.edu/tag/08K3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.tripleRestrictionsAgree_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L1033). The attribute's comment: “the two parallel arrows agree on the image of the first arrow”.
+**`AlgebraicGeometry.Space.HomSituation.tripleRestrictionsAgree_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L1033). The attribute's comment: “the two parallel arrows agree on the image of the first arrow”.
 
 > **Stacks 08K3, the first half of the exactness.**  The restrictions of a global
 > homomorphism `F_T ⟶ G_T` to the base changes `X_{i, T}` of the members of a covering of the
@@ -212,7 +212,7 @@ theorem tripleRestrictionsAgree_restrict (β : s.homAt T) :
         (s.toModuleHom β))
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.existsUnique_sourceHom_of_tripleRestrictionsAgree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 1072](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L1072). The attribute's comment: “the first arrow is injective with image the equalizer of the other two”.
+**`AlgebraicGeometry.Space.HomSituation.existsUnique_sourceHom_of_tripleRestrictionsAgree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 1072](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L1072). The attribute's comment: “the first arrow is injective with image the equalizer of the other two”.
 
 > **Stacks 08K3, the second half of the exactness.**  In the standing data of Stacks 08JT let
 > `{X_i ⟶ X}` be an fppf covering and for all `i`, `j` let `{X_{ijk} ⟶ X_i ×_X X_j}` be an fppf
@@ -245,7 +245,7 @@ theorem existsUnique_sourceHom_of_tripleRestrictionsAgree
       (s.memberInclusion_comp a T i) (s.toModuleHom β) = α i
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.tripleRestrictionsAgree_iff_existsUnique_sourceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcGluing.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcGluing.lean#L86).
+**`AlgebraicGeometry.Space.HomSituation.tripleRestrictionsAgree_iff_existsUnique_sourceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcGluing.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcGluing.lean#L86).
 
 > **Stacks 08K3.**  In Situation 08JT let `{X_i ⟶ X}` be an fppf covering and for all `i`, `j`
 > let `{X_{ijk} ⟶ X_i ×_X X_j}` be an fppf covering, and write `F_i`, `G_i`, `F_{ijk}`,
@@ -280,7 +280,7 @@ theorem tripleRestrictionsAgree_iff_existsUnique_sourceHom
 
 [Tag 08K4](https://stacks.math.columbia.edu/tag/08K4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.isLimitPreservingHom_of_isEqualizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomLimitPreserving.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomLimitPreserving.lean#L247). The attribute's comment: “reduced to the equalizer presentation of Stacks 08K3; that presentation and the affine case, Stacks 05LI, are not proved”.
+**`AlgebraicGeometry.Space.HomSituation.isLimitPreservingHom_of_isEqualizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomLimitPreserving.lean, line 247](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomLimitPreserving.lean#L247). The attribute's comment: “reduced to the equalizer presentation of Stacks 08K3; that presentation and the affine case, Stacks 05LI, are not proved”.
 
 > **Stacks 08K4, reduced to an equalizer presentation of the relative Hom functor.**  The
 > relative Hom functor of Stacks 08JT is limit preserving as soon as it is cut out, at every test
@@ -307,7 +307,7 @@ theorem isLimitPreservingHom_of_isEqualizer (hc : ModulePushforwardCoherence B S
     IsLimitPreservingHom.{u, w, w'} hc s
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.limitPreserving_homFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomLimitPreservingUnconditional.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomLimitPreservingUnconditional.lean#L134).
+**`AlgebraicGeometry.Space.HomSituation.limitPreserving_homFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomLimitPreservingUnconditional.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomLimitPreservingUnconditional.lean#L134).
 
 > **Stacks 08K4.**  In Situation 08JT, if `F` is of finite presentation and `f` is
 > quasi-compact and quasi-separated, then the relative Hom functor `Hom(F, G)` is limit
@@ -326,7 +326,7 @@ theorem limitPreserving_homFunctor (s : HomSituation B S hS)
 
 [Tag 08K5](https://stacks.math.columbia.edu/tag/08K5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.homFunctorClosedImmersionIso_of_isQuasicoherentOnSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomClosedImmersionUnconditional.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomClosedImmersionUnconditional.lean#L90). The attribute's comment: “The whole statement, under exactly the source's hypotheses.”.
+**`AlgebraicGeometry.Space.homFunctorClosedImmersionIso_of_isQuasicoherentOnSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomClosedImmersionUnconditional.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomClosedImmersionUnconditional.lean#L90). The attribute's comment: “The whole statement, under exactly the source's hypotheses.”.
 
 > **Stacks 08K5.**  Let `i : X' ⟶ X` be a closed immersion of algebraic spaces over an
 > algebraic space `Y` over `S`, let `F` be a quasi-coherent `𝒪_X`-module and let `G'` be a
@@ -360,7 +360,7 @@ def homFunctorClosedImmersionIso_of_isQuasicoherentOnSite (p : X ⟶ Y) (i : X' 
 
 [Tag 08JX](https://stacks.math.columbia.edu/tag/08JX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAffineFinitePresentationAlgebraicSpaceOver_degreeZeroSectionsFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DegreeZeroSectionsRepresentable.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/DegreeZeroSectionsRepresentable.lean#L79). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isAffineFinitePresentationAlgebraicSpaceOver_degreeZeroSectionsFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DegreeZeroSectionsRepresentable.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/DegreeZeroSectionsRepresentable.lean#L79). The attribute's comment: “part (1)”.
 
 > **Stacks 08JX, part (1).**  Let `K` be a pseudo-coherent object of `D(𝒪_X)` on an algebraic
 > space `X` such that `H⁻¹(Lg^*K) = 0` for every scheme `g : T → X`.  Then the functor
@@ -383,7 +383,7 @@ theorem isAffineFinitePresentationAlgebraicSpaceOver_degreeZeroSectionsFunctor
       (degreeZeroSectionsFunctor (schemesOverCone X) P₀)
 ```
 
-**`AlgebraicGeometry.Space.derivedPullbackSectionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean#L427). The attribute's comment: “the functor of part (2), `(g : T → B) ↦ H⁰(T, Lg^*K)`, on the test schemes over `B`; its value is `Hom_{D(𝒪_T)}(𝒪_T, Lg^*K)` by `derivedPullbackSectionFunctor_obj_equiv`. The datum `hc` -- Stacks 0D6D and the unit law for `L(-)^*` -- is built with no hypothesis by `AlgebraicGeometry.Space.derivedPullbackCoherence`. Its representability is `isAffineFinitePresentationSectionFunctor_of_hasVanishingNegativeDerivedPullback` and the two conclusions about `K` are `isPerfect_and_locally_hasTorAmplitude_of_hasVanishingNegativeDerivedPullback`.”.
+**`AlgebraicGeometry.Space.derivedPullbackSectionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean, line 427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean#L427). The attribute's comment: “the functor of part (2), `(g : T → B) ↦ H⁰(T, Lg^*K)`, on the test schemes over `B`; its value is `Hom_{D(𝒪_T)}(𝒪_T, Lg^*K)` by `derivedPullbackSectionFunctor_obj_equiv`. The datum `hc` -- Stacks 0D6D and the unit law for `L(-)^*` -- is built with no hypothesis by `AlgebraicGeometry.Space.derivedPullbackCoherence`. Its representability is `isAffineFinitePresentationSectionFunctor_of_hasVanishingNegativeDerivedPullback` and the two conclusions about `K` are `isPerfect_and_locally_hasTorAmplitude_of_hasVanishingNegativeDerivedPullback`.”.
 
 > **The degree-zero hypercohomology functor of Stacks 08JX, part (2)**: the functor sending a
 > test scheme `g : T → B` to `H⁰(T, Lg^*K)`, read as the derived Hom out of the pulled-back
@@ -397,7 +397,7 @@ def derivedPullbackSectionFunctor (hc : DerivedPullbackCoherence B S hS hL)
     (K : derivedModules B S hS X) : (SchemesOver X)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.degreeZeroPullbackSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean#L466). The attribute's comment: “the value at a test scheme `g : T → B` of the functor of part (1), the group `H⁰(T, H⁰(Lg^*K))`. Its restriction maps are not constructed here, for want of a comparison `g^*H⁰(E) ⟶ H⁰(Lg^*E)`; part (1) is proved on the degree-zero sections functor of a K-flat complex representing `K`, which takes these values by `AlgebraicGeometry.Space.degreeZeroSectionsEquiv`.”.
+**`AlgebraicGeometry.Space.degreeZeroPullbackSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean, line 466](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean#L466). The attribute's comment: “the value at a test scheme `g : T → B` of the functor of part (1), the group `H⁰(T, H⁰(Lg^*K))`. Its restriction maps are not constructed here, for want of a comparison `g^*H⁰(E) ⟶ H⁰(Lg^*E)`; part (1) is proved on the degree-zero sections functor of a K-flat complex representing `K`, which takes these values by `AlgebraicGeometry.Space.degreeZeroSectionsEquiv`.”.
 
 > **The value at a test scheme of the functor of Stacks 08JX, part (1)**: the group
 > `H⁰(T, H⁰(Lg^*K))` of global sections of the degree-zero cohomology sheaf of the derived pullback
@@ -408,7 +408,7 @@ abbrev degreeZeroPullbackSections (hL : BottomRankStratum.HasDerivedModulePullba
     (K : derivedModules B S hS X) (T : SchemesOver X) : Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.HasVanishingDegreeNegOneDerivedPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean#L485). The attribute's comment: “the hypothesis of part (1): `H⁻¹(Lg^*K) = 0` for every test scheme `g : T → B`. The hypothesis of part (2) is `AlgebraicGeometry.Space.HasVanishingNegativeDerivedPullback`.”.
+**`AlgebraicGeometry.Space.HasVanishingDegreeNegOneDerivedPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean, line 485](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean#L485). The attribute's comment: “the hypothesis of part (1): `H⁻¹(Lg^*K) = 0` for every test scheme `g : T → B`. The hypothesis of part (2) is `AlgebraicGeometry.Space.HasVanishingNegativeDerivedPullback`.”.
 
 > **The hypothesis of Stacks 08JX, part (1)**: for every test scheme `g : T → B` the
 > cohomology sheaf `H⁻¹(Lg^*K)` is zero.
@@ -419,7 +419,7 @@ def HasVanishingDegreeNegOneDerivedPullback
     (K : derivedModules B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasVanishingNegativeDerivedPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean#L495). The attribute's comment: “the hypothesis of part (2): `Hⁱ(Lg^*K) = 0` for every test scheme `g : T → B` and every `i < 0`. The hypothesis of part (1) is `AlgebraicGeometry.Space.HasVanishingDegreeNegOneDerivedPullback`.”.
+**`AlgebraicGeometry.Space.HasVanishingNegativeDerivedPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean, line 495](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/DerivedPullbackSectionFunctor.lean#L495). The attribute's comment: “the hypothesis of part (2): `Hⁱ(Lg^*K) = 0` for every test scheme `g : T → B` and every `i < 0`. The hypothesis of part (1) is `AlgebraicGeometry.Space.HasVanishingDegreeNegOneDerivedPullback`.”.
 
 > **The hypothesis of Stacks 08JX, part (2)**: for every test scheme `g : T → B` the
 > cohomology sheaves `Hⁱ(Lg^*K)` are zero for every `i < 0`.
@@ -430,7 +430,7 @@ def HasVanishingNegativeDerivedPullback
     (K : derivedModules B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isAffineFinitePresentationSectionFunctor_of_hasVanishingNegativeDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedSectionsFunctor.lean, line 1112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/DerivedSectionsFunctor.lean#L1112). The attribute's comment: “part (2), the conclusion that `(g : T → B) ↦ H⁰(T, Lg^*K)` is an algebraic space affine and of finite presentation over `B`”.
+**`AlgebraicGeometry.Space.isAffineFinitePresentationSectionFunctor_of_hasVanishingNegativeDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/DerivedSectionsFunctor.lean, line 1112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/DerivedSectionsFunctor.lean#L1112). The attribute's comment: “part (2), the conclusion that `(g : T → B) ↦ H⁰(T, Lg^*K)` is an algebraic space affine and of finite presentation over `B`”.
 
 > **Stacks 08JX, part (2), the functor.**  Let `K` be a pseudo-coherent object of `D(𝒪_X)` on
 > an algebraic space `X` such that `Hⁱ(Lg^*K) = 0` for every scheme `g : T → X` and every `i < 0`.
@@ -447,7 +447,7 @@ theorem isAffineFinitePresentationSectionFunctor_of_hasVanishingNegativeDerivedP
     IsAffineFinitePresentationSectionFunctor (derivedPullbackCoherence B S hS) K
 ```
 
-**`AlgebraicGeometry.Space.isPerfect_and_locally_hasTorAmplitude_of_hasVanishingNegativeDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PerfectOfVanishingPullbacks.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PerfectOfVanishingPullbacks.lean#L543). The attribute's comment: “part (2), the conclusions that K is perfect and locally has tor amplitude in [0, b]”.
+**`AlgebraicGeometry.Space.isPerfect_and_locally_hasTorAmplitude_of_hasVanishingNegativeDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PerfectOfVanishingPullbacks.lean, line 543](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/PerfectOfVanishingPullbacks.lean#L543). The attribute's comment: “part (2), the conclusions that K is perfect and locally has tor amplitude in [0, b]”.
 
 > **Stacks 08JX, part (2), the first two conclusions.**  Let `K` be a pseudo-coherent object of
 > `D(𝒪_X)` on an algebraic space `X` such that `Hⁱ(Lg^*K) = 0` for every scheme `g : T → X` and
@@ -477,7 +477,7 @@ theorem isPerfect_and_locally_hasTorAmplitude_of_hasVanishingNegativeDerivedPull
 
 [Tag 08JY](https://stacks.math.columbia.edu/tag/08JY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.isAffineFinitePresentationAlgebraicSpaceOverBase_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomNoetherianRepresentable.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomNoetherianRepresentable.lean#L69).
+**`AlgebraicGeometry.Space.HomSituation.isAffineFinitePresentationAlgebraicSpaceOverBase_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomNoetherianRepresentable.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomNoetherianRepresentable.lean#L69).
 
 > In Situation 08JT assume that the base `B` is a Noetherian algebraic space, that `f : X ⟶ B` is
 > locally of finite type and quasi-separated, that `𝓕` is an `𝒪_X`-module of finite type, and that
@@ -498,7 +498,7 @@ theorem isAffineFinitePresentationAlgebraicSpaceOverBase_of_isNoetherian
 
 [Tag 08K6](https://stacks.math.columbia.edu/tag/08K6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.isAffineAlgebraicSpaceOverBase_and_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomSpaceAffine.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomSpaceAffine.lean#L103). The attribute's comment: “both assertions: Hom(F, G) is an algebraic space affine over B for F étale-locally generated by fewer sections than the cutoff of the site (Stacks erratum: false for an unbounded quasi-coherent F), and affine of finite presentation over B for F of finite presentation”.
+**`AlgebraicGeometry.Space.HomSituation.isAffineAlgebraicSpaceOverBase_and_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomSpaceAffine.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomSpaceAffine.lean#L103). The attribute's comment: “both assertions: Hom(F, G) is an algebraic space affine over B for F étale-locally generated by fewer sections than the cutoff of the site (Stacks erratum: false for an unbounded quasi-coherent F), and affine of finite presentation over B for F of finite presentation”.
 
 > **Stacks 08K6.** In Situation 08JT let `f : X ⟶ B` be of finite presentation and let `G` be an
 > `𝒪_X`-module of finite presentation, flat over `B`, with support proper over `B`.  Then
@@ -529,4 +529,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.3, Tag 08JS](https://stacks.math.columbia.edu/tag/08JS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

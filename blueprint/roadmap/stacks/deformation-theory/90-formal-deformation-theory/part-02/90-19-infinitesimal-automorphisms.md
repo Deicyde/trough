@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.19 Infinitesimal automorphisms
 
-Section 90.19 of the Stacks Project, [Tag 06JN](https://stacks.math.columbia.edu/tag/06JN). 13 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 90.19 of the Stacks Project, [Tag 06JN](https://stacks.math.columbia.edu/tag/06JN). 13 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06JP, a definition
 
 [Tag 06JP](https://stacks.math.columbia.edu/tag/06JP) in the Stacks Project.
 
-**`Deformation.relativeInfinitesimalAutomorphisms`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean#L162).
+**`Deformation.relativeInfinitesimalAutomorphisms`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean#L162).
 
 > The group of infinitesimal automorphisms of `x'` relative to `x` along
 > `f : x' ⟶ x`: the kernel of the canonical homomorphism between the two fibre
@@ -30,7 +30,7 @@ public noncomputable def relativeInfinitesimalAutomorphisms
 
 [Tag 06JQ](https://stacks.math.columbia.edu/tag/06JQ) in the Stacks Project.
 
-**`Deformation.infinitesimalAutomorphisms`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean#L273). The attribute's comment: “infinitesimal automorphism group”.
+**`Deformation.infinitesimalAutomorphisms`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean#L273). The attribute's comment: “infinitesimal automorphism group”.
 
 > The group of infinitesimal automorphisms at a point, for a chosen pushforward
 > along the constant inclusion into the dual numbers.
@@ -47,7 +47,7 @@ public noncomputable abbrev infinitesimalAutomorphisms
     (i : x₀.1 ⟶ xε.1) (hi : p.IsHomLift g i) : Subgroup (Aut xε)
 ```
 
-**`Deformation.existsUnique_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean#L346). The attribute's comment: “unique map back”.
+**`Deformation.existsUnique_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean, line 346](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Object.lean#L346). The attribute's comment: “unique map back”.
 
 > A chosen pushforward along the constant inclusion into the dual numbers has a
 > unique retraction, without a restriction on the image of that retraction in the base.
@@ -69,7 +69,7 @@ public theorem existsUnique_retraction
 
 [Tag 06JR](https://stacks.math.columbia.edu/tag/06JR) in the Stacks Project.
 
-**`Deformation.existsUnique_pushforwardIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L26). The attribute's comment: “canonical isomorphism of pushforwards”.
+**`Deformation.existsUnique_pushforwardIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L26). The attribute's comment: “canonical isomorphism of pushforwards”.
 
 > Pushforwards of isomorphic objects along the same arrow have a unique
 > isomorphism commuting with their structure maps.
@@ -86,7 +86,7 @@ public theorem existsUnique_pushforwardIso
     ∃! h : x ≅ y, i ≫ h.hom.val = h₀.hom.val ≫ j
 ```
 
-**`Deformation.existsUnique_infinitesimalAutomorphismsEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L172). The attribute's comment: “invariance under isomorphism of the original object”.
+**`Deformation.existsUnique_infinitesimalAutomorphismsEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L172). The attribute's comment: “invariance under isomorphism of the original object”.
 
 > An isomorphism of the original objects canonically identifies their
 > infinitesimal automorphism groups, by conjugation through the unique
@@ -112,7 +112,7 @@ public theorem existsUnique_infinitesimalAutomorphismsEquiv
         (∀ a, (φ a).1 = h.conjAut a.1)
 ```
 
-**`Deformation.existsUnique_infinitesimalAutomorphismAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L207). The attribute's comment: “action of automorphisms of the original object”.
+**`Deformation.existsUnique_infinitesimalAutomorphismAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L207). The attribute's comment: “action of automorphisms of the original object”.
 
 > The automorphism group of the original object acts on its infinitesimal
 > automorphism group by conjugation through pushed-forward automorphisms.
@@ -140,7 +140,7 @@ public theorem existsUnique_infinitesimalAutomorphismAction
 
 [Tag 06JS](https://stacks.math.columbia.edu/tag/06JS) in the Stacks Project.
 
-**`Deformation.subsingleton_aut_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L274). The attribute's comment: “automorphisms\_at\_a\_point”.
+**`Deformation.subsingleton_aut_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L274). The attribute's comment: “automorphisms\_at\_a\_point”.
 
 > The automorphism group of an object over the residue field in a predeformation
 > category is trivial.
@@ -155,7 +155,7 @@ public theorem subsingleton_aut_residueField
     Subsingleton (Aut x₀)
 ```
 
-**`Deformation.infinitesimalAutomorphisms_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L286). The attribute's comment: “automorphisms\_at\_a\_point”.
+**`Deformation.infinitesimalAutomorphisms_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 286](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L286). The attribute's comment: “automorphisms\_at\_a\_point”.
 
 > Every automorphism of a pushforward to the dual numbers is infinitesimal.
 
@@ -174,7 +174,7 @@ public theorem infinitesimalAutomorphisms_eq_top
     infinitesimalAutomorphisms hp.cofibered g e hpair i hi = ⊤
 ```
 
-**`Deformation.existsUnique_pointIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L313). The attribute's comment: “independence\_of\_point”.
+**`Deformation.existsUnique_pointIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 313](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L313). The attribute's comment: “independence\_of\_point”.
 
 > Any two points over the residue field in a predeformation category have exactly
 > one isomorphism between them.
@@ -189,7 +189,7 @@ public theorem existsUnique_pointIso
     ∃! _ : x₀ ≅ y₀, True
 ```
 
-**`Deformation.existsUnique_infinitesimalAutomorphismsEquiv_of_isPredeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L329). The attribute's comment: “independence\_of\_point”.
+**`Deformation.existsUnique_infinitesimalAutomorphismsEquiv_of_isPredeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 329](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L329). The attribute's comment: “independence\_of\_point”.
 
 > The unique isomorphism of points induces the canonical group isomorphism on
 > infinitesimal automorphisms. Its action is conjugation by any compatible
@@ -216,7 +216,7 @@ public theorem existsUnique_infinitesimalAutomorphismsEquiv_of_isPredeformationC
           ∀ a, (φ a).val.asIso.hom.val = j.inv.val ≫ a.val.asIso.hom.val ≫ j.hom.val
 ```
 
-**`Deformation.infinitesimalAutomorphismGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L427). The attribute's comment: “infinitesimal\_automorphisms\_of\_predeformation\_category”.
+**`Deformation.infinitesimalAutomorphismGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L427). The attribute's comment: “infinitesimal\_automorphisms\_of\_predeformation\_category”.
 
 > The infinitesimal automorphism group of a predeformation category, formed using a
 > chosen object over the residue field and its pushforward to the dual numbers.
@@ -235,7 +235,7 @@ public noncomputable abbrev infinitesimalAutomorphismGroup
     (i : x₀.1 ⟶ xε.1) (hi : p.IsHomLift g i) : Type _
 ```
 
-**`Deformation.infinitesimalAutomorphismGroup_uniqueEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L444). The attribute's comment: “infinitesimal\_automorphisms\_of\_predeformation\_category”.
+**`Deformation.infinitesimalAutomorphismGroup_uniqueEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean, line 444](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Independence.lean#L444). The attribute's comment: “infinitesimal\_automorphisms\_of\_predeformation\_category”.
 
 > Changing the chosen object over the residue field, and its pushforward, gives a unique
 > identification of infinitesimal automorphism groups. On automorphisms it is conjugation by
@@ -262,7 +262,7 @@ public theorem infinitesimalAutomorphismGroup_uniqueEquiv
         (∀ a, (E a).val = fε.conjAut a.val)
 ```
 
-**`Deformation.existsUnique_infinitesimalAutomorphismGroup_objectsOverFunctor_mulEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Localization.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Localization.lean#L232). The attribute's comment: “infinitesimal\_automorphisms\_of\_localization”.
+**`Deformation.existsUnique_infinitesimalAutomorphismGroup_objectsOverFunctor_mulEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Localization.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Basic/Localization.lean#L232). The attribute's comment: “infinitesimal\_automorphisms\_of\_localization”.
 
 > **Stacks Project, Tag 06JS (localization).** For a category `p` cofibred in groupoids over
 > `𝒞_Λ` and an object `x₀` over `k`, the infinitesimal automorphism group `Inf(F_{x₀})` of the
@@ -307,7 +307,7 @@ public theorem existsUnique_infinitesimalAutomorphismGroup_objectsOverFunctor_mu
 
 [Tag 06JT](https://stacks.math.columbia.edu/tag/06JT) in the Stacks Project.
 
-**`Deformation.automorphismFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Functor.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Functor.lean#L338).
+**`Deformation.automorphismFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Functor.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Functor.lean#L338).
 
 > The automorphism functor of `x`: at `f : p.obj x ⟶ V` it is the type
 > of automorphisms over `V` of the chosen pushforward `f_* x`.
@@ -322,7 +322,7 @@ public noncomputable def automorphismFunctor
 
 [Tag 06JU](https://stacks.math.columbia.edu/tag/06JU) in the Stacks Project.
 
-**`Deformation.automorphismFunctor_satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/AutomorphismFunctorRS.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/AutomorphismFunctorRS.lean#L69).
+**`Deformation.automorphismFunctor_satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/AutomorphismFunctorRS.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/LiftsOfObjects/AutomorphismFunctorRS.lean#L69).
 
 > The automorphism functor of an object in a category cofibered in groupoids
 > satisfying (RS) itself satisfies (RS).
@@ -341,7 +341,7 @@ public theorem automorphismFunctor_satisfiesRS
 
 [Tag 06JV](https://stacks.math.columbia.edu/tag/06JV) in the Stacks Project.
 
-**`Deformation.exists_naturalLocalizedAutomorphismTangentVectorSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean, line 881](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean#L881). The attribute's comment: “part (1)”. References: SGA 7 VI (2.6(c)), “Aut(1\_ε) k-structure”.
+**`Deformation.exists_naturalLocalizedAutomorphismTangentVectorSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean, line 881](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean#L881). The attribute's comment: “part (1)”. References: SGA 7 VI (2.6(c)), “Aut(1\_ε) k-structure”.
 
 > **Stacks Project, Tag 06JV (1).** On the tangent space at the identity of the
 > automorphism functor of `x`, addition is composition of automorphisms and scalar
@@ -361,7 +361,7 @@ public theorem exists_naturalLocalizedAutomorphismTangentVectorSpace
           P.transportAutHom (tangentScaling c) (localizedTangentEquivKernel P a).1)
 ```
 
-**`Deformation.existsUnique_localizedTangentAutomorphismLinearEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean, line 1022](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean#L1022). The attribute's comment: “part (2)”.
+**`Deformation.existsUnique_localizedTangentAutomorphismLinearEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean, line 1022](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean#L1022). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 06JV (2).** Pushforward to the special fibre canonically
 > identifies the tangent spaces at the identity of the two automorphism functors. The
@@ -398,7 +398,7 @@ public theorem existsUnique_localizedTangentAutomorphismLinearEquiv
 
 [Tag 06JW](https://stacks.math.columbia.edu/tag/06JW) in the Stacks Project.
 
-**`Deformation.relativeInfinitesimalAutomorphismsEquivIdentityLifts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean#L92). The attribute's comment: “relative identity lifts”.
+**`Deformation.relativeInfinitesimalAutomorphismsEquivIdentityLifts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean#L92). The attribute's comment: “relative identity lifts”.
 
 > Relative infinitesimal automorphisms are precisely lifts of the identity
 > automorphism along the given morphism.
@@ -413,7 +413,7 @@ public noncomputable def relativeInfinitesimalAutomorphismsEquivIdentityLifts
       identityAutomorphismLifts hp g f hf
 ```
 
-**`Deformation.infinitesimalAutomorphismsEquivIdentityLifts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean#L122). The attribute's comment: “dual-number identity lifts”.
+**`Deformation.infinitesimalAutomorphismsEquivIdentityLifts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean#L122). The attribute's comment: “dual-number identity lifts”.
 
 > Infinitesimal automorphisms at a residue-field object are lifts of its
 > identity automorphism to the dual numbers.
@@ -434,7 +434,7 @@ public noncomputable def infinitesimalAutomorphismsEquivIdentityLifts
       identityAutomorphismLifts hp e r.1 r.2.1
 ```
 
-**`Deformation.infinitesimalAutomorphisms_eq_tangentFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean#L141). The attribute's comment: “tangent fibre at the identity”.
+**`Deformation.infinitesimalAutomorphisms_eq_tangentFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean#L141). The attribute's comment: “tangent fibre at the identity”.
 
 > At a point over the residue field, infinitesimal automorphisms are the
 > fibre over the identity of the automorphism functor at the dual numbers.
@@ -458,7 +458,7 @@ public theorem infinitesimalAutomorphisms_eq_tangentFiber
       (P.map_isHomLift j) = MonoidHom.ker (P.transportAutHom r)
 ```
 
-**`Deformation.infinitesimalAutomorphismsEquivTangentSpaceAtIdentity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean#L723). The attribute's comment: “tangent space at the identity”.
+**`Deformation.infinitesimalAutomorphismsEquivTangentSpaceAtIdentity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean, line 723](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/LiftsOfObjects/IdentityLifts.lean#L723). The attribute's comment: “tangent space at the identity”.
 
 > Infinitesimal automorphisms at a residue-field object are the tangent
 > space at the identity of its automorphism functor.
@@ -497,7 +497,7 @@ public noncomputable def infinitesimalAutomorphismsEquivTangentSpaceAtIdentity
 
 [Tag 06JX](https://stacks.math.columbia.edu/tag/06JX) in the Stacks Project.
 
-**`Deformation.exists_naturalLocalizedAutomorphismTangentVectorSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean, line 881](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean#L881). The attribute's comment: “Inf\_\{x\_0}(F) as the tangent space, with addition composition”. References: SGA 7 VI (2.6(c)), “Aut(1\_ε) k-structure”.
+**`Deformation.exists_naturalLocalizedAutomorphismTangentVectorSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean, line 881](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentVectorSpace.lean#L881). The attribute's comment: “Inf\_\{x\_0}(F) as the tangent space, with addition composition”. References: SGA 7 VI (2.6(c)), “Aut(1\_ε) k-structure”.
 
 > **Stacks Project, Tag 06JV (1).** On the tangent space at the identity of the
 > automorphism functor of `x`, addition is composition of automorphisms and scalar
@@ -521,7 +521,7 @@ public theorem exists_naturalLocalizedAutomorphismTangentVectorSpace
 
 [Tag 07W6](https://stacks.math.columbia.edu/tag/07W6) in the Stacks Project.
 
-**`Deformation.inducedInfinitesimalLinearMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Morphism.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Morphism.lean#L542). The attribute's comment: “the induced k-linear map, as a construction”.
+**`Deformation.inducedInfinitesimalLinearMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Morphism.lean, line 542](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Morphism.lean#L542). The attribute's comment: “the induced k-linear map, as a construction”.
 
 > **Stacks Project, Tag 07W6.** A morphism of categories cofibered in groupoids over `𝒞_Λ`
 > satisfying (RS) induces a `k`-linear map on infinitesimal automorphisms at a point.
@@ -536,7 +536,7 @@ public noncomputable def inducedInfinitesimalLinearMap (hp : SatisfiesRS (Φ ⋙
     localizedAutomorphismFunctorTangent P →ₗ[k] localizedAutomorphismFunctorTangent Q
 ```
 
-**`Deformation.exists_inducedInfinitesimalLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Morphism.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Morphism.lean#L606). The attribute's comment: “the morphism presented as a functor commuting with the two projections, with the map pinned by the dual-number comparison”.
+**`Deformation.exists_inducedInfinitesimalLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Morphism.lean, line 606](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Morphism.lean#L606). The attribute's comment: “the morphism presented as a functor commuting with the two projections, with the map pinned by the dual-number comparison”.
 
 > **Stacks Project, Tag 07W6.** Presented with a morphism as a functor commuting with the
 > two projections: it induces a `k`-linear map on infinitesimal automorphisms, pinned by the
@@ -565,7 +565,7 @@ public theorem exists_inducedInfinitesimalLinearMap
 
 [Tag 06JY](https://stacks.math.columbia.edu/tag/06JY) in the Stacks Project.
 
-**`Deformation.exists_localizedTangentEquiv_infinitesimalAutomorphismKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorAction.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorAction.lean#L75). The attribute's comment: “the two descriptions of the acting group”.
+**`Deformation.exists_localizedTangentEquiv_infinitesimalAutomorphismKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorAction.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorAction.lean#L75). The attribute's comment: “the two descriptions of the acting group”.
 
 > **Stacks Project, Tag 06JY.** The two descriptions of the acting group agree: for a
 > morphism `j : y ⟶ y₀` of a category cofibered in groupoids over `𝒞_Λ` satisfying (RS) whose
@@ -591,7 +591,7 @@ public theorem exists_localizedTangentEquiv_infinitesimalAutomorphismKernel
       ∀ a b, G (a + b) = G a * G b
 ```
 
-**`Deformation.tangentTensorAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorSplit.lean, line 940](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorSplit.lean#L940). The attribute's comment: “the canonical action, that of 06JI for Aut(x') with the identification of 06JV”.
+**`Deformation.tangentTensorAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorSplit.lean, line 940](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorSplit.lean#L940). The attribute's comment: “the canonical action, that of 06JI for Aut(x') with the identification of 06JV”.
 
 > **Stacks Project, Tag 06JY: the canonical action.** For a category cofibered in groupoids
 > over `𝒞_Λ` satisfying (RS) and a morphism `φ : x' ⟶ x` lying over a surjection `A' → A` whose
@@ -618,7 +618,7 @@ public noncomputable def tangentTensorAction
         (IsHomLift.map p φ))
 ```
 
-**`Deformation.tangentTensorAction_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorSplit.lean, line 987](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorSplit.lean#L987). The attribute's comment: “the canonical action is free and transitive”.
+**`Deformation.tangentTensorAction_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorSplit.lean, line 987](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/TangentTensorSplit.lean#L987). The attribute's comment: “the canonical action is free and transitive”.
 
 > **Stacks Project, Tag 06JY: the canonical action is free and transitive.** From any
 > infinitesimal automorphism `α` of `x'` over `x`, the map `t ↦ t +ᵥ α` of
@@ -646,7 +646,7 @@ public theorem tangentTensorAction_bijective
 
 [Tag 06JZ](https://stacks.math.columbia.edu/tag/06JZ) in the Stacks Project.
 
-**`Deformation.relativeInfinitesimalAutomorphisms_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Vanishing.lean, line 884](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/Vanishing.lean#L884).
+**`Deformation.relativeInfinitesimalAutomorphisms_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/Vanishing.lean, line 884](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/Vanishing.lean#L884).
 
 > Let `𝓕` be a category cofibered in groupoids over `𝒞_Λ` satisfying (RS), let `x' ⟶ x` be a
 > morphism of `𝓕` lying over a surjection, and let `x₀` be a pushforward of `x` to the special
@@ -672,7 +672,7 @@ theorem relativeInfinitesimalAutomorphisms_eq_bot
 
 [Tag 06K0](https://stacks.math.columbia.edu/tag/06K0) in the Stacks Project.
 
-**`Deformation.infinitesimalAutomorphisms_eq_bot_iff_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/EquivalenceCriterion.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/EquivalenceCriterion.lean#L208).
+**`Deformation.infinitesimalAutomorphisms_eq_bot_iff_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/EquivalenceCriterion.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/InfinitesimalAutomorphism/EquivalenceCriterion.lean#L208).
 
 > **Stacks 06K0.** For a category cofibered in groupoids over `𝒞_Λ` satisfying (RS) and an
 > object `x₀` of the fibre over the residue field, the infinitesimal automorphisms of `x₀`
@@ -698,4 +698,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.19, Tag 06JN](https://stacks.math.columbia.edu/tag/06JN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

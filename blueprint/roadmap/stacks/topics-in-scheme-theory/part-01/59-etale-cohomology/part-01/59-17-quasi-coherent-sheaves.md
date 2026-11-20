@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.17 Quasi-coherent sheaves
 
-Section 59.17 of the Stacks Project, [Tag 03OF](https://stacks.math.columbia.edu/tag/03OF). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 59.17 of the Stacks Project, [Tag 03OF](https://stacks.math.columbia.edu/tag/03OF). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03OG, a proposition
 
 [Tag 03OG](https://stacks.math.columbia.edu/tag/03OG) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.fpqcAssociatedPresheafOfModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/QuasicoherentFpqcSheaf.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/QuasicoherentFpqcSheaf.lean#L111). The attribute's comment: “F^a is an O-module”.
+**`Stacks.EtaleCohomology.fpqcAssociatedPresheafOfModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/QuasicoherentFpqcSheaf.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/QuasicoherentFpqcSheaf.lean#L111). The attribute's comment: “F^a is an O-module”.
 
 > **Stacks Project, Tag 03OG**, first assertion.  The presheaf
 > `Fᵃ : (f : T ⟶ S) ↦ Γ(T, f⁺ F)` attached to a quasi-coherent module `F` on `S` is a module over
@@ -26,7 +26,7 @@ public noncomputable def fpqcAssociatedPresheafOfModules :
     PresheafOfModules.{u} (fpqcStructurePresheaf S)
 ```
 
-**`Stacks.EtaleCohomology.isSheaf_fpqcAssociatedPresheafOfModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/QuasicoherentFpqcSheaf.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/QuasicoherentFpqcSheaf.lean#L140). The attribute's comment: “the sheaf condition for the fpqc topology”.
+**`Stacks.EtaleCohomology.isSheaf_fpqcAssociatedPresheafOfModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/QuasicoherentFpqcSheaf.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/QuasicoherentFpqcSheaf.lean#L140). The attribute's comment: “the sheaf condition for the fpqc topology”.
 
 > **Stacks Project, Tag 03OG**, second assertion.  The presheaf
 > `Fᵃ : (f : T ⟶ S) ↦ Γ(T, f⁺ F)` attached to a quasi-coherent module `F` on `S` satisfies the
@@ -44,13 +44,13 @@ public theorem isSheaf_fpqcAssociatedPresheafOfModules :
 
 Declarations registered for the tag:
 
-- [`SheafOfModules.IsQuasicoherentOnSite`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentOnSite.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean#L53) (StacksFrontier).
+- [`SheafOfModules.IsQuasicoherentOnSite`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentOnSite.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean#L53) (StacksFrontier).
 
 ## Tag 03OI, a remark
 
 [Tag 03OI](https://stacks.math.columbia.edu/tag/03OI) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isQuasicoherentOnSite_iff_of_isTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean#L64). The attribute's comment: “quasi\_coherent”.
+**`Stacks.SheafOfModules.isQuasicoherentOnSite_iff_of_isTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean#L64). The attribute's comment: “quasi\_coherent”.
 
 > **Stacks 03OI.** On a site with a final object `S`, the defining condition of Stacks 03OH
 > for quasi-coherence of a sheaf of modules need only be checked at `U = S`: the module is
@@ -69,7 +69,7 @@ theorem isQuasicoherentOnSite_iff_of_isTerminal (M : SheafOfModules.{m} R)
 
 [Tag 03OJ](https://stacks.math.columbia.edu/tag/03OJ) in the Stacks Project.
 
-**`Stacks.Sites.isSheaf_structurePresheaf_and_exists_iso_siteAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleQuasicoherentEssSurj.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleQuasicoherentEssSurj.lean#L615). The attribute's comment: “both assertions: O is a sheaf and every quasi-coherent O-module is F^a for a quasi-coherent F on S. Corrected form, recorded in errata.md: the printed statement is false when the fibre products of the site along coverings are not fibre products of schemes (not\_isSheaf\_structurePresheaf\_counterexample); PreservesCoveringFibreProducts says they are, as on every site of schemes Stacks uses, all of which form fibre products in Sch/S. Condition (1) is fullness, faithfulness and essential smallness; the site axioms are Stacks 00VH”.
+**`Stacks.Sites.isSheaf_structurePresheaf_and_exists_iso_siteAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleQuasicoherentEssSurj.lean, line 615](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleQuasicoherentEssSurj.lean#L615). The attribute's comment: “both assertions: O is a sheaf and every quasi-coherent O-module is F^a for a quasi-coherent F on S. Corrected form, recorded in errata.md: the printed statement is false when the fibre products of the site along coverings are not fibre products of schemes (not\_isSheaf\_structurePresheaf\_counterexample); PreservesCoveringFibreProducts says they are, as on every site of schemes Stacks uses, all of which form fibre products in Sch/S. Condition (1) is fullness, faithfulness and essential smallness; the site axioms are Stacks 00VH”.
 
 > Let a site of schemes over `S` be presented by a precoverage `K` on a category
 > `C` and a functor `toOver : C ⥤ Over S`, satisfying the site axioms of Stacks 00VH (isomorphisms,
@@ -100,4 +100,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.17, Tag 03OF](https://stacks.math.columbia.edu/tag/03OF)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0G00",
@@ -3535,7 +3535,7 @@
     {
      "name": "AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory.boxHom",
      "kind": "def",
-     "line": 218,
+     "line": 212,
      "private": false,
      "doc": "**The box product `D ⊠ E` of two finite-order differential operators.** For morphisms\n`D : F ⟶ F'` of the category of finite-order differential operators on `X/S` and `E : G ⟶ G'` of\nthe category on `Y/S`, the composite `(1 ⊠ E) ∘ (D ⊠ 1) : F ⊠ G ⟶ F' ⊠ G'` of the category of\nfinite-order differential operators on `X ×_S Y / S`.",
      "statement": "def boxHom {F F' : FiniteOrderDifferentialOperatorCategory a}\n    {G G' : FiniteOrderDifferentialOperatorCategory b} (D : F ⟶ F') (E : G ⟶ G') :\n    boxProductObj F G ⟶ boxProductObj F' G'",
@@ -7347,7 +7347,7 @@
     {
      "name": "Stacks.SheafOfModules.FlatTensor.isFlat_tensor",
      "kind": "lemma",
-     "line": 467,
+     "line": 485,
      "private": false,
      "doc": "**Stacks Project, Tag 0G6Q.** The tensor product of two flat sheaves of\nmodules is flat.",
      "statement": "public lemma isFlat_tensor {O : Sheaf J CommRingCat.{w}}\n    [J.WEqualsLocallyBijective AddCommGrpCat.{w}] [HasWeakSheafify J AddCommGrpCat.{w}]\n    (G F : _root_.SheafOfModules.{z} (Stacks.SheafOfModules.Tensor.ringSheaf O))\n    (hG : AlgebraicGeometry.SheafOfModules.IsFlat G)\n    (hF : AlgebraicGeometry.SheafOfModules.IsFlat F) :\n    AlgebraicGeometry.SheafOfModules.IsFlat\n      (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, z, z} O).flip.obj F).obj G)",
@@ -8208,7 +8208,7 @@
      "kind": "theorem",
      "line": 332,
      "private": false,
-     "doc": "**Stacks Tag 0G7C.**  Let `K` be a K-flat, acyclic complex of `O`-modules on a ringed site\nwhose terms are flat.  Then the kernel of `d^n : K^n ⟶ K^{n + 1}` is a flat `O`-module.\n\nThe hypothesis is K-flatness in the sense of Tag 06YN (`Stacks.SheafOfModules.KFlat.KFlat`, which\nis `Iff.rfl` to the bifunctor-relative predicate written here).",
+     "doc": "**Stacks Tag 0G7C.**  Let `K` be a K-flat, acyclic complex of `O`-modules on a ringed site\nwhose terms are flat.  Then the kernel of `d^n : K^n ⟶ K^{n + 1}` is a flat `O`-module.\n\nThe hypothesis is K-flatness in the sense of Tag 06YN (`Stacks.SheafOfModules.KFlat`, which\nis `Iff.rfl` to the bifunctor-relative predicate written here).",
      "statement": "theorem isFlat_kernel_d_of_kFlat_of_acyclic\n    (K : CochainComplex (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf.{u, v, w} R)) ℤ)\n    (hK : CochainComplex.KFlatBifunctor.KFlat\n      (Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} R) K)\n    (hacyclic : K.Acyclic)\n    (hflat : ∀ i : ℤ, AlgebraicGeometry.SheafOfModules.IsFlat.{v, u, w, w} (O := R) (K.X i))\n    (n : ℤ) :\n    AlgebraicGeometry.SheafOfModules.IsFlat.{v, u, w, w} (O := R)\n      (kernel (K.d n (n + 1)))",
      "sorry": false,
      "ega": [],
@@ -11406,7 +11406,7 @@
     {
      "name": "Stacks.LocalCohomology.UniformityIII.blowupHmod_of_qS_le",
      "kind": "theorem",
-     "line": 705,
+     "line": 703,
      "private": false,
      "doc": "**[Stacks, Tag 0GA7]**: with `q₀ = q(S)` (`qS I`, the least integer such that for all\n`q ≥ q₀` one has `Hⁱ(Y, 𝒪_Y(q)) = 0` for `i ≥ 1` and `H⁰(Y, 𝒪_Y(q)) = Iᑫ/I^{q+1}`), for a\nNoetherian ring `A` and any ideal `I`, on the blowup `X` of `Spec A` in `I`:\n\n1. for `n ≥ 1`, `q ≥ q₀` and `i > 0`, `Hⁱ(X, 𝒪_{Yₙ}(q)) = 0`;\n2. for `n ≥ 1` and `q ≥ q₀`, the canonical map `Iᑫ/I^{q+n} → H⁰(X, 𝒪_{Yₙ}(q))` is an\n   isomorphism — stated as the bijectivity of `cdivMod I m q`, whose source is `Iᑫ/I^{q+m+1}`\n   and whose target is `H⁰(X, 𝒪_{Y_{m+1}}(q))`, for every `m`, i.e. at `n = m + 1`;\n3. for `q ≥ q₀` and `i > 0`, `Hⁱ(X, 𝒪_X(q)) = 0`;\n4. for `q ≥ q₀`, the canonical map `Iᑫ → H⁰(X, 𝒪_X(q))` is an isomorphism.\n\nThe cohomology is `A`-module-valued, the source's identifications being isomorphisms of\n`A`-modules. The integer `d = d(S)` the tag names enters only through the definition of `q(S)`,\nwhere it bounds the degrees in which vanishing is asked; see `IsBaseThreshold`,\n`isBaseThreshold_iff_of_vanishing_gt` and `exists_qS_isLeast_isBaseThresholdUpTo`.",
      "statement": "theorem blowupHmod_of_qS_le [IsNoetherianRing A] :\n    (∀ n i q : ℕ, 1 ≤ n → 1 ≤ i → qS I ≤ q →\n        Subsingleton (blowupHmod I i (thickeningTwist I n q))) ∧\n      (∀ n q : ℕ, qS I ≤ q → Function.Bijective (cdivMod I n q)) ∧\n      (∀ i q : ℕ, 1 ≤ i → qS I ≤ q → Subsingleton (blowupHmod I i (blowupTwist I q))) ∧\n      (∀ q : ℕ, qS I ≤ q → Function.Bijective (ambientSectionsMod I q))",
@@ -12862,7 +12862,7 @@
     {
      "name": "AlgebraicGeometry.FormalSpace.hasPropertyULift_isSurjectiveULift_iff_isSurjectiveULift_red",
      "kind": "theorem",
-     "line": 260,
+     "line": 259,
      "private": false,
      "doc": "**Stacks 0GB8.** Let `f : X ⟶ Y` be a morphism of formal algebraic spaces over `S` which is\nrepresentable by algebraic spaces, let `iX : Xred ⟶ X` and `iY : Yred ⟶ Y` be reductions and let\n`fred : Xred ⟶ Yred` be compatible with `f`. Then `f` is surjective in the sense of Stacks 03XZ\nif and only if `fred` is a surjective morphism of algebraic spaces.",
      "statement": "theorem hasPropertyULift_isSurjectiveULift_iff_isSurjectiveULift_red\n    {X Y : FppfSheaf B S hS}\n    (_hX : IsFormalAlgebraicSpace B S hS X) (_hY : IsFormalAlgebraicSpace B S hS Y)\n    {Xred Yred : FppfSheaf B S hS} {iX : Xred ⟶ X} {iY : Yred ⟶ Y}\n    (hiX : IsReduction B S hS X Xred iX) (hiY : IsReduction B S hS Y Yred iY)\n    {f : X ⟶ Y} (hf : Space.IsRepresentableByAlgebraicSpacesULift.{u + 1} B S hS f.hom)\n    {fred : Xred ⟶ Yred} (hfred : fred ≫ iY = iX ≫ f) :\n    Space.HasPropertyULift.{u + 1} B S hS\n        (fun _ _ g ↦ Space.IsSurjectiveULift.{u + 1} B S hS g.hom) f.hom hf ↔\n      Space.IsSurjectiveULift.{u + 1} B S hS fred.hom",
@@ -19392,7 +19392,7 @@
     {
      "name": "AlgebraicGeometry.eventually_isImmersion",
      "kind": "lemma",
-     "line": 797,
+     "line": 796,
      "private": false,
      "doc": "**Stacks Project, Tag 0GIH.** In a directed inverse system of quasi-compact and\nquasi-separated schemes whose transition morphisms are closed immersions, if all the structure\nmorphisms to a quasi-separated base are locally of finite type and the morphism induced on the\nlimit is an immersion, then the structure morphisms are immersions for all sufficiently large\nindices.\n`Nonempty I` is not a weakening: it is what makes `Filter.atTop` on the index a PROPER\nfilter. Over an empty index `atTop = ⊥` and the conclusion would be vacuously true, so this\nhypothesis is what rules vacuity out. The source assumes it too — a directed limit is indexed\nby a directed set, which is nonempty by convention.",
      "statement": "lemma eventually_isImmersion {I : Type v} [Preorder I]\n    [IsDirected I (· ≤ ·)] [Small.{u} I]\n    {S : Scheme.{u}} (D : Iᵒᵖ ⥤ Scheme.{u})\n    (t : D ⟶ (Functor.const Iᵒᵖ).obj S) (c : Cone D) (hc : IsLimit c)\n    (f : c.pt ⟶ S)\n    [QuasiSeparatedSpace S]\n    [∀ i, CompactSpace (D.obj (op i))]\n    [∀ i, QuasiSeparatedSpace (D.obj (op i))]\n    [∀ ⦃i j : I⦄ (h : i ≤ j), IsClosedImmersion (D.map (homOfLE h).op)]\n    [∀ i, LocallyOfFiniteType (t.app (op i))]\n    (hcomm : c.π ≫ t = (Functor.const Iᵒᵖ).map f)\n    [IsImmersion f] :\n    ∀ᶠ i in atTop, IsImmersion (t.app (op i))",
@@ -23713,7 +23713,7 @@
     {
      "name": "CategoryTheory.Sheaf.exists_isColimit_sheafifiedYoneda",
      "kind": "theorem",
-     "line": 146,
+     "line": 148,
      "private": false,
      "doc": "**Stacks 0GLW.** Let `F` be a sheaf of sets on a site. Then there is a diagram\n`I ⥤ C`, `i ↦ U_i`, such that `F` is the colimit of the sheafified representables `h_{U_i}^#`.\nMoreover, if `E` is a property of objects such that every object of the site has a covering by\nobjects satisfying `E`, then the diagram may be taken with `U_i` in `E` for every `i`.",
      "statement": "theorem exists_isColimit_sheafifiedYoneda (F : Sheaf J (Type max u v)) :\n    (∃ (I : Type (max u v)) (_ : Category.{v} I) (D : I ⥤ C)\n        (ι : D ⋙ sheafifiedYoneda J ⟶ (Functor.const I).obj F),\n        Nonempty (IsColimit (Cocone.mk F ι))) ∧\n      ∀ E : ObjectProperty C,\n        (∀ X : C, ∃ R : Presieve X, Sieve.generate R ∈ J X ∧\n          ∀ ⦃Y : C⦄ (f : Y ⟶ X), R f → E Y) →\n        ∃ (I : Type (max u v)) (_ : Category.{v} I) (D : I ⥤ C)\n          (ι : D ⋙ sheafifiedYoneda J ⟶ (Functor.const I).obj F),\n          (∀ i, E (D.obj i)) ∧ Nonempty (IsColimit (Cocone.mk F ι))",
@@ -23795,7 +23795,7 @@
     {
      "name": "Stacks.Sheaves.FlatNeighbourhood.isIso_tensorUnitMap_of_pow_smul_eq_zero",
      "kind": "lemma",
-     "line": 738,
+     "line": 715,
      "private": false,
      "doc": "**Stacks Project, Tag 0GLY.** If a flat map of ring sheaves is an\nisomorphism modulo an ideal `I`, then extension of scalars is an isomorphism on\nevery module annihilated by a power of `I`.",
      "statement": "lemma isIso_tensorUnitMap_of_pow_smul_eq_zero\n    {O O' : Sheaf J CommRingCat.{w}} (f : O ⟶ O')\n    (hf : IsFlatMap f)\n    {I : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf O)}\n    (i : I ⟶ RingModule O) [Mono i]\n    (hquot : ∃ q : cokernel i ⟶\n        cokernel (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} O).flip.obj\n            (RestrictedRingModule f)).map i),\n      IsIso q ∧ cokernel.π i ≫ q = (tensorUnitMap f (RingModule O)).val ≫\n        cokernel.π (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} O).flip.obj\n            (RestrictedRingModule f)).map i))\n    (F : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf O))\n    (hF : ∃ n : ℕ, ∀ (X : Cᵒᵖ) (a : Fin n → I.val.obj X) (x : F.val.obj X),\n      ((F.val.obj X).smul\n        (show (Stacks.SheafOfModules.Tensor.ringSheaf O).obj.obj X from\n          (Finset.univ.prod (fun k ↦ show O.obj.obj X from (i.val.app X) (a k)) :\n            O.obj.obj X))).asHom x = 0) :\n    IsIso (tensorUnitMap f F).val",
@@ -24437,7 +24437,7 @@
     {
      "name": "AlgebraicGeometry.Stack.normalization",
      "kind": "abbrev",
-     "line": 344,
+     "line": 345,
      "private": false,
      "doc": "**Stacks 0GMK, the normalization of an algebraic stack.** For a groupoid in algebraic spaces\n`(U, R, s, t, c)` presenting `ð³ = [U/R]`, and a normalized groupoid `N` for it, the\n*normalization* of `𝒳` is the 1-morphism `ν : 𝒳^ν ⟶ 𝒳` of Stacks 046Q induced by the\nmorphism\nof groupoids `(U^Î½, R^Î½) â¶ (U, R)`, with `ð³^Î½ = [U^Î½/R^Î½]` the quotient stack\n`AlgebraicGeometry.Stack.normalizationStack` of the normalized groupoid.\n\nThis is the morphism constructed in Stacks 0GMJ, named: the body is the construction\n`AlgebraicGeometry.Stack.quotientStackMapHom` of the source's proof, so nothing is chosen out of\nthe existential of\n`AlgebraicGeometry.Stack.exists_isIntegralHom_quotientStackMapHom_normalization`. Its\nintegrality is `AlgebraicGeometry.Stack.isIntegralHom_quotientStackMapHom_normalization`, which\napplies to it unchanged.\n\nThe hypothesis of Stacks 0GMI on `ð³` is not a separate assumption, for the reason given in the\ncoverage notes of this module's documentation: it is carried inside `N`, whose\nnormalization data of the object space contains condition (1) of Stacks 0GMI for the presenting\nchart through\n`AlgebraicGeometry.Space.NormalizationData.finite_irreducibleComponents_of_chart`. The\nequivalences of Stacks 0GMI are stated for `AlgebraicGeometry.Stack.AlgebraicStacks`, and\nexhibiting a quotient stack there is Stacks 04TK, which this library does not have, so no 0GMI\ncondition can be stated at this presentation.",
      "statement": "noncomputable abbrev normalization {G : GroupoidInAlgebraicSpaces C S hS B}\n    (N : NormalizationGroupoid C S hS G) :\n    normalizationStack C S hS N ⟶ quotientStackCFG C S hS G",
@@ -24702,7 +24702,7 @@
     {
      "name": "Stacks.SheafOfModules.pullbackTensorFunctor_exact",
      "kind": "theorem",
-     "line": 489,
+     "line": 475,
      "private": false,
      "doc": "**Stacks Project, Tag 0GMU.** If `F` is an `𝒪_X`-module flat over `Y`, then the functor\n`G ↦ f^*G ⊗_{𝒪_X} F` is exact.",
      "statement": "theorem pullbackTensorFunctor_exact (hF : AlgebraicGeometry.IsFlatOver f F) :\n    exactFunctor (SheafOfModules.{u} (structureSheafRing Y))\n      (SheafOfModules.{u} (structureSheafRing X)) (pullbackTensorFunctor f F)",
@@ -24761,7 +24761,7 @@
     {
      "name": "PresheafOfModules.sheafificationTensorIso",
      "kind": "def",
-     "line": 994,
+     "line": 1222,
      "private": false,
      "doc": "Sheafification commutes with the tensor product of presheaves of modules: there is an\nisomorphism `F⁺ ⊗_{O⁺} G⁺ ≅ (F ⊗_{p,O} G)⁺`, natural in both presheaves of modules, where the\nleft-hand tensor product is the sheafification of the objectwise tensor product of the two sheaves\nof sections.",
      "statement": "noncomputable def sheafificationTensorIso :\n    Functor.prod (moduleSheafification.{v, u, w, z} J a)\n          (moduleSheafification.{v, u, w, z₁} J a) ⋙\n        (Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, z, z₁} Osharp)) ≅\n      Functor.uncurry.obj (tensorBifunctor.{v, u, w, z, z₁} O) ⋙\n        moduleSheafification.{v, u, w, max z z₁} J a",
@@ -24775,10 +24775,10 @@
     {
      "name": "PresheafOfModules.sheafificationTensorIso_hom_unit_tmul",
      "kind": "lemma",
-     "line": 1019,
+     "line": 1247,
      "private": false,
      "doc": "The isomorphism `sheafificationTensorIso` sends the image, under the unit exhibiting the tensor\nproduct sheaf as a sheafification, of a pure tensor of two sheafification-unit images to the\nsheafification-unit image of the original pure tensor.",
-     "statement": "lemma sheafificationTensorIso_hom_unit_tmul (U : Cᵒᵖ) (x : F.obj U) (y : G.obj U) :\n    Hom.app ((sheafificationTensorIso.{v, u, w, z, z₁} J a).hom.app (F, G)).val U\n        (Hom.app ((PresheafOfModules.sheafificationAdjunction\n            (R := Stacks.SheafOfModules.Tensor.ringSheaf Osharp)\n            (𝟙 (Stacks.SheafOfModules.Tensor.ringSheaf Osharp).obj)).unit.app\n            (tensorObj (((moduleSheafification.{v, u, w, z} J a).obj F)).val\n              (((moduleSheafification.{v, u, w, z₁} J a).obj G)).val)) U\n          (Hom.app (moduleSheafificationUnit.{v, u, w, z} J a F) U x ⊗ₜ\n            Hom.app (moduleSheafificationUnit.{v, u, w, z₁} J a G) U y)) =\n      Hom.app (moduleSheafificationUnit.{v, u, w, max z z₁} J a (tensorObj F G)) U (x ⊗ₜ y)",
+     "statement": "lemma sheafificationTensorIso_hom_unit_tmul (U : Cᵒᵖ) (x : F.obj U) (y : G.obj U) :\n    Hom.app ((sheafificationTensorIso.{v, u, w, z, z₁} J a).hom.app (F, G)).val U\n        (Hom.app ((Stacks.SheafOfModules.Tensor.sheafificationAdjunction Osharp).unit.app\n            (tensorObj (((moduleSheafification.{v, u, w, z} J a).obj F)).val\n              (((moduleSheafification.{v, u, w, z₁} J a).obj G)).val)) U\n          (Hom.app (moduleSheafificationUnit.{v, u, w, z} J a F) U x ⊗ₜ\n            Hom.app (moduleSheafificationUnit.{v, u, w, z₁} J a G) U y)) =\n      Hom.app (moduleSheafificationUnit.{v, u, w, max z z₁} J a (tensorObj F G)) U (x ⊗ₜ y)",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -24865,7 +24865,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.toposPullbackInternalHomMap_naturality",
      "kind": "theorem",
-     "line": 999,
+     "line": 1002,
      "private": false,
      "doc": "**The canonical map of Stacks 0GMX is functorial in its first variable.** For a morphism\n`c : F' ⟶ F` of sheaves of `O_Y`-modules the square built from the canonical maps at `F` and at\n`F'` and from the comparison `internalHomPre` in the first variable on the two sites commutes.\n\nThis is the \"functoriality of Remark 18.27.3\" that the proof of Stacks 0GN2 cites. By\n`tensorEvaluation_injective` it is an identity between two morphisms out of a tensor product,\nand there it is the naturality of the comparison of Stacks 03EL in its second variable: both\nsides become the pulled-back evaluation of `Hom_{O_Y}(F, G)` precomposed with `c`.",
      "statement": "theorem toposPullbackInternalHomMap_naturality\n    {F F' : SheafOfModules.{u} ((Stacks.SheafOfModules.Tensor.ringSheaf (J := Y.J)) Y.O)}\n    (c : F' ⟶ F) :\n    toposPullbackInternalHomMap φ F G ≫\n        (internalHomPre X.O ((toposPullback φ).map c)).app ((toposPullback φ).obj G) =\n      (toposPullback φ).map ((internalHomPre Y.O c).app G) ≫\n        toposPullbackInternalHomMap φ F' G",
@@ -24879,7 +24879,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.pullbackInternalHomNatural",
      "kind": "theorem",
-     "line": 1117,
+     "line": 1120,
      "private": false,
      "doc": "**The canonical maps of Stacks 0GMX are functorial in the first variable.** For a morphism\n`c : F' ⟶ F` of sheaves of `O_D`-modules the square built from the canonical maps at `F` and at\n`F'` and from the comparison `internalHomPre` on the two sites commutes.\n\nThis is the \"functoriality of Remark 18.27.3\" that the proof of Stacks 0GN2 cites. It is\n`toposPullbackInternalHomMap_naturality` at the morphism of ringed topoi of `f`, the two\nreadings of the canonical map agreeing by `toposPullbackInternalHomMap_ringedToposHom`.",
      "statement": "theorem pullbackInternalHomNatural\n    {F F' : SheafOfModules.{u} ((Stacks.SheafOfModules.Tensor.ringSheaf (J := Y.J)) Y.O)}\n    (c : F' ⟶ F) :\n    pullbackInternalHomMap f F G ≫\n        (internalHomPre X.O ((ringedSitePullback f).map c)).app\n          ((ringedSitePullback f).obj G) =\n      (ringedSitePullback f).map ((internalHomPre Y.O c).app G) ≫\n        pullbackInternalHomMap f F' G",
@@ -25007,7 +25007,7 @@
     {
      "name": "Stacks.SheafOfModules.FlatSheafification.isFlat_sheafification_of_locally_objectwise_flat",
      "kind": "lemma",
-     "line": 393,
+     "line": 388,
      "private": false,
      "doc": "If a presheaf of modules is objectwise flat after passing to a covering of every object,\nthen its associated sheaf is flat.",
      "statement": "public lemma isFlat_sheafification_of_locally_objectwise_flat\n    {O : Cᵒᵖ ⥤ CommRingCat.{w}} {Osharp : Sheaf J CommRingCat.{w}}\n    (a : O ⋙ forget₂ CommRingCat.{w} RingCat.{w} ⟶\n      (Stacks.SheafOfModules.Tensor.ringSheaf Osharp).obj)\n    [Presheaf.IsLocallyInjective J a]\n    [Presheaf.IsLocallySurjective J a]\n    (F : PresheafOfModules.{z} (O ⋙ forget₂ CommRingCat.{w} RingCat.{w}))\n    (hF : ∀ U : C,\n      ∃ (I : Type (max u v)) (X : I → C) (f : ∀ i, X i ⟶ U),\n        Sieve.ofArrows X f ∈ J U ∧\n          ∀ i, Module.Flat (O.obj (Opposite.op (X i))) (F.obj (Opposite.op (X i)))) :\n    AlgebraicGeometry.SheafOfModules.IsFlat\n      ((PresheafOfModules.sheafification\n        (R := Stacks.SheafOfModules.Tensor.ringSheaf Osharp)\n        a).obj F)",
@@ -25041,7 +25041,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.isIso_pullbackInternalHomMap",
      "kind": "theorem",
-     "line": 1189,
+     "line": 1192,
      "private": false,
      "doc": "**Stacks 0GN2, for a globally finitely presented `F`.** Let\n`f : (C, O_C) ⟶ (D, O_D)` be a flat morphism of ringed sites and let `F`, `G` be sheaves of\n`O_D`-modules with `F` presented, over the whole site `D`, as the cokernel of a morphism between\nfinite coproducts of copies of `O_D`. Then the canonical map\n\n`f^* Hom_{O_D}(F, G) ⟶ Hom_{O_C}(f^*F, f^*G)`\n\nof Stacks 0GMX is an isomorphism.\n\nFlatness is the hypothesis `hf`, that `O_C` is flat as an `f⁻¹O_D`-module, which is the\ndefinition of a flat morphism of Tag 04JB. It enters through the left exactness of `f^*`\n(Tag 04JC, `preservesFiniteLimits_ringedSitePullback_of_isFlat`), because that is what makes\n`F ↦ f^* Hom_{O_D}(F, G)` carry the finite colimit presenting `F` to a limit of internal Hom\nsheaves; the other composite needs only that `f^*` is a left adjoint. The continuity of internal\nHom in its first variable is Tag 03EN, `preservesFiniteColimits_internalHomFirstMate`, and the\nremaining two inputs the source's proof names are `pullbackInternalHomNatural`, the\nfirst-variable functoriality of the canonical map of Stacks 0GMX, and\n`isIso_toposPullbackInternalHomMap_structureSheaf`, its invertibility at the structure sheaf.\n\nThe presentation of `F` is a global one, not the local finite presentation of Tag 03DL that the\nsource assumes: `ι`, `κ`, `hP`, `hQ`, `a`, `b`, `hab` and `hF` exhibit `F` as a cokernel of a\nmorphism between finite coproducts of copies of the structure sheaf over the whole site `D`.\nThat is strictly stronger than finite presentation, so the statement here is the global special\ncase of Stacks 0GN2; the local case is reduced to it by\n`PullbackInternalHomFinitePresentation.isIso_pullbackInternalHomMap_of_isFinitePresentationOnSite`,\nwhich states the source's own hypotheses.",
      "statement": "theorem isIso_pullbackInternalHomMap\n    (F : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O))\n    (hf : AlgebraicGeometry.SheafOfModules.IsFlatMapULift\n      f.ringedToposHom.fSharpInverseImage)\n    {n m : ℕ} {P Q : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)}\n    (ι : Fin n → (SheafOfModules.unit (Stacks.SheafOfModules.Tensor.ringSheaf Y.O) ⟶ P))\n    (κ : Fin m → (SheafOfModules.unit (Stacks.SheafOfModules.Tensor.ringSheaf Y.O) ⟶ Q))\n    (hP : Limits.IsColimit (Limits.Cofan.mk P ι))\n    (hQ : Limits.IsColimit (Limits.Cofan.mk Q κ))\n    (a : Q ⟶ P) (b : P ⟶ F) (hab : a ≫ b = 0)\n    (hF : Limits.IsColimit (Limits.CokernelCofork.ofπ b hab)) :\n    IsIso (pullbackInternalHomMap f F G)",
@@ -25060,7 +25060,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.isIso_pullbackInternalHomMap_structureSheaf",
      "kind": "theorem",
-     "line": 1242,
+     "line": 1245,
      "private": false,
      "doc": "**Stacks 0GN2 for `F` the structure sheaf.** Let `f : (C, O_C) ⟶ (D, O_D)` be a morphism of\nringed sites and `G` a sheaf of `O_D`-modules. The canonical map\n\n`f^* Hom_{O_D}(O_D, G) ⟶ Hom_{O_C}(f^*O_D, f^*G)`\n\nof Stacks 0GMX is an isomorphism.\n\nThe structure sheaf is finitely presented, and at it both sides of the canonical map are\nidentified with `f^*G`: the inputs are the identification `f^*O_D = O_C` of Stacks 03D6 and the\nidentity `Hom_O(O, -) = id` of Stacks 03EM. Flatness of `f` is not used — the source needs it\nonly to carry a presentation of a general `F` across the pullback.",
      "statement": "theorem isIso_pullbackInternalHomMap_structureSheaf :\n    IsIso (pullbackInternalHomMap f\n      (SheafOfModules.unit ((Stacks.SheafOfModules.Tensor.ringSheaf (J := Y.J)) Y.O)) G)",
@@ -25871,9 +25871,9 @@
     {
      "name": "Stacks.SheafOfModules.tensorLeftFactorization",
      "kind": "def",
-     "line": 425,
+     "line": 427,
      "private": false,
-     "doc": "**Stacks 0GNE (2), the comparison.**  The tensor product of two sheaves of modules for the\nfiner topology is the sheafification, for the finer topology, of their tensor product taken for\nthe coarser one.  Both are sheafifications of the objectwise tensor product of the two\nunderlying presheaves of modules, which does not mention a topology, so this is one component\nof `Stacks.SheafOfModules.sheafificationFactorization`.",
+     "doc": "**Stacks 0GNE (2), the comparison.**  The tensor product of two sheaves of modules for the\nfiner topology is the sheafification, for the finer topology, of their tensor product taken for\nthe coarser one.  Both are sheafifications of the objectwise tensor product of the two\nunderlying presheaves of modules, which does not mention a topology, so this is one component\nof `Stacks.SheafOfModules.sheafificationFactorization`, read through\n`Stacks.SheafOfModules.Tensor.sheafTensorObjIso` on both sides.",
      "statement": "noncomputable def tensorLeftFactorization :\n    ((Stacks.SheafOfModules.Tensor.sheafTensor (J := J) (R)).obj F).obj G ≅\n      (comparisonPullback.{u, v, w, m} h ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).obj\n        (((Stacks.SheafOfModules.Tensor.sheafTensor (J := K) ((commRingOfLe h R))).obj\n            ((comparisonPushforward.{u, v, w, m} h\n              ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).obj F)).obj\n          ((comparisonPushforward.{u, v, w, m} h\n            ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).obj G))",
      "sorry": false,
      "ega": [],
@@ -25885,7 +25885,7 @@
     {
      "name": "Stacks.SheafOfModules.tensorLeftAgreement",
      "kind": "def",
-     "line": 453,
+     "line": 463,
      "private": false,
      "doc": "**Towards Stacks 0GNE (2), the agreement.**  The tensor product computed for the finer\ntopology, read for the coarser one, is the tensor product computed for the coarser topology, as\nsoon as the latter is already a sheaf for the finer topology — which is what invertibility of\nthe unit at it says.\n\n`hunit` is a hypothesis the source does not have, and the clause string of the `stacks`\nattribute below says so: what is proved here is the implication.  It is discharged at the big\nsites of a scheme, by Stacks 06VE (7), in\n`AlgebraicGeometry.BigFppfOver.isIso_comparisonUnit_tensorRestrictTopology`\n(`StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean`),\nand the 0GNE (2) attribute for the clause without that hypothesis sits there, on\n`…tensorAgreementQuasicoherentOnSite`, which is this declaration with `hunit` supplied for an\narbitrary pair of quasi-coherent modules on `(Sch/S)_fppf` — note that the arbitrary pair is\nreached by widening `hunit`, so the isomorphism it returns is still this canonical one.  The\nhalf of part (2) that needs no hypothesis at all is\n`Stacks.SheafOfModules.tensorLeftFactorization`, which carries the tag here.",
      "statement": "noncomputable def tensorLeftAgreement\n    (hunit : IsIso ((comparisonAdjunction.{u, v, w, m} h\n        ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).unit.app\n      (((Stacks.SheafOfModules.Tensor.sheafTensor (J := K) ((commRingOfLe h R))).obj\n          ((comparisonPushforward.{u, v, w, m} h\n            ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).obj F)).obj\n        ((comparisonPushforward.{u, v, w, m} h\n          ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).obj G)))) :\n    (comparisonPushforward.{u, v, w, m} h ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).obj\n        (((Stacks.SheafOfModules.Tensor.sheafTensor (J := J) (R)).obj F).obj G) ≅\n      ((Stacks.SheafOfModules.Tensor.sheafTensor (J := K) ((commRingOfLe h R))).obj\n          ((comparisonPushforward.{u, v, w, m} h\n            ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).obj F)).obj\n        ((comparisonPushforward.{u, v, w, m} h\n          ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) R)).obj G)",
@@ -25899,7 +25899,7 @@
     {
      "name": "AlgebraicGeometry.RingedSite.coarsenModules_internalHomSheaf",
      "kind": "theorem",
-     "line": 507,
+     "line": 517,
      "private": false,
      "doc": "**Stacks 0GNE (3), the agreement clause.**  The internal hom of two sheaves of modules\ncomputed on a ringed site, read for a coarser topology, *is* the internal hom of their readings\ncomputed for the coarser topology.\n\nThis is the source's own argument for part (3): the internal hom of Stacks 03EM is a\nconstruction on presheaves of modules, and the topology enters only in the proof that the\nresult is a sheaf, which needs the sheaf condition on the target alone.  So no comparison map\nis involved — the two sheaves of modules have the same underlying presheaf of modules, and\ntheir sheaf conditions are propositions.",
      "statement": "theorem coarsenModules_internalHomSheaf (X : RingedSite.{u, v, w})\n    {J' : GrothendieckTopology X.C} (h : J' ≤ X.J)\n    (A B : SheafOfModules.{m} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) :\n    (coarsenModules X h).obj (internalHomSheaf X A B) =\n      internalHomSheaf (X.ofLE h) ((coarsenModules X h).obj A)\n        ((coarsenModules X h).obj B)",
@@ -25913,7 +25913,7 @@
     {
      "name": "AlgebraicGeometry.BigFppfOver.restrictTopologyAssociatedModuleIso",
      "kind": "def",
-     "line": 611,
+     "line": 621,
      "private": false,
      "doc": "**The key to Stacks 0GNE.**  The functor `𝓕 ↦ 𝓕^a` is given by the same formula for every\n`τ ∈ {Zariski, étale, smooth, syntomic, fppf}`: the associated module of a quasi-coherent\n`𝒪_S`-module on `(Sch/S)_τ` is the associated module on `(Sch/S)_fppf`, read for the coarser\ntopology.\n\nEvery clause of the source's lemma is deduced from this, which is why it carries the tag: the\nsource's proof of all three parts is \"the equivalence of Proposition 03DX is given by the same\nformula independent of the choice of the topology\", applied to a colimit, to a tensor product\nand to an internal hom.",
      "statement": "noncomputable def restrictTopologyAssociatedModuleIso (τ : SiteKind) (F : S.Modules)\n    [F.IsQuasicoherent] :\n    (restrictTopology B S hS τ).obj ((associatedModule B S hS).obj F) ≅\n      (baseAssociatedModule B S hS τ).obj F",
@@ -25927,7 +25927,7 @@
     {
      "name": "AlgebraicGeometry.BigFppfOver.isColimitMapCoconeBaseAssociatedModuleQcoh",
      "kind": "def",
-     "line": 772,
+     "line": 782,
      "private": false,
      "doc": "**Stacks 0GNE (1), the comparison with the modules of `(Sch/S)_τ`, every `τ`.**  A colimit\nof a diagram of quasi-coherent modules on `S` is carried by `𝓕 ↦ 𝓕^a` to a colimit in\n`Mod((Sch/S)_τ, 𝒪)`.  Together with\n`AlgebraicGeometry.BigFppfOver.restrictTopologyAssociatedModuleIso`, which identifies the\nvertex at `τ` with the vertex at fppf read for the coarser topology, this says that the\ncolimits computed in the five module categories agree.\n\nThe source states the clause for a diagram in `QCoh((Sch/S)_fppf, 𝒪)`, and reduces it to a\ndiagram in `QCoh(𝒪_S)` by the essential surjectivity of `𝓕 ↦ 𝓕^a`; the diagram here is the\nreduced one.  That reduction is now available, and the clause for an arbitrary diagram is\n`preservesColimitsOfSize_quasicoherentOnSite_ι_comp_restrictTopology`, in the namespace\n`AlgebraicGeometry.BigFppfOver` (file `BigSiteColimitAgreement.lean` in\n`StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/`).",
      "statement": "noncomputable def isColimitMapCoconeBaseAssociatedModuleQcoh\n    {D : K ⥤ (SheafOfModules.isQuasicoherent S.ringCatSheaf).FullSubcategory}\n    {c : Cocone D} (hc : IsColimit c) :\n    IsColimit ((baseAssociatedModuleQcoh B S hS τ).mapCocone c)",
@@ -25943,7 +25943,7 @@
     {
      "name": "AlgebraicGeometry.RingedSite.internalHomSheaf_isQuasicoherent",
      "file": "StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean",
-     "line": 822,
+     "line": 832,
      "tier": "StacksFrontier",
      "comment": "part (3), quasi-coherence of the common value",
      "ega": [],
@@ -29331,7 +29331,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.isQuasicoherent_tensorSheaf'",
      "kind": "theorem",
-     "line": 304,
+     "line": 320,
      "private": false,
      "doc": "**Stacks 0GQM.** The tensor product of two quasi-coherent sheaves of modules on a site is\nquasi-coherent.\n\nEach factor is presented on some family covering the final object. The two families are refined\nby the objects carrying a morphism into a member of each, which again covers the final object:\ngiven an object, the first family covers it, each member of that cover is covered by the second\nfamily, and every object of the resulting cover maps to a member of both. On such an object the\ntwo presentations restrict, their tensor product presents the tensor product of the restrictions\nby `Stacks.SheafOfModules.TensorProduct.tensorPresentation`, and that is the restriction of\n`F ⊗_𝒪 G` by `Stacks.SheafOfModules.TensorProduct.tensorSheafificationOverIso`.",
      "statement": "theorem isQuasicoherent_tensorSheaf'\n    (F G : SheafOfModules.{w} (structureSheaf 𝒪 h𝒪))\n    [F.IsQuasicoherent] [G.IsQuasicoherent] :\n    ((((Stacks.SheafOfModules.Tensor.sheafTensor\n        ⟨𝒪, Presheaf.isSheaf_of_isSheaf_comp _ (𝒪) (forget₂ CommRingCat RingCat)\n          (h𝒪)⟩).obj (F)).obj (G))).IsQuasicoherent",
@@ -29888,7 +29888,7 @@
     {
      "name": "AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_abelianDirectImage_fppf_of_qcqs",
      "kind": "theorem",
-     "line": 701,
+     "line": 702,
      "private": false,
      "doc": "**Stacks 0GQW, first assertion: the fppf topology.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and\nquasi-separated 1-morphism of algebraic stacks. Then for every `p ≥ 0` the higher direct image\n`Rᵖf_*` of abelian fppf sheaves commutes with filtered colimits:\n`Rᵖf_*(colim_i ℱ_i) = colim_i Rᵖf_*ℱ_i`.\n\nThe proof is the source's. `Rᵖf_*ℱ` is the sheaf associated to the presheaf\n`y ↦ Hᵖ((Sch/V) ×_{y, 𝒴} 𝒳, pr⁻¹ℱ)` (Stacks 075G: the sheafification half is\n`AlgebraicGeometry.Stack.abelianHigherDirectImage_iso_sheafify_fibreCohomology`, the value half\n`AlgebraicGeometry.Stack.rightDerivedFibreSectionsIso`), and the colimit of sheaves is the sheaf\nassociated to the presheaf colimit. When `V` is affine the 2-fibre product is quasi-compact and\nquasi-separated\n(`AlgebraicGeometry.Stack`\n`.isQuasiCompactStack_and_isAbsolutelyQuasiSeparated_twoFibreProduct_objectMorphism`),\nso Stacks 0GQV applies to its cohomology\n(`AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_fibreSections_fppf`), and every\nobject of the fppf site of `𝒴` has a covering by objects lying over affine schemes\n(`AlgebraicGeometry.FibredSite.exists_affine_ofArrows`), which is\n`AlgebraicGeometry.Stack`\n`.preservesColimitsOfShape_rightDerived_abelianDirectImage_of_isAffineObject`.\n\nQuasi-compactness is Stacks 050U (`AlgebraicGeometry.Stack.IsQuasiCompactMorphism`) and\nquasi-separatedness Stacks 04YW (`AlgebraicGeometry.Stack.AlgebraicStacks.IsQuasiSeparated`). The\nabelian sheaves take values in `AddCommGrpCat.{u + 1}` and the diagram is indexed by a small\nfiltered category at that universe, as in Stacks 0GQV.",
      "statement": "theorem preservesColimitsOfShape_rightDerived_abelianDirectImage_fppf_of_qcqs\n    (hfqc : IsQuasiCompactMorphism.{u, w} B S hS f)\n    (hfqs : AlgebraicStacks.IsQuasiSeparated.{u, w} B S hS f) (n : ℕ)\n    (I : Type (u + 1)) [SmallCategory I] [IsFiltered I] :\n    letI := site_hasSheafify_addCommGrp.{u + 1, u, 0}\n      (J := BigFppfOver.associatedTopology B S hS 𝒳.val.val.p .fppf)\n    letI := site_hasSheafify_addCommGrp.{u + 1, u, 0}\n      (J := BigFppfOver.associatedTopology B S hS 𝒴.val.val.p .fppf)\n    letI := Sheaf.isGrothendieckAbelian_of_essentiallySmall.{u + 1}\n      (BigFppfOver.associatedTopology B S hS 𝒳.val.val.p .fppf) AddCommGrpCat.{u + 1}\n    letI := IsGrothendieckAbelian.enoughInjectives\n      (C := Sheaf (BigFppfOver.associatedTopology B S hS 𝒳.val.val.p .fppf) AddCommGrpCat.{u + 1})\n    letI := abelianDirectImageAdditive.{u, w, 0} B S hS f .fppf\n    PreservesColimitsOfShape I\n      (((Fn).sheafPushforwardCocontinuous AddCommGrpCat.{u + 1}\n        (BigFppfOver.associatedTopology B S hS 𝒳.val.val.p .fppf)\n        (BigFppfOver.associatedTopology B S hS 𝒴.val.val.p .fppf)).rightDerived n)",
@@ -29902,7 +29902,7 @@
     {
      "name": "AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_abelianDirectImage_etale_of_qcqs",
      "kind": "theorem",
-     "line": 735,
+     "line": 736,
      "private": false,
      "doc": "**Stacks 0GQW, second assertion: the étale topology.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and\nquasi-separated 1-morphism of algebraic stacks. Then for every `p ≥ 0` the higher direct image\n`Rᵖf_*` of abelian sheaves on the étale sites, taken in the étale topology, commutes with filtered\ncolimits: `Rᵖf_*(colim_i ℱ_i) = colim_i Rᵖf_*ℱ_i`.\n\nThe proof is that of the fppf assertion\n`AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_abelianDirectImage_fppf_of_qcqs`,\nwith the étale assertion of Stacks 0GQV\n(`AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_fibreSections_etale`) and the\ncovering of every object of the étale site of `𝒴` by objects lying over affine schemes\n(`AlgebraicGeometry.Stack.exists_affine_ofArrows_etale`).",
      "statement": "theorem preservesColimitsOfShape_rightDerived_abelianDirectImage_etale_of_qcqs\n    (hfqc : IsQuasiCompactMorphism.{u, w} B S hS f)\n    (hfqs : AlgebraicStacks.IsQuasiSeparated.{u, w} B S hS f) (n : ℕ)\n    (I : Type (u + 1)) [SmallCategory I] [IsFiltered I] :\n    letI := site_hasSheafify_addCommGrp.{u + 1, u, 0}\n      (J := BigFppfOver.associatedTopology B S hS 𝒳.val.val.p .etale)\n    letI := site_hasSheafify_addCommGrp.{u + 1, u, 0}\n      (J := BigFppfOver.associatedTopology B S hS 𝒴.val.val.p .etale)\n    letI := Sheaf.isGrothendieckAbelian_of_essentiallySmall.{u + 1}\n      (BigFppfOver.associatedTopology B S hS 𝒳.val.val.p .etale) AddCommGrpCat.{u + 1}\n    letI := IsGrothendieckAbelian.enoughInjectives\n      (C := Sheaf (BigFppfOver.associatedTopology B S hS 𝒳.val.val.p .etale) AddCommGrpCat.{u + 1})\n    letI := abelianDirectImageAdditive.{u, w, 0} B S hS f .etale\n    PreservesColimitsOfShape I\n      (((Fn).sheafPushforwardCocontinuous AddCommGrpCat.{u + 1}\n        (BigFppfOver.associatedTopology B S hS 𝒳.val.val.p .etale)\n        (BigFppfOver.associatedTopology B S hS 𝒴.val.val.p .etale)).rightDerived n)",
@@ -30720,7 +30720,7 @@
     {
      "name": "AlgebraicGeometry.Stack.AlgebraicStacks.isIso_tensorPushforwardMap",
      "kind": "theorem",
-     "line": 1028,
+     "line": 1049,
      "private": false,
      "doc": "**Stacks 0GRN, corrected: one leg affine.** Let `a : 𝒴 ⟶ 𝒳` be an affine (Stacks 0CHQ),\nquasi-compact, quasi-separated and flat 1-morphism of algebraic stacks and `b : 𝒵 ⟶ 𝒳` one which\nis representable (by schemes), quasi-compact and quasi-separated. For the projection\n`f = pr₁ ≫ a : 𝒴 ×_𝒳 𝒵 ⟶ 𝒳` of the canonical 2-fibre product, the canonical map\n`μ : a_{QCoh,*}𝒪_𝒴 ⊗_{𝒪_𝒳} b_{QCoh,*}𝒪_𝒵 ⟶ f_{QCoh,*}𝒪_{𝒴 ×_𝒳 𝒵}`\n(`AlgebraicGeometry.Stack.AlgebraicStacks.tensorPushforwardMap`, `s ⊗ t ↦ pr₁^*s · pr₂^*t`) is an\nisomorphism in `QCoh(𝒪_𝒳)`; here `g_{QCoh,*} = quasicoherentDirectImage g`, `⊗` is the tensor\nproduct sheaf of Stacks 0GQM and `𝒪 = 𝟙_`.\n\nRelative to the source: `a` is in addition affine. Without it the statement is false\n(`AlgebraicGeometry.Stack.AlgebraicStacks.not_forall_nonempty_tensorPushforwardUnits_iso`: for the\ntwo disjoint punctured planes `V`, `W` of `Spec k[x,y,z,w]/(xz,xw,yz,yw)` the right hand side is\n`0` and the left hand side has global sections `Γ(V, 𝒪) ⊗ Γ(W, 𝒪) = k`); the source's proof\nbreaks at reading off `H⁰` of the derived tensor product, which needs `H¹(V, 𝒪) = 0` and\nflatness of `Γ(V, 𝒪)` over the base. With `a` affine, `a_*𝒪` is computed by `Γ(V, 𝒪)` with `V`\naffine and flat over the base, and the last step is flat base change of `H⁰`. Flatness of `b`,\nand representability of `a` beyond what affineness gives, are not needed and are dropped.",
      "statement": "theorem isIso_tensorPushforwardMap (ha : AlgebraicStacks.IsAffineHom B S hS a)\n    (haqc : IsQuasiCompactMorphism B S hS a) (haqs : AlgebraicStacks.IsQuasiSeparated B S hS a)\n    (haf : AlgebraicStacks.IsFlat B S hS a)\n    (hbr : Stacks.RepresentableMorphism.IsRepresentableMorphism 𝒵.val.val.p 𝒳.val.val.p\n      (CatFiberedInGroupoids.homFunctor b.hom))\n    (hbqc : IsQuasiCompactMorphism B S hS b) (hbqs : AlgebraicStacks.IsQuasiSeparated B S hS b) :\n    IsIso (tensorPushforwardMap a b)",
@@ -30739,7 +30739,7 @@
     {
      "name": "AlgebraicGeometry.Stack.AlgebraicStacks.nonempty_iso_tensorPushforward",
      "kind": "theorem",
-     "line": 1091,
+     "line": 1114,
      "private": false,
      "doc": "**Stacks 0GRN, corrected (one leg affine), the asserted isomorphism**\n`a_{QCoh,*}𝒪_𝒴 ⊗ b_{QCoh,*}𝒪_𝒵 ≅ f_{QCoh,*}𝒪_{𝒴 ×_𝒳 𝒵}`, under the hypotheses of\n`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_tensorPushforwardMap`.",
      "statement": "theorem nonempty_iso_tensorPushforward (ha : AlgebraicStacks.IsAffineHom B S hS a)\n    (haqc : IsQuasiCompactMorphism B S hS a) (haqs : AlgebraicStacks.IsQuasiSeparated B S hS a)\n    (haf : AlgebraicStacks.IsFlat B S hS a)\n    (hbr : Stacks.RepresentableMorphism.IsRepresentableMorphism 𝒵.val.val.p 𝒳.val.val.p\n      (CatFiberedInGroupoids.homFunctor b.hom))\n    (hbqc : IsQuasiCompactMorphism B S hS b) (hbqs : AlgebraicStacks.IsQuasiSeparated B S hS b) :\n    Nonempty ((quasicoherentDirectImage B S hS a).obj (𝟙_ _) ⊗\n        (quasicoherentDirectImage B S hS b).obj (𝟙_ _) ≅\n      (quasicoherentDirectImage B S hS\n        ((twoFibreProductSquareAlgebraicStacks B S hS a b).fst ≫ a)).obj (𝟙_ _))",
@@ -30753,7 +30753,7 @@
     {
      "name": "AlgebraicGeometry.Stack.AlgebraicStacks.not_forall_nonempty_tensorPushforwardUnits_iso",
      "kind": "theorem",
-     "line": 604,
+     "line": 606,
      "private": false,
      "doc": "**Stacks 0GRN, as printed, is false.** It is not true that for all 1-morphisms\n`a : 𝒴 ⟶ 𝒳`, `b : 𝒵 ⟶ 𝒳` of algebraic stacks which are representable (by schemes),\nquasi-compact, quasi-separated and flat,\n`a_{QCoh,*}𝒪_𝒴 ⊗_{𝒪_𝒳} b_{QCoh,*}𝒪_𝒵 ≅ f_{QCoh,*}𝒪_{𝒴 ×_𝒳 𝒵}` for the projection\n`f : 𝒴 ×_𝒳 𝒵 ⟶ 𝒳` of the 2-fibre product; not even an abstract isomorphism exists in general.\n\nThe counterexample: `X = Spec A`, `A = k[x, y, z, w] / (xz, xw, yz, yw)` the union of two planes\nmeeting at the origin, viewed as an algebraic stack over itself, and `a`, `b` the open immersions\nof the punctured planes `V = D(z) ∪ D(w)` and `W = D(x) ∪ D(y)`. They are disjoint, so the right\nhand side is `0`, while on global sections the left hand side is\n`Γ(V, 𝒪) ⊗_A Γ(W, 𝒪) = k[z, w] ⊗_A k[x, y] = k`. Here `quasicoherentDirectImage` is\n`f_{QCoh,*}` of Stacks 077A, `⊗` the tensor product of `QCoh(𝒪_𝒳)` of Stacks 0GQM (the local\ninstance `fppfModulesMonoidal`, the tensor product sheaf) and `𝟙_` the structure sheaf. The\nsource's proof breaks at its last step: the\nKünneth formula (**Lemma 0FLQ**) computes `Rf_*𝒪 = Ra_*𝒪 ⊗^𝐋 Rb_*𝒪`, and reading off `H⁰` of the\nright hand side as `a_*𝒪 ⊗ b_*𝒪` needs `H¹(V, 𝒪) = 0` or flatness; here `H¹(V, 𝒪) ≠ 0` (a punctured\nplane) and `Γ(V, 𝒪) = A / (x, y)` is not flat over `A`. The same failure occurs with `a = b` the\nopen immersion `D(x) ∪ D(z) → Spec k[x, y, z, w] / (xy - zw)`\n(`AlgebraicGeometry.TensorPushforwardCounterexample.not_injective_lmul'_coneSections`). The\nstatement holds when one leg is affine\n(`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_tensorPushforwardMap`).",
      "statement": "theorem not_forall_nonempty_tensorPushforwardUnits_iso :\n    ¬ ∀ (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)\n      (𝒳 𝒴 𝒵 : AlgebraicStacks.{u, w} B S hS) (a : 𝒴 ⟶ 𝒳) (b : 𝒵 ⟶ 𝒳),\n      Stacks.RepresentableMorphism.IsRepresentableMorphism 𝒴.val.val.p 𝒳.val.val.p\n        (CatFiberedInGroupoids.homFunctor a.hom) →\n      IsQuasiCompactMorphism B S hS a → AlgebraicStacks.IsQuasiSeparated B S hS a →\n      AlgebraicStacks.IsFlat B S hS a →\n      Stacks.RepresentableMorphism.IsRepresentableMorphism 𝒵.val.val.p 𝒳.val.val.p\n        (CatFiberedInGroupoids.homFunctor b.hom) →\n      IsQuasiCompactMorphism B S hS b → AlgebraicStacks.IsQuasiSeparated B S hS b →\n      AlgebraicStacks.IsFlat B S hS b →\n      Nonempty ((quasicoherentDirectImage B S hS a).obj (𝟙_ _) ⊗\n          (quasicoherentDirectImage B S hS b).obj (𝟙_ _) ≅\n        (quasicoherentDirectImage B S hS\n          ((twoFibreProductSquareAlgebraicStacks B S hS a b).fst ≫ a)).obj (𝟙_ _))",
@@ -31921,7 +31921,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.Situation",
      "kind": "structure",
-     "line": 135,
+     "line": 137,
      "private": false,
      "doc": "**Situation 0GT4.** A sheaf of ideals `ι : I ⟶ O_X` on a ringed space which is locally\ngenerated by a nonzerodivisor: every point has an open neighbourhood `U` carrying a section `f`\nof `I` which generates `I|_U` and acts injectively on `O_U`.",
      "statement": "public structure Situation",
@@ -31941,7 +31941,7 @@
     {
      "name": "Stacks.IdealTorsion.idealTorsionFree_tfae",
      "kind": "theorem",
-     "line": 1351,
+     "line": 1343,
      "private": false,
      "doc": "**Stacks Project, Tag 0GT5.** For an ideal sheaf locally generated by a\nnonzerodivisor, the following are equivalent: `F[I] = 0`; `F[I^n] = 0` for every\n`n ≥ 1`; multiplication `I ⊗ F ⟶ F` is injective; multiplication by every local\ngenerator is injective; and every stalk generator is a nonzerodivisor on the stalk of\n`F`.",
      "statement": "public theorem idealTorsionFree_tfae\n    {I : SheafOfModules.{u} Oₓ} (i : I ⟶ 𝒪) [Mono i]\n    [AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFreeOfRank (C := Opens X)\n      (J := Opens.grothendieckTopology X) I 1]\n    (F : SheafOfModules.{u} Oₓ) :\n    List.TFAE [\n      IsIdealTorsionFree X i F,\n      IsIdealPowerTorsionFree X i F,\n      Mono (idealTensorMultiplication X i F),\n      ∀ (U : Opens X) (f : I.val.obj (op U)),\n        GeneratesIdealOn X U f → IsGeneratorRegularOn X i F U f,\n      IsStalkwiseGeneratorRegular X i F]",
@@ -31961,7 +31961,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.etaStalkIso",
      "kind": "def",
-     "line": 2262,
+     "line": 2236,
      "private": false,
      "doc": "**Stacks Project, Tag 0GT6.** At a generator `f` of the ideal stalk `I_x`, the stalk of the\nsheaf-theoretic décalage `η_I F` is isomorphic, as a complex of modules over the local ring\n`O_{X,x}`, to the ordinary décalage `η_f` of the complex of stalks.",
      "statement": "public noncomputable def etaStalkIso\n    (I : SheafOfModules.{u} Oₓ) (ι : I ⟶ 𝒪) [Mono ι]\n    [Stacks.SheafOfModules.IsInvertible X.sheaf.obj\n      ((Stacks.SheafOfModules.Tensor.ringSheaf\n        (CategoryTheory.ObjectProperty.FullSubcategory.mk X.presheaf X.IsSheaf))).property I]\n    (F : CochainComplex (SheafOfModules.{u} Oₓ) ℤ)\n    (hF : ∀ n : ℤ, IsIdealTorsionFree X ι (F.X n))\n    (x : X) (f : ringStalk X x)\n    (hf : GeneratesStalkIdeal X ι x f) :\n    stalkComplex X x (etaObj X I ι F hF) ≅\n      EtaComplex.etaObject f (stalkComplex X x F)",
@@ -31975,7 +31975,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.etaStalkIso_hom",
      "kind": "theorem",
-     "line": 2281,
+     "line": 2255,
      "private": false,
      "doc": "In degree `n`, the comparison of Tag 0GT6 is the normalized ideal-power map applied to the\nfirst projection of the defining fibre product, read inside the localization.",
      "statement": "public theorem etaStalkIso_hom\n    (I : SheafOfModules.{u} Oₓ) (ι : I ⟶ 𝒪) [Mono ι]\n    [Stacks.SheafOfModules.IsInvertible X.sheaf.obj\n      ((Stacks.SheafOfModules.Tensor.ringSheaf\n        (CategoryTheory.ObjectProperty.FullSubcategory.mk X.presheaf X.IsSheaf))).property I]\n    (F : CochainComplex (SheafOfModules.{u} Oₓ) ℤ)\n    (hF : ∀ n : ℤ, IsIdealTorsionFree X ι (F.X n))\n    (x : X) (f : ringStalk X x)\n    (hf : GeneratesStalkIdeal X ι x f) (n : ℤ) :\n    (etaStalkIso X I ι F hF x f hf).hom.f n ≫\n      ModuleCat.ofHom (Submodule.subtype (EtaComplex.term f (stalkComplex X x F) n)) =\n    (stalkModuleFunctor X x).map\n      (pullback.fst (idealPowerMap X I n (F.d n (n + 1)))\n        (idealPowerIncl X I ι n (F.X (n + 1)))) ≫\n      (idealPowerStalkComparison X I ι (F.X n) x f hf).map n",

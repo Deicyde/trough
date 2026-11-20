@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.6 Cycle associated to a coherent sheaf
 
-Section 82.6 of the Stacks Project, [Tag 0EEA](https://stacks.math.columbia.edu/tag/0EEA). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 82.6 of the Stacks Project, [Tag 0EEA](https://stacks.math.columbia.edu/tag/0EEA). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EEB, a definition
 
 [Tag 0EEB](https://stacks.math.columbia.edu/tag/0EEB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.moduleMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean#L224). The attribute's comment: “part (1): the multiplicity of an integral closed subspace in a module, at a chosen geometric representative of its generic point and valued in ℕ∞; the reading at a point of |X| additionally needs the equivalence of Lemma 0EE1, and the finiteness asserted by Lemma 0EE4, neither of which is proved in this library”.
+**`AlgebraicGeometry.Space.moduleMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean, line 224](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean#L224). The attribute's comment: “part (1): the multiplicity of an integral closed subspace in a module, at a chosen geometric representative of its generic point and valued in ℕ∞; the reading at a point of |X| additionally needs the equivalence of Lemma 0EE1, and the finiteness asserted by Lemma 0EE4, neither of which is proved in this library”.
 
 > **Stacks 0EEB, part (1).** The *multiplicity of an integral closed subspace `Z ⊆ X` in an
 > `𝒪_X`-module `F`*: the length of `F` at the generic point `ξ` of `Z`, in the sense of Stacks 0EE2,
@@ -31,7 +31,7 @@ def moduleMultiplicity (hX : IsAlgebraicSpace B S hS X) (F : Modules.{u, u} B S 
     (Z : IntegralClosedSubspace B S hS X) : ℕ∞
 ```
 
-**`AlgebraicGeometry.Space.associatedCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean, line 680](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean#L680). The attribute's comment: “part (2): the k-cycle [F]\_k of a coherent module, for a chosen geometric representative of each point; the reading at a point of |X| additionally needs the equivalence of Lemma 0EE1, which is not proved in this library”.
+**`AlgebraicGeometry.Space.associatedCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean, line 680](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean#L680). The attribute's comment: “part (2): the k-cycle [F]\_k of a coherent module, for a chosen geometric representative of each point; the reading at a point of |X| additionally needs the equivalence of Lemma 0EE1, which is not proved in this library”.
 
 > **Stacks 0EEB, part (2).** In Situation 0EDT let `X/B` be good, let `F` be a coherent
 > `𝒪_X`-module and assume `dim_δ(Supp(F)) ≤ k`. The *`k`-cycle associated to `F`* is
@@ -64,7 +64,7 @@ def associatedCycle (sX : X ⟶ D.space) (hX : D.IsGood sX)
 
 [Tag 0EEC](https://stacks.math.columbia.edu/tag/0EEC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_associatedCycle_apply_eq_and_hasLengthAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycleLength.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycleLength.lean#L69). The attribute's comment: “the length at the generic point is that of Definition 0EE2, read at every geometric point above it; the integer coefficient and the ℕ∞-valued length are the same natural number”.
+**`AlgebraicGeometry.Space.exists_associatedCycle_apply_eq_and_hasLengthAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycleLength.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycleLength.lean#L69). The attribute's comment: “the length at the generic point is that of Definition 0EE2, read at every geometric point above it; the integer coefficient and the ℕ∞-valued length are the same natural number”.
 
 > **Stacks 0EEC.** In Situation 0EDT let `X/B` be good, let `F` be a coherent `𝒪_X`-module with
 > `dim_δ(Supp(F)) ≤ k`, let `Z` be an integral closed subspace of `X` with `dim_δ(Z) = k` and let `ξ`
@@ -105,7 +105,7 @@ theorem exists_associatedCycle_apply_eq_and_hasLengthAt (sX : X ⟶ D.space) (hX
 
 [Tag 0EED](https://stacks.math.columbia.edu/tag/0EED) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.cycleCoeffOfClosedSubspace_eq_cycleCoeffOfModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/StructureSheafCycle.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/StructureSheafCycle.lean#L422). The attribute's comment: “the coefficient at an integral closed subspace contained in Y, for a choice of geometric representatives above the points they are assigned to, using Lemma 0EE1 to compare the two”.
+**`AlgebraicGeometry.Space.cycleCoeffOfClosedSubspace_eq_cycleCoeffOfModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/StructureSheafCycle.lean, line 422](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/StructureSheafCycle.lean#L422). The attribute's comment: “the coefficient at an integral closed subspace contained in Y, for a choice of geometric representatives above the points they are assigned to, using Lemma 0EE1 to compare the two”.
 
 > **Stacks 0EED, at an integral closed subspace contained in `Y`.** In Situation 0EDT let
 > `X/B` be good, let `Y ⊂ X` be a closed subspace with inclusion `i : Y → X`, assume
@@ -135,7 +135,7 @@ theorem cycleCoeffOfClosedSubspace_eq_cycleCoeffOfModule (sX : X ⟶ D.space) (h
         (closedSubspaceComponentImage D sX hX Y hY W)
 ```
 
-**`AlgebraicGeometry.Space.cycleCoeffOfClosedSubspace_eq_cycleCoeffOfModule_of_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/StructureSheafCycle.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/StructureSheafCycle.lean#L470). The attribute's comment: “the equality of the two k-cycles, for a choice of geometric representatives above the points they are assigned to”.
+**`AlgebraicGeometry.Space.cycleCoeffOfClosedSubspace_eq_cycleCoeffOfModule_of_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/StructureSheafCycle.lean, line 470](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/StructureSheafCycle.lean#L470). The attribute's comment: “the equality of the two k-cycles, for a choice of geometric representatives above the points they are assigned to”.
 
 > **Stacks 0EED.** In Situation 0EDT let `X/B` be good, let `Y ⊂ X` be a closed subspace with
 > inclusion `i : Y → X`, and assume `dim_δ(Y) ≤ k`. Then `[Y]_k = [i_*𝒪_Y]_k`, as an equality of
@@ -174,7 +174,7 @@ theorem cycleCoeffOfClosedSubspace_eq_cycleCoeffOfModule_of_eq_zero (sX : X ⟶ 
 
 [Tag 0EEE](https://stacks.math.columbia.edu/tag/0EEE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.associatedCycle_add_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean, line 810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean#L810).
+**`AlgebraicGeometry.Space.associatedCycle_add_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean, line 810](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean#L810).
 
 > **Stacks 0EEE.** In Situation 0EDT let `X/B` be good and let `0 → F → G → H → 0` be a short
 > exact sequence of coherent `𝒪_X`-modules whose three supports have δ-dimension at most `k`. Then
@@ -228,4 +228,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.6, Tag 0EEA](https://stacks.math.columbia.edu/tag/0EEA)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

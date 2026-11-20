@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.27 Derived pullback
 
-Section 20.27 of the Stacks Project, [Tag 06YI](https://stacks.math.columbia.edu/tag/06YI). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 20.27 of the Stacks Project, [Tag 06YI](https://stacks.math.columbia.edu/tag/06YI). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06YJ, a lemma
 
 [Tag 06YJ](https://stacks.math.columbia.edu/tag/06YJ) in the Stacks Project.
 
-**`Stacks.Cohomology.KFlatDerivedPullback.derivedPullback_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Triangulated.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Triangulated.lean#L146). The attribute's comment: “compatibility with shifts”.
+**`Stacks.Cohomology.KFlatDerivedPullback.derivedPullback_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Triangulated.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Triangulated.lean#L146). The attribute's comment: “compatibility with shifts”.
 
 > **The derived pullback commutes with the shift.**  `Lf^*` is the total left derived functor
 > of degreewise pullback along `Qh`; degreewise pullback and `Qh` both commute with the shift, and
@@ -25,7 +25,7 @@ instance derivedPullback_commShift :
   (Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback f).CommShift ℤ
 ```
 
-**`Stacks.Cohomology.KFlatDerivedPullback.derivedPullback_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Triangulated.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Triangulated.lean#L192). The attribute's comment: “exactness”.
+**`Stacks.Cohomology.KFlatDerivedPullback.derivedPullback_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Triangulated.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Triangulated.lean#L192). The attribute's comment: “exactness”.
 
 > **The derived pullback is exact**: `Lf^* : D(𝒪_Y) ⥤ D(𝒪_X)` carries distinguished triangles
 > to distinguished triangles.
@@ -42,7 +42,7 @@ instance derivedPullback_isTriangulated :
     (Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback f).IsTriangulated
 ```
 
-**`Stacks.Cohomology.KFlatDerivedPullback.isIso_derivedPullbackComparison_app_of_kFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean#L98). The attribute's comment: “computation on K-flat complexes”.
+**`Stacks.Cohomology.KFlatDerivedPullback.isIso_derivedPullbackComparison_app_of_kFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean#L98). The attribute's comment: “computation on K-flat complexes”.
 
 > **A K-flat complex computes the derived pullback**: on it the canonical comparison
 > `Lf^* K ⟶ f^* K` is invertible.  This is the clause of Tag 06YJ that says the construction
@@ -65,14 +65,14 @@ theorem isIso_derivedPullbackComparison_app_of_kFlat
 
 Declarations registered for the tag:
 
-- [`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/PullbackPushforwardAdjunction.lean#L291), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean#L123) (StacksFrontier): “the derived pullback functor”.
-- [`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullbackComparison`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/PullbackPushforwardAdjunction.lean#L298), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean#L126) (StacksFrontier): “canonical comparison”.
+- [`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/PullbackPushforwardAdjunction.lean#L291), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean#L123) (StacksFrontier): “the derived pullback functor”.
+- [`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullbackComparison`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/PullbackPushforwardAdjunction.lean#L298), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/Unconditional.lean#L126) (StacksFrontier): “canonical comparison”.
 
 ## Tag 0D5S, a lemma
 
 [Tag 0D5S](https://stacks.math.columbia.edu/tag/0D5S) in the Stacks Project.
 
-**`Stacks.DerivedPullback.Composition.isIso_derivedPullbackCompComparisonCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/CompositionUnconditional.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/CompositionUnconditional.lean#L152).
+**`Stacks.DerivedPullback.Composition.isIso_derivedPullbackCompComparisonCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/CompositionUnconditional.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/CompositionUnconditional.lean#L152).
 
 > **Stacks 0D5S.**  The canonical comparison from the composite of the derived pullbacks along
 > `g` and `f` to the derived pullback along `f ≫ g` is an isomorphism, for arbitrary composable
@@ -90,7 +90,7 @@ theorem isIso_derivedPullbackCompComparisonCanonical :
 
 [Tag 079U](https://stacks.math.columbia.edu/tag/079U) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPullbackTensor.derivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/PullbackTensorComparison.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/PullbackTensorComparison.lean#L539).
+**`Stacks.Cohomology.DerivedPullbackTensor.derivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/PullbackTensorComparison.lean, line 539](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/PullbackTensorComparison.lean#L539).
 
 > **Stacks 079U: derived pullback is monoidal.**  For a morphism of ringed spaces
 > `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` there is a canonical isomorphism
@@ -116,7 +116,7 @@ def derivedPullbackTensorIso : pullbackOfTensor f ≅ tensorOfPullbacks f
 
 [Tag 08DE](https://stacks.math.columbia.edu/tag/08DE) in the Stacks Project.
 
-**`Stacks.Cohomology.MixedDerivedTensorOnARingedSpace.derivedLinearMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean#L396). The attribute's comment: “the canonical bifunctorial isomorphism, in D(O\_X)”.
+**`Stacks.Cohomology.MixedDerivedTensorOnARingedSpace.derivedLinearMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean, line 397](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean#L397). The attribute's comment: “the canonical bifunctorial isomorphism, in D(O\_X)”.
 
 > **Stacks 08DE, through the one-sided K-flat descent of the mixed tensor product.**  The
 > canonical bifunctorial isomorphism
@@ -138,7 +138,7 @@ def derivedLinearMixedTensorIso :
 
 [Tag 0FP0](https://stacks.math.columbia.edu/tag/0FP0) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPullbackTensor.derivedPullbackTensorIso_toTensor_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/TensorPullCompatibility.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/TensorPullCompatibility.lean#L192).
+**`Stacks.Cohomology.DerivedPullbackTensor.derivedPullbackTensorIso_toTensor_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/TensorPullCompatibility.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/TensorPullCompatibility.lean#L192).
 
 > **Stacks 0FP0.**  Let `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` be a morphism of ringed spaces and let
 > `K, M` be complexes of `𝒪_Y`-modules.  The diagram
@@ -188,4 +188,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.27, Tag 06YI](https://stacks.math.columbia.edu/tag/06YI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.75 An algebraic stack not satisfying strong formal effectiveness
 
-Section 110.75 of the Stacks Project, [Tag 0CXW](https://stacks.math.columbia.edu/tag/0CXW). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.75 of the Stacks Project, [Tag 0CXW](https://stacks.math.columbia.edu/tag/0CXW). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CXX, a lemma
 
 [Tag 0CXX](https://stacks.math.columbia.edu/tag/0CXX) in the Stacks Project.
 
-**`Deformation.Artin.exists_nonEffectiveSystem_quotientStack_abelianVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/NonEffectiveSystemAbelian.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/NonEffectiveSystemAbelian.lean#L349). The attribute's comment: “with the condition 1 ≤ dim A, which the source omits: as printed the lemma fails for the zero abelian variety (errata.md, 2026-10-28). The system is the source's construction over the function field k(A), glued along the generic point of A.”.
+**`Deformation.Artin.exists_nonEffectiveSystem_quotientStack_abelianVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/NonEffectiveSystemAbelian.lean, line 349](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/FormalObject/NonEffectiveSystemAbelian.lean#L349). The attribute's comment: “with the condition 1 ≤ dim A, which the source omits: as printed the lemma fails for the zero abelian variety (errata.md, 2026-10-28). The system is the source's construction over the function field k(A), glued along the generic point of A.”.
 
 > **Stacks Project, Tag 0CXX.** Let `k` be an algebraically closed field which is not the
 > algebraic closure of a finite field, let `A` be an abelian variety over `k` with `1 ≤ dim A`, and
@@ -55,7 +55,7 @@ theorem exists_nonEffectiveSystem_quotientStack_abelianVariety [IsAlgClosed k]
       ¬ IsEffectiveSystem (abelianVarietyClassifyingStack 𝒞 hk A).p ξ c
 ```
 
-**`Deformation.Artin.not_forall_exists_nonEffectiveSystem_quotientStack_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/NonEffectiveSystemZero.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/FormalObject/NonEffectiveSystemZero.lean#L162). The attribute's comment: “as printed it is false: the zero abelian variety A = Spec k (an abelian variety by Tag 03RO) gives [Spec(k)/A] = Spec k, over which every system of objects is effective; refuted for k the algebraic closure of Q. The corrected statement needs 1 ≤ dim A”.
+**`Deformation.Artin.not_forall_exists_nonEffectiveSystem_quotientStack_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/NonEffectiveSystemZero.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/FormalObject/NonEffectiveSystemZero.lean#L162). The attribute's comment: “as printed it is false: the zero abelian variety A = Spec k (an abelian variety by Tag 03RO) gives [Spec(k)/A] = Spec k, over which every system of objects is effective; refuted for k the algebraic closure of Q. The corrected statement needs 1 ≤ dim A”.
 
 > **Tag 0CXX is false as printed.** The source's statement is: for `k` an algebraically closed
 > field which is not the algebraic closure of a finite field, `A` an abelian variety over `k` and
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.75, Tag 0CXW](https://stacks.math.columbia.edu/tag/0CXW)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

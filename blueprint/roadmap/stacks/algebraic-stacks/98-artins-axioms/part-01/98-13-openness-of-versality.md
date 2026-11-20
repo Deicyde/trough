@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.13 Openness of versality
 
-Section 98.13 of the Stacks Project, [Tag 07XP](https://stacks.math.columbia.edu/tag/07XP). 9 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 98.13 of the Stacks Project, [Tag 07XP](https://stacks.math.columbia.edu/tag/07XP). 9 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07XQ, a definition
 
 [Tag 07XQ](https://stacks.math.columbia.edu/tag/07XQ) in the Stacks Project.
 
-**`Deformation.Artin.IsOpenVersalityOverSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L210). The attribute's comment: “part (1): openness of versality of a category fibred in groupoids over `(Sch/S)_{fppf}`”.
+**`Deformation.Artin.IsOpenVersalityOverSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L210). The attribute's comment: “part (1): openness of versality of a category fibred in groupoids over `(Sch/S)_{fppf}`”.
 
 > **Openness of versality** (Stacks 07XQ (1)). Let `p : X ⥤ (Sch/S)_{fppf}` be a category
 > fibred in groupoids over the big fppf site `B` of `S`. Then `X` satisfies openness of versality if
@@ -33,7 +33,7 @@ public abbrev IsOpenVersalityOverSite (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS
     (_hp : p.IsFiberedInGroupoids) : Prop
 ```
 
-**`Deformation.Artin.IsOpenVersalityMorphismOverSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L237). The attribute's comment: “part (2): openness of versality of a 1-morphism of categories fibred in groupoids over `(Sch/S)_{fppf}`”.
+**`Deformation.Artin.IsOpenVersalityMorphismOverSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L237). The attribute's comment: “part (2): openness of versality of a 1-morphism of categories fibred in groupoids over `(Sch/S)_{fppf}`”.
 
 > **Openness of versality of a 1-morphism** (Stacks 07XQ (2)). Let `F : X ⥤ Y` be a
 > 1-morphism of categories fibred in groupoids `pX`, `pY` over the big fppf site `B` of `S`. Then
@@ -61,7 +61,7 @@ public abbrev IsOpenVersalityMorphismOverSite (B : BigFppfSite.{u}) (S : Scheme.
 
 [Tag 07XR](https://stacks.math.columbia.edu/tag/07XR) in the Stacks Project.
 
-**`Deformation.Artin.artinAxiomsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L57). The attribute's comment: “functor”.
+**`Deformation.Artin.artinAxiomsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L57). The attribute's comment: “functor”.
 
 > The functor which assigns a singleton to an admissible `k[s,t]`-algebra
 > and the empty set to every other algebra.
@@ -71,7 +71,7 @@ public def artinAxiomsFunctor (k : Type u) [Field k] :
     CommAlgCat.{v, u} (MvPolynomial (Fin 2) k) ⥤ Type v
 ```
 
-**`Deformation.Artin.artinAxiomsCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L93). The attribute's comment: “category”.
+**`Deformation.Artin.artinAxiomsCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L93). The attribute's comment: “category”.
 
 > The full subcategory of schemes over `Spec k[s,t]` admitting an affine open
 > cover on which the functor of Tag 07XR has its unique value.
@@ -82,7 +82,7 @@ public abbrev artinAxiomsCategory (k : Type u) [Field k]
     (hS : B.Contains (Spec (.of (MvPolynomial (Fin 2) k))))
 ```
 
-**`Deformation.Artin.nonempty_artinAxiomsFunctor_iff_exists_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L293). The attribute's comment: “geometric\_criterion”.
+**`Deformation.Artin.nonempty_artinAxiomsFunctor_iff_exists_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 293](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L293). The attribute's comment: “geometric\_criterion”.
 
 > The functor of Tag 07XR has its unique value on `A` if and only if
 > `V(s,t) ⊆ Spec(A)` has a quasi-compact open neighbourhood on which `s`
@@ -103,7 +103,7 @@ public theorem nonempty_artinAxiomsFunctor_iff_exists_isCompact_open
                 (algebraMap (MvPolynomial (Fin 2) k) A (MvPolynomial.X 0)) = 0
 ```
 
-**`Deformation.Artin.isVersalAt_sliceObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean#L498). The attribute's comment: “the object x over U = Spec(k[s,t]/(s)) is versal at u\_0 = (s,t)”.
+**`Deformation.Artin.isVersalAt_sliceObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean, line 498](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean#L498). The attribute's comment: “the object x over U = Spec(k[s,t]/(s)) is versal at u\_0 = (s,t)”.
 
 > **The slice is versal at the origin.**
 
@@ -114,7 +114,7 @@ public theorem isVersalAt_sliceObject (B : BigFppfSite.{u})
       (sliceObject B hS) (by delta sliceObject; rfl)
 ```
 
-**`Deformation.Artin.not_isVersalAt_sliceObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean, line 956](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean#L956). The attribute's comment: “x is versal at no other point of U”.
+**`Deformation.Artin.not_isVersalAt_sliceObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean, line 956](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean#L956). The attribute's comment: “x is versal at no other point of U”.
 
 > **The slice is versal at no point other than the origin.**
 
@@ -126,7 +126,7 @@ public theorem not_isVersalAt_sliceObject (B : BigFppfSite.{u})
       (sliceObject B hS) (by delta sliceObject; rfl)
 ```
 
-**`Deformation.Artin.not_isOpenVersality_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean#L1012). The attribute's comment: “openness of versality fails for the category, hence axiom [5] fails”.
+**`Deformation.Artin.not_isOpenVersality_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean#L1012). The attribute's comment: “openness of versality fails for the category, hence axiom [5] fails”.
 
 > **Openness of versality fails for the category of Tag 07XR**, written out: the slice is
 > versal at the origin, which is a finite-type point, but every open neighbourhood of the
@@ -146,7 +146,7 @@ public theorem not_isOpenVersality_artinAxiomsCategory (B : BigFppfSite.{u})
               IsVersalAt U (artinAxiomsOver B hS) u x hx
 ```
 
-**`Deformation.Artin.isStackInGroupoids_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean#L481). The attribute's comment: “axiom [0]: the category is a stack in groupoids, for the fppf topology”.
+**`Deformation.Artin.isStackInGroupoids_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean, line 481](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean#L481). The attribute's comment: “axiom [0]: the category is a stack in groupoids, for the fppf topology”.
 
 > The inclusion of the full subcategory `IsArtinAxiomsObject` is a stack in groupoids for the
 > fppf topology of the big fppf site over `Spec k[s,t]`.
@@ -157,7 +157,7 @@ public theorem isStackInGroupoids_artinAxiomsCategory :
       (BigFppfOver.topology B _ hS)
 ```
 
-**`Deformation.Artin.satisfiesRS_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean#L549). The attribute's comment: “axiom [2]: the category satisfies the Rim-Schlessinger condition (RS)”.
+**`Deformation.Artin.satisfiesRS_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean, line 549](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean#L549). The attribute's comment: “axiom [2]: the category satisfies the Rim-Schlessinger condition (RS)”.
 
 > The inclusion of the full subcategory `IsArtinAxiomsObject` satisfies condition (RS): for a
 > pushout `Y' = Y ⨿_X X'` of finite type local Artinian schemes along a closed immersion `X → X'`,
@@ -170,7 +170,7 @@ public theorem satisfiesRS_artinAxiomsCategory :
       (isFiberedInGroupoids_artinAxiomsCategory B hS)
 ```
 
-**`Deformation.Artin.isLimitPreserving_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean, line 680](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean#L680). The attribute's comment: “axiom [1]: the category is limit preserving, for inverse systems indexed by a category in the universe of the schemes”.
+**`Deformation.Artin.isLimitPreserving_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean, line 680](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean#L680). The attribute's comment: “axiom [1]: the category is limit preserving, for inverse systems indexed by a category in the universe of the schemes”.
 
 > The category fibred in groupoids `artinAxiomsCFG` is limit preserving: for a directed
 > inverse system of affine schemes `Tᵢ` over `Spec k[s,t]` with limit `T`, the comparison
@@ -181,7 +181,7 @@ public theorem isLimitPreserving_artinAxiomsCategory :
     IsLimitPreserving.{u, u, u, u + 1, u} B _ hS (artinAxiomsCFG B hS)
 ```
 
-**`Deformation.Artin.finiteDimensional_tangentSpace_infinitesimalAutomorphisms_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean, line 732](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean#L732). The attribute's comment: “axiom [3]: the tangent spaces and the spaces of infinitesimal automorphisms of the predeformation categories are finite dimensional”.
+**`Deformation.Artin.finiteDimensional_tangentSpace_infinitesimalAutomorphisms_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean, line 732](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleAxioms.lean#L732). The attribute's comment: “axiom [3]: the tangent spaces and the spaces of infinitesimal automorphisms of the predeformation categories are finite dimensional”.
 
 > For every finite-type field-valued point `x₀` of `artinAxiomsCategory`, the tangent space
 > `T𝓕_{𝒳,k,x₀}` of its predeformation category is finite dimensional for its canonical vector space
@@ -221,7 +221,7 @@ public theorem finiteDimensional_tangentSpace_infinitesimalAutomorphisms_artinAx
           hD.predeformation.cofibered g e hge i hi)
 ```
 
-**`Deformation.Artin.isEquivalence_approximationFunctor_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleEffective.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleEffective.lean#L314). The attribute's comment: “axiom [4]: the functor of Stacks 07X6 from objects over Noetherian complete local rings to formal objects is an equivalence”.
+**`Deformation.Artin.isEquivalence_approximationFunctor_artinAxiomsCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleEffective.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexampleEffective.lean#L314). The attribute's comment: “axiom [4]: the functor of Stacks 07X6 from objects over Noetherian complete local rings to formal objects is an equivalence”.
 
 > **The category of the openness-of-versality example satisfies axiom [4]**: the functor of
 > Stacks 07X6, from objects over the spectra of Noetherian complete local rings to formal objects,
@@ -237,7 +237,7 @@ public theorem isEquivalence_approximationFunctor_artinAxiomsCategory :
 
 [Tag 07XS](https://stacks.math.columbia.edu/tag/07XS) in the Stacks Project.
 
-**`Deformation.Artin.IsSmoothOnPredeformationCategories`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L110).
+**`Deformation.Artin.IsSmoothOnPredeformationCategories`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L110).
 
 > Smoothness of the induced map on predeformation categories at every
 > finite-type field-valued point of the source.
@@ -256,7 +256,7 @@ public abbrev IsSmoothOnPredeformationCategories
 
 [Tag 07XT](https://stacks.math.columbia.edu/tag/07XT) in the Stacks Project.
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_sliceFunctor_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothnessConditionFromVersality.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/SmoothnessConditionFromVersality.lean#L63).
+**`Deformation.Artin.isSmoothOnPredeformationCategories_sliceFunctor_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothnessConditionFromVersality.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/SmoothnessConditionFromVersality.lean#L63).
 
 > **Stacks 07XT.** Let `𝒳` be a category fibred in groupoids over the big fppf site of a
 > locally Noetherian scheme `S`, let `U` be a scheme locally of finite type over `S`, and let
@@ -283,7 +283,7 @@ public theorem isSmoothOnPredeformationCategories_sliceFunctor_of_isVersalAt
 
 [Tag 07XU](https://stacks.math.columbia.edu/tag/07XU) in the Stacks Project.
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Composition.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/Openness/Composition.lean#L291).
+**`Deformation.Artin.isSmoothOnPredeformationCategories_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Composition.lean, line 291](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/Openness/Composition.lean#L291).
 
 > The composite of two morphisms smooth on predeformation categories is
 > smooth on predeformation categories.
@@ -309,7 +309,7 @@ public theorem isSmoothOnPredeformationCategories_comp
 
 [Tag 07XV](https://stacks.math.columbia.edu/tag/07XV) in the Stacks Project.
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/BaseChange.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/Openness/BaseChange.lean#L622).
+**`Deformation.Artin.isSmoothOnPredeformationCategories_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/BaseChange.lean, line 622](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/Openness/BaseChange.lean#L622).
 
 > **Stacks 07XV.** Smoothness on predeformation categories is stable under base change of
 > categories fibred in groupoids: if `f : 𝒳 ⟶ 𝒴` is smooth on predeformation categories, so is
@@ -336,7 +336,7 @@ public theorem isSmoothOnPredeformationCategories_twoFibreProductSnd
 
 [Tag 07XW](https://stacks.math.columbia.edu/tag/07XW) in the Stacks Project.
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isRelativelySmooth'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/RepresentableSmoothVersality.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/RepresentableSmoothVersality.lean#L57). The attribute's comment: “the representable-and-smooth clause: representable by algebraic spaces and smooth implies smooth on predeformation categories”.
+**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isRelativelySmooth'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/RepresentableSmoothVersality.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/RepresentableSmoothVersality.lean#L57). The attribute's comment: “the representable-and-smooth clause: representable by algebraic spaces and smooth implies smooth on predeformation categories”.
 
 > **Stacks 07XW, the representable-and-smooth clause.** A 1-morphism of categories fibred in
 > groupoids over the big fppf category of a locally Noetherian scheme `S` which is representable by
@@ -353,7 +353,7 @@ public theorem isSmoothOnPredeformationCategories_of_isRelativelySmooth'
       (CatFiberedInGroupoids.homFunctor_comp_p p)
 ```
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isRelativelySmooth_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothImpliesVersalityCondition.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/SmoothImpliesVersalityCondition.lean#L109). The attribute's comment: “the representable-and-smooth clause, for a 1-morphism whose base changes along scheme-valued points of the target are representable by schemes”.
+**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isRelativelySmooth_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothImpliesVersalityCondition.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/SmoothImpliesVersalityCondition.lean#L109). The attribute's comment: “the representable-and-smooth clause, for a 1-morphism whose base changes along scheme-valued points of the target are representable by schemes”.
 
 > A 1-morphism `p` of categories fibred in groupoids over the big fppf category of a locally
 > Noetherian scheme `S` which is representable by algebraic spaces and smooth, and such that each
@@ -381,7 +381,7 @@ public theorem isSmoothOnPredeformationCategories_of_isRelativelySmooth_of_repre
       (CatFiberedInGroupoids.homFunctor_comp_p p)
 ```
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isFormallySmoothOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean#L523). The attribute's comment: “the formally-smooth-on-objects clause: formally smooth on objects implies smooth on predeformation categories”.
+**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isFormallySmoothOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean, line 523](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean#L523). The attribute's comment: “the formally-smooth-on-objects clause: formally smooth on objects implies smooth on predeformation categories”.
 
 > **Stacks 07WK**, case (1). A 1-morphism of categories fibred in groupoids over the big
 > fppf category of `S` which is formally smooth on objects induces a smooth functor of
@@ -405,7 +405,7 @@ public theorem isSmoothOnPredeformationCategories_of_isFormallySmoothOnObjects
 
 [Tag 07XX](https://stacks.math.columbia.edu/tag/07XX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRelativelySmooth_of_isSmoothOnPredeformationCategories`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TwoFibreProductSliceAtlas.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/TwoFibreProductSliceAtlas.lean#L1089). The attribute's comment: “f representable by algebraic spaces, satisfying 07XS, 𝒳 limit preserving on objects, 𝒴 limit preserving, S locally Noetherian; then f is smooth. smooth\_of\_isSmoothOnPredeformationCategories is the case of a morphism of schemes”.
+**`AlgebraicGeometry.Stack.isRelativelySmooth_of_isSmoothOnPredeformationCategories`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TwoFibreProductSliceAtlas.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/TwoFibreProductSliceAtlas.lean#L1089). The attribute's comment: “f representable by algebraic spaces, satisfying 07XS, 𝒳 limit preserving on objects, 𝒴 limit preserving, S locally Noetherian; then f is smooth. smooth\_of\_isSmoothOnPredeformationCategories is the case of a morphism of schemes”.
 
 > **Stacks 07XX.** Let `S` be a locally Noetherian scheme and `f : 𝒳 ⟶ 𝒴` a 1-morphism of
 > categories fibred in groupoids over the big fppf site of `S`. If (1) `f` is representable by
@@ -440,7 +440,7 @@ theorem isRelativelySmooth_of_isSmoothOnPredeformationCategories
 
 [Tag 07XY](https://stacks.math.columbia.edu/tag/07XY) in the Stacks Project.
 
-**`Deformation.Artin.exists_smooth_finiteType_neighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/SmoothNeighborhood.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ArtinCriteria/SmoothNeighborhood.lean#L108). The attribute's comment: “the finite-type base, the object over it, its finite type point with residue field k, the restriction of that object to x₀ there, and smoothness of the 2-Yoneda morphism attached to it”.
+**`Deformation.Artin.exists_smooth_finiteType_neighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/SmoothNeighborhood.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ArtinCriteria/SmoothNeighborhood.lean#L108). The attribute's comment: “the finite-type base, the object over it, its finite type point with residue field k, the restriction of that object to x₀ there, and smoothness of the 2-Yoneda morphism attached to it”.
 
 > **Stacks 07XY.** Let `𝒳` be a category fibred in groupoids over the big fppf site of a
 > locally Noetherian scheme `S` whose diagonal is representable by algebraic spaces, which is
@@ -538,4 +538,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.13, Tag 07XP](https://stacks.math.columbia.edu/tag/07XP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

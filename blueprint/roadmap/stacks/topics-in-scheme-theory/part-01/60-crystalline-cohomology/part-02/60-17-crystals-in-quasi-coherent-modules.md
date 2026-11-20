@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.17 Crystals in quasi-coherent modules
 
-Section 60.17 of the Stacks Project, [Tag 07J7](https://stacks.math.columbia.edu/tag/07J7). 17 tags here are carried by 24 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 60.17 of the Stacks Project, [Tag 07J7](https://stacks.math.columbia.edu/tag/07J7). 17 tags here are carried by 24 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07J8, an equation
 
 [Tag 07J8](https://stacks.math.columbia.edu/tag/07J8) in the Stacks Project.
 
-**`Crystalline.pAdicCompletedDividedPowerEnvelope`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Crystal.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Crystal.lean#L85).
+**`Crystalline.pAdicCompletedDividedPowerEnvelope`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Crystal.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/Crystal.lean#L85).
 
 > The `p`-adically completed divided power envelope of the kernel of a
 > surjective polynomial presentation of `C` over `A`.
@@ -29,7 +29,7 @@ public noncomputable abbrev pAdicCompletedDividedPowerEnvelope
 
 [Tag 07J9](https://stacks.math.columbia.edu/tag/07J9) in the Stacks Project.
 
-**`Crystalline.pAdicCompletedDividedPowerDifferentials`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L307).
+**`Crystalline.pAdicCompletedDividedPowerDifferentials`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L307).
 
 > The module `Ω_D`: the `p`-adic completion of the module of divided power differentials of
 > the divided power envelope of a polynomial presentation of `C` over `A`.
@@ -40,7 +40,7 @@ public noncomputable abbrev pAdicCompletedDividedPowerDifferentials
     (f : MvPolynomial ι s.A →ₐ[s.A] s.C) : Type (max u w)
 ```
 
-**`Crystalline.pAdicCompletedDividedPowerDifferentialsEquivLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L328). The attribute's comment: “the inverse limit over the finite levels”.
+**`Crystalline.pAdicCompletedDividedPowerDifferentialsEquivLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L328). The attribute's comment: “the inverse limit over the finite levels”.
 
 > **Stacks 07J9, the first identification.** `Ω_D = lim_e Ω_{D_e/A, γ̄}`: the completed module
 > of divided power differentials is the inverse limit of the modules of divided power
@@ -58,7 +58,7 @@ public noncomputable def pAdicCompletedDividedPowerDifferentialsEquivLimit
         AddCommGrpCat) : Type (max u w))
 ```
 
-**`Crystalline.pAdicCompletedDividedPowerDifferentialsEquivCompletion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L343). The attribute's comment: “the p-adic completion of the differentials of the completed envelope”.
+**`Crystalline.pAdicCompletedDividedPowerDifferentialsEquivCompletion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 343](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L343). The attribute's comment: “the p-adic completion of the differentials of the completed envelope”.
 
 > **Stacks 07J9, the second identification.** `Ω_D = lim_e Ω_{D/A, γ̄}/p^eΩ_{D/A, γ̄}`: the
 > completed module of divided power differentials is also the `p`-adic completion of the module
@@ -80,7 +80,7 @@ public noncomputable def pAdicCompletedDividedPowerDifferentialsEquivCompletion
             (polynomialDividedPowerEnvelope_prime_nilpotent s f)).1)
 ```
 
-**`Crystalline.exists_dividedPowerDifferentialsCompletionEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/ModuleDifferentials/Completion.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/ModuleDifferentials/Completion.lean#L722). The attribute's comment: “the identification of the inverse limits that defines Ω\_D, the case B = D”.
+**`Crystalline.exists_dividedPowerDifferentialsCompletionEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/ModuleDifferentials/Completion.lean, line 722](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/ModuleDifferentials/Completion.lean#L722). The attribute's comment: “the identification of the inverse limits that defines Ω\_D, the case B = D”.
 
 > Let `A → B` be a ring map, let `(J, δ)` be a divided power structure on `B`, let `p` be
 > prime, let `A` be a `ℤ_(p)`-algebra and let `p` be nilpotent in `B / J`.  Then
@@ -191,7 +191,7 @@ public theorem exists_dividedPowerDifferentialsCompletionEquiv
 
 [Tag 07JA](https://stacks.math.columbia.edu/tag/07JA) in the Stacks Project.
 
-**`Crystalline.completedDividedPowerDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L175).
+**`Crystalline.completedDividedPowerDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L175).
 
 > The universal divided power derivation of the completed envelope, characterized
 > on the dense image of the original envelope.
@@ -222,7 +222,7 @@ public noncomputable def completedDividedPowerDifferential
 
 [Tag 07JF](https://stacks.math.columbia.edu/tag/07JF) in the Stacks Project.
 
-**`Crystalline.pAdicCompletedTensorPowerEnvelope`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Crystal.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Crystal.lean#L150).
+**`Crystalline.pAdicCompletedTensorPowerEnvelope`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Crystal.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/Crystal.lean#L150).
 
 > The ring `D(n)`: the `p`-adically completed divided power envelope of the kernel `J(n)`
 > of the surjection `P ⊗_A … ⊗_A P → C` on the `(n + 1)`-fold tensor power of a surjective
@@ -239,7 +239,7 @@ public noncomputable abbrev pAdicCompletedTensorPowerEnvelope
 
 [Tag 07L0](https://stacks.math.columbia.edu/tag/07L0) in the Stacks Project.
 
-**`Crystalline.exists_dividedPowerDifferentialsCompletionEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/ModuleDifferentials/Completion.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/ModuleDifferentials/Completion.lean#L722). The attribute's comment: “the same identification of the limits, read at the divided power envelope D(n)”.
+**`Crystalline.exists_dividedPowerDifferentialsCompletionEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/ModuleDifferentials/Completion.lean, line 722](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/ModuleDifferentials/Completion.lean#L722). The attribute's comment: “the same identification of the limits, read at the divided power envelope D(n)”.
 
 > Let `A → B` be a ring map, let `(J, δ)` be a divided power structure on `B`, let `p` be
 > prime, let `A` be a `ℤ_(p)`-algebra and let `p` be nilpotent in `B / J`.  Then
@@ -350,7 +350,7 @@ public theorem exists_dividedPowerDifferentialsCompletionEquiv
 
 [Tag 07L1](https://stacks.math.columbia.edu/tag/07L1) in the Stacks Project.
 
-**`Crystalline.completedDividedPowerDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L175). The attribute's comment: “the same derivation for the (n+1)-fold tensor-product presentation”.
+**`Crystalline.completedDividedPowerDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CrystalsQuasiCoherent/Basic.lean#L175). The attribute's comment: “the same derivation for the (n+1)-fold tensor-product presentation”.
 
 > The universal divided power derivation of the completed envelope, characterized
 > on the dense image of the original envelope.
@@ -381,7 +381,7 @@ public noncomputable def completedDividedPowerDifferential
 
 [Tag 07L2](https://stacks.math.columbia.edu/tag/07L2) in the Stacks Project.
 
-**`Crystalline.existsUnique_ringEquiv_pAdicCompletedDividedPowerPolynomial_dpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean, line 1852](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean#L1852). The attribute's comment: “`D(n)` is an algebra over `D` through `pAdicCompletedCoprojection`, the completion of the divided power morphism of envelopes induced by the coprojection; the isomorphism is pinned down, uniquely, on every divided power `ξ_i(j)^[k]`”.
+**`Crystalline.existsUnique_ringEquiv_pAdicCompletedDividedPowerPolynomial_dpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean, line 1852](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean#L1852). The attribute's comment: “`D(n)` is an algebra over `D` through `pAdicCompletedCoprojection`, the completion of the divided power morphism of envelopes induced by the coprojection; the isomorphism is pinned down, uniquely, on every divided power `ξ_i(j)^[k]`”.
 
 > **Stacks Project, Lemma 60.17.5, Tag 07L2.** Let `D` and `D(n)` be as in (07J8) and
 > (07JF).  The coprojection `P → P ⊗_A … ⊗_A P`, `h ↦ h ⊗ 1 ⊗ … ⊗ 1` induces an isomorphism
@@ -432,13 +432,13 @@ public theorem existsUnique_ringEquiv_pAdicCompletedDividedPowerPolynomial_dpow 
 
 Declarations registered for the tag:
 
-- [`Crystalline.exists_ringEquiv_pAdicCompletedDividedPowerPolynomial_over_coprojection`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean#L1818), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean, line 1908](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean#L1908) (StacksFrontier): “equation 60.17.5.1, the display of Lemma 07L2: the isomorphism `e` produced here is `D(n) = lim_e D⟨ξ_i(j)⟩/p^e D⟨ξ_i(j)⟩` as algebras over `D`, for the algebra structure `pAdicCompletedCoprojection` of `D(n)` induced by the coprojection, carrying the image of each `ξ_i(j)` to the divided power variable of the same name”.
+- [`Crystalline.exists_ringEquiv_pAdicCompletedDividedPowerPolynomial_over_coprojection`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean#L1818), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean, line 1908](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/TensorPowerEnvelope.lean#L1908) (StacksFrontier): “equation 60.17.5.1, the display of Lemma 07L2: the isomorphism `e` produced here is `D(n) = lim_e D⟨ξ_i(j)⟩/p^e D⟨ξ_i(j)⟩` as algebras over `D`, for the algebra structure `pAdicCompletedCoprojection` of `D(n)` induced by the coprojection, carrying the image of each `ξ_i(j)` to the divided power variable of the same name”.
 
 ## Tag 07L4, a lemma
 
 [Tag 07L4](https://stacks.math.columbia.edu/tag/07L4) in the Stacks Project.
 
-**`Crystalline.completedEnvelopeThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Coproduct.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Coproduct.lean#L140). The attribute's comment: “the completed envelopes are objects of the site”.
+**`Crystalline.completedEnvelopeThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Coproduct.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Coproduct.lean#L140). The attribute's comment: “the completed envelopes are objects of the site”.
 
 > **Stacks Project, Tag 07L4**, first assertion.  The divided power ring `(D, J̄, γ̄)` of a
 > surjective polynomial presentation of `C` over `A` is an object of `Cris^∧(C/A)`.  Applied to
@@ -451,7 +451,7 @@ public noncomputable def completedEnvelopeThickening
     CompletedEnvelopeThickening s g hg
 ```
 
-**`Crystalline.completedEnvelope_isCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Coproduct.lean, line 691](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Coproduct.lean#L691). The attribute's comment: “the canonical coproduct”.
+**`Crystalline.completedEnvelope_isCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Coproduct.lean, line 691](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Coproduct.lean#L691). The attribute's comment: “the canonical coproduct”.
 
 > **Stacks Project, Tag 07L4**, second assertion.  The canonical coprojections exhibit
 > `D(n)` as the coproduct `∐_{j = 0, …, n} D` of `n + 1` copies of `D` in `Cris^∧(C/A)`.
@@ -467,7 +467,7 @@ public theorem completedEnvelope_isCoproduct
 
 [Tag 07JB](https://stacks.math.columbia.edu/tag/07JB) in the Stacks Project.
 
-**`Crystalline.IsPAdicallyComplete`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean#L123).
+**`Crystalline.IsPAdicallyComplete`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean#L123).
 
 > A `D`-module is `p`-adically complete when it is complete and separated for the `p`-adic
 > filtration, that is for the ideal `p D`.
@@ -476,7 +476,7 @@ public theorem completedEnvelope_isCoproduct
 public def IsPAdicallyComplete (M : Type w) [AddCommGroup M] [Module D M] : Prop
 ```
 
-**`Crystalline.instIsAdicCompleteCompletedDividedPowerRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedRingPAdicComplete.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedRingPAdicComplete.lean#L63). The attribute's comment: “item (07JB) for the module `M = D` over the completed divided power ring itself”.
+**`Crystalline.instIsAdicCompleteCompletedDividedPowerRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedRingPAdicComplete.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedRingPAdicComplete.lean#L63). The attribute's comment: “item (07JB) for the module `M = D` over the completed divided power ring itself”.
 
 > **The `p`-adic completion `D` of `B` is `p`-adically complete for its own ideal `(p) ⊆ D`.**
 >
@@ -496,7 +496,7 @@ public instance instIsAdicCompleteCompletedDividedPowerRing :
 
 [Tag 07JC](https://stacks.math.columbia.edu/tag/07JC) in the Stacks Project.
 
-**`Crystalline.CompletedConnection`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean#L131).
+**`Crystalline.CompletedConnection`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean#L131).
 
 > A connection `∇ : M → M ⊗̂_D Ω` relative to a map `d : D → Ω`: an additive map satisfying the
 > Leibniz rule `∇ (f m) = f • ∇ m + m ⊗ d f`.
@@ -510,7 +510,7 @@ public structure CompletedConnection (d : D → Omega) (M : Type w) [AddCommGrou
 
 [Tag 07JD](https://stacks.math.columbia.edu/tag/07JD) in the Stacks Project.
 
-**`Crystalline.IsIntegrable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean#L196). The attribute's comment: “integrability in the coordinates x\_i: the coordinate operators commute”.
+**`Crystalline.IsIntegrable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean#L196). The attribute's comment: “integrability in the coordinates x\_i: the coordinate operators commute”.
 
 > A completed connection is integrable when its coordinate operators commute.
 
@@ -523,7 +523,7 @@ public def IsIntegrable (dx : ι → Omega) {d : D → Omega} {M : Type w} [AddC
 
 [Tag 07JE](https://stacks.math.columbia.edu/tag/07JE) in the Stacks Project.
 
-**`Crystalline.IsTopologicallyQuasiNilpotent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean#L205). The attribute's comment: “corrected to k ≥ 1: admitting k = 0 would force M = p M”.
+**`Crystalline.IsTopologicallyQuasiNilpotent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/CompletedConnection.lean#L205). The attribute's comment: “corrected to k ≥ 1: admitting k = 0 would force M = p M”.
 
 > A completed connection is topologically quasi-nilpotent when, writing
 > `∇ m = ∑ θ_i m ⬝ d x_i`, for every `m` only finitely many pairs `(i, k)` with `k ≥ 1` satisfy
@@ -538,7 +538,7 @@ public def IsTopologicallyQuasiNilpotent (dx : ι → Omega) {d : D → Omega} {
 
 [Tag 07JG](https://stacks.math.columbia.edu/tag/07JG) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.pairTensorLevel_crystalPairFunctor_nabla`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairConnection07J6.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairConnection07J6.lean#L65). The attribute's comment: “for any surjective polynomial presentation g : A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): the connection of the pair attached to a crystal is the canonical connection of 07J6 evaluated on the finite thickenings (X, T\_e, δ̄): its image at each level e is the 07J6 connection of the crystal over T\_e applied to the image of m”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.pairTensorLevel_crystalPairFunctor_nabla`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairConnection07J6.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairConnection07J6.lean#L65). The attribute's comment: “for any surjective polynomial presentation g : A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): the connection of the pair attached to a crystal is the canonical connection of 07J6 evaluated on the finite thickenings (X, T\_e, δ̄): its image at each level e is the 07J6 connection of the crystal over T\_e applied to the image of m”.
 
 > **The connection `∇` of the pair attached to a crystal is obtained by evaluating the canonical
 > connection of [Stacks, Tag 07J6] on the finite thickenings.**  For a crystal `ℱ` in quasi-coherent
@@ -554,7 +554,7 @@ theorem pairTensorLevel_crystalPairFunctor_nabla (Fc : QuasiCoherentCrystal S) (
         (pairComponent hp Fc e m)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.firstOrderTensorInclusion_crystalConnection_crystalPairFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairConnection07J6.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairConnection07J6.lean#L90). The attribute's comment: “for any surjective polynomial presentation g : A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): the connection of the pair attached to a crystal is the sheaf-level canonical connection of 07J6 evaluated on the finite thickenings (X, T\_e, δ̄), level by level”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.firstOrderTensorInclusion_crystalConnection_crystalPairFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairConnection07J6.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairConnection07J6.lean#L90). The attribute's comment: “for any surjective polynomial presentation g : A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): the connection of the pair attached to a crystal is the sheaf-level canonical connection of 07J6 evaluated on the finite thickenings (X, T\_e, δ̄), level by level”.
 
 > **The connection `∇` of the pair attached to a crystal is obtained by evaluating the
 > sheaf-level canonical connection of [Stacks, Tag 07J6] on the finite thickenings.**  For a crystal
@@ -578,7 +578,7 @@ theorem firstOrderTensorInclusion_crystalConnection_crystalPairFunctor
           (pairTensorLevel hp Fc e (((crystalPairFunctor hp).obj Fc).nabla m)))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairFunctor07JG.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairFunctor07JG.lean#L701). The attribute's comment: “the functor from the crystals in quasi-coherent O\_\{X/S}-modules on Cris(X/S) to the pairs (M, ∇) satisfying (07JB), (07JC), (07JD) and (07JE), for any surjective polynomial presentation g : P = A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): M = lim\_e Γ(T\_e, F), ∇ read off the Taylor expansion of the crystal over D(1); that ∇ is the 07J6 connection evaluated on the T\_e is pairTensorLevel\_crystalPairFunctor\_nabla”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairFunctor07JG.lean, line 701](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairFunctor07JG.lean#L701). The attribute's comment: “the functor from the crystals in quasi-coherent O\_\{X/S}-modules on Cris(X/S) to the pairs (M, ∇) satisfying (07JB), (07JC), (07JD) and (07JE), for any surjective polynomial presentation g : P = A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): M = lim\_e Γ(T\_e, F), ∇ read off the Taylor expansion of the crystal over D(1); that ∇ is the 07J6 connection evaluated on the T\_e is pairTensorLevel\_crystalPairFunctor\_nabla”.
 
 > **[Stacks, Lemma 60.17.3, Tag 07JG]: the functor**
 >
@@ -607,7 +607,7 @@ def crystalPairFunctor :
 
 [Tag 07JH](https://stacks.math.columbia.edu/tag/07JH) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairFunctor_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairEquivalence.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairEquivalence.lean#L634). The attribute's comment: “for any surjective polynomial presentation g : P = A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): the functor of 07JG, from the crystals in quasi-coherent O\_\{X/S}-modules on Cris(X/S) to the pairs (M, ∇) over D satisfying (07JB), (07JC), (07JD) and (07JE), with its connection the canonical connection of 07J6 evaluated on the finite thickenings (pairTensorLevel\_crystalPairFunctor\_nabla), is an equivalence of categories”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairFunctor_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairEquivalence.lean, line 634](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalPairEquivalence.lean#L634). The attribute's comment: “for any surjective polynomial presentation g : P = A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): the functor of 07JG, from the crystals in quasi-coherent O\_\{X/S}-modules on Cris(X/S) to the pairs (M, ∇) over D satisfying (07JB), (07JC), (07JD) and (07JE), with its connection the canonical connection of 07J6 evaluated on the finite thickenings (pairTensorLevel\_crystalPairFunctor\_nabla), is an equivalence of categories”.
 
 > **[Stacks, Proposition 60.17.4, Tag 07JH]: the functor of [Stacks, Lemma 60.17.3, Tag 07JG]**
 >
@@ -633,7 +633,7 @@ theorem crystalPairFunctor_isEquivalence : (crystalPairFunctor hp).IsEquivalence
 
 [Tag 07L5](https://stacks.math.columbia.edu/tag/07L5) in the Stacks Project.
 
-**`Crystalline.exists_presentation_retract_pairEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/EnvelopeRetractEquivalence.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/EnvelopeRetractEquivalence.lean#L305). The attribute's comment: “both assertions, under exactly the source's hypotheses: for A -> P' smooth and P' -> C surjective, there are a polynomial presentation q : A[x\_i] ->> P' with finitely many variables and divided power A-algebra maps a : D -> D', b : D' -> D between the p-adically completed envelopes, compatible with the augmentations to C, with a . b = id; and an equivalence of categories between the pairs (M, nabla) over D satisfying 07JB-07JE (Crystalline.Pair over the completed one-forms of D in the coordinates d x\_i) and the pairs (M', nabla') over D' satisfying 07JB-07JE (Crystalline.RetractPair: p-adically complete, a completed connection over the completed forms of D' whose curvature vanishes, and 07JE read on the base change G(M', nabla') along b, as the proof defines it), whose functor is the base change along a and whose inverse is the base change along b; and, for the last sentence, a functor towards the pairs over D is an equivalence exactly when its composite with the base change towards D' is”.
+**`Crystalline.exists_presentation_retract_pairEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/EnvelopeRetractEquivalence.lean, line 305](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/EnvelopeRetractEquivalence.lean#L305). The attribute's comment: “both assertions, under exactly the source's hypotheses: for A -> P' smooth and P' -> C surjective, there are a polynomial presentation q : A[x\_i] ->> P' with finitely many variables and divided power A-algebra maps a : D -> D', b : D' -> D between the p-adically completed envelopes, compatible with the augmentations to C, with a . b = id; and an equivalence of categories between the pairs (M, nabla) over D satisfying 07JB-07JE (Crystalline.Pair over the completed one-forms of D in the coordinates d x\_i) and the pairs (M', nabla') over D' satisfying 07JB-07JE (Crystalline.RetractPair: p-adically complete, a completed connection over the completed forms of D' whose curvature vanishes, and 07JE read on the base change G(M', nabla') along b, as the proof defines it), whose functor is the base change along a and whose inverse is the base change along b; and, for the last sentence, a functor towards the pairs over D is an equivalence exactly when its composite with the base change towards D' is”.
 
 > **[Stacks, Lemma 60.17.5, Tag 07L5].**  In Situation [Stacks, Tag 07MD], let `A → P' → C` be
 > ring maps with `A → P'` smooth and `P' → C` surjective with kernel `J'`, and let `D'` be the
@@ -705,7 +705,7 @@ theorem exists_presentation_retract_pairEquivalence :
             Φ.IsEquivalence ↔ (Φ ⋙ e.functor).IsEquivalence
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.exists_presentation_retract_crystalPairEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalRetractPairs07L5.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalRetractPairs07L5.lean#L208). The attribute's comment: “all three parts in the situation of 07J7 (X = Spec C, S = Spec A affine, p nilpotent on C), for A -> P' smooth and P' -> C surjective: a polynomial presentation q : A[x\_i] ->> P' in finitely many variables, the system of 07JN being presented by A[x\_(0,i)] -> P' -> C (WholeSpacePresentation S hp), and divided power A-algebra maps a : D -> D', b : D' -> D compatible with the augmentations, with a . b = id; an equivalence between the pairs over D and the pairs over D' satisfying 07JB-07JE whose functor is the base change along a and whose inverse is the base change along b; and the last sentence: the functor of 07JG for that presentation, from the crystals in quasi-coherent O\_\{X/S}-modules on Cris(X/S), followed by the base change along a towards the pairs over D' (crystalRetractPairFunctor), is an equivalence”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.exists_presentation_retract_crystalPairEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalRetractPairs07L5.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalRetractPairs07L5.lean#L208). The attribute's comment: “all three parts in the situation of 07J7 (X = Spec C, S = Spec A affine, p nilpotent on C), for A -> P' smooth and P' -> C surjective: a polynomial presentation q : A[x\_i] ->> P' in finitely many variables, the system of 07JN being presented by A[x\_(0,i)] -> P' -> C (WholeSpacePresentation S hp), and divided power A-algebra maps a : D -> D', b : D' -> D compatible with the augmentations, with a . b = id; an equivalence between the pairs over D and the pairs over D' satisfying 07JB-07JE whose functor is the base change along a and whose inverse is the base change along b; and the last sentence: the functor of 07JG for that presentation, from the crystals in quasi-coherent O\_\{X/S}-modules on Cris(X/S), followed by the base change along a towards the pairs over D' (crystalRetractPairFunctor), is an equivalence”.
 
 > **[Stacks, Lemma 60.17.5, Tag 07L5], for the crystals of [Stacks, Tag 07JH].**  In the
 > situation of [Stacks, Section 60.17, Tag 07J7], `X = Spec(C)` and `S = Spec(A)` affine with `p`
@@ -785,7 +785,7 @@ theorem exists_presentation_retract_crystalPairEquivalence (P' : Type u) [CommRi
 
 [Tag 07L6](https://stacks.math.columbia.edu/tag/07L6) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.exists_presentation_retract_crystalPairEquivalence_of_hasStrongLiftingProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalStrongLiftingPairs.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalStrongLiftingPairs.lean#L256). The attribute's comment: “in the situation of 07J7 (X = Spec C, S = Spec A affine, p nilpotent on C), for a surjection f : P ->> C with P/A having the strong lifting property of 07K4 (Algebra.HasStrongLiftingProperty) and D\_P the p-adic completion of the divided power envelope of ker f: arguing as in 07L5, there are a polynomial presentation q : A[x\_i] ->> P (in general in infinitely many variables), the system of 07JN being presented by A[x\_(0,i)] -> P -> C, and divided power A-algebra maps a : D -> D\_P, b : D\_P -> D compatible with the augmentations, with a . b = id; the base changes along a and b are inverse equivalences between the pairs over D and the pairs over D\_P satisfying 07JB-07JE (CoordinateDualRetractPair: p-adically complete, a completed connection over the completed forms of D\_P with vanishing curvature, and 07JE read on the base change along b, as the proof of 07L5 defines it); and the functor from the crystals in quasi-coherent O\_\{X/S}-modules on Cris(X/S) to the pairs over D\_P, the functor of 07JG followed by the base change along a (crystalDualRetractPairFunctor), is an equivalence of categories”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.exists_presentation_retract_crystalPairEquivalence_of_hasStrongLiftingProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalStrongLiftingPairs.lean, line 256](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalStrongLiftingPairs.lean#L256). The attribute's comment: “in the situation of 07J7 (X = Spec C, S = Spec A affine, p nilpotent on C), for a surjection f : P ->> C with P/A having the strong lifting property of 07K4 (Algebra.HasStrongLiftingProperty) and D\_P the p-adic completion of the divided power envelope of ker f: arguing as in 07L5, there are a polynomial presentation q : A[x\_i] ->> P (in general in infinitely many variables), the system of 07JN being presented by A[x\_(0,i)] -> P -> C, and divided power A-algebra maps a : D -> D\_P, b : D\_P -> D compatible with the augmentations, with a . b = id; the base changes along a and b are inverse equivalences between the pairs over D and the pairs over D\_P satisfying 07JB-07JE (CoordinateDualRetractPair: p-adically complete, a completed connection over the completed forms of D\_P with vanishing curvature, and 07JE read on the base change along b, as the proof of 07L5 defines it); and the functor from the crystals in quasi-coherent O\_\{X/S}-modules on Cris(X/S) to the pairs over D\_P, the functor of 07JG followed by the base change along a (crystalDualRetractPairFunctor), is an equivalence of categories”.
 
 > **[Stacks, Remark 60.17.6, Tag 07L6]: the equivalence of [Stacks, Proposition 60.17.4,
 > Tag 07JH] holds if we start with a surjection `P → C` where `P/A` satisfies the strong lifting
@@ -869,4 +869,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.17, Tag 07J7](https://stacks.math.columbia.edu/tag/07J7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

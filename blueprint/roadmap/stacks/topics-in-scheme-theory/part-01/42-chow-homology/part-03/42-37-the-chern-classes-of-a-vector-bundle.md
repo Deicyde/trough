@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.37 The Chern classes of a vector bundle
 
-Section 42.37 of the Stacks Project, [Tag 02TZ](https://stacks.math.columbia.edu/tag/02TZ). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.37 of the Stacks Project, [Tag 02TZ](https://stacks.math.columbia.edu/tag/02TZ). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02U0, a definition
 
 [Tag 02U0](https://stacks.math.columbia.edu/tag/02U0) in the Stacks Project.
 
-**`Stacks.Chow.existsUnique_isChernClassFundamentalFamilyOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean#L189). The attribute's comment: “part (1)”.
+**`Stacks.Chow.existsUnique_isChernClassFundamentalFamilyOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean, line 189](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean#L189). The attribute's comment: “part (1)”.
 
 > **Stacks 02U0, part (1).** For a module `ℰ` of rank `r` on `X` and an integer `n`, there are
 > classes `c_i ∈ A_{n-i}(X)`, `0 ≤ i ≤ r`, with `c_0 = [X]` and
@@ -30,7 +30,7 @@ theorem existsUnique_isChernClassFundamentalFamilyOfRank (n : ℤ) :
           (cycleAssociatedToClosedSubscheme C sX (𝟙 X) n)) c
 ```
 
-**`Stacks.Chow.chernClassFundamentalOfRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean#L199). The attribute's comment: “part (2)”.
+**`Stacks.Chow.chernClassFundamentalOfRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean, line 199](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean#L199). The attribute's comment: “part (2)”.
 
 > **Stacks 02U0, part (2).** The `i`-th Chern class of a module `ℰ` of rank `r` on `X`,
 > `c_i(ℰ) ∩ [X] = c_i ∈ A_{n-i}(X)`: the `i`-th member of the family of part (1).
@@ -39,7 +39,7 @@ theorem existsUnique_isChernClassFundamentalFamilyOfRank (n : ℤ) :
 def chernClassFundamentalOfRank (n : ℤ) (i : Fin (r + 1)) : chowGroup C sX (n - (i : ℤ))
 ```
 
-**`Stacks.Chow.totalChernClassFundamentalOfRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean#L221). The attribute's comment: “part (3)”.
+**`Stacks.Chow.totalChernClassFundamentalOfRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean, line 221](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassesOfRank.lean#L221). The attribute's comment: “part (3)”.
 
 > **Stacks 02U0, part (3).** The total Chern class of a module of rank `r` on `X`,
 > `c(ℰ) ∩ [X] = c_0(ℰ) ∩ [X] + … + c_r(ℰ) ∩ [X]` in `A_*(X) = ⊕_k A_k(X)`.
@@ -54,13 +54,13 @@ def totalChernClassFundamentalOfRank (n : ℤ) : ⨁ k : ℤ, chowGroup C sX k
 
 Declarations registered for the tag:
 
-- [`ProjectiveBundleChernRelation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProjectiveBundleChernRelation#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean#L294) (StacksFrontier): “Equation 42.37.1.1, the displayed relation of clause (1) of Definition 02U0: `∑_{i=0}^{r} (-1)^i c₁(O_P(1))^i ∩ π^*c_{r-i} = 0`, the condition on a family of Chow classes that Definition 02U0 solves to define the Chern classes of a rank-`r` finite locally free module. The tag labels the displayed equation, which is this condition, so it is carried by the definition naming it; `Stacks.Chow.IsChernCapFamily` conjoins it with `c₀ = α`.”.
+- [`ProjectiveBundleChernRelation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProjectiveBundleChernRelation#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean, line 294](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean#L294) (StacksFrontier): “Equation 42.37.1.1, the displayed relation of clause (1) of Definition 02U0: `∑_{i=0}^{r} (-1)^i c₁(O_P(1))^i ∩ π^*c_{r-i} = 0`, the condition on a family of Chow classes that Definition 02U0 solves to define the Chern classes of a rank-`r` finite locally free module. The tag labels the displayed equation, which is this condition, so it is carried by the definition naming it; `Stacks.Chow.IsChernCapFamily` conjoins it with `c₀ = α`.”.
 
 ## Tag 02U2, a lemma
 
 [Tag 02U2](https://stacks.math.columbia.edu/tag/02U2) in the Stacks Project.
 
-**`Stacks.Chow.chernClassCapFundamental_one_eq_firstChernClassCapFundamental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDivisorClass.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDivisorClass.lean#L314). The attribute's comment: “the projective bundle of the rank-one module L is the pair (X, 𝟙 X) and its twist O\_P(1) is L itself, so the twist operator is CONSTRUCTED from L rather than assumed. The family of clause (1) of Stacks 02U0 is quantified over as a datum, its existence needing the surjectivity half of Stacks 02TX; it is not an assumption about the classes compared”.
+**`Stacks.Chow.chernClassCapFundamental_one_eq_firstChernClassCapFundamental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDivisorClass.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDivisorClass.lean#L314). The attribute's comment: “the projective bundle of the rank-one module L is the pair (X, 𝟙 X) and its twist O\_P(1) is L itself, so the twist operator is CONSTRUCTED from L rather than assumed. The family of clause (1) of Stacks 02U0 is quantified over as a datum, its existence needing the surjectivity half of Stacks 02TX; it is not an assumption about the classes compared”.
 
 > **Stacks 02U2.** Let `(S, δ)` be the base situation of chapter 42, let `X` be locally of
 > finite type over `S`, integral and of delta-dimension `n`, and let `L` be an invertible
@@ -92,7 +92,7 @@ theorem chernClassCapFundamental_one_eq_firstChernClassCapFundamental
       firstChernClassCapFundamental C p n hn L
 ```
 
-**`Stacks.Chow.chernClassFundamentalOfRank_one_eq_firstChernClassCapFundamental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassRankOne.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassRankOne.lean#L58).
+**`Stacks.Chow.chernClassFundamentalOfRank_one_eq_firstChernClassCapFundamental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassRankOne.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/ChernClassRankOne.lean#L58).
 
 > **Stacks 02U2.** Let `X` be locally of finite type over the base of a Chow situation, integral
 > of delta-dimension `n`, and let `ℒ` be an invertible `𝒪_X`-module, so of rank one. The first Chern
@@ -115,4 +115,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.37, Tag 02TZ](https://stacks.math.columbia.edu/tag/02TZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

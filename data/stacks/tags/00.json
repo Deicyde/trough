@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "000C",
@@ -77,7 +77,7 @@
     {
      "name": "AlgebraicGeometry.exists_size_cutoff",
      "kind": "theorem",
-     "line": 88,
+     "line": 89,
      "private": false,
      "doc": "For every set `S₀` of schemes there is an uncountable strong limit cardinal `κ` of uncountable\ncofinality such that every member of `S₀` has size below `κ`, that is, the collection\n`Sch_κ = {S | size S < κ}` contains `S₀`. This is item (1) of Stacks 000J; the complete statement,\nwith the countable limits and colimits of items (3) and (4), is\n`AlgebraicGeometry.exists_schemeBelow_countable_limits_colimits`.",
      "statement": "theorem exists_size_cutoff (S₀ : Set Scheme.{u}) [Small.{u} S₀] :\n    ∃ κ : Cardinal.{u}, ℵ₀ < κ ∧ Cardinal.IsStrongPrelimit κ ∧ ℵ₀ < κ.ord.cof ∧\n      ∀ S ∈ S₀, S.size < κ",
@@ -91,7 +91,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_le_stacksBound",
      "kind": "theorem",
-     "line": 101,
+     "line": 102,
      "private": false,
      "doc": "If `S` is an object of `Sch_κ` and `T` is a scheme of size at most `Bound(size S)`, then `T` is\nan object of `Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_le_stacksBound {κ : Cardinal.{u}} (hκ : ℵ₀ < κ)\n    (hsl : Cardinal.IsStrongPrelimit κ) {S T : Scheme.{u}} (hS : S.size < κ)\n    (hT : T.size ≤ Cardinal.stacksBound S.size) : T.size < κ",
@@ -165,7 +165,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_pullback_lt",
      "kind": "theorem",
-     "line": 131,
+     "line": 132,
      "private": false,
      "doc": "The fibre product of two objects of `Sch_κ` over any base, which need not lie in `Sch_κ`, is\nagain an object of `Sch_κ`.",
      "statement": "theorem Scheme.size_pullback_lt {X Y S : Scheme.{u}} (f : X ⟶ S) (g : Y ⟶ S)\n    (hX : X.size < κ) (hY : Y.size < κ) : (pullback f g).size < κ",
@@ -179,7 +179,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_sigmaObj_lt",
      "kind": "theorem",
-     "line": 140,
+     "line": 141,
      "private": false,
      "doc": "If `κ` is uncountable of uncountable cofinality, the coproduct of an at most countable family\nof objects of `Sch_κ` is again an object of `Sch_κ`.",
      "statement": "theorem Scheme.size_sigmaObj_lt (hκ : ℵ₀ < κ) (hcof : ℵ₀ < κ.ord.cof) {ι : Type u}\n    (hι : #ι ≤ ℵ₀) (Y : ι → Scheme.{u}) (hY : ∀ i, (Y i).size < κ) : (∐ Y).size < κ",
@@ -193,7 +193,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_mono_quasiCompact",
      "kind": "theorem",
-     "line": 158,
+     "line": 159,
      "private": false,
      "doc": "The source of a quasi-compact monomorphism into an object of `Sch_κ` is an object of\n`Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_mono_quasiCompact {X Y : Scheme.{u}} (f : X ⟶ Y) [Mono f]\n    [QuasiCompact f] (hY : Y.size < κ) : X.size < κ",
@@ -207,7 +207,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_mono_locallyOfFinitePresentation",
      "kind": "theorem",
-     "line": 165,
+     "line": 166,
      "private": false,
      "doc": "The source of a monomorphism locally of finite presentation into an object of `Sch_κ` is an\nobject of `Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_mono_locallyOfFinitePresentation {X Y : Scheme.{u}} (f : X ⟶ Y)\n    [Mono f] [LocallyOfFinitePresentation f] (hY : Y.size < κ) : X.size < κ",
@@ -221,7 +221,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_isOpenImmersion",
      "kind": "theorem",
-     "line": 171,
+     "line": 172,
      "private": false,
      "doc": "The source of an open immersion into an object of `Sch_κ` is an object of `Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_isOpenImmersion {U S : Scheme.{u}} (f : U ⟶ S)\n    [IsOpenImmersion f] (hS : S.size < κ) : U.size < κ",
@@ -235,7 +235,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_isClosedImmersion",
      "kind": "theorem",
-     "line": 177,
+     "line": 178,
      "private": false,
      "doc": "The source of a closed immersion into an object of `Sch_κ` is an object of `Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_isClosedImmersion {T S : Scheme.{u}} (f : T ⟶ S)\n    [IsClosedImmersion f] (hS : S.size < κ) : T.size < κ",
@@ -249,7 +249,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_openCover",
      "kind": "theorem",
-     "line": 187,
+     "line": 188,
      "private": false,
      "doc": "Let `S` be a scheme with an open covering `S = ⋃ i, U i` and let `T` be an object of `Sch_κ`\nsuch that the index type and every member of the covering are bounded by `size(T) ^ ℵ₀`. Then `S`\nis an object of `Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_openCover (hκ : ℵ₀ < κ) (hsl : Cardinal.IsStrongPrelimit κ)\n    {S : Scheme.{u}} {I : Type u} [Nonempty I] (U : I → S.Opens) (hcov : ⨆ i, U i = ⊤)\n    {T : Scheme.{u}} (hT : T.size < κ) (hI : #I ≤ T.size ^ ℵ₀)\n    (hU : ∀ i, (↑(U i) : Scheme.{u}).size ≤ T.size ^ ℵ₀) : S.size < κ",
@@ -263,7 +263,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_locallyOfFiniteType_of_quasiCompact",
      "kind": "theorem",
-     "line": 212,
+     "line": 213,
      "private": false,
      "doc": "The source of a finite type morphism (locally of finite type and quasi-compact) into an object\nof `Sch_κ` is an object of `Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_locallyOfFiniteType_of_quasiCompact {T S : Scheme.{u}} (f : T ⟶ S)\n    [LocallyOfFiniteType f] [QuasiCompact f] (hS : S.size < κ) : T.size < κ",
@@ -277,7 +277,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_locallyOfFiniteType_of_affineCover",
      "kind": "theorem",
-     "line": 222,
+     "line": 223,
      "private": false,
      "doc": "Let `f : T ⟶ S` be locally of finite type with `S` an object of `Sch_κ`, and suppose `T` has an\naffine open covering indexed by a type of cardinality at most `size(S) ^ ℵ₀`. Then `T` is an object\nof `Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_locallyOfFiniteType_of_affineCover (hκ : ℵ₀ < κ)\n    (hsl : Cardinal.IsStrongPrelimit κ) {T S : Scheme.{u}} (f : T ⟶ S)\n    [LocallyOfFiniteType f] {I : Type u} [Nonempty I] (V : I → T.affineOpens)\n    (hcov : ⨆ i, (V i).1 = ⊤) (hI : #I ≤ S.size ^ ℵ₀) (hS : S.size < κ) : T.size < κ",
@@ -291,7 +291,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_lt_of_isAffine_of_mk_le",
      "kind": "theorem",
-     "line": 236,
+     "line": 237,
      "private": false,
      "doc": "An affine scheme `S` whose ring of global sections has cardinality at most\n`Bound(size T) = size(T) ^ ℵ₀` for some object `T` of `Sch_κ` is itself an object of `Sch_κ`.",
      "statement": "theorem Scheme.size_lt_of_isAffine_of_mk_le (hκ : ℵ₀ < κ)\n    (hsl : Cardinal.IsStrongPrelimit κ) {S T : Scheme.{u}} [IsAffine S] (hT : T.size < κ)\n    (h : Cardinal.mk Γ(S, ⊤) ≤ T.size ^ ℵ₀) : S.size < κ",
@@ -305,7 +305,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_Spec_lt_of_mk_le",
      "kind": "theorem",
-     "line": 249,
+     "line": 250,
      "private": false,
      "doc": "If `#R ≤ Bound(size T) = size(T) ^ ℵ₀` for some object `T` of `Sch_κ`, then `Spec R` is an\nobject of `Sch_κ`.",
      "statement": "theorem Scheme.size_Spec_lt_of_mk_le (hκ : ℵ₀ < κ) (hsl : Cardinal.IsStrongPrelimit κ)\n    (R : CommRingCat.{u}) {T : Scheme.{u}} (hT : T.size < κ)\n    (h : Cardinal.mk R ≤ T.size ^ ℵ₀) : (Spec R).size < κ",
@@ -319,7 +319,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_Spec_lt_of_finiteType",
      "kind": "theorem",
-     "line": 272,
+     "line": 273,
      "private": false,
      "doc": "For an object `Spec R` of `Sch_κ` and a finite type `R`-algebra `A`, the scheme `Spec A` is an\nobject of `Sch_κ`.",
      "statement": "theorem Scheme.size_Spec_lt_of_finiteType (hκ : ℵ₀ < κ)\n    (hsl : Cardinal.IsStrongPrelimit κ) (R A : Type u) [CommRing R] [CommRing A]\n    [Algebra R A] [Algebra.FiniteType R A] (hR : (Spec (CommRingCat.of R)).size < κ) :\n    (Spec (CommRingCat.of A)).size < κ",
@@ -333,7 +333,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_Spec_lt_of_isLocalization",
      "kind": "theorem",
-     "line": 281,
+     "line": 282,
      "private": false,
      "doc": "For an object `Spec R` of `Sch_κ` and a localization `A` of `R` at a submonoid, the scheme\n`Spec A` is an object of `Sch_κ`.",
      "statement": "theorem Scheme.size_Spec_lt_of_isLocalization (hκ : ℵ₀ < κ)\n    (hsl : Cardinal.IsStrongPrelimit κ) {R : Type u} [CommRing R] (M : Submonoid R)\n    (A : Type u) [CommRing A] [Algebra R A] [IsLocalization M A]\n    (hR : (Spec (CommRingCat.of R)).size < κ) : (Spec (CommRingCat.of A)).size < κ",
@@ -347,7 +347,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_Spec_lt_of_subring",
      "kind": "theorem",
-     "line": 290,
+     "line": 291,
      "private": false,
      "doc": "For an object `Spec R` of `Sch_κ` and a subring `R' ⊆ R`, the scheme `Spec R'` is an object of\n`Sch_κ`.",
      "statement": "theorem Scheme.size_Spec_lt_of_subring (hκ : ℵ₀ < κ) (hsl : Cardinal.IsStrongPrelimit κ)\n    {R : Type u} [CommRing R] (R' : Subring R)\n    (hR : (Spec (CommRingCat.of R)).size < κ) : (Spec (CommRingCat.of R')).size < κ",
@@ -2997,7 +2997,7 @@
     {
      "name": "CategoryTheory.Functor.isFiberedInGroupoids_iff_and_isStronglyCartesian_and_isGroupoid",
      "kind": "theorem",
-     "line": 393,
+     "line": 394,
      "private": false,
      "doc": "**Stacks 003V.** For a functor `p : 𝒳 ⥤ 𝒮`:\n\n1. `p` is fibred in groupoids if and only if `p` is a fibred category and every fibre category\n   `p.Fiber S` is a groupoid;\n2. moreover, if `p` is fibred in groupoids then every morphism `φ` of `𝒳` is strongly cartesian\n   (over `p.map φ`), and for every choice of morphisms `f^* x ⟶ x` lying over `f`, for all\n   `f : V ⟶ U` and all `x` over `U`, the data `(U ↦ 𝒳_U, f ↦ f^*, α_{g,f}, α_U)` of Stacks 02XO\n   form a pseudofunctor `𝒮ᵒᵖ ⥤ᵖ Cat` (`ChoiceOfPullbacks.pseudofunctor`) every value of which is a\n   groupoid, i.e. a pseudofunctor into the `(2, 1)`-category of groupoids.\n\nThe pseudofunctor is that of `ChoiceOfPullbacks.ofIsFiberedInGroupoids`; its value at `f` is the\npullback functor `f^*` of the given lifts (`ChoiceOfPullbacks.pseudofunctor_map`), and its unitor\nand compositor are characterised by `ChoiceOfPullbacks.pseudofunctor_mapId_hom_app`,\n`ChoiceOfPullbacks.pseudofunctor_mapComp_hom_app_fac` and\n`ChoiceOfPullbacks.pseudofunctor_mapComp_hom_app_unique`.",
      "statement": "theorem isFiberedInGroupoids_iff_and_isStronglyCartesian_and_isGroupoid (p : 𝒳 ⥤ 𝒮) :\n    (p.IsFiberedInGroupoids ↔ p.IsFibered ∧ ∀ S, IsGroupoid (p.Fiber S)) ∧\n      ∀ hp : p.IsFiberedInGroupoids,\n        (∀ {x y : 𝒳} (φ : y ⟶ x), p.IsStronglyCartesian (p.map φ) φ) ∧\n        ∀ (obj : ∀ {V U : 𝒮} (_f : V ⟶ U), p.Fiber U → p.Fiber V)\n          (map : ∀ {V U : 𝒮} (f : V ⟶ U) (x : p.Fiber U), (obj f x).1 ⟶ x.1)\n          (isHomLift : ∀ {V U : 𝒮} (f : V ⟶ U) (x : p.Fiber U), p.IsHomLift f (map f x))\n          (U : LocallyDiscrete 𝒮ᵒᵖ),\n          IsGroupoid\n            ((ChoiceOfPullbacks.ofIsFiberedInGroupoids hp obj map isHomLift).pseudofunctor.obj U)",
@@ -8497,7 +8497,7 @@
     {
      "name": "Stacks.PresheafOfModules.TensorPullback.tensorPullbackAdjunction",
      "kind": "def",
-     "line": 672,
+     "line": 663,
      "private": false,
      "doc": "**Stacks 008V.** Let `f : X ⟶ Y` be a continuous map of topological spaces and `O` a\npresheaf of rings on `X`. The functor `G ↦ O ⊗_{p, f_p f_*O} f_p G` (`tensorPullback`), the\npresheaf pullback `f_p G` of a presheaf of `f_*O`-modules tensored up to `O` sectionwise along\n`c_O : f_p f_*O ⟶ O`, is left adjoint to the pushforward `f_* : PMod(O) ⥤ PMod(f_*O)`: for a\npresheaf of `O`-modules `F` and a presheaf of `f_*O`-modules `G` the hom-set bijection\n`Mor_{PMod(O)}(O ⊗_{p, f_p f_*O} f_p G, F) ≃ Mor_{PMod(f_*O)}(G, f_*F)`\n(`tensorPullbackHomEquiv`) is natural in `G` and `F`.",
      "statement": "noncomputable def tensorPullbackAdjunction :\n    tensorPullback f O ⊣ pushforwardModules008V f (ringsX O)",
@@ -18979,7 +18979,7 @@
     {
      "name": "existsUnique_mem_minimalPrimes_tensorProduct_of_isSepClosed",
      "kind": "theorem",
-     "line": 406,
+     "line": 405,
      "private": false,
      "doc": "**Stacks Tag 00I7.** Let `k` be a separably closed field and let `R`, `S` be\n`k`-algebras. If `R` and `S` each have a unique minimal prime, then so does `R ⊗_k S`.",
      "statement": "theorem existsUnique_mem_minimalPrimes_tensorProduct_of_isSepClosed (k : Type*) [Field k]\n    [IsSepClosed k] (R S : Type*) [CommRing R] [CommRing S] [Algebra k R] [Algebra k S]\n    (hR : ∃! p : Ideal R, p ∈ minimalPrimes R) (hS : ∃! p : Ideal S, p ∈ minimalPrimes S) :\n    ∃! p : Ideal (R ⊗[k] S), p ∈ minimalPrimes (R ⊗[k] S)",
@@ -18993,7 +18993,7 @@
     {
      "name": "irreducibleSpace_primeSpectrum_tensorProduct_of_isSepClosed",
      "kind": "theorem",
-     "line": 430,
+     "line": 429,
      "private": false,
      "doc": "**Stacks Tag 00I7**, in terms of spectra. Let `k` be a separably closed field and let `R`,\n`S` be `k`-algebras whose spectra are irreducible. Then the spectrum of `R ⊗_k S` is\nirreducible.",
      "statement": "theorem irreducibleSpace_primeSpectrum_tensorProduct_of_isSepClosed (k : Type*) [Field k]\n    [IsSepClosed k] (R S : Type*) [CommRing R] [CommRing S] [Algebra k R] [Algebra k S]\n    [IrreducibleSpace (PrimeSpectrum R)] [IrreducibleSpace (PrimeSpectrum S)] :\n    IrreducibleSpace (PrimeSpectrum (R ⊗[k] S))",
@@ -25354,7 +25354,7 @@
     {
      "name": "noether_normalization_at_point_topologicalKrullDimAt",
      "kind": "theorem",
-     "line": 73,
+     "line": 74,
      "private": false,
      "doc": "**Noether normalization at a point.** Let `k` be a field, `S` a finite type `k`-algebra,\n`X = Spec(S)`, `𝔮` a prime of `S` and `x ∈ X` the corresponding point. There exist `g ∈ S`,\n`g ∉ 𝔮`, such that `dim(S_g) = dim_x(X) =: d`, and a finite injective `k`-algebra map\n`k[y_1, …, y_d] → S_g`, where `k[y_1, …, y_d] = MvPolynomial (Fin d) k` and `dim_x(X)` is the\nKrull dimension of the topological space `X` at `x` (Stacks 0055 (4)),\n`topologicalKrullDimAt (PrimeSpectrum S) x`.",
      "statement": "theorem noether_normalization_at_point_topologicalKrullDimAt\n    {k S : Type*} [Field k] [CommRing S] [Algebra k S] [Algebra.FiniteType k S]\n    (q : Ideal S) [q.IsPrime] :\n    ∃ (g : S) (_ : g ∉ q) (d : ℕ)\n      (ψ : MvPolynomial (Fin d) k →ₐ[k] Localization.Away g),\n      (d : WithBot ℕ∞) = ringKrullDim (Localization.Away g) ∧\n      (d : WithBot ℕ∞) = topologicalKrullDimAt (PrimeSpectrum S) ⟨q, ‹_›⟩ ∧\n      Function.Injective ψ ∧\n      ψ.toRingHom.Finite",
@@ -30660,7 +30660,7 @@
     {
      "name": "Algebra.forall_comp_injective_iff_subsingleton_kaehlerDifferential",
      "kind": "theorem",
-     "line": 207,
+     "line": 205,
      "private": false,
      "doc": "**Stacks 00UO.** Let `R → S` be a ring map. Then `R → S` is formally unramified in the sense\nof Definition 00UN — for every `R`-algebra `A` and every ideal `I` of `A` with `I² = 0`, the map\n`Hom_R(S, A) → Hom_R(S, A/I)` given by composition with the quotient map is injective — if and\nonly if the module of differentials `Ω_{S/R}` is zero.",
      "statement": "theorem Algebra.forall_comp_injective_iff_subsingleton_kaehlerDifferential\n    (R : Type*) (S : Type u) [CommRing R] [CommRing S] [Algebra R S] :\n    (∀ ⦃A : Type u⦄ [CommRing A] [Algebra R A] (I : Ideal A), I ^ 2 = ⊥ →\n      Function.Injective ((Ideal.Quotient.mkₐ R I).comp : (S →ₐ[R] A) → S →ₐ[R] A ⧸ I)) ↔\n      Subsingleton Ω[S⁄R]",
@@ -31080,7 +31080,7 @@
      "line": 690,
      "private": false,
      "doc": "**Stacks 00UW.** Let `R → S` be a ring map and let `q` be a prime of `S` lying over a prime\n`p` of `R`. If `R → S` is unramified at `q` — some `g ∉ q` has `R → S_g` unramified — then\n(1) `p S_q = q S_q`, the maximal ideal of the local ring `S_q`, and (2) the residue field extension\n`κ(q)/κ(p)` is finite separable.",
-     "statement": "public theorem Algebra.map_eq_maximalIdeal_and_finite_isSeparable_of_unramified_away\n    {R S : Type*} [CommRing R] [CommRing S] [Algebra R S]\n    (p : Ideal R) [p.IsPrime] (q : Ideal S) [q.IsPrime] [q.LiesOver p]\n    [Algebra (Localization.AtPrime p) (Localization.AtPrime q)]\n    [Localization.AtPrime.IsLiesOverAlgebra p q]\n    (h : ∃ g ∉ q, Algebra.Unramified R (Localization.Away g)) :\n    (p.map (algebraMap R (Localization.AtPrime q)) =\n        q.map (algebraMap S (Localization.AtPrime q)) ∧\n      q.map (algebraMap S (Localization.AtPrime q)) = maximalIdeal (Localization.AtPrime q)) ∧\n      Module.Finite p.ResidueField q.ResidueField ∧\n      Algebra.IsSeparable p.ResidueField q.ResidueField",
+     "statement": "public theorem Algebra.map_eq_maximalIdeal_and_finite_isSeparable_of_unramified_away\n    {R S : Type*} [CommRing R] [CommRing S] [Algebra R S]\n    (p : Ideal R) [p.IsPrime] (q : Ideal S) [q.IsPrime] [q.LiesOver p]\n    [Algebra (Localization.AtPrime p) (Localization.AtPrime q)]\n    [IsScalarTower R (Localization.AtPrime p) (Localization.AtPrime q)]\n    (h : ∃ g ∉ q, Algebra.Unramified R (Localization.Away g)) :\n    (p.map (algebraMap R (Localization.AtPrime q)) =\n        q.map (algebraMap S (Localization.AtPrime q)) ∧\n      q.map (algebraMap S (Localization.AtPrime q)) = maximalIdeal (Localization.AtPrime q)) ∧\n      Module.Finite p.ResidueField q.ResidueField ∧\n      Algebra.IsSeparable p.ResidueField q.ResidueField",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -35448,7 +35448,7 @@
     {
      "name": "Stacks.Presheaf.AbelianVersusSets.uShriekAb",
      "kind": "def",
-     "line": 135,
+     "line": 136,
      "private": false,
      "doc": "**Definition 4 (the functor `u_p^{ab}` on presheaves of abelian groups).**\nThe left adjoint of `u^p` on abelian presheaves, equivalently the left Kan\nextension along `uᵒᵖ`; its pointwise value is the *same* colimit diagram, now\ntaken in `Ab`.",
      "statement": "noncomputable def uShriekAb (u' : C ⥤ D) :\n    (Cᵒᵖ ⥤ AddCommGrpCat.{u}) ⥤ (Dᵒᵖ ⥤ AddCommGrpCat.{u})",
@@ -35462,7 +35462,7 @@
     {
      "name": "Stacks.Presheaf.AbelianVersusSets.uShriekAbAdjunction",
      "kind": "def",
-     "line": 147,
+     "line": 148,
      "private": false,
      "doc": "Adjointness `u_p^{ab} ⊣ u^p` on presheaves of abelian groups (Stacks\nRemark 00VF, and Stacks 00YU).",
      "statement": "noncomputable def uShriekAbAdjunction (u' : C ⥤ D) :\n    uShriekAb u' ⊣ uPullbackAb u'",

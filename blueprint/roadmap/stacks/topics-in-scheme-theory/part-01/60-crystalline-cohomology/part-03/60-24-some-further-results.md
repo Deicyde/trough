@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.24 Some further results
 
-Section 60.24 of the Stacks Project, [Tag 07MI](https://stacks.math.columbia.edu/tag/07MI). 5 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 60.24 of the Stacks Project, [Tag 07MI](https://stacks.math.columbia.edu/tag/07MI). 5 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07MJ, a remark
 
 [Tag 07MJ](https://stacks.math.columbia.edu/tag/07MJ) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.computes07MK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Formula07MKProof.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Formula07MKProof.lean#L521). The attribute's comment: “the displayed equation (07MK): (Rf\_\{cris,*}F)\_\{T'} ≅ R(T ⟶ T')\_*(Rτ\_\{U/T,*}F\_U) in D⁺(Ab(T'\_Zar)) for every object (U', T', δ') of Cris(X'/S'), naturally in F; stated for every abelian sheaf F on Cris(X/S), so in particular for the abelian sheaf underlying an O\_\{X/S}-module”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.computes07MK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Formula07MKProof.lean, line 521](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Formula07MKProof.lean#L521). The attribute's comment: “the displayed equation (07MK): (Rf\_\{cris,*}F)\_\{T'} ≅ R(T ⟶ T')\_*(Rτ\_\{U/T,*}F\_U) in D⁺(Ab(T'\_Zar)) for every object (U', T', δ') of Cris(X'/S'), naturally in F; stated for every abelian sheaf F on Cris(X/S), so in particular for the abelian sheaf underlying an O\_\{X/S}-module”.
 
 > **Stacks Project, Tag 07MJ, the displayed equation (07MK).**  For every object
 > `(U', T', δ')` of `Cris(X'/S')`, with `U = X ×_{X'} U'` and `T = S ×_{S'} T'`,
@@ -30,7 +30,7 @@ theorem computes07MK
     Computes07MK S S' fS fX hf
 ```
 
-**`Crystalline.GlobalCrystallineSituation.pullbackToClosedFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L187). The attribute's comment: “the induced morphism U ⟶ T₀, for T = S ×\_\{S'} T' and U = X ×\_\{X'} U'”.
+**`Crystalline.GlobalCrystallineSituation.pullbackToClosedFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L187). The attribute's comment: “the induced morphism U ⟶ T₀, for T = S ×\_\{S'} T' and U = X ×\_\{X'} U'”.
 
 > **Stacks Project, Tag 07MJ.**  The induced morphism `U ⟶ T₀` of the remark: the closed fibre
 > of `T = S ×_{S'} T'` is `S₀ ×_{S'₀} T'₀` by [Stacks, Tag 07ME], and `U = X ×_{X'} U'` maps to `S₀`
@@ -40,7 +40,7 @@ theorem computes07MK
 def pullbackToClosedFiber : pullbackSource S S' fX A' ⟶ closedFiber (pullbackBase S S' fS A')
 ```
 
-**`Crystalline.GlobalCrystallineSituation.pullbackSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L219). The attribute's comment: “the crystalline situation U/T attached to an object (U', T', δ') of Cris(X'/S')”.
+**`Crystalline.GlobalCrystallineSituation.pullbackSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 219](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L219). The attribute's comment: “the crystalline situation U/T attached to an object (U', T', δ') of Cris(X'/S')”.
 
 > **Stacks Project, Tag 07MJ.**  The crystalline situation `U/T` of the remark attached to an
 > object `(U', T', δ')` of `Cris(X'/S')`: the divided power base is the fibre product
@@ -52,7 +52,7 @@ def pullbackToClosedFiber : pullbackSource S S' fX A' ⟶ closedFiber (pullbackB
 def pullbackSituation : GlobalCrystallineSituation.{u}
 ```
 
-**`Crystalline.GlobalCrystallineSituation.isOpenImmersion_pullbackSituationToX`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L262). The attribute's comment: “U = X ×\_\{X'} U' is an open subscheme of X”.
+**`Crystalline.GlobalCrystallineSituation.isOpenImmersion_pullbackSituationToX`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 262](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L262). The attribute's comment: “U = X ×\_\{X'} U' is an open subscheme of X”.
 
 > **Stacks Project, Tag 07MJ.**  `U = X ×_{X'} U'` is an open subscheme of `X`, the morphism
 > `U' ⟶ X'` of an object of the small crystalline site being an open immersion.
@@ -62,7 +62,7 @@ theorem isOpenImmersion_pullbackSituationToX :
     IsOpenImmersion (pullback.fst fX A'.obj.toX)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.range_pullbackSituationToX`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L270). The attribute's comment: “U = X ×\_\{X'} U' is f⁻¹(U')”.
+**`Crystalline.GlobalCrystallineSituation.range_pullbackSituationToX`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 270](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L270). The attribute's comment: “U = X ×\_\{X'} U' is f⁻¹(U')”.
 
 > **Stacks Project, Tag 07MJ.**  The open subscheme `U = X ×_{X'} U'` of `X` is `f⁻¹(U')`: its
 > image in `X` is the preimage under `f` of the image of `U'` in `X'`.
@@ -72,7 +72,7 @@ theorem range_pullbackSituationToX :
     Set.range (pullback.fst fX A'.obj.toX) = fX ⁻¹' Set.range A'.obj.toX
 ```
 
-**`Crystalline.GlobalCrystallineSituation.pullbackCrisMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L287). The attribute's comment: “the morphism (U/T)\_cris ⟶ (X/S)\_cris”.
+**`Crystalline.GlobalCrystallineSituation.pullbackCrisMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 287](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L287). The attribute's comment: “the morphism (U/T)\_cris ⟶ (X/S)\_cris”.
 
 > The morphism of small crystalline topoi `(U/T)_cris ⟶ (X/S)_cris` induced by `U ⟶ X` over
 > `T ⟶ S`, [Stacks, Tag 07IK]. It is unconditional, left exactness of `i_!` for `X/S` being
@@ -83,7 +83,7 @@ def pullbackCrisMorphism :
     MorphismOfTopoi (smallTopos (pullbackSituation S S' fS fX hf A')) (smallTopos S)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.pullbackStructureToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L308). The attribute's comment: “the structure morphism τ\_\{U/T} : (U/T)\_cris ⟶ Sh(T\_Zar)”.
+**`Crystalline.GlobalCrystallineSituation.pullbackStructureToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L308). The attribute's comment: “the structure morphism τ\_\{U/T} : (U/T)\_cris ⟶ Sh(T\_Zar)”.
 
 > **Stacks Project, Tag 07MJ.**  The structure morphism `τ_{U/T} : (U/T)_cris ⟶ Sh(T_Zar)` of
 > the remark.
@@ -95,7 +95,7 @@ def pullbackStructureToposMorphism :
         (Type (u + 1)))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.pullbackSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L318). The attribute's comment: “the pullback F\_U of a sheaf on Cris(X/S) to Cris(U/T); the displayed equation (07MK) is Crystalline.GlobalCrystallineSituation.SmallSite.computes07MK”.
+**`Crystalline.GlobalCrystallineSituation.pullbackSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean, line 318](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/HigherDirectImage.lean#L318). The attribute's comment: “the pullback F\_U of a sheaf on Cris(X/S) to Cris(U/T); the displayed equation (07MK) is Crystalline.GlobalCrystallineSituation.SmallSite.computes07MK”.
 
 > **Stacks Project, Tag 07MJ.**  The pullback `F_U` to `Cris(U/T)` of a sheaf `F` on
 > `Cris(X/S)`.
@@ -108,7 +108,7 @@ def pullbackSheaf (F : smallTopos S) : smallTopos (pullbackSituation S S' fS fX 
 
 [Tag 07ML](https://stacks.math.columbia.edu/tag/07ML) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.exists_distinguished_triangle_derivedCrisModuleDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/MayerVietorisDirectImage.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/MayerVietorisDirectImage.lean#L298). The attribute's comment: “the distinguished triangle Rf\_\{cris,*}F → Rf'\_\{cris,*}F' ⊕ Rf''\_\{cris,*}F'' → Rf'''\_\{cris,*}F''' → Rf\_\{cris,*}F[1] in D(O\_\{X'/S'}), for an open covering X = X' ∪ X'' in the situation of 07MJ, with Rf\_\{cris,*} the right derived functor of the module-valued direct image and F', F'', F''' the restrictions of the O\_\{X/S}-module F to Cris(X'/S), Cris(X''/S), Cris(X'''/S)”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.exists_distinguished_triangle_derivedCrisModuleDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/MayerVietorisDirectImage.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/MayerVietorisDirectImage.lean#L298). The attribute's comment: “the distinguished triangle Rf\_\{cris,*}F → Rf'\_\{cris,*}F' ⊕ Rf''\_\{cris,*}F'' → Rf'''\_\{cris,*}F''' → Rf\_\{cris,*}F[1] in D(O\_\{X'/S'}), for an open covering X = X' ∪ X'' in the situation of 07MJ, with Rf\_\{cris,*} the right derived functor of the module-valued direct image and F', F'', F''' the restrictions of the O\_\{X/S}-module F to Cris(X'/S), Cris(X''/S), Cris(X'''/S)”.
 
 > **Stacks Project, Tag 07ML (Mayer--Vietoris for `Rf_{cris, *}`).**  In the situation of
 > [Stacks, Tag 07MJ] — a morphism `f : X ⟶ X'` over a morphism of divided power schemes
@@ -165,7 +165,7 @@ theorem exists_distinguished_triangle_derivedCrisModuleDirectImage (hV : V₁ �
 
 [Tag 07MS](https://stacks.math.columbia.edu/tag/07MS) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crisGlobalBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeMapGlobal07MS.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeMapGlobal07MS.lean#L72). The attribute's comment: “the base change map RΓ(Cris(X'/S'), F') ⊗^L\_\{A'} A ⟶ RΓ(Cris(X/S), F) of (07MT) in D(A), the sheaf-level base change map read on global sections, for an arbitrary g : X ⟶ X'”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crisGlobalBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeMapGlobal07MS.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeMapGlobal07MS.lean#L72). The attribute's comment: “the base change map RΓ(Cris(X'/S'), F') ⊗^L\_\{A'} A ⟶ RΓ(Cris(X/S), F) of (07MT) in D(A), the sheaf-level base change map read on global sections, for an arbitrary g : X ⟶ X'”.
 
 > **The base change map (07MT) on global sections**
 >
@@ -186,7 +186,7 @@ def crisGlobalBaseChangeMap (F' : ModuleSheaf S') :
         ((derivedModuleGlobalSections S).obj ((crisModuleInverseImage f g h).obj F'))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crisSheafBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeMapSheaf07MS.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeMapSheaf07MS.lean#L109). The attribute's comment: “the canonical base change map L(S ⟶ S')^* Rτ\_\{X'/S',*} F' ⟶ Rτ\_\{X/S,*} F in D(O\_S), F = f\_cris^* F', for an arbitrary morphism g : X ⟶ X', built as the hint prescribes”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crisSheafBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeMapSheaf07MS.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/BaseChangeMapSheaf07MS.lean#L109). The attribute's comment: “the canonical base change map L(S ⟶ S')^* Rτ\_\{X'/S',*} F' ⟶ Rτ\_\{X/S,*} F in D(O\_S), F = f\_cris^* F', for an arbitrary morphism g : X ⟶ X', built as the hint prescribes”.
 
 > **Stacks Project, Tag 07MS: the canonical base change map**
 >
@@ -205,7 +205,7 @@ def crisSheafBaseChangeMap (F' : ModuleSheaf S') :
       tauDerivedDirectImage S ((crisModuleInverseImage f g h).obj F')
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crisModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean#L357). The attribute's comment: “the pullback F = f\_cris^* F' of an O\_\{X'/S'}-module F', for an arbitrary morphism g : X ⟶ X'”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crisModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LowerShriekModules.lean#L357). The attribute's comment: “the pullback F = f\_cris^* F' of an O\_\{X'/S'}-module F', for an arbitrary morphism g : X ⟶ X'”.
 
 > **`f_cris^{-1}` on sheaves of modules, in the generality of [Stacks, Tag 07MJ]**: no
 > hypothesis whatever on `g : X ⟶ X'`, in particular not that it is an open immersion, so this
@@ -235,7 +235,7 @@ def crisModuleInverseImage (f : S.S ⟶ S'.S) (g : S.X ⟶ S'.X)
 
 [Tag 07MV](https://stacks.math.columbia.edu/tag/07MV) in the Stacks Project.
 
-**`Crystalline.exists_forall_isPAdicLevel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelBase.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelBase.lean#L72). The attribute's comment: “for e ≫ 0 the ideal (p^e) ⊆ I is preserved by γ”.
+**`Crystalline.exists_forall_isPAdicLevel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelBase.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelBase.lean#L72). The attribute's comment: “for e ≫ 0 the ideal (p^e) ⊆ I is preserved by γ”.
 
 > **Stacks Project, Tag 07MV.**  For a divided power ring `(A, I, γ)` with `A` an algebra over
 > `ℤ_(p)` and `p` nilpotent in `A/I`, every sufficiently large exponent `e` has `(p^e) ⊆ I`
@@ -248,7 +248,7 @@ theorem exists_forall_isPAdicLevel [Fact p.Prime]
     ∃ N, ∀ e, N ≤ e → IsPAdicLevel I γ p e
 ```
 
-**`Crystalline.pAdicLevelRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelBase.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelBase.lean#L138). The attribute's comment: “the divided power ring A/p^eA whose spectrum is the base S\_e = Spec(A/p^eA)”.
+**`Crystalline.pAdicLevelRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelBase.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelBase.lean#L138). The attribute's comment: “the divided power ring A/p^eA whose spectrum is the base S\_e = Spec(A/p^eA)”.
 
 > **Stacks Project, Tag 07MV.**  The divided power ring `(A/p^eA, I/p^eA, γ̄)` at a finite
 > divided power level `e`, of which the base `S_e = Spec(A/p^eA)` of the remark is the spectrum.
@@ -257,7 +257,7 @@ theorem exists_forall_isPAdicLevel [Fact p.Prime]
 noncomputable def pAdicLevelRing {e : ℕ} (he : IsPAdicLevel I γ p e) : DividedPowerRing.{u}
 ```
 
-**`Crystalline.preservesInjectiveObjects_pAdicLevelSheafRestriction`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean#L159). The attribute's comment: “restriction of abelian sheaves to a finite level carries injectives to injectives, the first half of the remark's hint”.
+**`Crystalline.preservesInjectiveObjects_pAdicLevelSheafRestriction`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean#L159). The attribute's comment: “restriction of abelian sheaves to a finite level carries injectives to injectives, the first half of the remark's hint”.
 
 > **Stacks Project, Tag 07MV.**  Restriction of abelian sheaves from `Cris(X/S)` to a finite
 > divided power level `Cris(X/S_e)` carries injective abelian sheaves to injective abelian sheaves.
@@ -278,7 +278,7 @@ instance preservesInjectiveObjects_pAdicLevelSheafRestriction {e : ℕ}
     (pAdicLevelSheafRestriction I γ p he X toCF hX).PreservesInjectiveObjects
 ```
 
-**`Crystalline.preservesInjectiveObjects_pAdicLevelStepSheafRestriction`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean#L176). The attribute's comment: “restriction of abelian sheaves between two finite levels carries injectives to injectives”.
+**`Crystalline.preservesInjectiveObjects_pAdicLevelStepSheafRestriction`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean#L176). The attribute's comment: “restriction of abelian sheaves between two finite levels carries injectives to injectives”.
 
 > **Stacks Project, Tag 07MV.**  Restriction of abelian sheaves between two finite divided
 > power levels `Cris(X/S_e) ⟶ Cris(X/S_m)`, for `m ≤ e`, carries injective abelian sheaves to
@@ -294,7 +294,7 @@ instance preservesInjectiveObjects_pAdicLevelStepSheafRestriction {m e : ℕ}
     (pAdicLevelStepSheafRestriction I γ p hm he hme X toCF hX).PreservesInjectiveObjects
 ```
 
-**`Crystalline.rightAcyclic_globalSections_pAdicLevelSheafRestriction_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean#L234). The attribute's comment: “restriction to a finite level carries an injective abelian sheaf to one with acyclic global sections, the acyclicity hypothesis of (015M); NOT the tower and NOT the remark's conclusion”.
+**`Crystalline.rightAcyclic_globalSections_pAdicLevelSheafRestriction_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean#L234). The attribute's comment: “restriction to a finite level carries an injective abelian sheaf to one with acyclic global sections, the acyclicity hypothesis of (015M); NOT the tower and NOT the remark's conclusion”.
 
 > **Stacks Project, Tag 07MV.**  Restriction to a finite divided power level carries an
 > injective abelian sheaf to one with **acyclic global sections**: this is
@@ -319,7 +319,7 @@ theorem rightAcyclic_globalSections_pAdicLevelSheafRestriction_of_injective {e :
         ((pAdicLevelSheafRestriction I γ p he X toCF hX).obj F)
 ```
 
-**`Crystalline.rightAcyclic_globalSections_pAdicLevelStepSheafRestriction_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean#L253). The attribute's comment: “restriction between two finite levels carries an injective abelian sheaf to one with acyclic global sections, the acyclicity hypothesis of (015M) for the tower's arrows”.
+**`Crystalline.rightAcyclic_globalSections_pAdicLevelStepSheafRestriction_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean, line 253](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelRestrictionInjectives.lean#L253). The attribute's comment: “restriction between two finite levels carries an injective abelian sheaf to one with acyclic global sections, the acyclicity hypothesis of (015M) for the tower's arrows”.
 
 > **Stacks Project, Tag 07MV.**  The transition-functor form of
 > `Crystalline.rightAcyclic_globalSections_pAdicLevelSheafRestriction_of_injective`: restriction
@@ -339,7 +339,7 @@ theorem rightAcyclic_globalSections_pAdicLevelStepSheafRestriction_of_injective 
         ((pAdicLevelStepSheafRestriction I γ p hm he hme X toCF hX).obj F)
 ```
 
-**`Crystalline.pAdicLevelScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L174). The attribute's comment: “S\_e = Spec(A/p^eA) is a divided power base, for e a finite divided power level”.
+**`Crystalline.pAdicLevelScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L174). The attribute's comment: “S\_e = Spec(A/p^eA) is a divided power base, for e a finite divided power level”.
 
 > The divided power base `S_e = Spec(A/p^eA)` at a finite divided power level `e`: the spectrum
 > of the divided power ring `Crystalline.pAdicLevelRing`.
@@ -348,7 +348,7 @@ theorem rightAcyclic_globalSections_pAdicLevelStepSheafRestriction_of_injective 
 def pAdicLevelScheme {e : ℕ} (he : IsPAdicLevel I γ p e) : DividedPowerScheme.{u}
 ```
 
-**`Crystalline.pAdicLevelClosedFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L243). The attribute's comment: “S\_e has the same closed fibre S₀ = Spec(A/I) as S, since (p^e) ⊆ I”.
+**`Crystalline.pAdicLevelClosedFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L243). The attribute's comment: “S\_e has the same closed fibre S₀ = Spec(A/I) as S, since (p^e) ⊆ I”.
 
 > The closed fibre of `S_e = Spec(A/p^eA)` is the closed fibre `S_0 = Spec(A/I)` of `S`. Both
 > are the spectrum of a double quotient of `A`, and the two double quotients agree because
@@ -359,7 +359,7 @@ def pAdicLevelClosedFiberIso {e : ℕ} (he : IsPAdicLevel I γ p e) :
     closedFiber (pAdicLevelScheme I γ p he) ≅ closedFiber (specBase I γ)
 ```
 
-**`Crystalline.pAdicLevelSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L323). The attribute's comment: “X/S\_e is a global crystalline situation on the same X, so Cris(X/S\_e) is defined”.
+**`Crystalline.pAdicLevelSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L323). The attribute's comment: “X/S\_e is a global crystalline situation on the same X, so Cris(X/S\_e) is defined”.
 
 > The global crystalline situation `X/S_e` at a finite divided power level `e`, on the *same*
 > scheme `X`: the structure morphism `X ⟶ S_0` of the situation `X/S` is read in the closed fibre
@@ -373,7 +373,7 @@ def pAdicLevelSituation {e : ℕ} (he : IsPAdicLevel I γ p e) (X : Scheme.{u})
     GlobalCrystallineSituation.{u}
 ```
 
-**`Crystalline.pAdicLevelExtend`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L390). The attribute's comment: “the functor Cris(X/S\_e) ⥤ Cris(X/S)”.
+**`Crystalline.pAdicLevelExtend`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 390](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L390). The attribute's comment: “the functor Cris(X/S\_e) ⥤ Cris(X/S)”.
 
 > The functor `Cris(X/S_e) ⥤ Cris(X/S)`: change of divided power base along the projection
 > `S_e ⟶ S` and the identity of `X`. An object of `Cris(X/S_e)` is a divided power thickening of `X`
@@ -388,7 +388,7 @@ def pAdicLevelExtend {e : ℕ} (he : IsPAdicLevel I γ p e) (X : Scheme.{u})
       GlobalCrystallineSituation.CrystallineThickening (specSituation I γ p X toCF hX)
 ```
 
-**`Crystalline.pAdicLevelExtendFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L403). The attribute's comment: “Cris(X/S\_e) is a full subcategory of Cris(X/S)”.
+**`Crystalline.pAdicLevelExtendFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 403](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L403). The attribute's comment: “Cris(X/S\_e) is a full subcategory of Cris(X/S)”.
 
 > `Cris(X/S_e)` is a full subcategory of `Cris(X/S)`: change of divided power base along
 > `S_e ⟶ S` and `𝟙 X` is fully faithful, the projection `S_e ⟶ S` being a closed immersion and
@@ -401,7 +401,7 @@ def pAdicLevelExtendFullyFaithful {e : ℕ} (he : IsPAdicLevel I γ p e) (X : Sc
     (pAdicLevelExtend I γ p he X toCF hX).FullyFaithful
 ```
 
-**`Crystalline.pAdicLevelModuleRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L446). The attribute's comment: “F\_e, the restriction of an 𝒪\_\{X/S}-module F to Cris(X/S\_e), as a presheaf of modules”.
+**`Crystalline.pAdicLevelModuleRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean, line 446](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelSite.lean#L446). The attribute's comment: “F\_e, the restriction of an 𝒪\_\{X/S}-module F to Cris(X/S\_e), as a presheaf of modules”.
 
 > The restriction `F_e` of a presheaf of `𝒪_{X/S}`-modules on `Cris(X/S)` to a presheaf of
 > `𝒪_{X/S_e}`-modules on `Cris(X/S_e)`. No comparison of structure presheaves is needed: the
@@ -419,7 +419,7 @@ def pAdicLevelModuleRestriction {e : ℕ} (he : IsPAdicLevel I γ p e) (X : Sche
         (pAdicLevelSituation I γ p he X toCF hX))
 ```
 
-**`Crystalline.pAdicLevelStepExtend`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L419). The attribute's comment: “the transition functor Cris(X/S\_m) ⥤ Cris(X/S\_e) of the tower of finite levels”.
+**`Crystalline.pAdicLevelStepExtend`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 419](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L419). The attribute's comment: “the transition functor Cris(X/S\_m) ⥤ Cris(X/S\_e) of the tower of finite levels”.
 
 > **Stacks Project, Tag 07MV.**  The transition functor `Cris(X/S_m) ⥤ Cris(X/S_e)` of the tower
 > of finite divided power levels, for `m ≤ e`: change of divided power base along the closed
@@ -437,7 +437,7 @@ def pAdicLevelStepExtend {m e : ℕ} (hm : IsPAdicLevel I γ p m) (he : IsPAdicL
         (pAdicLevelSituation I γ p he X toCF hX)
 ```
 
-**`Crystalline.pAdicLevelStepExtendFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L433). The attribute's comment: “Cris(X/S\_m) is a full subcategory of Cris(X/S\_e) for m ≤ e”.
+**`Crystalline.pAdicLevelStepExtendFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 433](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L433). The attribute's comment: “Cris(X/S\_m) is a full subcategory of Cris(X/S\_e) for m ≤ e”.
 
 > **Stacks Project, Tag 07MV.**  `Cris(X/S_m)` is a full subcategory of `Cris(X/S_e)` for
 > `m ≤ e`: the transition `S_m ⟶ S_e` is a closed immersion, hence a monomorphism.
@@ -450,7 +450,7 @@ def pAdicLevelStepExtendFullyFaithful {m e : ℕ} (hm : IsPAdicLevel I γ p m)
     (pAdicLevelStepExtend I γ p hm he hme X toCF hX).FullyFaithful
 ```
 
-**`Crystalline.pAdicLevelSmallModuleRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L504). The attribute's comment: “F\_e as a sheaf of 𝒪\_\{X/S\_e}-modules on the small site Cris(X/S\_e), by restriction”.
+**`Crystalline.pAdicLevelSmallModuleRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 504](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L504). The attribute's comment: “F\_e as a sheaf of 𝒪\_\{X/S\_e}-modules on the small site Cris(X/S\_e), by restriction”.
 
 > **Stacks Project, Tag 07MV.**  `F_e`, the restriction of a sheaf of `𝒪_{X/S}`-modules on the
 > small crystalline site `Cris(X/S)` to a sheaf of `𝒪_{X/S_e}`-modules on `Cris(X/S_e)`.
@@ -469,7 +469,7 @@ def pAdicLevelSmallModuleRestriction {e : ℕ} (he : IsPAdicLevel I γ p e) (X :
         (pAdicLevelSituation I γ p he X toCF hX))
 ```
 
-**`Crystalline.pAdicLevelDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L539). The attribute's comment: “the individual terms RΓ(Cris(X/S\_e), F\_e) of the remark's R lim, for F an abelian sheaf; NOT the tower (its arrows are missing) and NOT the conclusion”.
+**`Crystalline.pAdicLevelDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean, line 539](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTower.lean#L539). The attribute's comment: “the individual terms RΓ(Cris(X/S\_e), F\_e) of the remark's R lim, for F an abelian sheaf; NOT the tower (its arrows are missing) and NOT the conclusion”.
 
 > **Stacks Project, Tag 07MV.**  `RΓ(Cris(X/S_e), F_e)`, the term at level `e` of the tower
 > whose derived inverse limit the remark takes: derived global sections on the small crystalline
@@ -490,7 +490,7 @@ def pAdicLevelDerivedGlobalSections {e : ℕ} (he : IsPAdicLevel I γ p e) (X : 
     DerivedCategory.Plus AddCommGrpCat.{u + 1}
 ```
 
-**`Crystalline.pAdicLevelStepDerivedGlobalSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerArrows.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerArrows.lean#L296). The attribute's comment: “the arrow RΓ(Cris(X/S\_e), F\_e) ⟶ RΓ(Cris(X/S\_m), F\_m) of the remark's tower, for m ≤ e”.
+**`Crystalline.pAdicLevelStepDerivedGlobalSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerArrows.lean, line 296](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerArrows.lean#L296). The attribute's comment: “the arrow RΓ(Cris(X/S\_e), F\_e) ⟶ RΓ(Cris(X/S\_m), F\_m) of the remark's tower, for m ≤ e”.
 
 > **Stacks Project, Tag 07MV.**  **The arrow
 > `RΓ(Cris(X/S_e), F_e) ⟶ RΓ(Cris(X/S_m), F_m)` of the tower of finite divided power levels**, for
@@ -521,7 +521,7 @@ def pAdicLevelStepDerivedGlobalSectionsMap {m e : ℕ} (hm : IsPAdicLevel I γ p
       pAdicLevelDerivedGlobalSections I γ p hm X toCF hX F
 ```
 
-**`Crystalline.pAdicLevelDerivedGlobalSectionsTower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerArrows.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerArrows.lean#L337). The attribute's comment: “the tower e ↦ RΓ(Cris(X/S\_e), F\_e) of the remark, as a functor ℕᵒᵖ ⥤ D⁺(Ab); NOT the remark's conclusion, that RΓ(Cris(X/S), F) is its derived limit”.
+**`Crystalline.pAdicLevelDerivedGlobalSectionsTower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerArrows.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerArrows.lean#L337). The attribute's comment: “the tower e ↦ RΓ(Cris(X/S\_e), F\_e) of the remark, as a functor ℕᵒᵖ ⥤ D⁺(Ab); NOT the remark's conclusion, that RΓ(Cris(X/S), F) is its derived limit”.
 
 > **Stacks Project, Tag 07MV.**  **The tower `n ↦ RΓ(Cris(X/S_{N+n}), F_{N+n})` of the remark,
 > as a functor `ℕᵒᵖ ⥤ D⁺(Ab)`.**
@@ -546,7 +546,7 @@ def pAdicLevelDerivedGlobalSectionsTower {N : ℕ}
     ℕᵒᵖ ⥤ DerivedCategory.Plus AddCommGrpCat.{u + 1}
 ```
 
-**`Crystalline.pAdicLevelDerivedGlobalSectionsConeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerCone.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerCone.lean#L197). The attribute's comment: “the arrow RΓ(Cris(X/S), F) ⟶ RΓ(Cris(X/S\_e), F\_e) comparing derived global sections with the remark's tower; NOT the remark's conclusion, that RΓ(Cris(X/S), F) is the derived limit”.
+**`Crystalline.pAdicLevelDerivedGlobalSectionsConeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerCone.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/FiniteLevelTowerCone.lean#L197). The attribute's comment: “the arrow RΓ(Cris(X/S), F) ⟶ RΓ(Cris(X/S\_e), F\_e) comparing derived global sections with the remark's tower; NOT the remark's conclusion, that RΓ(Cris(X/S), F) is the derived limit”.
 
 > **Stacks Project, Tag 07MV.**  **The arrow `RΓ(Cris(X/S), F) ⟶ RΓ(Cris(X/S_e), F_e)`** from
 > derived global sections on `Cris(X/S)` to the term of the remark's tower at the finite divided
@@ -584,7 +584,7 @@ def pAdicLevelDerivedGlobalSectionsConeMap {e : ℕ} (he : IsPAdicLevel I γ p e
 
 [Tag 07MW](https://stacks.math.columbia.edu/tag/07MW) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.Situation07MW.moduleWithConnection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothLiftingConnection.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothLiftingConnection.lean#L128). The attribute's comment: “(2): the restriction F\_Y of a crystal F in quasi-coherent O\_\{X/S}-modules comes endowed with a canonical integrable connection F\_Y ⟶ F\_Y ⊗ Ω\_\{Y/S}, the restriction of the 07J6 connection, with its twisted de Rham complex”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.Situation07MW.moduleWithConnection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothLiftingConnection.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothLiftingConnection.lean#L128). The attribute's comment: “(2): the restriction F\_Y of a crystal F in quasi-coherent O\_\{X/S}-modules comes endowed with a canonical integrable connection F\_Y ⟶ F\_Y ⊗ Ω\_\{Y/S}, the restriction of the 07J6 connection, with its twisted de Rham complex”.
 
 > **[Stacks, Tag 07MW] part (2): the restriction `F_Y` of a crystal in quasi-coherent
 > `𝒪_{X/S}`-modules to the smooth lifting `(X, Y, γ)` carries a canonical integrable connection.**
@@ -598,7 +598,7 @@ def pAdicLevelDerivedGlobalSectionsConeMap {e : ℕ} (he : IsPAdicLevel I γ p e
 def moduleWithConnection : ModuleWithConnection T.toBase
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.Situation07MW.deRhamComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothLiftingDeRhamCohomology07MW.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothLiftingDeRhamCohomology07MW.lean#L76). The attribute's comment: “(3): RΓ(Cris(X/S), F) = RΓ(Y, F\_Y ⊗ Ω^•\_\{Y/S}) in D(A), for every crystal F in quasi-coherent O\_\{X/S}-modules, F\_Y with the canonical integrable connection of (2)”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.Situation07MW.deRhamComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothLiftingDeRhamCohomology07MW.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothLiftingDeRhamCohomology07MW.lean#L76). The attribute's comment: “(3): RΓ(Cris(X/S), F) = RΓ(Y, F\_Y ⊗ Ω^•\_\{Y/S}) in D(A), for every crystal F in quasi-coherent O\_\{X/S}-modules, F\_Y with the canonical integrable connection of (2)”.
 
 > **Stacks Project, Tag 07MW, part (3).**  Let `p` be a prime, `(A, I, γ)` a divided power
 > ring with `p` nilpotent in `A`, `S = Spec(A)`, `Y` a smooth `S`-scheme and `X = Y ×_S S₀`, and let
@@ -617,7 +617,7 @@ theorem deRhamComparison {F : SheafOfModules.{u} (structureSheaf S)}
       derivedBaseGlobalSections T.toBase (T.moduleWithConnection hF).complex)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smoothLiftingCrystallineThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmoothLifting.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmoothLifting.lean#L337). The attribute's comment: “(1): γ extends to a divided power structure on the ideal of X in Y, and (X, Y, γ) is an object of Cris(X/S)”.
+**`Crystalline.GlobalCrystallineSituation.smoothLiftingCrystallineThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmoothLifting.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmoothLifting.lean#L337). The attribute's comment: “(1): γ extends to a divided power structure on the ideal of X in Y, and (X, Y, γ) is an object of Cris(X/S)”.
 
 > The object `(X, Y, γ)` of the small crystalline site `Cris(X/S)` given by a smooth lifting
 > `Y` of the closed fibre: the object `smoothLiftingThickening` of `CRIS(X/S)`, whose map to `X` is
@@ -634,4 +634,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.24, Tag 07MI](https://stacks.math.columbia.edu/tag/07MI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

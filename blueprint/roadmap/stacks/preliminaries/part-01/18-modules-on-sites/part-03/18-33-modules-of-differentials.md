@@ -8,7 +8,7 @@ proof: formalized
 
 # 18.33 Modules of differentials
 
-Section 18.33 of the Stacks Project, [Tag 04BJ](https://stacks.math.columbia.edu/tag/04BJ). 12 tags here are carried by 39 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 18.33 of the Stacks Project, [Tag 04BJ](https://stacks.math.columbia.edu/tag/04BJ). 12 tags here are carried by 39 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04BK, a definition
 
@@ -16,13 +16,13 @@ Section 18.33 of the Stacks Project, [Tag 04BJ](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`PresheafOfModulesOfCommRing.Derivation'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModulesOfCommRing.Derivation'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch18.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch18.lean#L72) (StacksFrontier): “for the underlying presheaves of rings and of modules”. References: EGA IV (16.5.1), “more general”.
+- [`PresheafOfModulesOfCommRing.Derivation'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModulesOfCommRing.Derivation'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch18.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch18.lean#L72) (StacksFrontier): “for the underlying presheaves of rings and of modules”. References: EGA IV (16.5.1), “more general”.
 
 ## Tag 04BL, a lemma
 
 [Tag 04BL](https://stacks.math.columbia.edu/tag/04BL) in the Stacks Project.
 
-**`Stacks.Sheaves.Differentials.universalDerivation_isUniversal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsRepresentable.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsRepresentable.lean#L115).
+**`Stacks.Sheaves.Differentials.universalDerivation_isUniversal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsRepresentable.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsRepresentable.lean#L115).
 
 > Every relative derivation with values in a sheaf of modules factors through the universal
 > derivation by a unique morphism of sheaves of modules.
@@ -35,7 +35,7 @@ theorem universalDerivation_isUniversal
       (universalDerivation O₁ O₂ φ).postcomp f.val = D
 ```
 
-**`AlgebraicGeometry.SheafOfModules.existsUnique_descDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L138). The attribute's comment: “unique-factorization form, on an arbitrary site”.
+**`AlgebraicGeometry.SheafOfModules.existsUnique_descDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L138). The attribute's comment: “unique-factorization form, on an arbitrary site”.
 
 > **Stacks 04BL**, in unique-factorization form: every relative derivation with values in a
 > sheaf of modules factors through the universal derivation by a unique morphism of sheaves of
@@ -49,7 +49,7 @@ theorem existsUnique_descDerivation
       (universalDerivationOfSite.{v, u, w, m} O₁ O₂ φ).postcomp f.val = D
 ```
 
-**`AlgebraicGeometry.SheafOfModules.derivationsFunctor_isCorepresentable`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Differentials.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Differentials.lean#L366).
+**`AlgebraicGeometry.SheafOfModules.derivationsFunctor_isCorepresentable`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Differentials.lean, line 366](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/Differentials.lean#L366).
 
 > For a homomorphism of sheaves of commutative rings, the functor
 > sending a sheaf of modules to the type of relative derivations is represented by a sheaf
@@ -67,7 +67,7 @@ instance derivationsFunctor_isCorepresentable {C : Type u₁} [Category.{v₁} C
 
 [Tag 04BM](https://stacks.math.columbia.edu/tag/04BM) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.moduleDifferentialsRelationMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean#L160).
+**`AlgebraicGeometry.SheafOfModules.moduleDifferentialsRelationMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean#L160).
 
 > The map
 > `O₂[O₂ × O₂] ⊕ O₂[O₂ × O₂] ⊕ O₂[O₁] ⟶ O₂[O₂]`
@@ -89,7 +89,7 @@ noncomputable def moduleDifferentialsRelationMap
       (freeObj (R := O₂.obj) (ringElements O₂))
 ```
 
-**`AlgebraicGeometry.SheafOfModules.moduleDifferentialsRelationMap_additive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean#L205). The attribute's comment: “additive summand”.
+**`AlgebraicGeometry.SheafOfModules.moduleDifferentialsRelationMap_additive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean#L205). The attribute's comment: “additive summand”.
 
 > The additive summand sends `[(a,b)]` to `[a+b]-[a]-[b]`.
 
@@ -107,7 +107,7 @@ theorem moduleDifferentialsRelationMap_additive
         sheafifiedFreeGenerator O₂ (ringElements O₂) X b
 ```
 
-**`AlgebraicGeometry.SheafOfModules.moduleDifferentialsRelationMap_leibniz`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean#L224). The attribute's comment: “Leibniz summand”.
+**`AlgebraicGeometry.SheafOfModules.moduleDifferentialsRelationMap_leibniz`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean, line 224](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean#L224). The attribute's comment: “Leibniz summand”.
 
 > The multiplicative summand sends `[(f,g)]` to `[fg]-g[f]-f[g]`.
 
@@ -125,7 +125,7 @@ theorem moduleDifferentialsRelationMap_leibniz
         f • sheafifiedFreeGenerator O₂ (ringElements O₂) X g
 ```
 
-**`AlgebraicGeometry.SheafOfModules.moduleDifferentialsRelationMap_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean#L243). The attribute's comment: “base-ring summand”.
+**`AlgebraicGeometry.SheafOfModules.moduleDifferentialsRelationMap_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/RecoveryAux/ModuleDifferentialsRelationMap.lean#L243). The attribute's comment: “base-ring summand”.
 
 > The base-ring summand sends `[h]` to `[φ(h)]`.
 
@@ -145,7 +145,7 @@ theorem moduleDifferentialsRelationMap_base
 
 [Tag 04BN](https://stacks.math.columbia.edu/tag/04BN) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.moduleOfDifferentialsOfSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L121). The attribute's comment: “the module of differentials `Ω_{O₂/O₁}`”.
+**`AlgebraicGeometry.SheafOfModules.moduleOfDifferentialsOfSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L121). The attribute's comment: “the module of differentials `Ω_{O₂/O₁}`”.
 
 > The sheaf of relative differentials `Ω_{O₂/O₁}`: the sheaf of modules corepresenting the
 > functor of relative derivations.
@@ -155,7 +155,7 @@ noncomputable abbrev moduleOfDifferentialsOfSite :
     _root_.SheafOfModules.{max u v w m} (Stacks.SheafOfModules.Tensor.ringSheaf O₂)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.universalDerivationOfSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L129). The attribute's comment: “the module of differentials `Ω_{O₂/O₁}`”. References: EGA IV (16.3.6), “dt”; EGA IV (16.5.3), “(i)”.
+**`AlgebraicGeometry.SheafOfModules.universalDerivationOfSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L129). The attribute's comment: “the module of differentials `Ω_{O₂/O₁}`”. References: EGA IV (16.3.6), “dt”; EGA IV (16.5.3), “(i)”.
 
 > The universal relative derivation with values in `Ω_{O₂/O₁}`.
 
@@ -169,7 +169,7 @@ noncomputable def universalDerivationOfSite :
 
 [Tag 08TP](https://stacks.math.columbia.edu/tag/08TP) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.differentialsSheafificationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsSheafification.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsSheafification.lean#L396). The attribute's comment: “isomorphism”.
+**`AlgebraicGeometry.SheafOfModules.differentialsSheafificationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsSheafification.lean, line 396](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsSheafification.lean#L396). The attribute's comment: “isomorphism”.
 
 > **Stacks Project, Tag 08TP.** Relative differentials commute with passing from presheaves
 > of commutative rings to their associated sheaves: the sheaf of differentials of `O₂^#` over
@@ -183,7 +183,7 @@ noncomputable def differentialsSheafificationIso (O₁ O₂ : Cᵒᵖ ⥤ CommRi
       sheafifiedObjectwiseDifferentials.{v, v₁} J f
 ```
 
-**`AlgebraicGeometry.SheafOfModules.differentialsSheafificationIso_inv_unit_d`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsSheafification.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsSheafification.lean#L409). The attribute's comment: “canonicality”.
+**`AlgebraicGeometry.SheafOfModules.differentialsSheafificationIso_inv_unit_d`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsSheafification.lean, line 409](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsSheafification.lean#L409). The attribute's comment: “canonicality”.
 
 > **Stacks Project, Tag 08TP**, the canonicality of the comparison: the inverse of
 > `differentialsSheafificationIso` carries the image of the objectwise universal differential
@@ -199,7 +199,7 @@ lemma differentialsSheafificationIso_inv_unit_d (O₁ O₂ : Cᵒᵖ ⥤ CommRin
           ((toAssociatedRingSheaf J O₂).app X b)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.isIso_objectwiseDifferentialsSheafificationHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean#L134). The attribute's comment: “for sheaves of rings, as an isomorphism out of the sheafification”.
+**`AlgebraicGeometry.SheafOfModules.isIso_objectwiseDifferentialsSheafificationHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean#L134). The attribute's comment: “for sheaves of rings, as an isomorphism out of the sheafification”.
 
 > The sheafification of the objectwise Kähler differentials is the sheaf of relative
 > differentials: `objectwiseDifferentialsSheafificationHom` is an isomorphism.
@@ -209,7 +209,7 @@ theorem isIso_objectwiseDifferentialsSheafificationHom :
     IsIso (objectwiseDifferentialsSheafificationHom.{v} O₁ O₂ φ)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.isLocallyInjective_objectwiseDifferentialsToSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean#L193). The attribute's comment: “for sheaves of rings, local injectivity”.
+**`AlgebraicGeometry.SheafOfModules.isLocallyInjective_objectwiseDifferentialsToSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean, line 193](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean#L193). The attribute's comment: “for sheaves of rings, local injectivity”.
 
 > **Stacks 08TP**, injectivity half: the comparison from the objectwise Kähler differentials
 > to the sheaf of relative differentials is locally injective.
@@ -219,7 +219,7 @@ theorem isLocallyInjective_objectwiseDifferentialsToSheaf :
     PresheafOfModules.IsLocallyInjective J (objectwiseDifferentialsToSheaf.{v} O₁ O₂ φ)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.isLocallySurjective_objectwiseDifferentialsToSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean#L207). The attribute's comment: “for sheaves of rings, local surjectivity”.
+**`AlgebraicGeometry.SheafOfModules.isLocallySurjective_objectwiseDifferentialsToSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/ObjectwiseDifferentialsLocallyBijective.lean#L207). The attribute's comment: “for sheaves of rings, local surjectivity”.
 
 > **Stacks 08TP**, surjectivity half: the comparison from the objectwise Kähler differentials
 > to the sheaf of relative differentials is locally surjective.
@@ -233,7 +233,7 @@ theorem isLocallySurjective_objectwiseDifferentialsToSheaf :
 
 [Tag 08TQ](https://stacks.math.columbia.edu/tag/08TQ) in the Stacks Project.
 
-**`Stacks.Sheaves.Differentials.pullbackDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean#L590). The attribute's comment: “the canonical identification, with the morphism of topoi presented by a continuous functor of the underlying sites, both sites small in the single universe of the sections of the sheaves of rings and of the modules, and the inverse image of sheaves of commutative rings assumed to exist”.
+**`Stacks.Sheaves.Differentials.pullbackDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean, line 590](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean#L590). The attribute's comment: “the canonical identification, with the morphism of topoi presented by a continuous functor of the underlying sites, both sites small in the single universe of the sections of the sheaves of rings and of the modules, and the inverse image of sheaves of commutative rings assumed to exist”.
 
 > **Stacks Project, Tag 08TQ.** For a morphism of topoi presented by a continuous functor of
 > the underlying sites, the inverse image of the sheaf of relative differentials is canonically
@@ -246,7 +246,7 @@ noncomputable def pullbackDifferentialsIso :
         ((F.sheafPullback CommRingCat.{u} J K).map φ)
 ```
 
-**`Stacks.Sheaves.Differentials.pullbackDifferentialsIso_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean#L624). The attribute's comment: “compatibility with universal derivations”.
+**`Stacks.Sheaves.Differentials.pullbackDifferentialsIso_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean, line 624](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean#L624). The attribute's comment: “compatibility with universal derivations”.
 
 > **Stacks Project, Tag 08TQ.** The canonical identification carries the inverse image of the
 > universal derivation to the universal derivation.
@@ -260,7 +260,7 @@ theorem pullbackDifferentialsIso_compatible :
         ((F.sheafPullback CommRingCat.{u} J K).map φ)
 ```
 
-**`Stacks.Sheaves.Differentials.pullbackDifferentialsIso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean#L635). The attribute's comment: “canonicity”.
+**`Stacks.Sheaves.Differentials.pullbackDifferentialsIso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean, line 635](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsInverseImage.lean#L635). The attribute's comment: “canonicity”.
 
 > **Stacks Project, Tag 08TQ.** Compatibility with universal derivations characterises the
 > canonical identification.
@@ -277,7 +277,7 @@ theorem pullbackDifferentialsIso_unique
     e = pullbackDifferentialsIso J K F φ
 ```
 
-**`Stacks.Sheaves.RingedToposModules.inverseImageDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/InverseImageDerivations.lean, line 964](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/InverseImageDerivations.lean#L964). The attribute's comment: “for an arbitrary morphism of topoi, with the object, arrow and section universes of the two sites independent”.
+**`Stacks.Sheaves.RingedToposModules.inverseImageDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/InverseImageDerivations.lean, line 964](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/SheavesOfRings/InverseImageDerivations.lean#L964). The attribute's comment: “for an arbitrary morphism of topoi, with the object, arrow and section universes of the two sites independent”.
 
 > **Stacks 08TQ.** The inverse image of the sheaf of relative differentials of a homomorphism
 > of sheaves of commutative rings along a morphism of topoi is the sheaf of relative differentials
@@ -290,7 +290,7 @@ noncomputable def inverseImageDifferentialsIso :
         (f.inverseImageRing.obj A) (f.inverseImageRing.obj P) (f.inverseImageRing.map a)
 ```
 
-**`Stacks.Sheaves.RingedToposModules.homEquiv_inverseImageDifferentialsIso_hom`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/InverseImageDerivations.lean, line 976](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/InverseImageDerivations.lean#L976). The attribute's comment: “compatibility with the universal derivations”.
+**`Stacks.Sheaves.RingedToposModules.homEquiv_inverseImageDifferentialsIso_hom`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/InverseImageDerivations.lean, line 976](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/SheavesOfRings/InverseImageDerivations.lean#L976). The attribute's comment: “compatibility with the universal derivations”.
 
 > **Stacks 08TQ.** The identification is the one carrying the inverse image of the universal
 > derivation of `Ω_{P/A}` to the universal derivation of `Ω_{f⁻¹P/f⁻¹A}`: transposing it along
@@ -308,7 +308,7 @@ lemma homEquiv_inverseImageDifferentialsIso_hom :
 
 [Tag 04BO](https://stacks.math.columbia.edu/tag/04BO) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.overDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/Differentials.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/Differentials.lean#L340). The attribute's comment: “the canonical isomorphism, with the object, arrow and section universes of the site independent”.
+**`AlgebraicGeometry.SheafOfModules.overDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/Differentials.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/Localization/Differentials.lean#L340). The attribute's comment: “the canonical isomorphism, with the object, arrow and section universes of the site independent”.
 
 > **Stacks 04BO.** For a homomorphism `φ : O₁ ⟶ O₂` of sheaves of commutative rings on a site
 > and an object `U` of that site, the restriction of the sheaf of relative differentials to the
@@ -322,7 +322,7 @@ noncomputable def overDifferentialsIso :
         (O₁.over U) (O₂.over U) ((J.overPullback CommRingCat.{max u v w} U).map φ)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.homEquiv_overDifferentialsIso_hom`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/Differentials.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Localization/Differentials.lean#L354). The attribute's comment: “compatibility with the universal derivations”.
+**`AlgebraicGeometry.SheafOfModules.homEquiv_overDifferentialsIso_hom`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Localization/Differentials.lean, line 354](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/Localization/Differentials.lean#L354). The attribute's comment: “compatibility with the universal derivations”.
 
 > **Stacks 04BO.** The identification is the one carrying the restriction of the universal
 > derivation of `Ω_{O₂/O₁}` to the universal derivation of `Ω_{(O₂|_U)/(O₁|_U)}`: transposing it
@@ -342,7 +342,7 @@ lemma homEquiv_overDifferentialsIso_hom :
 
 [Tag 08TR](https://stacks.math.columbia.edu/tag/08TR) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.functorialDifferentials`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean#L115). The attribute's comment: “the canonical map and uniqueness”.
+**`AlgebraicGeometry.SheafOfModules.functorialDifferentials`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean#L115). The attribute's comment: “the canonical map and uniqueness”.
 
 > **Stacks 08TR.** The canonical morphism on sheaves of relative differentials associated to a
 > commutative square, together with its characterisation on local differentials.
@@ -354,7 +354,7 @@ noncomputable def functorialDifferentials {O₁ O₂ O₁' O₂' : Sheaf J CommR
     DifferentialsMapData.{v, u, w, m} a a' f₁ f₂ sq
 ```
 
-**`AlgebraicGeometry.SheafOfModules.mapDifferentials_id_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean#L183). The attribute's comment: “identity law”.
+**`AlgebraicGeometry.SheafOfModules.mapDifferentials_id_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean#L183). The attribute's comment: “identity law”.
 
 > The canonical map on differentials associated to the identity square is the identity on
 > every local section.
@@ -365,7 +365,7 @@ theorem mapDifferentials_id_apply {O₁ O₂ : Sheaf J CommRingCat.{w}} (a : O�
     (mapDifferentials.{v, u, w, m} a a (𝟙 O₁) (𝟙 O₂) (by simp)).val.app X x = x
 ```
 
-**`AlgebraicGeometry.SheafOfModules.mapDifferentials_comp_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean#L200). The attribute's comment: “composition law”.
+**`AlgebraicGeometry.SheafOfModules.mapDifferentials_comp_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsFunctorial.lean#L200). The attribute's comment: “composition law”.
 
 > Canonical maps on differentials respect composition of commutative squares, on every local
 > section.
@@ -392,7 +392,7 @@ theorem mapDifferentials_comp_apply {O₁ O₂ O₁' O₂' O₁'' O₂'' : Sheaf
 
 [Tag 08TS](https://stacks.math.columbia.edu/tag/08TS) in the Stacks Project.
 
-**`Stacks.Sites.Conormal.differentialSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 886](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L886). The attribute's comment: “the canonical exact sequence of `O'₂`-modules”.
+**`Stacks.Sites.Conormal.differentialSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 886](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L886). The attribute's comment: “the canonical exact sequence of `O'₂`-modules”.
 
 > The conormal sequence `I/I² ⟶ B ⊗_A Ω_{A/R} ⟶ Ω_{B/R} ⟶ 0`, with its middle and right
 > terms expressed by the sheaves of relative differentials that corepresent derivations.
@@ -403,7 +403,7 @@ noncomputable def differentialSequence :
       (_root_.SheafOfModules.{max w u v z} (Stacks.SheafOfModules.Tensor.ringSheaf B))
 ```
 
-**`Stacks.Sites.Conormal.differentialSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 926](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L926). The attribute's comment: “exactness at the middle term”. References: SGA 3 III (4.25), “exactness of (+)”.
+**`Stacks.Sites.Conormal.differentialSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 926](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L926). The attribute's comment: “exactness at the middle term”. References: SGA 3 III (4.25), “exactness of (+)”.
 
 > The transported sequence is exact at the extension of scalars of `Ω_{A/R}`.
 
@@ -412,7 +412,7 @@ theorem differentialSequence_exact :
     (differentialSequence.{v, u, w, z} J R A B a φ).Exact
 ```
 
-**`Stacks.Sites.Conormal.differentialSequence_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 934](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L934). The attribute's comment: “exactness on the right”. References: SGA 3 III (4.25), “surjectivity in (+)”.
+**`Stacks.Sites.Conormal.differentialSequence_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 934](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L934). The attribute's comment: “exactness on the right”. References: SGA 3 III (4.25), “surjectivity in (+)”.
 
 > The transported sequence surjects onto `Ω_{B/R}`.
 
@@ -421,7 +421,7 @@ theorem differentialSequence_epi :
     Epi (differentialSequence.{v, u, w, z} J R A B a φ).g
 ```
 
-**`Stacks.Sites.Conormal.differentialSequence_f_class`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 944](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L944). The attribute's comment: “the rule `f ↦ d f ⊗ 1` for the leftmost map”.
+**`Stacks.Sites.Conormal.differentialSequence_f_class`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 944](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L944). The attribute's comment: “the rule `f ↦ d f ⊗ 1` for the leftmost map”.
 
 > The left-hand map carries the conormal class of a local section of the kernel to the
 > source's `d x ⊗ 1`.
@@ -436,7 +436,7 @@ theorem differentialSequence_f_class (X : Cᵒᵖ) (x : kernelIdeal φ.hom X) :
         ((universalDerivationOfSite.{v, u, w, z} R A a).d x.1)
 ```
 
-**`Stacks.Sites.Conormal.differentialSequence_g_differential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 960](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L960). The attribute's comment: “the right-hand map on local differentials”.
+**`Stacks.Sites.Conormal.differentialSequence_g_differential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 960](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L960). The attribute's comment: “the right-hand map on local differentials”.
 
 > The right-hand map carries `d x ⊗ 1` to the universal differential of the image of `x`.
 
@@ -450,7 +450,7 @@ theorem differentialSequence_g_differential (X : Cᵒᵖ) (x : A.obj.obj X) :
       (universalDerivationOfSite.{v, u, w, z} R B (a ≫ φ)).d (φ.hom.app X x)
 ```
 
-**`Stacks.Sites.Conormal.differentialSequence_g_eq_mapDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 980](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L980). The attribute's comment: “the map on the right is the one of Stacks 08TR”.
+**`Stacks.Sites.Conormal.differentialSequence_g_eq_mapDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 980](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L980). The attribute's comment: “the map on the right is the one of Stacks 08TR”.
 
 > Under extension/restriction of scalars, the right-hand map is exactly the canonical map
 > on relative differentials attached to the square `R → A → B` by Stacks 08TR.
@@ -465,7 +465,7 @@ theorem differentialSequence_g_eq_mapDifferentials :
       mapDifferentials.{v, u, w, z} a (a ≫ φ) (𝟙 R) φ (by simp)
 ```
 
-**`Stacks.Sites.Conormal.differentialSequence_f_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 1008](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L1008). The attribute's comment: “the rule `f ↦ d f ⊗ 1` characterises the leftmost map”.
+**`Stacks.Sites.Conormal.differentialSequence_f_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 1008](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L1008). The attribute's comment: “the rule `f ↦ d f ⊗ 1` characterises the leftmost map”.
 
 > The formula on local conormal classes determines the left-hand map.
 
@@ -482,7 +482,7 @@ theorem differentialSequence_f_unique
     g = (differentialSequence.{v, u, w, z} J R A B a φ).f
 ```
 
-**`Stacks.Sites.Conormal.differentialSequence_X₁_desc_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 1055](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L1055). The attribute's comment: “the leftmost term is `I/I²`, by its universal property”.
+**`Stacks.Sites.Conormal.differentialSequence_X₁_desc_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean, line 1055](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/CorepresentingConormalSequence.lean#L1055). The attribute's comment: “the leftmost term is `I/I²`, by its universal property”.
 
 > **The leftmost term of the sequence is `I/I²`.** A morphism of sheaves of `O'₂`-modules out
 > of it is the same thing as an `O₂`-linear natural family of maps `I(U) ⟶ N(U)` out of the
@@ -504,7 +504,7 @@ theorem differentialSequence_X₁_desc_unique
 
 [Tag 04BP](https://stacks.math.columbia.edu/tag/04BP) in the Stacks Project.
 
-**`Stacks.Sites.SquareZeroExtension.statement₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DerivationsSqZeroExtension.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DerivationsSqZeroExtension.lean#L306). References: EGA 0 (20.1.3), “action of Der”.
+**`Stacks.Sites.SquareZeroExtension.statement₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DerivationsSqZeroExtension.lean, line 306](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DerivationsSqZeroExtension.lean#L306). References: EGA 0 (20.1.3), “action of Der”.
 
 > **Statement 1.** For every `φ`-derivation `D`, the map `s + D : O₂ → A`
 > (Definition 5) is again a section of `π`: it underlies a homomorphism of sheaves of
@@ -517,7 +517,7 @@ theorem statement₁ (s : E.Section) (D : E.Derivation) :
     ∃ s' : E.Section, ∀ (U : Cᵒᵖ) (a : E.O₂.obj U), s'.app U a = E.addDeriv s D U a
 ```
 
-**`Stacks.Sites.SquareZeroExtension.statement₂_bijection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DerivationsSqZeroExtension.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DerivationsSqZeroExtension.lean#L383). References: EGA 0 (20.1.3), “section case (u = id)”.
+**`Stacks.Sites.SquareZeroExtension.statement₂_bijection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DerivationsSqZeroExtension.lean, line 383](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DerivationsSqZeroExtension.lean#L383). References: EGA 0 (20.1.3), “section case (u = id)”.
 
 > **Statement 2 (the bijection / torsor).** Fixing a section `s`, the map
 > `D ↦ s + D` is a bijection from `φ`-derivations to sections of `π`, with inverse
@@ -539,7 +539,7 @@ theorem statement₂_bijection (s : E.Section) :
 
 [Tag 04BQ](https://stacks.math.columbia.edu/tag/04BQ) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom.Derivation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L73). The attribute's comment: “a Y-derivation is an f♯-derivation”. References: EGA IV (16.5.1), “more general”.
+**`AlgebraicGeometry.RingedToposHom.Derivation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L73). The attribute's comment: “a Y-derivation is an f♯-derivation”. References: EGA IV (16.5.1), “more general”.
 
 > **Stacks 04BQ, part (1).** A `Y`-derivation `D : 𝒪_C ⟶ F` with values in a sheaf `F` of
 > `𝒪_C`-modules, for a morphism of ringed topoi `(f, f♯) : (Sh(C), 𝒪_C) ⟶ (Sh(D), 𝒪_D)`: by
@@ -550,7 +550,7 @@ theorem statement₂_bijection (s : E.Section) :
 abbrev Derivation (F : Sheaf.targetModules.{u, v, w} X.J X.O)
 ```
 
-**`AlgebraicGeometry.RingedToposHom.differentials`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L81). The attribute's comment: “the sheaf of differentials”.
+**`AlgebraicGeometry.RingedToposHom.differentials`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L81). The attribute's comment: “the sheaf of differentials”.
 
 > **Stacks 04BQ, part (2).** The sheaf of differentials `Ω_{X/Y} = Ω_f = Ω_{𝒪_C/f⁻¹𝒪_D}` of a
 > morphism of ringed topoi `(f, f♯) : (Sh(C), 𝒪_C) ⟶ (Sh(D), 𝒪_D)`: the sheaf of differentials of
@@ -561,7 +561,7 @@ abbrev Derivation (F : Sheaf.targetModules.{u, v, w} X.J X.O)
 noncomputable abbrev differentials : Sheaf.targetModules.{u, v, w} X.J X.O
 ```
 
-**`AlgebraicGeometry.RingedToposHom.universalDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L89). The attribute's comment: “the universal Y-derivation d\_\{X/Y}”.
+**`AlgebraicGeometry.RingedToposHom.universalDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L89). The attribute's comment: “the universal Y-derivation d\_\{X/Y}”.
 
 > **Stacks 04BQ.** The universal `Y`-derivation `d_{X/Y} : 𝒪_C ⟶ Ω_{X/Y}` that the sheaf of
 > differentials comes equipped with: the universal derivation of the inverse-image form of the
@@ -571,7 +571,7 @@ noncomputable abbrev differentials : Sheaf.targetModules.{u, v, w} X.J X.O
 noncomputable def universalDerivation : f.Derivation f.differentials
 ```
 
-**`AlgebraicGeometry.RingedToposHom.existsUnique_descDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L97). The attribute's comment: “universality of d\_\{X/Y}”.
+**`AlgebraicGeometry.RingedToposHom.existsUnique_descDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L97). The attribute's comment: “universality of d\_\{X/Y}”.
 
 > **Stacks 04BQ.** `d_{X/Y}` is universal among `Y`-derivations: every `Y`-derivation with
 > values in a sheaf of `𝒪_C`-modules factors through it by a unique morphism of sheaves of
@@ -587,7 +587,7 @@ theorem existsUnique_descDerivation (F : Sheaf.targetModules.{u, v, w} X.J X.O)
 
 [Tag 04BR](https://stacks.math.columbia.edu/tag/04BR) in the Stacks Project.
 
-**`Stacks.Sheaves.Differentials.RingedSiteOverBase.Hom.comparison_differentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsComparisonMapSheaf.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsComparisonMapSheaf.lean#L297). References: EGA 0 (20.5.2), “(20.5.2.4) & (20.5.2.6)”; EGA IV (16.4.3), “(16.4.3.6),(16.4.3.7)”.
+**`Stacks.Sheaves.Differentials.RingedSiteOverBase.Hom.comparison_differentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsComparisonMapSheaf.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialsComparisonMapSheaf.lean#L297). References: EGA 0 (20.5.2), “(20.5.2.4) & (20.5.2.6)”; EGA IV (16.4.3), “(16.4.3.6),(16.4.3.7)”.
 
 > **Stacks 04BR.** For a commutative square of morphisms of ringed topoi, `f : X' ⟶ X` over
 > `Y' ⟶ Y`:
@@ -636,4 +636,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.33, Tag 04BJ](https://stacks.math.columbia.edu/tag/04BJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

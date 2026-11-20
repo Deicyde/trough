@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.22 Openness of the flat locus
 
-Section 76.22 of the Stacks Project, [Tag 05WU](https://stacks.math.columbia.edu/tag/05WU). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.22 of the Stacks Project, [Tag 05WU](https://stacks.math.columbia.edu/tag/05WU). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05WV, a theorem
 
 [Tag 05WV](https://stacks.math.columbia.edu/tag/05WV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpen_flatLocus_of_isFinitePresentationOnCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusOpen.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusOpen.lean#L105). The attribute's comment: “openness of the flat locus; quasi-coherence and finite presentation of the module are read on the Zariski site of every etale scheme chart”.
+**`AlgebraicGeometry.Space.isOpen_flatLocus_of_isFinitePresentationOnCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusOpen.lean, line 105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusOpen.lean#L105). The attribute's comment: “openness of the flat locus; quasi-coherence and finite presentation of the module are read on the Zariski site of every etale scheme chart”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is locally of finite
 > presentation and let `F` be an `𝒪_X`-module which is quasi-coherent of finite presentation on
@@ -29,7 +29,7 @@ theorem isOpen_flatLocus_of_isFinitePresentationOnCharts (hX : IsAlgebraicSpace 
     IsOpen (flatLocus B S hS hX f F)
 ```
 
-**`AlgebraicGeometry.Space.isOpen_setOf_forall_isFlatOverAtGeometricPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusOpen.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusOpen.lean#L176). The attribute's comment: “openness of the flat locus, read through condition (2) of Stacks 05VU; finite presentation of the module is read on the Zariski site of every etale scheme chart”.
+**`AlgebraicGeometry.Space.isOpen_setOf_forall_isFlatOverAtGeometricPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusOpen.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusOpen.lean#L176). The attribute's comment: “openness of the flat locus, read through condition (2) of Stacks 05VU; finite presentation of the module is read on the Zariski site of every etale scheme chart”.
 
 > For a morphism of algebraic spaces locally of finite presentation and a quasi-coherent module
 > which is of finite presentation on charts, the set of points of the source over which the
@@ -48,7 +48,7 @@ theorem isOpen_setOf_forall_isFlatOverAtGeometricPoint (f : Xs ⟶ Ys)
 
 [Tag 05WW](https://stacks.math.columbia.edu/tag/05WW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.flatLocus_modulePullback_eq_preimage_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean#L77). The attribute's comment: “the set equality; the finite-presentation hypotheses of the source enter through Stacks 05WV in flatLocus\_modulePullback\_eq\_preimage\_and\_isOpen\_of\_isFinitePresentationOnSite”.
+**`AlgebraicGeometry.Space.flatLocus_modulePullback_eq_preimage_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean#L77). The attribute's comment: “the set equality; the finite-presentation hypotheses of the source enter through Stacks 05WV in flatLocus\_modulePullback\_eq\_preimage\_and\_isOpen\_of\_isFinitePresentationOnSite”.
 
 > **Stacks 05WW, the set equality, with no hypothesis beyond the source's own.** In a
 > cartesian square of algebraic spaces over `S` with `f : X ⟶ Y`, `g : Y' ⟶ Y`, `f' : X' ⟶ Y'`
@@ -80,7 +80,7 @@ theorem flatLocus_modulePullback_eq_preimage_of_isFinitePresentationOnSite
       pointsMap B S hS X'.1 g'.hom ⁻¹' flatLocus B S hS X.2 f.hom F
 ```
 
-**`AlgebraicGeometry.Space.flatLocus_modulePullback_eq_preimage_and_isOpen_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean#L117). The attribute's comment: “the locus on the base change is the inverse image of the open subset of Stacks 05WV, hence open”.
+**`AlgebraicGeometry.Space.flatLocus_modulePullback_eq_preimage_and_isOpen_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean#L117). The attribute's comment: “the locus on the base change is the inverse image of the open subset of Stacks 05WV, hence open”.
 
 > **Stacks 05WW, with no hypothesis beyond the source's own.** Let a cartesian square of
 > algebraic spaces over `S` be given, with `f : X ⟶ Y`, `g : Y' ⟶ Y`, `f' : X' ⟶ Y'` and
@@ -115,4 +115,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.22, Tag 05WU](https://stacks.math.columbia.edu/tag/05WU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.8 Stackification of fibred categories
 
-Section 8.8 of the Stacks Project, [Tag 02ZM](https://stacks.math.columbia.edu/tag/02ZM). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 8.8 of the Stacks Project, [Tag 02ZM](https://stacks.math.columbia.edu/tag/02ZM). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02ZN, a lemma
 
 [Tag 02ZN](https://stacks.math.columbia.edu/tag/02ZN) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_isStackification_and_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/StackificationUnique.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/StackificationUnique.lean#L145). The attribute's comment: “Mor(x, y) → Mor(G x, G y) identifying the target with the sheafification of the source is read as local injectivity and local surjectivity of the map of presheaves on 𝒞/U, a covering \{U\_i → U} as a covering sieve, and 'unique up to unique 2-isomorphism' as: a comparison 1-morphism with a 2-isomorphism G ⋙ H ≅ F exists, is an equivalence over 𝒞, and is unique up to exactly one compatible 2-isomorphism”.
+**`CategoryTheory.Functor.exists_isStackification_and_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/StackificationUnique.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stackification/StackificationUnique.lean#L145). The attribute's comment: “Mor(x, y) → Mor(G x, G y) identifying the target with the sheafification of the source is read as local injectivity and local surjectivity of the map of presheaves on 𝒞/U, a covering \{U\_i → U} as a covering sieve, and 'unique up to unique 2-isomorphism' as: a comparison 1-morphism with a 2-isomorphism G ⋙ H ≅ F exists, is an equivalence over 𝒞, and is unique up to exactly one compatible 2-isomorphism”.
 
 > **Stacks 02ZN.** Let `(𝒞, J)` be a site and let `q : 𝒴 ⥤ 𝒞` be a fibred category. There exist
 > a stack `q' : 𝒴' ⥤ 𝒞` over `(𝒞, J)` and a 1-morphism `G : 𝒴 ⥤ 𝒴'` of fibred categories over `𝒞`
@@ -65,7 +65,7 @@ theorem exists_isStackification_and_unique :
 
 [Tag 0435](https://stacks.math.columbia.edu/tag/0435) in the Stacks Project.
 
-**`CategoryTheory.Functor.Stackification.extend`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean, line 990](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean#L990).
+**`CategoryTheory.Functor.Stackification.extend`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean, line 990](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean#L990).
 
 > **The functor underlying the extension of `F` along `G`**, Stacks 0435. Its value on an object
 > `X` of `𝒮'` is the object of `𝒳` to which the images under `F` of a chosen local presentation of
@@ -76,7 +76,7 @@ theorem exists_isStackification_and_unique :
 noncomputable def extend : 𝒮' ⥤ 𝒳
 ```
 
-**`CategoryTheory.Functor.Stackification.extend_isFibredOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean, line 1007](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean#L1007).
+**`CategoryTheory.Functor.Stackification.extend_isFibredOneMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean, line 1007](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean#L1007).
 
 > **The extension is a 1-morphism of fibred categories over `𝒞`**: it is strictly over `𝒞` and
 > preserves strongly cartesian morphisms.
@@ -86,7 +86,7 @@ theorem extend_isFibredOneMorphism :
     p'.IsFibredOneMorphism q (extend hG hF hmor hqmor hobj hdesc)
 ```
 
-**`CategoryTheory.Functor.Stackification.unit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean#L1228).
+**`CategoryTheory.Functor.Stackification.unit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean#L1228).
 
 > **The 2-isomorphism `G ⋙ H ≅ F` of Stacks 0435.** Its component at `A` compares the object of
 > `𝒳` that the chosen presentation of `G A` descends to with `F A`, and it is an isomorphism because
@@ -96,7 +96,7 @@ theorem extend_isFibredOneMorphism :
 noncomputable def unit : G ⋙ extend hG hF hmor hqmor hobj hdesc ≅ F
 ```
 
-**`CategoryTheory.Functor.Stackification.isHomLift_unit_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean, line 1242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean#L1242).
+**`CategoryTheory.Functor.Stackification.isHomLift_unit_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean, line 1242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyFunctor.lean#L1242).
 
 > Every component of the 2-isomorphism lies over an identity, so it is a 2-morphism of fibred
 > categories over `𝒞`.
@@ -110,7 +110,7 @@ lemma isHomLift_unit_app (A : 𝒮) :
 
 [Tag 04W9](https://stacks.math.columbia.edu/tag/04W9) in the Stacks Project.
 
-**`CategoryTheory.Functor.Stackification.restrict_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyUniqueness.lean, line 850](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyUniqueness.lean#L850).
+**`CategoryTheory.Functor.Stackification.restrict_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyUniqueness.lean, line 850](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyUniqueness.lean#L850).
 
 > **Stacks 04W9.** Restriction along a stackification `G : 𝒮 ⥤ 𝒮'` is an equivalence from the
 > category of 1-morphisms `𝒮' ⥤ 𝒳` of fibred categories over `𝒞` into a stack, and their
@@ -120,7 +120,7 @@ lemma isHomLift_unit_app (A : 𝒮) :
 theorem restrict_isEquivalence : (restrictMor (q := q) hG).IsEquivalence
 ```
 
-**`CategoryTheory.Functor.Stackification.restrictEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyUniqueness.lean, line 860](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyUniqueness.lean#L860).
+**`CategoryTheory.Functor.Stackification.restrictEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyUniqueness.lean, line 860](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyUniqueness.lean#L860).
 
 > **The canonical equivalence of morphism categories of Stacks 04W9**,
 > `Mor_{Stacks/𝒞}(𝒮', 𝒳) ≌ Mor_{Fib/𝒞}(𝒮, 𝒳)`. Its functor is restriction along the stackification
@@ -134,7 +134,7 @@ noncomputable def restrictEquivalence : FibredMor p' q ≌ FibredMor p q
 
 [Tag 04Y1](https://stacks.math.columbia.edu/tag/04Y1) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.isStackification_stackifyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/TwoFibreProduct.lean, line 1332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/TwoFibreProduct.lean#L1332).
+**`CategoryTheory.TwoFibreProductOver.isStackification_stackifyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/TwoFibreProduct.lean, line 1332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stackification/TwoFibreProduct.lean#L1332).
 
 > **Stacks 04Y1.** Let `(𝒞, J)` be a site, let `f : 𝒳 ⥤ 𝒴` and `g : 𝒵 ⥤ 𝒴` be 1-morphisms of
 > fibred categories over `𝒞`, and let `i : 𝒳 ⥤ 𝒳'`, `j : 𝒴 ⥤ 𝒴'`, `k : 𝒵 ⥤ 𝒵'` be stackifications
@@ -206,7 +206,7 @@ theorem isStackification_stackifyMap {J : GrothendieckTopology 𝒞}
 
 [Tag 06NS](https://stacks.math.columbia.edu/tag/06NS) in the Stacks Project.
 
-**`CategoryTheory.RelativeInertia.isStackification_functoriality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaStackification.lean, line 1333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/InertiaStackification.lean#L1333).
+**`CategoryTheory.RelativeInertia.isStackification_functoriality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaStackification.lean, line 1333](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/InertiaStackification.lean#L1333).
 
 > **The stackification of the inertia is the inertia of the stackification.** Let `(𝒞, J)` be a
 > site, let `p : 𝒳 ⥤ 𝒞` be a fibred category over `𝒞` and let `G : 𝒳 ⥤ 𝒳'` be the stackification
@@ -260,4 +260,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.8, Tag 02ZM](https://stacks.math.columbia.edu/tag/02ZM)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

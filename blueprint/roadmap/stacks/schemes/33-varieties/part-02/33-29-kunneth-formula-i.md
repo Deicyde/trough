@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.29 Künneth formula, I
 
-Section 33.29 of the Stacks Project, [Tag 0BEC](https://stacks.math.columbia.edu/tag/0BEC). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 33.29 of the Stacks Project, [Tag 0BEC](https://stacks.math.columbia.edu/tag/0BEC). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BED, a lemma
 
 [Tag 0BED](https://stacks.math.columbia.edu/tag/0BED) in the Stacks Project.
 
-**`Stacks.CechKunneth.kunnethIsoOfAffineDiagonal_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethCanonical.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethCanonical.lean#L139). The attribute's comment: “the isomorphism is canonical: independent of the chosen finite affine covers, and on Cech classes given by the cup product of the pulled-back cocycles”.
+**`Stacks.CechKunneth.kunnethIsoOfAffineDiagonal_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethCanonical.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethCanonical.lean#L139). The attribute's comment: “the isomorphism is canonical: independent of the chosen finite affine covers, and on Cech classes given by the cup product of the pulled-back cocycles”.
 
 > **The Künneth isomorphism is canonical**: it is the isomorphism
 > `Stacks.CechKunneth.kunnethIsoOfCovers` of *any* pair of finite affine coverings of `X` and `Y`,
@@ -26,7 +26,7 @@ theorem kunnethIsoOfAffineDiagonal_eq [CompactSpace X] [CompactSpace Y] (n : ℕ
     kunnethIsoOfAffineDiagonal k f g F G n = kunnethIsoOfCovers f g CX CY F G n
 ```
 
-**`Stacks.CechKunneth.kunnethIsoOfAffineDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethFormula.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethFormula.lean#L376). The attribute's comment: “for X and Y quasi-compact with affine diagonal over a field k and F, G quasi-coherent: H^n(X x\_k Y, pr\_1^*F (x) pr\_2^*G) is the direct sum over p + q = n of H^p(X, F) (x)\_k H^q(Y, G), the isomorphism being the Cech-level cup product of pulled-back cocycles”.
+**`Stacks.CechKunneth.kunnethIsoOfAffineDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethFormula.lean, line 376](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethFormula.lean#L376). The attribute's comment: “for X and Y quasi-compact with affine diagonal over a field k and F, G quasi-coherent: H^n(X x\_k Y, pr\_1^*F (x) pr\_2^*G) is the direct sum over p + q = n of H^p(X, F) (x)\_k H^q(Y, G), the isomorphism being the Cech-level cup product of pulled-back cocycles”.
 
 > **The Künneth formula** [Stacks, Tag 0BED]. For a field `k`, quasi-compact schemes `X` and `Y`
 > over `k` with affine diagonal, a quasi-coherent `𝒪_X`-module `ℱ` and a quasi-coherent
@@ -48,7 +48,7 @@ def kunnethIsoOfAffineDiagonal [CompactSpace X] [CompactSpace Y] (n : ℕ) :
         (fun pq => cohomologyK f F pq.1.1 ⊗[k] cohomologyK g G pq.1.2)
 ```
 
-**`AlgebraicGeometry.nonempty_kunnethIso_of_isAffineHom_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/KunnethAffineDiagonal.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Varieties/KunnethAffineDiagonal.lean#L71). The attribute's comment: “for X and Y quasi-compact with affine diagonal over a field k and F, G quasi-coherent: H^n(X x\_k Y, pr\_1^*F (x) pr\_2^*G) is isomorphic to the direct sum over p + q = n of H^p(X, F) (x)\_k H^q(Y, G)”.
+**`AlgebraicGeometry.nonempty_kunnethIso_of_isAffineHom_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/KunnethAffineDiagonal.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Varieties/KunnethAffineDiagonal.lean#L71). The attribute's comment: “for X and Y quasi-compact with affine diagonal over a field k and F, G quasi-coherent: H^n(X x\_k Y, pr\_1^*F (x) pr\_2^*G) is isomorphic to the direct sum over p + q = n of H^p(X, F) (x)\_k H^q(Y, G)”.
 
 > **The Künneth formula.** For quasi-coherent modules `F` on `X` and `G` on `Y`, with `X` and
 > `Y` quasi-compact schemes over a field `k` whose diagonals are affine, the cohomology of the
@@ -74,7 +74,7 @@ theorem nonempty_kunnethIso_of_isAffineHom_diagonal
 
 [Tag 0BEF](https://stacks.math.columbia.edu/tag/0BEF) in the Stacks Project.
 
-**`AlgebraicGeometry.KunnethQcqs.isIso_kunnethMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/KunnethQcqs.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Varieties/KunnethQcqs.lean#L484). The attribute's comment: “the canonical Künneth map, an isomorphism in every degree n”.
+**`AlgebraicGeometry.KunnethQcqs.isIso_kunnethMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/KunnethQcqs.lean, line 484](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Varieties/KunnethQcqs.lean#L484). The attribute's comment: “the canonical Künneth map, an isomorphism in every degree n”.
 
 > **[Stacks, Tag 0BEF], the Künneth formula.** Let `k` be a field, let `X` and `Y` be schemes
 > over `k` and let `F`, `G` be quasi-coherent modules on `X`, `Y`. If `X` and `Y` are quasi-compact
@@ -99,4 +99,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.29, Tag 0BEC](https://stacks.math.columbia.edu/tag/0BEC)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

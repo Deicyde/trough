@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.30 Separation axioms for morphisms
 
-Section 87.30 of the Stacks Project, [Tag 0ARM](https://stacks.math.columbia.edu/tag/0ARM). 5 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.30 of the Stacks Project, [Tag 0ARM](https://stacks.math.columbia.edu/tag/0ARM). 5 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0ARN, a definition
 
 [Tag 0ARN](https://stacks.math.columbia.edu/tag/0ARN) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.HasQuasiCompactDiagonal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean#L112). The attribute's comment: “part (2): quasi-separated, the relative diagonal quasi-compact in the sense of Stacks 0AJC”.
+**`AlgebraicGeometry.FormalSpace.HasQuasiCompactDiagonal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean#L112). The attribute's comment: “part (2): quasi-separated, the relative diagonal quasi-compact in the sense of Stacks 0AJC”.
 
 > **Stacks 0ARN, part (2).** A morphism of formal algebraic spaces over `S` is
 > *quasi-separated* when its relative diagonal `X ⟶ X ×_Y X` is a quasi-compact morphism of
@@ -26,7 +26,7 @@ Section 87.30 of the Stacks Project, [Tag 0ARM](https://stacks.math.columbia.edu
 abbrev HasQuasiCompactDiagonal {X Y : FppfSheaf B S hS} (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsSeparatedMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L113). The attribute's comment: “part (1): separated”. References: EGA I (10.15.1), “separated morphism”.
+**`AlgebraicGeometry.FormalSpace.IsSeparatedMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L113). The attribute's comment: “part (1): separated”. References: EGA I (10.15.1), “separated morphism”.
 
 > A morphism of formal algebraic spaces over `S` is *separated* when its relative diagonal
 > is a closed immersion, stated for an arbitrary morphism of fppf sheaves on the big fppf site
@@ -40,7 +40,7 @@ abbrev IsSeparatedMorphism {X Y : FppfSheaf B S hS} (f : X ⟶ Y) : Prop
 
 [Tag 0ARP](https://stacks.math.columbia.edu/tag/0ARP) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.HasQuasiCompactDiagonal.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean#L134). The attribute's comment: “quasi-separated”.
+**`AlgebraicGeometry.FormalSpace.HasQuasiCompactDiagonal.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean#L134). The attribute's comment: “quasi-separated”.
 
 > **Stacks 0ARP** for the quasi-separatedness axiom of Stacks 0ARN: a base change of a
 > quasi-separated morphism of formal algebraic spaces over `S` is quasi-separated. In a
@@ -56,7 +56,7 @@ theorem HasQuasiCompactDiagonal.of_isPullback {X Y Y' W : FppfSheaf B S hS}
     (hf : HasQuasiCompactDiagonal B S hS f) : HasQuasiCompactDiagonal B S hS snd
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L139). The attribute's comment: “separated”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L139). The attribute's comment: “separated”.
 
 > A base change of a separated morphism of formal algebraic spaces over `S` is separated: in a
 > cartesian square of fppf sheaves on the big fppf site of `S` whose right-hand column `f` is
@@ -72,7 +72,7 @@ theorem isSeparatedMorphism_of_isPullback {X Y Y' W : FppfSheaf B S hS}
 
 [Tag 0ARQ](https://stacks.math.columbia.edu/tag/0ARQ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isQuasiCompact_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean#L163). The attribute's comment: “part (3), for Z ⟶ T quasi-separated. Both notions are the source's own: the hypothesis is quasi-separatedness as Stacks 0ARN, part (2) declares it, the relative diagonal quasi-compact in the sense of Stacks 0AJC (HasQuasiCompactDiagonal of this file), and the conclusion is quasi-compactness of a morphism of formal algebraic spaces in that same sense of Stacks 0AJC (IsQuasiCompact of QuasiCompactMorphism.lean). Nothing is carried and nothing is assumed beyond the tag's own hypothesis on Z ⟶ T; in particular this is independent of Stacks 0AN2 and of Stacks 0AIP, which parts (1) and (2) of the tag need. Parts (1) and (2) are registered in SeparatedMorphism.lean”.
+**`AlgebraicGeometry.FormalSpace.isQuasiCompact_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean, line 163](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphism.lean#L163). The attribute's comment: “part (3), for Z ⟶ T quasi-separated. Both notions are the source's own: the hypothesis is quasi-separatedness as Stacks 0ARN, part (2) declares it, the relative diagonal quasi-compact in the sense of Stacks 0AJC (HasQuasiCompactDiagonal of this file), and the conclusion is quasi-compactness of a morphism of formal algebraic spaces in that same sense of Stacks 0AJC (IsQuasiCompact of QuasiCompactMorphism.lean). Nothing is carried and nothing is assumed beyond the tag's own hypothesis on Z ⟶ T; in particular this is independent of Stacks 0AN2 and of Stacks 0AIP, which parts (1) and (2) of the tag need. Parts (1) and (2) are registered in SeparatedMorphism.lean”.
 
 > **Stacks 0ARQ, part (3).** For morphisms `f : X ⟶ Z`, `g : Y ⟶ Z` and `h : Z ⟶ T` of
 > formal algebraic spaces over `S` with `h` quasi-separated, the comparison
@@ -94,7 +94,7 @@ theorem isQuasiCompact_mapDesc {X Y Z T : FppfSheaf B S hS} (f : X ⟶ Z) (g : Y
     IsQuasiCompact B S hS (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1345). The attribute's comment: “part (1): separated, separatedness read in the sense of Stacks 0ARN”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1345). The attribute's comment: “part (1): separated, separatedness read in the sense of Stacks 0ARN”.
 
 > The comparison `X ×_Z Y ⟶ X ×_T Y` of two fibre products of fppf sheaves on the big fppf
 > site of `S` is separated in the sense of Stacks 0ARN.
@@ -104,7 +104,7 @@ theorem isSeparatedMorphism_mapDesc (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T) :
     IsSeparatedMorphism B S hS (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_mapDesc_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1378). The attribute's comment: “part (1): representable by schemes, unconditionally for Z an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_mapDesc_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1378](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1378). The attribute's comment: “part (1): representable by schemes, unconditionally for Z an affine formal algebraic space”.
 
 > When `Z` is an *affine* formal algebraic space, the comparison `X ×_Z Y ⟶ X ×_T Y` is
 > representable by schemes.
@@ -115,7 +115,7 @@ theorem relativelyRepresentable_mapDesc_of_isAffineFormal (f : X ⟶ Z) (g : Y �
     (fppfYoneda B S hS).relativelyRepresentable (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_locallyQuasiFinite_mapDesc_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1389). The attribute's comment: “part (1): locally quasi-finite, unconditionally for Z an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_locallyQuasiFinite_mapDesc_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1389](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1389). The attribute's comment: “part (1): locally quasi-finite, unconditionally for Z an affine formal algebraic space”.
 
 > When `Z` is an *affine* formal algebraic space, every represented base change of the
 > comparison `X ×_Z Y ⟶ X ×_T Y` is a locally quasi-finite, locally of finite type morphism of
@@ -131,7 +131,7 @@ theorem relative_locallyQuasiFinite_mapDesc_of_isAffineFormal (f : X ⟶ Z) (g :
       (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_locallyOfFiniteType_mapDesc_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1403). The attribute's comment: “part (1): locally of finite type, unconditionally for Z an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_locallyOfFiniteType_mapDesc_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1403](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1403). The attribute's comment: “part (1): locally of finite type, unconditionally for Z an affine formal algebraic space”.
 
 > When `Z` is an *affine* formal algebraic space, every represented base change of the
 > comparison `X ×_Z Y ⟶ X ×_T Y` is a locally of finite type morphism of schemes.
@@ -145,7 +145,7 @@ theorem relative_locallyOfFiniteType_mapDesc_of_isAffineFormal (f : X ⟶ Z) (g 
       (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_isSeparated_mapDesc_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1416). The attribute's comment: “part (1): separated in the represented-base-change sense of Stacks 0AN2, unconditionally for Z an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_isSeparated_mapDesc_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1416](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1416). The attribute's comment: “part (1): separated in the represented-base-change sense of Stacks 0AN2, unconditionally for Z an affine formal algebraic space”.
 
 > When `Z` is an *affine* formal algebraic space, every represented base change of the
 > comparison `X ×_Z Y ⟶ X ×_T Y` is a separated morphism of schemes.
@@ -159,7 +159,7 @@ theorem relative_isSeparated_mapDesc_of_isAffineFormal (f : X ⟶ Z) (g : Y ⟶ 
       (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_mapDesc_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1427). The attribute's comment: “part (1): representable by schemes, for Z an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_mapDesc_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1427). The attribute's comment: “part (1): representable by schemes, for Z an arbitrary formal algebraic space”.
 
 > When `Z` is a formal algebraic space, the comparison `X ×_Z Y ⟶ X ×_T Y` is representable
 > by schemes.
@@ -170,7 +170,7 @@ theorem relativelyRepresentable_mapDesc_of_isFormalAlgebraicSpace (f : X ⟶ Z) 
     (fppfYoneda B S hS).relativelyRepresentable (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_locallyQuasiFinite_mapDesc_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1436). The attribute's comment: “part (1): locally quasi-finite, for Z an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_locallyQuasiFinite_mapDesc_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1436). The attribute's comment: “part (1): locally quasi-finite, for Z an arbitrary formal algebraic space”.
 
 > When `Z` is a formal algebraic space, every represented base change of the comparison
 > `X ×_Z Y ⟶ X ×_T Y` is a locally quasi-finite, locally of finite type morphism of schemes.
@@ -185,7 +185,7 @@ theorem relative_locallyQuasiFinite_mapDesc_of_isFormalAlgebraicSpace (f : X ⟶
       (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_locallyOfFiniteType_mapDesc_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1449). The attribute's comment: “part (1): locally of finite type, for Z an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_locallyOfFiniteType_mapDesc_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1449](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1449). The attribute's comment: “part (1): locally of finite type, for Z an arbitrary formal algebraic space”.
 
 > When `Z` is a formal algebraic space, every represented base change of the comparison
 > `X ×_Z Y ⟶ X ×_T Y` is a locally of finite type morphism of schemes.
@@ -199,7 +199,7 @@ theorem relative_locallyOfFiniteType_mapDesc_of_isFormalAlgebraicSpace (f : X �
       (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_isSeparated_mapDesc_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1462). The attribute's comment: “part (1): separated in the represented-base-change sense of Stacks 0AN2, for Z an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_isSeparated_mapDesc_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1462](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1462). The attribute's comment: “part (1): separated in the represented-base-change sense of Stacks 0AN2, for Z an arbitrary formal algebraic space”.
 
 > When `Z` is a formal algebraic space, every represented base change of the comparison
 > `X ×_Z Y ⟶ X ×_T Y` is a separated morphism of schemes.
@@ -213,7 +213,7 @@ theorem relative_isSeparated_mapDesc_of_isFormalAlgebraicSpace (f : X ⟶ Z) (g 
       (pullback.mapDesc f g h)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1474). The attribute's comment: “part (2), for Z ⟶ T separated”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1474](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1474). The attribute's comment: “part (2), for Z ⟶ T separated”.
 
 > If `h : Z ⟶ T` is separated then the comparison `X ×_Z Y ⟶ X ×_T Y` is a closed
 > immersion.
@@ -226,13 +226,13 @@ theorem isClosedImmersion_mapDesc (f : X ⟶ Z) (g : Y ⟶ Z) (h : Z ⟶ T)
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.pullback.mono_mapDesc`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1502) (StacksFrontier): “part (1): monomorphism”.
+- [`CategoryTheory.Limits.pullback.mono_mapDesc`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/MapDescent.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1502](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1502) (StacksFrontier): “part (1): monomorphism”.
 
 ## Tag 0ARR, a lemma
 
 [Tag 0ARR](https://stacks.math.columbia.edu/tag/0ARR) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isQuasiSeparatedMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComposition.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComposition.lean#L195). The attribute's comment: “part (2): quasi-separated, with quasi-compactness of the relative diagonal read as the condition AlgebraicGeometry.Space.IsQuasiCompactULift that this library's AlgebraicGeometry.FormalSpace.IsQuasiSeparatedMorphism is built from; the comparison of the two relative self-products is quasi-compact by Stacks 0ARQ, part (3), and that condition is stable under composition over formal algebraic spaces by AlgebraicGeometry.Space.isQuasiCompactULift\_comp\_of\_presheaf”.
+**`AlgebraicGeometry.FormalSpace.isQuasiSeparatedMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComposition.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComposition.lean#L195). The attribute's comment: “part (2): quasi-separated, with quasi-compactness of the relative diagonal read as the condition AlgebraicGeometry.Space.IsQuasiCompactULift that this library's AlgebraicGeometry.FormalSpace.IsQuasiSeparatedMorphism is built from; the comparison of the two relative self-products is quasi-compact by Stacks 0ARQ, part (3), and that condition is stable under composition over formal algebraic spaces by AlgebraicGeometry.Space.isQuasiCompactULift\_comp\_of\_presheaf”.
 
 > **Stacks 0ARR for the quasi-separatedness axiom of Stacks 0ARN.** A composite of two
 > morphisms of fppf sheaves on the big fppf site of `S` with quasi-compact relative diagonal
@@ -252,7 +252,7 @@ theorem isQuasiSeparatedMorphism_comp {X Y Z : FppfSheaf B S hS} (f : X ⟶ Y) (
     IsQuasiSeparatedMorphism B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphismComposition.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphismComposition.lean#L122). The attribute's comment: “part (1): separated, separatedness read in the sense of Stacks 0ARN; the comparison of the two relative self-products is a closed immersion by Stacks 0ARQ, part (2), and closed immersions compose by Stacks 0GHW”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphismComposition.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphismComposition.lean#L122). The attribute's comment: “part (1): separated, separatedness read in the sense of Stacks 0ARN; the comparison of the two relative self-products is a closed immersion by Stacks 0ARQ, part (2), and closed immersions compose by Stacks 0GHW”.
 
 > **Stacks 0ARR for the separatedness axiom of Stacks 0ARN.** A composite of two separated
 > morphisms of fppf sheaves on the big fppf site of `S` is separated: the relative diagonal of
@@ -267,7 +267,7 @@ theorem isSeparatedMorphism_comp {X Y Z : FppfSheaf B S hS} (f : X ⟶ Y) (g : Y
     IsSeparatedMorphism B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_quasiCompact_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphismComposition.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphismComposition.lean#L139). The attribute's comment: “part (2): quasi-separated, with quasi-compactness of the relative diagonal read as the relative diagonal condition for quasi-compact morphisms of schemes, which is the second of the two cases of Stacks 0ARN in the uniform shape of Stacks 0ARS; stability under composition of quasi-compact morphisms of schemes is taken from Mathlib”.
+**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_quasiCompact_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphismComposition.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphismComposition.lean#L139). The attribute's comment: “part (2): quasi-separated, with quasi-compactness of the relative diagonal read as the relative diagonal condition for quasi-compact morphisms of schemes, which is the second of the two cases of Stacks 0ARN in the uniform shape of Stacks 0ARS; stability under composition of quasi-compact morphisms of schemes is taken from Mathlib”.
 
 > **Stacks 0ARR for the quasi-separatedness axiom of Stacks 0ARN**, with quasi-compactness of
 > the relative diagonal read as the relative diagonal condition for quasi-compact morphisms of
@@ -291,7 +291,7 @@ theorem hasRelativeDiagonal_quasiCompact_comp {X Y Z : FppfSheaf B S hS} (f : X 
 
 [Tag 0ARS](https://stacks.math.columbia.edu/tag/0ARS) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_forall_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L328). The attribute's comment: “clauses (1) and (2) for the quasi-separated axiom of Stacks 0ARN: a morphism of formal algebraic spaces with relatively representable relative diagonal is quasi-separated if and only if its base change to every scheme over the target is quasi-separated; the representability hypothesis is discharged for a source which is a formal algebraic space in `…hasQuasiCompactDiagonal_iff_forall_baseChange_of_isFormalAlgebraicSpace`”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_forall_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L328). The attribute's comment: “clauses (1) and (2) for the quasi-separated axiom of Stacks 0ARN: a morphism of formal algebraic spaces with relatively representable relative diagonal is quasi-separated if and only if its base change to every scheme over the target is quasi-separated; the representability hypothesis is discharged for a source which is a formal algebraic space in `…hasQuasiCompactDiagonal_iff_forall_baseChange_of_isFormalAlgebraicSpace`”.
 
 > **Stacks 0ARS, clauses (1) and (2) for the quasi-separatedness axiom of Stacks 0ARN.** A
 > morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` whose relative diagonal is
@@ -314,7 +314,7 @@ theorem hasQuasiCompactDiagonal_iff_forall_baseChange {X Y : FppfSheaf B S hS} (
         HasQuasiCompactDiagonal B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_forall_baseChange_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L354). The attribute's comment: “clauses (1) and (2) for the quasi-separated axiom of Stacks 0ARN, in the source's form with no extra hypothesis: a morphism of formal algebraic spaces is quasi-separated if and only if its base change to every scheme over the target is quasi-separated”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_forall_baseChange_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 354](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L354). The attribute's comment: “clauses (1) and (2) for the quasi-separated axiom of Stacks 0ARN, in the source's form with no extra hypothesis: a morphism of formal algebraic spaces is quasi-separated if and only if its base change to every scheme over the target is quasi-separated”.
 
 > **Stacks 0ARS, clauses (1) and (2) for the quasi-separatedness axiom of Stacks 0ARN**, in
 > the source's own form: a morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` whose
@@ -332,7 +332,7 @@ theorem hasQuasiCompactDiagonal_iff_forall_baseChange_of_isFormalAlgebraicSpace
         HasQuasiCompactDiagonal B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_forall_affine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L381). The attribute's comment: “clauses (1) and (3) for the quasi-separated axiom of Stacks 0ARN: a morphism of formal algebraic spaces with relatively representable relative diagonal is quasi-separated if and only if its base change to every affine scheme over the target is quasi-separated; the representability hypothesis is discharged for a source which is a formal algebraic space in `…hasQuasiCompactDiagonal_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_forall_affine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 381](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L381). The attribute's comment: “clauses (1) and (3) for the quasi-separated axiom of Stacks 0ARN: a morphism of formal algebraic spaces with relatively representable relative diagonal is quasi-separated if and only if its base change to every affine scheme over the target is quasi-separated; the representability hypothesis is discharged for a source which is a formal algebraic space in `…hasQuasiCompactDiagonal_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`”.
 
 > **Stacks 0ARS, clauses (1) and (3) for the quasi-separatedness axiom of Stacks 0ARN.** A
 > morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` whose relative diagonal is
@@ -355,7 +355,7 @@ theorem hasQuasiCompactDiagonal_iff_forall_affine_baseChange {X Y : FppfSheaf B 
           HasQuasiCompactDiagonal B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L405). The attribute's comment: “clauses (1) and (3) for the quasi-separated axiom of Stacks 0ARN, in the source's form with no extra hypothesis: a morphism of formal algebraic spaces is quasi-separated if and only if its base change to every affine scheme over the target is quasi-separated”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 405](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L405). The attribute's comment: “clauses (1) and (3) for the quasi-separated axiom of Stacks 0ARN, in the source's form with no extra hypothesis: a morphism of formal algebraic spaces is quasi-separated if and only if its base change to every affine scheme over the target is quasi-separated”.
 
 > **Stacks 0ARS, clauses (1) and (3) for the quasi-separatedness axiom of Stacks 0ARN**, in
 > the source's own form: a morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` whose
@@ -373,7 +373,7 @@ theorem hasQuasiCompactDiagonal_iff_forall_affine_baseChange_of_isFormalAlgebrai
           HasQuasiCompactDiagonal B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L436). The attribute's comment: “clauses (3) and (4) for the quasi-separated axiom of Stacks 0ARN: a morphism of formal algebraic spaces to an affine scheme with relatively representable relative diagonal is quasi-separated if and only if its source is a quasi-separated formal algebraic space; the representability hypothesis is discharged for a source which is a formal algebraic space in `…hasQuasiCompactDiagonal_iff_isQuasiSeparated_of_isFormalAlgebraicSpace`”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L436). The attribute's comment: “clauses (3) and (4) for the quasi-separated axiom of Stacks 0ARN: a morphism of formal algebraic spaces to an affine scheme with relatively representable relative diagonal is quasi-separated if and only if its source is a quasi-separated formal algebraic space; the representability hypothesis is discharged for a source which is a formal algebraic space in `…hasQuasiCompactDiagonal_iff_isQuasiSeparated_of_isFormalAlgebraicSpace`”.
 
 > **Stacks 0ARS, clauses (3) and (4) for the quasi-separatedness axiom of Stacks 0ARN.** A
 > morphism `f : X ⟶ Z` of fppf sheaves on the big fppf site of `S` whose target is represented by
@@ -398,7 +398,7 @@ theorem hasQuasiCompactDiagonal_iff_isQuasiSeparated {X : FppfSheaf B S hS}
     HasQuasiCompactDiagonal B S hS f ↔ IsQuasiSeparated B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_isQuasiSeparated_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L487). The attribute's comment: “clauses (3) and (4) for the quasi-separated axiom of Stacks 0ARN, in the source's form with no extra hypothesis: a morphism from a formal algebraic space to an affine scheme is quasi-separated if and only if its source is a quasi-separated formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_iff_isQuasiSeparated_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 487](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L487). The attribute's comment: “clauses (3) and (4) for the quasi-separated axiom of Stacks 0ARN, in the source's form with no extra hypothesis: a morphism from a formal algebraic space to an affine scheme is quasi-separated if and only if its source is a quasi-separated formal algebraic space”.
 
 > **Stacks 0ARS, clauses (3) and (4) for the quasi-separatedness axiom of Stacks 0ARN**, in
 > the source's own form: a morphism from a formal algebraic space to a sheaf represented by an
@@ -416,7 +416,7 @@ theorem hasQuasiCompactDiagonal_iff_isQuasiSeparated_of_isFormalAlgebraicSpace
     HasQuasiCompactDiagonal B S hS f ↔ IsQuasiSeparated B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L507). The attribute's comment: “the descent step of clause (5) for the quasi-separated axiom of Stacks 0ARN: quasi-separatedness descends along a single locally surjective morphism onto the relative self-product, which is the atlas clause with the covering of Definition 0AIM replaced by one locally surjective morphism, and is not the atlas form itself”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 507](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L507). The attribute's comment: “the descent step of clause (5) for the quasi-separated axiom of Stacks 0ARN: quasi-separatedness descends along a single locally surjective morphism onto the relative self-product, which is the atlas clause with the covering of Definition 0AIM replaced by one locally surjective morphism, and is not the atlas form itself”.
 
 > **Stacks 0ARS, the descent step of clause (5) for the quasi-separatedness axiom of
 > Stacks 0ARN.** Quasi-separatedness of a morphism of fppf sheaves whose relative diagonal is
@@ -434,7 +434,7 @@ theorem hasQuasiCompactDiagonal_of_locallySurjective {X Y W : FppfSheaf B S hS} 
     HasQuasiCompactDiagonal B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_atlas_hasQuasiCompactDiagonal_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L529). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, necessity for the quasi-separated axiom of Stacks 0ARN: a quasi-separated morphism of formal algebraic spaces has quasi-separated base change to every member of some covering of the target as in Definition 0AIM”.
+**`AlgebraicGeometry.FormalSpace.exists_atlas_hasQuasiCompactDiagonal_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 529](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L529). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, necessity for the quasi-separated axiom of Stacks 0ARN: a quasi-separated morphism of formal algebraic spaces has quasi-separated base change to every member of some covering of the target as in Definition 0AIM”.
 
 > **Stacks 0ARS, clause (1) implies clause (5) for the quasi-separatedness axiom of
 > Stacks 0ARN, in the covering form.** If `Y` is a formal algebraic space and `f : X ⟶ Y` is
@@ -455,7 +455,7 @@ theorem exists_atlas_hasQuasiCompactDiagonal_pullback_snd {X Y : FppfSheaf B S h
       ∀ j, HasQuasiCompactDiagonal B S hS (pullback.snd f (g j))
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_of_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L560). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for the quasi-separated axiom of Stacks 0ARN: a morphism of formal algebraic spaces with relatively representable relative diagonal is quasi-separated as soon as its base change to every member of a covering of the target as in Definition 0AIM is quasi-separated; the representability hypothesis is discharged for a source which is a formal algebraic space in `…hasQuasiCompactDiagonal_of_atlas_of_isFormalAlgebraicSpace`”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_of_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 560](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L560). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for the quasi-separated axiom of Stacks 0ARN: a morphism of formal algebraic spaces with relatively representable relative diagonal is quasi-separated as soon as its base change to every member of a covering of the target as in Definition 0AIM is quasi-separated; the representability hypothesis is discharged for a source which is a formal algebraic space in `…hasQuasiCompactDiagonal_of_atlas_of_isFormalAlgebraicSpace`”.
 
 > **Stacks 0ARS, clause (5) implies clause (1) for the quasi-separatedness axiom of
 > Stacks 0ARN, in the covering form of Definition 0AIM.** Let `f : X ⟶ Y` be a morphism of fppf
@@ -480,7 +480,7 @@ theorem hasQuasiCompactDiagonal_of_atlas {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
     HasQuasiCompactDiagonal B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_of_atlas_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L588). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for the quasi-separated axiom of Stacks 0ARN, in the source's form with no extra hypothesis: a morphism of formal algebraic spaces is quasi-separated as soon as its base change to every member of a covering of the target as in Definition 0AIM is quasi-separated”.
+**`AlgebraicGeometry.FormalSpace.hasQuasiCompactDiagonal_of_atlas_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 588](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L588). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for the quasi-separated axiom of Stacks 0ARN, in the source's form with no extra hypothesis: a morphism of formal algebraic spaces is quasi-separated as soon as its base change to every member of a covering of the target as in Definition 0AIM is quasi-separated”.
 
 > **Stacks 0ARS, clause (5) implies clause (1) for the quasi-separatedness axiom of
 > Stacks 0ARN**, in the covering form of Definition 0AIM and in the source's own form: a morphism
@@ -501,7 +501,7 @@ theorem hasQuasiCompactDiagonal_of_atlas_of_isFormalAlgebraicSpace {X Y : FppfSh
     HasQuasiCompactDiagonal B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.separationAxiom_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L703). The attribute's comment: “in full: the five conditions are equivalent for each of the two separation axioms of Definition 0ARN, quasi-separated and separated, for any morphism of formal algebraic spaces”.
+**`AlgebraicGeometry.FormalSpace.separationAxiom_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean, line 703](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiSeparatedMorphismComparison.lean#L703). The attribute's comment: “in full: the five conditions are equivalent for each of the two separation axioms of Definition 0ARN, quasi-separated and separated, for any morphism of formal algebraic spaces”.
 
 > **Stacks 0ARS.** Let `f : X ⟶ Y` be a morphism of formal algebraic spaces over `S`. For
 > each of the two separation axioms `P` of Stacks 0ARN — quasi-separated (the relative diagonal
@@ -552,7 +552,7 @@ theorem separationAxiom_tfae {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
           ∀ j, IsSeparatedMorphism B S hS (pullback.snd f (g j))]
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_iff_forall_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L632). The attribute's comment: “clauses (1) and (2): a relative diagonal condition holds for a morphism of formal algebraic spaces if and only if it holds for its base change to every scheme over the target”.
+**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_iff_forall_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 632](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L632). The attribute's comment: “clauses (1) and (2): a relative diagonal condition holds for a morphism of formal algebraic spaces if and only if it holds for its base change to every scheme over the target”.
 
 > A morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` has relative diagonal `P`
 > exactly when, for every object `Z` of the site and every morphism from the sheaf it represents to
@@ -566,7 +566,7 @@ theorem hasRelativeDiagonal_iff_forall_baseChange (P : MorphismProperty Scheme.{
         HasRelativeDiagonal B S hS P (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_forall_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 651](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L651). The attribute's comment: “clauses (1) and (2) for separatedness: a morphism of formal algebraic spaces is separated if and only if its base change to every scheme over the target is separated”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_forall_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 651](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L651). The attribute's comment: “clauses (1) and (2) for separatedness: a morphism of formal algebraic spaces is separated if and only if its base change to every scheme over the target is separated”.
 
 > A morphism of fppf sheaves on the big fppf site of `S` is separated exactly when its base
 > change to every scheme over the target is separated.
@@ -578,7 +578,7 @@ theorem isSeparatedMorphism_iff_forall_baseChange {X Y : FppfSheaf B S hS} (f : 
         IsSeparatedMorphism B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_iff_forall_affine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 670](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L670). The attribute's comment: “clauses (1) and (3): a Zariski-local relative diagonal condition holds for a morphism of formal algebraic spaces if and only if its relative diagonal is relatively representable and the condition holds for the base change to every affine scheme over the target”.
+**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_iff_forall_affine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 670](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L670). The attribute's comment: “clauses (1) and (3): a Zariski-local relative diagonal condition holds for a morphism of formal algebraic spaces if and only if its relative diagonal is relatively representable and the condition holds for the base change to every affine scheme over the target”.
 
 > A morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` has relative diagonal `P`,
 > for `P` a Zariski-local property of morphisms of schemes, exactly when its relative diagonal is
@@ -596,7 +596,7 @@ theorem hasRelativeDiagonal_iff_forall_affine_baseChange (P : MorphismProperty S
             HasRelativeDiagonal B S hS P (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_forall_affine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 691](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L691). The attribute's comment: “clauses (1) and (3) for separatedness: a morphism of formal algebraic spaces is separated if and only if its relative diagonal is relatively representable and its base change to every affine scheme over the target is separated”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_forall_affine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 691](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L691). The attribute's comment: “clauses (1) and (3) for separatedness: a morphism of formal algebraic spaces is separated if and only if its relative diagonal is relatively representable and its base change to every affine scheme over the target is separated”.
 
 > A morphism of fppf sheaves on the big fppf site of `S` is separated exactly when its relative
 > diagonal is relatively representable and its base change to every affine scheme over the target
@@ -611,7 +611,7 @@ theorem isSeparatedMorphism_iff_forall_affine_baseChange {X Y : FppfSheaf B S hS
             IsSeparatedMorphism B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 780](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L780). The attribute's comment: “clauses (3) and (4) for separatedness: a morphism of formal algebraic spaces to an affine scheme is separated if and only if its relative diagonal is relatively representable and its source is a separated formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 780](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L780). The attribute's comment: “clauses (3) and (4) for separatedness: a morphism of formal algebraic spaces to an affine scheme is separated if and only if its relative diagonal is relatively representable and its source is a separated formal algebraic space”.
 
 > A morphism `f : X ⟶ Z` of fppf sheaves on the big fppf site of `S` whose target is represented
 > by an affine scheme of the site is separated exactly when its relative diagonal is relatively
@@ -627,7 +627,7 @@ theorem isSeparatedMorphism_iff_isSeparated {X : FppfSheaf B S hS} {Z : BigFppfO
         IsSeparated B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_forall_affine_baseChange_of_relativelyRepresentable_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 846](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L846). The attribute's comment: “clauses (1) and (3) for separatedness with no extra conjunct, generalized past the source: the binder `hX` asks only that the absolute diagonal of the source be relatively representable, which every formal algebraic space satisfies by Stacks 0AIP, so the source's own case needs no such binder and is proved outright in `…isSeparatedMorphism_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_forall_affine_baseChange_of_relativelyRepresentable_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 846](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L846). The attribute's comment: “clauses (1) and (3) for separatedness with no extra conjunct, generalized past the source: the binder `hX` asks only that the absolute diagonal of the source be relatively representable, which every formal algebraic space satisfies by Stacks 0AIP, so the source's own case needs no such binder and is proved outright in `…isSeparatedMorphism_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`”.
 
 > A morphism of fppf sheaves whose source has relatively representable absolute diagonal is
 > separated exactly when its base change to every affine scheme over the target is separated.
@@ -642,7 +642,7 @@ theorem isSeparatedMorphism_iff_forall_affine_baseChange_of_relativelyRepresenta
           IsSeparatedMorphism B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_isSeparated_of_relativelyRepresentable_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 863](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L863). The attribute's comment: “clauses (3) and (4) for separatedness with no extra conjunct, generalized past the source: the binder `hX` asks only that the absolute diagonal of the source be relatively representable, which every formal algebraic space satisfies by Stacks 0AIP, so the source's own case needs no such binder and is proved outright in `…isSeparatedMorphism_iff_isSeparated_of_isFormalAlgebraicSpace`”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_isSeparated_of_relativelyRepresentable_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 863](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L863). The attribute's comment: “clauses (3) and (4) for separatedness with no extra conjunct, generalized past the source: the binder `hX` asks only that the absolute diagonal of the source be relatively representable, which every formal algebraic space satisfies by Stacks 0AIP, so the source's own case needs no such binder and is proved outright in `…isSeparatedMorphism_iff_isSeparated_of_isFormalAlgebraicSpace`”.
 
 > A morphism to an affine scheme out of a sheaf with relatively representable absolute
 > diagonal is separated exactly when that sheaf is separated.
@@ -655,7 +655,7 @@ theorem isSeparatedMorphism_iff_isSeparated_of_relativelyRepresentable_diag
     IsSeparatedMorphism B S hS f ↔ IsSeparated B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 877](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L877). The attribute's comment: “clauses (1) and (3) for separatedness, in the source's form with no extra conjunct: a morphism of formal algebraic spaces is separated if and only if its base change to every affine scheme over the target is separated”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 877](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L877). The attribute's comment: “clauses (1) and (3) for separatedness, in the source's form with no extra conjunct: a morphism of formal algebraic spaces is separated if and only if its base change to every affine scheme over the target is separated”.
 
 > A morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` whose source is a formal
 > algebraic space is separated exactly when its base change to every affine scheme over the target is
@@ -670,7 +670,7 @@ theorem isSeparatedMorphism_iff_forall_affine_baseChange_of_isFormalAlgebraicSpa
           IsSeparatedMorphism B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_isSeparated_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 892](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L892). The attribute's comment: “clauses (3) and (4) for separatedness, in the source's form with no extra conjunct: a morphism from a formal algebraic space to an affine scheme is separated if and only if its source is a separated formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_iff_isSeparated_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 892](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L892). The attribute's comment: “clauses (3) and (4) for separatedness, in the source's form with no extra conjunct: a morphism from a formal algebraic space to an affine scheme is separated if and only if its source is a separated formal algebraic space”.
 
 > A morphism from a formal algebraic space to a sheaf represented by an affine scheme of the
 > site is separated exactly when its source is a separated formal algebraic space, separatedness of
@@ -684,7 +684,7 @@ theorem isSeparatedMorphism_iff_isSeparated_of_isFormalAlgebraicSpace
     IsSeparatedMorphism B S hS f ↔ IsSeparated B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 907](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L907). The attribute's comment: “clauses (1) and (3) for a relative diagonal condition, in the source's form with no extra conjunct: the condition holds for a morphism of formal algebraic spaces if and only if it holds for the base change to every affine scheme over the target”.
+**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_iff_forall_affine_baseChange_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 907](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L907). The attribute's comment: “clauses (1) and (3) for a relative diagonal condition, in the source's form with no extra conjunct: the condition holds for a morphism of formal algebraic spaces if and only if it holds for the base change to every affine scheme over the target”.
 
 > A morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` whose source is a formal
 > algebraic space has relative diagonal `P`, for `P` a Zariski-local property of morphisms of
@@ -701,7 +701,7 @@ theorem hasRelativeDiagonal_iff_forall_affine_baseChange_of_isFormalAlgebraicSpa
           HasRelativeDiagonal B S hS P (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1064](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1064). The attribute's comment: “the descent step of clause (5): a relative diagonal condition descends along a single locally surjective morphism onto the relative self-product, which is the atlas clause with the covering of Definition 0AIM replaced by one locally surjective morphism, and is not the atlas form itself”.
+**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1064](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1064). The attribute's comment: “the descent step of clause (5): a relative diagonal condition descends along a single locally surjective morphism onto the relative self-product, which is the atlas clause with the covering of Definition 0AIM replaced by one locally surjective morphism, and is not the atlas form itself”.
 
 > A relative diagonal condition for an fppf-local property `P` of morphisms of schemes
 > descends along a locally surjective morphism `b` onto the relative self-product `X ×_Y X`: if the
@@ -719,7 +719,7 @@ theorem hasRelativeDiagonal_of_locallySurjective (P : MorphismProperty Scheme.{u
     HasRelativeDiagonal B S hS P f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1088](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1088). The attribute's comment: “the descent step of clause (5) for separatedness: separatedness descends along a single locally surjective morphism onto the relative self-product, which is the atlas clause with the covering of Definition 0AIM replaced by one locally surjective morphism, and is not the atlas form itself”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1088](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1088). The attribute's comment: “the descent step of clause (5) for separatedness: separatedness descends along a single locally surjective morphism onto the relative self-product, which is the atlas clause with the covering of Definition 0AIM replaced by one locally surjective morphism, and is not the atlas form itself”.
 
 > Separatedness of a morphism of fppf sheaves whose relative diagonal is relatively representable
 > descends along a locally surjective morphism onto the relative self-product.
@@ -735,7 +735,7 @@ theorem isSeparatedMorphism_of_locallySurjective {X Y W : FppfSheaf B S hS} (f :
     IsSeparatedMorphism B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_of_locallySurjectiveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1111). The attribute's comment: “the descent step of clause (5) for a covering family: a relative diagonal condition descends along a family of morphisms onto the relative self-product whose induced morphism out of the coproduct is a surjection of sheaves”.
+**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_of_locallySurjectiveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1111). The attribute's comment: “the descent step of clause (5) for a covering family: a relative diagonal condition descends along a family of morphisms onto the relative self-product whose induced morphism out of the coproduct is a surjection of sheaves”.
 
 > A relative diagonal condition for an fppf-local property `P` of morphisms of schemes
 > descends along a *family* `(b i : W i ⟶ X ×_Y X)` of morphisms onto the relative self-product
@@ -757,7 +757,7 @@ theorem hasRelativeDiagonal_of_locallySurjectiveFamily (P : MorphismProperty Sch
     HasRelativeDiagonal B S hS P f
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_atlas_hasRelativeDiagonal_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1141). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, necessity: a relative diagonal condition for a morphism of formal algebraic spaces holds for the base change to every member of some covering of the target as in Definition 0AIM”.
+**`AlgebraicGeometry.FormalSpace.exists_atlas_hasRelativeDiagonal_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1141). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, necessity: a relative diagonal condition for a morphism of formal algebraic spaces holds for the base change to every member of some covering of the target as in Definition 0AIM”.
 
 > If `Y` is a formal algebraic space and the morphism `f : X ⟶ Y` of fppf sheaves on the big fppf
 > site of `S` has relative diagonal `P`, then there is a covering `{Y_j ⟶ Y}` as in Definition 0AIM
@@ -777,7 +777,7 @@ theorem exists_atlas_hasRelativeDiagonal_pullback_snd (P : MorphismProperty Sche
       ∀ j, HasRelativeDiagonal B S hS P (pullback.snd f (g j))
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_atlas_isSeparatedMorphism_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1161). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, necessity for separatedness: a separated morphism of formal algebraic spaces has separated base change to every member of some covering of the target as in Definition 0AIM”.
+**`AlgebraicGeometry.FormalSpace.exists_atlas_isSeparatedMorphism_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1161). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, necessity for separatedness: a separated morphism of formal algebraic spaces has separated base change to every member of some covering of the target as in Definition 0AIM”.
 
 > If `Y` is a formal algebraic space and `f : X ⟶ Y` is separated then there is a covering
 > `{Y_j ⟶ Y}` as in Definition 0AIM along which every base change of `f` is separated.
@@ -795,7 +795,7 @@ theorem exists_atlas_isSeparatedMorphism_pullback_snd {X Y : FppfSheaf B S hS} (
       ∀ j, IsSeparatedMorphism B S hS (pullback.snd f (g j))
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_of_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1228). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for a relative diagonal condition: the condition holds for a morphism of formal algebraic spaces with relatively representable relative diagonal as soon as it holds for the base change to every member of a covering of the target as in Definition 0AIM”.
+**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_of_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1228). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for a relative diagonal condition: the condition holds for a morphism of formal algebraic spaces with relatively representable relative diagonal as soon as it holds for the base change to every member of a covering of the target as in Definition 0AIM”.
 
 > Let `f : X ⟶ Y` be a morphism of fppf sheaves on the big fppf site of `S` and let `P` be a
 > property of morphisms of schemes which is stable under base change and local on the target for
@@ -817,7 +817,7 @@ theorem hasRelativeDiagonal_of_atlas (P : MorphismProperty Scheme.{u})
     HasRelativeDiagonal B S hS P f
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_of_atlas_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1256). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for a relative diagonal condition, in the source's form with no extra conjunct: the condition holds for a morphism of formal algebraic spaces as soon as it holds for the base change to every member of a covering of the target as in Definition 0AIM”.
+**`AlgebraicGeometry.FormalSpace.hasRelativeDiagonal_of_atlas_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1256](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1256). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for a relative diagonal condition, in the source's form with no extra conjunct: the condition holds for a morphism of formal algebraic spaces as soon as it holds for the base change to every member of a covering of the target as in Definition 0AIM”.
 
 > A morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` whose source is a formal
 > algebraic space has relative diagonal `P` as soon as its base change to every member of some
@@ -836,7 +836,7 @@ theorem hasRelativeDiagonal_of_atlas_of_isFormalAlgebraicSpace (P : MorphismProp
     HasRelativeDiagonal B S hS P f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_of_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1277). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for separatedness: a morphism of formal algebraic spaces is separated as soon as its base change to every member of a covering of the target as in Definition 0AIM is separated”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_of_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean, line 1277](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SeparatedMorphism.lean#L1277). The attribute's comment: “clause (5) in the covering form of Definition 0AIM, sufficiency for separatedness: a morphism of formal algebraic spaces is separated as soon as its base change to every member of a covering of the target as in Definition 0AIM is separated”.
 
 > Let `f : X ⟶ Y` be a morphism of fppf sheaves on the big fppf site of `S`. If there is a family
 > `{Y_j ⟶ Y}` whose induced morphism from the coproduct is a surjection of sheaves — which is the
@@ -860,4 +860,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.30, Tag 0ARM](https://stacks.math.columbia.edu/tag/0ARM)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

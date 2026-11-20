@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.20 Smoothness over a Noetherian base
 
-Section 76.20 of the Stacks Project, [Tag 0APM](https://stacks.math.columbia.edu/tag/0APM). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.20 of the Stacks Project, [Tag 0APM](https://stacks.math.columbia.edu/tag/0APM). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0APN, a lemma
 
 [Tag 0APN](https://stacks.math.columbia.edu/tag/0APN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.LiftsAt.mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtInfinitesimalLifting.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtInfinitesimalLifting.lean#L331). The attribute's comment: “condition (2) implies condition (3)”.
+**`AlgebraicGeometry.Space.LiftsAt.mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtInfinitesimalLifting.lean, line 331](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtInfinitesimalLifting.lean#L331). The attribute's comment: “condition (2) implies condition (3)”.
 
 > **Stacks 0APN, (2) implies (3).** The lifting property at a point against a class of
 > extensions implies the lifting property against any subclass.
@@ -28,7 +28,7 @@ theorem LiftsAt.mono {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} {f : X ⟶ Y}
     LiftsAt B S hS f x extension'
 ```
 
-**`AlgebraicGeometry.Space.isSmoothAt_of_liftsAt_isSmallExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtInfinitesimalLifting.lean, line 752](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtInfinitesimalLifting.lean#L752). The attribute's comment: “condition (3) implies condition (1)”.
+**`AlgebraicGeometry.Space.isSmoothAt_of_liftsAt_isSmallExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtInfinitesimalLifting.lean, line 752](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtInfinitesimalLifting.lean#L752). The attribute's comment: “condition (3) implies condition (1)”.
 
 > **Stacks 0APN, (3) implies (1).** A morphism of algebraic spaces over `S` which is locally
 > of finite type, whose target is locally Noetherian, and which has the lifting property at a
@@ -50,7 +50,7 @@ theorem isSmoothAt_of_liftsAt_isSmallExtension
     IsSmoothAt B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.IsSmoothAt.liftsAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtLiftingCriterion.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtLiftingCriterion.lean#L98). The attribute's comment: “condition (1) implies conditions (2) and (3)”. References: SGA 3 XI (1.5), “partial”.
+**`AlgebraicGeometry.Space.IsSmoothAt.liftsAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtLiftingCriterion.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtLiftingCriterion.lean#L98). The attribute's comment: “condition (1) implies conditions (2) and (3)”. References: SGA 3 XI (1.5), “partial”.
 
 > **Stacks 0APN, (1) implies (2) and (3).** A morphism of algebraic spaces over `S` which is
 > smooth at a point of its source has the lifting property at that point against every class of
@@ -74,7 +74,7 @@ theorem IsSmoothAt.liftsAt
     LiftsAt B S hS f x extension
 ```
 
-**`AlgebraicGeometry.Space.tfae_isSmoothAt_liftsAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtLiftingCriterion.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtLiftingCriterion.lean#L156). References: SGA 3 XI (1.5), “partial”.
+**`AlgebraicGeometry.Space.tfae_isSmoothAt_liftsAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtLiftingCriterion.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothAtLiftingCriterion.lean#L156). References: SGA 3 XI (1.5), “partial”.
 
 > **Stacks 0APN.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > locally of finite type, with `Y` locally Noetherian, and let `x` be a point of `X`. Then the
@@ -102,7 +102,7 @@ theorem tfae_isSmoothAt_liftsAt
 
 [Tag 0APP](https://stacks.math.columbia.edu/tag/0APP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.not_forall_isSmooth_iff_liftsAgainstFiniteTypeSmallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessFiniteTypeLiftingCounterexample.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessFiniteTypeLiftingCounterexample.lean#L444). The attribute's comment: “the statement with the test morphism Spec B' ⟶ Y of finite type is false: the point Spec ℚ ⟶ 𝔸¹\_ℚ/ℤ of the zero section satisfies that condition (2) and is not smooth. The corrected form, with Spec B' ⟶ Y locally of finite type, is isSmooth\_iff\_forall\_exists\_lift\_isSmallExtension”.
+**`AlgebraicGeometry.Space.not_forall_isSmooth_iff_liftsAgainstFiniteTypeSmallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessFiniteTypeLiftingCounterexample.lean, line 444](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessFiniteTypeLiftingCounterexample.lean#L444). The attribute's comment: “the statement with the test morphism Spec B' ⟶ Y of finite type is false: the point Spec ℚ ⟶ 𝔸¹\_ℚ/ℤ of the zero section satisfies that condition (2) and is not smooth. The corrected form, with Spec B' ⟶ Y locally of finite type, is isSmooth\_iff\_forall\_exists\_lift\_isSmallExtension”.
 
 > **Stacks 0APP, as stated, is false.** The equivalence of smoothness with condition (2) of
 > Stacks 0APP, in which the test morphism `Spec B' ⟶ Y` is required to be of finite type, fails for
@@ -125,7 +125,7 @@ theorem not_forall_isSmooth_iff_liftsAgainstFiniteTypeSmallExtensions :
       (IsSmooth B S hS f ↔ LiftsAgainstFiniteTypeSmallExtensions B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.IsSmooth.liftsAgainstFiniteTypeSmallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOverNoetherianBaseLifting.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOverNoetherianBaseLifting.lean#L172). The attribute's comment: “(1) implies (2) as stated, with the test morphism Spec B' ⟶ Y of finite type”.
+**`AlgebraicGeometry.Space.IsSmooth.liftsAgainstFiniteTypeSmallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOverNoetherianBaseLifting.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOverNoetherianBaseLifting.lean#L172). The attribute's comment: “(1) implies (2) as stated, with the test morphism Spec B' ⟶ Y of finite type”.
 
 > **Stacks 0APP, (1) implies (2), as stated.** A smooth morphism of algebraic spaces
 > satisfies condition (2) of Stacks 0APP with the test morphism of finite type. No hypothesis on
@@ -138,7 +138,7 @@ theorem IsSmooth.liftsAgainstFiniteTypeSmallExtensions
     (hf : IsSmooth B S hS f) : LiftsAgainstFiniteTypeSmallExtensions B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isSmooth_iff_forall_exists_lift_isSmallExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOverNoetherianBaseLifting.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOverNoetherianBaseLifting.lean#L408). The attribute's comment: “corrected form: the test morphism Spec R' ⟶ Y is required to be locally of finite type. With it of finite type, as in the source, the statement is false: not\_forall\_isSmooth\_iff\_liftsAgainstFiniteTypeSmallExtensions”. References: SGA 1 III (3.1), “(iii), (iii)⇒(i)”.
+**`AlgebraicGeometry.Space.isSmooth_iff_forall_exists_lift_isSmallExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOverNoetherianBaseLifting.lean, line 408](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOverNoetherianBaseLifting.lean#L408). The attribute's comment: “corrected form: the test morphism Spec R' ⟶ Y is required to be locally of finite type. With it of finite type, as in the source, the statement is false: not\_forall\_isSmooth\_iff\_liftsAgainstFiniteTypeSmallExtensions”. References: SGA 1 III (3.1), “(iii), (iii)⇒(i)”.
 
 > **Stacks 0APP.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > locally of finite type, with `Y` locally Noetherian. Then `f` is smooth if and only if every
@@ -179,7 +179,7 @@ theorem isSmooth_iff_forall_exists_lift_isSmallExtension
 
 [Tag 0APQ](https://stacks.math.columbia.edu/tag/0APQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmoothAt_of_isSmooth_nthOrderInfinitesimalNeighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOnInfinitesimalNeighbourhoods.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOnInfinitesimalNeighbourhoods.lean#L97). The attribute's comment: “part (1): smooth. Z is an arbitrary closed subspace and Zₙ its nth infinitesimal neighbourhood (Tag 05ZV), built on a surjective étale chart from the invariant ideal sheaf cutting out Z, which exists and is unique by exists\_isInvariantIdealSheaf\_invariantSubspace\_eq and ker\_rep\_snd\_eq\_of\_invariantSubspace\_eq; Xₙ is any fibre product Zₙ ×\_Y X”.
+**`AlgebraicGeometry.Space.isSmoothAt_of_isSmooth_nthOrderInfinitesimalNeighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOnInfinitesimalNeighbourhoods.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOnInfinitesimalNeighbourhoods.lean#L97). The attribute's comment: “part (1): smooth. Z is an arbitrary closed subspace and Zₙ its nth infinitesimal neighbourhood (Tag 05ZV), built on a surjective étale chart from the invariant ideal sheaf cutting out Z, which exists and is unique by exists\_isInvariantIdealSheaf\_invariantSubspace\_eq and ker\_rep\_snd\_eq\_of\_invariantSubspace\_eq; Xₙ is any fibre product Zₙ ×\_Y X”.
 
 > **Stacks 0APQ, part (1).** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which
 > is locally of finite type, with `Y` locally Noetherian. Let `Z ⊆ Y` be a closed subspace, cut out
@@ -211,7 +211,7 @@ theorem isSmoothAt_of_isSmooth_nthOrderInfinitesimalNeighbourhood
     IsSmoothAt B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.isEtaleAt_of_isEtale_nthOrderInfinitesimalNeighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOnInfinitesimalNeighbourhoods.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOnInfinitesimalNeighbourhoods.lean#L164). The attribute's comment: “part (2): étale. Z is an arbitrary closed subspace and Zₙ its nth infinitesimal neighbourhood (Tag 05ZV), built on a surjective étale chart from the invariant ideal sheaf cutting out Z, which exists and is unique by exists\_isInvariantIdealSheaf\_invariantSubspace\_eq and ker\_rep\_snd\_eq\_of\_invariantSubspace\_eq; Xₙ is any fibre product Zₙ ×\_Y X”.
+**`AlgebraicGeometry.Space.isEtaleAt_of_isEtale_nthOrderInfinitesimalNeighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOnInfinitesimalNeighbourhoods.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothnessOnInfinitesimalNeighbourhoods.lean#L164). The attribute's comment: “part (2): étale. Z is an arbitrary closed subspace and Zₙ its nth infinitesimal neighbourhood (Tag 05ZV), built on a surjective étale chart from the invariant ideal sheaf cutting out Z, which exists and is unique by exists\_isInvariantIdealSheaf\_invariantSubspace\_eq and ker\_rep\_snd\_eq\_of\_invariantSubspace\_eq; Xₙ is any fibre product Zₙ ×\_Y X”.
 
 > **Stacks 0APQ, part (2).** In the situation of
 > `AlgebraicGeometry.Space.isSmoothAt_of_isSmooth_nthOrderInfinitesimalNeighbourhood`, if
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.20, Tag 0APM](https://stacks.math.columbia.edu/tag/0APM)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.15 Generating derived categories
 
-Section 75.15 of the Stacks Project, [Tag 09IU](https://stacks.math.columbia.edu/tag/09IU). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 75.15 of the Stacks Project, [Tag 09IU](https://stacks.math.columbia.edu/tag/09IU). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09IV, a lemma
 
 [Tag 09IV](https://stacks.math.columbia.edu/tag/09IV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isPerfect_retract_restrict_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtension.lean, line 673](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtension.lean#L673).
+**`AlgebraicGeometry.Space.exists_isPerfect_retract_restrict_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtension.lean, line 673](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtension.lean#L673).
 
 > **Stacks 09IV.** Let `S` be a scheme, `X` a quasi-compact and quasi-separated algebraic space
 > over `S`, `W ⊆ X` a quasi-compact open subspace and `T ⊆ |X|` a closed subset such that
@@ -58,7 +58,7 @@ theorem exists_isPerfect_retract_restrict_of_supported
 
 [Tag 09IW](https://stacks.math.columbia.edu/tag/09IW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isPerfect_restrict_iso_biprod_isIso_homologyFunctor_map_inl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtensionCohomology.lean, line 757](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtensionCohomology.lean#L757). The attribute's comment: “first and second assertions: the shape of the restriction, and its top cohomology”.
+**`AlgebraicGeometry.Space.exists_isPerfect_restrict_iso_biprod_isIso_homologyFunctor_map_inl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtensionCohomology.lean, line 757](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtensionCohomology.lean#L757). The attribute's comment: “first and second assertions: the shape of the restriction, and its top cohomology”.
 
 > **Stacks 09IW, first two assertions.** Let `S` be a scheme, `X` a quasi-compact and
 > quasi-separated algebraic space over `S`, `W ⊆ X` a quasi-compact open subspace, `T ⊆ |X|` a
@@ -122,7 +122,7 @@ theorem exists_isPerfect_restrict_iso_biprod_isIso_homologyFunctor_map_inl
           (openSubspaceSpace B S hS W hW).2) i).map (biprod.inl ≫ e.inv))
 ```
 
-**`AlgebraicGeometry.Space.exists_isPerfect_retract_restrict_isIso_homologyFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtensionCohomology.lean, line 821](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtensionCohomology.lean#L821). The attribute's comment: “third assertion: equality of cohomology sheaves above any given degree”.
+**`AlgebraicGeometry.Space.exists_isPerfect_retract_restrict_isIso_homologyFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtensionCohomology.lean, line 821](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectSupportedExtensionCohomology.lean#L821). The attribute's comment: “third assertion: equality of cohomology sheaves above any given degree”.
 
 > **Stacks 09IW, third assertion.** In the situation of Stacks 09IV — `S` a scheme, `X` a
 > quasi-compact and quasi-separated algebraic space over `S`, `W ⊆ X` a quasi-compact open subspace,
@@ -184,7 +184,7 @@ theorem exists_isPerfect_retract_restrict_isIso_homologyFunctor_map
 
 [Tag 09IX](https://stacks.math.columbia.edu/tag/09IX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isPerfect_retract_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectSummandExtension.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectSummandExtension.lean#L187).
+**`AlgebraicGeometry.Space.exists_isPerfect_retract_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectSummandExtension.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectSummandExtension.lean#L187).
 
 > **Stacks 09IX.** Let `S` be a scheme, `X` a quasi-compact and quasi-separated algebraic space
 > over `S`, `W` a quasi-compact open subspace of `X` and `P` a perfect object of `D(𝒪_W)`. Then `P`
@@ -214,7 +214,7 @@ theorem exists_isPerfect_retract_restrict (hZ : B.Contains (⊤_ Scheme.{u}))
         s ≫ r = 𝟙 P
 ```
 
-**`AlgebraicGeometry.Space.exists_isPerfect_restrict_iso_biprod_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectSummandRestriction.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectSummandRestriction.lean#L72).
+**`AlgebraicGeometry.Space.exists_isPerfect_restrict_iso_biprod_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectSummandRestriction.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectDirectSummandRestriction.lean#L72).
 
 > **Stacks 09IX.** Let `S` be a scheme, `X` a quasi-compact and quasi-separated algebraic space
 > over `S` and `W ⊆ X` a quasi-compact open subspace. Let `P` be a perfect object of `D(𝒪_W)`.
@@ -248,7 +248,7 @@ theorem exists_isPerfect_restrict_iso_biprod_of_isPerfect
 
 [Tag 09IY](https://stacks.math.columbia.edu/tag/09IY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectCompactQcqs.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectCompactQcqs.lean#L171).
+**`AlgebraicGeometry.Space.exists_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectCompactQcqs.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectCompactQcqs.lean#L171).
 
 > **Stacks 09IY.** Let `X` be a quasi-compact and quasi-separated algebraic space over `S`.
 > There is a perfect object `P` of `D(𝒪_X)` such that an object `E` of `D_QCoh(𝒪_X)` is zero if and
@@ -268,7 +268,7 @@ theorem exists_isPerfect_generator (X : AlgebraicSpaces B S hS)
           IsZero E.obj ↔ ∀ n : ℤ, Subsingleton (P⟦n⟧ ⟶ E.obj)
 ```
 
-**`AlgebraicGeometry.Space.exists_isPerfect_isZero_iff_forall_hom_shift_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/QcqsPerfectGenerator.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/QcqsPerfectGenerator.lean#L48).
+**`AlgebraicGeometry.Space.exists_isPerfect_isZero_iff_forall_hom_shift_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/QcqsPerfectGenerator.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/QcqsPerfectGenerator.lean#L48).
 
 > **Stacks 09IY.** Let `S` be a scheme and `X` a quasi-compact and quasi-separated algebraic
 > space over `S`. The category `D_QCoh(𝒪_X)` is generated by a single perfect object: there is a
@@ -288,7 +288,7 @@ theorem exists_isPerfect_isZero_iff_forall_hom_shift_eq_zero (B : BigFppfSite.{u
 
 [Tag 0E4R](https://stacks.math.columbia.edu/tag/0E4R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.tfae_reflectsIsomorphisms_quasicoherentDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean#L59). The attribute's comment: “the equivalence of (1), (2) and (3)”.
+**`AlgebraicGeometry.Space.tfae_reflectsIsomorphisms_quasicoherentDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean#L59). The attribute's comment: “the equivalence of (1), (2) and (3)”.
 
 > **Stacks 0E4R.** Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of algebraic
 > spaces and `E` a generator of `D_QCoh(𝒪_Y)`. The following are equivalent:
@@ -309,7 +309,7 @@ theorem tfae_reflectsIsomorphisms_quasicoherentDerivedPushforward (f : X ⟶ Y)
         IsZero K ↔ ∀ n : ℤ, Subsingleton (((quasicoherentDerivedModulePullback f).obj E)⟦n⟧ ⟶ K)]
 ```
 
-**`AlgebraicGeometry.Space.isZero_quasicoherentDerivedPushforward_obj_iff_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean#L75). The attribute's comment: “the conditions hold if f is affine”.
+**`AlgebraicGeometry.Space.isZero_quasicoherentDerivedPushforward_obj_iff_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean#L75). The attribute's comment: “the conditions hold if f is affine”.
 
 > **Stacks 0E4R, the case of an affine morphism.** For `f` affine, `Rf_*K = 0` if and only if
 > `K = 0`, for `K` in `D_QCoh(𝒪_X)`.
@@ -321,7 +321,7 @@ theorem isZero_quasicoherentDerivedPushforward_obj_iff_of_isAffineHom (f : X ⟶
     IsZero ((quasicoherentDerivedPushforward B S hS f hfqc hfqs).obj K) ↔ IsZero K
 ```
 
-**`AlgebraicGeometry.Space.isZero_quasicoherentDerivedPushforward_obj_iff_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean#L86). The attribute's comment: “the conditions hold if f is an open immersion”.
+**`AlgebraicGeometry.Space.isZero_quasicoherentDerivedPushforward_obj_iff_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean#L86). The attribute's comment: “the conditions hold if f is an open immersion”.
 
 > **Stacks 0E4R, the case of an open immersion.** For an open immersion `j`, `Rj_*K = 0` if and
 > only if `K = 0`: the restriction of `Rj_*K` to the open is `K`.
@@ -334,7 +334,7 @@ theorem isZero_quasicoherentDerivedPushforward_obj_iff_of_isOpenImmersion (f : X
     IsZero ((quasicoherentDerivedPushforward B S hS f hfqc hfqs).obj K) ↔ IsZero K
 ```
 
-**`AlgebraicGeometry.Space.isZero_quasicoherentDerivedPushforward_obj_iff_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean#L103). The attribute's comment: “the conditions are stable under composition”.
+**`AlgebraicGeometry.Space.isZero_quasicoherentDerivedPushforward_obj_iff_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardGenerator.lean#L103). The attribute's comment: “the conditions are stable under composition”.
 
 > **Stacks 0E4R, compositions.** If `Rf_*` and `Rg_*` detect zero objects of `D_QCoh`, then
 > so does `R(f ≫ g)_*`.
@@ -356,7 +356,7 @@ theorem isZero_quasicoherentDerivedPushforward_obj_iff_comp (f : X ⟶ Y) (g : Y
 
 [Tag 0AEC](https://stacks.math.columbia.edu/tag/0AEC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isPerfect_generator_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectGenerator.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectGenerator.lean#L393).
+**`AlgebraicGeometry.Space.exists_isPerfect_generator_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectGenerator.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectGenerator.lean#L393).
 
 > **Stacks 0AEC.** Let `S` be a scheme, `X` a quasi-compact and quasi-separated algebraic space
 > over `S`, and `T ⊆ |X|` a closed subset such that `|X| ∖ T` is quasi-compact. Then
@@ -392,4 +392,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.15, Tag 09IU](https://stacks.math.columbia.edu/tag/09IU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

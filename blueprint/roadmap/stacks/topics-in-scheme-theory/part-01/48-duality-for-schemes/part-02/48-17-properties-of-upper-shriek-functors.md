@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.17 Properties of upper shriek functors
 
-Section 48.17 of the Stacks Project, [Tag 0ATZ](https://stacks.math.columbia.edu/tag/0ATZ). 11 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 48.17 of the Stacks Project, [Tag 0ATZ](https://stacks.math.columbia.edu/tag/0ATZ). 11 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AU0, a lemma
 
 [Tag 0AU0](https://stacks.math.columbia.edu/tag/0AU0) in the Stacks Project.
 
-**`Stacks.Duality.upperShriekIsoRestrictOfOpenImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineComparison/OpenImmersionRestriction.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineComparison/OpenImmersionRestriction.lean#L87). The attribute's comment: “j^! = j^* with j^* the restriction to the open X, j^! computed at the compactification X-bar = Y that the source's proof chooses; over a quasi-compact quasi-separated base and on the unbounded D\_QCoh”.
+**`Stacks.Duality.upperShriekIsoRestrictOfOpenImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineComparison/OpenImmersionRestriction.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineComparison/OpenImmersionRestriction.lean#L87). The attribute's comment: “j^! = j^* with j^* the restriction to the open X, j^! computed at the compactification X-bar = Y that the source's proof chooses; over a quasi-compact quasi-separated base and on the unbounded D\_QCoh”.
 
 > **Stacks Project, Tag 0AU0 (Lemma 48.17.1).** Let `j : X ⟶ Y` be a morphism of
 > `AlgebraicGeometry.FTS S` whose underlying morphism of schemes is an open immersion. Then the
@@ -37,7 +37,7 @@ def upperShriekIsoRestrictOfOpenImmersion :
 
 [Tag 0G4J](https://stacks.math.columbia.edu/tag/0G4J) in the Stacks Project.
 
-**`Stacks.Duality.upperShriekRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/OpenImmersionSquare.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/OpenImmersionSquare.lean#L54).
+**`Stacks.Duality.upperShriekRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/OpenImmersionSquare.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/OpenImmersionSquare.lean#L54).
 
 > **Stacks Project, Tag 0G4J (Lemma 48.17.2).** In Situation 48.16.1 let
 > `j : U ⟶ X`, `j' : V ⟶ Y` be open immersions and `f : X ⟶ Y`, `g : U ⟶ V` morphisms of
@@ -61,7 +61,7 @@ def upperShriekRestrictIso :
 
 [Tag 0AA1](https://stacks.math.columbia.edu/tag/0AA1) in the Stacks Project.
 
-**`Stacks.Duality.nonempty_upperShriekPlus_affineLineProj_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineLine.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineLine.lean#L295).
+**`Stacks.Duality.nonempty_upperShriekPlus_affineLineProj_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineLine.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineLine.lean#L295).
 
 > **Stacks Project, Tag 0AA1 (Lemma 48.17.3).** In Situation 48.16.1 let `Y` be an object of
 > `FTS S` and let `f : X = 𝔸¹_Y ⟶ Y` be the projection. Then there is a (noncanonical) isomorphism
@@ -84,7 +84,7 @@ theorem nonempty_upperShriekPlus_affineLineProj_iso :
 
 [Tag 0AA2](https://stacks.math.columbia.edu/tag/0AA2) in the Stacks Project.
 
-**`Stacks.Duality.LocallySmall.upperShriek_closedImmersion_of_fts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean#L160). The attribute's comment: “at the locally small derived categories, the model at which the coherator and the right adjoint of Ri\_* are built; i^! is constructed here”.
+**`Stacks.Duality.LocallySmall.upperShriek_closedImmersion_of_fts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean#L160). The attribute's comment: “at the locally small derived categories, the model at which the coherator and the right adjoint of Ri\_* are built; i^! is constructed here”.
 
 > **Stacks Project, Tag 0AA2 (Lemma 48.17.4).** In Situation 48.16.1 — `S` a Noetherian scheme
 > and `FTS S` the schemes separated and of finite type over `S` — let `i : X ⟶ Y` be a morphism of
@@ -126,7 +126,7 @@ theorem upperShriek_closedImmersion_of_fts {S : Scheme.{u}} [IsNoetherian S] {X 
 
 [Tag 0BV2](https://stacks.math.columbia.edu/tag/0BV2) in the Stacks Project.
 
-**`Stacks.Duality.upperShriekRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/OpenImmersionSquare.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/OpenImmersionSquare.lean#L54). The attribute's comment: “part (a): (f^!E)|\_U ≅ g^!(E|\_V) for E in D^+\_QCoh, every open square and every pair of compactifications”.
+**`Stacks.Duality.upperShriekRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/OpenImmersionSquare.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/OpenImmersionSquare.lean#L54). The attribute's comment: “part (a): (f^!E)|\_U ≅ g^!(E|\_V) for E in D^+\_QCoh, every open square and every pair of compactifications”.
 
 > **Stacks Project, Tag 0G4J (Lemma 48.17.2).** In Situation 48.16.1 let
 > `j : U ⟶ X`, `j' : V ⟶ Y` be open immersions and `f : X ⟶ Y`, `g : U ⟶ V` morphisms of
@@ -146,7 +146,7 @@ def upperShriekRestrictIso :
         OpenImmersion.restrictedDerivedRestrict j'.left ⋙ upperShriek g cg
 ```
 
-**`Stacks.Duality.restrictedUpperShriekIsoOfOpenSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineComparison/OpenSquare.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineComparison/OpenSquare.lean#L171). The attribute's comment: “clause (a) only, the restriction formula (f^!E)|\_U = g^!(E|\_V) for an open square; clause (b), the affine formula phi^!(K) = RHom(A, K ⊗^L\_R P)[n], is NOT claimed, because Stacks 0AA1 (f^! = Lf^*[1] for A^1\_V -> V) is absent from this repository. Carried: h0ATXf and h0ATXi, the two instances of Stacks 0ATX for the two factorisations of the diagonal of the square. Stacks 0AU0 is NOT carried: it is proved by Stacks.Duality.upperShriekIsoDerivedPullbackOfOpenImmersion, and supplying it is the only content this statement adds to its hypotheses. Stated for open immersions rather than affine opens, and on the unbounded D\_QCoh rather than D^+\_QCoh”.
+**`Stacks.Duality.restrictedUpperShriekIsoOfOpenSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineComparison/OpenSquare.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekAffineComparison/OpenSquare.lean#L171). The attribute's comment: “clause (a) only, the restriction formula (f^!E)|\_U = g^!(E|\_V) for an open square; clause (b), the affine formula phi^!(K) = RHom(A, K ⊗^L\_R P)[n], is NOT claimed, because Stacks 0AA1 (f^! = Lf^*[1] for A^1\_V -> V) is absent from this repository. Carried: h0ATXf and h0ATXi, the two instances of Stacks 0ATX for the two factorisations of the diagonal of the square. Stacks 0AU0 is NOT carried: it is proved by Stacks.Duality.upperShriekIsoDerivedPullbackOfOpenImmersion, and supplying it is the only content this statement adds to its hypotheses. Stated for open immersions rather than affine opens, and on the unbounded D\_QCoh rather than D^+\_QCoh”.
 
 > **Stacks Project, Tag 0BV2 (Remark 48.17.5), clause (a).** Let `f : X ⟶ Y` and `g : U ⟶ V` be
 > morphisms of `AlgebraicGeometry.FTS S` and let `j : U ⟶ X`, `i : V ⟶ Y` be morphisms of
@@ -174,7 +174,7 @@ def restrictedUpperShriekIsoOfOpenSquare (_hdj : j ≫ f = d) (_hdi : g ≫ i = 
       quasiCoherentDerivedPullback' i.left ⋙ upperShriek g cg
 ```
 
-**`Stacks.Duality.upperShriekCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekStructureSheafCharts.lean, line 679](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekStructureSheafCharts.lean#L679). The attribute's comment: “part (b): (f^!E)|\_U corresponds to phi^!(K) = RHom(A, K (x)^L\_R P)[n] for every pair of affine opens U, V with f(U) in V, every presentation A = P/I and every K in D(R) with E|\_V = K~, E in D^+\_QCoh, every compactification”.
+**`Stacks.Duality.upperShriekCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekStructureSheafCharts.lean, line 679](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekStructureSheafCharts.lean#L679). The attribute's comment: “part (b): (f^!E)|\_U corresponds to phi^!(K) = RHom(A, K (x)^L\_R P)[n] for every pair of affine opens U, V with f(U) in V, every presentation A = P/I and every K in D(R) with E|\_V = K~, E in D^+\_QCoh, every compactification”.
 
 > **Stacks Project, Tag 0BV2 (Remark 48.17.5), second assertion.** In Situation 48.16.1 let
 > `f : X ⟶ Y` be a morphism of `FTS S`, `j` any compactification computing `f^!`, and
@@ -194,7 +194,7 @@ theorem upperShriekCharts
 
 [Tag 0AU1](https://stacks.math.columbia.edu/tag/0AU1) in the Stacks Project.
 
-**`Stacks.Duality.derivedCategoryBPlus_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCoherent.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCoherent.lean#L210).
+**`Stacks.Duality.derivedCategoryBPlus_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCoherent.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCoherent.lean#L210).
 
 > **Stacks Project, Tag 0AU1 (Lemma 48.17.6).** In Situation 48.16.1 let `f : X ⟶ Y` be a
 > morphism of `FTS S`. Then `f^!` maps `D⁺_Coh(𝒪_Y)` into `D⁺_Coh(𝒪_X)`. Here `f^!` is computed at
@@ -215,7 +215,7 @@ theorem derivedCategoryBPlus_upperShriek
 
 [Tag 0AA3](https://stacks.math.columbia.edu/tag/0AA3) in the Stacks Project.
 
-**`Stacks.Duality.isDualizingComplex_upperShriek_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDualizingComplexOfCharts.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDualizingComplexOfCharts.lean#L72). The attribute's comment: “f^! is the library's upper shriek functor of Tag 0A9Y at an arbitrary compactification j of f; the only hypothesis is that K is a dualizing complex on Y”.
+**`Stacks.Duality.isDualizingComplex_upperShriek_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDualizingComplexOfCharts.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDualizingComplexOfCharts.lean#L72). The attribute's comment: “f^! is the library's upper shriek functor of Tag 0A9Y at an arbitrary compactification j of f; the only hypothesis is that K is a dualizing complex on Y”.
 
 > **Stacks Project, Tag 0AA3 (Lemma 48.17.7).** In Situation 48.16.1 let `f : X ⟶ Y` be a
 > morphism of `FTS S`. If `K` is a dualizing complex for `Y`, then `f^!K` is a dualizing complex for
@@ -231,7 +231,7 @@ theorem isDualizingComplex_upperShriek_obj
 
 [Tag 0AU2](https://stacks.math.columbia.edu/tag/0AU2) in the Stacks Project.
 
-**`Stacks.Duality.UpperShriekDuality.upperShriekDualityIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDuality.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDuality.lean#L272).
+**`Stacks.Duality.UpperShriekDuality.upperShriekDualityIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDuality.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDuality.lean#L272).
 
 > **Stacks Project, Tag 0AU2.** In Situation [Stacks, Tag 0F42] — `S` Noetherian — let
 > `f : X ⟶ Y` be a morphism of schemes separated and of finite type over `S`, let `j` be a
@@ -253,7 +253,7 @@ def upperShriekDualityIso :
 
 [Tag 0B6U](https://stacks.math.columbia.edu/tag/0B6U) in the Stacks Project.
 
-**`Stacks.Duality.derivedCategoryBBounded_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCoherent.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCoherent.lean#L237). The attribute's comment: “part (d)”.
+**`Stacks.Duality.derivedCategoryBBounded_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCoherent.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCoherent.lean#L237). The attribute's comment: “part (d)”.
 
 > **Stacks Project, Tag 0B6U (Lemma 48.17.9), part (d).** In Situation 48.16.1 let
 > `f : X ⟶ Y` be a perfect morphism of `FTS S`. Then `f^!` maps `D^b_Coh(𝒪_Y)` into
@@ -270,7 +270,7 @@ theorem derivedCategoryBBounded_upperShriek {S : Scheme.{u}} [AlgebraicGeometry.
       ((upperShriek f j).obj E).obj
 ```
 
-**`Stacks.Duality.derivedCategoryBBounded_upperShriek_derivedStructureSheaf_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean#L63). The attribute's comment: “part (a)”.
+**`Stacks.Duality.derivedCategoryBBounded_upperShriek_derivedStructureSheaf_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean#L63). The attribute's comment: “part (a)”.
 
 > **Stacks Project, Tag 0B6U (Lemma 48.17.9), part (a).** In Situation 48.16.1 let
 > `f : X ⟶ Y` be a perfect morphism of `FTS S`. Then `f^!𝒪_Y` lies in `D^b_Coh(𝒪_X)`: it is
@@ -284,7 +284,7 @@ theorem derivedCategoryBBounded_upperShriek_derivedStructureSheaf_of_perfect [Pe
       (((upperShriek f j).obj (derivedStructureSheaf Y.left)).obj)
 ```
 
-**`Stacks.Duality.hasFiniteTorDimension_derivedScalarRestriction_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean#L81). The attribute's comment: “part (b)”.
+**`Stacks.Duality.hasFiniteTorDimension_derivedScalarRestriction_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean#L81). The attribute's comment: “part (b)”.
 
 > **Stacks Project, Tag 0B6U (Lemma 48.17.9), part (b).** In Situation 48.16.1 let
 > `f : X ⟶ Y` be a perfect morphism of `FTS S`. Then `f^!𝒪_Y` has finite tor dimension in
@@ -298,7 +298,7 @@ theorem hasFiniteTorDimension_derivedScalarRestriction_upperShriek [Perfect f.le
       ((Scheme.Hom.derivedScalarRestriction f.left).obj (relativeDualizingComplexObj f j))
 ```
 
-**`Stacks.Duality.isIso_derivedSheafHomothety_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean#L109). The attribute's comment: “part (c)”.
+**`Stacks.Duality.isIso_derivedSheafHomothety_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfect.lean#L109). The attribute's comment: “part (c)”.
 
 > **Stacks Project, Tag 0B6U (Lemma 48.17.9), part (c).** In Situation 48.16.1 let
 > `f : X ⟶ Y` be a perfect morphism of `FTS S`. Then the homothety
@@ -311,7 +311,7 @@ theorem isIso_derivedSheafHomothety_upperShriek [Perfect f.left] :
       (relativeDualizingComplexObj f j))
 ```
 
-**`Stacks.Duality.isIso_upperShriekCompareWithPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfectComparison.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfectComparison.lean#L46). The attribute's comment: “part (e)”.
+**`Stacks.Duality.isIso_upperShriekCompareWithPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfectComparison.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPerfectComparison.lean#L46). The attribute's comment: “part (e)”.
 
 > Let `S` be a Noetherian scheme and `f : X ⟶ Y` a perfect morphism of `FTS S`. Then the map
 > `μ_{f,K} : Lf^*K ⊗ᴸ_{𝒪_X} f^!𝒪_Y ⟶ f^!K`, `Stacks.Duality.upperShriekCompareWithPullbackCanonical`,
@@ -329,7 +329,7 @@ theorem isIso_upperShriekCompareWithPullback [Perfect f.left]
 
 [Tag 0E9T](https://stacks.math.columbia.edu/tag/0E9T) in the Stacks Project.
 
-**`Stacks.Duality.upperShriek_structureSheaf_isPerfectRelativeTo_and_isIso_homothety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFlatDualizing.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFlatDualizing.lean#L126). The attribute's comment: “both assertions, for f flat and f^! computed at any compactification j: f^! O\_Y is Y-perfect (pseudo-coherent with locally finite Tor dimension over f^\{-1} O\_Y, Tag 0DI0) and the homothety O\_X -> R SheafHom(f^! O\_Y, f^! O\_Y) is an isomorphism; f^! O\_Y is read at the standard model of D(O\_X), which has the same objects as the locally small model at which upperShriek is defined”.
+**`Stacks.Duality.upperShriek_structureSheaf_isPerfectRelativeTo_and_isIso_homothety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFlatDualizing.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFlatDualizing.lean#L126). The attribute's comment: “both assertions, for f flat and f^! computed at any compactification j: f^! O\_Y is Y-perfect (pseudo-coherent with locally finite Tor dimension over f^\{-1} O\_Y, Tag 0DI0) and the homothety O\_X -> R SheafHom(f^! O\_Y, f^! O\_Y) is an isomorphism; f^! O\_Y is read at the standard model of D(O\_X), which has the same objects as the locally small model at which upperShriek is defined”.
 
 > **Stacks Project, Tag 0E9T (Lemma 48.17.10).** In Situation 48.16.1 (`S` Noetherian), let
 > `f : X ⟶ Y` be a flat morphism of `FTS S`, with `f^!` computed at any compactification `j`. Then
@@ -350,7 +350,7 @@ theorem upperShriek_structureSheaf_isPerfectRelativeTo_and_isIso_homothety :
 
 [Tag 0B6V](https://stacks.math.columbia.edu/tag/0B6V) in the Stacks Project.
 
-**`Stacks.Duality.isInvertible_and_isPerfect_upperShriek_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection.lean#L214).
+**`Stacks.Duality.isInvertible_and_isPerfect_upperShriek_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection.lean, line 214](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection.lean#L214).
 
 > **Stacks Project, Tag 0B6V (Lemma 48.17.11).** In Situation 48.16.1 let `f : X ⟶ Y` be a
 > local complete intersection morphism of `FTS S`. Then
@@ -377,4 +377,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.17, Tag 0ATZ](https://stacks.math.columbia.edu/tag/0ATZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

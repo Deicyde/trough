@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.16 Internal hom for sheaves of differential graded modules
 
-Section 24.16 of the Stacks Project, [Tag 0FRN](https://stacks.math.columbia.edu/tag/0FRN). 1 tag here is carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 24.16 of the Stacks Project, [Tag 0FRN](https://stacks.math.columbia.edu/tag/0FRN). 1 tag here is carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FRN, the section
 
 [Tag 0FRN](https://stacks.math.columbia.edu/tag/0FRN) in the Stacks Project.
 
-**`SheafOfModules.LocalHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHom.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHom.lean#L168). The attribute's comment: “a local section of SheafHom^n\_A(M, L) over U: an A|\_U-linear map M|\_U → L|\_U homogeneous of degree n”.
+**`SheafOfModules.LocalHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHom.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHom.lean#L168). The attribute's comment: “a local section of SheafHom^n\_A(M, L) over U: an A|\_U-linear map M|\_U → L|\_U homogeneous of degree n”.
 
 > A local section of `SheafHom^n_A(M, L)` over `U`: a map `M|_U → L|_U` of right differential
 > graded `A|_U`-modules homogeneous of degree `n`.
@@ -25,7 +25,7 @@ structure LocalHom (M : DifferentialGradedModule.{t, a, w} A)
     extends LocalGradedHom M L n U
 ```
 
-**`SheafOfModules.LocalHom.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHom.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHom.lean#L234). The attribute's comment: “the composition map of the internal hom on local sections: composition of homogeneous A|\_U-linear maps, of degree n + m”.
+**`SheafOfModules.LocalHom.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHom.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHom.lean#L234). The attribute's comment: “the composition map of the internal hom on local sections: composition of homogeneous A|\_U-linear maps, of degree n + m”.
 
 > The composition of local homomorphisms of right differential graded `A|_U`-modules.
 
@@ -36,7 +36,7 @@ def LocalHom.comp {K : DifferentialGradedModule.{t, a, s} A}
     LocalHom K L nm U
 ```
 
-**`SheafOfModules.LocalHom.diffTo_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L116). The attribute's comment: “the Leibniz rule d(f ∘ g) = d(f) ∘ g + (-1)^m f ∘ d(g) on local sections”.
+**`SheafOfModules.LocalHom.diffTo_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L116). The attribute's comment: “the Leibniz rule d(f ∘ g) = d(f) ∘ g + (-1)^m f ∘ d(g) on local sections”.
 
 > **The Leibniz rule for the composition of the internal hom**, on local homomorphisms: for
 > `g` of degree `n` and `f` of degree `m`, `d(f ∘ g) = d(f) ∘ g + (-1)^m f ∘ d(g)`. Here
@@ -50,7 +50,7 @@ theorem diffTo_comp (g : LocalHom K L n U) (f : LocalHom L M m U) {k l : ℤ} (h
       g.comp f.diffAt (by omega) + (m.negOnePow : ℤ) • g.diffAt.comp f (by omega)
 ```
 
-**`SheafOfModules.sheafHomComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L147). The attribute's comment: “the composition map SheafHom^m(L, M) × SheafHom^n(K, L) → SheafHom^\{n + m}(K, M), O-bilinear and compatible with restriction”.
+**`SheafOfModules.sheafHomComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L147). The attribute's comment: “the composition map SheafHom^m(L, M) × SheafHom^n(K, L) → SheafHom^\{n + m}(K, M), O-bilinear and compatible with restriction”.
 
 > **The composition map of the internal hom**
 > `SheafHom^m_A(L, M) × SheafHom^n_A(K, L) ⟶ SheafHom^{n + m}_A(K, M)`, `(f, g) ↦ f ∘ g`: an
@@ -65,7 +65,7 @@ noncomputable def sheafHomComp (K : DifferentialGradedModule.{t, a, z} A)
       ((sheafHomComplex K M).X (n + m))
 ```
 
-**`SheafOfModules.sheafHomComp_leibniz`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L177). The attribute's comment: “the composition map is a morphism of differential graded O-modules: d(f ∘ g) = d(f) ∘ g + (-1)^m f ∘ d(g)”.
+**`SheafOfModules.sheafHomComp_leibniz`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L177). The attribute's comment: “the composition map is a morphism of differential graded O-modules: d(f ∘ g) = d(f) ∘ g + (-1)^m f ∘ d(g)”.
 
 > **The composition map of the internal hom is a morphism of differential graded
 > `O`-modules**: `d(f ∘ g) = d(f) ∘ g + (-1)^m f ∘ d(g)` for a local section `f` of
@@ -87,7 +87,7 @@ theorem sheafHomComp_leibniz (K : DifferentialGradedModule.{t, a, z} A)
               (((sheafHomComplex K L).d n (n + 1)).val.app (op U) g))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L223). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) in each degree”.
+**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L223). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) in each degree”.
 
 > **`Hom_{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg_A(K, L))`**, in degree `n`: a homogeneous
 > right-linear map `K ⟶ L` of degree `n` is the same thing as a global section of
@@ -98,7 +98,7 @@ noncomputable def homogeneousMapSectionsEquiv (K L : DifferentialGradedModule.{u
     (n : ℤ) : HomogeneousMap A K L n ≃ ((sheafHomComplex K L).X n).sections
 ```
 
-**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L246). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is additive”.
+**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L246). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is additive”.
 
 > The identification of homogeneous maps with global sections of the internal hom is
 > additive: a homogeneous map `χ` with underlying cochain `φ + φ'` goes to the sum of the global
@@ -112,7 +112,7 @@ theorem homogeneousMapSectionsEquiv_add (φ φ' χ : HomogeneousMap A K L n)
         (homogeneousMapSectionsEquiv K L n φ').eval U
 ```
 
-**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L261). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is linear over R = Γ(C, O)”.
+**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L261). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is linear over R = Γ(C, O)”.
 
 > The identification of homogeneous maps with global sections of the internal hom is linear
 > over `R = Γ(C, O)`: a homogeneous map `χ` which is `r • φ`, i.e. whose components are those of
@@ -134,7 +134,7 @@ theorem homogeneousMapSectionsEquiv_smul (r : (limit X.O.obj : CommRingCat.{u}))
         (homogeneousMapSectionsEquiv K L n φ).eval U
 ```
 
-**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv_delta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L283). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is compatible with the differentials”.
+**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv_delta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 283](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L283). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is compatible with the differentials”.
 
 > The identification of homogeneous maps with global sections of the internal hom is
 > compatible with the differentials: the commutator `δ φ` of a homogeneous map goes to the
@@ -148,7 +148,7 @@ theorem homogeneousMapSectionsEquiv_delta (φ : HomogeneousMap A K L n)
         ((homogeneousMapSectionsEquiv K L n φ).eval (op U))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L300). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is compatible with composition”.
+**`SheafOfModules.DifferentialGradedModule.homogeneousMapSectionsEquiv_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L300). The attribute's comment: “Hom\_\{Mod^dg(A)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is compatible with composition”.
 
 > The identification of homogeneous maps with global sections of the internal hom is
 > compatible with composition: the composite `ψ ∘ φ` of homogeneous maps goes to the image of the
@@ -163,7 +163,7 @@ theorem homogeneousMapSectionsEquiv_comp (φ : HomogeneousMap A K L n)
         ((homogeneousMapSectionsEquiv K L n φ).eval U)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgHomSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L320). The attribute's comment: “Hom\_\{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)), in the differential graded category”.
+**`SheafOfModules.DifferentialGradedModule.dgHomSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 320](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L320). The attribute's comment: “Hom\_\{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)), in the differential graded category”.
 
 > **`Hom_{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg_A(K, L))`** in degree `n`, read in the
 > differential graded category `Mod^dg(A, d)` itself.
@@ -174,7 +174,7 @@ noncomputable def dgHomSectionsEquiv (K L : DifferentialGradedModule.{u, a, w} A
       ((sheafHomComplex K L).X n).sections
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgHomSectionsEquiv_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L328). The attribute's comment: “Hom\_\{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is additive”.
+**`SheafOfModules.DifferentialGradedModule.dgHomSectionsEquiv_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L328). The attribute's comment: “Hom\_\{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is additive”.
 
 > The identification of the morphisms of `Mod^dg(A, d)` with global sections of the internal
 > hom is additive.
@@ -186,7 +186,7 @@ theorem dgHomSectionsEquiv_add
       (dgHomSectionsEquiv D K L n f).eval U + (dgHomSectionsEquiv D K L n g).eval U
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgHomSectionsEquiv_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L338). The attribute's comment: “Hom\_\{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is compatible with the differentials”.
+**`SheafOfModules.DifferentialGradedModule.dgHomSectionsEquiv_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L338). The attribute's comment: “Hom\_\{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is compatible with the differentials”.
 
 > The identification of the morphisms of `Mod^dg(A, d)` with global sections of the internal
 > hom is compatible with the differentials.
@@ -199,7 +199,7 @@ theorem dgHomSectionsEquiv_d
         ((dgHomSectionsEquiv D K L n f).eval (op U))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgHomSectionsEquiv_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L350). The attribute's comment: “Hom\_\{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is compatible with composition”.
+**`SheafOfModules.DifferentialGradedModule.dgHomSectionsEquiv_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean, line 350](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomComposition.lean#L350). The attribute's comment: “Hom\_\{Mod^dg(A, d)}(K, L) = Γ(C, SheafHom^dg\_A(K, L)) is compatible with composition”.
 
 > The identification of the morphisms of `Mod^dg(A, d)` with global sections of the internal
 > hom is compatible with composition: the composite `g ∘ f` goes to the image of the global
@@ -214,7 +214,7 @@ theorem dgHomSectionsEquiv_comp
         ((dgHomSectionsEquiv D K L n f).eval U)
 ```
 
-**`SheafOfModules.LocalHom.diffAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L311). The attribute's comment: “the differential d(f) = d\_L ∘ f - (-1)^n f ∘ d\_K, homogeneous of degree n + 1 and A-linear”.
+**`SheafOfModules.LocalHom.diffAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 311](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L311). The attribute's comment: “the differential d(f) = d\_L ∘ f - (-1)^n f ∘ d\_K, homogeneous of degree n + 1 and A-linear”.
 
 > The differential `d(f) = d_L ∘ f - (-1)^n f ∘ d_K` of a degree-`n` local homomorphism, a
 > degree-`(n + 1)` local homomorphism.
@@ -223,7 +223,7 @@ theorem dgHomSectionsEquiv_comp
 def diffAt (f : LocalHom K L n U) : LocalHom K L (n + 1) U
 ```
 
-**`SheafOfModules.LocalHom.diffAt_diffAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L394). The attribute's comment: “the differential of the internal hom squares to zero”.
+**`SheafOfModules.LocalHom.diffAt_diffAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L394). The attribute's comment: “the differential of the internal hom squares to zero”.
 
 > The differential of the internal hom squares to zero.
 
@@ -231,7 +231,7 @@ def diffAt (f : LocalHom K L n U) : LocalHom K L (n + 1) U
 theorem diffAt_diffAt (f : LocalHom K L n U) : f.diffAt.diffAt = 0
 ```
 
-**`SheafOfModules.localHomPresheaf_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L625). The attribute's comment: “the local homomorphisms form a sheaf SheafHom^n\_A(K, L) of O-modules”.
+**`SheafOfModules.localHomPresheaf_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 625](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L625). The attribute's comment: “the local homomorphisms form a sheaf SheafHom^n\_A(K, L) of O-modules”.
 
 > **The local homomorphisms form a sheaf**: the presheaf `U ↦ SheafHom^n_A(K, L)(U)` satisfies
 > the sheaf condition.
@@ -242,7 +242,7 @@ theorem localHomPresheaf_isSheaf (K : DifferentialGradedModule.{t, a, z} A)
     Presheaf.IsSheaf J (localHomPresheaf K L n).presheaf
 ```
 
-**`SheafOfModules.sheafHomComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L676). The attribute's comment: “the internal hom SheafHom^dg\_A(K, L) = ⨁\_n SheafHom^n\_A(K, L), a complex of O-modules”.
+**`SheafOfModules.sheafHomComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 676](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L676). The attribute's comment: “the internal hom SheafHom^dg\_A(K, L) = ⨁\_n SheafHom^n\_A(K, L), a complex of O-modules”.
 
 > **The internal hom `SheafHom^dg_A(K, L)`**, as a complex of sheaves of `R`-modules: in degree
 > `n` the sheaf of degree-`n` local homomorphisms `K|_U → L|_U`, with differential
@@ -254,7 +254,7 @@ noncomputable abbrev sheafHomComplex (K : DifferentialGradedModule.{t, a, z} A)
     CochainComplex (SheafOfModules.{max u v z s} R) ℤ
 ```
 
-**`SheafOfModules.isInternalHom_sheafHomComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L707). The attribute's comment: “the sections of SheafHom^n\_A(K, L) over U are the A|\_U-linear maps K|\_U → L|\_U homogeneous of degree n, and its differential is d(f) = d\_L ∘ f - (-1)^n f ∘ d\_K”.
+**`SheafOfModules.isInternalHom_sheafHomComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean, line 707](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedInternalHomSheaf.lean#L707). The attribute's comment: “the sections of SheafHom^n\_A(K, L) over U are the A|\_U-linear maps K|\_U → L|\_U homogeneous of degree n, and its differential is d(f) = d\_L ∘ f - (-1)^n f ∘ d\_K”.
 
 > **The constructed complex is the internal hom**: its sections are the local homomorphisms,
 > additively, `R`-linearly and compatibly with restriction, and its differential is
@@ -273,4 +273,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.16, Tag 0FRN](https://stacks.math.columbia.edu/tag/0FRN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

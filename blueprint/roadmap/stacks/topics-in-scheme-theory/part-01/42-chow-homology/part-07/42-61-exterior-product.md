@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.61 Exterior product
 
-Section 42.61 of the Stacks Project, [Tag 0FBU](https://stacks.math.columbia.edu/tag/0FBU). 5 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.61 of the Stacks Project, [Tag 0FBU](https://stacks.math.columbia.edu/tag/0FBU). 5 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FBV, a lemma
 
 [Tag 0FBV](https://stacks.math.columbia.edu/tag/0FBV) in the Stacks Project.
 
-**`Stacks.Chow.exteriorProduct_mem_rationalEquivalences_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean#L521). The attribute's comment: “well defined in the second variable, unconditionally”.
+**`Stacks.Chow.exteriorProduct_mem_rationalEquivalences_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean, line 521](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean#L521). The attribute's comment: “well defined in the second variable, unconditionally”.
 
 > The exterior product of an `n`-cycle on `X` with an `m`-cycle on `Y` which is rationally
 > equivalent to zero is rationally equivalent to zero.
@@ -29,7 +29,7 @@ theorem exteriorProduct_mem_rationalEquivalences_right (C : ChowSituation.{u}) [
     exteriorProduct C f g n m α β ∈ rationalEquivalences C (pullback.fst f g ≫ f) (n + m)
 ```
 
-**`Stacks.Chow.exteriorProduct_mem_rationalEquivalences_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean#L618). The attribute's comment: “well defined in the first variable, unconditionally”.
+**`Stacks.Chow.exteriorProduct_mem_rationalEquivalences_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean, line 618](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean#L618). The attribute's comment: “well defined in the first variable, unconditionally”.
 
 > The exterior product of an `n`-cycle on `X` which is rationally equivalent to zero with an
 > `m`-cycle on `Y` is rationally equivalent to zero.
@@ -44,7 +44,7 @@ theorem exteriorProduct_mem_rationalEquivalences_left (C : ChowSituation.{u}) [S
     exteriorProduct C f g n m α β ∈ rationalEquivalences C (pullback.fst f g ≫ f) (n + m)
 ```
 
-**`Stacks.Chow.chowExteriorProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean#L707).
+**`Stacks.Chow.chowExteriorProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean, line 707](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalence.lean#L707).
 
 > The exterior product on Chow groups,
 >
@@ -66,7 +66,7 @@ def chowExteriorProduct (C : ChowSituation.{u}) [Subsingleton C.S] [IsIntegral C
 
 [Tag 0FBW](https://stacks.math.columbia.edu/tag/0FBW) in the Stacks Project.
 
-**`Stacks.Chow.bivariantToBaseEval`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverField.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverField.lean#L186). The attribute's comment: “the canonical map A^p(X → Spec k) → CH\_\{-p}(X), cap product with the fundamental class of the point”.
+**`Stacks.Chow.bivariantToBaseEval`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverField.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverField.lean#L186). The attribute's comment: “the canonical map A^p(X → Spec k) → CH\_\{-p}(X), cap product with the fundamental class of the point”.
 
 > **Stacks 0FBW.** The canonical map `A^p(X ⟶ Spec k) ⟶ CH_{-p}(X)`: cap product with the
 > fundamental class of the point, read through the collapse of `X ×_{Spec k} Spec k` onto `X` along
@@ -77,7 +77,7 @@ def chowExteriorProduct (C : ChowSituation.{u}) [Subsingleton C.S] [IsIntegral C
 def bivariantToBaseEval : bivariantToBase C G sX p →+ chowGroup C sX (-p)
 ```
 
-**`Stacks.Chow.bivariantToBaseEval_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverField.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverField.lean#L303). The attribute's comment: “injectivity of the canonical identification, for the base being the spectrum of a field; hS1 is Stacks 02S1 and hfund is Stacks 02NK with Stacks 02R4”.
+**`Stacks.Chow.bivariantToBaseEval_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverField.lean, line 303](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverField.lean#L303). The attribute's comment: “injectivity of the canonical identification, for the base being the spectrum of a field; hS1 is Stacks 02S1 and hfund is Stacks 02NK with Stacks 02R4”.
 
 > **Stacks 0FBW, injectivity.** The canonical map `A^p(X ⟶ Spec k) ⟶ CH_{-p}(X)` of Stacks 0FBW
 > is injective: a bivariant class of degree `p` for the structure morphism of `X` is determined by
@@ -91,7 +91,7 @@ theorem bivariantToBaseEval_injective
     Function.Injective (bivariantToBaseEval C G sX p)
 ```
 
-**`Stacks.Chow.bivariantToBaseEval_bijective_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean#L412). The attribute's comment: “the canonical map A^p(X → Spec k) → CH\_\{-p}(X), c ↦ c ∩ [Spec k], is bijective”.
+**`Stacks.Chow.bivariantToBaseEval_bijective_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean, line 412](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean#L412). The attribute's comment: “the canonical map A^p(X → Spec k) → CH\_\{-p}(X), c ↦ c ∩ [Spec k], is bijective”.
 
 > Let `k` be a field and `X` a scheme locally of finite type over `k`. For
 > every `p ∈ ℤ` the canonical map `A^p(X ⟶ Spec k) ⟶ CH_{-p}(X)`, `c ↦ c ∩ [Spec k]`, is
@@ -107,7 +107,7 @@ theorem bivariantToBaseEval_bijective_field (p : ℤ) :
         (gysinSystemOfInvertible (fieldChowSituation k)) sX p)
 ```
 
-**`Stacks.Chow.bivariantToBaseEquivField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean#L426). The attribute's comment: “the canonical identification A^p(X → Spec k) = CH\_\{-p}(X) as an isomorphism of groups”.
+**`Stacks.Chow.bivariantToBaseEquivField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean, line 426](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean#L426). The attribute's comment: “the canonical identification A^p(X → Spec k) = CH\_\{-p}(X) as an isomorphism of groups”.
 
 > The canonical identification `A^p(X ⟶ Spec k) = CH_{-p}(X)` over a field,
 > as an isomorphism of abelian groups: cap product with the fundamental class of the point.
@@ -118,7 +118,7 @@ def bivariantToBaseEquivField (p : ℤ) :
       chowGroup (fieldChowSituation k) sX (-p)
 ```
 
-**`Stacks.Chow.bivariantChowClassToBaseEquivField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean#L446). The attribute's comment: “the canonical identification A^p(X → Spec k) = CH\_\{-p}(X), c ↦ c ∩ [Spec k], for the bivariant group of Stacks 0B76 whose cap operations are maps”.
+**`Stacks.Chow.bivariantChowClassToBaseEquivField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean, line 446](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldIso.lean#L446). The attribute's comment: “the canonical identification A^p(X → Spec k) = CH\_\{-p}(X), c ↦ c ∩ [Spec k], for the bivariant group of Stacks 0B76 whose cap operations are maps”.
 
 > For the bivariant group `A^p(X ⟶ Spec k)` of Stacks 0B76 in the form
 > `Stacks.Chow.BivariantChowClass`, whose cap operations are plain maps, cap product with the
@@ -131,7 +131,7 @@ def bivariantChowClassToBaseEquivField (p : ℤ) :
       chowGroup (fieldChowSituation k) sX (-p)
 ```
 
-**`Stacks.Chow.bivariantToBaseEval_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldSurjective.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldSurjective.lean#L246). The attribute's comment: “surjectivity of the canonical identification; hEPK is Stacks 0EPK, hgen is the generation of Chow homology by proper pushforwards of flat pullbacks of the class of the point (Stacks 02UC with Stacks 02R4), hS1 is Stacks 02S1, hpp is Stacks 02S2, hRG is Stacks 02RG and h71 is Stacks 0B71 in every relative dimension”.
+**`Stacks.Chow.bivariantToBaseEval_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldSurjective.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldSurjective.lean#L246). The attribute's comment: “surjectivity of the canonical identification; hEPK is Stacks 0EPK, hgen is the generation of Chow homology by proper pushforwards of flat pullbacks of the class of the point (Stacks 02UC with Stacks 02R4), hS1 is Stacks 02S1, hpp is Stacks 02S2, hRG is Stacks 02RG and h71 is Stacks 0B71 in every relative dimension”.
 
 > The canonical map `A^p(X ⟶ Spec k) ⟶ CH_{-p}(X)`, cap product with the fundamental class of the
 > point, is surjective. The hypotheses are the existence of proper pushforwards of bivariant classes
@@ -148,7 +148,7 @@ theorem bivariantToBaseEval_surjective (hS1 : FlatPullbackDescends C)
     Function.Surjective (bivariantToBaseEval C G sX p)
 ```
 
-**`Stacks.Chow.bivariantToBaseEval_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldSurjective.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldSurjective.lean#L270). The attribute's comment: “the canonical identification A^p(X → Spec k) = CH\_\{-p}(X), for the base being the spectrum of a field; hEPK is Stacks 0EPK, hgen is Stacks 02R4, hS1 is Stacks 02S1, hpp is Stacks 02S2, hRG is Stacks 02RG, h71 is Stacks 0B71 and hfund is Stacks 02NK with Stacks 02R4”.
+**`Stacks.Chow.bivariantToBaseEval_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldSurjective.lean, line 270](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldSurjective.lean#L270). The attribute's comment: “the canonical identification A^p(X → Spec k) = CH\_\{-p}(X), for the base being the spectrum of a field; hEPK is Stacks 0EPK, hgen is Stacks 02R4, hS1 is Stacks 02S1, hpp is Stacks 02S2, hRG is Stacks 02RG, h71 is Stacks 0B71 and hfund is Stacks 02NK with Stacks 02R4”.
 
 > The canonical map `A^p(X ⟶ Spec k) ⟶ CH_{-p}(X)` is bijective when the base has one point and
 > is integral, that is, is the spectrum of a field: cap product with the fundamental class of the
@@ -167,7 +167,7 @@ theorem bivariantToBaseEval_bijective
     Function.Bijective (bivariantToBaseEval C G sX p)
 ```
 
-**`Stacks.Chow.bivariantToBaseEval_bijective_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldUnconditional.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldUnconditional.lean#L384). The attribute's comment: “the bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
+**`Stacks.Chow.bivariantToBaseEval_bijective_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldUnconditional.lean, line 384](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldUnconditional.lean#L384). The attribute's comment: “the bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
 
 > **Stacks 0FBW.** Let `X` be locally of finite type over a field `k`. Cap product with the
 > fundamental class of the point, `A^p(X ⟶ Spec k) ⟶ CH_{-p}(X)`, is bijective.
@@ -178,7 +178,7 @@ theorem bivariantToBaseEval_bijective_of_field :
       (gysinSystemOfInvertible (fieldChowSituation k)) sX p)
 ```
 
-**`Stacks.Chow.bivariantToBaseEquivOfField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldUnconditional.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldUnconditional.lean#L399). The attribute's comment: “the bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
+**`Stacks.Chow.bivariantToBaseEquivOfField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldUnconditional.lean, line 399](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyOverFieldUnconditional.lean#L399). The attribute's comment: “the bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
 
 > **Stacks 0FBW.** For `X` locally of finite type over a field `k`, the identification
 > `A^p(X ⟶ Spec k) ≃ CH_{-p}(X)`, `c ↦ c ∩ [Spec k]`, as an isomorphism of groups.
@@ -193,7 +193,7 @@ def bivariantToBaseEquivOfField :
 
 [Tag 0FBX](https://stacks.math.columbia.edu/tag/0FBX) in the Stacks Project.
 
-**`Stacks.Chow.bivariantCommute_bivariantToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommuting.lean, line 649](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommuting.lean#L649). The attribute's comment: “a bivariant class towards the point commutes with every bivariant class, in the form of Stacks 0FA2, for the base being the spectrum of a field; hfund, hEPK and hgen are the prerequisites of Stacks 0FBW, hS1 is Stacks 02S1, hpp is Stacks 02S2, hRG is Stacks 02RG, h71 is Stacks 0B71 and hgys is the isomorphism case of Stacks 02TA”.
+**`Stacks.Chow.bivariantCommute_bivariantToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommuting.lean, line 649](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommuting.lean#L649). The attribute's comment: “a bivariant class towards the point commutes with every bivariant class, in the form of Stacks 0FA2, for the base being the spectrum of a field; hfund, hEPK and hgen are the prerequisites of Stacks 0FBW, hS1 is Stacks 02S1, hpp is Stacks 02S2, hRG is Stacks 02RG, h71 is Stacks 0B71 and hgys is the isomorphism case of Stacks 02TA”.
 
 > **Stacks 0FBX.** Let `c ∈ A^p(X ⟶ S)` be a bivariant class towards the point and let
 > `c' ∈ A^q(Y ⟶ Z)` be an arbitrary bivariant class, for an arbitrary morphism `f : Y ⟶ Z` of
@@ -228,7 +228,7 @@ theorem bivariantCommute_bivariantToBase [Subsingleton C.S] [IsIntegral C.S]
       (bivariantToBaseRestrictionHom C G sX sZ p hgys c) c'
 ```
 
-**`Stacks.Chow.bivariantToBase_commuteCompositeCap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommuting.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommuting.lean#L722). The attribute's comment: “the equality of the two composites c ∘ c' = c' ∘ c of the tag, as operations on every test Chow group; the hypotheses are those of Stacks.Chow.bivariantCommute\_bivariantToBase”.
+**`Stacks.Chow.bivariantToBase_commuteCompositeCap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommuting.lean, line 722](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommuting.lean#L722). The attribute's comment: “the equality of the two composites c ∘ c' = c' ∘ c of the tag, as operations on every test Chow group; the hypotheses are those of Stacks.Chow.bivariantCommute\_bivariantToBase”.
 
 > **Stacks 0FBX, in the shape the tag states it.** The two composites `c ∘ c'` and `c' ∘ c`,
 > both bivariant classes of degree `p + q` for `X ×_S Y ⟶ Z`, agree as operations on every test
@@ -269,7 +269,7 @@ theorem bivariantToBase_commuteCompositeCap_eq [Subsingleton C.S] [IsIntegral C.
             (bivariantToBaseRestrictionHom C G sX sZ p hgys c) hgys hpp t k α)
 ```
 
-**`Stacks.Chow.BivariantChowClass.comp_comm_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommutingField.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommutingField.lean#L773). The attribute's comment: “c ∘ c' = c' ∘ c in A^\{p+q}(X ×\_k Y → Z) for c ∈ A^p(X → Spec k) and c' ∈ A^q(Y → Z), the composites read as in Stacks 0FA2”.
+**`Stacks.Chow.BivariantChowClass.comp_comm_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommutingField.lean, line 773](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/PointClassCommutingField.lean#L773). The attribute's comment: “c ∘ c' = c' ∘ c in A^\{p+q}(X ×\_k Y → Z) for c ∈ A^p(X → Spec k) and c' ∈ A^q(Y → Z), the composites read as in Stacks 0FA2”.
 
 > **Stacks 0FBX.** Let `k` be a field and let `X` be a scheme locally of finite type over `k`.
 > Let `c ∈ A^p(X ⟶ Spec k)`. Let `f : Y ⟶ Z` be a morphism of schemes locally of finite type over
@@ -302,7 +302,7 @@ theorem BivariantChowClass.comp_comm_of_field
 
 [Tag 0FBY](https://stacks.math.columbia.edu/tag/0FBY) in the Stacks Project.
 
-**`Stacks.Chow.commutesExteriorProductCapAt_fundamentalChowClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommuting.lean, line 633](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommuting.lean#L633). The attribute's comment: “the equation α × (c ∩ β) = c ∩ (α × β) of the tag, for α the fundamental class of an integral scheme X flat of relative dimension d over the base — NOT for a general α ∈ CH\_n(X), for which the missing inputs are recorded in the module notes; carries Stacks 02S1 as hfp, Stacks 02RG on Chow groups as hRG, and Stacks 0B71 with the identification of Stacks 0B6Y as h71, these being exactly the hypotheses of Stacks 0B78 in this repository”.
+**`Stacks.Chow.commutesExteriorProductCapAt_fundamentalChowClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommuting.lean, line 633](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommuting.lean#L633). The attribute's comment: “the equation α × (c ∩ β) = c ∩ (α × β) of the tag, for α the fundamental class of an integral scheme X flat of relative dimension d over the base — NOT for a general α ∈ CH\_n(X), for which the missing inputs are recorded in the module notes; carries Stacks 02S1 as hfp, Stacks 02RG on Chow groups as hRG, and Stacks 0B71 with the identification of Stacks 0B6Y as h71, these being exactly the hypotheses of Stacks 0B78 in this repository”.
 
 > **Stacks 0FBY for the fundamental class of an integral scheme flat over the base.** Let the
 > base be the spectrum of a field, let `X` be integral and flat over it of relative dimension `d`,
@@ -335,7 +335,7 @@ theorem commutesExteriorProductCapAt_fundamentalChowClass
       (fundamentalChowClass C sX (d : ℤ))
 ```
 
-**`Stacks.Chow.commutesExteriorProductCap_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingEveryCap.lean, line 889](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingEveryCap.lean#L889). The attribute's comment: “the bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
+**`Stacks.Chow.commutesExteriorProductCap_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingEveryCap.lean, line 889](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingEveryCap.lean#L889). The attribute's comment: “the bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
 
 > **Stacks 0FBY over a field.** Let `k` be a field, `X` locally of finite type over `k`,
 > `u : Y ⟶ Z` a morphism of schemes locally of finite type over `k`, and `c ∈ A^p(Y ⟶ Z)`. Then
@@ -350,7 +350,7 @@ theorem commutesExteriorProductCap_of_field (n m : ℤ) :
       (gysinSystemOfInvertible (fieldChowSituation k)) sX sY sZ u hu p c n m
 ```
 
-**`Stacks.Chow.commutesExteriorProductCap_of_subsingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingGeneral.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingGeneral.lean#L429). The attribute's comment: “α × (c ∩ β) = c ∩ (α × β) in CH\_*(X ×\_S Y), over a base which is a point with dimension function zero (in particular Spec k), for bivariant classes at any Gysin system”.
+**`Stacks.Chow.commutesExteriorProductCap_of_subsingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingGeneral.lean, line 429](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingGeneral.lean#L429). The attribute's comment: “α × (c ∩ β) = c ∩ (α × β) in CH\_*(X ×\_S Y), over a base which is a point with dimension function zero (in particular Spec k), for bivariant classes at any Gysin system”.
 
 > **Stacks 0FBY over a point.** Let the base be a point with dimension function zero, for
 > instance the spectrum of a field, let `X` be locally of finite type over it, let `u : Y ⟶ Z` be a
@@ -371,7 +371,7 @@ theorem commutesExteriorProductCap_of_subsingleton (c : BivariantClass C G sY sZ
     (n m : ℤ) : CommutesExteriorProductCap C hδ G sX sY sZ u hu p c n m
 ```
 
-**`Stacks.Chow.exteriorProductCap_eq_capExteriorProduct_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingGeneral.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingGeneral.lean#L571). The attribute's comment: “α × (c' ∩ β) = c' ∩ (α × β) in CH\_*(X ×\_k Y), for k a field and c' ∈ A^q(Y → Z) of Stacks 0B76”.
+**`Stacks.Chow.exteriorProductCap_eq_capExteriorProduct_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingGeneral.lean, line 571](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductCapCommutingGeneral.lean#L571). The attribute's comment: “α × (c' ∩ β) = c' ∩ (α × β) in CH\_*(X ×\_k Y), for k a field and c' ∈ A^q(Y → Z) of Stacks 0B76”.
 
 > **Stacks 0FBY.** Let `k` be a field, let `X` be a scheme locally of finite type over `k`, let
 > `u : Y ⟶ Z` be a morphism of schemes locally of finite type over `k` and let
@@ -401,7 +401,7 @@ theorem exteriorProductCap_eq_capExteriorProduct_field
 
 [Tag 0FBZ](https://stacks.math.columbia.edu/tag/0FBZ) in the Stacks Project.
 
-**`Stacks.Chow.chowExteriorProduct_assoc_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean, line 1105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean#L1105).
+**`Stacks.Chow.chowExteriorProduct_assoc_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean, line 1105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean#L1105).
 
 > **Stacks 0FBZ.** The exterior product on Chow groups is associative. Let `k` be a field, let
 > `X`, `Y` and `Z` be schemes locally of finite type over `k` and let `a ∈ CH_n(X)`,
@@ -450,7 +450,7 @@ theorem chowExteriorProduct_assoc_unconditional (k : Type u) [Field k] {X Y Z : 
             (TensorProduct.tmul ℤ b c)))
 ```
 
-**`Stacks.Chow.chowExteriorProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean, line 1175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean#L1175).
+**`Stacks.Chow.chowExteriorProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean, line 1175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean#L1175).
 
 > **Stacks 0FBZ.** The exterior product on Chow groups is associative. Let `k` be a field, let
 > `X`, `Y` and `Z` be schemes locally of finite type over `k` and let `a ∈ CH_n(X)`,
@@ -497,7 +497,7 @@ theorem chowExteriorProduct_assoc (k : Type u) [Field k] {X Y Z : Scheme.{u}}
             (TensorProduct.tmul ℤ b c)))
 ```
 
-**`Stacks.Chow.totalChowExteriorProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductTotalAssociativity.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductTotalAssociativity.lean#L154).
+**`Stacks.Chow.totalChowExteriorProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductTotalAssociativity.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductTotalAssociativity.lean#L154).
 
 > **Stacks 0FBZ.** Exterior product is associative. Let `k` be a field, let `X`, `Y`, `Z` be
 > schemes locally of finite type over `k`, and let `α ∈ CH_*(X)`, `β ∈ CH_*(Y)`, `γ ∈ CH_*(Z)`.
@@ -534,4 +534,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.61, Tag 0FBU](https://stacks.math.columbia.edu/tag/0FBU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.54 Higher codimension gysin homomorphisms
 
-Section 42.54 of the Stacks Project, [Tag 0FBI](https://stacks.math.columbia.edu/tag/0FBI). 11 tags here are carried by 46 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.54 of the Stacks Project, [Tag 0FBI](https://stacks.math.columbia.edu/tag/0FBI). 11 tags here are carried by 46 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FBJ, a lemma
 
 [Tag 0FBJ](https://stacks.math.columbia.edu/tag/0FBJ) in the Stacks Project.
 
-**`Stacks.Chow.VirtualNormalBundle.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleBaseChange.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleBaseChange.lean#L522).
+**`Stacks.Chow.VirtualNormalBundle.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleBaseChange.lean, line 522](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleBaseChange.lean#L522).
 
 > **Stacks 0FBJ.** For a cartesian square of schemes whose horizontal arrows `i : Z ⟶ X`
 > and `i' : Z' ⟶ X'` are immersions, the pullback `g^* 𝒩` of a virtual normal bundle `𝒩` for
@@ -33,7 +33,7 @@ def VirtualNormalBundle.baseChange {Z X Z' X' : Scheme.{u}} (i : Z ⟶ X) (i' : 
 
 [Tag 0FBK](https://stacks.math.columbia.edu/tag/0FBK) in the Stacks Project.
 
-**`Stacks.Chow.completedVirtualNormalGysinClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalBundleClass.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalBundleClass.lean#L254). The attribute's comment: “the bivariant class c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ of a virtual normal bundle 𝒩 of arbitrary rank for a closed immersion Z → X”.
+**`Stacks.Chow.completedVirtualNormalGysinClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalBundleClass.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalBundleClass.lean#L254). The attribute's comment: “the bivariant class c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ of a virtual normal bundle 𝒩 of arbitrary rank for a closed immersion Z → X”.
 
 > **Stacks 0FBK, the class `c(Z ⟶ X, 𝒩) ∈ A^*(Z ⟶ X)^∧`** of a virtual normal bundle `𝒩` of
 > arbitrary rank for a closed immersion `i : Z ⟶ X`. On a connected component `Z_a` of `Z`, on which
@@ -47,7 +47,7 @@ def completedVirtualNormalGysinClass (𝒩 : VirtualNormalBundle i) :
     completedBivariantGroup C (gysinSystemOfInvertible C) sZ sX i hi
 ```
 
-**`Stacks.Chow.completedBivariantRestriction_completedVirtualNormalGysinClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalBundleClassBaseChange.lean, line 1350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalBundleClassBaseChange.lean#L1350). The attribute's comment: “base change: the restriction of c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ along X' → X is c(Z ×\_X X' → X', g^*𝒩), for 𝒩 of arbitrary rank”.
+**`Stacks.Chow.completedBivariantRestriction_completedVirtualNormalGysinClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalBundleClassBaseChange.lean, line 1350](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalBundleClassBaseChange.lean#L1350). The attribute's comment: “base change: the restriction of c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ along X' → X is c(Z ×\_X X' → X', g^*𝒩), for 𝒩 of arbitrary rank”.
 
 > **Stacks 0FBK, the base-change clause, for a virtual normal sheaf of arbitrary rank.** For
 > `f : X' ⟶ X` locally of finite type, the restriction (Stacks 0F9Z) of
@@ -72,7 +72,7 @@ theorem completedBivariantRestriction_completedVirtualNormalGysinClass (C : Chow
         (baseChangeVirtualNormalBundle i f 𝒩)
 ```
 
-**`Stacks.Chow.virtualNormalBundleClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean#L356). The attribute's comment: “the bivariant class c(Z → X, 𝒩) ∈ A^r(Z → X) of a virtual normal bundle 𝒩 of constant rank r for a closed immersion Z → X”.
+**`Stacks.Chow.virtualNormalBundleClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean, line 356](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean#L356). The attribute's comment: “the bivariant class c(Z → X, 𝒩) ∈ A^r(Z → X) of a virtual normal bundle 𝒩 of constant rank r for a closed immersion Z → X”.
 
 > **Stacks 0FBK, the class `c(Z ⟶ X, 𝒩) ∈ A^r(Z ⟶ X)`** of a virtual normal bundle `𝒩` of
 > constant rank `r` for a closed immersion `i : Z ⟶ X`: the unique bivariant class with
@@ -85,7 +85,7 @@ def virtualNormalBundleClass (𝒩 : VirtualNormalBundle i) (r : ℕ)
     BivariantClass C (gysinSystemOfInvertible C) sZ sX i hi (r : ℤ)
 ```
 
-**`Stacks.Chow.projectionPullbackClass_comp_virtualNormalBundleClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean#L381). The attribute's comment: “the construction: p^* ∘ c(Z → X, 𝒩) = i\_* ∘ j^* ∘ C in A⁰(N → X), for 𝒩 of constant rank r”.
+**`Stacks.Chow.projectionPullbackClass_comp_virtualNormalBundleClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean, line 381](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean#L381). The attribute's comment: “the construction: p^* ∘ c(Z → X, 𝒩) = i\_* ∘ j^* ∘ C in A⁰(N → X), for 𝒩 of constant rank r”.
 
 > **Stacks 0FBK, the defining relation `p^* ∘ c(Z ⟶ X, 𝒩) = ι_* ∘ j^* ∘ C`**, as an equality
 > of bivariant classes in `A⁰(N ⟶ X)`: the composite (Stacks 0B75) of the class with the flat
@@ -102,7 +102,7 @@ theorem projectionPullbackClass_comp_virtualNormalBundleClass (𝒩 : VirtualNor
         (by ring : (0 : ℤ) = -(r : ℤ) + r) (virtualNormalConeClass C sZ sX i hi 𝒩)
 ```
 
-**`Stacks.Chow.eq_virtualNormalBundleClass_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean#L395). The attribute's comment: “uniqueness: c(Z → X, 𝒩) is the only class in A^r(Z → X) with p^* ∘ c = i\_* ∘ j^* ∘ C (Stacks 02TY)”.
+**`Stacks.Chow.eq_virtualNormalBundleClass_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean, line 395](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleClassConstruction.lean#L395). The attribute's comment: “uniqueness: c(Z → X, 𝒩) is the only class in A^r(Z → X) with p^* ∘ c = i\_* ∘ j^* ∘ C (Stacks 02TY)”.
 
 > **Stacks 0FBK, uniqueness**: a bivariant class `c ∈ A^r(Z ⟶ X)` is `c(Z ⟶ X, 𝒩)` exactly
 > when `p^* ∘ c = ι_* ∘ j^* ∘ C`.
@@ -119,7 +119,7 @@ theorem eq_virtualNormalBundleClass_iff (𝒩 : VirtualNormalBundle i) (r : ℕ)
           (by ring : (0 : ℤ) = -(r : ℤ) + r) (virtualNormalConeClass C sZ sX i hi 𝒩)
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.bivariantRestriction_virtualNormalClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/BaseChange.lean, line 850](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/BaseChange.lean#L850). The attribute's comment: “compatibility with base change at constant rank r: for X' → X locally of finite type, c(Z ×\_X X' → X', g^*𝒩) = res(c(Z → X, 𝒩)) in A^r(Z ×\_X X' → X') (Stacks 0FBJ, 0F9Z)”.
+**`Stacks.Chow.VirtualNormalBundle.bivariantRestriction_virtualNormalClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/BaseChange.lean, line 850](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/BaseChange.lean#L850). The attribute's comment: “compatibility with base change at constant rank r: for X' → X locally of finite type, c(Z ×\_X X' → X', g^*𝒩) = res(c(Z → X, 𝒩)) in A^r(Z ×\_X X' → X') (Stacks 0FBJ, 0F9Z)”.
 
 > **Compatibility with base change**: for a closed immersion `i : Z ⟶ X`, a virtual normal
 > bundle `𝒩` for `i` of constant rank `r` and `h : X' ⟶ X` locally of finite type, the class
@@ -133,7 +133,7 @@ theorem bivariantRestriction_virtualNormalClass :
         (pullback.fst i h ≫ sZ) (pullbackSnd_comp_structureMorphism_eq C sZ sX i hZ h) r
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.completedClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Components.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Components.lean#L249). The attribute's comment: “the class c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ of a virtual normal bundle of arbitrary rank; its degree p part restricts on each connected component Z\_k to c(Z\_k → W\_k, 𝒩|Z\_k) of the construction when 𝒩 has rank p there, and to zero otherwise”.
+**`Stacks.Chow.VirtualNormalBundle.completedClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Components.lean, line 249](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Components.lean#L249). The attribute's comment: “the class c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ of a virtual normal bundle of arbitrary rank; its degree p part restricts on each connected component Z\_k to c(Z\_k → W\_k, 𝒩|Z\_k) of the construction when 𝒩 has rank p there, and to zero otherwise”.
 
 > **Stacks 0FBK.** The class `c(Z ⟶ X, 𝒩) ∈ A^*(Z ⟶ X)^∧` of a virtual normal bundle whose rank
 > need not be constant: the element of the completed bivariant group of Stacks 0FE0 whose degree
@@ -145,7 +145,7 @@ theorem bivariantRestriction_virtualNormalClass :
 def completedClass : completedBivariantGroup C (gysinSystemOfInvertible C) sZ sX i hZ
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.virtualNormalClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Construction.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Construction.lean#L183). The attribute's comment: “the construction at constant rank r: the class c(Z → X, 𝒩) ∈ A^r(Z → X), the quotient of ι\_* ∘ j^* ∘ C by p^*, which is bijective on Chow groups (Stacks 02TY)”.
+**`Stacks.Chow.VirtualNormalBundle.virtualNormalClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Construction.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Construction.lean#L183). The attribute's comment: “the construction at constant rank r: the class c(Z → X, 𝒩) ∈ A^r(Z → X), the quotient of ι\_* ∘ j^* ∘ C by p^*, which is bijective on Chow groups (Stacks 02TY)”.
 
 > **Stacks 0FBK, the construction: the class `c(Z ⟶ X, 𝒩) ∈ A^r(Z ⟶ X)`** of a virtual normal
 > bundle of constant rank `r` for a closed immersion: the bivariant class with
@@ -157,7 +157,7 @@ def virtualNormalClass :
     BivariantClass C (gysinSystemOfInvertible C) sZ sX i hZ r
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.isBivariantClassComposition_virtualNormalClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Construction.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Construction.lean#L215). The attribute's comment: “the construction at constant rank r: p^* ∘ c(Z → X, 𝒩) = ι\_* ∘ j^* ∘ C as an identity of bivariant classes in A⁰(N → X)”.
+**`Stacks.Chow.VirtualNormalBundle.isBivariantClassComposition_virtualNormalClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Construction.lean, line 215](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Construction.lean#L215). The attribute's comment: “the construction at constant rank r: p^* ∘ c(Z → X, 𝒩) = ι\_* ∘ j^* ∘ C as an identity of bivariant classes in A⁰(N → X)”.
 
 > **Stacks 0FBK, the characterizing relation `p^* ∘ c(Z ⟶ X, 𝒩) = ι_* ∘ j^* ∘ C`**, as an
 > identity of bivariant classes in `A⁰(N ⟶ X)` (Stacks 0FE0).
@@ -172,7 +172,7 @@ theorem isBivariantClassComposition_virtualNormalClass :
       (𝒩.pushforwardClass C sX sZ hZ r)
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.eq_virtualNormalClass_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L70). The attribute's comment: “(1), constant rank r: a class c ∈ A^r(Z → X) equals the constructed class c(Z → X, 𝒩) iff p^* ∘ c = ι\_* ∘ j^* ∘ C on Chow groups of T ×\_X N for every T → X locally of finite type, so c(Z → X, 𝒩) is the unique class with this property”.
+**`Stacks.Chow.VirtualNormalBundle.eq_virtualNormalClass_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 70](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L70). The attribute's comment: “(1), constant rank r: a class c ∈ A^r(Z → X) equals the constructed class c(Z → X, 𝒩) iff p^* ∘ c = ι\_* ∘ j^* ∘ C on Chow groups of T ×\_X N for every T → X locally of finite type, so c(Z → X, 𝒩) is the unique class with this property”.
 
 > **Stacks 0FBK (1), constant rank.** For `𝒩` of constant rank `r`, with `p : N ⟶ Z` the vector
 > bundle of `𝒩`, `C ∈ A^0(W_∞ ⟶ X)` the class of Stacks 0F9J, `j : C_ZX ⟶ W_∞` and
@@ -197,7 +197,7 @@ theorem eq_virtualNormalClass_iff (r : ℕ)
             ((𝒩.pushforwardClass C sX sZ hZ r).cap t k α)
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.restriction_completedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L92). The attribute's comment: “(1): the degree p part of c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ restricts on each connected component Z\_k to the class of the construction for 𝒩|Z\_k if 𝒩 has rank p there, else to zero”.
+**`Stacks.Chow.VirtualNormalBundle.restriction_completedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L92). The attribute's comment: “(1): the degree p part of c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ restricts on each connected component Z\_k to the class of the construction for 𝒩|Z\_k if 𝒩 has rank p there, else to zero”.
 
 > **Stacks 0FBK (1).** The degree `p` part of `c(Z ⟶ X, 𝒩) ∈ A^*(Z ⟶ X)^∧`, restricted to the
 > piece `Z_k ⟶ W_k` of a connected component `Z_k` of `Z` (Stacks 0FDZ), is the class
@@ -213,7 +213,7 @@ theorem restriction_completedClass (p : ℤ) (k : _root_.ConnectedComponents Z) 
       𝒩.componentFamily C sX sZ hZ p k
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.eq_completedClass_of_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L109). The attribute's comment: “(1), uniqueness: c(Z → X, 𝒩) is the only element of A^*(Z → X)^∧ with these restrictions to the connected components”.
+**`Stacks.Chow.VirtualNormalBundle.eq_completedClass_of_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L109). The attribute's comment: “(1), uniqueness: c(Z → X, 𝒩) is the only element of A^*(Z → X)^∧ with these restrictions to the connected components”.
 
 > **Stacks 0FBK (1), uniqueness.** `c(Z ⟶ X, 𝒩)` is the only element of `A^*(Z ⟶ X)^∧` whose
 > degree `p` parts restrict on the connected components of `Z` to the classes of the construction
@@ -232,7 +232,7 @@ theorem eq_completedClass_of_restriction
       c = 𝒩.completedClass C sX sZ hZ
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.baseChange_completedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L137). The attribute's comment: “(2): c(Z' → X', g^*𝒩) = res(c(Z → X, 𝒩)) in A^*(Z' → X')^∧ for every X' → X locally of finite type”.
+**`Stacks.Chow.VirtualNormalBundle.baseChange_completedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L137). The attribute's comment: “(2): c(Z' → X', g^*𝒩) = res(c(Z → X, 𝒩)) in A^*(Z' → X')^∧ for every X' → X locally of finite type”.
 
 > **Stacks 0FBK (2), compatibility with base change.** For `h : X' ⟶ X` locally of finite type,
 > `Z' = Z ×_X X'` and the virtual normal bundle `𝒩' = g^*𝒩` of Stacks 0FBJ for `Z' ⟶ X'`,
@@ -250,7 +250,7 @@ theorem baseChange_completedClass {X' : Scheme.{u}} (h : X' ⟶ X) [LocallyOfFin
       completedBivariantRestrictionOfInvertible C sZ sX i hZ h (𝒩.completedClass C sX sZ hZ)
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.completedClass_of_constantRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L156). The attribute's comment: “(3): for 𝒩 of constant rank r, c(Z → X, 𝒩) lies in A^r(Z → X): its degree r part is the class of the construction and its other parts vanish”.
+**`Stacks.Chow.VirtualNormalBundle.completedClass_of_constantRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Statement.lean#L156). The attribute's comment: “(3): for 𝒩 of constant rank r, c(Z → X, 𝒩) lies in A^r(Z → X): its degree r part is the class of the construction and its other parts vanish”.
 
 > **Stacks 0FBK (3).** If `𝒩` has constant rank `r`, then `c(Z ⟶ X, 𝒩) ∈ A^r(Z ⟶ X)`: its degree
 > `r` part is the class `c(Z ⟶ X, 𝒩)` of the construction (the unique class with
@@ -269,7 +269,7 @@ theorem completedClass_of_constantRank (r : ℕ)
 
 [Tag 0FBL](https://stacks.math.columbia.edu/tag/0FBL) in the Stacks Project.
 
-**`Stacks.Chow.completedVirtualNormalGysinClass_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalSubbundle.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalSubbundle.lean#L259). The attribute's comment: “c(Z → X, N) = c\_top(E) ∘ c(Z → X, N') in A^*(Z → X)^∧ for a short exact sequence 0 → N' → N → E → 0 of finite locally free modules of arbitrary rank whose surjection factors through that of N'”.
+**`Stacks.Chow.completedVirtualNormalGysinClass_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalSubbundle.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalSubbundle.lean#L259). The attribute's comment: “c(Z → X, N) = c\_top(E) ∘ c(Z → X, N') in A^*(Z → X)^∧ for a short exact sequence 0 → N' → N → E → 0 of finite locally free modules of arbitrary rank whose surjection factors through that of N'”.
 
 > **Stacks 0FBL.** Let `(S, δ)` be the base situation of chapter 42, let `X` be locally of
 > finite type over `S`, let `i : Z ⟶ X` be a closed subscheme with virtual normal sheaf `𝒩`, and
@@ -299,7 +299,7 @@ theorem completedVirtualNormalGysinClass_eq_of_isTopChernComposition
           (completedVirtualNormalGysinClass C sZ sX i hi 𝒩'))
 ```
 
-**`Stacks.Chow.virtualNormalGysinCap_eq_topChernCap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalSubbundle.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalSubbundle.lean#L347). The attribute's comment: “c(Z -> X, N) = c\_top(E) composed with c(Z -> X, N') for a short exact sequence 0 -> N' -> N -> E -> 0 of finite locally free O\_Z-modules of constant ranks m', m, e whose conormal surjection factors. The short exact sequence IS consumed: it gives m = m' + e, which is what puts the two sides in the same Chow group. Both classes are the ones CHARACTERIZED by Tag 0FBK, neither being constructed in this repository, and the composite is spelled by the top Chern cap rule at `Fin.last e` as Tag 0FAA spells it. CARRIED: Tag 0FAA at the base changes of the two bundle projections (`SubbundleGysinTopChernStep`) -- 0FAA is proved only over the base scheme for the canonical bundles, with no identification of a base-changed vector bundle with the bundle of a pulled-back module; the geometric consequence of the tag's own factoring hypothesis, i\_* = j\_* composed with i'\_* (`SubbundleGysinFactorization`), Tags 0637, 0FBH and 0F9J being absent. THE TAG'S SHEAF-LEVEL FACTORING HYPOTHESIS IS PRESENT AS `_hsigma` BUT UNUSED: the proof runs on that carried geometric consequence instead. Also carried: Tag 02TY injectivity only, Tag 02S1 descent, Tag 0B7G as this directory's standing cap-rule parameter”.
+**`Stacks.Chow.virtualNormalGysinCap_eq_topChernCap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalSubbundle.lean, line 347](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalSubbundle.lean#L347). The attribute's comment: “c(Z -> X, N) = c\_top(E) composed with c(Z -> X, N') for a short exact sequence 0 -> N' -> N -> E -> 0 of finite locally free O\_Z-modules of constant ranks m', m, e whose conormal surjection factors. The short exact sequence IS consumed: it gives m = m' + e, which is what puts the two sides in the same Chow group. Both classes are the ones CHARACTERIZED by Tag 0FBK, neither being constructed in this repository, and the composite is spelled by the top Chern cap rule at `Fin.last e` as Tag 0FAA spells it. CARRIED: Tag 0FAA at the base changes of the two bundle projections (`SubbundleGysinTopChernStep`) -- 0FAA is proved only over the base scheme for the canonical bundles, with no identification of a base-changed vector bundle with the bundle of a pulled-back module; the geometric consequence of the tag's own factoring hypothesis, i\_* = j\_* composed with i'\_* (`SubbundleGysinFactorization`), Tags 0637, 0FBH and 0F9J being absent. THE TAG'S SHEAF-LEVEL FACTORING HYPOTHESIS IS PRESENT AS `_hsigma` BUT UNUSED: the proof runs on that carried geometric consequence instead. Also carried: Tag 02TY injectivity only, Tag 02S1 descent, Tag 0B7G as this directory's standing cap-rule parameter”.
 
 > **Stacks 0FBL**, on cap operations. Let `(S, δ)` be the base situation of chapter 42, let `X`
 > be locally of finite type over `S`, let `i : Z ⟶ X` be a closed subscheme with virtual normal
@@ -338,7 +338,7 @@ theorem virtualNormalGysinCap_eq_topChernCap_comp
         (subbundleTopChernCap C sZ i m' e Eb cap g k (c'.cap g k α))
 ```
 
-**`Stacks.Chow.virtualNormalGysinClass_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalSubbundle.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalSubbundle.lean#L392). The attribute's comment: “c(Z -> X, N) = c\_top(E) composed with c(Z -> X, N') for a short exact sequence 0 -> N' -> N -> E -> 0 of finite locally free O\_Z-modules of constant ranks m', m, e whose conormal surjection factors. The short exact sequence IS consumed: it gives m = m' + e, which is what puts the two sides in the same Chow group. Read as an equality of classes in A^m(Z -> X) via `BivariantClass.ext`. Both classes are the ones CHARACTERIZED by Tag 0FBK, neither being constructed in this repository, and the composite is spelled by the top Chern cap rule at `Fin.last e` as Tag 0FAA spells it. CARRIED: Tag 0FAA at the base changes of the two bundle projections (`SubbundleGysinTopChernStep`) -- 0FAA is proved only over the base scheme for the canonical bundles, with no identification of a base-changed vector bundle with the bundle of a pulled-back module; the geometric consequence of the tag's own factoring hypothesis, i\_* = j\_* composed with i'\_* (`SubbundleGysinFactorization`), Tags 0637, 0FBH and 0F9J being absent. THE TAG'S SHEAF-LEVEL FACTORING HYPOTHESIS IS PRESENT AS `_hsigma` BUT UNUSED: the proof runs on that carried geometric consequence instead. Also carried: Tag 02TY injectivity only, Tag 02S1 descent, Tag 0B7G as this directory's standing cap-rule parameter”.
+**`Stacks.Chow.virtualNormalGysinClass_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalSubbundle.lean, line 392](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalSubbundle.lean#L392). The attribute's comment: “c(Z -> X, N) = c\_top(E) composed with c(Z -> X, N') for a short exact sequence 0 -> N' -> N -> E -> 0 of finite locally free O\_Z-modules of constant ranks m', m, e whose conormal surjection factors. The short exact sequence IS consumed: it gives m = m' + e, which is what puts the two sides in the same Chow group. Read as an equality of classes in A^m(Z -> X) via `BivariantClass.ext`. Both classes are the ones CHARACTERIZED by Tag 0FBK, neither being constructed in this repository, and the composite is spelled by the top Chern cap rule at `Fin.last e` as Tag 0FAA spells it. CARRIED: Tag 0FAA at the base changes of the two bundle projections (`SubbundleGysinTopChernStep`) -- 0FAA is proved only over the base scheme for the canonical bundles, with no identification of a base-changed vector bundle with the bundle of a pulled-back module; the geometric consequence of the tag's own factoring hypothesis, i\_* = j\_* composed with i'\_* (`SubbundleGysinFactorization`), Tags 0637, 0FBH and 0F9J being absent. THE TAG'S SHEAF-LEVEL FACTORING HYPOTHESIS IS PRESENT AS `_hsigma` BUT UNUSED: the proof runs on that carried geometric consequence instead. Also carried: Tag 02TY injectivity only, Tag 02S1 descent, Tag 0B7G as this directory's standing cap-rule parameter”.
 
 > **Stacks 0FBL**, as an equality in `A^m(Z ⟶ X)`. If `d` is a bivariant class of degree `m`
 > for `i : Z ⟶ X` whose cap operation is cap with `c(Z ⟶ X, 𝒩')` followed by `c_top(ℰ)`, that is
@@ -371,7 +371,7 @@ theorem virtualNormalGysinClass_eq_of_isTopChernComposition
     d = c
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.completedClass_eq_topChernClassCompleted_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/SubbundleCompleted.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/SubbundleCompleted.lean#L544). The attribute's comment: “c(Z → X, 𝒩) = c\_top(ℰ) ∘ c(Z → X, 𝒩') in A^*(Z → X)^∧, for a short exact sequence 0 → 𝒩' → 𝒩 → ℰ → 0 of finite locally free O\_Z-modules along which σ factors through σ' : (𝒩')^∨ → C\_\{Z/X}; ranks arbitrary, c(Z → X, -) the completed classes of Tag 0FBK, c\_top(ℰ) the completed class of Tag 0FA4, ∘ the composition of Tag 0FE0”.
+**`Stacks.Chow.VirtualNormalBundle.completedClass_eq_topChernClassCompleted_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/SubbundleCompleted.lean, line 544](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/SubbundleCompleted.lean#L544). The attribute's comment: “c(Z → X, 𝒩) = c\_top(ℰ) ∘ c(Z → X, 𝒩') in A^*(Z → X)^∧, for a short exact sequence 0 → 𝒩' → 𝒩 → ℰ → 0 of finite locally free O\_Z-modules along which σ factors through σ' : (𝒩')^∨ → C\_\{Z/X}; ranks arbitrary, c(Z → X, -) the completed classes of Tag 0FBK, c\_top(ℰ) the completed class of Tag 0FA4, ∘ the composition of Tag 0FE0”.
 
 > **Stacks 0FBL.** Let `i : Z ⟶ X` be a closed immersion with virtual normal sheaf `𝒩`, let
 > `0 ⟶ 𝒩' ⟶ 𝒩 ⟶ ℰ ⟶ 0` be a short exact sequence of finite locally free `𝒪_Z`-modules, and let
@@ -399,7 +399,7 @@ theorem completedClass_eq_topChernClassCompleted_comp :
 
 [Tag 0FV7](https://stacks.math.columbia.edu/tag/0FV7) in the Stacks Project.
 
-**`Stacks.Chow.completedVirtualNormalGysinRestriction_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalRestrictionExcess.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalRestrictionExcess.lean#L73). The attribute's comment: “res(c(Z → X, N)) = c\_top(E) ∘ c(Z' → X', N') in A^*(Z' → X')^∧, for a cartesian square of closed immersions (the chosen fibre product Z' = Z ×\_X X', where restriction lives), virtual normal sheaves N, N' of arbitrary rank, and a short exact sequence 0 → N' → g^*N → E → 0 of finite locally free modules whose dual square against the conormal sheaves commutes; c the completed classes of Tag 0FBK, c\_top(E) of Tag 0FA4, the composite read at Z' → X'; proved as in the source, by the base-change clause of Tag 0FBK and then Tag 0FBL”.
+**`Stacks.Chow.completedVirtualNormalGysinRestriction_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalRestrictionExcess.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalRestrictionExcess.lean#L73). The attribute's comment: “res(c(Z → X, N)) = c\_top(E) ∘ c(Z' → X', N') in A^*(Z' → X')^∧, for a cartesian square of closed immersions (the chosen fibre product Z' = Z ×\_X X', where restriction lives), virtual normal sheaves N, N' of arbitrary rank, and a short exact sequence 0 → N' → g^*N → E → 0 of finite locally free modules whose dual square against the conormal sheaves commutes; c the completed classes of Tag 0FBK, c\_top(E) of Tag 0FA4, the composite read at Z' → X'; proved as in the source, by the base-change clause of Tag 0FBK and then Tag 0FBL”.
 
 > **Stacks 0FV7.** Let `Z' = Z ×_X X'` be the chosen base change of a closed immersion
 > `i : Z ⟶ X` along `f : X' ⟶ X`, both locally of finite type over the base, let `𝒩` be a virtual
@@ -437,7 +437,7 @@ theorem completedVirtualNormalGysinRestriction_eq_of_isTopChernComposition
             (pullbackSnd_comp_structureMorphism_eq C sZ sX i hi f) 𝒩'))
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.completedBivariantRestriction_completedClass_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/ExcessBaseChange.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/ExcessBaseChange.lean#L174). The attribute's comment: “res(c(Z → X, 𝒩)) = c\_top(ℰ) ∘ c(Z' → X', 𝒩') in A^*(Z' → X')^∧ for the cartesian square Z' = Z ×\_X X' of a closed immersion i along X' → X locally of finite type, virtual normal sheaves 𝒩 for Z ⊂ X and 𝒩' for Z' ⊂ X', and a short exact sequence 0 → 𝒩' → g^*𝒩 → ℰ → 0 of finite locally free O\_\{Z'}-modules whose dual square against the conormal sheaves commutes; ranks arbitrary, c the completed classes of Tag 0FBK, res on completed groups, c\_top(ℰ) of Tag 0FA4, ∘ the composition of Tag 0FE0”.
+**`Stacks.Chow.VirtualNormalBundle.completedBivariantRestriction_completedClass_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/ExcessBaseChange.lean, line 174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/ExcessBaseChange.lean#L174). The attribute's comment: “res(c(Z → X, 𝒩)) = c\_top(ℰ) ∘ c(Z' → X', 𝒩') in A^*(Z' → X')^∧ for the cartesian square Z' = Z ×\_X X' of a closed immersion i along X' → X locally of finite type, virtual normal sheaves 𝒩 for Z ⊂ X and 𝒩' for Z' ⊂ X', and a short exact sequence 0 → 𝒩' → g^*𝒩 → ℰ → 0 of finite locally free O\_\{Z'}-modules whose dual square against the conormal sheaves commutes; ranks arbitrary, c the completed classes of Tag 0FBK, res on completed groups, c\_top(ℰ) of Tag 0FA4, ∘ the composition of Tag 0FE0”.
 
 > **Stacks 0FV7.** Let `i : Z ⟶ X` be a closed immersion of schemes locally of finite type over
 > the base, `h : X' ⟶ X` locally of finite type, and `Z' = Z ×_X X'` with its closed immersion
@@ -481,7 +481,7 @@ theorem completedBivariantRestriction_completedClass_eq_comp :
 
 [Tag 0FBM](https://stacks.math.columbia.edu/tag/0FBM) in the Stacks Project.
 
-**`Stacks.Chow.completedVirtualNormalGysinCap_fundamentalChowClass_excess`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedExcessIntersectionFormula.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedExcessIntersectionFormula.lean#L348). The attribute's comment: “c(Z → X, N) ∩ [Y]\_n = c\_top(E) ∩ [Z ×\_X Y]\_\{n-r} in CH\_*(Z ×\_X Y), for N a virtual normal sheaf of arbitrary rank, c(Z → X, N) ∈ A^*(Z → X)^∧, Z ×\_X Y → Y regular with conormal sheaf of constant rank r, E the excess normal sheaf, and dim\_δ(Y) ≤ n; stated degree by degree”.
+**`Stacks.Chow.completedVirtualNormalGysinCap_fundamentalChowClass_excess`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedExcessIntersectionFormula.lean, line 348](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedExcessIntersectionFormula.lean#L348). The attribute's comment: “c(Z → X, N) ∩ [Y]\_n = c\_top(E) ∩ [Z ×\_X Y]\_\{n-r} in CH\_*(Z ×\_X Y), for N a virtual normal sheaf of arbitrary rank, c(Z → X, N) ∈ A^*(Z → X)^∧, Z ×\_X Y → Y regular with conormal sheaf of constant rank r, E the excess normal sheaf, and dim\_δ(Y) ≤ n; stated degree by degree”.
 
 > Let `i : Z ⟶ X` be a closed immersion of schemes locally of finite type over the base with a
 > virtual normal sheaf `𝒩` (Stacks 0FBQ), of arbitrary rank, and let `g : Y ⟶ X` be locally of
@@ -521,7 +521,7 @@ theorem completedVirtualNormalGysinCap_fundamentalChowClass_excess
           (fundamentalChowClass C (g ≫ sX) n) = 0
 ```
 
-**`Stacks.Chow.virtualNormalGysinCap_fundamentalChowClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ExcessIntersection.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ExcessIntersection.lean#L429). The attribute's comment: “at vanishing excess, where `c_top(ℰ) = 1`: `c(Z ⟶ X, 𝒩) ∩ [Y]_n = [Z ×_X Y]_{n-m}` for the class of Stacks 0FBK, proved from its characterizing relation; carried: `ι_* j^* C` on `[Y]_n` — 0F9J, 02TB and most of 0FBG and 0FBH are proved, but the map `j : C_ZX ⟶ W_∞` is not, needing clauses (4) and (5) of 0FBG and condition (3) of 063M; see the implementation notes — injectivity of `p^*` (02TY), the δ-dim bound”.
+**`Stacks.Chow.virtualNormalGysinCap_fundamentalChowClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ExcessIntersection.lean, line 429](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ExcessIntersection.lean#L429). The attribute's comment: “at vanishing excess, where `c_top(ℰ) = 1`: `c(Z ⟶ X, 𝒩) ∩ [Y]_n = [Z ×_X Y]_{n-m}` for the class of Stacks 0FBK, proved from its characterizing relation; carried: `ι_* j^* C` on `[Y]_n` — 0F9J, 02TB and most of 0FBG and 0FBH are proved, but the map `j : C_ZX ⟶ W_∞` is not, needing clauses (4) and (5) of 0FBG and condition (3) of 063M; see the implementation notes — injectivity of `p^*` (02TY), the δ-dim bound”.
 
 > **Stacks 0FBM at vanishing excess.** In the situation of the virtual normal sheaf, let
 > `g : Y ⟶ X` be locally of finite type and assume that `Z ×_X Y ⟶ Y` is cut out by a regular
@@ -560,7 +560,7 @@ theorem virtualNormalGysinCap_fundamentalChowClass
       fundamentalChowClass C (pullback.fst i g ≫ sZ) (n - (m : ℤ))
 ```
 
-**`Stacks.Chow.virtualNormalGysinCap_fundamentalChowClass_excess`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ExcessIntersection.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ExcessIntersection.lean#L479). The attribute's comment: “with excess: `c(Z ⟶ X, 𝒩) ∩ [Y]_n = c_top(ℰ) ∩ [Z ×_X Y]_{n-r}`, the normal cone given as a rank-`r` sub-bundle `CN` (063M) and `c_top(ℰ)` as the map `cTop` — `Stacks.Chow.topChernClassOfInvertible` of 0FA4 is proved, but at the Gysin system of the first Chern class, while the higher Chern classes for the Gysin system here are carried as elsewhere in this directory; carried also: Stacks 0FAA for `CN ⟶ N ×_X Y`, proved at the constructed bundles of a short exact sequence but not at an arbitrary sub-bundle”.
+**`Stacks.Chow.virtualNormalGysinCap_fundamentalChowClass_excess`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ExcessIntersection.lean, line 479](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ExcessIntersection.lean#L479). The attribute's comment: “with excess: `c(Z ⟶ X, 𝒩) ∩ [Y]_n = c_top(ℰ) ∩ [Z ×_X Y]_{n-r}`, the normal cone given as a rank-`r` sub-bundle `CN` (063M) and `c_top(ℰ)` as the map `cTop` — `Stacks.Chow.topChernClassOfInvertible` of 0FA4 is proved, but at the Gysin system of the first Chern class, while the higher Chern classes for the Gysin system here are carried as elsewhere in this directory; carried also: Stacks 0FAA for `CN ⟶ N ×_X Y`, proved at the constructed bundles of a short exact sequence but not at an arbitrary sub-bundle”.
 
 > **Stacks 0FBM.** In the situation of the virtual normal sheaf, let `g : Y ⟶ X` be locally of
 > finite type, assume `Z ×_X Y ⟶ Y` is a regular closed immersion whose conormal sheaf has constant
@@ -630,7 +630,7 @@ theorem virtualNormalGysinCap_fundamentalChowClass_excess
 
 [Tag 0FEA](https://stacks.math.columbia.edu/tag/0FEA) in the Stacks Project.
 
-**`Stacks.Chow.virtualNormalGysinClass_cap_fundamentalChowClass_of_isCohenMacaulayLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalCapCohenMacaulay.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalCapCohenMacaulay.lean#L67).
+**`Stacks.Chow.virtualNormalGysinClass_cap_fundamentalChowClass_of_isCohenMacaulayLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalCapCohenMacaulay.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalCapCohenMacaulay.lean#L67).
 
 > **Stacks 0FEA.** Let `(S, δ)` be as in Stacks 02QL, let `X` be locally of finite type over
 > `S`, let `𝒩` be a virtual normal sheaf for a closed subscheme `i : Z ⟶ X` (Stacks 0FBQ), and let
@@ -664,7 +664,7 @@ theorem virtualNormalGysinClass_cap_fundamentalChowClass_of_isCohenMacaulayLocal
       fundamentalChowClass C (pullback.fst i g ≫ sZ) (n - r)
 ```
 
-**`Stacks.Chow.isRegular_of_isCohenMacaulayLocalRing_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalCapFundamental.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalCapFundamental.lean#L238). The attribute's comment: “the regular sequence of the proof: hypotheses (1)-(4) force the ideal of `Z ×_X Y` in `𝒪_{Y, ξ}` to be generated by a regular sequence of length `r` at every point of `Z ×_X Y` of `δ`-dimension `n - r`. The cap product `c(Z ⟶ X, 𝒩) ∩ [Y]_n` is NOT stated, Stacks 0FBK having no carrier here. See the implementation notes”.
+**`Stacks.Chow.isRegular_of_isCohenMacaulayLocalRing_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalCapFundamental.lean, line 238](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalCapFundamental.lean#L238). The attribute's comment: “the regular sequence of the proof: hypotheses (1)-(4) force the ideal of `Z ×_X Y` in `𝒪_{Y, ξ}` to be generated by a regular sequence of length `r` at every point of `Z ×_X Y` of `δ`-dimension `n - r`. The cap product `c(Z ⟶ X, 𝒩) ∩ [Y]_n` is NOT stated, Stacks 0FBK having no carrier here. See the implementation notes”.
 
 > **Stacks 0FEA, the regular sequence of the proof.** Let `(S, δ)` be as in Stacks 02QL, let
 > `X` be locally of finite type over `S`, let `i : Z ⟶ X` be a closed subscheme and let
@@ -703,7 +703,7 @@ theorem isRegular_of_isCohenMacaulayLocalRing_stalk (C : ChowSituation.{u})
 
 [Tag 0FBN](https://stacks.math.columbia.edu/tag/0FBN) in the Stacks Project.
 
-**`Stacks.Chow.gysinBivariantClass_eq_virtualNormalBundleClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/DivisorVirtualNormalBundleClass.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/DivisorVirtualNormalBundleClass.lean#L336). The attribute's comment: “unconditional: the constructed Gysin class of Tag 0B79 equals the constructed class c(D → X, 𝒩) of Tag 0FBK for 𝒩 = i^*L with the canonical surjection onto the conormal sheaf, as bivariant classes, so on every test scheme and in every degree”.
+**`Stacks.Chow.gysinBivariantClass_eq_virtualNormalBundleClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/DivisorVirtualNormalBundleClass.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/DivisorVirtualNormalBundleClass.lean#L336). The attribute's comment: “unconditional: the constructed Gysin class of Tag 0B79 equals the constructed class c(D → X, 𝒩) of Tag 0FBK for 𝒩 = i^*L with the canonical surjection onto the conormal sheaf, as bivariant classes, so on every test scheme and in every degree”.
 
 > **Stacks 0FBN.** Let `(S, δ)` be as in Situation 02QL, let `X` be locally of finite type over
 > `S` and let `(ℒ, s, i : D ⟶ X)` be a triple as in Definition 02T8. The Gysin homomorphism `i^*`,
@@ -727,7 +727,7 @@ theorem gysinBivariantClass_eq_virtualNormalBundleClass :
 
 [Tag 0FBP](https://stacks.math.columbia.edu/tag/0FBP) in the Stacks Project.
 
-**`Stacks.Chow.virtualNormalGysinClass_bivariantCommute_of_subbundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VirtualNormalCommuting.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VirtualNormalCommuting.lean#L357). The attribute's comment: “with the factorization c(Z ⟶ X, 𝒩) = c\_top(ℰ) ∘ c(Z ⟶ X, 𝒩') PROVED, by consuming Stacks 0FBL for a short exact sequence 0 ⟶ 𝒩' ⟶ 𝒩 ⟶ ℰ ⟶ 0. CARRIED: the centrality of the top Chern cap of ℰ for c (Stacks 02UA, formalized only against the projective bundle rule and not this directory's carried cap rule), and that c commutes with c(Z ⟶ X, 𝒩')”.
+**`Stacks.Chow.virtualNormalGysinClass_bivariantCommute_of_subbundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VirtualNormalCommuting.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VirtualNormalCommuting.lean#L357). The attribute's comment: “with the factorization c(Z ⟶ X, 𝒩) = c\_top(ℰ) ∘ c(Z ⟶ X, 𝒩') PROVED, by consuming Stacks 0FBL for a short exact sequence 0 ⟶ 𝒩' ⟶ 𝒩 ⟶ ℰ ⟶ 0. CARRIED: the centrality of the top Chern cap of ℰ for c (Stacks 02UA, formalized only against the projective bundle rule and not this directory's carried cap rule), and that c commutes with c(Z ⟶ X, 𝒩')”.
 
 > **Stacks 0FBP with the factorization proved.** Let `i : Z ⟶ X` be a closed subscheme with
 > virtual normal sheaf `𝒩` of constant rank `m`, let `0 ⟶ 𝒩' ⟶ 𝒩 ⟶ ℰ ⟶ 0` be a short exact
@@ -767,7 +767,7 @@ theorem virtualNormalGysinClass_bivariantCommute_of_subbundle
     BivariantCommute C G sX i f (m : ℤ) p cN c
 ```
 
-**`Stacks.Chow.virtualNormalGysinClass_bivariantCommute_of_divisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VirtualNormalCommuting.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VirtualNormalCommuting.lean#L433). The attribute's comment: “the effective Cartier divisor case, the case the source's reduction lands in. PROVED by consuming Stacks 0FBL (the factorization through the rank-one subsheaf), 0FBN (that factor is the Gysin class i^*) and 0FA3 (i^* commutes with c), with their own hypotheses threaded. CARRIED: only the centrality of the top Chern cap of ℰ, Stacks 02UA”.
+**`Stacks.Chow.virtualNormalGysinClass_bivariantCommute_of_divisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VirtualNormalCommuting.lean, line 433](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/VirtualNormalCommuting.lean#L433). The attribute's comment: “the effective Cartier divisor case, the case the source's reduction lands in. PROVED by consuming Stacks 0FBL (the factorization through the rank-one subsheaf), 0FBN (that factor is the Gysin class i^*) and 0FA3 (i^* commutes with c), with their own hypotheses threaded. CARRIED: only the centrality of the top Chern cap of ℰ, Stacks 02UA”.
 
 > **Stacks 0FBP for an effective Cartier divisor**, the case the source's reduction lands in.
 > Let `(𝓛, s, i : Z ⟶ X)` be a triple as in Stacks 02T8, so that `Z` is the zero scheme of `s` and
@@ -843,7 +843,7 @@ theorem virtualNormalGysinClass_bivariantCommute_of_divisor
     BivariantCommute C G sX (gysinTripleInclusion L s) f (m : ℤ) p cN c
 ```
 
-**`Stacks.Chow.VirtualNormalBundle.completedClass_bivariantCommute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Commuting.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Commuting.lean#L459). The attribute's comment: “c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ of Tag 0FBK commutes (Remark 0FA2) with every c ∈ A^p(Y → X), Y → X locally of finite type: each homogeneous part c(Z → X, 𝒩)\_n and c commute on every test scheme T → X; 𝒩 a virtual normal sheaf of arbitrary rank”.
+**`Stacks.Chow.VirtualNormalBundle.completedClass_bivariantCommute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Commuting.lean, line 459](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalClass/Commuting.lean#L459). The attribute's comment: “c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ of Tag 0FBK commutes (Remark 0FA2) with every c ∈ A^p(Y → X), Y → X locally of finite type: each homogeneous part c(Z → X, 𝒩)\_n and c commute on every test scheme T → X; 𝒩 a virtual normal sheaf of arbitrary rank”.
 
 > **Stacks 0FBP.** Let `(S, δ)` be as in Situation 02QL, let `X` be a scheme locally of finite
 > type over `S`, let `Z ⊆ X` be a closed subscheme with virtual normal sheaf `𝒩`, let `g : Y ⟶ X`
@@ -873,7 +873,7 @@ theorem VirtualNormalBundle.completedClass_bivariantCommute (𝒩 : VirtualNorma
 
 [Tag 0FEB](https://stacks.math.columbia.edu/tag/0FEB) in the Stacks Project.
 
-**`Stacks.Chow.gysinBivariantCap_fundamentalChowClass_normalCone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/NormalConeZeroSectionGysin.lean, line 851](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/NormalConeZeroSectionGysin.lean#L851). The attribute's comment: “PROVED, at the canonical Gysin system `Stacks.Chow.canonicalGysinSystem` (whose contained-component rule is the first Chern class of the restricted invertible module, Stacks 02SO), which is the o^* of the source. No hypothesis beyond the source's: X integral, locally of finite type over the base of delta-dimension n, Z and Y effective Cartier divisors with Z inside Y. The closed immersion C\_ZY -> Y x\_\{o, C\_YX} C\_ZX that the source leaves implicit is constructed, as `Stacks.Chow.normalConeToZeroFibre`, the unique morphism with the two components the source names (`Stacks.Chow.normalConeZeroSectionGysinRelation_hom_ext`). The proof goes through the deformation to the normal cone D(Z in X) and Tags 0B73, 02TB, 02TA, 02T9 and 0C4U rather than through the blowups of Tag 0FBG used by the source.”.
+**`Stacks.Chow.gysinBivariantCap_fundamentalChowClass_normalCone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/NormalConeZeroSectionGysin.lean, line 851](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/NormalConeZeroSectionGysin.lean#L851). The attribute's comment: “PROVED, at the canonical Gysin system `Stacks.Chow.canonicalGysinSystem` (whose contained-component rule is the first Chern class of the restricted invertible module, Stacks 02SO), which is the o^* of the source. No hypothesis beyond the source's: X integral, locally of finite type over the base of delta-dimension n, Z and Y effective Cartier divisors with Z inside Y. The closed immersion C\_ZY -> Y x\_\{o, C\_YX} C\_ZX that the source leaves implicit is constructed, as `Stacks.Chow.normalConeToZeroFibre`, the unique morphism with the two components the source names (`Stacks.Chow.normalConeZeroSectionGysinRelation_hom_ext`). The proof goes through the deformation to the normal cone D(Z in X) and Tags 0B73, 02TB, 02TA, 02T9 and 0C4U rather than through the blowups of Tag 0FBG used by the source.”.
 
 > **Stacks Project, Tag 0FEB.** Let `(S, δ)` be as in Situation 02QL, let `X` be an integral
 > scheme locally of finite type over `S` of δ-dimension `n`, and let `Z ⊆ Y ⊆ X` be closed
@@ -930,7 +930,7 @@ theorem gysinBivariantCap_fundamentalChowClass_normalCone [IsIntegral X]
           (n - 1))
 ```
 
-**`Stacks.Chow.gysinBivariantClass_cap_normalCone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/NormalLineConeZeroSectionGysin.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/NormalLineConeZeroSectionGysin.lean#L598).
+**`Stacks.Chow.gysinBivariantClass_cap_normalCone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/NormalLineConeZeroSectionGysin.lean, line 598](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/NormalLineConeZeroSectionGysin.lean#L598).
 
 > **Stacks 0FEB.** Let `(S, δ)` be as in Situation 02QL, let `X` be a scheme locally of finite
 > type over `S` with `dim_δ(X) ≤ n` (the source: `X` integral of `δ`-dimension `n`), and let
@@ -973,7 +973,7 @@ theorem gysinBivariantClass_cap_normalCone {n : ℤ} (hZY : iZY ≫ iY = iZ)
 
 [Tag 0FEC](https://stacks.math.columbia.edu/tag/0FEC) in the Stacks Project.
 
-**`Stacks.Chow.ConormalCompatibleVirtualNormalBundles`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean#L101). The attribute's comment: “the hypothesis of the lemma: the three virtual normal bundles of Stacks 0FBQ for Z ⊆ Y ⊆ X, the short exact sequence of their duals, and its two commutative squares against the genuine conormal sequence of Stacks 062S; stated for immersions rather than closed subschemes, which is a generalization”.
+**`Stacks.Chow.ConormalCompatibleVirtualNormalBundles`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean#L101). The attribute's comment: “the hypothesis of the lemma: the three virtual normal bundles of Stacks 0FBQ for Z ⊆ Y ⊆ X, the short exact sequence of their duals, and its two commutative squares against the genuine conormal sequence of Stacks 062S; stated for immersions rather than closed subschemes, which is a generalization”.
 
 > For immersions `i : Z ⟶ Y` and `j : Y ⟶ X`, three virtual
 > normal bundles — `𝒩` for `Z ⊆ X`, `𝒩'` for `Z ⊆ Y` and `𝒩''` for `Y ⊆ X` — together with a
@@ -993,7 +993,7 @@ structure ConormalCompatibleVirtualNormalBundles {Z Y X : Scheme.{u}} (i : Z ⟶
     [IsImmersion i] [IsImmersion j]
 ```
 
-**`Stacks.Chow.localizedChernClass_cap_eq_bivariantCompositeCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean#L158). The attribute's comment: “the conclusion, reduced to the composition of bivariant classes and read on cap products; the localized Chern class c(Z ⟶ X, 𝒩) of Stacks 0FBK is not constructed in this repository and is carried as a parameter, as everywhere else here, so that the composition formula is a hypothesis”.
+**`Stacks.Chow.localizedChernClass_cap_eq_bivariantCompositeCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean#L158). The attribute's comment: “the conclusion, reduced to the composition of bivariant classes and read on cap products; the localized Chern class c(Z ⟶ X, 𝒩) of Stacks 0FBK is not constructed in this repository and is carried as a parameter, as everywhere else here, so that the composition formula is a hypothesis”.
 
 > Granted that the class attached to
 > `𝒩` composes the class attached to `𝒩'` with the class attached to `𝒩''`, its cap operation on
@@ -1016,7 +1016,7 @@ theorem localizedChernClass_cap_eq_bivariantCompositeCap
         (cloc sY sX j hj D.bundleYX q) t k α
 ```
 
-**`Stacks.Chow.eq_localizedChernClass_of_isBivariantClassComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean#L178). The attribute's comment: “uniqueness: the composition formula determines c(Z ⟶ X, 𝒩), so the content of the lemma reduces to exhibiting the composite; the localized Chern class of Stacks 0FBK is carried as a parameter”.
+**`Stacks.Chow.eq_localizedChernClass_of_isBivariantClassComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernComposition.lean#L178). The attribute's comment: “uniqueness: the composition formula determines c(Z ⟶ X, 𝒩), so the content of the lemma reduces to exhibiting the composite; the localized Chern class of Stacks 0FBK is carried as a parameter”.
 
 > Any bivariant class of degree `p + q` for `Z ⟶ X` that composes `c(Z ⟶ Y, 𝒩')` with
 > `c(Y ⟶ X, 𝒩'')` is `c(Z ⟶ X, 𝒩)`, provided the latter composes them.
@@ -1032,7 +1032,7 @@ theorem eq_localizedChernClass_of_isBivariantClassComposition
     cloc sZ sX (i ≫ j) (comp_comp_structureMorphism_eq hi hj) D.bundleZX (p + q) = c
 ```
 
-**`Stacks.Chow.completedVirtualNormalGysinClass_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernCompositionClass.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernCompositionClass.lean#L103).
+**`Stacks.Chow.completedVirtualNormalGysinClass_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernCompositionClass.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedChernCompositionClass.lean#L103).
 
 > **Stacks 0FEC.** Let `(S, δ)` be as in Situation 02QL, let `i : Z ⟶ Y` and `j : Y ⟶ X` be
 > closed immersions of schemes locally of finite type over `S`, and let `𝒩`, `𝒩'`, `𝒩''` be
@@ -1062,7 +1062,7 @@ theorem completedVirtualNormalGysinClass_comp :
 
 [Tag 0FBQ](https://stacks.math.columbia.edu/tag/0FBQ) in the Stacks Project.
 
-**`Stacks.Chow.completedCommutesWithEveryClass_completedVirtualNormalGysinClassOfOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalCommuting.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalCommuting.lean#L72). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FBP, c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ commutes with every c ∈ A^*(Y → X), for an immersion Z → X and 𝒩 of arbitrary rank”.
+**`Stacks.Chow.completedCommutesWithEveryClass_completedVirtualNormalGysinClassOfOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalCommuting.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalCommuting.lean#L72). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FBP, c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ commutes with every c ∈ A^*(Y → X), for an immersion Z → X and 𝒩 of arbitrary rank”.
 
 > **The counterpart of Stacks 0FBP for immersions** (Stacks 0FBQ). For an immersion
 > `i : Z ⟶ X` with a virtual normal bundle `𝒩` of arbitrary rank, the class
@@ -1077,7 +1077,7 @@ theorem completedCommutesWithEveryClass_completedVirtualNormalGysinClassOfOpen (
       (completedVirtualNormalGysinClassOfOpen C sZ sX i hi U i' hU 𝒩)
 ```
 
-**`Stacks.Chow.completedBivariantTransport_completedBivariantRestriction_completedVirtualNormalGysinClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionBaseChange.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionBaseChange.lean#L200). The attribute's comment: “(3), counterparts: the counterpart of the base-change clause of Lemma 0FBK, the restriction of c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ along X' → X is c(Z' → X', g^*𝒩), for a cartesian square of immersions and 𝒩 of arbitrary rank”.
+**`Stacks.Chow.completedBivariantTransport_completedBivariantRestriction_completedVirtualNormalGysinClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionBaseChange.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionBaseChange.lean#L200). The attribute's comment: “(3), counterparts: the counterpart of the base-change clause of Lemma 0FBK, the restriction of c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ along X' → X is c(Z' → X', g^*𝒩), for a cartesian square of immersions and 𝒩 of arbitrary rank”.
 
 > **The counterpart for immersions of the base-change clause of Stacks 0FBK, at arbitrary
 > rank.** For a cartesian square `Z' = Z ×_X X'` of immersions with `f : X' ⟶ X` locally of finite
@@ -1105,7 +1105,7 @@ theorem completedBivariantTransport_completedBivariantRestriction_completedVirtu
         (𝒩.baseChange i i₂ g' f sq)
 ```
 
-**`Stacks.Chow.completedVirtualNormalGysinRestrictionOfOpen_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionBaseChange.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionBaseChange.lean#L333). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FV7, res(c(Z → X, N)) = c\_top(E) ∘ c(Z' → X', N') in A^*(Z' → X')^∧ for the chosen base change Z' = Z ×\_X X' of an immersion, virtual normal bundles N, N' of arbitrary rank and a short exact sequence 0 → N' → g^*N → E → 0 of finite locally free modules whose dual square against the conormal sheaves commutes”.
+**`Stacks.Chow.completedVirtualNormalGysinRestrictionOfOpen_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionBaseChange.lean, line 333](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionBaseChange.lean#L333). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FV7, res(c(Z → X, N)) = c\_top(E) ∘ c(Z' → X', N') in A^*(Z' → X')^∧ for the chosen base change Z' = Z ×\_X X' of an immersion, virtual normal bundles N, N' of arbitrary rank and a short exact sequence 0 → N' → g^*N → E → 0 of finite locally free modules whose dual square against the conormal sheaves commutes”.
 
 > **The counterpart of Stacks 0FV7 for immersions, at arbitrary rank.** Let `Z' = Z ×_X X'` be
 > the chosen base change of an immersion `i : Z ⟶ X` along `f : X' ⟶ X`, let `𝒩` be a virtual normal
@@ -1146,7 +1146,7 @@ theorem completedVirtualNormalGysinRestrictionOfOpen_eq_of_isTopChernComposition
             𝒩'))
 ```
 
-**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionComposition.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionComposition.lean#L250). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FEC, c(Z → X, 𝒩) = c(Z → Y, 𝒩') ∘ c(Y → X, 𝒩'') in A^*(Z → X)^∧ for immersions Z → Y → X and a conormal-compatible triple of virtual normal bundles of arbitrary rank”.
+**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionComposition.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedVirtualNormalImmersionComposition.lean#L250). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FEC, c(Z → X, 𝒩) = c(Z → Y, 𝒩') ∘ c(Y → X, 𝒩'') in A^*(Z → X)^∧ for immersions Z → Y → X and a conormal-compatible triple of virtual normal bundles of arbitrary rank”.
 
 > **The counterpart of Stacks 0FEC for immersions, at arbitrary rank.** Let `Z ⟶ Y ⟶ X` be
 > immersions of schemes locally of finite type over the base, and let `D` be a conormal-compatible
@@ -1173,7 +1173,7 @@ theorem completedVirtualNormalGysinClassOfOpen_comp
         (completedVirtualNormalGysinClassOfOpen C sY sX j hj U jU hU D.bundleYX)
 ```
 
-**`Stacks.Chow.VirtualNormalBundle`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundle.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundle.lean#L39). The attribute's comment: “(2): a virtual normal bundle for an immersion”.
+**`Stacks.Chow.VirtualNormalBundle`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundle.lean, line 39](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundle.lean#L39). The attribute's comment: “(2): a virtual normal bundle for an immersion”.
 
 > A *virtual normal bundle* for an immersion `i : Z ⟶ X`: a finite locally free `𝒪_Z`-module
 > together with a surjection from its dual onto the conormal sheaf `𝒞_{Z/X}` of `i`.
@@ -1182,7 +1182,7 @@ theorem completedVirtualNormalGysinClassOfOpen_comp
 structure VirtualNormalBundle {Z X : Scheme.{u}} (i : Z ⟶ X) [IsImmersion i]
 ```
 
-**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionClass.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionClass.lean#L149). The attribute's comment: “(3), the construction: c(Z → X, 𝒩) = c(Z → U, 𝒩) ∘ (U → X)^* in A^*(Z → X)^∧ for a choice of an open U through which Z → X factors as a closed immersion, 𝒩 of arbitrary rank”.
+**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionClass.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionClass.lean#L149). The attribute's comment: “(3), the construction: c(Z → X, 𝒩) = c(Z → U, 𝒩) ∘ (U → X)^* in A^*(Z → X)^∧ for a choice of an open U through which Z → X factors as a closed immersion, 𝒩 of arbitrary rank”.
 
 > **Stacks 0FBQ (3), the construction, for a virtual normal bundle of arbitrary rank.** For an
 > immersion `i : Z ⟶ X`, an open subscheme `U ⊆ X` with `i = i' ≫ ι_U` and `i' : Z ⟶ U` a closed
@@ -1199,7 +1199,7 @@ def completedVirtualNormalGysinClassOfOpen (U : X.Opens) (i' : Z ⟶ U.toScheme)
     completedBivariantGroup C (gysinSystemOfInvertible C) sZ sX i hi
 ```
 
-**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen_independent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionClass.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionClass.lean#L483). The attribute's comment: “(3), the bivariant class c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ does not depend on the choice of U, for 𝒩 of arbitrary rank”.
+**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen_independent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionClass.lean, line 483](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionClass.lean#L483). The attribute's comment: “(3), the bivariant class c(Z → X, 𝒩) ∈ A^*(Z → X)^∧ does not depend on the choice of U, for 𝒩 of arbitrary rank”.
 
 > **Stacks 0FBQ (3): the bivariant class `c(Z ⟶ X, 𝒩) ∈ A^*(Z ⟶ X)^∧` does not depend on the
 > choice of the open subscheme `U`**, for a virtual normal bundle `𝒩` of arbitrary rank: two opens
@@ -1214,7 +1214,7 @@ theorem completedVirtualNormalGysinClassOfOpen_independent (U₁ U₂ : X.Opens)
       completedVirtualNormalGysinClassOfOpen C sZ sX i hi U₂ i₂ h₂ 𝒩
 ```
 
-**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen_cap_fundamentalChowClass_excess`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean, line 903](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean#L903). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FBM when the virtual normal bundle has unbounded rank, c(Z → X, N) ∩ [Y]\_n = c\_top(E) ∩ [Z ×\_X Y]\_\{n-r} degree by degree in CH\_*, for an immersion Z → X, c(Z → X, N) ∈ A^*(Z → X)^∧, Z ×\_X Y → Y regular with conormal sheaf of constant rank r, E the excess normal sheaf and dim\_δ(Y) ≤ n”.
+**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen_cap_fundamentalChowClass_excess`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean, line 903](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean#L903). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FBM when the virtual normal bundle has unbounded rank, c(Z → X, N) ∩ [Y]\_n = c\_top(E) ∩ [Z ×\_X Y]\_\{n-r} degree by degree in CH\_*, for an immersion Z → X, c(Z → X, N) ∈ A^*(Z → X)^∧, Z ×\_X Y → Y regular with conormal sheaf of constant rank r, E the excess normal sheaf and dim\_δ(Y) ≤ n”.
 
 > **The counterpart of Stacks 0FBM for immersions, at unbounded rank.** Let `i : Z ⟶ X` be an
 > immersion with a virtual normal bundle `𝒩` of arbitrary rank, and let `g : Y ⟶ X` be locally of
@@ -1259,7 +1259,7 @@ theorem completedVirtualNormalGysinClassOfOpen_cap_fundamentalChowClass_excess {
           (fundamentalChowClass C (g ≫ sX) n) = 0
 ```
 
-**`Stacks.Chow.virtualNormalGysinClassOfOpen_cap_fundamentalChowClass_of_isCohenMacaulayLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean, line 1020](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean#L1020). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FEA, c(Z → X, N) ∩ [Y]\_n = [Z ×\_X Y]\_\{n-r} for an immersion Z → X, N locally free of rank r, Y pure of δ-dimension n, dim\_δ(Z ×\_X Y) ≤ n - r and O\_\{Y,ξ} Cohen-Macaulay at the points of Z ×\_X Y of δ = n - r”.
+**`Stacks.Chow.virtualNormalGysinClassOfOpen_cap_fundamentalChowClass_of_isCohenMacaulayLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean, line 1020](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean#L1020). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FEA, c(Z → X, N) ∩ [Y]\_n = [Z ×\_X Y]\_\{n-r} for an immersion Z → X, N locally free of rank r, Y pure of δ-dimension n, dim\_δ(Z ×\_X Y) ≤ n - r and O\_\{Y,ξ} Cohen-Macaulay at the points of Z ×\_X Y of δ = n - r”.
 
 > **The counterpart of Stacks 0FEA for immersions.** Let `i : Z ⟶ X` be an immersion with a
 > virtual normal bundle `𝒩`, let `g : Y ⟶ X` be locally of finite type, and given integers `r` and
@@ -1294,7 +1294,7 @@ theorem virtualNormalGysinClassOfOpen_cap_fundamentalChowClass_of_isCohenMacaula
       fundamentalChowClass C (pullback.fst i g ≫ sZ) (n - r)
 ```
 
-**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean, line 1108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean#L1108). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FBL in A^*(Z → X)^∧, c(Z → X, N) = c\_top(E) ∘ c(Z → X, N') for an immersion Z → X and a short exact sequence 0 → N' → N → E → 0 of finite locally free modules of arbitrary rank whose surjection factors through that of N'”.
+**`Stacks.Chow.completedVirtualNormalGysinClassOfOpen_eq_of_isTopChernComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean, line 1108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean#L1108). The attribute's comment: “(3), counterparts: the counterpart of Lemma 0FBL in A^*(Z → X)^∧, c(Z → X, N) = c\_top(E) ∘ c(Z → X, N') for an immersion Z → X and a short exact sequence 0 → N' → N → E → 0 of finite locally free modules of arbitrary rank whose surjection factors through that of N'”.
 
 > **The counterpart of Stacks 0FBL for immersions, at arbitrary rank.** Let `i : Z ⟶ X` be an
 > immersion with a virtual normal bundle `𝒩`, and let `0 ⟶ 𝒩' ⟶ 𝒩 ⟶ ℰ ⟶ 0` be a short exact
@@ -1322,8 +1322,8 @@ theorem completedVirtualNormalGysinClassOfOpen_eq_of_isTopChernComposition
 
 Declarations registered for the tag:
 
-- [`VirtualNormalBundle.baseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=VirtualNormalBundle.baseChange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean#L90) (StacksFrontier): “(3), counterparts: the counterpart of Lemma 0FBJ, g^*𝒩 is a virtual normal bundle for Z' → X' for a cartesian square whose horizontal arrows are immersions”.
-- [`Stacks.Thickenings.immersionConormalSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalSheaf.lean#L128), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleOpenFactor.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleOpenFactor.lean#L44) (StacksFrontier): “(1): the conormal sheaf of an immersion, Stacks 01R2”.
+- [`VirtualNormalBundle.baseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=VirtualNormalBundle.baseChange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleImmersionCounterparts.lean#L90) (StacksFrontier): “(3), counterparts: the counterpart of Lemma 0FBJ, g^*𝒩 is a virtual normal bundle for Z' → X' for a cartesian square whose horizontal arrows are immersions”.
+- [`Stacks.Thickenings.immersionConormalSheaf`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalSheaf.lean#L128), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleOpenFactor.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/VirtualNormalBundleOpenFactor.lean#L44) (StacksFrontier): “(1): the conormal sheaf of an immersion, Stacks 01R2”.
 
 ## Depends on
 
@@ -1332,4 +1332,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.54, Tag 0FBI](https://stacks.math.columbia.edu/tag/0FBI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

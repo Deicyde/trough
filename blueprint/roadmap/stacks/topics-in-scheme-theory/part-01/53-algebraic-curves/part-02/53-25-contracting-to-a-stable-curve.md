@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.25 Contracting to a stable curve
 
-Section 53.25 of the Stacks Project, [Tag 0E7N](https://stacks.math.columbia.edu/tag/0E7N). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 53.25 of the Stacks Project, [Tag 0E7N](https://stacks.math.columbia.edu/tag/0E7N). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0E7N, the section
 
 [Tag 0E7N](https://stacks.math.columbia.edu/tag/0E7N) in the Stacks Project.
 
-**`Stacks.Curves.StableModel.exists_isStableContraction_comp_tails_bridges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/StableContraction/StableModelCharacterization.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/StableContraction/StableModelCharacterization.lean#L106).
+**`Stacks.Curves.StableModel.exists_isStableContraction_comp_tails_bridges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/StableContraction/StableModelCharacterization.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/StableContraction/StableModelCharacterization.lean#L106).
 
 > **Stacks Project, Tag 0E7N: contracting to a stable curve.** Let `X` be a proper scheme over a
 > field `k` of dimension one with `H⁰(X, 𝒪_X) = k`, genus `g ≥ 2` and at-worst-nodal singularities.
@@ -51,7 +51,7 @@ theorem exists_isStableContraction_comp_tails_bridges (f : X ⟶ Spec (.of k)) [
 
 [Tag 0E7P](https://stacks.math.columbia.edu/tag/0E7P) in the Stacks Project.
 
-**`Stacks.Curves.DualizingPullback.nonempty_pullback_dualizingSheafOverField_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/StableContraction/DualizingPullbackGorenstein.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/StableContraction/DualizingPullbackGorenstein.lean#L53). The attribute's comment: “The corrected statement, with `m ≥ 1` (errata.md, 2026-11-06). Stacks allows any `m ∈ ℤ`, and is false for every `m ≤ 0`: for `X = V(xy) ⊆ ℙ²_k` and `c` contracting one line `C` to a point, (1)–(3) hold with any `m ≤ 0`, but `ω_X|_C ≅ 𝒪_C(-1)` while `(c^*ω_Y)|_C ≅ 𝒪_C`.”.
+**`Stacks.Curves.DualizingPullback.nonempty_pullback_dualizingSheafOverField_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/StableContraction/DualizingPullbackGorenstein.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/StableContraction/DualizingPullbackGorenstein.lean#L53). The attribute's comment: “The corrected statement, with `m ≥ 1` (errata.md, 2026-11-06). Stacks allows any `m ∈ ℤ`, and is false for every `m ≤ 0`: for `X = V(xy) ⊆ ℙ²_k` and `c` contracting one line `C` to a point, (1)–(3) hold with any `m ≤ 0`, but `ω_X|_C ≅ 𝒪_C(-1)` while `(c^*ω_Y)|_C ≅ 𝒪_C`.”.
 
 > **Stacks Project, Tag 0E7P.** Let `c : X ⟶ Y` be a morphism of proper schemes over a field
 > `k` with `𝒪_Y = c_*𝒪_X` and `R^1 c_*𝒪_X = 0`, where `X` and `Y` are reduced, Gorenstein and of
@@ -79,7 +79,7 @@ theorem nonempty_pullback_dualizingSheafOverField_iso
 
 [Tag 0E7Q](https://stacks.math.columbia.edu/tag/0E7Q) in the Stacks Project.
 
-**`Stacks.Curves.StableModel.existsUnique_isStableContraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/StableContraction/StableModelCharacterization.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/StableContraction/StableModelCharacterization.lean#L84). The attribute's comment: “Condition (3) includes that `ω_Y` is invertible, as ampleness is defined for invertible modules. Uniqueness up to unique isomorphism: any two such morphisms are related by exactly one isomorphism of targets under `X`.”.
+**`Stacks.Curves.StableModel.existsUnique_isStableContraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/StableContraction/StableModelCharacterization.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/StableContraction/StableModelCharacterization.lean#L84). The attribute's comment: “Condition (3) includes that `ω_Y` is invertible, as ampleness is defined for invertible modules. Uniqueness up to unique isomorphism: any two such morphisms are related by exactly one isomorphism of targets under `X`.”.
 
 > **Stacks Project, Tag 0E7Q.** Let `X` be a proper scheme over a field `k` of dimension one
 > with `H⁰(X, 𝒪_X) = k`, genus `g ≥ 2` and at-worst-nodal singularities. There is a morphism
@@ -108,7 +108,7 @@ theorem existsUnique_isStableContraction (f : X ⟶ Spec (.of k)) [IsProper f]
 
 [Tag 0E8X](https://stacks.math.columbia.edu/tag/0E8X) in the Stacks Project.
 
-**`AlgebraicGeometry.isRelativelyVeryAmple_tensorPower_three_dualizingSheafOverField_and_isZero_cohomology_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/StableContraction/TricanonicalVeryAmple.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/StableContraction/TricanonicalVeryAmple.lean#L291).
+**`AlgebraicGeometry.isRelativelyVeryAmple_tensorPower_three_dualizingSheafOverField_and_isZero_cohomology_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/StableContraction/TricanonicalVeryAmple.lean, line 291](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/StableContraction/TricanonicalVeryAmple.lean#L291).
 
 > **Stacks Project, Tag 0E8X.** Let `X` be a proper scheme of dimension one over a field `k`
 > with `H⁰(X, 𝒪_X) = k`, of genus `g ≥ 2`, with at-worst-nodal singularities, and assume the
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.25, Tag 0E7N](https://stacks.math.columbia.edu/tag/0E7N)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

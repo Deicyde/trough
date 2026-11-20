@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.35 Localization and points
 
-Section 7.35 of the Stacks Project, [Tag 04EK](https://stacks.math.columbia.edu/tag/04EK). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 7.35 of the Stacks Project, [Tag 04EK](https://stacks.math.columbia.edu/tag/04EK). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04H2, a lemma
 
 [Tag 04H2](https://stacks.math.columbia.edu/tag/04H2) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.Point.sheafFiberOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/LocalizedPoint.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/LocalizedPoint.lean#L107). References: SGA 4 IV (6.7), “point over (p,ξ), j\_X”; SGA 4 IV (11.3.5), “partial”.
+**`CategoryTheory.GrothendieckTopology.Point.sheafFiberOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/LocalizedPoint.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Point/LocalizedPoint.lean#L107). References: SGA 4 IV (6.7), “point over (p,ξ), j\_X”; SGA 4 IV (11.3.5), “partial”.
 
 > **Stacks 04H2.** The point `q = Φ.over x` of the localized site `C/U` lies above the point
 > `Φ` of `C`: for every sheaf `F` on `C` the stalk of `F` at `Φ` agrees with the stalk of its
@@ -30,7 +30,7 @@ noncomputable def sheafFiberOverIso :
 
 [Tag 04H3](https://stacks.math.columbia.edu/tag/04H3) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.Point.OverPoint.existsUnique_nonempty_iso_ofFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverPoint.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/OverPoint.lean#L483).
+**`CategoryTheory.GrothendieckTopology.Point.OverPoint.existsUnique_nonempty_iso_ofFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverPoint.lean, line 483](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Point/OverPoint.lean#L483).
 
 > **Stacks 04H3.** Let `p` be a point of the site `C` with fibre functor `u`, and `U` an object
 > of `C`.  Every point `q` of `C/U` lying over `p` (a point of `C/U` with an identification
@@ -42,7 +42,7 @@ theorem existsUnique_nonempty_iso_ofFiber (q : OverPoint Φ U) :
     ∃! x : Φ.fiber.obj U, Nonempty (q ≅ ofFiber x)
 ```
 
-**`CategoryTheory.GrothendieckTopology.Point.OverPoint.fiberEquivOverPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverPoint.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/OverPoint.lean#L493).
+**`CategoryTheory.GrothendieckTopology.Point.OverPoint.fiberEquivOverPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverPoint.lean, line 493](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Point/OverPoint.lean#L493).
 
 > **Stacks 04H3.** Let `p` be a point of the site `C` with fibre functor `u`, and `U` an object
 > of `C`.  The construction `x ↦ q_x` of Stacks 04H2 is a one to one correspondence between the
@@ -58,7 +58,7 @@ noncomputable def fiberEquivOverPoint :
 
 [Tag 04H4](https://stacks.math.columbia.edu/tag/04H4) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.sheafFiberSigmaEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverShriekFiber.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/OverShriekFiber.lean#L203).
+**`CategoryTheory.OverShriek.sheafFiberSigmaEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverShriekFiber.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Point/OverShriekFiber.lean#L203).
 
 > **Stacks 04H4.** Let `C` be a site, `p` a point of `C` given by `u : C ⥤ Set`, and `U` an
 > object of `C`.  For any sheaf `F` on `C/U`,
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.35, Tag 04EK](https://stacks.math.columbia.edu/tag/04EK)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

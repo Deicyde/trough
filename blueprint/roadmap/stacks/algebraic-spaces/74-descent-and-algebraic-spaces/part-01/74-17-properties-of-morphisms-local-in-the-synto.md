@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.17 Properties of morphisms local in the syntomic topology on the source
 
-Section 74.17 of the Stacks Project, [Tag 06EZ](https://stacks.math.columbia.edu/tag/06EZ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 74.17 of the Stacks Project, [Tag 06EZ](https://stacks.math.columbia.edu/tag/06EZ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06F0, a lemma
 
 [Tag 06F0](https://stacks.math.columbia.edu/tag/06F0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.syntomic_isLocalAtSource_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SyntomicSourceLocalityTransfer.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SyntomicSourceLocalityTransfer.lean#L353).
+**`AlgebraicGeometry.Space.syntomic_isLocalAtSource_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SyntomicSourceLocalityTransfer.lean, line 353](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SyntomicSourceLocalityTransfer.lean#L353).
 
 > **Stacks 06F0.** Syntomicity of a morphism of algebraic spaces over `S` is local on the
 > source for the syntomic topology of Stacks 03YH.
@@ -38,4 +38,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.17, Tag 06EZ](https://stacks.math.columbia.edu/tag/06EZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.14 Pushouts
 
-Section 53.14 of the Stacks Project, [Tag 0E35](https://stacks.math.columbia.edu/tag/0E35). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 53.14 of the Stacks Project, [Tag 0E35](https://stacks.math.columbia.edu/tag/0E35). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0E35, the section
 
 [Tag 0E35](https://stacks.math.columbia.edu/tag/0E35) in the Stacks Project.
 
-**`AlgebraicGeometry.curvePushoutSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Pushout.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Pushout.lean#L101). The attribute's comment: “the verification that the assumptions of More on Morphisms, Proposition 0E25 are satisfied; the conclusions (1)-(7) are `AlgebraicGeometry.exists_pushout_of_curve`”.
+**`AlgebraicGeometry.curvePushoutSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Pushout.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Pushout.lean#L101). The attribute's comment: “the verification that the assumptions of More on Morphisms, Proposition 0E25 are satisfied; the conclusions (1)-(7) are `AlgebraicGeometry.exists_pushout_of_curve`”.
 
 > **Stacks Project, Tag 0E35.** The four conditions of the section — `X` separated of finite
 > type over the field `k` of dimension `≤ 1`, `i` a closed immersion, `Z` and `Y` finite over
@@ -36,7 +36,7 @@ def curvePushoutSituation
     PushoutAlongClosedImmersionAndIntegralSituation.{u}
 ```
 
-**`AlgebraicGeometry.exists_pushout_of_curve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PushoutProperties.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PushoutProperties.lean#L126).
+**`AlgebraicGeometry.exists_pushout_of_curve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PushoutProperties.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/PushoutProperties.lean#L126).
 
 > **Stacks Project, Tag 0E35.** Let `k` be a field, `X` separated of finite type over `k` of
 > dimension `≤ 1`, `i : Z ⟶ X` a closed immersion, `Z` and `Y` finite over `Spec k` and
@@ -76,7 +76,7 @@ theorem exists_pushout_of_curve
 
 [Tag 0E36](https://stacks.math.columbia.edu/tag/0E36) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_curvePushoutCompletedLocalRing_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PushoutCompletedLocalRing.lean, line 1280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PushoutCompletedLocalRing.lean#L1280).
+**`AlgebraicGeometry.exists_curvePushoutCompletedLocalRing_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PushoutCompletedLocalRing.lean, line 1280](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/PushoutCompletedLocalRing.lean#L1280).
 
 > **Stacks Project, Tag 0E36.**  Stated in the situation of [Stacks Project, Tag 0E35] itself:
 > `k` is a field, `X` is separated of finite type over `k` of dimension `≤ 1`, `i : Z ⟶ X` is a
@@ -153,4 +153,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.14, Tag 0E35](https://stacks.math.columbia.edu/tag/0E35)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

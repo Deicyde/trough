@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.65 Example of non-additivity of traces
 
-Section 110.65 of the Stacks Project, [Tag 087J](https://stacks.math.columbia.edu/tag/087J). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.65 of the Stacks Project, [Tag 087J](https://stacks.math.columbia.edu/tag/087J). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 087K, an equation
 
 [Tag 087K](https://stacks.math.columbia.edu/tag/087K) in the Stacks Project.
 
-**`Stacks.Examples.dualNumber_diagram_commutes_up_to_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/DualNumberHomotopyDiagram.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/DualNumberHomotopyDiagram.lean#L95).
+**`Stacks.Examples.dualNumber_diagram_commutes_up_to_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/DualNumberHomotopyDiagram.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Algebra/DualNumberHomotopyDiagram.lean#L95).
 
 > The prescribed endomorphism of the left column and the identity endomorphisms of the middle
 > and right columns make the two squares commute in the homotopy category.
@@ -41,7 +41,7 @@ public theorem dualNumber_diagram_commutes_up_to_homotopy :
 
 [Tag 087L](https://stacks.math.columbia.edu/tag/087L) in the Stacks Project.
 
-**`Stacks.Examples.exists_commRing_distinguished_triangle_trace_nonadditive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/NonAdditivityOfTracesCommRing.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/NonAdditivityOfTracesCommRing.lean#L52). The attribute's comment: “Stacks' rings are commutative and its traces of perfect complexes lie in `R`: here `R` is a `CommRing` and the alternating traces are evaluated in `R`.”.
+**`Stacks.Examples.exists_commRing_distinguished_triangle_trace_nonadditive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/NonAdditivityOfTracesCommRing.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Algebra/NonAdditivityOfTracesCommRing.lean#L52). The attribute's comment: “Stacks' rings are commutative and its traces of perfect complexes lie in `R`: here `R` is a `CommRing` and the alternating traces are evaluated in `R`.”.
 
 > **Stacks 087L.** There exist a commutative ring `R`, a distinguished triangle of perfect
 > complexes in the homotopy category `K(R)` and an endomorphism `(a, b, c)` of this triangle with
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.65, Tag 087J](https://stacks.math.columbia.edu/tag/087J)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

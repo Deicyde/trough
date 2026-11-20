@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.18 Pull and push for sheaves of differential graded modules
 
-Section 24.18 of the Stacks Project, [Tag 0FRT](https://stacks.math.columbia.edu/tag/0FRT). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 24.18 of the Stacks Project, [Tag 0FRT](https://stacks.math.columbia.edu/tag/0FRT). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FRU, a lemma
 
 [Tag 0FRU](https://stacks.math.columbia.edu/tag/0FRU) in the Stacks Project.
 
-**`Stacks.DifferentialGradedPullbackConstruction.exists_pullbackPushforwardHomEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedPushPullAdjunction.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedPushPullAdjunction.lean#L127). The attribute's comment: “the case of a morphism of small ringed sites whose functor is continuous, representably flat and final; for an arbitrary morphism of ringed topoi this is SheafOfModules.DifferentialGradedModule.exists\_toposPullbackPushforwardHomEquiv”.
+**`Stacks.DifferentialGradedPullbackConstruction.exists_pullbackPushforwardHomEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedPushPullAdjunction.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedPushPullAdjunction.lean#L127). The attribute's comment: “the case of a morphism of small ringed sites whose functor is continuous, representably flat and final; for an arbitrary morphism of ringed topoi this is SheafOfModules.DifferentialGradedModule.exists\_toposPullbackPushforwardHomEquiv”.
 
 > **Pull and push for sheaves of differential graded modules**: for the direct image `f_*` and
 > the pullback `f^*M = f⁻¹M ⊗_{f⁻¹A'} A` along a morphism of small ringed sites, together with a
@@ -50,7 +50,7 @@ theorem exists_pullbackPushforwardHomEquiv (φ₀ : inverseImageAlgebra α hO hP
           ((pullbackUnit α hO hP φ₀ hφ₀ M).postcomp g))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.exists_toposPullbackPushforwardHomEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushPullHomComplex.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushPullHomComplex.lean#L581).
+**`SheafOfModules.DifferentialGradedModule.exists_toposPullbackPushforwardHomEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushPullHomComplex.lean, line 581](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposPushPullHomComplex.lean#L581).
 
 > **Stacks Project, Tag 0FRU.** Let `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)` be a morphism of
 > ringed topoi, let `A` be a differential graded `O_C`-algebra, let `B` be a differential graded
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.18, Tag 0FRT](https://stacks.math.columbia.edu/tag/0FRT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

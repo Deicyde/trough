@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.30 Additivity of Chern classes
 
-Section 82.30 of the Stacks Project, [Tag 0ES6](https://stacks.math.columbia.edu/tag/0ES6). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 82.30 of the Stacks Project, [Tag 0ES6](https://stacks.math.columbia.edu/tag/0ES6). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0ES7, a lemma
 
 [Tag 0ES7](https://stacks.math.columbia.edu/tag/0ES7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chernClass_eq_of_shortExact_tensorUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTrivialSubmoduleBivariant.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTrivialSubmoduleBivariant.lean#L116). The attribute's comment: “c\_r(E) = 0 and c\_j(E) = c\_j(F), j = 0, ..., r - 1, in A^*(X), for the bivariant Chern classes chernClass of Lemma 0ERZ in A^j(X) = A^j(X → X) over chowGroupCanonical; the ranks r, r - 1 are written r + 1, r”.
+**`AlgebraicGeometry.Space.chernClass_eq_of_shortExact_tensorUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTrivialSubmoduleBivariant.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTrivialSubmoduleBivariant.lean#L116). The attribute's comment: “c\_r(E) = 0 and c\_j(E) = c\_j(F), j = 0, ..., r - 1, in A^*(X), for the bivariant Chern classes chernClass of Lemma 0ERZ in A^j(X) = A^j(X → X) over chowGroupCanonical; the ranks r, r - 1 are written r + 1, r”.
 
 > **Stacks 0ES7.** In Situation 0EDT let `X/B` be good and let `ℰ`, `ℱ` be finite locally free
 > `𝒪_X`-modules of ranks `r + 1` and `r` which fit into a short exact sequence
@@ -46,7 +46,7 @@ theorem chernClass_eq_of_shortExact_tensorUnit (hX : D.IsGood sX)
 
 [Tag 0ES8](https://stacks.math.columbia.edu/tag/0ES8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ChowCohomologyAlgebra.totalChernClass_eq_mul_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassInvertibleExtension.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassInvertibleExtension.lean#L118). The attribute's comment: “c(E) = c(L) c(F) in the Chow cohomology ring A^*(X) (ChowCohomologyAlgebra, product = composition of bivariant classes) for 0 → L → E → F → 0 exact, L invertible, E, F finite locally free of ranks r + 1, r on a good X/B; c is the total Chern class of 0ERZ, the sum of the bivariant classes c\_j of 0ERY, which cap as Space.chernClass on every test space”.
+**`AlgebraicGeometry.Space.ChowCohomologyAlgebra.totalChernClass_eq_mul_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassInvertibleExtension.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassInvertibleExtension.lean#L118). The attribute's comment: “c(E) = c(L) c(F) in the Chow cohomology ring A^*(X) (ChowCohomologyAlgebra, product = composition of bivariant classes) for 0 → L → E → F → 0 exact, L invertible, E, F finite locally free of ranks r + 1, r on a good X/B; c is the total Chern class of 0ERZ, the sum of the bivariant classes c\_j of 0ERY, which cap as Space.chernClass on every test space”.
 
 > **Stacks 0ES8.** In Situation 0EDT let `X/B` be good and let `ℰ`, `ℱ` be finite locally free
 > `𝒪_X`-modules of ranks `r + 1` and `r` which fit into a short exact sequence
@@ -81,7 +81,7 @@ theorem totalChernClass_eq_mul_of_shortExact
 
 [Tag 0ES9](https://stacks.math.columbia.edu/tag/0ES9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ChowCohomologyAlgebra.totalChernClass_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassWhitneyAlgebra.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassWhitneyAlgebra.lean#L73). The attribute's comment: “c(E) = c(E\_1) c(E\_2) in the Chow cohomology ring A^*(X) (ChowCohomologyAlgebra, product = composition of bivariant classes) for 0 → E\_1 → E → E\_2 → 0 exact with E\_i finite locally free of rank r\_i on a good X/B; c is the total Chern class of 0ERZ, the sum of the bivariant classes c\_j of 0ERY, which cap as Space.chernClass on every test space”.
+**`AlgebraicGeometry.Space.ChowCohomologyAlgebra.totalChernClass_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassWhitneyAlgebra.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassWhitneyAlgebra.lean#L73). The attribute's comment: “c(E) = c(E\_1) c(E\_2) in the Chow cohomology ring A^*(X) (ChowCohomologyAlgebra, product = composition of bivariant classes) for 0 → E\_1 → E → E\_2 → 0 exact with E\_i finite locally free of rank r\_i on a good X/B; c is the total Chern class of 0ERZ, the sum of the bivariant classes c\_j of 0ERY, which cap as Space.chernClass on every test space”.
 
 > **Stacks 0ES9, the Whitney formula.** In Situation 0EDT let `X/B` be good and let
 > `0 → ℰ₁ → ℰ → ℰ₂ → 0` be a short exact sequence `T` of finite locally free `𝒪_X`-modules, `ℰ₁` of
@@ -115,7 +115,7 @@ theorem totalChernClass_shortExact
 
 [Tag 0ESA](https://stacks.math.columbia.edu/tag/0ESA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.totalChernCapGraded_eq_prod_one_add_chernCapGraded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassFiltration.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassFiltration.lean#L231). The attribute's comment: “c(E) = ∏ (1 + c\_1(L\_i)) in A^*(X) for the Chern classes of Definition 0ERZ (chernClass, totalChernClass), as the identity of their cap operations c(E) ∩ - and ∏ (1 + c\_1(L\_i) ∩ -) of Lemma 0ERY on ⊕\_k CH\_k(X') for every good test space X' → X”.
+**`AlgebraicGeometry.Space.totalChernCapGraded_eq_prod_one_add_chernCapGraded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassFiltration.lean, line 231](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassFiltration.lean#L231). The attribute's comment: “c(E) = ∏ (1 + c\_1(L\_i)) in A^*(X) for the Chern classes of Definition 0ERZ (chernClass, totalChernClass), as the identity of their cap operations c(E) ∩ - and ∏ (1 + c\_1(L\_i) ∩ -) of Lemma 0ERY on ⊕\_k CH\_k(X') for every good test space X' → X”.
 
 > **Stacks 0ESA, the total Chern class of a module with a filtration with invertible
 > quotients.** In Situation 0EDT let `X/B` be good, let `ℒ_1, …, ℒ_r` be invertible `𝒪_X`-modules
@@ -155,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.30, Tag 0ES6](https://stacks.math.columbia.edu/tag/0ES6)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

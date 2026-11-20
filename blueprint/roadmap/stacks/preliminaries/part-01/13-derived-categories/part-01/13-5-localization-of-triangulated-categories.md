@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.5 Localization of triangulated categories
 
-Section 13.5 of the Stacks Project, [Tag 05R1](https://stacks.math.columbia.edu/tag/05R1). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.5 of the Stacks Project, [Tag 05R1](https://stacks.math.columbia.edu/tag/05R1). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05R2, a definition
 
 [Tag 05R2](https://stacks.math.columbia.edu/tag/05R2) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.isCompatibleWithTriangulation_iff_shift_one_and_hasMS6`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L119). The attribute's comment: “with MS5 in the form `f ∈ S ⇔ f[1] ∈ S`”.
+**`CategoryTheory.MorphismProperty.isCompatibleWithTriangulation_iff_shift_one_and_hasMS6`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L119). The attribute's comment: “with MS5 in the form `f ∈ S ⇔ f[1] ∈ S`”.
 
 > For a class `W` satisfying MS1, being compatible with the triangulated structure in the
 > sense of `MorphismProperty.IsCompatibleWithTriangulation` is equivalent to the two axioms as
@@ -32,15 +32,15 @@ theorem isCompatibleWithTriangulation_iff_shift_one_and_hasMS6
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L154) (StacksFrontier): “a multiplicative system compatible with the triangulated structure”.
-- [`CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation.toIsCompatibleWithShift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation.toIsCompatibleWithShift#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L156) (StacksFrontier): “MS5, as stability under every shift `[n]`, `n : ℤ`; for a class with MS1 and MS6 this is equivalent to Stacks' form `f ∈ S ⇔ f[1] ∈ S` by Remark 0H30, `MorphismProperty.isCompatibleWithShift_iff_of_hasMS6`”.
-- [`CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation.compatible_with_triangulation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation.compatible_with_triangulation#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L160) (StacksFrontier): “MS6”.
+- [`CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L154) (StacksFrontier): “a multiplicative system compatible with the triangulated structure”.
+- [`CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation.toIsCompatibleWithShift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation.toIsCompatibleWithShift#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L156) (StacksFrontier): “MS5, as stability under every shift `[n]`, `n : ℤ`; for a class with MS1 and MS6 this is equivalent to Stacks' form `f ∈ S ⇔ f[1] ∈ S` by Remark 0H30, `MorphismProperty.isCompatibleWithShift_iff_of_hasMS6`”.
+- [`CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation.compatible_with_triangulation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsCompatibleWithTriangulation.compatible_with_triangulation#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L160) (StacksFrontier): “MS6”.
 
 ## Tag 05R3, a lemma
 
 [Tag 05R3](https://stacks.math.columbia.edu/tag/05R3) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.isIso_mem_of_hasMS6`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L71). The attribute's comment: “(1)”.
+**`CategoryTheory.MorphismProperty.isIso_mem_of_hasMS6`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L71). The attribute's comment: “(1)”.
 
 > If `W` contains all identities and satisfies MS6, then `W` contains every isomorphism of
 > `C`.
@@ -54,7 +54,7 @@ theorem isIso_mem_of_hasMS6
     {X Y : C} (f : X ⟶ Y) [IsIso f] : W f
 ```
 
-**`isCompatibleWithTriangulation_oreConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L185). The attribute's comment: “(2)”.
+**`isCompatibleWithTriangulation_oreConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 185](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L185). The attribute's comment: “(2)”.
 
 > If `W` satisfies MS1 (`W.IsMultiplicative`), MS5 and MS6
 > (`W.IsCompatibleWithTriangulation`), then `W` satisfies MS2: both the left (LMS2) and the right
@@ -78,7 +78,7 @@ theorem isCompatibleWithTriangulation_oreConditions
 
 [Tag 05R4](https://stacks.math.columbia.edu/tag/05R4) in the Stacks Project.
 
-**`CategoryTheory.Functor.isSaturated_and_isCompatibleWithTriangulation_inverseImage_isomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L345). References: SGA 4½ Etat 0 (2.2), “partial”.
+**`CategoryTheory.Functor.isSaturated_and_isCompatibleWithTriangulation_inverseImage_isomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 345](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L345). References: SGA 4½ Etat 0 (2.2), “partial”.
 
 > Let `F : C ⥤ D` be an exact functor of pre-triangulated categories. The class
 > `W = (isomorphisms D).inverseImage F` of morphisms of `C` inverted by `F` is a saturated
@@ -96,7 +96,7 @@ theorem Functor.isSaturated_and_isCompatibleWithTriangulation_inverseImage_isomo
 
 [Tag 05R5](https://stacks.math.columbia.edu/tag/05R5) in the Stacks Project.
 
-**`CategoryTheory.Functor.isSaturated_and_isCompatibleWithTriangulation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L442).
+**`CategoryTheory.Functor.isSaturated_and_isCompatibleWithTriangulation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 442](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L442).
 
 > Let `H : 𝒟 ⥤ 𝒜` be a homological functor from a pre-triangulated category to an abelian
 > category. Then
@@ -118,7 +118,7 @@ theorem CategoryTheory.Functor.isSaturated_and_isCompatibleWithTriangulation
 
 [Tag 05R6](https://stacks.math.columbia.edu/tag/05R6) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.Localization.existsUnique_pretriangulated_and_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L497). References: SGA 4½ Etat 0 (Problem2), “A\_S exists, Q exact”; SGA 4½ Etat 0 (2.3.2), “partial”.
+**`CategoryTheory.Triangulated.Localization.existsUnique_pretriangulated_and_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 497](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L497). References: SGA 4½ Etat 0 (Problem2), “A\_S exists, Q exact”; SGA 4½ Etat 0 (2.3.2), “partial”.
 
 > Let `C` be a pre-triangulated category, let `W` be a multiplicative system of morphisms of `C`
 > compatible with the triangulated structure, and let `L : C ⥤ D` be a localization functor for `W`,
@@ -138,7 +138,7 @@ theorem existsUnique_pretriangulated_and_isTriangulated :
 
 [Tag 05R7](https://stacks.math.columbia.edu/tag/05R7) in the Stacks Project.
 
-**`CategoryTheory.Functor.isTriangulated_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L535). The attribute's comment: “(2)”. References: SGA 4½ Etat 0 (Problem2), “G is exact”; SGA 4½ Etat 0 (2.3.2), “partial”.
+**`CategoryTheory.Functor.isTriangulated_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 535](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L535). The attribute's comment: “(2)”. References: SGA 4½ Etat 0 (Problem2), “G is exact”; SGA 4½ Etat 0 (2.3.2), “partial”.
 
 > Let `C` be a pre-triangulated category, `W` a multiplicative system of morphisms of `C`
 > compatible with the triangulated structure, and `L : C ⥤ D` the (exact) localization functor. If
@@ -157,13 +157,13 @@ theorem isTriangulated_of_localization
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.isHomological_of_localization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.isHomological_of_localization#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L546) (StacksFrontier): “(1)”.
+- [`CategoryTheory.Functor.isHomological_of_localization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.isHomological_of_localization#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 546](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L546) (StacksFrontier): “(1)”.
 
 ## Tag 0GSL, a lemma
 
 [Tag 0GSL](https://stacks.math.columbia.edu/tag/0GSL) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.isSaturated_and_isCompatibleWithTriangulation_inverseImage_ι_and_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Resolutions.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/Resolutions.lean#L176).
+**`CategoryTheory.ObjectProperty.isSaturated_and_isCompatibleWithTriangulation_inverseImage_ι_and_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Resolutions.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/Resolutions.lean#L176).
 
 > Let `C` be a pre-triangulated category, let `P` be a full pre-triangulated subcategory of `C`,
 > and let `W` be a saturated multiplicative system of morphisms of `C` compatible with the
@@ -199,7 +199,7 @@ theorem isSaturated_and_isCompatibleWithTriangulation_inverseImage_ι_and_isTria
 
 [Tag 05R8](https://stacks.math.columbia.edu/tag/05R8) in the Stacks Project.
 
-**`StacksLocalizationKernel.statementA`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L464). The attribute's comment: “(1)-(4)”.
+**`StacksLocalizationKernel.statementA`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 464](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L464). The attribute's comment: “(1)-(4)”.
 
 > Let `S` be a multiplicative system compatible with the triangulated structure and `Q` a
 > localization functor for `S`. For an object `Z`, the conditions `Cond1` to `Cond4` are
@@ -215,7 +215,7 @@ theorem statementA
     [Cond1 Q Z, Cond2 S Z, Cond3 S Z, Cond4 S Z].TFAE
 ```
 
-**`StacksLocalizationKernel.statementB`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L483). The attribute's comment: “(5)-(7)”.
+**`StacksLocalizationKernel.statementB`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean, line 483](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/OreConditionsAndKernel.lean#L483). The attribute's comment: “(5)-(7)”.
 
 > Let `S` be a saturated multiplicative system compatible with the triangulated structure and
 > `Q` a localization functor for `S`. For an object `Z`, the conditions `Cond1` to `Cond7` are
@@ -237,7 +237,7 @@ theorem statementB
 
 [Tag 05R9](https://stacks.math.columbia.edu/tag/05R9) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.IsSaturated.isFiltered_and_final_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/IndexCategory.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Localization/IndexCategory.lean#L436). References: SGA 4 XVII (1.2.2.1).
+**`CategoryTheory.MorphismProperty.IsSaturated.isFiltered_and_final_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/IndexCategory.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Localization/IndexCategory.lean#L436). References: SGA 4 XVII (1.2.2.1).
 
 > Let `W` be a saturated multiplicative system of a pre-triangulated category `C`, compatible
 > with the triangulated structure, and let `T = (X, Y, Z, f, g, h)` be a distinguished triangle of
@@ -274,4 +274,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.5, Tag 05R1](https://stacks.math.columbia.edu/tag/05R1)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

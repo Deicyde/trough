@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.33 Duality for compactly supported cohomology
 
-Section 48.33 of the Stacks Project, [Tag 0G59](https://stacks.math.columbia.edu/tag/0G59). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 48.33 of the Stacks Project, [Tag 0G59](https://stacks.math.columbia.edu/tag/0G59). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G5A, a lemma
 
 [Tag 0G5A](https://stacks.math.columbia.edu/tag/0G5A) in the Stacks Project.
 
-**`AlgebraicGeometry.compactSupportDualityEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/Basic.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/Basic.lean#L106). The attribute's comment: “the isomorphism of topological k-vector spaces”.
+**`AlgebraicGeometry.compactSupportDualityEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/Basic.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/Basic.lean#L106). The attribute's comment: “the isomorphism of topological k-vector spaces”.
 
 > **Stacks Project, Tag 0G5A.** Let `p : U ⟶ Spec k` be separated of finite type over a field
 > `k` and `ω_{U/k}^• = p^!𝒪_{Spec k}`. For `K ∈ D^b_{Coh}(𝒪_U)` and `i ∈ ℤ` there is a canonical
@@ -42,7 +42,7 @@ def compactSupportDualityEquiv (K : BoundedCoherentDerived U) (i : ℤ) :
           (isDualizingComplex_standardUpperShriekDualizingComplex p c) K) (-i)
 ```
 
-**`AlgebraicGeometry.compactSupportDualityEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/Basic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/Basic.lean#L130). The attribute's comment: “functoriality in K”.
+**`AlgebraicGeometry.compactSupportDualityEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/Basic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/Basic.lean#L130). The attribute's comment: “functoriality in K”.
 
 > **Stacks Project, Tag 0G5A, functoriality.** The isomorphisms of
 > `AlgebraicGeometry.compactSupportDualityEquiv` are functorial in `K`: for `α : K ⟶ K'` and a
@@ -72,7 +72,7 @@ theorem compactSupportDualityEquiv_naturality {K K' : BoundedCoherentDerived U} 
 
 [Tag 0G5B](https://stacks.math.columbia.edu/tag/0G5B) in the Stacks Project.
 
-**`AlgebraicGeometry.compactSupportDualityEquiv_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/OpenRestriction.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/OpenRestriction.lean#L593).
+**`AlgebraicGeometry.compactSupportDualityEquiv_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/OpenRestriction.lean, line 593](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/CompactSupportDuality/OpenRestriction.lean#L593).
 
 > Let `p : U ⟶ Spec k` be separated of finite type over a field `k`, with a compactification
 > `c : U ⊆ X` at which `p^!` and `H^*_c` are computed, as in [Stacks, Tag 0G5A]
@@ -109,7 +109,7 @@ theorem compactSupportDualityEquiv_restrict (K : BoundedCoherentDerived U) (i : 
 
 [Tag 0G5C](https://stacks.math.columbia.edu/tag/0G5C) in the Stacks Project.
 
-**`AlgebraicGeometry.degreeZeroCompactSupportMap_injective_and_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DegreeZeroCompactSupport.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DegreeZeroCompactSupport.lean#L604).
+**`AlgebraicGeometry.degreeZeroCompactSupportMap_injective_and_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DegreeZeroCompactSupport.lean, line 604](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DegreeZeroCompactSupport.lean#L604).
 
 > Let `X` be a proper scheme over a field `k`. Let
 > `K ∈ D^b_{Coh}(𝒪_X)` with `H^i(K) = 0` for `i < 0`, and set `𝓕 = H^0(K)`. Let `Z ⊆ X` be closed
@@ -152,4 +152,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.33, Tag 0G59](https://stacks.math.columbia.edu/tag/0G59)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

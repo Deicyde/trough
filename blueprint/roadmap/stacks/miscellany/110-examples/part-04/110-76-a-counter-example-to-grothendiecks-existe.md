@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.76 A counter example to Grothendieck's existence theorem
 
-Section 110.76 of the Stacks Project, [Tag 0ARE](https://stacks.math.columbia.edu/tag/0ARE). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.76 of the Stacks Project, [Tag 0ARE](https://stacks.math.columbia.edu/tag/0ARE). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0ARF, a lemma
 
 [Tag 0ARF](https://stacks.math.columbia.edu/tag/0ARF) in the Stacks Project.
 
-**`AlgebraicGeometry.counterexamples_algebraization_of_not_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NonSeparatedAlgebraizationCounterexamples.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NonSeparatedAlgebraizationCounterexamples.lean#L68). The attribute's comment: “all three counterexamples: (1) 088E fails without separatedness, (2) Coh\_\{X/Y} of 09DS and 08WC is not algebraic for a flat morphism of finite presentation which is not separated, (3) Quot\_\{F/X/B} of 09TU (F = O\_X of finite presentation) is not an algebraic space for such a morphism; witness: Spec k[[t]] with its closed point doubled”.
+**`AlgebraicGeometry.counterexamples_algebraization_of_not_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NonSeparatedAlgebraizationCounterexamples.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/NonSeparatedAlgebraizationCounterexamples.lean#L68). The attribute's comment: “all three counterexamples: (1) 088E fails without separatedness, (2) Coh\_\{X/Y} of 09DS and 08WC is not algebraic for a flat morphism of finite presentation which is not separated, (3) Quot\_\{F/X/B} of 09TU (F = O\_X of finite presentation) is not an algebraic space for such a morphism; witness: Spec k[[t]] with its closed point doubled”.
 
 > **Stacks 0ARF.** Counterexamples to algebraization of coherent sheaves without separatedness:
 >
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.76, Tag 0ARE](https://stacks.math.columbia.edu/tag/0ARE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

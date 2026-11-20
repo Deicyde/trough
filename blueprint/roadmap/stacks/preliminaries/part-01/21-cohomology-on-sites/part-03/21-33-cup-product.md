@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.33 Cup product
 
-Section 21.33 of the Stacks Project, [Tag 0FPJ](https://stacks.math.columbia.edu/tag/0FPJ). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.33 of the Stacks Project, [Tag 0FPJ](https://stacks.math.columbia.edu/tag/0FPJ). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FPK, a lemma
 
 [Tag 0FPK](https://stacks.math.columbia.edu/tag/0FPK) in the Stacks Project.
 
-**`Stacks.Cohomology.CupProductAndDerivedPushforward.naiveCupProduct_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/CupProductAndDerivedPushforward.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/CupProductAndDerivedPushforward.lean#L298). The attribute's comment: “variant: the special case of a morphism of ringed topoi presented by a morphism of sites; the tag for an arbitrary morphism of ringed topoi is Stacks.Cohomology.CupProductAndDerivedPushforwardOfToposHom.naiveCupProduct\_relativeCupProduct”.
+**`Stacks.Cohomology.CupProductAndDerivedPushforward.naiveCupProduct_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/CupProductAndDerivedPushforward.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/CupProductAndDerivedPushforward.lean#L298). The attribute's comment: “variant: the special case of a morphism of ringed topoi presented by a morphism of sites; the tag for an arbitrary morphism of ringed topoi is Stacks.Cohomology.CupProductAndDerivedPushforwardOfToposHom.naiveCupProduct\_relativeCupProduct”.
 
 > **Stacks 0FPK, site-presented.**  For a morphism of ringed topoi
 > `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` presented by a morphism of sites and
@@ -49,7 +49,7 @@ theorem naiveCupProduct_relativeCupProduct
         (derivedPushforward f).map ((canonicalDerivedTensorProduct X.O).toTensor K M)
 ```
 
-**`Stacks.Cohomology.CupProductAndDerivedPushforwardOfToposHom.naiveCupProduct_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/CupProductAndDerivedPushforwardOfToposHom.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/CupProductAndDerivedPushforwardOfToposHom.lean#L279). The attribute's comment: “the whole tag, for an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) (a morphism of the underlying topoi with its structure map, no functor between the underlying sites and no morphism-of-sites hypothesis), at RingedTopos.\{u, u, u}, for all unbounded complexes K, M; the statement carries no hypothesis or class argument”.
+**`Stacks.Cohomology.CupProductAndDerivedPushforwardOfToposHom.naiveCupProduct_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/CupProductAndDerivedPushforwardOfToposHom.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/CupProductAndDerivedPushforwardOfToposHom.lean#L279). The attribute's comment: “the whole tag, for an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) (a morphism of the underlying topoi with its structure map, no functor between the underlying sites and no morphism-of-sites hypothesis), at RingedTopos.\{u, u, u}, for all unbounded complexes K, M; the statement carries no hypothesis or class argument”.
 
 > **Stacks 0FPK.**  For a morphism of ringed topoi `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` — a
 > morphism of the underlying topoi together with the structure map, with no functor between the
@@ -91,7 +91,7 @@ theorem naiveCupProduct_relativeCupProduct {X Y : RingedTopos.{u, u, u}} (f : Ri
 
 [Tag 0FPL](https://stacks.math.columbia.edu/tag/0FPL) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeCupProductOfToposHom.relativeCupProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductAssociativityOfToposHom.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductAssociativityOfToposHom.lean#L181). The attribute's comment: “the whole tag, for an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) (a morphism of the underlying topoi with its structure map, no functor between the underlying sites and no morphism-of-sites hypothesis), at RingedTopos.\{u, u, u}, for all K, L, M in D(𝒪); the edges a are the associativity constraints derivedAssociator of Tag 0FPT and the statement has no hypothesis or class argument; the associativity law of the comparison of Tag 07A4, which the source's proof uses silently, is pullbackTensorComparisonAssociative”.
+**`Stacks.Cohomology.RelativeCupProductOfToposHom.relativeCupProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductAssociativityOfToposHom.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductAssociativityOfToposHom.lean#L181). The attribute's comment: “the whole tag, for an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) (a morphism of the underlying topoi with its structure map, no functor between the underlying sites and no morphism-of-sites hypothesis), at RingedTopos.\{u, u, u}, for all K, L, M in D(𝒪); the edges a are the associativity constraints derivedAssociator of Tag 0FPT and the statement has no hypothesis or class argument; the associativity law of the comparison of Tag 07A4, which the source's proof uses silently, is pullbackTensorComparisonAssociative”.
 
 > **[Stacks, Tag 0FPL].**  The relative cup product of [Stacks, Tag 0B6C] is associative.  Let
 > `f : (Sh(C), 𝒪) ⟶ (Sh(C'), 𝒪')` be a morphism of ringed topoi: a morphism of the underlying
@@ -133,7 +133,7 @@ theorem relativeCupProduct_assoc {X Y : RingedTopos.{u, u, u}} (f : RingedToposH
 
 [Tag 0FPM](https://stacks.math.columbia.edu/tag/0FPM) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeCupProductOfToposHom.relativeCupProduct_braiding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductBraidingOfToposHom.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductBraidingOfToposHom.lean#L184). The attribute's comment: “the whole tag, for an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) (a morphism of the underlying topoi with its structure map, no functor between the underlying sites and no morphism-of-sites hypothesis), at RingedTopos.\{u, u, u}, for all K, L in D(𝒪); ψ on both edges is the commutativity constraint of Tag 0FPT and the statement carries no hypothesis or class argument”.
+**`Stacks.Cohomology.RelativeCupProductOfToposHom.relativeCupProduct_braiding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductBraidingOfToposHom.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductBraidingOfToposHom.lean#L184). The attribute's comment: “the whole tag, for an arbitrary morphism of ringed topoi in the two-field sense of Tag 01D3, part (2) (a morphism of the underlying topoi with its structure map, no functor between the underlying sites and no morphism-of-sites hypothesis), at RingedTopos.\{u, u, u}, for all K, L in D(𝒪); ψ on both edges is the commutativity constraint of Tag 0FPT and the statement carries no hypothesis or class argument”.
 
 > **[Stacks, Tag 0FPM].** The relative cup product of [Stacks, Tag 0B6C] is commutative. Let
 > `f : (Sh(C), 𝒪) ⟶ (Sh(C'), 𝒪')` be a morphism of ringed topoi: a morphism of the underlying
@@ -165,7 +165,7 @@ theorem relativeCupProduct_braiding {X Y : RingedTopos.{u, u, u}} (f : RingedTop
 
 [Tag 0FPN](https://stacks.math.columbia.edu/tag/0FPN) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeCupProductOfToposHom.relativeCupProduct_comp_pushforwardCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductCompositionOfToposHom.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductCompositionOfToposHom.lean#L136). The attribute's comment: “for morphisms of ringed topoi in the two-field sense of Tag 01D3, part (2) -- morphisms of the underlying topoi together with the structure maps, with no continuous functor between the underlying sites and no morphism-of-sites hypothesis; the left edge is the relative cup product of Tag 0B6C for f' ∘ f and the two equality edges of the source are the components of the composition isomorphism of derived pushforward, the conjugate of the Tag 0D6D isomorphism”.
+**`Stacks.Cohomology.RelativeCupProductOfToposHom.relativeCupProduct_comp_pushforwardCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductCompositionOfToposHom.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductCompositionOfToposHom.lean#L136). The attribute's comment: “for morphisms of ringed topoi in the two-field sense of Tag 01D3, part (2) -- morphisms of the underlying topoi together with the structure maps, with no continuous functor between the underlying sites and no morphism-of-sites hypothesis; the left edge is the relative cup product of Tag 0B6C for f' ∘ f and the two equality edges of the source are the components of the composition isomorphism of derived pushforward, the conjugate of the Tag 0D6D isomorphism”.
 
 > **[Stacks, Tag 0FPN].**  Let `f : (Sh(C), 𝒪) ⟶ (Sh(C'), 𝒪')` and
 > `f' : (Sh(C'), 𝒪') ⟶ (Sh(C''), 𝒪'')` be morphisms of ringed topoi.  The relative cup product of
@@ -198,7 +198,7 @@ theorem relativeCupProduct_comp_pushforwardCompIso (K L : DerivedModules X.O) :
           (derivedPushforward f').map (relativeCupProduct f K L)
 ```
 
-**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct_comp_pushforwardCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductCompositionTransport.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductCompositionTransport.lean#L165). The attribute's comment: “the square at the composite morphism itself, with no carried input: the left edge is the relative cup product of Tag 0B6C for f' ∘ f and the two equality edges of the source are the components of the composition isomorphism of derived pushforward, the conjugate of the Tag 0D6D isomorphism”.
+**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct_comp_pushforwardCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductCompositionTransport.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductCompositionTransport.lean#L165). The attribute's comment: “the square at the composite morphism itself, with no carried input: the left edge is the relative cup product of Tag 0B6C for f' ∘ f and the two equality edges of the source are the components of the composition isomorphism of derived pushforward, the conjugate of the Tag 0D6D isomorphism”.
 
 > For
 > `f : (Sh(C), 𝒪) ⟶ (Sh(C'), 𝒪')`, `f' : (Sh(C'), 𝒪') ⟶ (Sh(C''), 𝒪'')` and `K`, `L` in `D(𝒪)`
@@ -238,7 +238,7 @@ theorem relativeCupProduct_comp_pushforwardCompIso (K L : DerivedModules X.O) :
 
 [Tag 0H9A](https://stacks.math.columbia.edu/tag/0H9A) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductBaseChangeOfToposHom.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductBaseChangeOfToposHom.lean#L103).
+**`Stacks.Cohomology.RelativeCupProductOnRingedTopoi.relativeCupProduct_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductBaseChangeOfToposHom.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/RelativeCupProductBaseChangeOfToposHom.lean#L103).
 
 > **[Stacks, Tag 0H9A].**  For a commutative square of morphisms of ringed topoi
 >
@@ -298,4 +298,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.33, Tag 0FPJ](https://stacks.math.columbia.edu/tag/0FPJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.26 Mayer-Vietoris
 
-Section 21.26 of the Stacks Project, [Tag 0EVX](https://stacks.math.columbia.edu/tag/0EVX). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.26 of the Stacks Project, [Tag 0EVX](https://stacks.math.columbia.edu/tag/0EVX). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0F16, a lemma
 
 [Tag 0F16](https://stacks.math.columbia.edu/tag/0F16) in the Stacks Project.
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.firstMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L561). The attribute's comment: “the map alpha”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.firstMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 561](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L561). The attribute's comment: “the map alpha”.
 
 > The map `I(X) ⟶ I(Z) ⊞ I(Y)`.
 
@@ -24,7 +24,7 @@ noncomputable def firstMap (I : CochainComplex (SheafOfModules.{v} R) ℤ) :
       (sectionsComplex R sq.X₃).obj I ⊞ (sectionsComplex R sq.X₂).obj I
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.secondMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L568). The attribute's comment: “the map beta”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.secondMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 568](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L568). The attribute's comment: “the map beta”.
 
 > The signed map `I(Z) ⊞ I(Y) ⟶ I(E)`.
 
@@ -34,7 +34,7 @@ noncomputable def secondMap (I : CochainComplex (SheafOfModules.{v} R) ℤ) :
       (sectionsComplex R sq.X₁).obj I
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.cSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 575](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L575). The attribute's comment: “the canonical map of complexes”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.cSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 575](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L575). The attribute's comment: “the canonical map of complexes”.
 
 > The canonical map `I(X) ⟶ C(β)[-1]`, using the zero null-homotopy.
 
@@ -43,7 +43,7 @@ noncomputable def cSquare (I : CochainComplex (SheafOfModules.{v} R) ℤ) :
     (sectionsComplex R sq.X₄).obj I ⟶ CochainComplex.mappingCocone (secondMap sq I)
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.firstMap_comp_secondMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L581). The attribute's comment: “the relation beta composed with alpha is zero”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.firstMap_comp_secondMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 581](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L581). The attribute's comment: “the relation beta composed with alpha is zero”.
 
 > Signed restriction maps compose to zero.
 
@@ -52,7 +52,7 @@ theorem firstMap_comp_secondMap (I : CochainComplex (SheafOfModules.{v} R) ℤ) 
     firstMap sq I ≫ secondMap sq I = 0
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.cSquare_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 631](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L631). The attribute's comment: “functoriality on complexes”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.cSquare_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 631](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L631). The attribute's comment: “functoriality on complexes”.
 
 > The chain-level canonical maps commute with chain maps.
 
@@ -62,7 +62,7 @@ theorem cSquare_natural {I I' : CochainComplex (SheafOfModules.{v} R) ℤ} (f : 
       cSquare sq I ≫ mappingCoconeMap sq f
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.cSquare_arrow_iso_of_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 652](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L652). The attribute's comment: “independence of the K-injective representative”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.cSquare_arrow_iso_of_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean, line 652](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/CanonicalMapOfComplexes.lean#L652). The attribute's comment: “independence of the K-injective representative”.
 
 > Changing a K-injective representative gives an isomorphic arrow in `D(Ab)`.
 >
@@ -81,7 +81,7 @@ theorem cSquare_arrow_iso_of_isKInjective
       Arrow.mk (DerivedCategory.Q.map (cSquare sq I')))
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.DerivedCSquareData.cSquareTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1147). The attribute's comment: “the canonical triangle on derived objects”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.DerivedCSquareData.cSquareTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1147). The attribute's comment: “the canonical triangle on derived objects”.
 
 > The triangle on derived sections, with boundary obtained using the inverse of `c`.
 
@@ -90,7 +90,7 @@ noncomputable def cSquareTriangle (K : DerivedCategory (SheafOfModules.{v} R))
     [D.IsCSquareIso K] : Triangle (DerivedCategory AddCommGrpCat.{v})
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.DerivedCSquareData.isCSquareIso_iff_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1154). The attribute's comment: “computation of the isomorphism condition”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.DerivedCSquareData.isCSquareIso_iff_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1154). The attribute's comment: “computation of the isomorphism condition”.
 
 > The canonical condition on a derived object can be tested on any K-injective
 > representative.
@@ -102,7 +102,7 @@ theorem isCSquareIso_iff_quasiIso (K : DerivedCategory (SheafOfModules.{v} R))
     D.IsCSquareIso K ↔ QuasiIso (cSquare sq I)
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.DerivedCSquareData.cSquareTriangle_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1163). The attribute's comment: “functoriality of the triangle in the derived object”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.DerivedCSquareData.cSquareTriangle_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1163](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1163). The attribute's comment: “functoriality of the triangle in the derived object”.
 
 > Every derived morphism induces a unique morphism of the derived triangles with the given
 > three components.
@@ -117,7 +117,7 @@ theorem cSquareTriangle_functorial {K K' : DerivedCategory (SheafOfModules.{v} R
         t.hom₃ = (D.derivedSections sq.X₁).map f
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.derivedCSquareData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1319). The attribute's comment: “the functorial derived construction and its K-injective computation”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.derivedCSquareData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1319](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1319). The attribute's comment: “the functorial derived construction and its K-injective computation”.
 
 > **The derived construction of the canonical map of a square**, under `UnivLE` between the
 > universes of the site, of its homs, of the rings and of the modules.
@@ -127,7 +127,7 @@ noncomputable def derivedCSquareData [UnivLE.{u, v}] [UnivLE.{w, v}] [UnivLE.{r,
     DerivedCSquareData.{u, v} (R := R) sq
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.cSquareTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1330). The attribute's comment: “the triangle is distinguished”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.cSquareTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean, line 1330](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DerivedCanonicalMapAndTriangle.lean#L1330). The attribute's comment: “the triangle is distinguished”.
 
 > **The derived-section triangle is distinguished** at every derived object where the
 > canonical map is invertible, under `UnivLE` between the universes of the site, of its homs, of
@@ -145,7 +145,7 @@ theorem cSquareTriangle_distinguished [UnivLE.{u, v}] [UnivLE.{w, v}] [UnivLE.{r
 
 [Tag 0EWP](https://stacks.math.columbia.edu/tag/0EWP) in the Stacks Project.
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.isCSquareIso_obj₃_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean#L407). The attribute's comment: “first and second vertices imply the third”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.isCSquareIso_obj₃_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean, line 407](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean#L407). The attribute's comment: “first and second vertices imply the third”.
 
 > **Stacks Project, Tag 0EWP.** The comparison for the third vertex is an isomorphism if it is
 > so for the first two vertices of a distinguished triangle.
@@ -164,7 +164,7 @@ theorem isCSquareIso_obj₃_of_distTriang
         sq).IsCSquareIso T.obj₃
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.isCSquareIso_obj₁_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean#L423). The attribute's comment: “second and third vertices imply the first”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.isCSquareIso_obj₁_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean, line 423](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean#L423). The attribute's comment: “second and third vertices imply the first”.
 
 > **Stacks Project, Tag 0EWP.** The comparison for the first vertex is an isomorphism if it is
 > so for the second and third vertices of a distinguished triangle.
@@ -183,7 +183,7 @@ theorem isCSquareIso_obj₁_of_distTriang
         sq).IsCSquareIso T.obj₁
 ```
 
-**`Stacks.MayerVietoris.CanonicalMapOfComplexes.isCSquareIso_obj₂_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean#L439). The attribute's comment: “first and third vertices imply the second”.
+**`Stacks.MayerVietoris.CanonicalMapOfComplexes.isCSquareIso_obj₂_of_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean, line 439](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TwoOutOfThree.lean#L439). The attribute's comment: “first and third vertices imply the second”.
 
 > **Stacks Project, Tag 0EWP.** The comparison for the second vertex is an isomorphism if it
 > is so for the first and third vertices of a distinguished triangle.
@@ -206,7 +206,7 @@ theorem isCSquareIso_obj₂_of_distTriang
 
 [Tag 0EVY](https://stacks.math.columbia.edu/tag/0EVY) in the Stacks Project.
 
-**`Stacks.Cohomology.MayerVietoris.isIso_derivedCSquare_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPushoutSquare.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPushoutSquare.lean#L196).
+**`Stacks.Cohomology.MayerVietoris.isIso_derivedCSquare_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPushoutSquare.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPushoutSquare.lean#L196).
 
 > **Stacks 0EVY.** If the sheafified representables of the square form a pushout square and
 > `h_E^# ⟶ h_Y^#` is a monomorphism, then the canonical natural transformation of Stacks 0F16 is
@@ -225,7 +225,7 @@ theorem isIso_derivedCSquare_of_isPushout (sq : Square S.C)
 
 [Tag 0EVZ](https://stacks.math.columbia.edu/tag/0EVZ) in the Stacks Project.
 
-**`Stacks.MayerVietoris.PresheafSquare.isIso_derivedCSquare_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean#L126). The attribute's comment: “the canonical comparison”.
+**`Stacks.MayerVietoris.PresheafSquare.isIso_derivedCSquare_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean#L126). The attribute's comment: “the canonical comparison”.
 
 > **Stacks 0EVZ.** If the sheafifications of a square of presheaves of sets form a pushout
 > square and `D^# ⟶ F^#` is a monomorphism, then the canonical natural transformation of
@@ -240,7 +240,7 @@ theorem isIso_derivedCSquare_of_isPushout
     IsIso (derivedCSquareData J sq).derivedCSquare
 ```
 
-**`Stacks.MayerVietoris.PresheafSquare.cSquareTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean#L161). The attribute's comment: “the triangle is distinguished”.
+**`Stacks.MayerVietoris.PresheafSquare.cSquareTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean, line 161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean#L161). The attribute's comment: “the triangle is distinguished”.
 
 > **Stacks 0EVZ.** The Mayer–Vietoris triangle of a square of presheaves of sets whose
 > sheafifications form a pushout square with monomorphic `D^# ⟶ F^#` is a distinguished triangle
@@ -252,7 +252,7 @@ theorem cSquareTriangle_distinguished (K : DerivedCategory (Sheaf J AddCommGrpCa
     cSquareTriangle J sq hpushout hmono K ∈ distTriang (DerivedCategory AddCommGrpCat.{u})
 ```
 
-**`Stacks.MayerVietoris.PresheafSquare.cSquareTriangle_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean#L170). The attribute's comment: “functoriality of the triangle in the derived object”.
+**`Stacks.MayerVietoris.PresheafSquare.cSquareTriangle_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/TriangleOfAPresheafPushoutSquare.lean#L170). The attribute's comment: “functoriality of the triangle in the derived object”.
 
 > **Stacks 0EVZ, the functoriality in the derived object.** Every morphism of derived objects
 > induces a unique morphism of Mayer–Vietoris triangles whose three components are the maps
@@ -274,4 +274,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.26, Tag 0EVX](https://stacks.math.columbia.edu/tag/0EVX)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

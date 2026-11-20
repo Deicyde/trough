@@ -8,13 +8,13 @@ proof: formalized
 
 # 80.11 Applications
 
-Section 80.11 of the Stacks Project, [Tag 04SJ](https://stacks.math.columbia.edu/tag/04SJ). 8 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 80.11 of the Stacks Project, [Tag 04SJ](https://stacks.math.columbia.edu/tag/04SJ). 8 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04SK, a lemma
 
 [Tag 04SK](https://stacks.math.columbia.edu/tag/04SK) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_of_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringRestrictionCoproduct.lean, line 777](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringRestrictionCoproduct.lean#L777).
+**`AlgebraicGeometry.isAlgebraicSpace_of_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringRestrictionCoproduct.lean, line 777](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CoveringRestrictionCoproduct.lean#L777).
 
 > **Stacks 04SK**.
 >
@@ -65,7 +65,7 @@ theorem isAlgebraicSpace_of_isCovering
 
 [Tag 04U0](https://stacks.math.columbia.edu/tag/04U0) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_of_isCovering_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringRestrictionFiniteType.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringRestrictionFiniteType.lean#L135).
+**`AlgebraicGeometry.isAlgebraicSpace_of_isCovering_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringRestrictionFiniteType.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CoveringRestrictionFiniteType.lean#L135).
 
 > Let `F` be a presheaf of sets on the big fppf site of `S` and let `{S i → S}` be a covering
 > family of the base, and assume
@@ -99,7 +99,7 @@ theorem isAlgebraicSpace_of_isCovering_of_isFiniteType
 
 [Tag 0ADV](https://stacks.math.columbia.edu/tag/0ADV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.DescentData.isEffective_of_countable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EffectiveCountableCovering.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EffectiveCountableCovering.lean#L207). The attribute's comment: “part (1): countable index set”.
+**`AlgebraicGeometry.Space.Descent.DescentData.isEffective_of_countable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EffectiveCountableCovering.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EffectiveCountableCovering.lean#L207). The attribute's comment: “part (1): countable index set”.
 
 > **Stacks 0ADV, part (1).** Let `{f i : X i ⟶ T}` be an fppf covering of algebraic spaces
 > over `S` whose index type is countable. Then every descent datum for algebraic spaces relative
@@ -109,7 +109,7 @@ theorem isAlgebraicSpace_of_isCovering_of_isFiniteType
 theorem isEffective_of_countable (hcov : IsFppfCovering B S hS X f) : D.IsEffective
 ```
 
-**`AlgebraicGeometry.Space.Descent.DescentData.isEffective_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EffectiveFiniteTypeCovering.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EffectiveFiniteTypeCovering.lean#L325). The attribute's comment: “part (2): finite type, index set of any size”.
+**`AlgebraicGeometry.Space.Descent.DescentData.isEffective_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EffectiveFiniteTypeCovering.lean, line 325](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EffectiveFiniteTypeCovering.lean#L325). The attribute's comment: “part (2): finite type, index set of any size”.
 
 > **Stacks 0ADV, part (2).** Let `{f i : X i ⟶ T}` be an fppf covering of algebraic spaces
 > over `S`, indexed by a type of any size. Then every descent datum `(Y i, φ i j)` relative to it
@@ -135,7 +135,7 @@ theorem isEffective_of_isFiniteType (hcov : IsFppfCovering B S hS X f)
 
 [Tag 0AMP](https://stacks.math.columbia.edu/tag/0AMP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_of_comp_of_flat_surjective_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean#L155).
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_of_comp_of_flat_surjective_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/FinalBootstrap.lean#L155).
 
 > **Stacks 0AMP.** Let `a : F ⟶ G` and `b : G ⟶ H` be morphisms of presheaves on the big fppf
 > site of `S`, with `G` and `H` sheaves.  If `a` is representable by algebraic spaces, surjective,
@@ -172,7 +172,7 @@ theorem isRepresentableByAlgebraicSpaces_of_comp_of_flat_surjective_unconditiona
 
 [Tag 04TB](https://stacks.math.columbia.edu/tag/04TB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicSpace_isomPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheafAlgebraic.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheafAlgebraic.lean#L1199).
+**`AlgebraicGeometry.Stack.isAlgebraicSpace_isomPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheafAlgebraic.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/IsomorphismSheafAlgebraic.lean#L1199).
 
 > The sheaf `Isom(x, y)` of isomorphisms between two objects of the quotient stack of a groupoid
 > in algebraic spaces, read on the big fppf site of the scheme the test object lies over, is an
@@ -200,7 +200,7 @@ theorem isAlgebraicSpace_isomPresheaf
 
 [Tag 06PG](https://stacks.math.columbia.edu/tag/06PG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean#L169). The attribute's comment: “surjectivity”.
+**`AlgebraicGeometry.Space.isSurjective_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean, line 169](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean#L169). The attribute's comment: “surjectivity”.
 
 > **Stacks 06PG.** The object presheaf of a pre-relation surjects onto its quotient sheaf.
 >
@@ -222,7 +222,7 @@ theorem isSurjective_toQuotientSheaf (j : PreRelation R U) :
     IsSurjective site S hS (toQuotientSheaf j)
 ```
 
-**`AlgebraicGeometry.Space.isFlat_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean#L459). The attribute's comment: “flatness”.
+**`AlgebraicGeometry.Space.isFlat_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean, line 459](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean#L459). The attribute's comment: “flatness”.
 
 > **Stacks 06PG.** The object space of a groupoid in algebraic spaces is flat over its
 > sheaf quotient, as soon as that quotient is an algebraic space, the relation cut out by the
@@ -237,7 +237,7 @@ theorem isFlat_toQuotientSheaf
     IsFlat site S hS (toQuotientSheaf (groupoidPreRelation G))
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean#L479). The attribute's comment: “local finite presentation”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean, line 479](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean#L479). The attribute's comment: “local finite presentation”.
 
 > **Stacks 06PG.** The object space of a groupoid in algebraic spaces is locally of finite
 > presentation over its sheaf quotient, as soon as that quotient is an algebraic space, the
@@ -257,7 +257,7 @@ theorem isLocallyOfFinitePresentation_toQuotientSheaf
 
 [Tag 06PH](https://stacks.math.columbia.edu/tag/06PH) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isAlgebraicSpace_arrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean#L367). The attribute's comment: “R/S is an algebraic space”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isAlgebraicSpace_arrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean, line 367](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean#L367). The attribute's comment: “R/S is an algebraic space”.
 
 > **Stacks 06PH.** The quotient `R/S` of the arrow space by the stabilizer action is an
 > algebraic space, as soon as the stabilizer is flat and locally of finite presentation over the
@@ -270,7 +270,7 @@ theorem isAlgebraicSpace_arrowStabilizerQuotient (G : GroupoidInAlgebraicSpaces 
     IsAlgebraicSpace C S hS (arrowStabilizerQuotient G).obj
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isSurjective_toArrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean#L377). The attribute's comment: “surjectivity of R ⟶ R/S”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isSurjective_toArrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean, line 377](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean#L377). The attribute's comment: “surjectivity of R ⟶ R/S”.
 
 > **Stacks 06PH.** The quotient map `π : R ⟶ R/S` is surjective.
 
@@ -279,7 +279,7 @@ theorem isSurjective_toArrowStabilizerQuotient (G : GroupoidInAlgebraicSpaces C 
     Space.IsSurjective C S hS (toArrowStabilizerQuotient G)
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isFlat_toArrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean#L383). The attribute's comment: “flatness of R ⟶ R/S”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isFlat_toArrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean, line 383](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean#L383). The attribute's comment: “flatness of R ⟶ R/S”.
 
 > **Stacks 06PH.** The quotient map `π : R ⟶ R/S` is flat.
 
@@ -290,7 +290,7 @@ theorem isFlat_toArrowStabilizerQuotient (G : GroupoidInAlgebraicSpaces C S hS B
     Space.IsFlat C S hS (toArrowStabilizerQuotient G)
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isLocallyOfFinitePresentation_toArrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean#L393). The attribute's comment: “local finite presentation of R ⟶ R/S”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isLocallyOfFinitePresentation_toArrowStabilizerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/ArrowQuotient.lean#L393). The attribute's comment: “local finite presentation of R ⟶ R/S”.
 
 > **Stacks 06PH.** The quotient map `π : R ⟶ R/S` is locally of finite presentation.
 
@@ -302,7 +302,7 @@ theorem isLocallyOfFinitePresentation_toArrowStabilizerQuotient
     Space.IsLocallyOfFinitePresentation C S hS (toArrowStabilizerQuotient G)
 ```
 
-**`AlgebraicGeometry.Space.isSurjective_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean#L169). The attribute's comment: “surjectivity of the quotient map, for an arbitrary pre-relation”.
+**`AlgebraicGeometry.Space.isSurjective_toQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean, line 169](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/CoveringMap.lean#L169). The attribute's comment: “surjectivity of the quotient map, for an arbitrary pre-relation”.
 
 > **Stacks 06PG.** The object presheaf of a pre-relation surjects onto its quotient sheaf.
 >
@@ -324,7 +324,7 @@ theorem isSurjective_toQuotientSheaf (j : PreRelation R U) :
     IsSurjective site S hS (toQuotientSheaf j)
 ```
 
-**`AlgebraicGeometry.Space.isSurjective_toActionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotient.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotient.lean#L351). The attribute's comment: “surjectivity of X ⟶ X/G”.
+**`AlgebraicGeometry.Space.isSurjective_toActionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotient.lean, line 351](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotient.lean#L351). The attribute's comment: “surjectivity of X ⟶ X/G”.
 
 > **Stacks 06PH.** The quotient morphism `X ⟶ X/G` is surjective.
 >
@@ -336,7 +336,7 @@ theorem isSurjective_toActionQuotientSheaf (G X : Over B) [GrpObj G] [ModObj G X
     IsSurjective site S hS (toQuotientSheaf (actionPreRelation G X))
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_actionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean#L82). The attribute's comment: “X/G is an algebraic space”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_actionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean#L82). The attribute's comment: “X/G is an algebraic space”.
 
 > **Stacks 06PH.** The quotient `X/G` of an algebraic space by a free action of a group
 > algebraic space which is flat and locally of finite presentation over the base is an
@@ -351,7 +351,7 @@ theorem isAlgebraicSpace_actionQuotientSheaf
     IsAlgebraicSpace site S hS (actionQuotientSheaf G X).obj
 ```
 
-**`AlgebraicGeometry.Space.isFlat_toActionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean#L94). The attribute's comment: “flatness of X ⟶ X/G”.
+**`AlgebraicGeometry.Space.isFlat_toActionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean#L94). The attribute's comment: “flatness of X ⟶ X/G”.
 
 > **Stacks 06PH.** The quotient morphism `X ⟶ X/G` of a free action of a group algebraic
 > space which is flat and locally of finite presentation over the base is flat.
@@ -365,7 +365,7 @@ theorem isFlat_toActionQuotientSheaf
     IsFlat site S hS (toQuotientSheaf (actionPreRelation G X))
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_toActionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean#L107). The attribute's comment: “local finite presentation of X ⟶ X/G”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_toActionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean#L107). The attribute's comment: “local finite presentation of X ⟶ X/G”.
 
 > **Stacks 06PH.** The quotient morphism `X ⟶ X/G` of a free action of a group algebraic
 > space which is flat and locally of finite presentation over the base is locally of finite
@@ -380,7 +380,7 @@ theorem isLocallyOfFinitePresentation_toActionQuotientSheaf
     IsLocallyOfFinitePresentation site S hS (toQuotientSheaf (actionPreRelation G X))
 ```
 
-**`AlgebraicGeometry.Space.isFppfTorsor_actionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean#L120). The attribute's comment: “X is an fppf G-torsor over X/G”.
+**`AlgebraicGeometry.Space.isFppfTorsor_actionQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupActionQuotientAlgebraic.lean#L120). The attribute's comment: “X is an fppf G-torsor over X/G”.
 
 > **Stacks 06PH.** For a free action of a group algebraic space which is flat and locally of
 > finite presentation over the base, `X` is an fppf torsor over `X/G` under the group `G` pulled
@@ -404,7 +404,7 @@ theorem isFppfTorsor_actionQuotientSheaf
 
 [Tag 04U1](https://stacks.math.columbia.edu/tag/04U1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFppfTorsor_of_isFppfCovering_of_modIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TorsorDescent/GlueingTorsors.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TorsorDescent/GlueingTorsors.lean#L181). The attribute's comment: “the glued object is an fppf torsor; not its existence from the descent datum”.
+**`AlgebraicGeometry.Space.isFppfTorsor_of_isFppfCovering_of_modIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TorsorDescent/GlueingTorsors.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TorsorDescent/GlueingTorsors.lean#L181). The attribute's comment: “the glued object is an fppf torsor; not its existence from the descent datum”.
 
 > **The glued object of Stacks 04U1 is an fppf torsor.**
 >
@@ -437,7 +437,7 @@ theorem isFppfTorsor_of_isFppfCovering_of_modIso (hB : IsAlgebraicSpace 𝒞 S h
     IsFppfTorsor 𝒞 S hS B hB G X hG hX
 ```
 
-**`AlgebraicGeometry.Space.exists_isFppfTorsor_of_descentDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TorsorDescent/GlueingTorsorsExistence.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TorsorDescent/GlueingTorsorsExistence.lean#L213).
+**`AlgebraicGeometry.Space.exists_isFppfTorsor_of_descentDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TorsorDescent/GlueingTorsorsExistence.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TorsorDescent/GlueingTorsorsExistence.lean#L213).
 
 > **Stacks 04U1.** Let `{f i : Sᵢ ⟶ S}` be a covering family of the big fppf site of `S` and let
 > `G` be a group algebraic space over `S`. A descent datum `D` of fppf torsors along that family —
@@ -481,4 +481,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 80.11, Tag 04SJ](https://stacks.math.columbia.edu/tag/04SJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

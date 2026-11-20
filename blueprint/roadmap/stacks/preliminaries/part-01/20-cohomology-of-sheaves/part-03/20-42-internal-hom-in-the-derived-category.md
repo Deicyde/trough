@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.42 Internal hom in the derived category
 
-Section 20.42 of the Stacks Project, [Tag 08DH](https://stacks.math.columbia.edu/tag/08DH). 15 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 20.42 of the Stacks Project, [Tag 08DH](https://stacks.math.columbia.edu/tag/08DH). 15 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08DI, an equation
 
 [Tag 08DI](https://stacks.math.columbia.edu/tag/08DI) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedSheafHomTensorEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedInternalHom.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedInternalHom.lean#L144).
+**`Stacks.SheafOfModules.derivedSheafHomTensorEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedInternalHom.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedInternalHom.lean#L144).
 
 > **Stacks 08DI.** For objects `K`, `L`, `M` of `D(O_X)` on a ringed space, morphisms into the
 > derived internal hom are canonically identified with morphisms out of the derived tensor
@@ -34,7 +34,7 @@ def derivedSheafHomTensorEquiv (K L M : DerivedCategory (StructureSheafModules R
 
 [Tag 08DK](https://stacks.math.columbia.edu/tag/08DK) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedSheafHomGlobalSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategorySections.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategorySections.lean#L79). The attribute's comment: “global sections”.
+**`Stacks.SheafOfModules.derivedSheafHomGlobalSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategorySections.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategorySections.lean#L79). The attribute's comment: “global sections”.
 
 > **Stacks 08DK globally.** For objects `L`, `M` of `D(O_X)` the degree-zero global
 > hypercohomology of the derived internal Hom `RSheafHom(L, M)` is the group of morphisms
@@ -48,7 +48,7 @@ def derivedSheafHomGlobalSectionsEquiv (L M : DerivedCategory (StructureSheafMod
         Type u) ≃+ (L ⟶ M)
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategorySections.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategorySections.lean#L94). The attribute's comment: “sections over an open”.
+**`Stacks.SheafOfModules.derivedSheafHomSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategorySections.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCategorySections.lean#L94). The attribute's comment: “sections over an open”.
 
 > **Stacks 08DK over an open.** For objects `L`, `M` of `D(O_X)` and an open `U ⊆ X` the
 > degree-zero hypercohomology over `U` of the derived internal Hom `RSheafHom(L, M)` is the group
@@ -68,7 +68,7 @@ def derivedSheafHomSectionsEquiv (L M : DerivedCategory (StructureSheafModules R
 
 [Tag 08DJ](https://stacks.math.columbia.edu/tag/08DJ) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedCurryingData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCurryingOnARingedSpace.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCurryingOnARingedSpace.lean#L352). References: SGA 6 I (7.4), “first isomorphism”.
+**`Stacks.SheafOfModules.derivedCurryingData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCurryingOnARingedSpace.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedCurryingOnARingedSpace.lean#L352). References: SGA 6 I (7.4), “first isomorphism”.
 
 > **Stacks 08DJ.** Let `(X, O_X)` be a ringed space and let `K`, `L`, `M` be objects of
 > `D(O_X)`. There is a canonical isomorphism
@@ -86,7 +86,7 @@ def derivedCurryingData : DerivedCurryingData Rc
 
 [Tag 08DL](https://stacks.math.columbia.edu/tag/08DL) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedSheafHomRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L129).
+**`Stacks.SheafOfModules.derivedSheafHomRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L129).
 
 > **Stacks 08DL.** For objects `K`, `L` of `D(O_X)` the derived internal Hom commutes with
 > restriction to an open `U`: restricting `RSheafHom(K, L)` to the opens contained in `U` gives the
@@ -100,7 +100,7 @@ def derivedSheafHomRestrictionIso (K L : DerivedCategory (StructureSheafModules 
           (op ((derivedRestrict Rc U).obj K))).obj ((derivedRestrict Rc U).obj L)
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomRestrictionIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L158). The attribute's comment: “functoriality in the first variable”.
+**`Stacks.SheafOfModules.derivedSheafHomRestrictionIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L158). The attribute's comment: “functoriality in the first variable”.
 
 > The comparison of Stacks 08DL is natural in the contravariant variable: restricting the map
 > `RSheafHom(K, L) ⟶ RSheafHom(K', L)` induced by `f : K' ⟶ K` gives the map induced by `f|_U`.
@@ -116,7 +116,7 @@ theorem derivedSheafHomRestrictionIso_natural_left
           ((derivedRestrict Rc U).map f).op).app ((derivedRestrict Rc U).obj L)
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomRestrictionIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L171). The attribute's comment: “functoriality in the second variable”.
+**`Stacks.SheafOfModules.derivedSheafHomRestrictionIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L171). The attribute's comment: “functoriality in the second variable”.
 
 > The comparison of Stacks 08DL is natural in the covariant variable: restricting the map
 > `RSheafHom(K, L) ⟶ RSheafHom(K, L')` induced by `g : L ⟶ L'` gives the map induced by `g|_U`.
@@ -132,7 +132,7 @@ theorem derivedSheafHomRestrictionIso_natural_right
           (op ((derivedRestrict Rc U).obj K))).map ((derivedRestrict Rc U).map g)
 ```
 
-**`Stacks.SheafOfModules.sheafHomRestrictionComplexMap_isRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L202). The attribute's comment: “restriction of internal-Hom complexes”.
+**`Stacks.SheafOfModules.sheafHomRestrictionComplexMap_isRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L202). The attribute's comment: “restriction of internal-Hom complexes”.
 
 > On every local homogeneous cochain, the chain-level comparison of Stacks 08DL is the
 > canonical restriction isomorphism of internal Homs of modules. This is what pins the comparison
@@ -146,7 +146,7 @@ theorem sheafHomRestrictionComplexMap_isRestriction
       (sheafHomRestrictionComplexMap Rc U A B)
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomRestrictionIso_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L212). The attribute's comment: “canonical model characterization”.
+**`Stacks.SheafOfModules.derivedSheafHomRestrictionIso_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedRestrictionToOpens.lean#L212). The attribute's comment: “canonical model characterization”.
 
 > On the classes of complexes `A` and `B` with `B` K-injective, both sides of Stacks 08DL are
 > the class of an internal Hom complex, and the comparison is the class of the chain-level
@@ -173,7 +173,7 @@ theorem derivedSheafHomRestrictionIso_model
 
 [Tag 08I0](https://stacks.math.columbia.edu/tag/08I0) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isTriangulated_derivedSheafHom_flip`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedSheafHomTriangulated.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedSheafHomTriangulated.lean#L117). The attribute's comment: “first variable: `RSheafHom(-, L)` is a triangulated functor `D(O_X)ᵒᵖ ⥤ D(O_X)`”.
+**`Stacks.SheafOfModules.isTriangulated_derivedSheafHom_flip`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedSheafHomTriangulated.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedSheafHomTriangulated.lean#L117). The attribute's comment: “first variable: `RSheafHom(-, L)` is a triangulated functor `D(O_X)ᵒᵖ ⥤ D(O_X)`”.
 
 > **Stacks 08I0, first variable.**  On a ringed space `(X, O_X)`, for every `L` in `D(O_X)` the
 > derived internal hom `RSheafHom(-, L) : D(O_X)ᵒᵖ ⥤ D(O_X)` is a triangulated functor: with the
@@ -188,7 +188,7 @@ instance isTriangulated_derivedSheafHom_flip (L : DerivedCategory (StructureShea
     ((derivedSheafHom Rc).flip.obj L).IsTriangulated
 ```
 
-**`Stacks.SheafOfModules.isTriangulated_derivedSheafHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedSheafHomTriangulated.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedSheafHomTriangulated.lean#L132). The attribute's comment: “second variable: `RSheafHom(K, -)` is a triangulated functor `D(O_X) ⥤ D(O_X)`”.
+**`Stacks.SheafOfModules.isTriangulated_derivedSheafHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedSheafHomTriangulated.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedSheafHomTriangulated.lean#L132). The attribute's comment: “second variable: `RSheafHom(K, -)` is a triangulated functor `D(O_X) ⥤ D(O_X)`”.
 
 > **Stacks 08I0, second variable.**  On a ringed space `(X, O_X)`, for every `K` in `D(O_X)`
 > the derived internal hom `RSheafHom(K, -) : D(O_X) ⥤ D(O_X)` is a triangulated functor: with the
@@ -210,7 +210,7 @@ instance isTriangulated_derivedSheafHom (K : DerivedCategory (StructureSheafModu
 
 [Tag 0A8V](https://stacks.math.columbia.edu/tag/0A8V) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedSheafHomComposition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L101). The attribute's comment: “the canonical composition morphism”.
+**`Stacks.SheafOfModules.derivedSheafHomComposition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L101). The attribute's comment: “the canonical composition morphism”.
 
 > For objects `K`, `L`, `M` of `D(O_X)` on a ringed space, the canonical composition morphism
 >
@@ -228,7 +228,7 @@ def derivedSheafHomComposition
       ((derivedSheafHom Rc).obj (op K)).obj M
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomComposition_natural_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L111). The attribute's comment: “functoriality in the source”.
+**`Stacks.SheafOfModules.derivedSheafHomComposition_natural_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L111). The attribute's comment: “functoriality in the source”.
 
 > Derived composition is contravariant in the source object.
 
@@ -243,7 +243,7 @@ theorem derivedSheafHomComposition_natural_source
         derivedSheafHomComposition Rc K' L M
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomComposition_natural_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L124). The attribute's comment: “functoriality in the target”.
+**`Stacks.SheafOfModules.derivedSheafHomComposition_natural_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L124). The attribute's comment: “functoriality in the target”.
 
 > Derived composition is covariant in the target object.
 
@@ -258,7 +258,7 @@ theorem derivedSheafHomComposition_natural_target
         derivedSheafHomComposition Rc K L M'
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomComposition_dinatural_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L139). The attribute's comment: “functoriality in the intermediate object”.
+**`Stacks.SheafOfModules.derivedSheafHomComposition_dinatural_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L139). The attribute's comment: “functoriality in the intermediate object”.
 
 > Derived composition is dinatural in the intermediate object: a morphism `L ⟶ L'` may be
 > absorbed covariantly into the left tensor factor or contravariantly into the right one, with the
@@ -278,7 +278,7 @@ theorem derivedSheafHomComposition_dinatural_middle
         derivedSheafHomComposition Rc K L M
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomComposition_kFlatModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L158). The attribute's comment: “comparison with composition of complexes”.
+**`Stacks.SheafOfModules.derivedSheafHomComposition_kFlatModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedComposition.lean#L158). The attribute's comment: “comparison with composition of complexes”.
 
 > On K-injective representatives `J` of `L` and `I` of `M` and any map `f` from a K-flat
 > complex `H` to the internal Hom complex `SheafHom^•(K, J)`, derived composition is the class of
@@ -309,7 +309,7 @@ theorem derivedSheafHomComposition_kFlatModel
 
 [Tag 0BYS](https://stacks.math.columbia.edu/tag/0BYS) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedTensorHomDiagonal_natural_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L520). The attribute's comment: “functoriality in the source of the internal Hom”.
+**`AlgebraicGeometry.RingedSite.derivedTensorHomDiagonal_natural_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 520](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L520). The attribute's comment: “functoriality in the source of the internal Hom”.
 
 > **Stacks 0BYS.** The diagonal morphism is contravariant in the source of the internal Hom,
 > for an arbitrary morphism of `D(O)`.
@@ -324,7 +324,7 @@ theorem derivedTensorHomDiagonal_natural_hom (g : M' ⟶ M) :
           (((Stacks.SheafOfModules.derivedTensorProductFunctor X).obj K).obj L)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedTensorHomDiagonal_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L685). The attribute's comment: “functoriality in the target of the internal Hom”.
+**`AlgebraicGeometry.RingedSite.derivedTensorHomDiagonal_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 685](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L685). The attribute's comment: “functoriality in the target of the internal Hom”.
 
 > **Stacks 0BYS.** The diagonal morphism is covariant in the target of the internal Hom, for
 > an arbitrary morphism of `D(O)`.
@@ -339,7 +339,7 @@ theorem derivedTensorHomDiagonal_natural_right (g : L ⟶ L') :
           (((Stacks.SheafOfModules.derivedTensorProductFunctor X).obj K).map g)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedTensorHomDiagonal_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 931](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L931). The attribute's comment: “functoriality in the tensor factor”.
+**`AlgebraicGeometry.RingedSite.derivedTensorHomDiagonal_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 931](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L931). The attribute's comment: “functoriality in the tensor factor”.
 
 > **Stacks 0BYS.** The diagonal morphism is covariant in the tensor factor, for an arbitrary
 > morphism of `D(O)`.
@@ -362,7 +362,7 @@ theorem derivedTensorHomDiagonal_natural_left (f : K ⟶ K') :
           (((Stacks.SheafOfModules.derivedTensorProductFunctor X).map f).app L)
 ```
 
-**`Stacks.SheafOfModules.canonicalDerivedTensorHomDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1086). The attribute's comment: “the canonical morphism”.
+**`Stacks.SheafOfModules.canonicalDerivedTensorHomDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1086). The attribute's comment: “the canonical morphism”.
 
 > **Stacks 0BYS.** The canonical morphism
 >
@@ -374,7 +374,7 @@ theorem derivedTensorHomDiagonal_natural_left (f : K ⟶ K') :
 def canonicalDerivedTensorHomDiagonal : DerivedTensorHomDiagonal Rc
 ```
 
-**`Stacks.SheafOfModules.derivedTensorHomDiagonal_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1101). The attribute's comment: “the characterisation on representatives”.
+**`Stacks.SheafOfModules.derivedTensorHomDiagonal_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1101). The attribute's comment: “the characterisation on representatives”.
 
 > **Stacks 0BYS.** The canonical morphism is the class of the complex-level morphism of
 > Stacks 0BYR between the chosen representatives, read through the K-flat and K-injective
@@ -389,7 +389,7 @@ theorem derivedTensorHomDiagonal_eq (K L M : DerivedCategory (StructureSheafModu
         (RingedSite.derivedTensorHomModelMap (ringedSite Rc) K L M)
 ```
 
-**`Stacks.SheafOfModules.derivedTensorHomDiagonal_natural_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1112). The attribute's comment: “functoriality in the source of the internal Hom”.
+**`Stacks.SheafOfModules.derivedTensorHomDiagonal_natural_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1112). The attribute's comment: “functoriality in the source of the internal Hom”.
 
 > **Stacks 0BYS.** The canonical morphism is contravariant in the source `M` of the internal
 > Hom, for an arbitrary morphism of `D(O_X)`.
@@ -406,7 +406,7 @@ theorem derivedTensorHomDiagonal_natural_hom
           (((derivedTensorProductFunctor (ringedSite Rc)).obj K).obj L)
 ```
 
-**`Stacks.SheafOfModules.derivedTensorHomDiagonal_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1126). The attribute's comment: “functoriality in the tensor factor”.
+**`Stacks.SheafOfModules.derivedTensorHomDiagonal_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1126). The attribute's comment: “functoriality in the tensor factor”.
 
 > **Stacks 0BYS.** The canonical morphism is covariant in the tensor factor `K`, for an
 > arbitrary morphism of `D(O_X)`.
@@ -423,7 +423,7 @@ theorem derivedTensorHomDiagonal_natural_left
           (((derivedTensorProductFunctor (ringedSite Rc)).map f).app L)
 ```
 
-**`Stacks.SheafOfModules.derivedTensorHomDiagonal_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1140). The attribute's comment: “functoriality in the target of the internal Hom”.
+**`Stacks.SheafOfModules.derivedTensorHomDiagonal_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean, line 1140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonal.lean#L1140). The attribute's comment: “functoriality in the target of the internal Hom”.
 
 > **Stacks 0BYS.** The canonical morphism is covariant in the target `L` of the internal Hom,
 > for an arbitrary morphism of `D(O_X)`.
@@ -445,7 +445,7 @@ theorem derivedTensorHomDiagonal_natural_right
 
 [Tag 0A8W](https://stacks.math.columbia.edu/tag/0A8W) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedTensorHomUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L226). The attribute's comment: “the canonical morphism, as the unit of Stacks 08DI”.
+**`Stacks.SheafOfModules.derivedTensorHomUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L226). The attribute's comment: “the canonical morphism, as the unit of Stacks 08DI”.
 
 > **Stacks 0A8W.** For objects `K`, `L` of `D(O_X)` on a ringed space, the canonical morphism
 >
@@ -459,7 +459,7 @@ def derivedTensorHomUnit (K L : DerivedCategory (StructureSheafModules Rc)) :
     K ⟶ ((derivedSheafHom Rc).obj (op L)).obj (((derivedTensor Rc).obj K).obj L)
 ```
 
-**`Stacks.SheafOfModules.canonicalDerivedTensorHomUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L265). The attribute's comment: “the canonical morphism, built as the source builds it”.
+**`Stacks.SheafOfModules.canonicalDerivedTensorHomUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 265](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L265). The attribute's comment: “the canonical morphism, built as the source builds it”.
 
 > **Stacks 0A8W.** For objects `K`, `L` of `D(O_X)` on a ringed space, the canonical morphism
 >
@@ -481,7 +481,7 @@ def canonicalDerivedTensorHomUnit (K L : DerivedCategory (StructureSheafModules 
     K ⟶ ((derivedSheafHom Rc).obj (op L)).obj (((derivedTensor Rc).obj K).obj L)
 ```
 
-**`Stacks.SheafOfModules.canonicalDerivedTensorHomUnit_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L275). The attribute's comment: “the characterisation on representatives”.
+**`Stacks.SheafOfModules.canonicalDerivedTensorHomUnit_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L275). The attribute's comment: “the characterisation on representatives”.
 
 > **Stacks 0A8W.** The canonical morphism built the source's way is the class of the diagonal
 > morphism of complexes of Stacks 0A93 followed by the K-injective resolution augmentation, read
@@ -499,7 +499,7 @@ theorem canonicalDerivedTensorHomUnit_eq (K L : DerivedCategory (StructureSheafM
         (RingedSite.kInjectiveModel (ringedSite Rc) L))
 ```
 
-**`Stacks.SheafOfModules.canonicalDerivedTensorHomUnit_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L292). The attribute's comment: “functoriality in K”.
+**`Stacks.SheafOfModules.canonicalDerivedTensorHomUnit_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 292](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L292). The attribute's comment: “functoriality in K”.
 
 > **Stacks 0A8W: the canonical morphism is functorial in `K`.** For a morphism `k : K ⟶ K'` of
 > `D(O_X)` the square
@@ -518,7 +518,7 @@ theorem canonicalDerivedTensorHomUnit_natural_left
         ((derivedSheafHom Rc).obj (op L)).map (((derivedTensor Rc).map k).app L)
 ```
 
-**`Stacks.SheafOfModules.canonicalDerivedTensorHomUnit_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L309). The attribute's comment: “functoriality in L”.
+**`Stacks.SheafOfModules.canonicalDerivedTensorHomUnit_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean, line 309](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomUnit.lean#L309). The attribute's comment: “functoriality in L”.
 
 > **Stacks 0A8W: the canonical morphism is functorial in `L`.** For a morphism `l : L' ⟶ L` of
 > `D(O_X)` the square
@@ -543,7 +543,7 @@ theorem canonicalDerivedTensorHomUnit_natural_right
 
 [Tag 08I1](https://stacks.math.columbia.edu/tag/08I1) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedTensorDualToSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean#L155). The attribute's comment: “the canonical map”.
+**`Stacks.SheafOfModules.derivedTensorDualToSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean#L155). The attribute's comment: “the canonical map”.
 
 > **Stacks 08I1: the canonical map `M ⊗^L_{O_X} L^∨ ⟶ RSheafHom(L, M)`.** It is the derived
 > composition morphism of Stacks 0A8V, taken at intermediate object the structure sheaf, after the
@@ -556,7 +556,7 @@ def derivedTensorDualToSheafHom
       ((derivedSheafHom Rc).obj (op L)).obj M
 ```
 
-**`Stacks.SheafOfModules.derivedTensorDualToSheafHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean#L181). The attribute's comment: “functoriality in M of the canonical map”.
+**`Stacks.SheafOfModules.derivedTensorDualToSheafHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean#L181). The attribute's comment: “functoriality in M of the canonical map”.
 
 > **The canonical map of Stacks 08I1 is functorial in `M`.** This is the covariant naturality
 > of the derived composition morphism of Stacks 0A8V in its target, together with the naturality
@@ -571,7 +571,7 @@ theorem derivedTensorDualToSheafHom_naturality
       derivedTensorDualToSheafHom Rc L M ≫ ((derivedSheafHom Rc).obj (op L)).map m
 ```
 
-**`Stacks.SheafOfModules.derivedTensorDualToSheafHom_naturality_tensorMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean#L194). The attribute's comment: “functoriality in M of the canonical map”.
+**`Stacks.SheafOfModules.derivedTensorDualToSheafHom_naturality_tensorMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean#L194). The attribute's comment: “functoriality in M of the canonical map”.
 
 > Functoriality in `M` of the canonical map of Stacks 08I1, in the `derivedTensorMap` and
 > `derivedSheafHomMap` spelling of the induced maps on the derived tensor product and the derived
@@ -585,7 +585,7 @@ theorem derivedTensorDualToSheafHom_naturality_tensorMap
       derivedTensorDualToSheafHom Rc L M ≫ derivedSheafHomMap Rc (𝟙 L) m
 ```
 
-**`Stacks.SheafOfModules.derivedTensorDualGlobalSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean#L255). The attribute's comment: “the induced map on degree-zero global cohomology”.
+**`Stacks.SheafOfModules.derivedTensorDualGlobalSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDual.lean#L255). The attribute's comment: “the induced map on degree-zero global cohomology”.
 
 > **Stacks 08I1: the induced map on degree-zero global cohomology.** The canonical map
 > `M ⊗^L_{O_X} L^∨ ⟶ RSheafHom(L, M)` induces a map of abelian groups
@@ -603,7 +603,7 @@ def derivedTensorDualGlobalSectionsMap
           (((derivedTensor Rc).obj M).obj (derivedDual Rc L))) : Type u) →+ (L ⟶ M)
 ```
 
-**`Stacks.SheafOfModules.derivedTensorDualGlobalSectionsMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDualGlobalFunctoriality.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDualGlobalFunctoriality.lean#L143). The attribute's comment: “functoriality in M of the induced map on degree-zero global cohomology”.
+**`Stacks.SheafOfModules.derivedTensorDualGlobalSectionsMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDualGlobalFunctoriality.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDualGlobalFunctoriality.lean#L143). The attribute's comment: “functoriality in M of the induced map on degree-zero global cohomology”.
 
 > **Stacks 08I1: the induced map `H⁰(X, M ⊗^L_{O_X} L^∨) ⟶ Hom_{D(O_X)}(L, M)` is functorial
 > in `M`.** For `m : M ⟶ M'` the degree-zero global hypercohomology of `m ⊗ 1` carries the induced
@@ -627,7 +627,7 @@ theorem derivedTensorDualGlobalSectionsMap_naturality
       derivedTensorDualGlobalSectionsMap Rc L M z ≫ m
 ```
 
-**`Stacks.SheafOfModules.derivedTensorDualGlobalSectionsMap_naturality_tensorMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDualGlobalFunctoriality.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDualGlobalFunctoriality.lean#L160). The attribute's comment: “functoriality in M of the induced map on degree-zero global cohomology”.
+**`Stacks.SheafOfModules.derivedTensorDualGlobalSectionsMap_naturality_tensorMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDualGlobalFunctoriality.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorDualGlobalFunctoriality.lean#L160). The attribute's comment: “functoriality in M of the induced map on degree-zero global cohomology”.
 
 > Functoriality in `M` of the induced map of Stacks 08I1, in the `derivedTensorMap` spelling of
 > the map induced on the derived tensor product.
@@ -650,7 +650,7 @@ theorem derivedTensorDualGlobalSectionsMap_naturality_tensorMap
 
 [Tag 0A8U](https://stacks.math.columbia.edu/tag/0A8U) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedSheafHomEvaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean#L91). The attribute's comment: “the canonical evaluation morphism”.
+**`Stacks.SheafOfModules.derivedSheafHomEvaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean, line 91](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean#L91). The attribute's comment: “the canonical evaluation morphism”.
 
 > **Stacks 0A8U.** For objects `K`, `L`, `M` of `D(O_X)` on a ringed space there is a canonical
 > evaluation morphism
@@ -666,7 +666,7 @@ def derivedSheafHomEvaluation (K L M : DerivedCategory (SheafOfModules.{u} (Tens
       ((derivedSheafHom Rc).obj (op (((derivedSheafHom Rc).obj (op K)).obj L))).obj M
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomEvaluation_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean#L101). The attribute's comment: “functoriality in all three objects”.
+**`Stacks.SheafOfModules.derivedSheafHomEvaluation_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean#L101). The attribute's comment: “functoriality in all three objects”.
 
 > **Stacks 0A8U.** Derived evaluation is functorial in all three objects at once: covariant in
 > the object being tensored, contravariant in the source of the inner internal hom, and covariant
@@ -682,7 +682,7 @@ theorem derivedSheafHomEvaluation_natural
         derivedSheafHomMap Rc (derivedSheafHomMap Rc f g) h
 ```
 
-**`Stacks.SheafOfModules.derivedSheafHomEvaluation_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean#L115). The attribute's comment: “comparison with evaluation of complexes”.
+**`Stacks.SheafOfModules.derivedSheafHomEvaluation_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHomEvaluation/DerivedEvaluation.lean#L115). The attribute's comment: “comparison with evaluation of complexes”.
 
 > **Stacks 0A8U.** On a K-flat representative `P` of `K` and K-injective representatives `J`
 > of `L` and `I` of `M`, derived evaluation is the class of the evaluation morphism of internal
@@ -706,7 +706,7 @@ theorem derivedSheafHomEvaluation_model
 
 [Tag 0FXP](https://stacks.math.columbia.edu/tag/0FXP) in the Stacks Project.
 
-**`Stacks.SheafOfModules.derivedSheafHomTensorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorInternalHom.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorInternalHom.lean#L177).
+**`Stacks.SheafOfModules.derivedSheafHomTensorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorInternalHom.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorInternalHom.lean#L177).
 
 > **Stacks 0FXP.** For objects `K`, `K'`, `M`, `M'` of `D(O_X)` on a ringed space there is a
 > canonical morphism
@@ -729,7 +729,7 @@ def derivedSheafHomTensorMap (K K' M M' : DerivedCategory (StructureSheafModules
 
 [Tag 0B69](https://stacks.math.columbia.edu/tag/0B69) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedInternalHomPushforward.pushforwardSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPushforwardMap.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPushforwardMap.lean#L113).
+**`Stacks.Cohomology.DerivedInternalHomPushforward.pushforwardSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPushforwardMap.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPushforwardMap.lean#L113).
 
 > **Stacks 0B69: the canonical map `Rf_*R𝓗om_{𝒪_X}(L, K) ⟶ R𝓗om_{𝒪_Y}(Rf_*L, Rf_*K)`** for a
 > morphism of ringed spaces `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` and objects `K, L` of `D(𝒪_X)`.
@@ -748,7 +748,7 @@ def pushforwardSheafHomMap (K L : DerivedCategory (Mod X.sheaf)) :
 
 [Tag 0G7A](https://stacks.math.columbia.edu/tag/0G7A) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedInternalHomEvaluation.tensorMap_pushforwardSheafHomMap_sheafHomEval`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomEvaluationSquare.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomEvaluationSquare.lean#L262). The attribute's comment: “the square commutes, for every morphism of ringed spaces f and all K, M; this is the whole of the remark. The source states it for `K, M ∈ D(𝒪_Y)`, which is a slip — the diagram applies both `R𝓗om_{𝒪_X}` and `Rf_*` to `K` and `M`, so the arrows type-check only for `K, M ∈ D(𝒪_X)`, and that is the form here”.
+**`Stacks.Cohomology.DerivedInternalHomEvaluation.tensorMap_pushforwardSheafHomMap_sheafHomEval`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomEvaluationSquare.lean, line 262](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomEvaluationSquare.lean#L262). The attribute's comment: “the square commutes, for every morphism of ringed spaces f and all K, M; this is the whole of the remark. The source states it for `K, M ∈ D(𝒪_Y)`, which is a slip — the diagram applies both `R𝓗om_{𝒪_X}` and `Rf_*` to `K` and `M`, so the arrows type-check only for `K, M ∈ D(𝒪_X)`, and that is the form here”.
 
 > **Stacks 0G7A.**  For a morphism of ringed spaces `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` and objects
 > `K, M` of `D(𝒪_X)` the square
@@ -776,7 +776,7 @@ theorem tensorMap_pushforwardSheafHomMap_sheafHomEval
 
 [Tag 08I3](https://stacks.math.columbia.edu/tag/08I3) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedInternalHomPullback.derivedPullbackSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackMap.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackMap.lean#L376).
+**`Stacks.Cohomology.DerivedInternalHomPullback.derivedPullbackSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackMap.lean, line 376](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackMap.lean#L376).
 
 > **Tag 08I3: the canonical map `Lh^*R𝓗om(K, L) ⟶ R𝓗om(Lh^*K, Lh^*L)`** for a morphism of
 > ringed spaces `h : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` and objects `K, L` of `D(𝒪_Y)`.
@@ -798,7 +798,7 @@ def derivedPullbackSheafHomMap :
 
 [Tag 08I4](https://stacks.math.columbia.edu/tag/08I4) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedInternalHomBaseChange.derivedBaseChangeSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomBaseChange.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomBaseChange.lean#L116).
+**`Stacks.Cohomology.DerivedInternalHomBaseChange.derivedBaseChangeSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomBaseChange.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomBaseChange.lean#L116).
 
 > **Tag 08I4: the base change map for a derived internal hom.**  For a commutative square of
 > ringed spaces with `h : X' ⟶ X` over `g : S' ⟶ S` and objects `K, L` of `D(𝒪_X)`, the canonical
@@ -829,4 +829,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.42, Tag 08DH](https://stacks.math.columbia.edu/tag/08DH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.77 Affine formal algebraic spaces
 
-Section 110.77 of the Stacks Project, [Tag 0ANY](https://stacks.math.columbia.edu/tag/0ANY). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.77 of the Stacks Project, [Tag 0ANY](https://stacks.math.columbia.edu/tag/0ANY). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CBC, a lemma
 
 [Tag 0CBC](https://stacks.math.columbia.edu/tag/0CBC) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_isAffineFormalAlgebraicSpace_not_hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/NotMcQuillanExample.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/NotMcQuillanExample.lean#L56).
+**`AlgebraicGeometry.FormalSpace.exists_isAffineFormalAlgebraicSpace_not_hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/NotMcQuillanExample.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/NotMcQuillanExample.lean#L56).
 
 > **Stacks 0CBC.** There exists an affine formal algebraic space which is not McQuillan: the
 > example of Stacks 0CBD admits no presentation by affine thickenings whose section-ring
@@ -30,7 +30,7 @@ public theorem exists_isAffineFormalAlgebraicSpace_not_hasSomeSurjectivePresenta
 
 [Tag 0CBD](https://stacks.math.columbia.edu/tag/0CBD) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_isAffineFormalAlgebraicSpace_sections_isField_reduction_infinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SectionsDoNotSeparatePoints.lean, line 840](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SectionsDoNotSeparatePoints.lean#L840).
+**`AlgebraicGeometry.FormalSpace.exists_isAffineFormalAlgebraicSpace_sections_isField_reduction_infinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SectionsDoNotSeparatePoints.lean, line 840](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SectionsDoNotSeparatePoints.lean#L840).
 
 > **Stacks 0CBD.** There is an affine formal algebraic space whose regular functions do not
 > separate points: writing `X = colim X_λ` as in Stacks 0AI7, the inverse limit of the rings
@@ -86,7 +86,7 @@ public theorem exists_isAffineFormalAlgebraicSpace_sections_isField_reduction_in
 
 [Tag 0CBE](https://stacks.math.columbia.edu/tag/0CBE) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_representable_hasSomeSurjectivePresentation_not`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverMcQuillan.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverMcQuillan.lean#L635).
+**`AlgebraicGeometry.FormalSpace.exists_representable_hasSomeSurjectivePresentation_not`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverMcQuillan.lean, line 635](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverMcQuillan.lean#L635).
 
 > There exists a representable morphism `f : X ⟶ Y` of affine formal algebraic spaces with `Y`
 > McQuillan, but `X` not McQuillan. The morphism is representable by schemes, and every represented
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.77, Tag 0ANY](https://stacks.math.columbia.edu/tag/0ANY)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

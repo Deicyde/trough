@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.7 Fibre products of simplicial objects
 
-Section 14.7 of the Stacks Project, [Tag 016S](https://stacks.math.columbia.edu/tag/016S). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 14.7 of the Stacks Project, [Tag 016S](https://stacks.math.columbia.edu/tag/016S). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 016T, a definition
 
 [Tag 016T](https://stacks.math.columbia.edu/tag/016T) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.fibreProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean#L81). The attribute's comment: “the case `D = SimplexCategoryᵒᵖ` of `CategoryTheory.Limits.pointwisePullback`, Tag 0172, which is stated for an arbitrary index category `D`”.
+**`CategoryTheory.SimplicialObject.fibreProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean#L81). The attribute's comment: “the case `D = SimplexCategoryᵒᵖ` of `CategoryTheory.Limits.pointwisePullback`, Tag 0172, which is stated for an arbitrary index category `D`”.
 
 > **Stacks 016T.** The fibre product `V ×_U W` of two simplicial objects `V`, `W` of a category
 > `C` over a third one `U`, along morphisms `a : V ⟶ U` and `b : W ⟶ U`, when the fibre product
@@ -32,7 +32,7 @@ noncomputable abbrev fibreProduct (a : V ⟶ U) (b : W ⟶ U)
 
 [Tag 016U](https://stacks.math.columbia.edu/tag/016U) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.fibreProduct.isBijective_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean#L290). The attribute's comment: “the fibre product of sets is `Types.PullbackObj`, and the identification is the map `h ↦ (h ≫ p, h ≫ q)` given by the degreewise projections `fibreProduct.fst`, `fibreProduct.snd`; the limit structure itself is `fibreProduct.isLimit`”.
+**`CategoryTheory.SimplicialObject.fibreProduct.isBijective_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean#L290). The attribute's comment: “the fibre product of sets is `Types.PullbackObj`, and the identification is the map `h ↦ (h ≫ p, h ≫ q)` given by the degreewise projections `fibreProduct.fst`, `fibreProduct.snd`; the limit structure itself is `fibreProduct.isLimit`”.
 
 > **Stacks 016U.** Let `C` be a category, let `U V W` be simplicial objects of `C` and let
 > `a : V ⟶ U`, `b : W ⟶ U` be morphisms such that the fibre products `V_n ×_{U_n} W_n` exist in `C`,
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.7, Tag 016S](https://stacks.math.columbia.edu/tag/016S)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.26 Cohomology and base change, V
 
-Section 36.26 of the Stacks Project, [Tag 0DJ6](https://stacks.math.columbia.edu/tag/0DJ6). 6 tags here are carried by 35 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 36.26 of the Stacks Project, [Tag 0DJ6](https://stacks.math.columbia.edu/tag/0DJ6). 6 tags here are carried by 35 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DJ7, an equation
 
 [Tag 0DJ7](https://stacks.math.columbia.edu/tag/0DJ7) in the Stacks Project.
 
-**`AlgebraicGeometry.baseChangeCohomologyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/StalkCohomologyMap.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/StalkCohomologyMap.lean#L106).
+**`AlgebraicGeometry.baseChangeCohomologyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/StalkCohomologyMap.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/StalkCohomologyMap.lean#L106).
 
 > **Stacks 0DJ7.** The canonical pointwise base-change map on stalkwise cohomology induced by
 > a morphism `φ : L(g')^* K ⟶ K'` over a commutative square of schemes. No flatness,
@@ -39,7 +39,7 @@ def baseChangeCohomologyMap {X X' S S' : Scheme.{u}} (f : X ⟶ S) (g : S' ⟶ S
 
 [Tag 0DJ8](https://stacks.math.columbia.edu/tag/0DJ8) in the Stacks Project.
 
-**`AlgebraicGeometry.BaseChangeChart`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L80). The attribute's comment: “the Cartesian affine-open chart quantified over in (2) and (3)”.
+**`AlgebraicGeometry.BaseChangeChart`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L80). The attribute's comment: “the Cartesian affine-open chart quantified over in (2) and (3)”.
 
 > **A Cartesian affine-open chart for a base-change square of schemes.** This is the
 > quadruple `U, V, V', U'` of Stacks 0DJ8 (2): affine opens `U ⊆ X` and `V' ⊆ S'` both mapping
@@ -51,7 +51,7 @@ public structure BaseChangeChart {X X' S S' : Scheme.{u}} (f : X ⟶ S) (g : S' 
     (f' : X' ⟶ S') (g' : X' ⟶ X)
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.isOpenImmersion_incU'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L146). The attribute's comment: “the U' of a chart is an open of X'”.
+**`AlgebraicGeometry.BaseChangeChart.isOpenImmersion_incU'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L146). The attribute's comment: “the U' of a chart is an open of X'”.
 
 > **`U'` is an open of `X'`.** The structure imposes no open-immersion hypothesis on
 > `Spec 𝒪_{X'}(U') ⟶ X'`: once the outer square is cartesian the chart data determine that
@@ -63,7 +63,7 @@ public theorem isOpenImmersion_incU' (sq : IsPullback g' f' f g)
     (ch : BaseChangeChart f g f' g') : IsOpenImmersion ch.incU'
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.ofAffineOpens`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L177). The attribute's comment: “the chart on a triple of affine opens”.
+**`AlgebraicGeometry.BaseChangeChart.ofAffineOpens`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L177). The attribute's comment: “the chart on a triple of affine opens”.
 
 > **The chart on given affine opens.** For affine opens `U ⊆ X`, `V ⊆ S`, `V' ⊆ S'` with
 > `f(U) ⊆ V` and `g(V') ⊆ V`, the coordinate rings and the tensor product
@@ -77,7 +77,7 @@ public def ofAffineOpens (sq : IsPullback g' f' f g)
     (hUV : U ≤ f ⁻¹ᵁ V) (hV'V : V' ≤ g ⁻¹ᵁ V) : BaseChangeChart f g f' g'
 ```
 
-**`AlgebraicGeometry.exists_baseChangeChart_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L239). The attribute's comment: “every point of X' lies in the U' of a chart, the covering input to (2) ⟹ (3)”.
+**`AlgebraicGeometry.exists_baseChangeChart_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L239). The attribute's comment: “every point of X' lies in the U' of a chart, the covering input to (2) ⟹ (3)”.
 
 > **Every point of `X'` lies in the `U'` of a chart.** Choose an affine open `V ⊆ S` around
 > `f(g' x')`, then an affine open `U ⊆ X` around `g' x'` inside `f⁻¹V`, then an affine open
@@ -92,7 +92,7 @@ public theorem exists_baseChangeChart_covering {X X' S S' : Scheme.{u}} {f : X �
     ∃ ch : BaseChangeChart f g f' g', ∃ y : Spec ch.A', ch.incU' y = x'
 ```
 
-**`AlgebraicGeometry.exists_coveringFamily_of_forall_baseChangeChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L328). The attribute's comment: “(2) ⟹ (3), for an arbitrary property of charts”.
+**`AlgebraicGeometry.exists_coveringFamily_of_forall_baseChangeChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChart.lean#L328). The attribute's comment: “(2) ⟹ (3), for an arbitrary property of charts”.
 
 > **The step (2) ⟹ (3) of Stacks 0DJ8.** If a property of charts holds for every chart then
 > there is a family of charts on which it holds whose opens `U'` cover `X'`: take the family of
@@ -110,7 +110,7 @@ public theorem exists_coveringFamily_of_forall_baseChangeChart {X X' S S' : Sche
       ∀ x' : X', ∃ ch ∈ 𝒞, ∃ y : Spec ch.A', ch.incU' y = x'
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.cohomologyComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean#L248). The attribute's comment: “the comparison map of (2) on a Cartesian affine-open chart, in degree n: the A'-linear map of Tag 0DJ7's ring form for the chart's pushout square of rings”.
+**`AlgebraicGeometry.BaseChangeChart.cohomologyComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean#L248). The attribute's comment: “the comparison map of (2) on a Cartesian affine-open chart, in degree n: the A'-linear map of Tag 0DJ7's ring form for the chart's pushout square of rings”.
 
 > The chart comparison in degree `n`: on a chart with coordinate rings `R`, `A`, `R'`, `A'`,
 > the `A'`-linear map
@@ -125,7 +125,7 @@ public def cohomologyComparison (ch : BaseChangeChart f g f' g')
     (φ : (Stacks.Duality.derivedPullback g').obj K ⟶ K') (n : ℤ)
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.cohomologyComparison_tmul_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean#L286). The attribute's comment: “the degree-n map of a chart is H^n of the comparison map of (2)”.
+**`AlgebraicGeometry.BaseChangeChart.cohomologyComparison_tmul_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean, line 286](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean#L286). The attribute's comment: “the degree-n map of a chart is H^n of the comparison map of (2)”.
 
 > The degree-`n` map of a chart is `H^n` of the chart comparison: its value on `1 ⊗ m` is
 > `H^n(comparison)` of `m`, read through the identification of the cohomology of a complex of
@@ -155,7 +155,7 @@ public theorem cohomologyComparison_tmul_one (ch : BaseChangeChart f g f' g')
             (ch.comparison K K' φ)).hom m)
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.isIso_comparison_iff_forall_isIso_cohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean#L332). The attribute's comment: “condition (2) at a Cartesian affine-open chart, read degree by degree: the chart comparison is invertible exactly when the A'-linear base-change maps on cohomology of the chart's pushout square of rings are invertible in every degree”.
+**`AlgebraicGeometry.BaseChangeChart.isIso_comparison_iff_forall_isIso_cohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean, line 332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean#L332). The attribute's comment: “condition (2) at a Cartesian affine-open chart, read degree by degree: the chart comparison is invertible exactly when the A'-linear base-change maps on cohomology of the chart's pushout square of rings are invertible in every degree”.
 
 > The chart comparison
 >
@@ -176,7 +176,7 @@ public theorem isIso_comparison_iff_forall_isIso_cohomologyComparison
       ∀ n : ℤ, IsIso (ch.cohomologyComparison K K' φ n)
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.isIso_comparison_iff_forall_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean#L356). The attribute's comment: “condition (2) at a Cartesian affine-open chart is a pointwise condition on the points of U': invertibility of the localization at each prime of A' of each degree-n map”.
+**`AlgebraicGeometry.BaseChangeChart.isIso_comparison_iff_forall_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean, line 356](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartCohomologyComparison.lean#L356). The attribute's comment: “condition (2) at a Cartesian affine-open chart is a pointwise condition on the points of U': invertibility of the localization at each prime of A' of each degree-n map”.
 
 > The chart comparison is an isomorphism exactly when, at every prime `y` of
 > `A' = 𝒪_{X'}(U')` (that is, at every point of `U'`) and in every degree `n`, the localization at
@@ -192,7 +192,7 @@ public theorem isIso_comparison_iff_forall_localized (ch : BaseChangeChart f g f
           (ch.cohomologyComparison K K' φ n))
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.sectionsBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean#L103). The attribute's comment: “the second arrow of the composition in (2): the identification RΓ(U,K) ⊗ᴸ\_\{𝒪\_X(U)} 𝒪\_\{X'}(U') = RΓ(U', L(g')^*K)”.
+**`AlgebraicGeometry.BaseChangeChart.sectionsBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean#L103). The attribute's comment: “the second arrow of the composition in (2): the identification RΓ(U,K) ⊗ᴸ\_\{𝒪\_X(U)} 𝒪\_\{X'}(U') = RΓ(U', L(g')^*K)”.
 
 > **The identification in condition (2).** On a chart, derived sections of `K` over `U` base
 > changed along `𝒪_X(U) ⟶ 𝒪_{X'}(U')` compare with derived sections over `U'` of the derived
@@ -206,7 +206,7 @@ public def sectionsBaseChangeMap (ch : BaseChangeChart f g f' g')
       (affineDerivedSections ch.incU').obj ((Stacks.Duality.derivedPullback g').obj K)
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.isIso_sectionsBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean#L132). The attribute's comment: “the second arrow of the composition in (2) is an isomorphism for K with quasi-coherent cohomology, so (2) tests the composition the source displays”.
+**`AlgebraicGeometry.BaseChangeChart.isIso_sectionsBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean#L132). The attribute's comment: “the second arrow of the composition in (2) is an isomorphism for K with quasi-coherent cohomology, so (2) tests the composition the source displays”.
 
 > **The identification `sectionsBaseChangeMap` is an isomorphism** when every cohomology sheaf
 > of `K` is quasi-coherent.
@@ -218,7 +218,7 @@ public theorem isIso_sectionsBaseChangeMap (ch : BaseChangeChart f g f' g')
     IsIso (ch.sectionsBaseChangeMap K)
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.comparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean#L191). The attribute's comment: “the comparison map on a Cartesian affine-open chart: the morphism whose invertibility is condition (2), and, asked only of a family of charts whose opens U' cover X', condition (3)”.
+**`AlgebraicGeometry.BaseChangeChart.comparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean#L191). The attribute's comment: “the comparison map on a Cartesian affine-open chart: the morphism whose invertibility is condition (2), and, asked only of a family of charts whose opens U' cover X', condition (3)”.
 
 > **The chart comparison map.** On a chart, the composition
 >
@@ -239,7 +239,7 @@ public def comparison (ch : BaseChangeChart f g f' g')
         ((affineDerivedSections ch.incU').obj K')
 ```
 
-**`AlgebraicGeometry.exists_coveringFamily_isIso_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean#L251). The attribute's comment: “(2) ⟹ (3) for the comparison map itself, which is the step of the three-way equivalence that needs no affine reduction: take the family of all charts”.
+**`AlgebraicGeometry.exists_coveringFamily_isIso_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean, line 251](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparisonMap.lean#L251). The attribute's comment: “(2) ⟹ (3) for the comparison map itself, which is the step of the three-way equivalence that needs no affine reduction: take the family of all charts”.
 
 > **The step (2) ⟹ (3).** If the comparison map of every Cartesian affine-open chart is an
 > isomorphism, then there is a family of charts on which it is, whose opens `U'` cover `X'`.
@@ -254,7 +254,7 @@ public theorem exists_coveringFamily_isIso_comparison {X X' S S' : Scheme.{u}}
       ∀ x' : X', ∃ ch ∈ 𝒞, ∃ y : Spec ch.A', ch.incU' y = x'
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.comparison_eq_ringComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean#L240). The attribute's comment: “the comparison map of (2) is the ring-level comparison of the chart's square”.
+**`AlgebraicGeometry.BaseChangeChart.comparison_eq_ringComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean, line 240](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean#L240). The attribute's comment: “the comparison map of (2) is the ring-level comparison of the chart's square”.
 
 > The comparison map of a chart is the ring-level comparison of the chart's square of
 > coordinate rings, applied to the morphism `RΓ(U,K) ⊗ᴸ_{𝒪_X(U)} 𝒪_{X'}(U') ⟶ RΓ(U',K')` assembled
@@ -280,7 +280,7 @@ theorem comparison_eq_ringComparison (ch : BaseChangeChart f g f' g')
         (ch.sectionsBaseChangeMap K ≫ (affineDerivedSections ch.incU').map φ)
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.isIso_comparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean#L265). The attribute's comment: “(2) at one chart, reduced to the primes of the chart's coordinate ring”.
+**`AlgebraicGeometry.BaseChangeChart.isIso_comparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean, line 265](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean#L265). The attribute's comment: “(2) at one chart, reduced to the primes of the chart's coordinate ring”.
 
 > The comparison map of a Cartesian affine-open chart is an isomorphism exactly when, in
 > every degree, the induced map on cohomology is bijective after localizing at every prime of
@@ -308,7 +308,7 @@ theorem isIso_comparison_iff (ch : BaseChangeChart f g f' g')
             (ch.sectionsBaseChangeMap K ≫ (affineDerivedSections ch.incU').map φ) n).hom))
 ```
 
-**`AlgebraicGeometry.BaseChangeChart.isIso_comparison_iff_forall_isIso_ringBaseChangeCohomologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean#L292). The attribute's comment: “(2) at one chart is the invertibility, in every degree, of the ring-level map of Stacks 0DJ7 for the chart's rings: the affine reduction of the source proof”.
+**`AlgebraicGeometry.BaseChangeChart.isIso_comparison_iff_forall_isIso_ringBaseChangeCohomologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean, line 292](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartPrimeCriterion.lean#L292). The attribute's comment: “(2) at one chart is the invertibility, in every degree, of the ring-level map of Stacks 0DJ7 for the chart's rings: the affine reduction of the source proof”.
 
 > The comparison map of a Cartesian affine-open chart is an isomorphism exactly when the
 > ring-level map `RingTheory.TorIndependence.ringBaseChangeCohomologyMapGeneral` of Stacks 0DJ7 for
@@ -335,7 +335,7 @@ theorem isIso_comparison_iff_forall_isIso_ringBaseChangeCohomologyMap
         (ch.sectionsBaseChangeMap K ≫ (affineDerivedSections ch.incU').map φ) n))
 ```
 
-**`AlgebraicGeometry.baseChange_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeTFAEFinal.lean, line 492](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeTFAEFinal.lean#L492).
+**`AlgebraicGeometry.baseChange_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeTFAEFinal.lean, line 492](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeTFAEFinal.lean#L492).
 
 > **Stacks 0DJ8.** Let
 >
@@ -373,7 +373,7 @@ public theorem baseChange_tfae {X X' S S' : Scheme.{u}}
            ∀ x' : X', ∃ ch ∈ 𝒞, ∃ y : Spec ch.A', ch.incU' y = x']
 ```
 
-**`AlgebraicGeometry.isIso_baseChangeCohomologyMap_derivedPullbackNatTrans_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/FlatOverModel.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/FlatOverModel.lean#L488). The attribute's comment: “condition (1), at every point and in every degree, for the derived-to-ordinary comparison L(g')^*G ⟶ (g')^*G of a bounded-above complex G whose terms are flat over S, over a cartesian square: the stalk check the proof of Tag 0A1D performs”.
+**`AlgebraicGeometry.isIso_baseChangeCohomologyMap_derivedPullbackNatTrans_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/FlatOverModel.lean, line 488](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/FlatOverModel.lean#L488). The attribute's comment: “condition (1), at every point and in every degree, for the derived-to-ordinary comparison L(g')^*G ⟶ (g')^*G of a bounded-above complex G whose terms are flat over S, over a cartesian square: the stalk check the proof of Tag 0A1D performs”.
 
 > **The stalk check of Stacks 0DJ8 for a complex flat over the base, at one point.**  For a
 > cartesian square of schemes and a bounded-above complex `𝒢^•` of `𝒪_X`-modules whose terms are
@@ -390,7 +390,7 @@ theorem isIso_baseChangeCohomologyMap_derivedPullbackNatTrans_of_isFlatOver
       ((derivedPullbackNatTrans g'.toLRSHom.toShHom).app G) x' n)
 ```
 
-**`AlgebraicGeometry.derivedStalkAffineSectionsIsoToStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedStalk.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedStalk.lean#L321). The attribute's comment: “the first of the two inputs still needed to turn condition (1) into condition (2): the derived stalk of K at a point of an affine open, identified with the derived localization of RGamma(U,K) there. This is that identification only; the compatibility of the base-change comparison of Tag 065Z with localization, which is the second input, is not proved anywhere, so condition (1) implies condition (2) is NOT formalized”.
+**`AlgebraicGeometry.derivedStalkAffineSectionsIsoToStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedStalk.lean, line 321](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedStalk.lean#L321). The attribute's comment: “the first of the two inputs still needed to turn condition (1) into condition (2): the derived stalk of K at a point of an affine open, identified with the derived localization of RGamma(U,K) there. This is that identification only; the compatibility of the base-change comparison of Tag 065Z with localization, which is the second input, is not proved anywhere, so condition (1) implies condition (2) is NOT formalized”.
 
 > **The derived stalk at a point of an affine open is the derived localization of the sections
 > over that open.** Let `i : Spec R ⟶ X` be a morphism of schemes out of an affine scheme, `y` a
@@ -421,7 +421,7 @@ public def derivedStalkAffineSectionsIsoToStalk {X : Scheme.{u}} {A : CommRingCa
         ((derivedStalkFunctor (i y)).obj K)
 ```
 
-**`AlgebraicGeometry.localizedHomologyAffineSectionsStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedStalkHomology.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedStalkHomology.lean#L119). The attribute's comment: “the degreewise reading of the first of the two inputs needed to turn condition (1) into condition (2): the localization at a prime of the degree-n cohomology of RGamma(U,K) is the degree-n cohomology of the derived stalk there. The identification of this localized module with the localization of the degree-n chart map of condition (2), which needs the compatibility of the base-change comparison of Tag 065Z with localizing ALL FOUR rings of the chart's square and not only its right-hand column, is not proved anywhere, so condition (1) implies condition (2) is NOT formalized”.
+**`AlgebraicGeometry.localizedHomologyAffineSectionsStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedStalkHomology.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineDerivedStalkHomology.lean#L119). The attribute's comment: “the degreewise reading of the first of the two inputs needed to turn condition (1) into condition (2): the localization at a prime of the degree-n cohomology of RGamma(U,K) is the degree-n cohomology of the derived stalk there. The identification of this localized module with the localization of the degree-n chart map of condition (2), which needs the compatibility of the base-change comparison of Tag 065Z with localizing ALL FOUR rings of the chart's square and not only its right-hand column, is not proved anywhere, so condition (1) implies condition (2) is NOT formalized”.
 
 > **The derived stalk at a point of an affine open, read degree by degree.**  For
 > `i : Spec A ⟶ X`, a point `y` of `Spec A` and `K ∈ D(𝒪_X)` with quasi-coherent cohomology
@@ -456,7 +456,7 @@ public def localizedHomologyAffineSectionsStalkIso {X : Scheme.{u}} {A : CommRin
 
 [Tag 0DJ9](https://stacks.math.columbia.edu/tag/0DJ9) in the Stacks Project.
 
-**`AlgebraicGeometry.globalBaseChangeIsIsoOfPointwise`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChangeCartesian.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChangeCartesian.lean#L67). The attribute's comment: “the conclusion over every cartesian square at once, in the spelling of GlobalBaseChangeIsIsoOfPointwise, with the conditions of Tag 0DJ8 read in form (1)”.
+**`AlgebraicGeometry.globalBaseChangeIsIsoOfPointwise`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChangeCartesian.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChangeCartesian.lean#L67). The attribute's comment: “the conclusion over every cartesian square at once, in the spelling of GlobalBaseChangeIsIsoOfPointwise, with the conditions of Tag 0DJ8 read in form (1)”.
 
 > **`GlobalBaseChangeIsIsoOfPointwise` holds**: it is Stacks 0DJ9,
 > `AlgebraicGeometry.isIso_derivedBaseChangeComp_of_pointwiseBaseChange`, quantified over all
@@ -466,7 +466,7 @@ public def localizedHomologyAffineSectionsStalkIso {X : Scheme.{u}} {A : CommRin
 theorem globalBaseChangeIsIsoOfPointwise : GlobalBaseChangeIsIsoOfPointwise.{u}
 ```
 
-**`AlgebraicGeometry.isIso_derivedBaseChangeComp_of_pointwiseBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/PointwiseBaseChangeIso.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/PointwiseBaseChangeIso.lean#L58).
+**`AlgebraicGeometry.isIso_derivedBaseChangeComp_of_pointwiseBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/PointwiseBaseChangeIso.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/PointwiseBaseChangeIso.lean#L58).
 
 > **Stacks 0DJ9.** For a cartesian square of schemes with `f` quasi-compact and
 > quasi-separated, an object `K` of `D_QCoh(𝒪_X)` and a morphism `φ : L(g')^*K ⟶ K'` to an object
@@ -487,7 +487,7 @@ theorem isIso_derivedBaseChangeComp_of_pointwiseBaseChange (sq : IsPullback g' f
 
 [Tag 0DJA](https://stacks.math.columbia.edu/tag/0DJA) in the Stacks Project.
 
-**`AlgebraicGeometry.pointwiseBaseChangeTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChangeCartesian.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChangeCartesian.lean#L88). The attribute's comment: “(1), over every cartesian square at once, with the conditions of Tag 0DJ8 read in form (1)”.
+**`AlgebraicGeometry.pointwiseBaseChangeTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChangeCartesian.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChangeCartesian.lean#L88). The attribute's comment: “(1), over every cartesian square at once, with the conditions of Tag 0DJ8 read in form (1)”.
 
 > **`PointwiseBaseChangeTensor` holds**: it is Stacks 0DJA (1),
 > `AlgebraicGeometry.isIso_baseChangeCohomologyMap_baseChangeTensorComparison_of_isPullback`.
@@ -501,7 +501,7 @@ theorem isIso_derivedBaseChangeComp_of_pointwiseBaseChange (sq : IsPullback g' f
 theorem pointwiseBaseChangeTensor : PointwiseBaseChangeTensor.{u}
 ```
 
-**`AlgebraicGeometry.isIso_baseChangeCohomologyMap_baseChangeSheafHomComparison_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHom.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHom.lean#L68). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.isIso_baseChangeCohomologyMap_baseChangeSheafHomComparison_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHom.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHom.lean#L68). The attribute's comment: “(2)”.
 
 > **Stacks 0DJA (2).** For a cartesian square of schemes, if the map of Stacks 0DJ7 at
 > `(K, K', φ)` is an isomorphism at every point of `X'` and in every degree, then so is the one at
@@ -522,7 +522,7 @@ theorem isIso_baseChangeCohomologyMap_baseChangeSheafHomComparison_of_isPerfect
         g'.toLRSHom.toShHom E K K' φ) x' n)
 ```
 
-**`AlgebraicGeometry.not_pointwiseBaseChangeSheafHomOfPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHomPseudoCoherentCounterexample.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHomPseudoCoherentCounterexample.lean#L308). The attribute's comment: “(3) as written is false: the statement of part (3), with no condition on g, fails by a counterexample over ℤ/4 with g : Spec ℤ/2 ⟶ Spec ℤ/4, K the structure sheaf and E the periodic resolution of ℤ/2”.
+**`AlgebraicGeometry.not_pointwiseBaseChangeSheafHomOfPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHomPseudoCoherentCounterexample.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHomPseudoCoherentCounterexample.lean#L308). The attribute's comment: “(3) as written is false: the statement of part (3), with no condition on g, fails by a counterexample over ℤ/4 with g : Spec ℤ/2 ⟶ Spec ℤ/4, K the structure sheaf and E the periodic resolution of ℤ/2”.
 
 > The statement of part (3) of Stacks 0DJA, with the equivalent conditions of Stacks 0DJ8 read in
 > form (1) and `g` an arbitrary morphism, fails: for `A = ℤ/4`, the cartesian square with
@@ -552,7 +552,7 @@ theorem not_pointwiseBaseChangeSheafHomOfPseudoCoherent :
           (baseChangeSheafHomComparison g'.toLRSHom.toShHom E K K' φ))
 ```
 
-**`AlgebraicGeometry.isIso_baseChangeCohomologyMap_baseChangeSheafHomComparison_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHomPseudoCoherentTorDimension.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHomPseudoCoherentTorDimension.lean#L107). The attribute's comment: “(3), corrected: g of finite Tor dimension added (every local ring of S' of Tor amplitude in a fixed interval over the local ring of S below it); with no condition on g part (3) is false, see AlgebraicGeometry.not\_pointwiseBaseChangeSheafHomOfPseudoCoherent”.
+**`AlgebraicGeometry.isIso_baseChangeCohomologyMap_baseChangeSheafHomComparison_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHomPseudoCoherentTorDimension.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedSheafHomPseudoCoherentTorDimension.lean#L107). The attribute's comment: “(3), corrected: g of finite Tor dimension added (every local ring of S' of Tor amplitude in a fixed interval over the local ring of S below it); with no condition on g part (3) is false, see AlgebraicGeometry.not\_pointwiseBaseChangeSheafHomOfPseudoCoherent”.
 
 > **Stacks 0DJA (3), corrected: `g` of finite Tor dimension.** For a cartesian square of
 > schemes with `g` of finite Tor dimension (every `𝒪_{S', s'}` of Tor amplitude in a fixed
@@ -588,7 +588,7 @@ theorem isIso_baseChangeCohomologyMap_baseChangeSheafHomComparison_of_hasTorAmpl
         g'.toLRSHom.toShHom E K K' φ) x' n)
 ```
 
-**`AlgebraicGeometry.isIso_baseChangeCohomologyMap_baseChangeTensorComparison_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedTensor.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedTensor.lean#L130). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.isIso_baseChangeCohomologyMap_baseChangeTensorComparison_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedTensor.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TensorBaseChange/DerivedTensor.lean#L130). The attribute's comment: “(1)”.
 
 > **Stacks 0DJA (1).** For a cartesian square of schemes, if the map of Stacks 0DJ7 at
 > `(K, K', φ)` is an isomorphism at every point of `X'` and in every degree, then so is the one at
@@ -612,7 +612,7 @@ theorem isIso_baseChangeCohomologyMap_baseChangeTensorComparison_of_isPullback
 
 [Tag 0A1D](https://stacks.math.columbia.edu/tag/0A1D) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_tensorFlatBaseChangeMap_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/FlatOverBase/TensorFlat.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/FlatOverBase/TensorFlat.lean#L62).
+**`AlgebraicGeometry.isIso_tensorFlatBaseChangeMap_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/FlatOverBase/TensorFlat.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/FlatOverBase/TensorFlat.lean#L62).
 
 > **Stacks 0A1D.** Let `f : X ⟶ S` be a quasi-compact and quasi-separated morphism of schemes,
 > `E` an object of `D_QCoh(𝒪_X)` and `𝒢^•` a bounded above complex of quasi-coherent
@@ -638,7 +638,7 @@ theorem isIso_tensorFlatBaseChangeMap_of_isPullback {X X' S S' : Scheme.{u}} (f 
     IsIso (tensorFlatBaseChangeMap f g f' g' sq E G)
 ```
 
-**`AlgebraicGeometry.tensorFlatBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChange.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChange.lean#L137). The attribute's comment: “the canonical map whose invertibility is the tag's conclusion, as the precise statement in the proof displays it: the derived base-change map of Stacks 08HY at E ⊗^L 𝒢^•, followed by Rf'\_* of the base-change comparison of Stacks 0DJA taken at the derived-to-ordinary comparison L(g')^*𝒢^• ⟶ (g')^*𝒢^•. The target uses the ORDINARY pullback (g')^*𝒢^•, which the source sets in bold, and the derived-to-ordinary comparison is not assumed invertible”.
+**`AlgebraicGeometry.tensorFlatBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChange.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/TensorFlatPushforwardBaseChange.lean#L137). The attribute's comment: “the canonical map whose invertibility is the tag's conclusion, as the precise statement in the proof displays it: the derived base-change map of Stacks 08HY at E ⊗^L 𝒢^•, followed by Rf'\_* of the base-change comparison of Stacks 0DJA taken at the derived-to-ordinary comparison L(g')^*𝒢^• ⟶ (g')^*𝒢^•. The target uses the ORDINARY pullback (g')^*𝒢^•, which the source sets in bold, and the derived-to-ordinary comparison is not assumed invertible”.
 
 > **The canonical map of Stacks 0A1D**, as the precise statement in the source's proof
 > displays it:
@@ -672,7 +672,7 @@ public def tensorFlatBaseChangeMap {X X' S S' : Scheme.{u}} (f : X ⟶ S) (g : S
 
 [Tag 08IE](https://stacks.math.columbia.edu/tag/08IE) in the Stacks Project.
 
-**`AlgebraicGeometry.sheafHomFlatBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomFlatPushforwardBaseChange.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomFlatPushforwardBaseChange.lean#L135). The attribute's comment: “the canonical map whose invertibility is the tag's conclusion: the derived base-change map of Stacks 08HY at R𝓗om(E, 𝒢^•), followed by Rf'\_* of the base-change comparison of Stacks 0DJA taken at the derived-to-ordinary comparison L(g')^*𝒢^• ⟶ (g')^*𝒢^•. The target uses the ORDINARY pullback (g')^*𝒢^•, which the source sets in bold, and the derived-to-ordinary comparison is not assumed invertible”.
+**`AlgebraicGeometry.sheafHomFlatBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomFlatPushforwardBaseChange.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomFlatPushforwardBaseChange.lean#L135). The attribute's comment: “the canonical map whose invertibility is the tag's conclusion: the derived base-change map of Stacks 08HY at R𝓗om(E, 𝒢^•), followed by Rf'\_* of the base-change comparison of Stacks 0DJA taken at the derived-to-ordinary comparison L(g')^*𝒢^• ⟶ (g')^*𝒢^•. The target uses the ORDINARY pullback (g')^*𝒢^•, which the source sets in bold, and the derived-to-ordinary comparison is not assumed invertible”.
 
 > **The canonical map of Stacks 08IE**:
 >
@@ -701,7 +701,7 @@ public def sheafHomFlatBaseChangeMap {X X' S S' : Scheme.{u}} (f : X ⟶ S) (g :
           (DerivedCategory.Q.obj ((pullbackComplex g'.toLRSHom.toShHom).obj G)))
 ```
 
-**`AlgebraicGeometry.isIso_sheafHomFlatBaseChangeMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPerfectFlatPushforwardBaseChange.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPerfectFlatPushforwardBaseChange.lean#L120). The attribute's comment: “case (1): E perfect, 𝒢^• bounded above with terms quasi-coherent and flat over S, f quasi-compact and quasi-separated, an arbitrary cartesian square; the canonical map of the source's proof, with the ORDINARY pullback (g')^*𝒢^• on the right, is an isomorphism. Case (2) is false as stated (errata.md, entry 08IE(2)); its corrected form, for g of finite Tor dimension, is `isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteTorDimension`”.
+**`AlgebraicGeometry.isIso_sheafHomFlatBaseChangeMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPerfectFlatPushforwardBaseChange.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPerfectFlatPushforwardBaseChange.lean#L120). The attribute's comment: “case (1): E perfect, 𝒢^• bounded above with terms quasi-coherent and flat over S, f quasi-compact and quasi-separated, an arbitrary cartesian square; the canonical map of the source's proof, with the ORDINARY pullback (g')^*𝒢^• on the right, is an isomorphism. Case (2) is false as stated (errata.md, entry 08IE(2)); its corrected form, for g of finite Tor dimension, is `isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteTorDimension`”.
 
 > **Stacks 08IE, case (1).** Let `f : X ⟶ S` be a quasi-compact and quasi-separated morphism
 > of schemes, let `E` be a perfect object of `D(𝒪_X)` and let `𝒢^•` be a bounded above complex of
@@ -738,7 +738,7 @@ public theorem isIso_sheafHomFlatBaseChangeMap_of_isPerfect
     IsIso (sheafHomFlatBaseChangeMap f g f' g' sq E G)
 ```
 
-**`AlgebraicGeometry.isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPseudoCoherentFiniteTorDimensionBaseChange.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPseudoCoherentFiniteTorDimensionBaseChange.lean#L248). The attribute's comment: “case (2), with the correction of errata.md (entry 08IE(2)): f quasi-compact and quasi-separated, E pseudo-coherent, 𝒢^• bounded with terms quasi-coherent and flat over S, and g of finite Tor dimension, read at the stalks (each 𝒪\_\{S', s'} of finite Tor dimension over 𝒪\_\{S, g(s')}, which finite Tor dimension of g implies); the canonical map of the source's proof, with the ORDINARY pullback (g')^*𝒢^• on the right, is an isomorphism. Without the condition on g case (2) is false (the counterexample over ℤ/4 of the erratum)”.
+**`AlgebraicGeometry.isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPseudoCoherentFiniteTorDimensionBaseChange.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPseudoCoherentFiniteTorDimensionBaseChange.lean#L248). The attribute's comment: “case (2), with the correction of errata.md (entry 08IE(2)): f quasi-compact and quasi-separated, E pseudo-coherent, 𝒢^• bounded with terms quasi-coherent and flat over S, and g of finite Tor dimension, read at the stalks (each 𝒪\_\{S', s'} of finite Tor dimension over 𝒪\_\{S, g(s')}, which finite Tor dimension of g implies); the canonical map of the source's proof, with the ORDINARY pullback (g')^*𝒢^• on the right, is an isomorphism. Without the condition on g case (2) is false (the counterexample over ℤ/4 of the erratum)”.
 
 > **Stacks 08IE, case (2), corrected.** Let `f : X ⟶ S` be a quasi-compact and quasi-separated
 > morphism of schemes, let `E` be a pseudo-coherent object of `D(𝒪_X)` and let `𝒢^•` be a bounded
@@ -783,7 +783,7 @@ public theorem isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteT
     IsIso (sheafHomFlatBaseChangeMap f g f' g' sq E G)
 ```
 
-**`AlgebraicGeometry.isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteTorDimension_appLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPseudoCoherentFiniteTorDimensionBaseChange.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPseudoCoherentFiniteTorDimensionBaseChange.lean#L297). The attribute's comment: “case (2), with the correction of errata.md (entry 08IE(2)) in the affine-open form the erratum spells out: for affine opens V ⊆ S and V' ⊆ g⁻¹(V), 𝒪\_\{S'}(V') has finite Tor dimension over 𝒪\_S(V); f quasi-compact and quasi-separated, E pseudo-coherent, 𝒢^• bounded with terms quasi-coherent and flat over S; the canonical map, with the ORDINARY pullback (g')^*𝒢^•, is an isomorphism”.
+**`AlgebraicGeometry.isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteTorDimension_appLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPseudoCoherentFiniteTorDimensionBaseChange.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomPseudoCoherentFiniteTorDimensionBaseChange.lean#L297). The attribute's comment: “case (2), with the correction of errata.md (entry 08IE(2)) in the affine-open form the erratum spells out: for affine opens V ⊆ S and V' ⊆ g⁻¹(V), 𝒪\_\{S'}(V') has finite Tor dimension over 𝒪\_S(V); f quasi-compact and quasi-separated, E pseudo-coherent, 𝒢^• bounded with terms quasi-coherent and flat over S; the canonical map, with the ORDINARY pullback (g')^*𝒢^•, is an isomorphism”.
 
 > **Stacks 08IE, case (2), corrected, with the condition on `g` on affine opens.** This is
 > `isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteTorDimension` with the correction
@@ -808,7 +808,7 @@ public theorem isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent_of_hasFiniteT
     IsIso (sheafHomFlatBaseChangeMap f g f' g' sq E G)
 ```
 
-**`Stacks.Examples.SheafHomCounterexample.not_forall_isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/BaseChange/SheafHomPseudoCoherentCounterexample.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/BaseChange/SheafHomPseudoCoherentCounterexample.lean#L297). The attribute's comment: “the erratum's counterexample: case (2) for an ARBITRARY base change is false; it fails for S = X = Spec ℤ/4, f = id, E = (ℤ/2)~, 𝒢^• = 𝒪\_X and g : Spec ℤ/2 ⟶ Spec ℤ/4”.
+**`Stacks.Examples.SheafHomCounterexample.not_forall_isIso_sheafHomFlatBaseChangeMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/BaseChange/SheafHomPseudoCoherentCounterexample.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/BaseChange/SheafHomPseudoCoherentCounterexample.lean#L297). The attribute's comment: “the erratum's counterexample: case (2) for an ARBITRARY base change is false; it fails for S = X = Spec ℤ/4, f = id, E = (ℤ/2)~, 𝒢^• = 𝒪\_X and g : Spec ℤ/2 ⟶ Spec ℤ/4”.
 
 > It is not true that for every quasi-compact
 > and quasi-separated `f : X ⟶ S`, every pseudo-coherent `E ∈ D(𝒪_X)`, every bounded complex
@@ -836,4 +836,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.26, Tag 0DJ6](https://stacks.math.columbia.edu/tag/0DJ6)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

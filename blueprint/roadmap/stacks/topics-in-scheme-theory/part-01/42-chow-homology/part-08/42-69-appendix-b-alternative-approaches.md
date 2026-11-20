@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.69 Appendix B: Alternative approaches
 
-Section 42.69 of the Stacks Project, [Tag 0AYD](https://stacks.math.columbia.edu/tag/0AYD). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.69 of the Stacks Project, [Tag 0AYD](https://stacks.math.columbia.edu/tag/0AYD). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02SB, a lemma
 
 [Tag 02SB](https://stacks.math.columbia.edu/tag/02SB) in the Stacks Project.
 
-**`Stacks.Chow.rationallyEquivalent_cycles_of_twoPeriodicComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexHomologyCycles/RationalEquivalence.lean, line 744](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexHomologyCycles/RationalEquivalence.lean#L744).
+**`Stacks.Chow.rationallyEquivalent_cycles_of_twoPeriodicComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexHomologyCycles/RationalEquivalence.lean, line 744](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexHomologyCycles/RationalEquivalence.lean#L744).
 
 > **Stacks 02SB.** Let `F` be a coherent sheaf on a scheme `X` locally of finite type over the
 > base, carrying a `(2, 1)`-periodic complex whose support has delta-dimension at most `k + 1` and
@@ -51,7 +51,7 @@ theorem rationallyEquivalent_cycles_of_twoPeriodicComplex
 
 [Tag 02SC](https://stacks.math.columbia.edu/tag/02SC) in the Stacks Project.
 
-**`Stacks.Chow.chowToWideLayerHom_injective_and_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowBijection.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowBijection.lean#L83).
+**`Stacks.Chow.chowToWideLayerHom_injective_and_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowBijection.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowBijection.lean#L83).
 
 > **Stacks 02SC.** Let `X` be locally of finite type over `(S, δ)`. The map
 > `CH_k(X) ⟶ K₀(Coh_{≤k+1}(X)/Coh_{≤k-1}(X))` of Tag 0FDS is injective, and its image is the image
@@ -65,7 +65,7 @@ theorem chowToWideLayerHom_injective_and_range (C : ChowSituation.{u}) (sX : X �
       (chowToWideLayerHom C sX k).range = coherentDimensionLayerImage C sX k
 ```
 
-**`Stacks.Chow.layerChowClass_eq_zero_of_layerWideningClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean#L233). The attribute's comment: “the comparison: a class killed in `K₀(Coh_{≤k+1}/Coh_{≤k-1})` has trivial cycle”.
+**`Stacks.Chow.layerChowClass_eq_zero_of_layerWideningClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean, line 233](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean#L233). The attribute's comment: “the comparison: a class killed in `K₀(Coh_{≤k+1}/Coh_{≤k-1})` has trivial cycle”.
 
 > **Stacks 02SC, the comparison.** An element of `K₀(Coh_{≤k}(X))` whose class in
 > `K₀(Coh_{≤k+1}(X)/Coh_{≤k-1}(X))` vanishes has rationally trivial `k`-cycle.
@@ -82,7 +82,7 @@ theorem layerChowClass_eq_zero_of_layerWideningClass_eq_zero (C : ChowSituation.
     (ha : layerWideningClass C f k a = 0) : layerChowClass C f k a = 0
 ```
 
-**`Stacks.Chow.coherentDimensionLayerImageChowHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean#L268). The attribute's comment: “the homomorphism `Bₖ(X) → CH_k(X)` the bijection of the tag inverts”.
+**`Stacks.Chow.coherentDimensionLayerImageChowHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean#L268). The attribute's comment: “the homomorphism `Bₖ(X) → CH_k(X)` the bijection of the tag inverts”.
 
 > **Stacks 02SC.** The homomorphism `Bₖ(X) ⟶ CH_k(X)`. On the class of a coherent
 > `𝒪_X`-module `A` with `dim_δ(Supp A) ≤ k` it is the class of the `k`-cycle `[A]_k`; this is
@@ -97,7 +97,7 @@ def coherentDimensionLayerImageChowHom (C : ChowSituation.{u}) (f : X ⟶ C.S)
     coherentDimensionLayerImage C f k →+ chowGroup C f k
 ```
 
-**`Stacks.Chow.coherentDimensionLayerImageChowHom_coherentDimensionKZeroMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean#L296). The attribute's comment: “the value of `Bₖ(X) → CH_k(X)` on the class of a coherent module”.
+**`Stacks.Chow.coherentDimensionLayerImageChowHom_coherentDimensionKZeroMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean, line 296](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerChowComparison.lean#L296). The attribute's comment: “the value of `Bₖ(X) → CH_k(X)` on the class of a coherent module”.
 
 > **Stacks 02SC.** The homomorphism `Bₖ(X) ⟶ CH_k(X)` sends the class of a coherent
 > `𝒪_X`-module `F` with `dim_δ(Supp F) ≤ k`, read in the layer `(k-1, k+1]`, to the class of the
@@ -114,7 +114,7 @@ theorem coherentDimensionLayerImageChowHom_coherentDimensionKZeroMk (C : ChowSit
       QuotientAddGroup.mk' (rationalEquivalences C f k) (layerCycleOfLE C f k F F.property)
 ```
 
-**`Stacks.Chow.coherentDimensionLayerImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerKGroup.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerKGroup.lean#L232). The attribute's comment: “b\_k\_x”.
+**`Stacks.Chow.coherentDimensionLayerImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerKGroup.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerKGroup.lean#L232). The attribute's comment: “b\_k\_x”.
 
 > **Stacks 02SC, `Bₖ(X)`.** The image of the homomorphism of Grothendieck groups induced by the
 > inclusion of the dimension layer `(k - 1, k]` into the layer `(k - 1, k + 1]`.
@@ -128,7 +128,7 @@ def coherentDimensionLayerImage (C : ChowSituation.{u}) (f : X ⟶ C.S) [Locally
 
 [Tag 02QH](https://stacks.math.columbia.edu/tag/02QH) in the Stacks Project.
 
-**`Ideal.fraction_smul_denominatorIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CartierDivisorsK/Basic.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CartierDivisorsK/Basic.lean#L467). The attribute's comment: “containment”.
+**`Ideal.fraction_smul_denominatorIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CartierDivisorsK/Basic.lean, line 467](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/CartierDivisorsK/Basic.lean#L467). The attribute's comment: “containment”.
 
 > **Stacks Project, Tag 02QH, containment assertion.** Multiplying `I M` by `a / b` in the
 > localization of `M` at the nonzerodivisors lands back in the image of `M`.
@@ -143,7 +143,7 @@ theorem fraction_smul_denominatorIdeal_le
         Set.range (LocalizedModule.mkLinearMap (nonZeroDivisors R) M)
 ```
 
-**`Ideal.length_fractionalProduct_quotient_sub_length_denominator_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CartierDivisorsK/Basic.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CartierDivisorsK/Basic.lean#L507). The attribute's comment: “length formula”.
+**`Ideal.length_fractionalProduct_quotient_sub_length_denominator_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CartierDivisorsK/Basic.lean, line 507](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/CartierDivisorsK/Basic.lean#L507). The attribute's comment: “length formula”.
 
 > **Stacks Project, Tag 02QH, length formula.** The difference between the colength of
 > `(a / b) I M` and that of `I M` is the sum of the generic lengths of `M`, weighted by the
@@ -174,7 +174,7 @@ theorem length_fractionalProduct_quotient_sub_length_denominator_quotient
 
 [Tag 02SW](https://stacks.math.columbia.edu/tag/02SW) in the Stacks Project.
 
-**`Stacks.Chow.denominatorQuotients_shortExact_isCoherent_and_firstChernClassCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DenominatorQuotients/CapProductIdentity.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DenominatorQuotients/CapProductIdentity.lean#L226). The attribute's comment: “parts (1), (2), (3) and (4)”.
+**`Stacks.Chow.denominatorQuotients_shortExact_isCoherent_and_firstChernClassCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DenominatorQuotients/CapProductIdentity.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DenominatorQuotients/CapProductIdentity.lean#L226). The attribute's comment: “parts (1), (2), (3) and (4)”.
 
 > **Stacks 02SW.** Let `(S, δ)` be as in Situation 42.7.1, let `X` be locally of finite type
 > over `S`, let `ℒ` be an invertible `𝒪_X`-module, let `ℱ` be a coherent `𝒪_X`-module and let
@@ -281,7 +281,7 @@ theorem denominatorQuotients_shortExact_isCoherent_and_firstChernClassCap
 
 [Tag 02SX](https://stacks.math.columbia.edu/tag/02SX) in the Stacks Project.
 
-**`Stacks.Chow.exists_mem_coherentDimensionLayerImage_layerMkTensor_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerTwistCap.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerTwistCap.lean#L616).
+**`Stacks.Chow.exists_mem_coherentDimensionLayerImage_layerMkTensor_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerTwistCap.lean, line 616](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerTwistCap.lean#L616).
 
 > **[Stacks, Tag 02SX].** Let `(S, δ)` be a Chow situation, let `X` be locally of finite type
 > over `S`, let `ℒ` be an invertible `𝒪_X`-module and let `ℱ` be a coherent `𝒪_X`-module with
@@ -320,4 +320,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.69, Tag 0AYD](https://stacks.math.columbia.edu/tag/0AYD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

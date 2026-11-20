@@ -8,13 +8,13 @@ proof: formalized
 
 # 6.14 Stalks of presheaves of modules
 
-Section 6.14 of the Stacks Project, [Tag 007I](https://stacks.math.columbia.edu/tag/007I). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 6.14 of the Stacks Project, [Tag 007I](https://stacks.math.columbia.edu/tag/007I). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 007J, a lemma
 
 [Tag 007J](https://stacks.math.columbia.edu/tag/007J) in the Stacks Project.
 
-**`stalk_module_structure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/Module.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Stalk/Module.lean#L80).
+**`stalk_module_structure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/Module.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Stalk/Module.lean#L80).
 
 > The canonical `Module (R.stalk x)`-structure on `TopCat.Presheaf.stalk M.presheaf x`.
 
@@ -27,7 +27,7 @@ noncomputable def stalk_module_structure :
 
 [Tag 007K](https://stacks.math.columbia.edu/tag/007K) in the Stacks Project.
 
-**`Stacks.Sheafify.ModuleStalkTensor.tensorPresheafStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/ModuleStalkTensor.lean, line 989](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheafify/ModuleStalkTensor.lean#L989).
+**`Stacks.Sheafify.ModuleStalkTensor.tensorPresheafStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheafify/ModuleStalkTensor.lean, line 989](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Sheafify/ModuleStalkTensor.lean#L989).
 
 > The canonical isomorphism of `O'_x`-modules
 > `F_x ⊗_{O_x} O'_x ≃ₗ (F ⊗_{p,O} O')_x`, for a morphism `α : O ⟶ O'` of *presheaves* of
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 6.14, Tag 007I](https://stacks.math.columbia.edu/tag/007I)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

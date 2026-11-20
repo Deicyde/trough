@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.148 Formally unramified maps
 
-Section 10.148 of the Stacks Project, [Tag 00UM](https://stacks.math.columbia.edu/tag/00UM). 6 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.148 of the Stacks Project, [Tag 00UM](https://stacks.math.columbia.edu/tag/00UM). 6 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00UN, a definition
 
@@ -16,8 +16,8 @@ Section 10.148 of the Stacks Project, [Tag 00UM](https://stacks.math.columbia.ed
 
 Declarations registered for the tag:
 
-- [`Algebra.FormallyUnramified`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Basic.lean#L44) (StacksFrontier): “formally unramified ring maps”. References: EGA IV (17.1.1); EGA 0 (19.10.2), “discrete, unramified”; SGA 3 XI (1.1); SGA 3 XI (1.6), “affine case, unramified”.
-- [`Algebra.FormallyUnramified.iff_comp_injective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified.iff_comp_injective#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Basic.lean#L49) (StacksFrontier): “at most one dotted arrow, as injectivity of post-composition”. References: EGA 0 (19.10.4), “partial, special case”; EGA IV (17.1.1), “special case”; EGA 0 (19.10.2), “discrete, unramified”; SGA 3 XI (1.1), “partial”; SGA 3 XI (1.6), “affine case, unramified”.
+- [`Algebra.FormallyUnramified`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Unramified/Basic.lean#L44) (StacksFrontier): “formally unramified ring maps”. References: EGA IV (17.1.1); EGA 0 (19.10.2), “discrete, unramified”; SGA 3 XI (1.1); SGA 3 XI (1.6), “affine case, unramified”.
+- [`Algebra.FormallyUnramified.iff_comp_injective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified.iff_comp_injective#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Unramified/Basic.lean#L49) (StacksFrontier): “at most one dotted arrow, as injectivity of post-composition”. References: EGA 0 (19.10.4), “partial, special case”; EGA IV (17.1.1), “special case”; EGA 0 (19.10.2), “discrete, unramified”; SGA 3 XI (1.1), “partial”; SGA 3 XI (1.6), “affine case, unramified”.
 
 ## Tag 0H91, a lemma
 
@@ -25,13 +25,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Algebra.FormallyUnramified.base_change`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified.base_change#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Basic.lean#L73) (StacksFrontier): “formal unramifiedness is stable under base change”. References: EGA IV (17.1.3), “(iii), special case”; EGA IV (17.7.3), “(i), (ii)”; SGA 3 XI (1.6), “partial”.
+- [`Algebra.FormallyUnramified.base_change`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified.base_change#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Unramified/Basic.lean#L71) (StacksFrontier): “formal unramifiedness is stable under base change”. References: EGA IV (17.1.3), “(iii), special case”; EGA IV (17.7.3), “(i), (ii)”; SGA 3 XI (1.6), “partial”.
 
 ## Tag 00UO, a lemma
 
 [Tag 00UO](https://stacks.math.columbia.edu/tag/00UO) in the Stacks Project.
 
-**`Algebra.forall_comp_injective_iff_subsingleton_kaehlerDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Basic.lean#L207). The attribute's comment: “(1) is the lifting property of Definition 00UN, stated as injectivity of `Hom_R(S, A) → Hom_R(S, A/I)` for every `R`-algebra `A` in the universe of `S` and every ideal `I` with `I ^ 2 = ⊥`; (2) is `Subsingleton Ω[S⁄R]`. Proved from Mathlib's `Algebra.FormallyUnramified.iff_comp_injective`.”.
+**`Algebra.forall_comp_injective_iff_subsingleton_kaehlerDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Unramified/Basic.lean#L205). The attribute's comment: “(1) is the lifting property of Definition 00UN, stated as injectivity of `Hom_R(S, A) → Hom_R(S, A/I)` for every `R`-algebra `A` in the universe of `S` and every ideal `I` with `I ^ 2 = ⊥`; (2) is `Subsingleton Ω[S⁄R]`. Proved from Mathlib's `Algebra.FormallyUnramified.iff_comp_injective`.”.
 
 > **Stacks 00UO.** Let `R → S` be a ring map. Then `R → S` is formally unramified in the sense
 > of Definition 00UN — for every `R`-algebra `A` and every ideal `I` of `A` with `I² = 0`, the map
@@ -50,7 +50,7 @@ theorem Algebra.forall_comp_injective_iff_subsingleton_kaehlerDifferential
 
 [Tag 04E8](https://stacks.math.columbia.edu/tag/04E8) in the Stacks Project.
 
-**`formally_unramified_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Basic.lean#L312). References: EGA IV (17.4.2), “Affine case of a ⇔ e”.
+**`formally_unramified_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 310](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Unramified/Basic.lean#L310). References: EGA IV (17.4.2), “Affine case of a ⇔ e”.
 
 > Formally unramified is a local property: for a ring map `R → S`, being formally
 > unramified is equivalent to all the localized maps `R → S_𝔮` being formally
@@ -80,14 +80,14 @@ theorem formally_unramified_local
 
 Declarations registered for the tag:
 
-- [`Algebra.FormallyUnramified.localization_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified.localization_map#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Basic.lean#L67) (StacksFrontier): “(1)”.
-- [`Algebra.FormallyUnramified.of_isLocalization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified.of_isLocalization#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Basic.lean#L68) (StacksFrontier): “(2), together with `Algebra.FormallyUnramified.comp`”. References: EGA 0 (19.10.3), “partial”.
+- [`Algebra.FormallyUnramified.localization_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified.localization_map#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Unramified/Basic.lean#L65) (StacksFrontier): “(1)”.
+- [`Algebra.FormallyUnramified.of_isLocalization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FormallyUnramified.of_isLocalization#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Unramified/Basic.lean#L66) (StacksFrontier): “(2), together with `Algebra.FormallyUnramified.comp`”. References: EGA 0 (19.10.3), “partial”.
 
 ## Tag 07QE, a lemma
 
 [Tag 07QE](https://stacks.math.columbia.edu/tag/07QE) in the Stacks Project.
 
-**`Algebra.FormallyUnramified.directLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Basic.lean#L458).
+**`Algebra.FormallyUnramified.directLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Basic.lean, line 456](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Unramified/Basic.lean#L456).
 
 > **Concrete `Ring.DirectLimit` form.** Equip the direct limit
 > `Ring.DirectLimit S φ` of a directed system of `R`-algebras with its canonical
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.148, Tag 00UM](https://stacks.math.columbia.edu/tag/00UM)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

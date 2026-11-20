@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.55 K-groups
 
-Section 10.55 of the Stacks Project, [Tag 00JC](https://stacks.math.columbia.edu/tag/00JC). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.55 of the Stacks Project, [Tag 00JC](https://stacks.math.columbia.edu/tag/00JC). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00JD, a lemma
 
 [Tag 00JD](https://stacks.math.columbia.edu/tag/00JD) in the Stacks Project.
 
-**`length_K0prime_hom_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Defs.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/Defs.lean#L185).
+**`length_K0prime_hom_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Defs.lean, line 185](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/Defs.lean#L185).
 
 > **Stacks Tag 00JD.** If `R` is an Artinian local ring then the length
 > function defines an abelian group homomorphism `K'_0(R) →+ ℤ` sending the
@@ -31,7 +31,7 @@ theorem length_K0prime_hom_exists (R : Type u) [CommRing R]
 
 [Tag 00JE](https://stacks.math.columbia.edu/tag/00JE) in the Stacks Project.
 
-**`K0toK0'_field_bijective_and_isoZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Field.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/Field.lean#L93). The attribute's comment: “K0(k) → K'0(k) bijective, K'0(k) ≅ ℤ and K0(k) ≅ ℤ via dimension, dimension equals length”.
+**`K0toK0'_field_bijective_and_isoZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Field.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/Field.lean#L93). The attribute's comment: “K0(k) → K'0(k) bijective, K'0(k) ≅ ℤ and K0(k) ≅ ℤ via dimension, dimension equals length”.
 
 > **Stacks Example 00JE.** Let `k` be a field. Then `K₀(k) = K'₀(k) ≅ ℤ`, the
 > isomorphism being given by the dimension function, which is also the length function.
@@ -62,7 +62,7 @@ theorem K0toK0'_field_bijective_and_isoZ (k : Type u) [Field k] :
 
 [Tag 00JF](https://stacks.math.columbia.edu/tag/00JF) in the Stacks Project.
 
-**`K0_polynomial_isoZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PID.lean, line 982](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/PID.lean#L982). The attribute's comment: “K0(k[x]) ≅ ℤ”. References: SGA 6 IX (1.7), “special case”.
+**`K0_polynomial_isoZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PID.lean, line 982](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/PID.lean#L982). The attribute's comment: “K0(k[x]) ≅ ℤ”. References: SGA 6 IX (1.7), “special case”.
 
 > `K0(k[x]) ≅ ℤ`, exhibited by an explicit isomorphism that sends
 > the class `[k[x]]` of the rank-1 free module to `1`.  (The rank map.)
@@ -73,7 +73,7 @@ theorem K0_polynomial_isoZ (k : Type*) [Field k] :
       e (K0OfProjGen.mk (Polynomial k) (K0Gen.free1 (Polynomial k))) = 1
 ```
 
-**`K0'_polynomial_isoZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PID.lean, line 994](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/PID.lean#L994). The attribute's comment: “K0'(k[x]) ≅ ℤ”. References: SGA 6 IX (1.7), “Lemma 1.7, case A = k[T]”; SGA 6 IX (3.4), “Case S = Spec k”.
+**`K0'_polynomial_isoZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PID.lean, line 994](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/PID.lean#L994). The attribute's comment: “K0'(k[x]) ≅ ℤ”. References: SGA 6 IX (1.7), “Lemma 1.7, case A = k[T]”; SGA 6 IX (3.4), “Case S = Spec k”.
 
 > `K0'(k[x]) ≅ ℤ`, exhibited by an explicit isomorphism that sends
 > the class `[k[x]]` to `1` (the rank of the free part).  Every torsion finite
@@ -85,7 +85,7 @@ theorem K0'_polynomial_isoZ (k : Type*) [Field k] :
       e (K0PrimeOfFinPres.mk (Polynomial k) (K0'Gen.free1 (Polynomial k))) = 1
 ```
 
-**`K0toK0'_polynomial_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PID.lean, line 1010](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/PID.lean#L1010). The attribute's comment: “K0(k[x]) ≅ K0'(k[x])”.
+**`K0toK0'_polynomial_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PID.lean, line 1010](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/PID.lean#L1010). The attribute's comment: “K0(k[x]) ≅ K0'(k[x])”.
 
 > The canonical homomorphism `ι : K0(k[x]) → K0'(k[x])` is an
 > isomorphism (it is bijective).
@@ -106,7 +106,7 @@ theorem K0toK0'_polynomial_bijective (k : Type*) [Field k] :
 
 [Tag 00JG](https://stacks.math.columbia.edu/tag/00JG) in the Stacks Project.
 
-**`nodeRing_K0_addEquiv_and_K0prime_addEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/NodeRing.lean, line 554](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/NodeRing.lean#L554). The attribute's comment: “`K₀(R) ≅ k^* ⊕ ℤ` and `K'₀(R) ≅ ℤ` for `R = {f ∈ k[x] ∣ f(0) = f(1)}`”.
+**`nodeRing_K0_addEquiv_and_K0prime_addEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/NodeRing.lean, line 554](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/NodeRing.lean#L554). The attribute's comment: “`K₀(R) ≅ k^* ⊕ ℤ` and `K'₀(R) ≅ ℤ` for `R = {f ∈ k[x] ∣ f(0) = f(1)}`”.
 
 > **Stacks Example 10.55.5 (tag `00JG`).** Let `k` be a field and
 > `R = {f ∈ k[x] ∣ f(0) = f(1)}`. Then `K₀(R) ≅ k^* ⊕ ℤ`, but `K'₀(R) ≅ ℤ`.
@@ -127,7 +127,7 @@ theorem nodeRing_K0_addEquiv_and_K0prime_addEquiv (k : Type*) [Field k] :
 
 [Tag 00JH](https://stacks.math.columbia.edu/tag/00JH) in the Stacks Project.
 
-**`K0_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Product/K0.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/Product/K0.lean#L401). The attribute's comment: “K\_0”.
+**`K0_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Product/K0.lean, line 401](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/Product/K0.lean#L401). The attribute's comment: “K\_0”.
 
 > For a product ring `R = R₁ × R₂`, the natural
 > homomorphism `K₀(R) → K₀(R₁) × K₀(R₂)`, given on generators by
@@ -148,7 +148,7 @@ theorem K0_product (R1 R2 : Type u) [CommRing R1] [CommRing R2] :
             K0.mk (M.baseChangeHom (RingHom.snd R1 R2)) )
 ```
 
-**`K0prime_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Product/K0Prime.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/Product/K0Prime.lean#L566). The attribute's comment: “K'\_0 half, for arbitrary commutative rings R\_1, R\_2; the K\_0 half is K0\_product”.
+**`K0prime_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Product/K0Prime.lean, line 566](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/Product/K0Prime.lean#L566). The attribute's comment: “K'\_0 half, for arbitrary commutative rings R\_1, R\_2; the K\_0 half is K0\_product”.
 
 > **Stacks 00JH, `K'_0` half.** Let `R = R₁ × R₂` be a product of two commutative
 > rings (no further hypothesis). Then the natural homomorphism
@@ -172,7 +172,7 @@ theorem K0prime_prod (R1 R2 : Type u) [CommRing R1] [CommRing R2] :
 
 [Tag 00JI](https://stacks.math.columbia.edu/tag/00JI) in the Stacks Project.
 
-**`K0prime.lengthHom_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/LengthIso.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/LengthIso.lean#L132).
+**`K0prime.lengthHom_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/LengthIso.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/LengthIso.lean#L132).
 
 > **Stacks 00JI.** Let `R` be an Artinian local ring. The length homomorphism
 > `length_R : K'_0(R) → ℤ` of Stacks 00JD (`lengthHom R`, sending the class of a finite module
@@ -186,7 +186,7 @@ theorem lengthHom_isIso : ∃ e : K0prime R ≃+ ℤ, ⇑e = lengthHom R
 
 [Tag 00JJ](https://stacks.math.columbia.edu/tag/00JJ) in the Stacks Project.
 
-**`finite_projective_is_finite_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Defs.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/Defs.lean#L308). The attribute's comment: “every finite projective module over a local ring is finite free”. References: EGA 0 (10.1.3), “(ii): b ⇒ a, b ⇒ a”; EGA 0 (17.2.2), “more general”; EGA III (7.9.1), “special case”; SGA 1 IV (4.3), “case (b): (ii) ⇒ (i)”; SGA 3 VIA (2.1.3), “special case”; SGA 3 VIIB (0.3.7), “special case”; SGA 6 I (2.15.1), “special case”.
+**`finite_projective_is_finite_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Defs.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/Defs.lean#L308). The attribute's comment: “every finite projective module over a local ring is finite free”. References: EGA 0 (10.1.3), “(ii): b ⇒ a, b ⇒ a”; EGA 0 (17.2.2), “more general”; EGA III (7.9.1), “special case”; SGA 1 IV (4.3), “case (b): (ii) ⇒ (i)”; SGA 3 VIA (2.1.3), “special case”; SGA 3 VIIB (0.3.7), “special case”; SGA 6 I (2.15.1), “special case”.
 
 > Over a local ring, every finitely generated projective module is free, and
 > admits a linear equivalence to `Fin n → R` for some `n`. This is the first half
@@ -200,7 +200,7 @@ theorem finite_projective_is_finite_free
     Module.Free R M ∧ ∃ n : ℕ, Nonempty (M ≃ₗ[R] (Fin n → R))
 ```
 
-**`K0.rank_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Defs.lean, line 509](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/Defs.lean#L509). The attribute's comment: “the rank map `[M] ↦ rank_R(M)` is a well-defined isomorphism `K_0(R) ≃+ ℤ`”.
+**`K0.rank_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Defs.lean, line 509](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/Defs.lean#L509). The attribute's comment: “the rank map `[M] ↦ rank_R(M)` is a well-defined isomorphism `K_0(R) ≃+ ℤ`”.
 
 > Over a local ring, the rank map `K_0(R) → ℤ` is an isomorphism. Combined
 > with `finite_projective_is_finite_free`, this gives the full statement of
@@ -216,7 +216,7 @@ theorem K0.rank_isIso
 
 [Tag 00JK](https://stacks.math.columbia.edu/tag/00JK) in the Stacks Project.
 
-**`K0.toK0prime_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/LengthIso.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/LengthIso.lean#L187).
+**`K0.toK0prime_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/LengthIso.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/LengthIso.lean#L187).
 
 > **Stacks 00JK.** Let `R` be a local Artinian ring. The diagram
 >
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.55, Tag 00JC](https://stacks.math.columbia.edu/tag/00JC)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

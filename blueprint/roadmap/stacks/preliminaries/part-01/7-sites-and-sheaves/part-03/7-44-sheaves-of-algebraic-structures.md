@@ -8,7 +8,7 @@ proof: formalized
 
 # 7.44 Sheaves of algebraic structures
 
-Section 7.44 of the Stacks Project, [Tag 00YR](https://stacks.math.columbia.edu/tag/00YR). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 7.44 of the Stacks Project, [Tag 00YR](https://stacks.math.columbia.edu/tag/00YR). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00YS, a definition
 
@@ -16,14 +16,14 @@ Section 7.44 of the Stacks Project, [Tag 00YR](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.whiskeringLeft`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.whiskeringLeft#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Pushforward.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Pushforward.lean#L25) (StacksFrontier): “`u^p F (U) = F(u U)` on presheaves, i.e. precomposition with `u.op`”. References: EGA III (7.1.3), “partial”.
-- [`CategoryTheory.Functor.sheafPushforwardContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPushforwardContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Pushforward.lean, line 27](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Pushforward.lean#L27) (StacksFrontier): “`f_* F (U) = F(u U)` on sheaves, by the same rule”. References: SGA 4 IV (4.9.1).
+- [`CategoryTheory.Functor.whiskeringLeft`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.whiskeringLeft#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Pushforward.lean, line 25](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Pushforward.lean#L25) (StacksFrontier): “`u^p F (U) = F(u U)` on presheaves, i.e. precomposition with `u.op`”. References: EGA III (7.1.3), “partial”.
+- [`CategoryTheory.Functor.sheafPushforwardContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPushforwardContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Pushforward.lean, line 27](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Pushforward.lean#L27) (StacksFrontier): “`f_* F (U) = F(u U)` on sheaves, by the same rule”. References: SGA 4 IV (4.9.1).
 
 ## Tag 00YT, a lemma
 
 [Tag 00YT](https://stacks.math.columbia.edu/tag/00YT) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleUnderlyingSetCommutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StrongSerreAbelian.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StrongSerreAbelian.lean#L95). The attribute's comment: “the forgetful functor from abelian groups to sets, on the small étale sites over X: inverse image along small étale base change commutes with passing to the underlying sheaf of sets”.
+**`AlgebraicGeometry.smallEtaleUnderlyingSetCommutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StrongSerreAbelian.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StrongSerreAbelian.lean#L95). The attribute's comment: “the forgetful functor from abelian groups to sets, on the small étale sites over X: inverse image along small étale base change commutes with passing to the underlying sheaf of sets”.
 
 > On the small étale sites of the objects of `B` over `X`, inverse image along small étale base
 > change to any `T ⟶ X` commutes with passing from an abelian sheaf to its underlying sheaf of
@@ -33,7 +33,7 @@ Declarations registered for the tag:
 public theorem smallEtaleUnderlyingSetCommutes : SmallEtaleUnderlyingSetCommutes B X
 ```
 
-**`CategoryTheory.Functor.isIso_mateEquiv_sheafAdjunctionContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Sheaves.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Sheaves.lean#L405). The attribute's comment: “The sheaf level, for an arbitrary `s : A ⥤ B`: for a continuous, representably flat `u : C ⥤ D` and a functor `s` preserving filtered colimits and sheafification, the pullback `f^{-1}` of `A`-valued sheaves commutes with postcomposition by `s`, in that the canonical mate `f^{-1}(s ∘ F) ⟶ s ∘ (f^{-1} F)` of the pushforward square is an isomorphism. The tag is the case `B = Type u`, `s` the underlying-set functor of a type of algebraic structure. The presheaf level, `u_p (F ⋙ s) ≅ (u_p F) ⋙ s`, is `lanCompIsoOfPreserves` at `L = u.op`, which mentions no topology.”. References: SGA 4 III (1.7), “4) diagram commutes”; SGA 4 III (2.4), “underlying sheaf of sets”; SGA 4 IV (3.1.2), “u^* preserves structures”.
+**`CategoryTheory.Functor.isIso_mateEquiv_sheafAdjunctionContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Sheaves.lean, line 405](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/Sheaves.lean#L405). The attribute's comment: “The sheaf level, for an arbitrary `s : A ⥤ B`: for a continuous, representably flat `u : C ⥤ D` and a functor `s` preserving filtered colimits and sheafification, the pullback `f^{-1}` of `A`-valued sheaves commutes with postcomposition by `s`, in that the canonical mate `f^{-1}(s ∘ F) ⟶ s ∘ (f^{-1} F)` of the pushforward square is an isomorphism. The tag is the case `B = Type u`, `s` the underlying-set functor of a type of algebraic structure. The presheaf level, `u_p (F ⋙ s) ≅ (u_p F) ⋙ s`, is `lanCompIsoOfPreserves` at `L = u.op`, which mentions no topology.”. References: SGA 4 III (1.7), “4) diagram commutes”; SGA 4 III (2.4), “underlying sheaf of sets”; SGA 4 IV (3.1.2), “u^* preserves structures”.
 
 > Let `(C, J)` and `(D, K)` be sites, let `u : C ⥤ D` be continuous and representably flat —
 > the latter holds under the hypotheses of Stacks 00X6 — and let `s : A ⥤ B` be a functor such that
@@ -71,7 +71,7 @@ public theorem isIso_mateEquiv_sheafAdjunctionContinuous {C : Type u} [SmallCate
 
 [Tag 00YV](https://stacks.math.columbia.edu/tag/00YV) in the Stacks Project.
 
-**`Stacks.Topos.toposAlgebraicStructureAdjunctions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AlgebraicStructureAdjunctions.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/AlgebraicStructureAdjunctions.lean#L96). The attribute's comment: “The adjoint pairs for the seven listed types, each compatible with the underlying sheaves of sets: the underlying sheaf of sets of `f⁻¹ F`, resp. `f_* G`, is `f⁻¹`, resp. `f_*`, of the underlying sheaf of sets, and the unit is the unit of `f⁻¹ ⊣ f_*` on sheaves of sets. Rings are commutative rings; the module case is stated for an arbitrary ring `R`. The final assertion, (α)–(ζ) for each type, is `Stacks.Topos.algebraicStructureSheafification`.”.
+**`Stacks.Topos.toposAlgebraicStructureAdjunctions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AlgebraicStructureAdjunctions.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/AlgebraicStructureAdjunctions.lean#L96). The attribute's comment: “The adjoint pairs for the seven listed types, each compatible with the underlying sheaves of sets: the underlying sheaf of sets of `f⁻¹ F`, resp. `f_* G`, is `f⁻¹`, resp. `f_*`, of the underlying sheaf of sets, and the unit is the unit of `f⁻¹ ⊣ f_*` on sheaves of sets. Rings are commutative rings; the module case is stated for an arbitrary ring `R`. The final assertion, (α)–(ζ) for each type, is `Stacks.Topos.algebraicStructureSheafification`.”.
 
 > **Stacks 00YV.** Let `C`, `D` be sites and let `f = (f⁻¹, f_*)` be a morphism of topoi
 > `Sh(C) → Sh(D)`. Then `f` gives an adjoint pair of functors `(f⁻¹, f_*)` on sheaves of algebraic
@@ -85,7 +85,7 @@ noncomputable def toposAlgebraicStructureAdjunctions
     (k : Type u) [Field k] : AlgebraicStructureAdjunctions f R k
 ```
 
-**`Stacks.Topos.algebraicStructureSheafification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AlgebraicStructureAdjunctions.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/AlgebraicStructureAdjunctions.lean#L135). The attribute's comment: “The final assertion: (α)–(ζ) hold for each of the seven listed types, on any site (`Stacks.Sites.SheafificationProperties`). The adjoint pairs themselves are `Stacks.Topos.toposAlgebraicStructureAdjunctions`.”.
+**`Stacks.Topos.algebraicStructureSheafification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/AlgebraicStructureAdjunctions.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/AlgebraicStructureAdjunctions.lean#L135). The attribute's comment: “The final assertion: (α)–(ζ) hold for each of the seven listed types, on any site (`Stacks.Sites.SheafificationProperties`). The adjoint pairs themselves are `Stacks.Topos.toposAlgebraicStructureAdjunctions`.”.
 
 > **Stacks 00YV, final assertion.** On any site, for each of the seven types of algebraic
 > structures of Stacks 00YV, the properties (α)–(ζ) of sheafification hold: a presheaf is a sheaf
@@ -102,7 +102,7 @@ noncomputable def algebraicStructureSheafification (J : GrothendieckTopology C) 
 
 [Tag 00YU](https://stacks.math.columbia.edu/tag/00YU) in the Stacks Project.
 
-**`Stacks.Presheaf.AbelianVersusSets.uShriekAb`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsCounterexample.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsCounterexample.lean#L135). The attribute's comment: “`u_p^{ab}` is defined on abelian presheaves by the same colimits as `u_p` on presheaves of sets: both are the pointwise left Kan extension along `uᵒᵖ`.”.
+**`Stacks.Presheaf.AbelianVersusSets.uShriekAb`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsCounterexample.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsCounterexample.lean#L136). The attribute's comment: “`u_p^{ab}` is defined on abelian presheaves by the same colimits as `u_p` on presheaves of sets: both are the pointwise left Kan extension along `uᵒᵖ`.”.
 
 > **Definition 4 (the functor `u_p^{ab}` on presheaves of abelian groups).**
 > The left adjoint of `u^p` on abelian presheaves, equivalently the left Kan
@@ -114,7 +114,7 @@ noncomputable def uShriekAb (u' : C ⥤ D) :
     (Cᵒᵖ ⥤ AddCommGrpCat.{u}) ⥤ (Dᵒᵖ ⥤ AddCommGrpCat.{u})
 ```
 
-**`Stacks.Presheaf.AbelianVersusSets.uShriekAbAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsCounterexample.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsCounterexample.lean#L147). The attribute's comment: “`u_p^{ab}` is left adjoint to `u^p` on the categories of abelian presheaves.”.
+**`Stacks.Presheaf.AbelianVersusSets.uShriekAbAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsCounterexample.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsCounterexample.lean#L148). The attribute's comment: “`u_p^{ab}` is left adjoint to `u^p` on the categories of abelian presheaves.”.
 
 > Adjointness `u_p^{ab} ⊣ u^p` on presheaves of abelian groups (Stacks
 > Remark 00VF, and Stacks 00YU).
@@ -124,7 +124,7 @@ noncomputable def uShriekAbAdjunction (u' : C ⥤ D) :
     uShriekAb u' ⊣ uPullbackAb u'
 ```
 
-**`Stacks.Presheaf.AbelianVersusSets.exists_isMorphismOfSites_not_bijective_theta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsMorphismOfSites.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsMorphismOfSites.lean#L38). The attribute's comment: “Under the remark's hypothesis: a continuous functor defining a morphism of sites for which `u_p^{ab}` does not agree with `u_p` on underlying sets.”.
+**`Stacks.Presheaf.AbelianVersusSets.exists_isMorphismOfSites_not_bijective_theta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsMorphismOfSites.lean, line 38](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Presheaf/AlgebraicStructure/AbelianVersusSetsMorphismOfSites.lean#L38). The attribute's comment: “Under the remark's hypothesis: a continuous functor defining a morphism of sites for which `u_p^{ab}` does not agree with `u_p` on underlying sets.”.
 
 > **Stacks 00YU (Remark 7.44.4).** Even for a continuous functor defining a morphism of sites,
 > `u_p^{ab}` need not agree with `u_p` on underlying presheaves of sets: there exist sites
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.44, Tag 00YR](https://stacks.math.columbia.edu/tag/00YR)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

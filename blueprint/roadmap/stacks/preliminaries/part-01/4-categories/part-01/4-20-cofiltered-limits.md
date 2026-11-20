@@ -8,13 +8,13 @@ proof: formalized
 
 # 4.20 Cofiltered limits
 
-Section 4.20 of the Stacks Project, [Tag 04AY](https://stacks.math.columbia.edu/tag/04AY). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 4.20 of the Stacks Project, [Tag 04AY](https://stacks.math.columbia.edu/tag/04AY). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04AZ, a definition
 
 [Tag 04AZ](https://stacks.math.columbia.edu/tag/04AZ) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsCofiltered`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Filtered/Cofiltered.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Filtered/Cofiltered.lean#L41). References: SGA 4 I (2.7), “cofiltered”.
+**`CategoryTheory.Functor.IsCofiltered`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Filtered/Cofiltered.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Filtered/Cofiltered.lean#L41). References: SGA 4 I (2.7), “cofiltered”.
 
 > **Stacks 04AZ.** A diagram `M : I ⥤ C` is *cofiltered* (or *codirected*) if
 > `I` is nonempty, every pair of objects of `I` admits morphisms from a common
@@ -26,7 +26,7 @@ structure Functor.IsCofiltered {I : Type u₁} [Category.{v₁} I] {C : Type u�
     (M : I ⥤ C) : Prop
 ```
 
-**`CategoryTheory.Functor.isCofiltered_id_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Filtered/Cofiltered.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Filtered/Cofiltered.lean#L59).
+**`CategoryTheory.Functor.isCofiltered_id_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Filtered/Cofiltered.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Filtered/Cofiltered.lean#L59).
 
 > **Stacks 04AZ.** An index category `I` is cofiltered in the sense of Stacks —
 > the identity diagram `𝟭 I` is a cofiltered diagram — exactly when it is
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.20, Tag 04AY](https://stacks.math.columbia.edu/tag/04AY)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

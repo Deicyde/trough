@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.27 Producing perfect complexes
 
-Section 36.27 of the Stacks Project, [Tag 0A1E](https://stacks.math.columbia.edu/tag/0A1E). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 36.27 of the Stacks Project, [Tag 0A1E](https://stacks.math.columbia.edu/tag/0A1E). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08EV, a lemma
 
 [Tag 08EV](https://stacks.math.columbia.edu/tag/08EV) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProperSupportCoherent.isPerfect_derivedPushforward_of_isProperOver_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperSupportCoherent/TorDimensionDirectImage.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProperSupportCoherent/TorDimensionDirectImage.lean#L366). The attribute's comment: “the source's statement and hypotheses: S Noetherian, f locally of finite type, E bounded with coherent cohomology sheaves whose supports are proper over S and of finite Tor dimension over f⁻¹𝒪\_S for its canonical derived tensor product; Rf\_* is the total right derived functor of degreewise pushforward. The Tor-dimension half is proved by a Mayer–Vietoris induction from the affine case rather than through Tag 08EU and Tag 08EA”. References: SGA 6 0 (3.1), “more general”; SGA 6 0 (4.1), “more general”; SGA 6 XIV (2.2), “special case”.
+**`Stacks.AlgebraicGeometry.ProperSupportCoherent.isPerfect_derivedPushforward_of_isProperOver_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperSupportCoherent/TorDimensionDirectImage.lean, line 366](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProperSupportCoherent/TorDimensionDirectImage.lean#L366). The attribute's comment: “the source's statement and hypotheses: S Noetherian, f locally of finite type, E bounded with coherent cohomology sheaves whose supports are proper over S and of finite Tor dimension over f⁻¹𝒪\_S for its canonical derived tensor product; Rf\_* is the total right derived functor of degreewise pushforward. The Tor-dimension half is proved by a Mayer–Vietoris induction from the affine case rather than through Tag 08EU and Tag 08EA”. References: SGA 6 0 (3.1), “more general”; SGA 6 0 (4.1), “more general”; SGA 6 XIV (2.2), “special case”.
 
 > **[Stacks, Tag 08EV].** Let `S` be a Noetherian scheme, `f : X ⟶ S` a morphism locally of
 > finite type and `E` an object of `D(𝒪_X)` such that
@@ -57,7 +57,7 @@ theorem isPerfect_derivedPushforward_of_isProperOver_supp {X S : Scheme.{u}} (f 
 
 [Tag 0DJQ](https://stacks.math.columbia.edu/tag/0DJQ) in the Stacks Project.
 
-**`Stacks.Cohomology.PerfectPushforward.isPerfect_derivedPushforward_derivedTensorProductFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectPushforwardCanonicalTensor.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectPushforwardCanonicalTensor.lean#L76).
+**`Stacks.Cohomology.PerfectPushforward.isPerfect_derivedPushforward_derivedTensorProductFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectPushforwardCanonicalTensor.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/PerfectPushforwardCanonicalTensor.lean#L76).
 
 > **[Stacks, Tag 0DJQ].** Let `S` be a Noetherian scheme and `f : X ⟶ S` a morphism of schemes
 > which is locally of finite type. Let `E` be a perfect object of `D(𝒪_X)` and let `𝒢` be a bounded
@@ -85,7 +85,7 @@ theorem isPerfect_derivedPushforward_derivedTensorProductFunctor [IsNoetherian S
 
 [Tag 0DJR](https://stacks.math.columbia.edu/tag/0DJR) in the Stacks Project.
 
-**`Stacks.Cohomology.PerfectInternalHomPushforward.isPerfect_derivedPushforward_derivedSheafHom_of_flatProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectInternalHomPushforwardUnconditional.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectInternalHomPushforwardUnconditional.lean#L96).
+**`Stacks.Cohomology.PerfectInternalHomPushforward.isPerfect_derivedPushforward_derivedSheafHom_of_flatProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectInternalHomPushforwardUnconditional.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/PerfectInternalHomPushforwardUnconditional.lean#L96).
 
 > **[Stacks, Tag 0DJR].**  Let `S` be a Noetherian scheme, `f : X ⟶ S` a morphism locally of
 > finite type, `E` a perfect object of `D(𝒪_X)` and `𝒢` a bounded complex of coherent
@@ -110,7 +110,7 @@ theorem isPerfect_derivedPushforward_derivedSheafHom_of_flatProperSupport [IsNoe
 
 [Tag 0B6F](https://stacks.math.columbia.edu/tag/0B6F) in the Stacks Project.
 
-**`Stacks.Cohomology.PerfectPushforward.isPerfect_derivedPushforward_of_flat_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectPushforwardCanonicalTensor.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectPushforwardCanonicalTensor.lean#L98).
+**`Stacks.Cohomology.PerfectPushforward.isPerfect_derivedPushforward_of_flat_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectPushforwardCanonicalTensor.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/PerfectPushforwardCanonicalTensor.lean#L98).
 
 > **[Stacks, Tag 0B6F].** Let `S` be a Noetherian scheme and `f : X ⟶ S` a flat proper morphism
 > of schemes. Let `E` be a perfect object of `D(𝒪_X)`. Then `Rf_*E` is a perfect object of
@@ -132,4 +132,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.27, Tag 0A1E](https://stacks.math.columbia.edu/tag/0A1E)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

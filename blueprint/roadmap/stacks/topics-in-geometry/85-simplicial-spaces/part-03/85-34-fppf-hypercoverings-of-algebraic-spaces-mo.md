@@ -8,7 +8,7 @@ proof: formalized
 
 # 85.34 Fppf hypercoverings of algebraic spaces: modules
 
-Section 85.34 of the Stacks Project, [Tag 0DHB](https://stacks.math.columbia.edu/tag/0DHB). 6 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 85.34 of the Stacks Project, [Tag 0DHB](https://stacks.math.columbia.edu/tag/0DHB). 6 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DHC, a lemma
 
@@ -16,7 +16,7 @@ Section 85.34 of the Stacks Project, [Tag 0DHB](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.bigFppfAugmentationSquareTwoIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSmallEtaleBigFppfRinged.lean#L252), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L42) (StacksFrontier).
+- [`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.bigFppfAugmentationSquareTwoIso`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSmallEtaleBigFppfRinged.lean#L252), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 42](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L42) (StacksFrontier).
 
 ## Tag 0DHD, a lemma
 
@@ -24,7 +24,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`descent_quasicoherent_of_isHypercoveringAugmentation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=descent_quasicoherent_of_isHypercoveringAugmentation#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L39) (StacksFrontier).
+- [`descent_quasicoherent_of_isHypercoveringAugmentation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=descent_quasicoherent_of_isHypercoveringAugmentation#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 39](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L39) (StacksFrontier).
 
 ## Tag 0DHE, a lemma
 
@@ -32,7 +32,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`isIso_unit_and_isZero_rightDerived_of_isHypercoveringAugmentation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isIso_unit_and_isZero_rightDerived_of_isHypercoveringAugmentation#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L36) (StacksFrontier).
+- [`isIso_unit_and_isZero_rightDerived_of_isHypercoveringAugmentation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isIso_unit_and_isZero_rightDerived_of_isHypercoveringAugmentation#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 36](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L36) (StacksFrontier).
 
 ## Tag 0DHF, a lemma
 
@@ -40,13 +40,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.isWeakSerreClass_and_derivedPullback_equivalence`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedDescentEquivalence.lean#L155), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L33) (StacksFrontier).
+- [`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.isWeakSerreClass_and_derivedPullback_equivalence`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedDescentEquivalence.lean#L155), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 33](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L33) (StacksFrontier).
 
 ## Tag 0DHG, a lemma
 
 [Tag 0DHG](https://stacks.math.columbia.edu/tag/0DHG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFppfHypercovering.isIso_derivedGlobalSectionsSemilinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringQuasicoherentCohomology.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringQuasicoherentCohomology.lean#L164).
+**`AlgebraicGeometry.Space.IsFppfHypercovering.isIso_derivedGlobalSectionsSemilinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringQuasicoherentCohomology.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringQuasicoherentCohomology.lean#L164).
 
 > **Stacks Project, Tag 0DHG.** Let `S` be a scheme, `X` an algebraic space over `S`, `U` a
 > simplicial algebraic space over `S` and `a : U → X` an augmentation. If `a : U → X` is an fppf
@@ -93,7 +93,7 @@ theorem IsFppfHypercovering.isIso_derivedGlobalSectionsSemilinearMap (hA : IsFpp
 
 [Tag 0DHH](https://stacks.math.columbia.edu/tag/0DHH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.moduleSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialModuleSpectralSequence.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialModuleSpectralSequence.lean#L84). The attribute's comment: “the spectral sequence”.
+**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.moduleSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialModuleSpectralSequence.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialModuleSpectralSequence.lean#L84). The attribute's comment: “the spectral sequence”.
 
 > **The spectral sequence of a module pulled back to a simplicial algebraic space**
 > `a : U → X`, as a functor of the `𝒪_X`-module `𝓕`: the spectral sequence of Stacks 0D7E for the
@@ -106,7 +106,7 @@ def moduleSpectralSequence :
       CohomologicalSpectralSequence AddCommGrpCat.{u + 1} 1
 ```
 
-**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.moduleSpectralSequencePageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialModuleSpectralSequence.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialModuleSpectralSequence.lean#L124). The attribute's comment: “its first page `E_1^{p,q} = H^q_ét(U_p, 𝓕_p)`”.
+**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.moduleSpectralSequencePageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialModuleSpectralSequence.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialModuleSpectralSequence.lean#L124). The attribute's comment: “its first page `E_1^{p,q} = H^q_ét(U_p, 𝓕_p)`”.
 
 > **`E_1^{p,q} = H^q_ét(U_p, a_p^*𝓕)`**, naturally in the `𝒪_X`-module `𝓕`, where `a_p^*` is
 > the pullback of modules along the morphism of ringed topoi
@@ -121,7 +121,7 @@ def moduleSpectralSequencePageOneIso (p q : ℕ) :
         (spacesEtaleRingedTopos B S hS (U.obj (op ⦋p⦌))).moduleGlobalSections.rightDerived q
 ```
 
-**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.moduleSpectralSequence_abutsTo_of_isFppfHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentSpectralSequence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentSpectralSequence.lean#L94). The attribute's comment: “the spectral sequence converges to `H^{p+q}_ét(X, 𝓕)`”.
+**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.moduleSpectralSequence_abutsTo_of_isFppfHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentSpectralSequence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentSpectralSequence.lean#L94). The attribute's comment: “the spectral sequence converges to `H^{p+q}_ét(X, 𝓕)`”.
 
 > **Stacks 0DHH.** Let `S` be a scheme, `X` an algebraic space over `S`, `U` a simplicial
 > algebraic space over `S` and `a : U → X` an augmentation which is an fppf hypercovering of `X`.
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.34, Tag 0DHB](https://stacks.math.columbia.edu/tag/0DHB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

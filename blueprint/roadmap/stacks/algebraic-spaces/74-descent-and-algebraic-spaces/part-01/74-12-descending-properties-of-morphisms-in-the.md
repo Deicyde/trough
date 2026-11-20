@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.12 Descending properties of morphisms in the fppf topology
 
-Section 74.12 of the Stacks Project, [Tag 042E](https://stacks.math.columbia.edu/tag/042E). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 74.12 of the Stacks Project, [Tag 042E](https://stacks.math.columbia.edu/tag/042E). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 042U, a lemma
 
 [Tag 042U](https://stacks.math.columbia.edu/tag/042U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isImmersion_isLocalAtTarget_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ImmersionFppfLocalAtTarget.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ImmersionFppfLocalAtTarget.lean#L122).
+**`AlgebraicGeometry.Space.isImmersion_isLocalAtTarget_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ImmersionFppfLocalAtTarget.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ImmersionFppfLocalAtTarget.lean#L122).
 
 > Being an immersion is fppf local on the base for morphisms of algebraic spaces over `S`: such
 > a morphism is an immersion exactly when its base change to every member of some fppf covering of
@@ -31,7 +31,7 @@ theorem isImmersion_isLocalAtTarget_fppf
 
 [Tag 042F](https://stacks.math.columbia.edu/tag/042F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.locallySeparated_isLocalAtTarget_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallySeparatedFppfLocalAtTarget.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LocallySeparatedFppfLocalAtTarget.lean#L116).
+**`AlgebraicGeometry.Space.locallySeparated_isLocalAtTarget_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallySeparatedFppfLocalAtTarget.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/LocallySeparatedFppfLocalAtTarget.lean#L116).
 
 > **Stacks 042F.** Local separatedness of morphisms of algebraic spaces over `S` is local on
 > the base for the fppf topology: a morphism is locally separated exactly when its base change to
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.12, Tag 042E](https://stacks.math.columbia.edu/tag/042E)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

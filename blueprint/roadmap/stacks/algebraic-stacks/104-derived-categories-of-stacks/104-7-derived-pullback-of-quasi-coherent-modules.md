@@ -8,13 +8,13 @@ proof: formalized
 
 # 104.7 Derived pullback of quasi-coherent modules
 
-Section 104.7 of the Stacks Project, [Tag 07BD](https://stacks.math.columbia.edu/tag/07BD). 1 tag here is carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 104.7 of the Stacks Project, [Tag 07BD](https://stacks.math.columbia.edu/tag/07BD). 1 tag here is carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07BE, a proposition
 
 [Tag 07BE](https://stacks.math.columbia.edu/tag/07BE) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.derivedLocallyQuasicoherentFlatBaseChange_derivedFppfModulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean#L261). The attribute's comment: “the first assertion, on objects: for a 1-morphism f of algebraic stacks the exact functor f^* : D(𝒪\_𝒴) ⥤ D(𝒪\_𝒳) carries D\_LQCoh^fbc(𝒪\_𝒴) into D\_LQCoh^fbc(𝒪\_𝒳), at module universe u, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.derivedLocallyQuasicoherentFlatBaseChange_derivedFppfModulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean#L261). The attribute's comment: “the first assertion, on objects: for a 1-morphism f of algebraic stacks the exact functor f^* : D(𝒪\_𝒴) ⥤ D(𝒪\_𝒳) carries D\_LQCoh^fbc(𝒪\_𝒴) into D\_LQCoh^fbc(𝒪\_𝒳), at module universe u, for any models of the derived categories”.
 
 > **The first assertion of Stacks 07BE, on objects, at module universe `u`.**  Let
 > `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks and let `K` be an object of
@@ -33,7 +33,7 @@ theorem derivedLocallyQuasicoherentFlatBaseChange_derivedFppfModulePullback
       ((derivedFppfModulePullback B S hS f).obj K)
 ```
 
-**`AlgebraicGeometry.Stack.derivedLocallyQuasicoherentPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean#L279). The attribute's comment: “the first assertion: the functor D\_LQCoh^fbc(𝒪\_𝒴) ⥤ D\_LQCoh^fbc(𝒪\_𝒳) induced by the exact functor f^*, at module universe u, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.derivedLocallyQuasicoherentPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean#L279). The attribute's comment: “the first assertion: the functor D\_LQCoh^fbc(𝒪\_𝒴) ⥤ D\_LQCoh^fbc(𝒪\_𝒳) induced by the exact functor f^*, at module universe u, for any models of the derived categories”.
 
 > **The first assertion of Stacks 07BE at module universe `u`.**  The induced functor
 > `f^* : D_{LQCoh^fbc}(𝒪_𝒴) ⥤ D_{LQCoh^fbc}(𝒪_𝒳)`, the left vertical arrow of the square of the
@@ -48,7 +48,7 @@ def derivedLocallyQuasicoherentPullback :
       (derivedLocallyQuasicoherentFlatBaseChange B E hE S hS 𝒳).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Stack.derivedLocallyQuasicoherentPullback_comp_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean#L294). The attribute's comment: “the commutative square of the first assertion: the induced functor on D\_LQCoh^fbc followed by the inclusion into D(𝒪\_𝒳) is the inclusion into D(𝒪\_𝒴) followed by f^*, at module universe u, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.derivedLocallyQuasicoherentPullback_comp_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean, line 294](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullback.lean#L294). The attribute's comment: “the commutative square of the first assertion: the induced functor on D\_LQCoh^fbc followed by the inclusion into D(𝒪\_𝒳) is the inclusion into D(𝒪\_𝒴) followed by f^*, at module universe u, for any models of the derived categories”.
 
 > **The square of Stacks 07BE at module universe `u`.**  Restricting `f^*` to the subcategories of
 > complexes with locally quasi-coherent cohomology and flat base change and then including into
@@ -62,7 +62,7 @@ theorem derivedLocallyQuasicoherentPullback_comp_ι :
         derivedFppfModulePullback B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedSheafFlatBaseChangePullbackSucc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L134). The attribute's comment: “the first assertion: the exact functor f^* induces D\_LQCoh^fbc(𝒪\_𝒴) ⥤ D\_LQCoh^fbc(𝒪\_𝒳), with LQCoh^fbc the class of Stacks 0762 (flat base change for the pullback of sheaves), at module universe u + 1, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedSheafFlatBaseChangePullbackSucc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L134). The attribute's comment: “the first assertion: the exact functor f^* induces D\_LQCoh^fbc(𝒪\_𝒴) ⥤ D\_LQCoh^fbc(𝒪\_𝒳), with LQCoh^fbc the class of Stacks 0762 (flat base change for the pullback of sheaves), at module universe u + 1, for any models of the derived categories”.
 
 > The functor `D_{LQCoh^fbc}(𝒪_𝒴) ⥤ D_{LQCoh^fbc}(𝒪_𝒳)` induced by the exact functor
 > `f^* : D(𝒪_𝒴) ⥤ D(𝒪_𝒳)`.
@@ -75,7 +75,7 @@ def derivedSheafFlatBaseChangePullbackSucc :
         (sheafFlatBaseChangeModulesSucc B E h S hS 𝒳)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedSheafFlatBaseChangePullbackSucc_comp_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L147). The attribute's comment: “the commutative square of the first assertion, at module universe u + 1, for the class of Stacks 0762 read with the pullback of sheaves, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedSheafFlatBaseChangePullbackSucc_comp_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L147). The attribute's comment: “the commutative square of the first assertion, at module universe u + 1, for the class of Stacks 0762 read with the pullback of sheaves, for any models of the derived categories”.
 
 > The induced functor followed by the inclusion `D_{LQCoh^fbc}(𝒪_𝒳) ⊆ D(𝒪_𝒳)` is the inclusion
 > `D_{LQCoh^fbc}(𝒪_𝒴) ⊆ D(𝒪_𝒴)` followed by `f^* : D(𝒪_𝒴) ⥤ D(𝒪_𝒳)`.
@@ -88,7 +88,7 @@ theorem derivedSheafFlatBaseChangePullbackSucc_comp_ι :
         (modulePullbackSucc B S hS f).mapDerivedCategory
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.isLeftDerivable_derivedSheafFlatBaseChangePullbackSucc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L207). The attribute's comment: “the second assertion: q\_𝒳 ∘ f^* : D\_LQCoh^fbc(𝒪\_𝒴) ⥤ D\_QCoh(𝒪\_𝒳) is left derivable with respect to D\_LQCoh^fbc(𝒪\_𝒴) ⥤ D\_QCoh(𝒪\_𝒴) (Stacks 05SV), at module universe u + 1, for the class of Stacks 0762 read with the pullback of sheaves, at the standard models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.isLeftDerivable_derivedSheafFlatBaseChangePullbackSucc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L207). The attribute's comment: “the second assertion: q\_𝒳 ∘ f^* : D\_LQCoh^fbc(𝒪\_𝒴) ⥤ D\_QCoh(𝒪\_𝒳) is left derivable with respect to D\_LQCoh^fbc(𝒪\_𝒴) ⥤ D\_QCoh(𝒪\_𝒴) (Stacks 05SV), at module universe u + 1, for the class of Stacks 0762 read with the pullback of sheaves, at the standard models of the derived categories”.
 
 > The composite
 > `D_{LQCoh^fbc}(𝒪_𝒴) --f^*--> D_{LQCoh^fbc}(𝒪_𝒳) --q_𝒳--> D_QCoh(𝒪_𝒳)` is left derivable with
@@ -104,7 +104,7 @@ theorem isLeftDerivable_derivedSheafFlatBaseChangePullbackSucc :
         (parasiticSheafFlatBaseChangeModulesSucc B E h S hS 𝒴))
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentPullbackSucc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L220). The attribute's comment: “Lf^*\_QCoh : D\_QCoh(𝒪\_𝒴) ⥤ D\_QCoh(𝒪\_𝒳), the left derived functor of q\_𝒳 ∘ f^*, at module universe u + 1, at the standard models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentPullbackSucc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 220](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L220). The attribute's comment: “Lf^*\_QCoh : D\_QCoh(𝒪\_𝒴) ⥤ D\_QCoh(𝒪\_𝒳), the left derived functor of q\_𝒳 ∘ f^*, at module universe u + 1, at the standard models of the derived categories”.
 
 > `Lf^*_QCoh : D_QCoh(𝒪_𝒴) ⥤ D_QCoh(𝒪_𝒳)`, the left derived functor of
 > `q_𝒳 ∘ f^*` with respect to the quotient functor of `𝒴` (Stacks 05S9, 05SV).
@@ -117,7 +117,7 @@ def derivedQuasicoherentPullbackSucc :
         (parasiticSheafFlatBaseChangeModulesSucc B E h S hS 𝒳)).Localization
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.isLeftDerivedFunctor_derivedQuasicoherentPullbackSucc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L243). The attribute's comment: “Lf^*\_QCoh is the (total) left derived functor of q\_𝒳 ∘ f^*, with counit derivedQuasicoherentPullbackSuccCounit, at module universe u + 1”.
+**`AlgebraicGeometry.Stack.FlatFppf.isLeftDerivedFunctor_derivedQuasicoherentPullbackSucc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L243). The attribute's comment: “Lf^*\_QCoh is the (total) left derived functor of q\_𝒳 ∘ f^*, with counit derivedQuasicoherentPullbackSuccCounit, at module universe u + 1”.
 
 > `Lf^*_QCoh` is the left derived functor of `q_𝒳 ∘ f^*`.
 
@@ -129,7 +129,7 @@ instance isLeftDerivedFunctor_derivedQuasicoherentPullbackSucc :
         (parasiticSheafFlatBaseChangeModulesSucc B E h S hS 𝒴))
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentPullbackSuccHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L351). The attribute's comment: “the third assertion: for f quasi-compact and quasi-separated, Hom\_D\_QCoh(𝒪\_𝒳)(Lf^*\_QCoh A, B) = Hom\_D\_QCoh(𝒪\_𝒴)(A, Rf\_QCoh,* B) for A in D\_QCoh(𝒪\_𝒴) and B in D⁺\_QCoh(𝒪\_𝒳), at module universe u + 1, for the class of Stacks 0762 read with the pullback of sheaves, at the standard models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentPullbackSuccHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 351](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L351). The attribute's comment: “the third assertion: for f quasi-compact and quasi-separated, Hom\_D\_QCoh(𝒪\_𝒳)(Lf^*\_QCoh A, B) = Hom\_D\_QCoh(𝒪\_𝒴)(A, Rf\_QCoh,* B) for A in D\_QCoh(𝒪\_𝒴) and B in D⁺\_QCoh(𝒪\_𝒳), at module universe u + 1, for the class of Stacks 0762 read with the pullback of sheaves, at the standard models of the derived categories”.
 
 > For a quasi-compact quasi-separated
 > 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks, `A ∈ D_QCoh(𝒪_𝒴)` and `B ∈ D⁺_QCoh(𝒪_𝒳)`,
@@ -154,7 +154,7 @@ def derivedQuasicoherentPullbackSuccHomEquiv
         ((derivedPushforwardQuasicoherentPlusSucc B E h S hS f hqc hqs).obj Bq))
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentPullbackSuccHomEquiv_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L381). The attribute's comment: “the third assertion: naturality of the adjointness in A”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentPullbackSuccHomEquiv_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 381](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L381). The attribute's comment: “the third assertion: naturality of the adjointness in A”.
 
 > Naturality of the adjointness of Stacks 07BE in `A`.
 
@@ -173,7 +173,7 @@ theorem derivedQuasicoherentPullbackSuccHomEquiv_naturality_left
       e ≫ derivedQuasicoherentPullbackSuccHomEquiv B E h S hS f hqc hqs A Bq g
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentPullbackSuccHomEquiv_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L397). The attribute's comment: “the third assertion: naturality of the adjointness in B”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentPullbackSuccHomEquiv_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean, line 397](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentPullbackSheafFlatBaseChange.lean#L397). The attribute's comment: “the third assertion: naturality of the adjointness in B”.
 
 > Naturality of the adjointness of Stacks 07BE in `B`.
 
@@ -205,4 +205,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 104.7, Tag 07BD](https://stacks.math.columbia.edu/tag/07BD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

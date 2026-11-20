@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0200",
@@ -11648,7 +11648,7 @@
      "line": 57,
      "private": false,
      "doc": "**Stacks 02FM.** Let `R → S` be of finite type and let `q` be a prime of `S` lying over the\nprime `p` of `R`. If `p S_q` is the maximal ideal of `S_q` and `κ(q)/κ(p)` is finite separable,\nthen `R → S` is unramified at `q`: there is `g ∉ q` such that `R → S_g` is unramified.",
-     "statement": "theorem exists_unramified_away_of_map_eq_maximalIdeal {R S : Type*} [CommRing R] [CommRing S]\n    [Algebra R S] [Algebra.FiniteType R S] (p : Ideal R) [p.IsPrime] (q : Ideal S) [q.IsPrime]\n    [q.LiesOver p] [Algebra (Localization.AtPrime p) (Localization.AtPrime q)]\n    [Localization.AtPrime.IsLiesOverAlgebra p q]\n    (hmax : p.map (algebraMap R (Localization.AtPrime q)) =\n      IsLocalRing.maximalIdeal (Localization.AtPrime q))\n    (_hfin : Module.Finite p.ResidueField q.ResidueField)\n    (hsep : Algebra.IsSeparable p.ResidueField q.ResidueField) :\n    ∃ g ∉ q, Algebra.Unramified R (Localization.Away g)",
+     "statement": "theorem exists_unramified_away_of_map_eq_maximalIdeal {R S : Type*} [CommRing R] [CommRing S]\n    [Algebra R S] [Algebra.FiniteType R S] (p : Ideal R) [p.IsPrime] (q : Ideal S) [q.IsPrime]\n    [q.LiesOver p] [Algebra (Localization.AtPrime p) (Localization.AtPrime q)]\n    [IsScalarTower R (Localization.AtPrime p) (Localization.AtPrime q)]\n    (hmax : p.map (algebraMap R (Localization.AtPrime q)) =\n      IsLocalRing.maximalIdeal (Localization.AtPrime q))\n    (_hfin : Module.Finite p.ResidueField q.ResidueField)\n    (hsep : Algebra.IsSeparable p.ResidueField q.ResidueField) :\n    ∃ g ∉ q, Algebra.Unramified R (Localization.Away g)",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -19402,7 +19402,7 @@
     {
      "name": "CategoryTheory.ObjectProperty.preservesFiniteLimits_ι_and_preservesFiniteColimits_ι",
      "kind": "lemma",
-     "line": 43,
+     "line": 44,
      "private": false,
      "doc": "**Stacks 02MP**, \"moreover\": the inclusion of a Serre subcategory is exact, that is, it\npreserves finite limits (it preserves kernels) and finite colimits (it preserves cokernels).",
      "statement": "lemma preservesFiniteLimits_ι_and_preservesFiniteColimits_ι [P.IsSerreClass] :\n    PreservesFiniteLimits P.ι ∧ PreservesFiniteColimits P.ι",
@@ -19416,7 +19416,7 @@
     {
      "name": "CategoryTheory.ObjectProperty.isSerreClass_iff_and_abelian_and_exact",
      "kind": "theorem",
-     "line": 57,
+     "line": 58,
      "private": false,
      "doc": "**Stacks 02MP**, in full. A full subcategory of an abelian category closed under isomorphisms\nis a Serre subcategory (Mathlib's `IsSerreClass`: zero, subobjects, quotients, extensions) exactly\nwhen it is nonempty and contains the middle term of every exact sequence whose outer terms belong\nto it; and a Serre subcategory is abelian, with inclusion functor preserving finite limits and\nfinite colimits, that is, exact.\n\nStrict fullness is not a hypothesis: an `ObjectProperty` is a predicate on objects, and a Serre\nclass is closed under isomorphism, so it holds by construction.",
      "statement": "theorem isSerreClass_iff_and_abelian_and_exact :\n    (P.IsSerreClass ↔ (∃ X, P X) ∧\n        ∀ S : ShortComplex C, S.Exact → P S.X₁ → P S.X₃ → P S.X₂) ∧\n      (P.IsSerreClass → Nonempty (Abelian P.FullSubcategory) ∧\n        PreservesFiniteLimits P.ι ∧ PreservesFiniteColimits P.ι)",
@@ -20084,7 +20084,7 @@
     {
      "name": "Stacks.Cohomology.PerfectPushforward.isFlatOver_structureModule",
      "kind": "theorem",
-     "line": 1746,
+     "line": 1747,
      "private": false,
      "doc": "**The structure sheaf of `X` is flat over `S` when `f` is flat**, which is\n[Stacks, Tag 02N3].  `AlgebraicGeometry.Flat.stalkMap` gives flatness of the stalk of the\nstructure *sheaf* of `X` over the stalk of the structure sheaf of `S`, while\n`AlgebraicGeometry.IsFlatOverAt` asks for flatness of the stalk of the structure *module*, which\nis the same filtered colimit taken in `AddCommGrpCat` rather than in `CommRingCat`.\n`Stacks.Cohomology.PerfectPushforward.unitStalk_smul_eq` is the comparison of the two colimits,\nand `Stacks.Cohomology.PerfectPushforward.flat_compHom_of_addEquiv` transports flatness across\nit, restricting scalars along the stalk map of `f` on both sides.",
      "statement": "theorem isFlatOver_structureModule [Flat f] :\n    IsFlatOver f.toLRSHom.toShHom (structureModule X.toRingedSpace)",
@@ -20260,7 +20260,7 @@
     {
      "name": "twist",
      "file": "StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean",
-     "line": 1281,
+     "line": 1289,
      "tier": "StacksFrontier",
      "comment": "the twisted graded algebra B_d = A_d ⊗ L^{⊗ d} of the section's setting",
      "ega": [],
@@ -23167,7 +23167,7 @@
     {
      "name": "AlgebraicGeometry.denominatorIdeal_inclusion_mono",
      "kind": "theorem",
-     "line": 473,
+     "line": 486,
      "private": false,
      "doc": "**Stacks Project, Tag 02P0**, injectivity of the ideal inclusion. For an invertible sheaf of\nmodules `L` and a meromorphic section `s` of `L`, the ideal of denominators of `s` embeds in the\nstructure sheaf.",
      "statement": "theorem denominatorIdeal_inclusion_mono\n    (L : SheafOfModules.{u}\n      (Stacks.Sheaves.Differentials.ringSheaf (J := Opens.grothendieckTopology X) X.sheaf))\n    (s : MeromorphicSection X.sheaf L)\n    (hL : AlgebraicGeometry.SheafOfModules.IsInvertible X.sheaf.obj\n      (Stacks.Sheaves.Differentials.ringSheaf (J := Opens.grothendieckTopology X) X.sheaf).property\n        L) :\n    Mono (denominatorIdealι X L s)",
@@ -35727,7 +35727,7 @@
     {
      "name": "CategoryTheory.Functor.ChoiceOfPullbacks.pseudofunctor",
      "kind": "def",
-     "line": 288,
+     "line": 289,
      "private": false,
      "doc": "**Stacks 02XO (3)**, for an arbitrary choice of pullbacks. The pseudofunctor\n`𝒮ᵒᵖ ⥤ᵖ Cat` attached to a choice of pullbacks `c` of a fibred category: `U ↦ 𝒳_U`,\n`f ↦ f^*` (the pullback functor of `c`), with unitor `α_U` and compositor `α_{g,f}` the canonical\nisomorphisms of Stacks 02XO (1), (2).",
      "statement": "noncomputable def pseudofunctor : Pseudofunctor (LocallyDiscrete 𝒮ᵒᵖ) Cat",
@@ -35741,7 +35741,7 @@
     {
      "name": "CategoryTheory.Functor.ChoiceOfPullbacks.pseudofunctor_mapId_hom_app",
      "kind": "lemma",
-     "line": 309,
+     "line": 310,
      "private": false,
      "doc": "**Stacks 02XO (2).** The component at `x` of the unitor of `c.pseudofunctor` is, in `𝒳`, the\nchosen lift of the identity at `x`.",
      "statement": "lemma pseudofunctor_mapId_hom_app (U : LocallyDiscrete 𝒮ᵒᵖ) (x : p.Fiber U.as.unop) :\n    Fiber.fiberInclusion.map ((c.pseudofunctor.mapId U).hom.toNatTrans.app x) =\n      c.map (𝟙 U.as.unop) x",
@@ -35755,7 +35755,7 @@
     {
      "name": "CategoryTheory.Functor.ChoiceOfPullbacks.pseudofunctor_mapComp_hom_app_fac",
      "kind": "lemma",
-     "line": 318,
+     "line": 319,
      "private": false,
      "doc": "**Stacks 02XO (1).** The component at `x` of the compositor of `c.pseudofunctor` at `(φ, γ)`\nmakes the triangle with the chosen lifts commute: followed by the chosen lifts of `γ` and of `φ`,\nit is the chosen lift of the composite.",
      "statement": "lemma pseudofunctor_mapComp_hom_app_fac {U V W : LocallyDiscrete 𝒮ᵒᵖ} (φ : U ⟶ V) (γ : V ⟶ W)\n    (x : p.Fiber U.as.unop) :\n    Fiber.fiberInclusion.map ((c.pseudofunctor.mapComp φ γ).hom.toNatTrans.app x) ≫\n        c.map γ.as.unop (c.obj φ.as.unop x) ≫ c.map φ.as.unop x =\n      c.map (φ ≫ γ).as.unop x",
@@ -35769,7 +35769,7 @@
     {
      "name": "CategoryTheory.Functor.ChoiceOfPullbacks.pseudofunctor_mapComp_hom_app_unique",
      "kind": "lemma",
-     "line": 328,
+     "line": 329,
      "private": false,
      "doc": "**Stacks 02XO (1), uniqueness.** The component at `x` of the compositor of `c.pseudofunctor` at\n`(φ, γ)` is the unique morphism of the fibre making the triangle with the chosen lifts commute.",
      "statement": "lemma pseudofunctor_mapComp_hom_app_unique {U V W : LocallyDiscrete 𝒮ᵒᵖ} (φ : U ⟶ V)\n    (γ : V ⟶ W) (x : p.Fiber U.as.unop)\n    (θ : c.obj (φ ≫ γ).as.unop x ⟶ c.obj γ.as.unop (c.obj φ.as.unop x))\n    (hθ : Fiber.fiberInclusion.map θ ≫ c.map γ.as.unop (c.obj φ.as.unop x) ≫\n        c.map φ.as.unop x = c.map (φ ≫ γ).as.unop x) :\n    θ = (c.pseudofunctor.mapComp φ γ).hom.toNatTrans.app x",
@@ -35783,7 +35783,7 @@
     {
      "name": "CategoryTheory.Functor.ChoiceOfPullbacks.existsUnique_compIso",
      "kind": "theorem",
-     "line": 348,
+     "line": 349,
      "private": false,
      "doc": "**Stacks 02XO (1)**, as stated in the source. For composable `f : V ⟶ U` and `g : W ⟶ V`\nthere is a unique isomorphism `α_{g,f} : (f ∘ g)^* ≅ g^* ∘ f^*` of functors from the fibre over\n`U` to the fibre over `W` such that, for every `y`, the chosen lift `(f ∘ g)^* y ⟶ y` is\n`(α_{g,f})_y` followed by the chosen lifts `g^* f^* y ⟶ f^* y ⟶ y`. The compositor of\n`c.pseudofunctor` satisfies this triangle (`pseudofunctor_mapComp_hom_app_fac`), so it is this\n`α_{g,f}`.",
      "statement": "theorem existsUnique_compIso {W V U : 𝒮} (g : W ⟶ V) (f : V ⟶ U) :\n    ∃! α : c.pullbackFunctor (g ≫ f) ≅ c.pullbackFunctor f ⋙ c.pullbackFunctor g,\n      ∀ y : p.Fiber U, Fiber.fiberInclusion.map (α.hom.app y) ≫ c.map g (c.obj f y) ≫\n        c.map f y = c.map (g ≫ f) y",

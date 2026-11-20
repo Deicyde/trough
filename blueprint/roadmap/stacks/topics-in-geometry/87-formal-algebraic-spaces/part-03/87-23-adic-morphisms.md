@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.23 Adic morphisms
 
-Section 87.23 of the Stacks Project, [Tag 0AQ2](https://stacks.math.columbia.edu/tag/0AQ2). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.23 of the Stacks Project, [Tag 0AQ2](https://stacks.math.columbia.edu/tag/0AQ2). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AQ2, the section
 
 [Tag 0AQ2](https://stacks.math.columbia.edu/tag/0AQ2) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isAdicOnEveryAffineEtaleDiagram_iff_isTautAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean#L200). The attribute's comment: “the footnote of the section: on WAdm^\{adic*} the adic and the taut reading of the chart condition agree”.
+**`AlgebraicGeometry.FormalSpace.isAdicOnEveryAffineEtaleDiagram_iff_isTautAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean#L200). The attribute's comment: “the footnote of the section: on WAdm^\{adic*} the adic and the taut reading of the chart condition agree”.
 
 > **Section 0AQ2, the footnote.** On `WAdm^{adic*}` the chart condition of the section may be
 > read with "adic" or with "taut": the two readings agree, by Stacks 0GBS.
@@ -26,7 +26,7 @@ theorem isAdicOnEveryAffineEtaleDiagram_iff_isTautAdicStar {X Y : FppfSheaf B S 
       IsTautOnEveryAffineEtaleDiagramAdicStar B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdicMorphism_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphismConverse.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphismConverse.lean#L250). The attribute's comment: “the equivalence of conditions (1) and (2) of the section for a morphism of locally adic* formal algebraic spaces, together with the footnote reading (2) with taut maps”.
+**`AlgebraicGeometry.FormalSpace.isAdicMorphism_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphismConverse.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphismConverse.lean#L250). The attribute's comment: “the equivalence of conditions (1) and (2) of the section for a morphism of locally adic* formal algebraic spaces, together with the footnote reading (2) with taut maps”.
 
 > **Section 0AQ2.** Let `f : X ⟶ Y` be a morphism of locally adic\* formal algebraic spaces
 > over `S`. The following are equivalent:
@@ -57,7 +57,7 @@ theorem isAdicMorphism_tfae {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
 
 [Tag 0GBS](https://stacks.math.columbia.edu/tag/0GBS) in the Stacks Project.
 
-**`RingHom.isTaut_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L435). The attribute's comment: “part (1)”.
+**`RingHom.isTaut_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 435](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L435). The attribute's comment: “part (1)”.
 
 > A continuous adic homomorphism of linearly topologized rings is taut.
 
@@ -70,7 +70,7 @@ public theorem isTaut_of_isAdic
     RingHom.IsTaut φ
 ```
 
-**`RingHom.isAdic_iff_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L466). The attribute's comment: “on WAdm^\{adic*}”.
+**`RingHom.isAdic_iff_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 466](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L466). The attribute's comment: “on WAdm^\{adic*}”.
 
 > Adicness and tautness are equivalent for a continuous homomorphism from a linearly
 > topologized ring with a finitely generated ideal of definition to a complete separated linearly
@@ -89,13 +89,13 @@ public theorem isAdic_iff_isTaut
 
 Declarations registered for the tag:
 
-- [`RingHom.isAdic_of_isTaut`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L322), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L460) (StacksFrontier): “part (2)”.
+- [`RingHom.isAdic_of_isTaut`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L322), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 460](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L460) (StacksFrontier): “part (2)”.
 
 ## Tag 0AQ3, a definition
 
 [Tag 0AQ3](https://stacks.math.columbia.edu/tag/0AQ3) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsAdicMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean#L134).
+**`AlgebraicGeometry.FormalSpace.IsAdicMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean#L134).
 
 > **Stacks 0AQ3.** Let `f : X ⟶ Y` be a morphism of formal algebraic spaces over `S` with
 > `X` and `Y` locally adic\*. Then `f` is an *adic morphism* when `f` is representable by
@@ -110,7 +110,7 @@ Declarations registered for the tag:
 abbrev IsAdicMorphism {X Y : FppfSheaf B S hS} (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsRepresentableByAlgebraicSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean#L85). The attribute's comment: “the defining condition of an adic morphism”.
+**`AlgebraicGeometry.Space.IsRepresentableByAlgebraicSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RepresentableByAlgebraicSpaces.lean#L85). The attribute's comment: “the defining condition of an adic morphism”.
 
 > **Stacks Project, Tag 02YQ.** A morphism of presheaves is representable by algebraic
 > spaces if its pullback to every scheme over the base is an algebraic space.
@@ -127,4 +127,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.23, Tag 0AQ2](https://stacks.math.columbia.edu/tag/0AQ2)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

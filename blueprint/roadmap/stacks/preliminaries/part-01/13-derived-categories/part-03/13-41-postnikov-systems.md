@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.41 Postnikov systems
 
-Section 13.41 of the Stacks Project, [Tag 0D7Y](https://stacks.math.columbia.edu/tag/0D7Y). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.41 of the Stacks Project, [Tag 0D7Y](https://stacks.math.columbia.edu/tag/0D7Y). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0D7Z, a definition
 
 [Tag 0D7Z](https://stacks.math.columbia.edu/tag/0D7Z) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.PostnikovSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L95). The attribute's comment: “Postnikov system; the morphisms of Postnikov systems are `PostnikovSystem.Hom`”.
+**`CategoryTheory.Triangulated.PostnikovSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L95). The attribute's comment: “Postnikov system; the morphisms of Postnikov systems are `PostnikovSystem.Hom`”.
 
 > A *Postnikov system* for a complex `Xₙ ⟶ Xₙ₋₁ ⟶ ⋯ ⟶ X₀` in a pretriangulated category,
 > the morphisms of the complex being `d i : X i.succ ⟶ X i.castSucc`: objects `Y₀, …, Yₙ` together
@@ -28,7 +28,7 @@ public structure PostnikovSystem {n : ℕ} (X : Fin (n + 1) → D)
     (d : ∀ i : Fin n, X i.succ ⟶ X i.castSucc)
 ```
 
-**`CategoryTheory.Triangulated.PostnikovSystem.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L128). The attribute's comment: “morphism of Postnikov systems”.
+**`CategoryTheory.Triangulated.PostnikovSystem.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L128). The attribute's comment: “morphism of Postnikov systems”.
 
 > A *morphism of Postnikov systems* `S ⟶ S'` lying over a family of morphisms
 > `f i : Xᵢ ⟶ X'ᵢ` between two complexes `Xₙ ⟶ ⋯ ⟶ X₀` and `X'ₙ ⟶ ⋯ ⟶ X'₀` of the same length:
@@ -46,7 +46,7 @@ public structure Hom (f : ∀ i, X i ⟶ X' i) (S : PostnikovSystem X d)
 
 [Tag 0D81](https://stacks.math.columbia.edu/tag/0D81) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.postnikovSystem_small_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystemsSmallCases.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystemsSmallCases.lean#L313). The attribute's comment: “existence in (1)–(3), the unique extension of morphisms in (1) and the extension in (2) hold in every pretriangulated category; the non-uniqueness in (2), the non-extension in (3) and the non-existence in (4), for every n > 2, are witnessed in the triangulated homotopy category K(ℤ-Mod).”.
+**`CategoryTheory.Triangulated.postnikovSystem_small_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystemsSmallCases.lean, line 313](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystemsSmallCases.lean#L313). The attribute's comment: “existence in (1)–(3), the unique extension of morphisms in (1) and the extension in (2) hold in every pretriangulated category; the non-uniqueness in (2), the non-extension in (3) and the non-existence in (4), for every n > 2, are witnessed in the triangulated homotopy category K(ℤ-Mod).”.
 
 > Let `D` be a pretriangulated category and consider Postnikov systems for complexes
 > `Xₙ ⟶ ⋯ ⟶ X₀` of length `n`, with morphisms of Postnikov systems in the sense of
@@ -99,7 +99,7 @@ theorem postnikovSystem_small_cases :
 
 [Tag 0D82](https://stacks.math.columbia.edu/tag/0D82) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.PostnikovSystem.hom_shift_obj_eq_zero_and_exists_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L542).
+**`CategoryTheory.Triangulated.PostnikovSystem.hom_shift_obj_eq_zero_and_exists_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 542](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L542).
 
 > Let `Xₙ ⟶ ⋯ ⟶ X₀` and `X'ₙ ⟶ ⋯ ⟶ X'₀` be complexes in a pretriangulated category, let `S'`
 > be a Postnikov system for the second one, and assume that every morphism `Xᵢ⟦i - j - 1⟧ ⟶ X'ⱼ`
@@ -132,7 +132,7 @@ theorem PostnikovSystem.hom_shift_obj_eq_zero_and_exists_hom {n : ℕ}
 
 [Tag 0FXE](https://stacks.math.columbia.edu/tag/0FXE) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.PostnikovSystem.subsingleton_hom_last`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 963](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L963). The attribute's comment: “(1), (2), (3): uniqueness of the component on the totalizations”.
+**`CategoryTheory.Triangulated.PostnikovSystem.subsingleton_hom_last`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 963](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L963). The attribute's comment: “(1), (2), (3): uniqueness of the component on the totalizations”.
 
 > Let `Xₙ ⟶ ⋯ ⟶ X₀` and `X'ₙ ⟶ ⋯ ⟶ X'₀` be complexes in a pretriangulated category, let
 > `f i : Xᵢ ⟶ X'ᵢ` be a family of morphisms, and let `S`, `S'` be Postnikov systems for the two
@@ -171,7 +171,7 @@ theorem PostnikovSystem.subsingleton_hom_last {n : ℕ}
         (∀ i : Fin n, S.δ i ≫ (g i.succ)⟦(1 : ℤ)⟧' = g i.castSucc ≫ S'.δ i)}).Subsingleton
 ```
 
-**`CategoryTheory.Triangulated.PostnikovSystem.subsingleton_hom_of_hom_shift_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 994](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L994). The attribute's comment: “(3): at most one morphism of Postnikov systems, all components”.
+**`CategoryTheory.Triangulated.PostnikovSystem.subsingleton_hom_of_hom_shift_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 994](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L994). The attribute's comment: “(3): at most one morphism of Postnikov systems, all components”.
 
 > Let `Xₙ ⟶ ⋯ ⟶ X₀` and `X'ₙ ⟶ ⋯ ⟶ X'₀` be complexes in a pretriangulated category, let
 > `f i : Xᵢ ⟶ X'ᵢ` be a family of morphisms, and let `S`, `S'` be Postnikov systems for the two
@@ -196,7 +196,7 @@ theorem PostnikovSystem.subsingleton_hom_of_hom_shift_eq_zero {n : ℕ}
       (∀ i : Fin n, S.δ i ≫ (g i.succ)⟦(1 : ℤ)⟧' = g i.castSucc ≫ S'.δ i)}.Subsingleton
 ```
 
-**`CategoryTheory.Triangulated.PostnikovSystem.exists_not_subsingleton_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystemsCounterexample.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystemsCounterexample.lean#L124). The attribute's comment: “(1), (2): counterexample to uniqueness of the whole morphism of Postnikov systems”.
+**`CategoryTheory.Triangulated.PostnikovSystem.exists_not_subsingleton_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystemsCounterexample.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystemsCounterexample.lean#L124). The attribute's comment: “(1), (2): counterexample to uniqueness of the whole morphism of Postnikov systems”.
 
 > Cases (1) and (2) of [Stacks, Tag 0FXE] do not give uniqueness of the whole morphism of
 > Postnikov systems. In any pretriangulated category with a nonzero object `B` there are complexes
@@ -226,7 +226,7 @@ theorem PostnikovSystem.exists_not_subsingleton_hom (B : D) (hB : ¬ IsZero B) :
 
 [Tag 0D83](https://stacks.math.columbia.edu/tag/0D83) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.nonempty_postnikovSystem_of_hom_shift_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 678](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L678).
+**`CategoryTheory.Triangulated.nonempty_postnikovSystem_of_hom_shift_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 678](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L678).
 
 > A complex `Xₙ ⟶ ⋯ ⟶ X₀` in a pretriangulated category, with morphisms `d i : Xᵢ₊₁ ⟶ Xᵢ`,
 > admits a Postnikov system as soon as every morphism `Xᵢ⟦i - j - 2⟧ ⟶ Xⱼ` with `i > j + 2` is
@@ -243,7 +243,7 @@ theorem nonempty_postnikovSystem_of_hom_shift_eq_zero {n : ℕ} (X : Fin (n + 1)
     Nonempty (PostnikovSystem X d)
 ```
 
-**`CategoryTheory.Triangulated.PostnikovSystem.exists_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 743](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L743).
+**`CategoryTheory.Triangulated.PostnikovSystem.exists_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean, line 743](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/PostnikovSystems.lean#L743).
 
 > Let `Xₙ ⟶ ⋯ ⟶ X₀` be a diagram in a pretriangulated category, with morphisms
 > `d i : Xᵢ₊₁ ⟶ Xᵢ`, such that every morphism `Xᵢ⟦i - j - 1⟧ ⟶ Xⱼ` with `i > j + 1` is zero. Then
@@ -274,4 +274,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.41, Tag 0D7Y](https://stacks.math.columbia.edu/tag/0D7Y)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

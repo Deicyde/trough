@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.6 Lifting affines
 
-Section 106.6 of the Stacks Project, [Tag 0CJN](https://stacks.math.columbia.edu/tag/0CJN). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.6 of the Stacks Project, [Tag 0CJN](https://stacks.math.columbia.edu/tag/0CJN). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CJP, a remark
 
 [Tag 0CJP](https://stacks.math.columbia.edu/tag/0CJP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean#L191). The attribute's comment: “objects”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean#L191). The attribute's comment: “objects”.
 
 > **Stacks 0CJP, the objects.** For a thickening `ι : 𝒳 ⟶ 𝒳'` of algebraic stacks over `S` and
 > a smooth 1-morphism `x` from an algebraic space `W` to `𝒳`, a *smooth lift of an étale open of
@@ -34,7 +34,7 @@ structure EtaleSmoothLift (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contain
     (_hx : AlgebraicStacks.IsSmooth B S hS x)
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean#L336). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean#L336). The attribute's comment: “morphisms”.
 
 > **Stacks 0CJP, the morphisms.** A morphism of smooth lifts of étale opens of `W` from
 > `(U, U', a, i, x', α)` to `(V, V', b, j, y', β)` is a morphism `f : U ⟶ V` over `W`, a morphism
@@ -45,7 +45,7 @@ structure EtaleSmoothLift (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contain
 structure Hom (ξ η : EtaleSmoothLift B S hS ι hι W x hx)
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean#L450). The attribute's comment: “category”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean#L450). The attribute's comment: “category”.
 
 > **Stacks 0CJP, the category.** The smooth lifts of the étale opens of `W` along the
 > thickening `ι`, with the morphisms above, their identities and their composition.
@@ -54,7 +54,7 @@ structure Hom (ξ η : EtaleSmoothLift B S hS ι hι W x hx)
 instance instCategory : Category (EtaleSmoothLift B S hS ι hι W x hx)
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.proj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean#L461). The attribute's comment: “projection”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.proj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean, line 461](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCategory.lean#L461). The attribute's comment: “projection”.
 
 > **Stacks 0CJP, the projection.** The functor sending a smooth lift to the étale open
 > `a : U ⟶ W` it lies over and a morphism of smooth lifts to its component `f : U ⟶ V`.
@@ -63,7 +63,7 @@ instance instCategory : Category (EtaleSmoothLift B S hS ι hι W x hx)
 def proj : EtaleSmoothLift B S hS ι hι W x hx ⥤ Space.SpacesEtale B S hS W
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.isThickening_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L228). The attribute's comment: “the inclusion of an object is a thickening”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.isThickening_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 228](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L228). The attribute's comment: “the inclusion of an object is a thickening”.
 
 > **Stacks 0CJP, the inclusion of an object is a thickening.** For a smooth lift
 > `(U, U', a, i, x', α)` the 2-fibre product condition `U = 𝒳 ×_{𝒳'} U'` exhibits `i : U ⟶ U'` as
@@ -87,7 +87,7 @@ theorem isThickening_inclusion (ξ : EtaleSmoothLift B S hS ι hι W x hx) :
 
 [Tag 0CJS](https://stacks.math.columbia.edu/tag/0CJS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.Hom.isEtale_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleAmbient.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleAmbient.lean#L227).
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.Hom.isEtale_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleAmbient.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleAmbient.lean#L227).
 
 > **Stacks 0CJS.** For a morphism `(f, f', γ)` of smooth lifts of étale opens of `W` along the
 > thickening `ι : 𝒳 ⟶ 𝒳'` (**Stacks 0CJP**), from `(U, U', a, i, x', α)` to
@@ -111,7 +111,7 @@ theorem isEtale_ambient (ξ η : EtaleSmoothLift B S hS ι hι W x hx) (m : ξ �
 
 [Tag 0CJT](https://stacks.math.columbia.edu/tag/0CJT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.isFiberedInGroupoids_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCartesianLifts.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCartesianLifts.lean#L582). The attribute's comment: “the projection of smooth lifts to the spaces-étale site is fibred in groupoids”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.isFiberedInGroupoids_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCartesianLifts.lean, line 582](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesCartesianLifts.lean#L582). The attribute's comment: “the projection of smooth lifts to the spaces-étale site is fibred in groupoids”.
 
 > **Stacks 0CJT.** The category of smooth lifts of étale opens of `W` along the thickening
 > `ι : 𝒳 ⟶ 𝒳'` (**Stacks 0CJP**), projected to the spaces-étale site of `W`, is fibred in
@@ -140,7 +140,7 @@ theorem isFiberedInGroupoids_proj :
 
 [Tag 0CJU](https://stacks.math.columbia.edu/tag/0CJU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.isStackInGroupoids_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesIsStack.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesIsStack.lean#L148).
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.isStackInGroupoids_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesIsStack.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesIsStack.lean#L148).
 
 > **Stacks 0CJU.** The category `p : 𝒞 ⟶ W_{spaces, étale}` of smooth lifts constructed in
 > Stacks 0CJP is a stack in groupoids: the three conditions of Stacks 02ZI, for covering families
@@ -158,7 +158,7 @@ theorem isStackInGroupoids_proj :
       (Space.SpacesEtale.topology B S hS W)
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.isEtale_relation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L274). The attribute's comment: “the two legs of the relation are étale”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.isEtale_relation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L274). The attribute's comment: “the two legs of the relation are étale”.
 
 > **Stacks 0CJU, the two legs of the relation are étale.** Both `s_{kk'}` and `t_{kk'}` are
 > ambient components of morphisms of the category of smooth lifts, so **Stacks 0CJS** applies to
@@ -205,7 +205,7 @@ theorem isEtale_relation
       Space.IsEtale B S hS (relationSnd D k k').hom
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.relation_refl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L319). The attribute's comment: “reflexivity of the relation”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.relation_refl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 319](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L319). The attribute's comment: “reflexivity of the relation”.
 
 > **Stacks 0CJU, reflexivity of the relation.** A fibre automorphism `e` of `ξ_k` which is the
 > pullback along the diagonal `Δ : U_k ⟶ U_k ×_U U_k ×_U U_k` of each of the three gluing
@@ -243,7 +243,7 @@ theorem relation_refl
     ambientSpaceFunctor.map e = 𝟙 (D.x k).ambient
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.relation_symm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L351). The attribute's comment: “symmetry of the relation”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.relation_symm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 351](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L351). The attribute's comment: “symmetry of the relation”.
 
 > **Stacks 0CJU, symmetry of the relation.** Over the overlap `U_k ×_U U_{k'}` the gluing
 > isomorphism `φ_{kk'}` and the pullback `σ^*φ_{k'k}` of `φ_{k'k}` along the switching morphism
@@ -269,7 +269,7 @@ theorem relation_symm (k k' : K) {d₁₃ : Vij k k' ⟶ Vijk k k' k}
       𝟙 (D.xrij k k').pt.ambient
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.relation_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L375). The attribute's comment: “transitivity of the relation”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.relation_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean, line 375](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesStack.lean#L375). The attribute's comment: “transitivity of the relation”.
 
 > **Stacks 0CJU, transitivity of the relation.** Over the triple overlap the cocycle condition
 > of the descent datum says that the gluing isomorphism from `ξ_k` to `ξ_{k''}` is the composite
@@ -286,7 +286,7 @@ theorem relation_trans (k k' k'' : K) :
 
 [Tag 0CJV](https://stacks.math.columbia.edu/tag/0CJV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_etaleCovering_etaleSmoothLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleCovering.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleCovering.lean#L125). The attribute's comment: “the covering, from the lifts over the affine members”.
+**`AlgebraicGeometry.Stack.exists_etaleCovering_etaleSmoothLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleCovering.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleCovering.lean#L125). The attribute's comment: “the covering, from the lifts over the affine members”.
 
 > **Stacks 0CJV, the covering.** Let `ι : 𝒳 ⟶ 𝒳'` be a thickening of algebraic stacks over
 > `S`, let `W` be an algebraic space over `S` and let `x : W ⟶ 𝒳` be a smooth 1-morphism. Let
@@ -321,7 +321,7 @@ theorem exists_etaleCovering_etaleSmoothLift
         (fun j => ((ξ j).base.obj.hom).hom)
 ```
 
-**`AlgebraicGeometry.Stack.exists_isEtaleCovering_etaleSmoothLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleSmoothLift.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleSmoothLift.lean#L128).
+**`AlgebraicGeometry.Stack.exists_isEtaleCovering_etaleSmoothLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleSmoothLift.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEtaleSmoothLift.lean#L128).
 
 > **Stacks 0CJV.** Let `ι : 𝒳 ⟶ 𝒳'` be a thickening of algebraic stacks over `S`, let `W` be an
 > algebraic space over `S` and let `x : W ⟶ 𝒳` be a smooth 1-morphism. Then there is a family of
@@ -343,7 +343,7 @@ theorem exists_isEtaleCovering_etaleSmoothLift
 
 [Tag 0CJW](https://stacks.math.columbia.edu/tag/0CJW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isEtaleCovering_ambientComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesAmbientComparison.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesAmbientComparison.lean#L503).
+**`AlgebraicGeometry.Stack.exists_isEtaleCovering_ambientComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesAmbientComparison.lean, line 503](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesAmbientComparison.lean#L503).
 
 > **Stacks 0CJW.** Let `ι : 𝒳 ⟶ 𝒳'` be a thickening of algebraic stacks over `S` and let
 > `W = 𝒳 ×_{𝒳'} W'` and `W = 𝒳 ×_{𝒳'} W''` be two 2-fibre products, along `x' : W' ⟶ 𝒳'` and
@@ -392,7 +392,7 @@ theorem exists_isEtaleCovering_ambientComparison
 
 [Tag 0CJX](https://stacks.math.columbia.edu/tag/0CJX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.isGerbe_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesGerbe.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesGerbe.lean#L370).
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.isGerbe_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesGerbe.lean, line 370](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesGerbe.lean#L370).
 
 > The category `p : 𝒞 ⟶ W_{spaces, étale}` of smooth lifts of étale opens of `W` along the
 > thickening `ι : 𝒳 ⟶ 𝒳'` constructed in Stacks 0CJP is a gerbe (Stacks 06NZ), for covering
@@ -408,7 +408,7 @@ theorem isGerbe_proj :
 
 [Tag 0CKG](https://stacks.math.columbia.edu/tag/0CKG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.fiber_endomorphisms_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesAutomorphismAbelian.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesAutomorphismAbelian.lean#L482). The attribute's comment: “part (1): the automorphism sheaves of objects of the category of smooth lifts are abelian”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.fiber_endomorphisms_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesAutomorphismAbelian.lean, line 482](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesAutomorphismAbelian.lean#L482). The attribute's comment: “part (1): the automorphism sheaves of objects of the category of smooth lifts are abelian”.
 
 > **Stacks 0CKG, part (1).** Let `𝒳 ⊂ 𝒳'` be a first-order thickening of algebraic stacks, `W` an
 > algebraic space and `x : W ⟶ 𝒳` smooth, and consider the category `𝒞` of smooth lifts of the étale
@@ -424,7 +424,7 @@ theorem fiber_endomorphisms_comm (hι₁ : AlgebraicStacks.IsFirstOrderThickenin
     α ≫ β = β ≫ α
 ```
 
-**`AlgebraicGeometry.Stack.EtaleSmoothLift.exists_band_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesBandQuasicoherent.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesBandQuasicoherent.lean#L265). The attribute's comment: “part (2): the sheaf of groups `𝒢` of Stacks 0CJY is a quasi-coherent `𝒪_W`-module”.
+**`AlgebraicGeometry.Stack.EtaleSmoothLift.exists_band_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesBandQuasicoherent.lean, line 265](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesBandQuasicoherent.lean#L265). The attribute's comment: “part (2): the sheaf of groups `𝒢` of Stacks 0CJY is a quasi-coherent `𝒪_W`-module”.
 
 > **Stacks 0CKG (2).** In Situation 0CJP, let `𝒳 ⊂ 𝒳'` be a first order thickening. Then the
 > sheaf of groups `𝒢` of Stacks 0CJY — the band of the gerbe `p : 𝒞 ⟶ W_{spaces,étale}` of smooth
@@ -479,7 +479,7 @@ theorem exists_band_isQuasicoherent (hι₁ : AlgebraicStacks.IsFirstOrderThicke
 
 [Tag 0CKI](https://stacks.math.columbia.edu/tag/0CKI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_smooth_affine_lift_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEmertonLift.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEmertonLift.lean#L56).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_smooth_affine_lift_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEmertonLift.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LiftingAffinesEmertonLift.lean#L56).
 
 > **Stacks 0CKI (Emerton).** Let `ι : 𝒳 ⟶ 𝒳'` be a first order thickening of algebraic stacks,
 > let `W` be affine and let `x : W ⟶ 𝒳` be smooth. Then there are an affine `W'`, a morphism
@@ -511,4 +511,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.6, Tag 0CJN](https://stacks.math.columbia.edu/tag/0CJN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 107.4 Formal branches and multiplicities
 
-Section 107.4 of the Stacks Project, [Tag 0DR9](https://stacks.math.columbia.edu/tag/0DR9). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 107.4 of the Stacks Project, [Tag 0DR9](https://stacks.math.columbia.edu/tag/0DR9). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DRA, a definition
 
 [Tag 0DRA](https://stacks.math.columbia.edu/tag/0DRA) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.formalBranches`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranches.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranches.lean#L107). The attribute's comment: “the irreducible components of Spec A for a versal ring A, recorded by their generic points”.
+**`AlgebraicGeometry.Stack.formalBranches`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranches.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranches.lean#L107). The attribute's comment: “the irreducible components of Spec A for a versal ring A, recorded by their generic points”.
 
 > **Stacks 0DRA.** The formal branches of `𝒳` through `x₀`, read off a versal ring `A` to `𝒳`
 > at `x₀`: the irreducible components of `Spec A`, each recorded by its generic point, that is, the
@@ -27,7 +27,7 @@ def formalBranches
     (_hA : IsVersalRingAt D iΛ hiΛ x₀ hx₀ hfinite A) : Set (Ideal A)
 ```
 
-**`AlgebraicGeometry.Stack.formalBranchesEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchIdentification.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchIdentification.lean#L191). The attribute's comment: “the identification of the formal branches read off two versal rings A, A' along a map A → A' compatible with the versal formal objects, independent of the map”.
+**`AlgebraicGeometry.Stack.formalBranchesEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchIdentification.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchIdentification.lean#L191). The attribute's comment: “the identification of the formal branches read off two versal rings A, A' along a map A → A' compatible with the versal formal objects, independent of the map”.
 
 > **Stacks 0DRA.** The formal branches of `𝒳` through `x₀` read off two versal rings
 > `A = ξ.base` and `A' = ξ'.base` are identified along any map `A → A'` compatible with the versal
@@ -49,7 +49,7 @@ def formalBranchesEquiv (a : ξ ⟶ ξ') :
 
 [Tag 0DRB](https://stacks.math.columbia.edu/tag/0DRB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.formalBranchComponent_surjective_and_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchComponents.lean, line 1077](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchComponents.lean#L1077).
+**`AlgebraicGeometry.Stack.formalBranchComponent_surjective_and_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchComponents.lean, line 1077](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchComponents.lean#L1077).
 
 > **Stacks 0DRB.** In the situation of Definition 0DRA — an algebraic stack `𝒳` locally of
 > finite type over a locally Noetherian scheme `S`, a point `x₀ : Spec k ⟶ 𝒳` with `k` of finite
@@ -101,7 +101,7 @@ theorem formalBranchComponent_surjective_and_canonical :
 
 [Tag 0DRC](https://stacks.math.columbia.edu/tag/0DRC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.formalBranchMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranches.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranches.lean#L156). The attribute's comment: “the multiplicity of a formal branch, computed on a versal ring A; its independence of A is formalBranchMultiplicity\_independent”.
+**`AlgebraicGeometry.Stack.formalBranchMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranches.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranches.lean#L156). The attribute's comment: “the multiplicity of a formal branch, computed on a versal ring A; its independence of A is formalBranchMultiplicity\_independent”.
 
 > **Stacks 0DRC.** The multiplicity of a formal branch of `𝒳` through `x₀`: the multiplicity of
 > the corresponding irreducible component of `Spec A`, that is, the length over itself of the local
@@ -114,7 +114,7 @@ def formalBranchMultiplicity {p : Ideal A}
     (hp : p ∈ formalBranches D iΛ hiΛ x₀ hx₀ hfinite A hA) : ℕ∞
 ```
 
-**`AlgebraicGeometry.Stack.formalBranchMultiplicity_independent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicityIndependence.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicityIndependence.lean#L125). The attribute's comment: “the multiplicity is independent of the versal ring: for any two versal rings, the identification of branches along the comparison A ≅ A'[[t₁,…,t\_r]] preserves it”.
+**`AlgebraicGeometry.Stack.formalBranchMultiplicity_independent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicityIndependence.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicityIndependence.lean#L125). The attribute's comment: “the multiplicity is independent of the versal ring: for any two versal rings, the identification of branches along the comparison A ≅ A'[[t₁,…,t\_r]] preserves it”.
 
 > **Stacks 0DRC, for any two versal rings.** Let `A` and `A'` be versal rings to `𝒳` at `x₀`,
 > for any two presentations of `x₀` over affine opens of `S`. After possibly swapping them there is
@@ -143,7 +143,7 @@ theorem formalBranchMultiplicity_independent :
         formalBranchMultiplicity D iΛ hiΛ x₀ hx₀ hfinite A hA P.2)
 ```
 
-**`AlgebraicGeometry.Stack.formalBranchMultiplicity_independent_of_realization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicityIndependence.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicityIndependence.lean#L159). The attribute's comment: “the multiplicity is independent of the versal ring, along the comparison A ≅ A'[[t₁,…,t\_r]] compatible with the versal formal objects (0DR1 (1)) identifying the branches”.
+**`AlgebraicGeometry.Stack.formalBranchMultiplicity_independent_of_realization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicityIndependence.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicityIndependence.lean#L159). The attribute's comment: “the multiplicity is independent of the versal ring, along the comparison A ≅ A'[[t₁,…,t\_r]] compatible with the versal formal objects (0DR1 (1)) identifying the branches”.
 
 > **Stacks 0DRC, along the comparison compatible with the versal formal objects.** Let `ξ`, `ξ'`
 > be versal formal objects at `x₀`, over the versal rings `A = ξ.base`, `A' = ξ'.base` and for any
@@ -198,7 +198,7 @@ theorem formalBranchMultiplicity_independent_of_realization
         formalBranchMultiplicity D iΛ hiΛ x₀ hx₀ hfinite ξ.base ⟨ξ, rfl, hξ⟩ P.2)
 ```
 
-**`MvPowerSeries.length_localization_minimalPrimesEquivOfRingEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPowerSeries/MinimalPrimesLength.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MvPowerSeries/MinimalPrimesLength.lean#L166). The attribute's comment: “Spec A[[t₁,…,t\_r]] → Spec A induces a bijection on irreducible components preserving multiplicities, which makes the multiplicity independent of the versal ring”.
+**`MvPowerSeries.length_localization_minimalPrimesEquivOfRingEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPowerSeries/MinimalPrimesLength.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/MvPowerSeries/MinimalPrimesLength.lean#L166). The attribute's comment: “Spec A[[t₁,…,t\_r]] → Spec A induces a bijection on irreducible components preserving multiplicities, which makes the multiplicity independent of the versal ring”.
 
 > **Multiplicities along `A → A[[t₁, …, t_r]] ≅ B`.** A minimal prime `𝔭` of `A` and the
 > corresponding minimal prime `φ(𝔭) B` of `B` have localizations of the same length: the
@@ -220,7 +220,7 @@ theorem length_localization_minimalPrimesEquivOfRingEquiv (P : minimalPrimes A) 
 
 [Tag 0DRD](https://stacks.math.columbia.edu/tag/0DRD) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.componentMultiplicity_formalBranchComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicity.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicity.lean#L299).
+**`AlgebraicGeometry.Stack.componentMultiplicity_formalBranchComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicity.lean, line 299](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormalBranchMultiplicity.lean#L299).
 
 > **Stacks 0DRD.** Let `𝒳` be an algebraic stack locally of finite type over a locally
 > Noetherian scheme `S` (the versal situation, **Stacks 0DQU**) and let `x₀ : Spec k ⟶ 𝒳` be a point
@@ -265,4 +265,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 107.4, Tag 0DR9](https://stacks.math.columbia.edu/tag/0DR9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

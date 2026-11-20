@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.12 Ranks of modules
 
-Section 31.12 of the Stacks Project, [Tag 0HAE](https://stacks.math.columbia.edu/tag/0HAE). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 31.12 of the Stacks Project, [Tag 0HAE](https://stacks.math.columbia.edu/tag/0HAE). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0HAF, a definition
 
 [Tag 0HAF](https://stacks.math.columbia.edu/tag/0HAF) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.rank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L76).
+**`AlgebraicGeometry.Scheme.Modules.rank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L76).
 
 > **Stacks 0HAF.** The *rank* of an `𝒪_X`-module `ℱ` on an integral scheme `X` with generic
 > point `η` is `dim_{κ(η)} ℱ_η`, the dimension of the stalk at the generic point over the local
@@ -30,7 +30,7 @@ noncomputable def rank [IsIntegral X] (F : X.Modules) : Cardinal.{u}
 
 [Tag 0HAG](https://stacks.math.columbia.edu/tag/0HAG) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.rank_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L121).
+**`AlgebraicGeometry.Scheme.Modules.rank_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L121).
 
 > **Stacks 0HAG.** Let `X` be an integral scheme, `ℱ` a quasi-coherent `𝒪_X`-module and `r` a
 > cardinal. The following are equivalent: `ℱ` has rank `r`; for every nonempty affine open
@@ -51,7 +51,7 @@ theorem rank_tfae [IsIntegral X] (F : X.Modules) [F.IsQuasicoherent] (r : Cardin
 
 [Tag 0HAH](https://stacks.math.columbia.edu/tag/0HAH) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.rank_pullback_of_isDominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L152).
+**`AlgebraicGeometry.Scheme.Modules.rank_pullback_of_isDominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L152).
 
 > **Stacks 0HAH.** Let `f : X ⟶ Y` be a dominant morphism of integral schemes and `𝒢` a
 > quasi-coherent `𝒪_Y`-module. Then the rank of `𝒢` on `Y` is the rank of `f^*𝒢` on `X`.
@@ -66,7 +66,7 @@ theorem rank_pullback_of_isDominant {X Y : Scheme.{u}} [IsIntegral X] [IsIntegra
 
 [Tag 0HAI](https://stacks.math.columbia.edu/tag/0HAI) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.rank_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L182).
+**`AlgebraicGeometry.Scheme.Modules.rank_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 182](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L182).
 
 > **Stacks 0HAI.** On an integral scheme, for a short exact sequence
 > `0 → ℱ → ℱ' → ℱ'' → 0` of quasi-coherent `𝒪_X`-modules the rank of `ℱ'` is the sum of the ranks
@@ -82,7 +82,7 @@ theorem rank_of_shortExact [IsIntegral X] (S : ShortComplex X.Modules) (hS : S.S
 
 [Tag 0HAJ](https://stacks.math.columbia.edu/tag/0HAJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.rank_tensor_and_rank_sheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L246).
+**`AlgebraicGeometry.Scheme.Modules.rank_tensor_and_rank_sheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L246).
 
 > **Stacks 0HAJ.** Let `X` be an integral scheme and `ℱ`, `𝒢` quasi-coherent `𝒪_X`-modules.
 > (1) The rank of `ℱ ⊗_{𝒪_X} 𝒢` is the product of the ranks of `ℱ` and `𝒢`. (2) If `ℱ` is of
@@ -104,7 +104,7 @@ theorem rank_tensor_and_rank_sheafHom [IsIntegral X] (F G : X.Modules) [F.IsQuas
 
 [Tag 0HAK](https://stacks.math.columbia.edu/tag/0HAK) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.exists_rank_eq_and_over_iso_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L260).
+**`AlgebraicGeometry.Scheme.Modules.exists_rank_eq_and_over_iso_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/RankOfModules.lean#L260).
 
 > **Stacks 0HAK.** Let `X` be an integral scheme and `ℱ` a quasi-coherent `𝒪_X`-module of
 > finite type. Then `ℱ` has finite rank `r ≥ 0`, and there is a nonempty open `U ⊆ X` such that
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.12, Tag 0HAE](https://stacks.math.columbia.edu/tag/0HAE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.20 Higher direct images of coherent sheaves
 
-Section 69.20 of the Stacks Project, [Tag 08AP](https://stacks.math.columbia.edu/tag/08AP). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 69.20 of the Stacks Project, [Tag 08AP](https://stacks.math.columbia.edu/tag/08AP). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08AQ, a lemma
 
 [Tag 08AQ](https://stacks.math.columbia.edu/tag/08AQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ProjectiveSpaceImmersion.twist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishing.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishing.lean#L207). The attribute's comment: “the twist L = i^* O\_\{P^n\_Y}(1) of the statement”.
+**`AlgebraicGeometry.Space.ProjectiveSpaceImmersion.twist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishing.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishing.lean#L207). The attribute's comment: “the twist L = i^* O\_\{P^n\_Y}(1) of the statement”.
 
 > **The twist `L = i^* O_{P^n_Y}(1)` of Stacks 08AQ**: the inverse image of the hyperplane
 > sheaf of `P^n_S` along `X ⟶ P^n_Y ⟶ P^n_S`.
@@ -24,7 +24,7 @@ noncomputable def twist (D : ProjectiveSpaceImmersion B S hS n hP X Y) :
     Modules.{u, u} B S hS X.1 X.2
 ```
 
-**`AlgebraicGeometry.Space.exists_twistBound_isZero_rightDerived_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishingNoetherian.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishingNoetherian.lean#L450). The attribute's comment: “the complete statement, for Y Noetherian and F coherent”.
+**`AlgebraicGeometry.Space.exists_twistBound_isZero_rightDerived_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishingNoetherian.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishingNoetherian.lean#L450). The attribute's comment: “the complete statement, for Y Noetherian and F coherent”.
 
 > **Stacks 08AQ.** Let `i : X ⟶ P^n_Y` be a closed immersion of algebraic spaces over `S` with
 > `Y` Noetherian, let `f : X ⟶ Y` be the composite with the projection and let
@@ -53,7 +53,7 @@ theorem exists_twistBound_isZero_rightDerived_modulePushforward
 
 [Tag 08AR](https://stacks.math.columbia.edu/tag/08AR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_rightDerived_modulePushforward_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperHigherDirectImageCoherence.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperHigherDirectImageCoherence.lean#L330).
+**`AlgebraicGeometry.Space.isCoherent_rightDerived_modulePushforward_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperHigherDirectImageCoherence.lean, line 330](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperHigherDirectImageCoherence.lean#L330).
 
 > **Stacks 08AR.**  Let `f : X ⟶ Y` be a proper morphism of algebraic spaces over `S` with `Y`
 > locally Noetherian, and let `𝓕` be a coherent `𝒪_X`-module.  Then `R^i f_*𝓕` is a coherent
@@ -75,7 +75,7 @@ theorem isCoherent_rightDerived_modulePushforward_of_isProper (f : X ⟶ Y)
     IsCoherent B S hS Y.1 Y.2 (((modulePushforward B S hS f).rightDerived i).obj F)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_higherDirectImage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperHigherDirectImageCoherent.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperHigherDirectImageCoherent.lean#L87). References: EGA III (3.2.1), “more general”.
+**`AlgebraicGeometry.Space.isCoherent_higherDirectImage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperHigherDirectImageCoherent.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperHigherDirectImageCoherent.lean#L87). References: EGA III (3.2.1), “more general”.
 
 > **Stacks 08AR.**  Let `f : X ⟶ Y` be a proper morphism of algebraic spaces over `S` with `Y`
 > locally Noetherian, and let `𝓕` be a coherent `𝒪_X`-module.  Then `R^i f_*𝓕` is a coherent
@@ -103,7 +103,7 @@ theorem isCoherent_higherDirectImage_of_isProper {X Y : AlgebraicSpaces B S hS}
 
 [Tag 08AS](https://stacks.math.columbia.edu/tag/08AS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.moduleFinite_cohomologyOverBase_of_isProper_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperCohomologyOverBaseFinite.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperCohomologyOverBaseFinite.lean#L66). The attribute's comment: “H^i(X, F) as cohomologyOverBase, at every module universe max (u + 1) w”.
+**`AlgebraicGeometry.Space.moduleFinite_cohomologyOverBase_of_isProper_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperCohomologyOverBaseFinite.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperCohomologyOverBaseFinite.lean#L66). The attribute's comment: “H^i(X, F) as cohomologyOverBase, at every module universe max (u + 1) w”.
 
 > **Stacks 08AS.**  Let `A` be a Noetherian ring, `f : X ⟶ Spec A` a proper morphism of
 > algebraic spaces and `F` a coherent `𝒪_X`-module.  Then `Hⁱ(X, F)` is a finite `A`-module for
@@ -127,7 +127,7 @@ theorem moduleFinite_cohomologyOverBase_of_isProper_of_isCoherent
     Module.Finite A (cohomologyOverBase.{u, w} A B hA X hX F i)
 ```
 
-**`AlgebraicGeometry.Space.moduleFinite_cohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModuleCohomologyFinite.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperModuleCohomologyFinite.lean#L298).
+**`AlgebraicGeometry.Space.moduleFinite_cohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperModuleCohomologyFinite.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperModuleCohomologyFinite.lean#L298).
 
 > **Stacks 08AS.**  Let `A` be a Noetherian ring, `f : X ⟶ Spec A` a proper morphism of
 > algebraic spaces and `F` a coherent `𝒪_X`-module.  Then `Hⁱ(X, F)` is a finite `A`-module for
@@ -157,7 +157,7 @@ theorem moduleFinite_cohomology_of_isProper [IsNoetherianRing A]
 
 [Tag 08AT](https://stacks.math.columbia.edu/tag/08AT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.moduleFinite_cohomology_of_isProper_of_algebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperCohomologyFiniteAlgebra.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperCohomologyFiniteAlgebra.lean#L374). The attribute's comment: “ungraded, which is more general: the grading is never used by the proof”.
+**`AlgebraicGeometry.Space.moduleFinite_cohomology_of_isProper_of_algebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperCohomologyFiniteAlgebra.lean, line 374](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperCohomologyFiniteAlgebra.lean#L374). The attribute's comment: “ungraded, which is more general: the grading is never used by the proof”.
 
 > **Stacks 08AT.**  Let `A` be a Noetherian ring, `R` a finitely generated `A`-algebra and
 > `f : X ⟶ Spec A` a proper morphism of algebraic spaces.  Let `F` be a quasi-coherent
@@ -193,4 +193,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.20, Tag 08AP](https://stacks.math.columbia.edu/tag/08AP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

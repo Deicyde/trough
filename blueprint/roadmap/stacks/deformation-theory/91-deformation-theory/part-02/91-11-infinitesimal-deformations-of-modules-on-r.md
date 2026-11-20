@@ -8,13 +8,13 @@ proof: formalized
 
 # 91.11 Infinitesimal deformations of modules on ringed topoi
 
-Section 91.11 of the Stacks Project, [Tag 08MN](https://stacks.math.columbia.edu/tag/08MN). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 91.11 of the Stacks Project, [Tag 08MN](https://stacks.math.columbia.edu/tag/08MN). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08MP, a lemma
 
 [Tag 08MP](https://stacks.math.columbia.edu/tag/08MP) in the Stacks Project.
 
-**`Deformation.ToposThickening.moduleMapLift_torsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/PushforwardComparison/ModuleMapLifts.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/PushforwardComparison/ModuleMapLifts.lean#L382).
+**`Deformation.ToposThickening.moduleMapLift_torsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/PushforwardComparison/ModuleMapLifts.lean, line 382](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/PushforwardComparison/ModuleMapLifts.lean#L382).
 
 > **Stacks 08MP.** If a map of pullbacks across a first order thickening has a lift, then its
 > lifts form a principal homogeneous space under the maps from the pullback of `F'` to the descent of
@@ -41,7 +41,7 @@ theorem moduleMapLift_torsor (hi : FirstOrderThickening i)
 
 [Tag 08MQ](https://stacks.math.columbia.edu/tag/08MQ) in the Stacks Project.
 
-**`Deformation.ToposThickening.isFlat_iff_isIso_canonicalMap_of_isStrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftFlatness.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatLiftFlatness.lean#L113).
+**`Deformation.ToposThickening.isFlat_iff_isIso_canonicalMap_of_isStrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftFlatness.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/FlatLiftFlatness.lean#L113).
 
 > **Stacks 08MQ.** Let `(f, f')` be a morphism of first order thickenings of ringed topoi as in
 > Situation 08M7, let `ℱ'` be an `O'`-module and set `ℱ = i^*ℱ'`. Assume that `ℱ` is flat over
@@ -102,7 +102,7 @@ theorem isFlat_iff_isIso_canonicalMap_of_isStrict
 
 [Tag 08VU](https://stacks.math.columbia.edu/tag/08VU) in the Stacks Project.
 
-**`Deformation.ToposThickening.isFinitePresentation_iff_pullbackModules_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FinitePresentationFlatLift.lean, line 809](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FinitePresentationFlatLift.lean#L809).
+**`Deformation.ToposThickening.isFinitePresentation_iff_pullbackModules_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FinitePresentationFlatLift.lean, line 813](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/FinitePresentationFlatLift.lean#L813).
 
 > **Stacks 08VU.** Let `(f, f')` be a morphism of first order thickenings of ringed topoi as
 > in Situation 08M7, let `ℱ'` be an `O'`-module and set `ℱ = i^*ℱ'`. Assume that `ℱ'` is flat
@@ -136,7 +136,7 @@ theorem isFinitePresentation_iff_pullbackModules_of_isFlat
 
 [Tag 08MR](https://stacks.math.columbia.edu/tag/08MR) in the Stacks Project.
 
-**`Deformation.ToposThickening.exists_addTorsor_moduleMapLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/IdealProductTensorIso.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/IdealProductTensorIso.lean#L342). The attribute's comment: “The whole statement, under exactly the source's hypotheses (Situation 08M7, strict morphism, G' flat over O\_\{B'}), with the action of the source pinned: α sends φ' to φ' + ι ∘ α, read in I·G' through the canonical isomorphism of 08MQ.”.
+**`Deformation.ToposThickening.exists_addTorsor_moduleMapLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/IdealProductTensorIso.lean, line 342](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/IdealProductTensorIso.lean#L342). The attribute's comment: “The whole statement, under exactly the source's hypotheses (Situation 08M7, strict morphism, G' flat over O\_\{B'}), with the action of the source pinned: α sends φ' to φ' + ι ∘ α, read in I·G' through the canonical isomorphism of 08MQ.”.
 
 > **Stacks 08MR.** Let `(f, f')` be a strict morphism of first order thickenings of ringed
 > topoi as in Situation 08M7, let `ℱ'` and `𝒢'` be `O'`-modules with `𝒢'` flat over `O_{ℬ'}`, set
@@ -186,7 +186,7 @@ theorem exists_addTorsor_moduleMapLift
 
 [Tag 08MS](https://stacks.math.columbia.edu/tag/08MS) in the Stacks Project.
 
-**`Deformation.ToposThickening.moduleMapObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean#L240).
+**`Deformation.ToposThickening.moduleMapObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean, line 240](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean#L240).
 
 > **Stacks 08MS.** There is a class `o(φ)` in `Ext¹_O(Li^*F', I·G')` whose vanishing is
 > necessary and sufficient for the `O`-linear map `φ : i^*F' ⟶ i^*G'` to be the pullback of an
@@ -206,7 +206,7 @@ noncomputable def moduleMapObstruction :
       o = 0 ↔ Nonempty (ModuleMapLift F' G' φ) }
 ```
 
-**`Deformation.ToposThickening.moduleMapObstructionClass`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean#L273).
+**`Deformation.ToposThickening.moduleMapObstructionClass`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean#L273).
 
 > **Stacks 08MS.** The obstruction class `o(φ) ∈ Ext¹_O(Li^*F', I·G')` itself.
 
@@ -220,7 +220,7 @@ noncomputable abbrev moduleMapObstructionClass :
           (idealProductModule hi G').val) 1
 ```
 
-**`Deformation.ToposThickening.moduleMapObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean#L284).
+**`Deformation.ToposThickening.moduleMapObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean, line 284](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/ModuleMapObstruction.lean#L284).
 
 > **Stacks 08MS.** The obstruction class vanishes exactly when `φ` lifts.
 
@@ -229,7 +229,7 @@ theorem moduleMapObstructionClass_eq_zero_iff :
     moduleMapObstructionClass hi d F' G' φ = 0 ↔ Nonempty (ModuleMapLift F' G' φ)
 ```
 
-**`Deformation.ToposThickening.moduleMapLiftObstruction_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModuleMapObstructionDerivedPullback.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ModuleMapObstructionDerivedPullback.lean#L113).
+**`Deformation.ToposThickening.moduleMapLiftObstruction_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModuleMapObstructionDerivedPullback.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/ModuleMapObstructionDerivedPullback.lean#L113).
 
 > **Stacks 08MS.** Let `i : (Sh(C), O) ⟶ (Sh(D), O')` be a first order thickening of ringed
 > topoi, let `F'`, `G'` be `O'`-modules and let `φ : i^*F' ⟶ i^*G'` be `O`-linear. The element
@@ -248,7 +248,7 @@ theorem moduleMapLiftObstruction_eq_zero_iff (hi : FirstOrderThickening i)
 
 [Tag 08MT](https://stacks.math.columbia.edu/tag/08MT) in the Stacks Project.
 
-**`Deformation.ToposThickening.relativeModuleMapObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/IdealActionMono.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/IdealActionMono.lean#L254).
+**`Deformation.ToposThickening.relativeModuleMapObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/IdealActionMono.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/IdealActionMono.lean#L254).
 
 > **Stacks 08MT.** Let `(f, f')` be a strict morphism of first order thickenings of ringed
 > topoi as in Situation 08M7, let `ℱ'` and `𝒢'` be `O'`-modules flat over `O_{ℬ'}`, set
@@ -285,7 +285,7 @@ theorem relativeModuleMapObstructionClass_eq_zero_iff
 
 [Tag 08MU](https://stacks.math.columbia.edu/tag/08MU) in the Stacks Project.
 
-**`Deformation.ToposThickening.nonempty_addTorsor_flatLiftClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftClassCorrespondence.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatLiftClassCorrespondence.lean#L476).
+**`Deformation.ToposThickening.nonempty_addTorsor_flatLiftClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftClassCorrespondence.lean, line 472](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/FlatLiftClassCorrespondence.lean#L472).
 
 > **Stacks 08MU.** Let `(f, f')` be a strict morphism of first order thickenings of ringed
 > topoi as in Situation 08M7 and let `ℱ` be an `O`-module flat over `O_ℬ`. If `ℱ` has at least one
@@ -313,7 +313,7 @@ theorem nonempty_addTorsor_flatLiftClass
       (FlatLiftClass i f' hi F))
 ```
 
-**`Deformation.ToposThickening.exists_addTorsor_flatLiftClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftClassTorsor.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatLiftClassTorsor.lean#L96).
+**`Deformation.ToposThickening.exists_addTorsor_flatLiftClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftClassTorsor.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/FlatLiftClassTorsor.lean#L96).
 
 > **Stacks 08MU.** Let `(f, f')` be a strict morphism of first order thickenings of ringed
 > topoi as in Situation 08M7 and let `ℱ` be an `O`-module flat over `O_ℬ`. If there is a pair
@@ -371,7 +371,7 @@ theorem exists_addTorsor_flatLiftClass (i : RingedToposHom X X') (t : RingedTopo
 
 [Tag 08MV](https://stacks.math.columbia.edu/tag/08MV) in the Stacks Project.
 
-**`Deformation.ToposThickening.hasFlatLift_iff_isIso_and_obstruction_eq_zero'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftCorrespondence.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FlatLiftCorrespondence.lean#L234). The attribute's comment: “in Situation 08M7, for a strict morphism and F flat over O\_B”.
+**`Deformation.ToposThickening.hasFlatLift_iff_isIso_and_obstruction_eq_zero'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FlatLiftCorrespondence.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/FlatLiftCorrespondence.lean#L234). The attribute's comment: “in Situation 08M7, for a strict morphism and F flat over O\_B”.
 
 > **Stacks 08MV, unconditionally.** Let `(f, f')` be a morphism of first order thickenings of
 > ringed topoi as in Situation 08M7, strict, and let `ℱ` be an `O`-module flat over `O_ℬ`. Then
@@ -407,4 +407,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.11, Tag 08MN](https://stacks.math.columbia.edu/tag/08MN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

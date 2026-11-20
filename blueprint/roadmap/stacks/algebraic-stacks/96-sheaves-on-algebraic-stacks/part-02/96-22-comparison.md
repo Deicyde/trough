@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.22 Comparison
 
-Section 96.22 of the Stacks Project, [Tag 073L](https://stacks.math.columbia.edu/tag/073L). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 96.22 of the Stacks Project, [Tag 073L](https://stacks.math.columbia.edu/tag/073L). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 075L, a lemma
 
 [Tag 075L](https://stacks.math.columbia.edu/tag/075L) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.injective_restrictionAbSheafFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceInjectives.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceInjectives.lean#L208). The attribute's comment: “part (1), injective abelian sheaves”.
+**`AlgebraicGeometry.Space.injective_restrictionAbSheafFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceInjectives.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceInjectives.lean#L208). The attribute's comment: “part (1), injective abelian sheaves”.
 
 > **Stacks Project, Tag 075L, part (1).** Let `𝒳` be a category fibred in groupoids over the
 > big fppf site of `S` representable by the algebraic space `F`. If `I` is injective in
@@ -32,7 +32,7 @@ theorem injective_restrictionAbSheafFunctor_obj (hp : p.IsFiberedInGroupoids)
     Injective ((restrictionAbSheafFunctor B S hS F p hp e).obj I)
 ```
 
-**`AlgebraicGeometry.Space.isKInjective_restrictionAbSheafFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceInjectives.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceInjectives.lean#L226). The attribute's comment: “part (2), K-injective complexes”.
+**`AlgebraicGeometry.Space.isKInjective_restrictionAbSheafFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceInjectives.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceInjectives.lean#L226). The attribute's comment: “part (2), K-injective complexes”.
 
 > **Stacks Project, Tag 075L, part (2).** Let `𝒳` be a category fibred in groupoids over the
 > big fppf site of `S` representable by the algebraic space `F`. If `I` is a K-injective complex
@@ -53,7 +53,7 @@ theorem isKInjective_restrictionAbSheafFunctor_obj (hp : p.IsFiberedInGroupoids)
         (ComplexShape.up ℤ)).obj I)
 ```
 
-**`AlgebraicGeometry.Space.injective_restrictionAbSheafFunctor_obj_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean#L121). The attribute's comment: “part (1), injective abelian sheaves, with no size hypothesis”.
+**`AlgebraicGeometry.Space.injective_restrictionAbSheafFunctor_obj_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean#L121). The attribute's comment: “part (1), injective abelian sheaves, with no size hypothesis”.
 
 > **Stacks 075L, part (1), with no size hypothesis.** For abelian sheaves with values in the
 > universe of the schemes, the sheafifications and Kan extensions that
@@ -70,7 +70,7 @@ theorem injective_restrictionAbSheafFunctor_obj_univ (hp : p.IsFiberedInGroupoid
     Injective ((restrictionAbSheafFunctor.{u} B S hS F p hp e).obj I)
 ```
 
-**`AlgebraicGeometry.Space.isKInjective_restrictionAbSheafFunctor_obj_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean#L144). The attribute's comment: “part (2), K-injective complexes, with no size hypothesis”.
+**`AlgebraicGeometry.Space.isKInjective_restrictionAbSheafFunctor_obj_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean#L144). The attribute's comment: “part (2), K-injective complexes, with no size hypothesis”.
 
 > **Stacks 075L, part (2), with no size hypothesis.** The degreewise restriction of a
 > K-injective complex of abelian sheaves on `𝒳_étale` to `F_étale` is K-injective, for sheaves with
@@ -95,7 +95,7 @@ theorem isKInjective_restrictionAbSheafFunctor_obj_univ (hp : p.IsFiberedInGroup
         (ComplexShape.up ℤ)).obj I)
 ```
 
-**`AlgebraicGeometry.Space.restriction_modules_not_preserves_injectives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean#L369). The attribute's comment: “the final sentence: the same does not hold for modules, for neither part”.
+**`AlgebraicGeometry.Space.restriction_modules_not_preserves_injectives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean, line 369](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceModules.lean#L369). The attribute's comment: “the final sentence: the same does not hold for modules, for neither part”.
 
 > **Stacks 075L, the failure for modules.** Restriction of abelian sheaves from an algebraic
 > stack representable by an algebraic space `F` to `F_étale` preserves injectives and K-injective
@@ -119,7 +119,7 @@ theorem restriction_modules_not_preserves_injectives (B : BigFppfSite.{u}) :
 
 [Tag 075N](https://stacks.math.columbia.edu/tag/075N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.restrictedTotalDerivedDirectImageIsoClauses`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RestrictionTotalDerivedDirectImage.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RestrictionTotalDerivedDirectImage.lean#L370). The attribute's comment: “Both clauses, with the four derived direct images constructed: (1) for abelian sheaves (Rf\_*F)|\_\{G\_etale} = Rf\_\{small,*}(F|\_\{F\_etale}) in D(G\_etale), (2) the same identity in D(O\_G) for sheaves of modules. Rf\_* and Rf\_\{small,*} are the total right derived functors of degreewise direct image, which exist by K-injective resolutions (Tag 079P) on the four essentially small sites; the inputs are S, the 1-morphism and the two presentations.”.
+**`AlgebraicGeometry.Space.restrictedTotalDerivedDirectImageIsoClauses`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RestrictionTotalDerivedDirectImage.lean, line 370](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RestrictionTotalDerivedDirectImage.lean#L370). The attribute's comment: “Both clauses, with the four derived direct images constructed: (1) for abelian sheaves (Rf\_*F)|\_\{G\_etale} = Rf\_\{small,*}(F|\_\{F\_etale}) in D(G\_etale), (2) the same identity in D(O\_G) for sheaves of modules. Rf\_* and Rf\_\{small,*} are the total right derived functors of degreewise direct image, which exist by K-injective resolutions (Tag 079P) on the four essentially small sites; the inputs are S, the 1-morphism and the two presentations.”.
 
 > **Stacks 075N.** Let `S` be a scheme in a big fppf site, let `f : 𝒳 ⥤ 𝒴` be a 1-morphism of
 > categories fibred in groupoids over `(Sch/S)_{fppf}` with `𝒳` presented by an algebraic space `F`
@@ -174,7 +174,7 @@ def restrictedTotalDerivedDirectImageIsoClauses
 
 [Tag 075P](https://stacks.math.columbia.edu/tag/075P) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.inducedSquareSpacesHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean#L140). The attribute's comment: “the induced morphism of algebraic spaces f' : F' ⟶ G' named in the conclusion, through chosen equivalences of the apex with F' and of Y' with G'. The displayed base change identity of this tag is NOT proved”.
+**`AlgebraicGeometry.Stack.inducedSquareSpacesHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean#L140). The attribute's comment: “the induced morphism of algebraic spaces f' : F' ⟶ G' named in the conclusion, through chosen equivalences of the apex with F' and of Y' with G'. The displayed base change identity of this tag is NOT proved”.
 
 > **The morphism of algebraic spaces `f' : F' ⟶ G'` of Stacks 075P.**  For a 2-fibre product
 > square over the cospan `(g, f)`, with the apex represented by an algebraic space `F'` and the
@@ -204,7 +204,7 @@ noncomputable def inducedSquareSpacesHom
     F' ⟶ G'
 ```
 
-**`AlgebraicGeometry.Stack.RepresentableBaseChangeSquare.exists_isAlgebraicSpace_apex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquareDerived.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquareDerived.lean#L305). The attribute's comment: “The first assertion: the apex X' of the 2-fibre product square is representable by an algebraic space F', given that f is representable by algebraic spaces and that Y' is representable by an algebraic space.”.
+**`AlgebraicGeometry.Stack.RepresentableBaseChangeSquare.exists_isAlgebraicSpace_apex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquareDerived.lean, line 305](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquareDerived.lean#L305). The attribute's comment: “The first assertion: the apex X' of the 2-fibre product square is representable by an algebraic space F', given that f is representable by algebraic spaces and that Y' is representable by an algebraic space.”.
 
 > **The apex of the square is representable by an algebraic space**, when `f` is
 > representable by algebraic spaces and `𝒴'` is representable by an algebraic space. This is
@@ -220,7 +220,7 @@ theorem exists_isAlgebraicSpace_apex (hf : IsRepresentableByAlgebraicSpaces B S 
         (presheafOfCategories (F' ⋙ typeToCat)).p)
 ```
 
-**`AlgebraicGeometry.Stack.RepresentableBaseChangeSquare.restrictedDerivedBaseChangeIsoClauses`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquareDerived.lean, line 1125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquareDerived.lean#L1125). The attribute's comment: “The displayed identity, both clauses, as isomorphisms of functors on the unbounded derived categories: (1) g^\{-1}(Rf\_*F)|\_\{G'\_etale} = Rf'\_\{small,*}((g')^\{-1}F|\_\{F'\_etale}) for F in D(X\_etale), (2) the same identity for F in D(O\_X), for any presentations of Y' and of the apex X' by algebraic spaces G' and F'.”.
+**`AlgebraicGeometry.Stack.RepresentableBaseChangeSquare.restrictedDerivedBaseChangeIsoClauses`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquareDerived.lean, line 1125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquareDerived.lean#L1125). The attribute's comment: “The displayed identity, both clauses, as isomorphisms of functors on the unbounded derived categories: (1) g^\{-1}(Rf\_*F)|\_\{G'\_etale} = Rf'\_\{small,*}((g')^\{-1}F|\_\{F'\_etale}) for F in D(X\_etale), (2) the same identity for F in D(O\_X), for any presentations of Y' and of the apex X' by algebraic spaces G' and F'.”.
 
 > **Stacks 075P.** Let `S` be a scheme and let
 >
@@ -276,7 +276,7 @@ def restrictedDerivedBaseChangeIsoClauses :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isTwoFibreProduct`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L172), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean#L111) (StacksFrontier): “the first assertion of the conclusion: the apex X' of the 2-fibre product square is representable by an algebraic space F', given that f is representable by algebraic spaces and that Y' is representable by an algebraic space. This is Tag 0300, at hypotheses weaker than the source's. The displayed base change identity of this tag is NOT proved; see the implementation notes of StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean”.
+- [`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isTwoFibreProduct`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L172), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean#L111) (StacksFrontier): “the first assertion of the conclusion: the apex X' of the 2-fibre product square is representable by an algebraic space F', given that f is representable by algebraic spaces and that Y' is representable by an algebraic space. This is Tag 0300, at hypotheses weaker than the source's. The displayed base change identity of this tag is NOT proved; see the implementation notes of StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableBaseChangeSquare.lean”.
 
 ## Depends on
 
@@ -285,4 +285,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.22, Tag 073L](https://stacks.math.columbia.edu/tag/073L)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

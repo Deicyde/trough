@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.16 Vanishing of cohomology
 
-Section 69.16 of the Stacks Project, [Tag 07UX](https://stacks.math.columbia.edu/tag/07UX). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 69.16 of the Stacks Project, [Tag 07UX](https://stacks.math.columbia.edu/tag/07UX). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07UY, a situation
 
 [Tag 07UY](https://stacks.math.columbia.edu/tag/07UY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishing.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishing.lean#L75).
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishing.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishing.lean#L75).
 
 > **Stacks 07UY.** A quasi-compact, quasi-separated algebraic space `X` over a scheme `S`
 > every one of whose quasi-coherent modules has vanishing first cohomology.
@@ -27,7 +27,7 @@ structure CohomologyVanishingSituation
 
 [Tag 07UZ](https://stacks.math.columbia.edu/tag/07UZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isIso_unit_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingTensorStructureSheaf.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingTensorStructureSheaf.lean#L368). The attribute's comment: “first assertion: p\_*(M ⊗\_A 𝒪\_X) = M~, the unit M~ ⟶ p\_*p^*M~ of the adjunction p^* ⊣ p\_* being an isomorphism”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isIso_unit_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingTensorStructureSheaf.lean, line 368](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingTensorStructureSheaf.lean#L368). The attribute's comment: “first assertion: p\_*(M ⊗\_A 𝒪\_X) = M~, the unit M~ ⟶ p\_*p^*M~ of the adjunction p^* ⊣ p\_* being an isomorphism”.
 
 > **Stacks 07UZ, first assertion: `p_*(M ⊗_A 𝒪_X) = M~`.**  In Situation 07UY, for every
 > `A`-module `M`, the unit `M~ ⟶ p_*p^*M~ = p_*(M ⊗_A 𝒪_X)` of the adjunction `p^* ⊣ p_*` of
@@ -42,7 +42,7 @@ theorem isIso_unit_tensorSheaf :
       (T.tildeModule M))
 ```
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.globalSectionsTensorLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingTensorStructureSheaf.lean, line 696](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingTensorStructureSheaf.lean#L696). The attribute's comment: “second assertion: Γ(X, M ⊗\_A 𝒪\_X) = M, as A-modules”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.globalSectionsTensorLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingTensorStructureSheaf.lean, line 696](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingTensorStructureSheaf.lean#L696). The attribute's comment: “second assertion: Γ(X, M ⊗\_A 𝒪\_X) = M, as A-modules”.
 
 > **Stacks 07UZ, second assertion: `Γ(X, M ⊗_A 𝒪_X) = M`.**  In Situation 07UY, for every
 > `A`-module `M`, the global sections of `M ⊗_A 𝒪_X = p^*M~` are `M`, as `A`-modules, the global
@@ -62,7 +62,7 @@ def globalSectionsTensorLinearEquiv :
 
 [Tag 07V0](https://stacks.math.columbia.edu/tag/07V0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isZero_rightDerived_one_globalSectionsFunctor_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingAffineMorphism.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingAffineMorphism.lean#L120). The attribute's comment: “part (1); cohomology of modules at the universe of the structure sheaf”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isZero_rightDerived_one_globalSectionsFunctor_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingAffineMorphism.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingAffineMorphism.lean#L120). The attribute's comment: “part (1); cohomology of modules at the universe of the structure sheaf”.
 
 > **Clause (1) of Stacks 07V0.** In the situation of Stacks 07UY, let `f : X' ⟶ X` be an affine
 > morphism of algebraic spaces and let `𝓕'` be a quasi-coherent `𝒪_{X'}`-module.  Then
@@ -79,7 +79,7 @@ theorem isZero_rightDerived_one_globalSectionsFunctor_of_isAffineHom
       (smallEtaleRingedSite T.site T.base T.containsBase X'.1 X'.2).O)).rightDerived 1).obj F)
 ```
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isAffineHom_of_isPullback_toSpecGlobalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingBaseChange.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingBaseChange.lean#L133). The attribute's comment: “clause (2), the affineness assertion only: the projection X ×\_\{Spec A} Spec A' → X is affine. The computation Γ(X', 𝒪\_\{X'}) = A' of the same clause is NOT proved -- it needs the pushforward-computation assertion of Stacks 07U8, which the library's form of that tag does not carry. See this file's implementation notes, and for clause (1) see StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingAffine.lean”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isAffineHom_of_isPullback_toSpecGlobalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingBaseChange.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingBaseChange.lean#L133). The attribute's comment: “clause (2), the affineness assertion only: the projection X ×\_\{Spec A} Spec A' → X is affine. The computation Γ(X', 𝒪\_\{X'}) = A' of the same clause is NOT proved -- it needs the pushforward-computation assertion of Stacks 07U8, which the library's form of that tag does not carry. See this file's implementation notes, and for clause (1) see StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingAffine.lean”.
 
 > **The affineness assertion of clause (2) of Stacks 07V0.** Let `X` be as in Stacks 07UY, let
 > `A = Γ(X, 𝒪_X)`, and let `A'` be an `A`-algebra, presented by a morphism `q : W ⟶ V` of affine
@@ -100,7 +100,7 @@ theorem isAffineHom_of_isPullback_toSpecGlobalFunctions
     IsAffineHom T.site T.base T.containsBase pr.hom
 ```
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isAffineHom_and_bijective_of_isPullback_toSpecGlobalFunctionsOverIntegers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingBaseChangeGlobalFunctions.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingBaseChangeGlobalFunctions.lean#L168). The attribute's comment: “part (2); `Spec A'` is an affine object `W` of the site over the presentation `V` of `Spec A`”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isAffineHom_and_bijective_of_isPullback_toSpecGlobalFunctionsOverIntegers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingBaseChangeGlobalFunctions.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingBaseChangeGlobalFunctions.lean#L168). The attribute's comment: “part (2); `Spec A'` is an affine object `W` of the site over the presentation `V` of `Spec A`”.
 
 > **Clause (2) of Stacks 07V0.** Let `X` be as in Stacks 07UY, let `A = Γ(X, 𝒪_X)`, and let `A'`
 > be an `A`-algebra, presented by a morphism `q : W ⟶ V` of affine objects of the site over the
@@ -124,7 +124,7 @@ theorem isAffineHom_and_bijective_of_isPullback_toSpecGlobalFunctionsOverInteger
 
 [Tag 07V1](https://stacks.math.columbia.edu/tag/07V1) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_sub_one_mem_vanishingIdeal_of_disjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparation.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparation.lean#L336). The attribute's comment: “the conclusion for an affine scheme, with the two closed subsets taken in the scheme rather than in the points of an algebraic space”.
+**`AlgebraicGeometry.exists_sub_one_mem_vanishingIdeal_of_disjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparation.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparation.lean#L336). The attribute's comment: “the conclusion for an affine scheme, with the two closed subsets taken in the scheme rather than in the points of an algebraic space”.
 
 > **Two disjoint closed subsets of an affine scheme are separated by a global function.**
 > The vanishing ideals of the two sets are comaximal, because the support of their join is the
@@ -137,7 +137,7 @@ theorem exists_sub_one_mem_vanishingIdeal_of_disjoint (X : Scheme.{u}) [IsAffine
     ∃ a : Γ(X, ⊤), T₀ ⊆ X.zeroLocus {a} ∧ T₁ ⊆ X.zeroLocus {a - 1}
 ```
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.exists_subset_compl_sectionSupport_of_disjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparation.lean, line 769](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparation.lean#L769). The attribute's comment: “the conclusion for an algebraic space, with the cohomology-vanishing hypothesis of Situation 07UY imposed at the module universe of the structure sheaf rather than at a general module universe”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.exists_subset_compl_sectionSupport_of_disjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparation.lean, line 769](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparation.lean#L769). The attribute's comment: “the conclusion for an algebraic space, with the cohomology-vanishing hypothesis of Situation 07UY imposed at the module universe of the structure sheaf rather than at a general module universe”.
 
 > **Stacks 07V1 for an algebraic space.** In the situation of Stacks 07UY, two disjoint closed
 > subsets `Z₀, Z₁` of the points of `X` are separated by a global regular function: there is
@@ -177,7 +177,7 @@ theorem exists_subset_compl_sectionSupport_of_disjoint
 
 [Tag 07V4](https://stacks.math.columbia.edu/tag/07V4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.pointsToScheme_pointsMap_toSpecGlobalFunctions_ne_of_isClosed_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingClosedPoints.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingClosedPoints.lean#L190). The attribute's comment: “the final step of the source proof only: in Situation 07UY the morphism p : X -> Spec A separates the closed points of |X|, two distinct closed points of |X| having distinct images. Universal injectivity of p, which is the assertion of the tag, is NOT proved by this declaration, and neither is injectivity of p on all of |X|; see universallyInjective\_toSpecGlobalFunctions in this same file, which does state universal injectivity and carries the two steps that are missing. The source reaches universal injectivity from this step by three reductions, none of them available in this development. Clause (2) of Stacks 07V0 reduces to the case of a field A, but its library form -- isAffineHom\_of\_isPullback\_toSpecGlobalFunctions -- carries the affineness assertion only and not the computation Gamma(X', O\_X') = A' that the reduction needs. Stacks 0488 then replaces the field by a large algebraically closed extension and Stacks 07U5 makes the resulting field-valued points closed points of |X|, but the library's 07U5 -- isClosed\_singleton\_class\_of\_isAlgebraic\_residueField -- requires the field of the point to be algebraic over the residue field at a closed point of the base, which is exactly what the first reduction would have arranged. And the source's passage from one point of |X| to one field-valued point of X is left implicit there. IsTerminal T'.base, the affine object V and the isomorphism e are inherited from the signature of toSpecGlobalFunctions, as for the neighbouring Stacks 07V5”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.pointsToScheme_pointsMap_toSpecGlobalFunctions_ne_of_isClosed_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingClosedPoints.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingClosedPoints.lean#L190). The attribute's comment: “the final step of the source proof only: in Situation 07UY the morphism p : X -> Spec A separates the closed points of |X|, two distinct closed points of |X| having distinct images. Universal injectivity of p, which is the assertion of the tag, is NOT proved by this declaration, and neither is injectivity of p on all of |X|; see universallyInjective\_toSpecGlobalFunctions in this same file, which does state universal injectivity and carries the two steps that are missing. The source reaches universal injectivity from this step by three reductions, none of them available in this development. Clause (2) of Stacks 07V0 reduces to the case of a field A, but its library form -- isAffineHom\_of\_isPullback\_toSpecGlobalFunctions -- carries the affineness assertion only and not the computation Gamma(X', O\_X') = A' that the reduction needs. Stacks 0488 then replaces the field by a large algebraically closed extension and Stacks 07U5 makes the resulting field-valued points closed points of |X|, but the library's 07U5 -- isClosed\_singleton\_class\_of\_isAlgebraic\_residueField -- requires the field of the point to be algebraic over the residue field at a closed point of the base, which is exactly what the first reduction would have arranged. And the source's passage from one point of |X| to one field-valued point of X is left implicit there. IsTerminal T'.base, the affine object V and the isomorphism e are inherited from the signature of toSpecGlobalFunctions, as for the neighbouring Stacks 07V5”.
 
 > **The canonical morphism to `Spec A` separates the closed points of `|X|`.** In the
 > situation of Stacks 07UY, two distinct closed points of `|X|` have distinct images in `Spec A`
@@ -202,7 +202,7 @@ theorem pointsToScheme_pointsMap_toSpecGlobalFunctions_ne_of_isClosed_of_ne
           (toSpecGlobalFunctions T' hterminal V e).hom y)
 ```
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.universallyInjective_toSpecGlobalFunctionsOverIntegers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingUniversallyInjective.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingUniversallyInjective.lean#L133).
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.universallyInjective_toSpecGlobalFunctionsOverIntegers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingUniversallyInjective.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingUniversallyInjective.lean#L133).
 
 > **Stacks 07V4.** In the situation of Stacks 07UY, over an arbitrary base scheme `S`, the
 > canonical morphism `p : X ⟶ Spec A` is universally injective.  As in the source, `p` is the
@@ -225,7 +225,7 @@ theorem universallyInjective_toSpecGlobalFunctionsOverIntegers :
 
 [Tag 07V5](https://stacks.math.columbia.edu/tag/07V5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isSeparated_toSpecGlobalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparatedMorphism.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparatedMorphism.lean#L223). The attribute's comment: “the situation is taken at the module universe of the structure sheaf; the base of the situation is the terminal scheme, as the canonical morphism toSpecGlobalFunctions is formed over it; over an arbitrary base see isSeparated\_toSpecGlobalFunctionsOverIntegers”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isSeparated_toSpecGlobalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparatedMorphism.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingSeparatedMorphism.lean#L223). The attribute's comment: “the situation is taken at the module universe of the structure sheaf; the base of the situation is the terminal scheme, as the canonical morphism toSpecGlobalFunctions is formed over it; over an arbitrary base see isSeparated\_toSpecGlobalFunctionsOverIntegers”.
 
 > **Stacks 07V5.** In the situation of Stacks 07UY, the canonical morphism
 > `p : X ⟶ Spec Γ(X, 𝒪_X)` is separated, `Spec Γ(X, 𝒪_X)` being presented by an affine object `V`
@@ -242,7 +242,7 @@ theorem isSeparated_toSpecGlobalFunctions :
       (toSpecGlobalFunctions T hterminal V e).hom
 ```
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isSeparated_toSpecGlobalFunctionsOverIntegers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedOverGlobalFunctions.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedOverGlobalFunctions.lean#L116).
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isSeparated_toSpecGlobalFunctionsOverIntegers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedOverGlobalFunctions.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedOverGlobalFunctions.lean#L116).
 
 > **Stacks 07V5.** In the situation of Stacks 07UY, over an arbitrary base scheme `S`, the
 > canonical morphism `p : X ⟶ Spec A` is separated.  As in the source, `p` is the morphism of
@@ -265,7 +265,7 @@ theorem isSeparated_toSpecGlobalFunctionsOverIntegers :
 
 [Tag 07V6](https://stacks.math.columbia.edu/tag/07V6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean#L63). The attribute's comment: “more precisely: an algebraic space as in Situation 07UY is an affine scheme”.
+**`AlgebraicGeometry.Space.CohomologyVanishingSituation.isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean#L63). The attribute's comment: “more precisely: an algebraic space as in Situation 07UY is an affine scheme”.
 
 > **Stacks 07V6, more precisely.** An algebraic space in the situation of Stacks 07UY is an
 > affine scheme: it is represented by an object of the site over the base whose underlying scheme
@@ -278,7 +278,7 @@ theorem isAffineSpace (T : CohomologyVanishingSituation.{u, u}) :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isAffineSpace_iff_forall_isZero_rightDerived`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingAffineness.lean#L492), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean#L48) (StacksFrontier): “first sentence: a quasi-compact and quasi-separated algebraic space is affine iff the higher cohomology of its quasi-coherent modules vanishes”.
+- [`AlgebraicGeometry.Space.isAffineSpace_iff_forall_isZero_rightDerived`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingAffineness.lean#L492), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean#L48) (StacksFrontier): “first sentence: a quasi-compact and quasi-separated algebraic space is affine iff the higher cohomology of its quasi-coherent modules vanishes”.
 
 ## Tag 0D2V, a lemma
 
@@ -286,13 +286,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isAffineSpace_of_forall_isCoherent_isZero_rightDerived_one`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingNoetherianAffine.lean#L181), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean#L52) (StacksFrontier).
+- [`AlgebraicGeometry.Space.isAffineSpace_of_forall_isCoherent_isZero_rightDerived_one`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyVanishingNoetherianAffine.lean#L181), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean#L52) (StacksFrontier).
 
 ## Tag 0D2W, a lemma
 
 [Tag 0D2W](https://stacks.math.columbia.edu/tag/0D2W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAmple_of_forall_isCoherent_isZero_rightDerived_one_twistStep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalAmplenessCriterion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalAmplenessCriterion.lean#L201).
+**`AlgebraicGeometry.Space.exists_isAmple_of_forall_isCoherent_isZero_rightDerived_one_twistStep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalAmplenessCriterion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalAmplenessCriterion.lean#L201).
 
 > **Stacks 0D2W.**  Let `S` be a scheme, `X` a Noetherian algebraic space over `S` and `𝓛` an
 > invertible `𝒪_X`-module.  If every coherent `𝒪_X`-module `𝓕` has some `n ≥ 1` with
@@ -326,4 +326,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.16, Tag 07UX](https://stacks.math.columbia.edu/tag/07UX)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

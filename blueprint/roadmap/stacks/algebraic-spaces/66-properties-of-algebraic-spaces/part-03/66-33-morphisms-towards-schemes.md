@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.33 Morphisms towards schemes
 
-Section 66.33 of the Stacks Project, [Tag 05Z0](https://stacks.math.columbia.edu/tag/05Z0). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 66.33 of the Stacks Project, [Tag 05Z0](https://stacks.math.columbia.edu/tag/05Z0). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05Z1, a lemma
 
 [Tag 05Z1](https://stacks.math.columbia.edu/tag/05Z1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.morphismToAffineEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MorphismToAffineScheme.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MorphismToAffineScheme.lean#L522). References: EGA II (1.2.7), “absolute case S=Spec ℤ”; EGA I (2.2.4).
+**`AlgebraicGeometry.Space.morphismToAffineEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MorphismToAffineScheme.lean, line 522](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/MorphismToAffineScheme.lean#L522). References: EGA II (1.2.7), “absolute case S=Spec ℤ”; EGA I (2.2.4).
 
 > **Stacks 05Z1.** Pullback of regular functions is a bijection between morphisms of
 > algebraic spaces `X ⟶ T` into an affine object of the site and ring homomorphisms
@@ -41,4 +41,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.33, Tag 05Z0](https://stacks.math.columbia.edu/tag/05Z0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

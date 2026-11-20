@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.26 Vector fields
 
-Section 53.26 of the Stacks Project, [Tag 0E66](https://stacks.math.columbia.edu/tag/0E66). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 53.26 of the Stacks Project, [Tag 0E66](https://stacks.math.columbia.edu/tag/0E66). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0E66, the section
 
 [Tag 0E66](https://stacks.math.columbia.edu/tag/0E66) in the Stacks Project.
 
-**`Stacks.Curves.SheafDerivation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SheafDerivation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/SheafDerivation.lean#L56).
+**`Stacks.Curves.SheafDerivation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SheafDerivation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/SheafDerivation.lean#L56).
 
 > **Stacks 0E66.** `Der_k(𝒪_X, 𝒪_X)`: the `k`-linear derivations of the structure sheaf of a
 > `k`-scheme `X` into itself. These are the vector fields on `X` of Section 53.26.
@@ -27,7 +27,7 @@ abbrev SheafDerivation (k : Type u) [Field k] (X : Scheme.{u}) [X.Over (Spec (.o
 
 [Tag 0E67](https://stacks.math.columbia.edu/tag/0E67) in the Stacks Project.
 
-**`Stacks.Curves.SheafDerivation.smoothCurve_genus_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VectorFieldsGenus.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VectorFieldsGenus.lean#L65).
+**`Stacks.Curves.SheafDerivation.smoothCurve_genus_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VectorFieldsGenus.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/VectorFieldsGenus.lean#L65).
 
 > **[Stacks, Tag 0E67]**: let `X` be a smooth proper curve of genus `g` over an algebraically
 > closed field `k` (a curve is integral, so connected). If `g ≥ 2` then `Der_k(𝒪_X, 𝒪_X) = 0`; if
@@ -49,7 +49,7 @@ theorem SheafDerivation.smoothCurve_genus_cases [IsAlgClosed k] (X : Scheme.{u})
 
 [Tag 0E68](https://stacks.math.columbia.edu/tag/0E68) in the Stacks Project.
 
-**`Stacks.Curves.NodalVectorFields.range_branchPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalVectorFieldsEquivalence.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalVectorFieldsEquivalence.lean#L619).
+**`Stacks.Curves.NodalVectorFields.range_branchPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalVectorFieldsEquivalence.lean, line 619](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/NodalVectorFieldsEquivalence.lean#L619).
 
 > **Stacks Project, Tag 0E68.** Let `k` be an algebraically closed field, let `X` be a proper
 > one-dimensional `k`-scheme with at worst nodal singularities, let `ν : X^ν ⟶ X` be its
@@ -134,7 +134,7 @@ theorem NodalVectorFields.range_branchPair (hdim : topologicalKrullDim X = 1)
 
 [Tag 0E69](https://stacks.math.columbia.edu/tag/0E69) in the Stacks Project.
 
-**`Stacks.Curves.SheafDerivation.eq_zero_of_hasAtWorstNodalSingularities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VectorFieldsGenus.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VectorFieldsGenus.lean#L94).
+**`Stacks.Curves.SheafDerivation.eq_zero_of_hasAtWorstNodalSingularities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VectorFieldsGenus.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/VectorFieldsGenus.lean#L94).
 
 > **[Stacks, Tag 0E69]**: let `X` be an at-worst-nodal, proper, connected, one-dimensional
 > scheme over an algebraically closed field `k`, of genus at least two, with no rational tails and
@@ -157,4 +157,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.26, Tag 0E66](https://stacks.math.columbia.edu/tag/0E66)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

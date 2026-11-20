@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.30 Deriving adjoints
 
-Section 13.30 of the Stacks Project, [Tag 0FNC](https://stacks.math.columbia.edu/tag/0FNC). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.30 of the Stacks Project, [Tag 0FNC](https://stacks.math.columbia.edu/tag/0FNC). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FND, a lemma
 
 [Tag 0FND](https://stacks.math.columbia.edu/tag/0FND) in the Stacks Project.
 
-**`CategoryTheory.Adjunction.existsUnique_homEquiv_of_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean, line 610](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean#L610). The attribute's comment: “the canonical bijection and its characterisation by fractions; its functoriality in both variables is `derivedHomEquiv_naturality`, `derivedHomEquiv_comp_eq_comp` and `derivedHomEquiv_comp_eq_comp_left`”. References: SGA 4 XVII (2.3.7), “outer Hom bijection”.
+**`CategoryTheory.Adjunction.existsUnique_homEquiv_of_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean, line 611](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean#L611). The attribute's comment: “the canonical bijection and its characterisation by fractions; its functoriality in both variables is `derivedHomEquiv_naturality`, `derivedHomEquiv_comp_eq_comp` and `derivedHomEquiv_comp_eq_comp_left`”. References: SGA 4 XVII (2.3.7), “outer Hom bijection”.
 
 > **Stacks 0FND**: deriving adjoints. Let `F : 𝒟 ⥤ 𝒟'` be right adjoint to `G : 𝒟' ⥤ 𝒟`, let
 > `S`, `S'` be classes of morphisms of `𝒟`, `𝒟'` admitting left, resp. right fractions, and let
@@ -31,7 +31,8 @@ Section 13.30 of the Stacks Project, [Tag 0FNC](https://stacks.math.columbia.edu
 > to `f`.
 >
 > The source's further assertion that this bijection is functorial in both variables is proved in
-> `StacksFrontier.CategoryTheory.Localization.DerivingAdjointsNaturality`, where the bijection is named
+> `StacksFrontier.CategoryTheory.Localization.DerivingAdjointsNaturality`, where the bijection is
+> named
 > `CategoryTheory.Adjunction.derivedHomEquiv`: `derivedHomEquiv_naturality` for morphisms of `𝒟`
 > and `𝒟'`, and `derivedHomEquiv_comp_eq_comp`, `derivedHomEquiv_comp_eq_comp_left` for morphisms
 > of `S⁻¹𝒟` and `(S')⁻¹𝒟'`.
@@ -57,7 +58,7 @@ theorem existsUnique_homEquiv_of_isRightDerivedValueAt
           φ ψ ≫ Q.map s.hom = (d.ι.app t).unop ≫ Q.map ((adj.homEquiv _ _).symm f)
 ```
 
-**`CategoryTheory.Adjunction.derivedHomEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L244). The attribute's comment: “functoriality of the bijection in both variables, for morphisms of `𝒟` and `𝒟'`”.
+**`CategoryTheory.Adjunction.derivedHomEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L244). The attribute's comment: “functoriality of the bijection in both variables, for morphisms of `𝒟` and `𝒟'`”.
 
 > **Stacks 0FND**, functoriality of the canonical bijection in both variables, with respect to
 > morphisms of `𝒟` and `𝒟'`. Let `κ : K ⟶ K'` be a morphism of `𝒟` with `RF` defined at `K` and
@@ -78,7 +79,7 @@ theorem derivedHomEquiv_naturality
         adj.derivedHomEquiv hc hd ψ ≫ Q.map κ
 ```
 
-**`CategoryTheory.Adjunction.derivedHomEquiv_comp_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L275). The attribute's comment: “functoriality of the bijection in `K`, for morphisms of `S⁻¹𝒟`”.
+**`CategoryTheory.Adjunction.derivedHomEquiv_comp_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L275). The attribute's comment: “functoriality of the bijection in `K`, for morphisms of `S⁻¹𝒟`”.
 
 > **Stacks 0FND**, functoriality of the canonical bijection in `K` with respect to a morphism
 > `g : Q(K) ⟶ Q(K')` of `S⁻¹𝒟`. Such a morphism is a left fraction `g = Q(κ) ≫ Q(σ)⁻¹` with
@@ -98,7 +99,7 @@ theorem derivedHomEquiv_comp_eq_comp
     adj.derivedHomEquiv hc' hd (ψ ≫ ρ) = adj.derivedHomEquiv hc hd ψ ≫ g
 ```
 
-**`CategoryTheory.Adjunction.derivedHomEquiv_comp_eq_comp_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L296). The attribute's comment: “functoriality of the bijection in `M`, for morphisms of `(S')⁻¹𝒟'`”.
+**`CategoryTheory.Adjunction.derivedHomEquiv_comp_eq_comp_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 296](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L296). The attribute's comment: “functoriality of the bijection in `M`, for morphisms of `(S')⁻¹𝒟'`”.
 
 > **Stacks 0FND**, functoriality of the canonical bijection in `M` with respect to a morphism
 > `γ : Q'(M') ⟶ Q'(M)` of `(S')⁻¹𝒟'`. Such a morphism is a right fraction
@@ -125,7 +126,7 @@ theorem derivedHomEquiv_comp_eq_comp_left
 
 [Tag 0DVC](https://stacks.math.columbia.edu/tag/0DVC) in the Stacks Project.
 
-**`CategoryTheory.Adjunction.existsUnique_homEquiv_derivedCategory_of_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean, line 854](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean#L854). The attribute's comment: “the canonical isomorphism and its characterisation by fractions; functoriality is `derivedCategoryHomEquiv_comp_rightDerivedMap` and `derivedCategoryHomEquiv_map_comp`”.
+**`CategoryTheory.Adjunction.existsUnique_homEquiv_derivedCategory_of_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean, line 855](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean#L855). The attribute's comment: “the canonical isomorphism and its characterisation by fractions; functoriality is `derivedCategoryHomEquiv_comp_rightDerivedMap` and `derivedCategoryHomEquiv_map_comp`”.
 
 > **Stacks 0DVC**: deriving adjoints between derived categories. Let `F : 𝒜 ⥤ ℬ` be right
 > adjoint to `G : ℬ ⥤ 𝒜`, functors of abelian categories, let `K` be a complex of `𝒜` and `M` a
@@ -177,7 +178,7 @@ theorem existsUnique_homEquiv_derivedCategory_of_isRightDerivedValueAt
                 ((HomotopyCategory.quotient A (ComplexShape.up ℤ)).map g)
 ```
 
-**`CategoryTheory.Adjunction.derivedCategoryHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L340). The attribute's comment: “the canonical isomorphism; its functoriality in both variables is `derivedCategoryHomEquiv_comp_rightDerivedMap` and `derivedCategoryHomEquiv_map_comp`”.
+**`CategoryTheory.Adjunction.derivedCategoryHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L340). The attribute's comment: “the canonical isomorphism; its functoriality in both variables is `derivedCategoryHomEquiv_comp_rightDerivedMap` and `derivedCategoryHomEquiv_map_comp`”.
 
 > **Stacks 0DVC**: the canonical bijection `Hom_{D(ℬ)}(M, RF(K)) ≃ Hom_{D(𝒜)}(LG(M), K)` for
 > `F : 𝒜 ⥤ ℬ` right adjoint to `G : ℬ ⥤ 𝒜`, a complex `K` of `𝒜` at which `RF` is defined, with
@@ -196,7 +197,7 @@ noncomputable def derivedCategoryHomEquiv
     (DerivedCategory.Qh.obj M ⟶ c.pt) ≃ (d.pt ⟶ DerivedCategory.Qh.obj K)
 ```
 
-**`CategoryTheory.Adjunction.derivedCategoryHomEquiv_comp_rightDerivedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L434). The attribute's comment: “functoriality in `K`, with respect to morphisms of `K(𝒜)`”.
+**`CategoryTheory.Adjunction.derivedCategoryHomEquiv_comp_rightDerivedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 434](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L434). The attribute's comment: “functoriality in `K`, with respect to morphisms of `K(𝒜)`”.
 
 > **Stacks 0DVC**, functoriality in `K`. Let `κ : K ⟶ K'` be a morphism of complexes of `𝒜`
 > (in the homotopy category) such that `RF` is defined at `K` and at `K'`, and let
@@ -218,7 +219,7 @@ theorem derivedCategoryHomEquiv_comp_rightDerivedMap
       adj.derivedCategoryHomEquiv hc hd ψ ≫ DerivedCategory.Qh.map κ
 ```
 
-**`CategoryTheory.Adjunction.derivedCategoryHomEquiv_map_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L508). The attribute's comment: “functoriality in `M`, with respect to morphisms of `K(ℬ)`”.
+**`CategoryTheory.Adjunction.derivedCategoryHomEquiv_map_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean, line 508](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjointsNaturality.lean#L508). The attribute's comment: “functoriality in `M`, with respect to morphisms of `K(ℬ)`”.
 
 > **Stacks 0DVC**, functoriality in `M`. Let `γ : M' ⟶ M` be a morphism of complexes of `ℬ`
 > (in the homotopy category) such that `LG` is defined at `M'` and at `M`, and let
@@ -244,7 +245,7 @@ theorem derivedCategoryHomEquiv_map_comp
 
 [Tag 09T5](https://stacks.math.columbia.edu/tag/09T5) in the Stacks Project.
 
-**`CategoryTheory.Adjunction.exists_derived_of_isRightDerivedValueAt_of_isLeftDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean, line 1270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean#L1270).
+**`CategoryTheory.Adjunction.exists_derived_of_isRightDerivedValueAt_of_isLeftDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean, line 1271](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Localization/DerivingAdjoints.lean#L1271).
 
 > **Stacks 09T5**: the derived functors of an adjoint pair are adjoint. Let `F : 𝒟 ⥤ 𝒟'` be
 > right adjoint to `G : 𝒟' ⥤ 𝒟`, let `S`, `S'` be classes of morphisms of `𝒟`, `𝒟'` admitting
@@ -289,4 +290,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.30, Tag 0FNC](https://stacks.math.columbia.edu/tag/0FNC)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

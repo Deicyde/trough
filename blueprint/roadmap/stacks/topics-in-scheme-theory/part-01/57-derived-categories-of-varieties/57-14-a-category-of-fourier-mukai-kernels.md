@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.14 A category of Fourier-Mukai kernels
 
-Section 57.14 of the Stacks Project, [Tag 0G0F](https://stacks.math.columbia.edu/tag/0G0F). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.14 of the Stacks Project, [Tag 0G0F](https://stacks.math.columbia.edu/tag/0G0F). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G0F, the section
 
 [Tag 0G0F](https://stacks.math.columbia.edu/tag/0G0F) in the Stacks Project.
 
-**`AlgebraicGeometry.FourierMukaiKernelObj.category`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/KernelCategoryInstance.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/KernelCategoryInstance.lean#L72). The attribute's comment: “the category, with all four clauses of the source: objects the proper smooth schemes over S; morphisms X to Y the isomorphism classes of objects of D\_perf(O\_\{X x\_S Y}); composition the class of R pr\_13,*(L pr\_12^*K tensor^L L pr\_23^*K'), perfect by Tag 0B91 (isPerfect\_convolution); identity the class of Delta\_\{X/S,*}O\_X; associativity and the unit laws are the category axioms, proved. Clauses (3) and (4) are mk\_comp\_mk and id\_eq”.
+**`AlgebraicGeometry.FourierMukaiKernelObj.category`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/KernelCategoryInstance.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/KernelCategoryInstance.lean#L72). The attribute's comment: “the category, with all four clauses of the source: objects the proper smooth schemes over S; morphisms X to Y the isomorphism classes of objects of D\_perf(O\_\{X x\_S Y}); composition the class of R pr\_13,*(L pr\_12^*K tensor^L L pr\_23^*K'), perfect by Tag 0B91 (isPerfect\_convolution); identity the class of Delta\_\{X/S,*}O\_X; associativity and the unit laws are the category axioms, proved. Clauses (3) and (4) are mk\_comp\_mk and id\_eq”.
 
 > **[Stacks, Tag 0G0F]: the category of Fourier-Mukai kernels over `S`.** Its objects are the
 > proper smooth schemes over `S` (`AlgebraicGeometry.FourierMukaiKernelObj`), its morphisms from `X`
@@ -35,7 +35,7 @@ instance category : Category (FourierMukaiKernelObj S)
 
 [Tag 0G0G](https://stacks.math.columbia.edu/tag/0G0G) in the Stacks Project.
 
-**`AlgebraicGeometry.FourierMukaiKernelObj.baseChangeFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/KernelCategoryInstance.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/KernelCategoryInstance.lean#L97). The attribute's comment: “the functor between the categories of Tag 0G0F over S and over S1, both built with the perfectness of convolution proved (Tag 0B91): objects X go to the base change, written X x\_S S1 (the source's S1 x\_S X up to the symmetry of the fibre product), morphisms the class of K to the class of L(X1 x\_\{S1} Y1 --> X x\_S Y)^*K; preservation of identities and of composition are the functor axioms, proved. The two rules are baseChangeFunctor\_obj and baseChangeFunctor\_map\_mk”.
+**`AlgebraicGeometry.FourierMukaiKernelObj.baseChangeFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/KernelCategoryInstance.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/KernelCategoryInstance.lean#L97). The attribute's comment: “the functor between the categories of Tag 0G0F over S and over S1, both built with the perfectness of convolution proved (Tag 0B91): objects X go to the base change, written X x\_S S1 (the source's S1 x\_S X up to the symmetry of the fibre product), morphisms the class of K to the class of L(X1 x\_\{S1} Y1 --> X x\_S Y)^*K; preservation of identities and of composition are the functor axioms, proved. The two rules are baseChangeFunctor\_obj and baseChangeFunctor\_map\_mk”.
 
 > **[Stacks, Tag 0G0G]: base change along `s : S₁ ⟶ S` is a functor** from the category of
 > Fourier-Mukai kernels over `S` to the one over `S₁`. On objects it sends `X` to its base change
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.14, Tag 0G0F](https://stacks.math.columbia.edu/tag/0G0F)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.41 Exactness properties of pushforward
 
-Section 7.41 of the Stacks Project, [Tag 04D5](https://stacks.math.columbia.edu/tag/04D5). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 7.41 of the Stacks Project, [Tag 04D5](https://stacks.math.columbia.edu/tag/04D5). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04D6, a lemma
 
 [Tag 04D6](https://stacks.math.columbia.edu/tag/04D6) in the Stacks Project.
 
-**`MorphismOfTopoi.pushforward_exactness_implications`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardExactness.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardExactness.lean#L65).
+**`MorphismOfTopoi.pushforward_exactness_implications`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardExactness.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardExactness.lean#L65).
 
 > **Stacks 04D6.** Let `f : Sh(C) → Sh(D)` be a morphism of topoi, with pushforward
 > `f_* = f.pushforward`, inverse image `f⁻¹ = f.inverseImage` and counit
@@ -77,7 +77,7 @@ theorem pushforward_exactness_implications
 
 [Tag 04D7](https://stacks.math.columbia.edu/tag/04D7) in the Stacks Project.
 
-**`isLocallySurjective_sheafPushforwardContinuous_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PreservesEpiFactorization.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/PreservesEpiFactorization.lean#L142). The attribute's comment: “Stated for a continuous functor `u`; the exactness of `u_s` making it a morphism of sites is not used. Coverings are families generating a covering sieve, and surjective maps of sheaves are the locally surjective ones.”.
+**`isLocallySurjective_sheafPushforwardContinuous_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PreservesEpiFactorization.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/PreservesEpiFactorization.lean#L142). The attribute's comment: “Stated for a continuous functor `u`; the exactness of `u_s` making it a morphism of sites is not used. Coverings are families generating a covering sieve, and surjective maps of sheaves are the locally surjective ones.”.
 
 > Let `u : C ⥤ D` be a continuous functor between sites `(C, J)` and
 > `(D, K)` (the continuous functor underlying a morphism of sites
@@ -100,7 +100,7 @@ theorem isLocallySurjective_sheafPushforwardContinuous_map (u : C ⥤ D)
 
 [Tag 04D9](https://stacks.math.columbia.edu/tag/04D9) in the Stacks Project.
 
-**`sheafPushforwardContinuous_reflectsMonomorphisms_of_isCoverDense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardEquality.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardEquality.lean#L84). The attribute's comment: “f\_* reflects injections (monomorphisms of sheaves)”.
+**`sheafPushforwardContinuous_reflectsMonomorphisms_of_isCoverDense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardEquality.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardEquality.lean#L85). The attribute's comment: “f\_* reflects injections (monomorphisms of sheaves)”.
 
 > **Stacks 04D9.** If `u : C ⥤ D` is a continuous functor between sites
 > which is also cover dense (i.e. every object of `D` is covered by
@@ -115,7 +115,7 @@ theorem sheafPushforwardContinuous_reflectsMonomorphisms_of_isCoverDense
     (u.sheafPushforwardContinuous A J K).ReflectsMonomorphisms
 ```
 
-**`sheafPushforwardContinuous_reflectsEpimorphisms_of_isCoverDense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardEquality.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardEquality.lean#L97). The attribute's comment: “f\_* reflects surjections (epimorphisms of sheaves)”.
+**`sheafPushforwardContinuous_reflectsEpimorphisms_of_isCoverDense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardEquality.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardEquality.lean#L98). The attribute's comment: “f\_* reflects surjections (epimorphisms of sheaves)”.
 
 > **Stacks 04D9.** If `u : C ⥤ D` is a continuous functor between sites
 > which is also cover dense (i.e. every object of `D` is covered by
@@ -130,7 +130,7 @@ theorem sheafPushforwardContinuous_reflectsEpimorphisms_of_isCoverDense
     (u.sheafPushforwardContinuous A J K).ReflectsEpimorphisms
 ```
 
-**`injective_app_of_injective_sheafPushforwardContinuous_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardReflectsInjSurj.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardReflectsInjSurj.lean#L44). The attribute's comment: “f\_* reflects injections, in the sense of Stacks 00WM”.
+**`injective_app_of_injective_sheafPushforwardContinuous_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardReflectsInjSurj.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardReflectsInjSurj.lean#L44). The attribute's comment: “f\_* reflects injections, in the sense of Stacks 00WM”.
 
 > **Stacks 04D9, injections.** Let `u : C ⥤ D` be a continuous functor between sites such that
 > every object of `D` is covered by images of objects of `C`. If `α : 𝓕 ⟶ 𝓖` is a map of sheaves of
@@ -145,7 +145,7 @@ theorem injective_app_of_injective_sheafPushforwardContinuous_map
     (V : D) : Function.Injective (α.hom.app (op V))
 ```
 
-**`isLocallySurjective_of_isLocallySurjective_sheafPushforwardContinuous_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardReflectsInjSurj.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardReflectsInjSurj.lean#L66). The attribute's comment: “f\_* reflects surjections, in the sense of Stacks 00WM”.
+**`isLocallySurjective_of_isLocallySurjective_sheafPushforwardContinuous_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/PushforwardReflectsInjSurj.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/PushforwardReflectsInjSurj.lean#L66). The attribute's comment: “f\_* reflects surjections, in the sense of Stacks 00WM”.
 
 > **Stacks 04D9, surjections.** Let `u : C ⥤ D` be a continuous functor between sites such that
 > every object of `D` is covered by images of objects of `C`. If `α : 𝓕 ⟶ 𝓖` is a map of sheaves of
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.41, Tag 04D5](https://stacks.math.columbia.edu/tag/04D5)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

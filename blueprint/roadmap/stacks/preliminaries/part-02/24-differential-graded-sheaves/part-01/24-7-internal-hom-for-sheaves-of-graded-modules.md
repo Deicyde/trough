@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.7 Internal hom for sheaves of graded modules
 
-Section 24.7 of the Stacks Project, [Tag 0FR3](https://stacks.math.columbia.edu/tag/0FR3). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 24.7 of the Stacks Project, [Tag 0FR3](https://stacks.math.columbia.edu/tag/0FR3). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FR3, the section
 
 [Tag 0FR3](https://stacks.math.columbia.edu/tag/0FR3) in the Stacks Project.
 
-**`SheafOfModules.gradedLocalHomSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L538). The attribute's comment: “the degree-`n` term `SheafHom^n_A(M, L)`, a subsheaf of `∏ SheafHom_O(M^i, L^{i + n})`, as a sheaf of `O`-modules”.
+**`SheafOfModules.gradedLocalHomSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 538](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L538). The attribute's comment: “the degree-`n` term `SheafHom^n_A(M, L)`, a subsheaf of `∏ SheafHom_O(M^i, L^{i + n})`, as a sheaf of `O`-modules”.
 
 > **Stacks 0FR3, the degree-`n` term `SheafHom^n_A(M, L)`.** The sheaf of `R`-modules whose
 > sections over `U` are the degree-`n` local homomorphisms `M|_U → L|_U`: the families
@@ -28,7 +28,7 @@ noncomputable def gradedLocalHomSheaf (M : GradedModule.{t, a, w} A)
     (L : GradedModule.{t, a, z} A) (n : ℤ) : SheafOfModules.{max u v w z} R
 ```
 
-**`SheafOfModules.gradedSheafHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L555). The attribute's comment: “the graded `O`-module `SheafHom^gr_A(M, L)`”.
+**`SheafOfModules.gradedSheafHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 555](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L555). The attribute's comment: “the graded `O`-module `SheafHom^gr_A(M, L)`”.
 
 > **Stacks 0FR3, the graded `O`-module `SheafHom^gr_A(M, L)`.** The internal hom of two right
 > graded `A`-modules, as a graded sheaf of `R`-modules: in degree `n` the sheaf
@@ -39,7 +39,7 @@ noncomputable abbrev gradedSheafHom (M : GradedModule.{t, a, w} A)
     (L : GradedModule.{t, a, z} A) : ℤ → SheafOfModules.{max u v w z} R
 ```
 
-**`SheafOfModules.gradedSheafHomComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L702). The attribute's comment: “the composition map `SheafHom^m_A(L, M) ⊗_O SheafHom^n_A(K, L) → SheafHom^{n + m}_A(K, M)`”.
+**`SheafOfModules.gradedSheafHomComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 702](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L702). The attribute's comment: “the composition map `SheafHom^m_A(L, M) ⊗_O SheafHom^n_A(K, L) → SheafHom^{n + m}_A(K, M)`”.
 
 > **Stacks 0FR3, the composition map.** The morphism of sheaves of `O`-modules
 > `SheafHom^m_A(L, M) ⊗_O SheafHom^n_A(K, L) ⟶ SheafHom^{n + m}_A(K, M)` given locally by
@@ -50,7 +50,7 @@ noncomputable def gradedSheafHomComp (m n : ℤ) :
     gradedSheafHomTensor O K L M m n ⟶ gradedLocalHomSheaf K M (n + m)
 ```
 
-**`SheafOfModules.gradedSheafHomCompSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 733](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L733). The attribute's comment: “the composition map on degree `k` of `SheafHom^gr_A(L, M) ⊗_O SheafHom^gr_A(K, L)`”.
+**`SheafOfModules.gradedSheafHomCompSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 733](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L733). The attribute's comment: “the composition map on degree `k` of `SheafHom^gr_A(L, M) ⊗_O SheafHom^gr_A(K, L)`”.
 
 > **Stacks 0FR3, the composition map of graded `O`-modules.** Degree `k` of the tensor product
 > of the graded `O`-modules `SheafHom^gr_A(L, M)` and `SheafHom^gr_A(K, L)` is
@@ -64,7 +64,7 @@ noncomputable def gradedSheafHomCompSum (k : ℤ) :
       gradedSheafHomTensor O K L M p.1.1 p.1.2) ⟶ gradedLocalHomSheaf K M k
 ```
 
-**`SheafOfModules.gradedHomLinearEquivSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 905](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L905). The attribute's comment: “`Hom_{Mod^gr(A)}(M, L) = Γ(C, SheafHom^gr_A(M, L))` as graded `Γ(C, O)`-modules, degreewise”.
+**`SheafOfModules.gradedHomLinearEquivSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 905](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L905). The attribute's comment: “`Hom_{Mod^gr(A)}(M, L) = Γ(C, SheafHom^gr_A(M, L))` as graded `Γ(C, O)`-modules, degreewise”.
 
 > **Stacks 0FR3, `Hom_{Mod^gr(A)}(M, L) = Γ(C, SheafHom^gr_A(M, L))`.** In each degree `n`,
 > the homomorphisms `M → L` of right graded `A`-modules homogeneous of degree `n` are the global
@@ -78,7 +78,7 @@ noncomputable def gradedHomLinearEquivSections (M L : GradedModule.{t, a, w} A) 
       Stacks.Cohomology.SiteModules.GlobalSections R (gradedLocalHomSheaf M L n)
 ```
 
-**`SheafOfModules.gradedHomLinearEquivSections_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 952](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L952). The attribute's comment: “the identification with global sections is compatible with composition”.
+**`SheafOfModules.gradedHomLinearEquivSections_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean, line 952](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHomSheaf.lean#L952). The attribute's comment: “the identification with global sections is compatible with composition”.
 
 > **Stacks 0FR3, compatibility with composition.** Under
 > `Hom_{Mod^gr(A)}(-, -) = Γ(C, SheafHom^gr_A(-, -))`, composition `g ∘ f` of homogeneous
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.7, Tag 0FR3](https://stacks.math.columbia.edu/tag/0FR3)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

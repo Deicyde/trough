@@ -8,13 +8,13 @@ proof: formalized
 
 # 54.8 Boundedness
 
-Section 54.8 of the Stacks Project, [Tag 0AXE](https://stacks.math.columbia.edu/tag/0AXE). 11 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 54.8 of the Stacks Project, [Tag 0AXE](https://stacks.math.columbia.edu/tag/0AXE). 11 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AXF, a lemma
 
 [Tag 0AXF](https://stacks.math.columbia.edu/tag/0AXF) in the Stacks Project.
 
-**`AlgebraicGeometry.firstStructureSheafCohomologyVanishes_of_isModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/FirstCohomologyModificationTransfer.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/FirstCohomologyModificationTransfer.lean#L158). The attribute's comment: “first conclusion, injectivity only: the map H¹(X, 𝒪\_X) ⟶ H¹(X', 𝒪\_\{X'}) of the source's short exact sequence is injective, so a vanishing H¹ upstairs forces one downstairs. Generalized: the base is an arbitrary normal integral scheme, not the spectrum of a two-dimensional normal local domain. NOT proved, and not asserted by this entry: the surjectivity onto H⁰(X, R¹g\_*𝒪\_\{X'}), which rests on Tag 02V7 in fibre dimension one. The tag's second and third conclusions are carried separately in AlgebraicGeometry.SemistableReduction.TwoModifications”.
+**`AlgebraicGeometry.firstStructureSheafCohomologyVanishes_of_isModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/FirstCohomologyModificationTransfer.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/FirstCohomologyModificationTransfer.lean#L158). The attribute's comment: “first conclusion, injectivity only: the map H¹(X, 𝒪\_X) ⟶ H¹(X', 𝒪\_\{X'}) of the source's short exact sequence is injective, so a vanishing H¹ upstairs forces one downstairs. Generalized: the base is an arbitrary normal integral scheme, not the spectrum of a two-dimensional normal local domain. NOT proved, and not asserted by this entry: the surjectivity onto H⁰(X, R¹g\_*𝒪\_\{X'}), which rests on Tag 02V7 in fibre dimension one. The tag's second and third conclusions are carried separately in AlgebraicGeometry.SemistableReduction.TwoModifications”.
 
 > **Stacks Project, Tag 0AXF, the injectivity in the first conclusion.** For a modification
 > `q : Z ⟶ Y` of a normal integral scheme `Y`, the vanishing of `H¹(Z, 𝒪_Z)` implies the vanishing
@@ -32,7 +32,7 @@ public theorem firstStructureSheafCohomologyVanishes_of_isModification {Z Y : Sc
     FirstStructureSheafCohomologyVanishes Y
 ```
 
-**`AlgebraicGeometry.SemistableReduction.TwoModifications.exists_shortExact_firstCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/LerayShortExactSequenceDimTwo.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/LerayShortExactSequenceDimTwo.lean#L371). The attribute's comment: “the short exact sequence 0 → H¹(X, 𝒪\_X) → H¹(X', 𝒪\_\{X'}) → H⁰(X, R¹g\_*𝒪\_\{X'}) → 0”.
+**`AlgebraicGeometry.SemistableReduction.TwoModifications.exists_shortExact_firstCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/LerayShortExactSequenceDimTwo.lean, line 371](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/LerayShortExactSequenceDimTwo.lean#L371). The attribute's comment: “the short exact sequence 0 → H¹(X, 𝒪\_X) → H¹(X', 𝒪\_\{X'}) → H⁰(X, R¹g\_*𝒪\_\{X'}) → 0”.
 
 > **[Stacks, Tag 0AXF], first conclusion.**  There is a short exact sequence
 >
@@ -60,7 +60,7 @@ theorem exists_shortExact_firstCohomology :
         Function.Surjective ψ
 ```
 
-**`AlgebraicGeometry.SemistableReduction.TwoModifications.topologicalKrullDim_supp_rightDerived_one_pushforward_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/HigherDirectImageBoundedness.lean, line 719](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/HigherDirectImageBoundedness.lean#L719). The attribute's comment: “dim(Supp(R¹g\_*𝒪\_\{X'})) = 0, read as dimension at most zero”.
+**`AlgebraicGeometry.SemistableReduction.TwoModifications.topologicalKrullDim_supp_rightDerived_one_pushforward_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/HigherDirectImageBoundedness.lean, line 719](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/HigherDirectImageBoundedness.lean#L719). The attribute's comment: “dim(Supp(R¹g\_*𝒪\_\{X'})) = 0, read as dimension at most zero”.
 
 > **[Stacks, Tag 0AXF], second conclusion.**  The support of `R¹g_*𝒪_{X'}` has dimension zero:
 > it is a finite set of closed points of `X`.  As everywhere in this development the source's
@@ -73,7 +73,7 @@ theorem topologicalKrullDim_supp_rightDerived_one_pushforward_le_zero :
         (SheafOfModules.unit S.X'.ringCatSheaf))) ≤ 0
 ```
 
-**`AlgebraicGeometry.SemistableReduction.TwoModifications.nonempty_generatingSections_rightDerived_one_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/HigherDirectImageBoundedness.lean, line 732](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/HigherDirectImageBoundedness.lean#L732). The attribute's comment: “R¹g\_*𝒪\_\{X'} is generated by global sections”.
+**`AlgebraicGeometry.SemistableReduction.TwoModifications.nonempty_generatingSections_rightDerived_one_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/HigherDirectImageBoundedness.lean, line 732](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/HigherDirectImageBoundedness.lean#L732). The attribute's comment: “R¹g\_*𝒪\_\{X'} is generated by global sections”.
 
 > **[Stacks, Tag 0AXF], third conclusion.**  `R¹g_*𝒪_{X'}` is generated by global sections.
 > Its support is a finite set of closed points, so a germ at any of them extends by zero to a
@@ -89,7 +89,7 @@ theorem nonempty_generatingSections_rightDerived_one_pushforward :
 
 [Tag 0AXJ](https://stacks.math.columbia.edu/tag/0AXJ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_bound_length_quotient_baseToZeroSchemeSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ZeroSchemeSectionsBound.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ZeroSchemeSectionsBound.lean#L159). The attribute's comment: “`hsub` carries the subquotient step: `M_{X,c}` embeds into `B / (A ⧸ cA)` because the closure of `Z ∩ f⁻¹(U)` is a spectrum between them (Stacks 0AB7) and `H⁰(Z, 𝒪_Z)` injects on it (Stacks 0AXB, absent from this library)”.
+**`AlgebraicGeometry.exists_bound_length_quotient_baseToZeroSchemeSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ZeroSchemeSectionsBound.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ZeroSchemeSectionsBound.lean#L159). The attribute's comment: “`hsub` carries the subquotient step: `M_{X,c}` embeds into `B / (A ⧸ cA)` because the closure of `Z ∩ f⁻¹(U)` is a spectrum between them (Stacks 0AB7) and `H⁰(Z, 𝒪_Z)` injects on it (Stacks 0AXB, absent from this library)”.
 
 > **Stacks Project, Tag 0AXJ.** Let `(A, 𝔪, κ)` be a local normal Nagata domain of dimension
 > two and let `a ∈ A` be nonzero. There is an integer `N` such that for every modification
@@ -122,7 +122,7 @@ theorem exists_bound_length_quotient_baseToZeroSchemeSections {A : Type u} [Comm
         LinearMap.range (baseToZeroSchemeSections X f a)) ≤ N
 ```
 
-**`AlgebraicGeometry.exists_uniform_bound_length_quotient_baseToZeroSchemeSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ZeroSchemeSectionsNormalization.lean, line 725](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ZeroSchemeSectionsNormalization.lean#L725).
+**`AlgebraicGeometry.exists_uniform_bound_length_quotient_baseToZeroSchemeSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ZeroSchemeSectionsNormalization.lean, line 725](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ZeroSchemeSectionsNormalization.lean#L725).
 
 > Let `(A, 𝔪, κ)` be a local normal Nagata domain of dimension two and let `a ∈ A` be nonzero.
 > There is an integer `N` such that for every modification `f : X ⟶ Spec A` with `X` normal the
@@ -145,7 +145,7 @@ theorem exists_uniform_bound_length_quotient_baseToZeroSchemeSections {A : Type 
 
 [Tag 0AXK](https://stacks.math.columbia.edu/tag/0AXK) in the Stacks Project.
 
-**`AlgebraicGeometry.nonempty_quotient_baseToZeroSchemeSections_equiv_torsionBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ModificationATorsion.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ModificationATorsion.lean#L167).
+**`AlgebraicGeometry.nonempty_quotient_baseToZeroSchemeSections_equiv_torsionBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ModificationATorsion.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/ModificationATorsion.lean#L167).
 
 > **Stacks Project, Tag 0AXK.** For a nonzero element `a` of a normal domain `A` and a
 > modification `f : X ⟶ Spec A`, the cokernel of `A ⟶ H⁰(Z, 𝒪_Z)`, for `Z ⊂ X` cut out by `a`, is
@@ -163,7 +163,7 @@ theorem nonempty_quotient_baseToZeroSchemeSections_equiv_torsionBy [IsNormalDoma
 
 [Tag 0B4N](https://stacks.math.columbia.edu/tag/0B4N) in the Stacks Project.
 
-**`AlgebraicGeometry.DefinesRationalSingularity`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RationalSingularity.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RationalSingularity.lean#L49). The attribute's comment: “defines\_rational\_singularity”.
+**`AlgebraicGeometry.DefinesRationalSingularity`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RationalSingularity.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RationalSingularity.lean#L49). The attribute's comment: “defines\_rational\_singularity”.
 
 > An integral domain `A` **defines a rational singularity** if the first cohomology of the
 > structure sheaf of every normal modification of `Spec A` vanishes.
@@ -173,7 +173,7 @@ noncomputable abbrev DefinesRationalSingularity
     (A : Type u) [CommRing A] [IsDomain A] : Prop
 ```
 
-**`AlgebraicGeometry.IsReductionToRationalSingularitiesPossible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/Reduction.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/Reduction.lean#L50). The attribute's comment: “reduction\_to\_rational\_singularities\_possible”.
+**`AlgebraicGeometry.IsReductionToRationalSingularitiesPossible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/Reduction.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/Reduction.lean#L50). The attribute's comment: “reduction\_to\_rational\_singularities\_possible”.
 
 > Reduction to rational singularities is possible for `A` if the `A`-module lengths of
 > `H¹(X, 𝒪_X)` have a common finite bound over all normal modifications `X ⟶ Spec A`.
@@ -187,7 +187,7 @@ abbrev IsReductionToRationalSingularitiesPossible (A : Type u) [CommRing A] [IsD
 
 [Tag 0BG0](https://stacks.math.columbia.edu/tag/0BG0) in the Stacks Project.
 
-**`AlgebraicGeometry.definesRationalSingularity_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/LocalBirationalExtensionsRational.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/LocalBirationalExtensionsRational.lean#L92). The attribute's comment: “a local extension A ⊂ B of domains with the same fraction field, essentially of finite type, A a 2-dimensional local normal Nagata domain defining a rational singularity, B normal of dimension 2: B defines a rational singularity”.
+**`AlgebraicGeometry.definesRationalSingularity_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/LocalBirationalExtensionsRational.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/LocalBirationalExtensionsRational.lean#L92). The attribute's comment: “a local extension A ⊂ B of domains with the same fraction field, essentially of finite type, A a 2-dimensional local normal Nagata domain defining a rational singularity, B normal of dimension 2: B defines a rational singularity”.
 
 > **Stacks Project, Tag 0BG0.** Let `(A, 𝔪)` be a two-dimensional local normal Nagata domain
 > defining a rational singularity, and let `A ⟶ B` be a local extension of normal local domains
@@ -207,7 +207,7 @@ theorem definesRationalSingularity_of_essFiniteType (A B : Type u) [CommRing A] 
 
 [Tag 0B4P](https://stacks.math.columbia.edu/tag/0B4P) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_normalizedBlowUpSeq_definesRationalSingularity_stalk_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedPointBlowupRationalSingularity.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedPointBlowupRationalSingularity.lean#L101). The attribute's comment: “Complete, under exactly the source's hypotheses, with every clause of the source.”.
+**`AlgebraicGeometry.exists_normalizedBlowUpSeq_definesRationalSingularity_stalk_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedPointBlowupRationalSingularity.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedPointBlowupRationalSingularity.lean#L101). The attribute's comment: “Complete, under exactly the source's hypotheses, with every clause of the source.”.
 
 > **[Stacks, Tag 0B4P].** For a local normal Nagata domain `A` of dimension two for which
 > reduction to rational singularities is possible, there is a finite sequence of normalized blowups
@@ -231,7 +231,7 @@ theorem exists_normalizedBlowUpSeq_definesRationalSingularity_stalk_unconditiona
 
 [Tag 0AXL](https://stacks.math.columbia.edu/tag/0AXL) in the Stacks Project.
 
-**`Stacks.ResolutionOfSurfaces.isReductionToRationalSingularitiesPossible_of_finite_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/FiniteSeparableExtension.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/FiniteSeparableExtension.lean#L67).
+**`Stacks.ResolutionOfSurfaces.isReductionToRationalSingularitiesPossible_of_finite_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/FiniteSeparableExtension.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/FiniteSeparableExtension.lean#L67).
 
 > Let `A ⟶ B` be a finite injective local map of local normal
 > Nagata domains of dimension two, let `K` and `L` be their fraction fields and assume `L/K`
@@ -252,7 +252,7 @@ theorem isReductionToRationalSingularitiesPossible_of_finite_of_isSeparable
     IsReductionToRationalSingularitiesPossible B
 ```
 
-**`AlgebraicGeometry.SeparableGoUp.isReductionToRationalSingularitiesPossible_of_finite_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/SeparableGoUpTransfer.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/SeparableGoUpTransfer.lean#L103).
+**`AlgebraicGeometry.SeparableGoUp.isReductionToRationalSingularitiesPossible_of_finite_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/SeparableGoUpTransfer.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/SeparableGoUpTransfer.lean#L103).
 
 > **Stacks Project, Tag 0AXL.** Let `A → B` be a finite injective local ring map of local normal
 > Nagata domains of dimension two such that the induced extension of fraction fields is separable.
@@ -274,7 +274,7 @@ theorem isReductionToRationalSingularitiesPossible_of_finite_of_isSeparable (A B
 
 [Tag 0B4Q](https://stacks.math.columbia.edu/tag/0B4Q) in the Stacks Project.
 
-**`AlgebraicGeometry.definesRationalSingularity_of_isRegularLocalRing_of_ringKrullDim_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularLocalRingDefinesRational.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularLocalRingDefinesRational.lean#L148).
+**`AlgebraicGeometry.definesRationalSingularity_of_isRegularLocalRing_of_ringKrullDim_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularLocalRingDefinesRational.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularLocalRingDefinesRational.lean#L148).
 
 > **Stacks Project, Tag 0B4Q.** A Nagata regular local ring of dimension two defines a rational
 > singularity.
@@ -285,7 +285,7 @@ theorem definesRationalSingularity_of_isRegularLocalRing_of_ringKrullDim_eq_two 
     letI := IsRegularLocalRing.isDomain A; DefinesRationalSingularity A
 ```
 
-**`AlgebraicGeometry.definesRationalSingularity_of_isRegularLocalRing_of_isNagataRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularLocalRingRational.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularLocalRingRational.lean#L314).
+**`AlgebraicGeometry.definesRationalSingularity_of_isRegularLocalRing_of_isNagataRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularLocalRingRational.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/RegularLocalRingRational.lean#L314).
 
 > **Stacks Project, Tag 0B4Q.** A Nagata regular local ring `A` of dimension two defines a
 > rational singularity: `H¹(X, 𝒪_X) = 0` for every modification `X ⟶ Spec(A)` with `X` normal.
@@ -310,7 +310,7 @@ theorem definesRationalSingularity_of_isRegularLocalRing_of_isNagataRing (A : Ty
 
 [Tag 0B4S](https://stacks.math.columbia.edu/tag/0B4S) in the Stacks Project.
 
-**`Stacks.ResolutionOfSurfaces.isReductionToRationalSingularitiesPossible_of_smul_baseTraceCokernel_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/TraceCokernelImageLift.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/TraceCokernelImageLift.lean#L363). The attribute's comment: “reduction to rational singularities for a two-dimensional local normal Nagata domain with a normalized dualizing complex, from a nonzero element annihilating the cokernel of the trace map of every normal modification; the trace is Stacks.Duality.baseTrace, the trace of Tag 0AWG over the affine base, read on H^\{-2}, whose source is the global sections of the normalized dualizing module of X by homologyNegTwoDerivedGlobalSectionsIso and whose target is the dualizing module of A by dualizingModule\_eq\_homologyFunctor\_negTwo\_obj; Grauert-Riemenschneider vanishing (Tag 0AXD) is discharged in TraceCokernelVanishingHom.lean and the uniform length bound of Tags 0AXJ and 0AXK upstream”.
+**`Stacks.ResolutionOfSurfaces.isReductionToRationalSingularitiesPossible_of_smul_baseTraceCokernel_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/TraceCokernelImageLift.lean, line 363](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/TraceCokernelImageLift.lean#L363). The attribute's comment: “reduction to rational singularities for a two-dimensional local normal Nagata domain with a normalized dualizing complex, from a nonzero element annihilating the cokernel of the trace map of every normal modification; the trace is Stacks.Duality.baseTrace, the trace of Tag 0AWG over the affine base, read on H^\{-2}, whose source is the global sections of the normalized dualizing module of X by homologyNegTwoDerivedGlobalSectionsIso and whose target is the dualizing module of A by dualizingModule\_eq\_homologyFunctor\_negTwo\_obj; Grauert-Riemenschneider vanishing (Tag 0AXD) is discharged in TraceCokernelVanishingHom.lean and the uniform length bound of Tags 0AXJ and 0AXK upstream”.
 
 > Let `(A, 𝔪, κ)` be a local normal Nagata domain of dimension two with a normalized
 > dualizing complex `ω_A^•`. If some nonzero `d ∈ A` annihilates the cokernel of the
@@ -359,7 +359,7 @@ theorem isReductionToRationalSingularitiesPossible_of_smul_baseTraceCokernel_eq_
 
 [Tag 0B4T](https://stacks.math.columbia.edu/tag/0B4T) in the Stacks Project.
 
-**`Stacks.BlowupTwistUnit.exists_topFormsTrace_eq_baseIsoOfTopForms_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BlowupTwistUnit/TopFormsTraceRegularLocal.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BlowupTwistUnit/TopFormsTraceRegularLocal.lean#L200). The attribute's comment: “the map phi\_X from the reflexive hull of the top relative differential forms of X over A\_0 to the dualizing module omega\_X normalized relative to omega\_A = Omega^r\_\{A/A\_0}, for every sequence of blowups in closed points of a regular local base of dimension two, extending the given identification: pulling the top forms back to X, applying phi\_X and taking the trace of omega\_X back to Spec A gives the identification omega\_A = Omega^r\_\{A/A\_0}. The family omega\_X, the identification and the normalization are constructed from the hypotheses of the tag, and at each blowup the automorphism by which the direct-image comparison differs from the canonical map is proved invertible”.
+**`Stacks.BlowupTwistUnit.exists_topFormsTrace_eq_baseIsoOfTopForms_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BlowupTwistUnit/TopFormsTraceRegularLocal.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BlowupTwistUnit/TopFormsTraceRegularLocal.lean#L200). The attribute's comment: “the map phi\_X from the reflexive hull of the top relative differential forms of X over A\_0 to the dualizing module omega\_X normalized relative to omega\_A = Omega^r\_\{A/A\_0}, for every sequence of blowups in closed points of a regular local base of dimension two, extending the given identification: pulling the top forms back to X, applying phi\_X and taking the trace of omega\_X back to Spec A gives the identification omega\_A = Omega^r\_\{A/A\_0}. The family omega\_X, the identification and the normalization are constructed from the hypotheses of the tag, and at each blowup the automorphism by which the direct-image comparison differs from the canonical map is proved invertible”.
 
 > **Stacks Project, Tag 0B4T.** Let `A` be a regular local ring of dimension two and `A₀ ⊆ A` a
 > subring with `Ω_{A/A₀}` free of rank `r`, and set `ω_A = Ω^r_{A/A₀}`. If `f : X ⟶ Spec A` is the
@@ -415,7 +415,7 @@ theorem exists_topFormsTrace_eq_baseIsoOfTopForms_inv
 
 [Tag 0B4U](https://stacks.math.columbia.edu/tag/0B4U) in the Stacks Project.
 
-**`AlgebraicGeometry.SeparableGoUp.isReductionToRationalSingularitiesPossible_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/InseparableReductionAssembly.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/InseparableReductionAssembly.lean#L43).
+**`AlgebraicGeometry.SeparableGoUp.isReductionToRationalSingularitiesPossible_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/InseparableReductionAssembly.lean, line 43](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/InseparableReductionAssembly.lean#L43).
 
 > **Stacks Project, Tag 0B4U.** Let `p` be a prime number, `A` a complete regular local ring of
 > dimension two and characteristic `p`, `L/K` an inseparable extension of degree `p` of the
@@ -439,4 +439,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.8, Tag 0AXE](https://stacks.math.columbia.edu/tag/0AXE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

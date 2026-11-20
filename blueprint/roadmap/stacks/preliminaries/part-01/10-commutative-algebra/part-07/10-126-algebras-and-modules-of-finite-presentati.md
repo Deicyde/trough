@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.126 Algebras and modules of finite presentation
 
-Section 10.126 of the Stacks Project, [Tag 05N4](https://stacks.math.columbia.edu/tag/05N4). 11 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.126 of the Stacks Project, [Tag 05N4](https://stacks.math.columbia.edu/tag/05N4). 11 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00QP, a lemma
 
 [Tag 00QP](https://stacks.math.columbia.edu/tag/00QP) in the Stacks Project.
 
-**`Algebra.FiniteType.iff_finiteType_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L315). References: SGA 1 VIII (3.4); SGA 1 VIII (3.3), “finite type, affine”.
+**`Algebra.FiniteType.iff_finiteType_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 315](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L315). References: SGA 1 VIII (3.4); SGA 1 VIII (3.3), “finite type, affine”.
 
 > **Stacks 00QP**. Being of finite type descends along a faithfully flat base change:
 > for a faithfully flat `R`-algebra `R'`, an `R`-algebra `S` is of finite type if and only
@@ -33,14 +33,14 @@ theorem Algebra.FiniteType.iff_finiteType_tensorProduct
 
 Declarations registered for the tag:
 
-- [`Algebra.FinitePresentation.baseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FinitePresentation.baseChange#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L329) (StacksFrontier): “a base change of an algebra of finite presentation is of finite presentation”. References: EGA IV (8.6.2), “special case”; EGA IV (1.4.1); EGA IV (1.4.3), “(iii), special case”; EGA IV (1.6.2), “(iii), special case”; SGA 1 VIII (3.6), “partial”; SGA 3 XIX (2.1), “special case”.
-- [`Algebra.FinitePresentation.of_finitePresentation_tensorProduct_of_faithfullyFlat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FinitePresentation.of_finitePresentation_tensorProduct_of_faithfullyFlat#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L331) (StacksFrontier): “finite presentation descends along a faithfully flat base change”. References: EGA IV (2.7.1), “special case”; EGA IV (2.7.1.1), “partial”; SGA 1 VIII (3.6), “affine case”; SGA 3 VIB (10.8), “special case”; SGA 3 XIX (2.1), “special case”; SGA 6 VIII (1.6), “special case”.
+- [`Algebra.FinitePresentation.baseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FinitePresentation.baseChange#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 329](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L329) (StacksFrontier): “a base change of an algebra of finite presentation is of finite presentation”. References: EGA IV (8.6.2), “special case”; EGA IV (1.4.1); EGA IV (1.4.3), “(iii), special case”; EGA IV (1.6.2), “(iii), special case”; SGA 1 VIII (3.6), “partial”; SGA 3 XIX (2.1), “special case”.
+- [`Algebra.FinitePresentation.of_finitePresentation_tensorProduct_of_faithfullyFlat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.FinitePresentation.of_finitePresentation_tensorProduct_of_faithfullyFlat#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 331](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L331) (StacksFrontier): “finite presentation descends along a faithfully flat base change”. References: EGA IV (2.7.1), “special case”; EGA IV (2.7.1.1), “partial”; SGA 1 VIII (3.6), “affine case”; SGA 3 VIB (10.8), “special case”; SGA 3 XIX (2.1), “special case”; SGA 6 VIII (1.6), “special case”.
 
 ## Tag 05N5, a lemma
 
 [Tag 05N5](https://stacks.math.columbia.edu/tag/05N5) in the Stacks Project.
 
-**`Module.exists_finite_isBaseChange_of_surjective_algebraMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 665](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L665). The attribute's comment: “Stated for an arbitrary surjection `Rₛ → R'` from a localization `Rₛ = S⁻¹R` in place of `R' = S⁻¹(R/I)`, of which it is the case `R' = Rₛ ⧸ I·Rₛ`; `S⁻¹(M/IM)` is the base change `R' ⊗_R M`, pinned by `IsBaseChange R' g` for the source's map `g : M → M'`. Items (1) and (2) are the two conjuncts.”.
+**`Module.exists_finite_isBaseChange_of_surjective_algebraMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 665](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L665). The attribute's comment: “Stated for an arbitrary surjection `Rₛ → R'` from a localization `Rₛ = S⁻¹R` in place of `R' = S⁻¹(R/I)`, of which it is the case `R' = Rₛ ⧸ I·Rₛ`; `S⁻¹(M/IM)` is the base change `R' ⊗_R M`, pinned by `IsBaseChange R' g` for the source's map `g : M → M'`. Items (1) and (2) are the two conjuncts.”.
 
 > **Stacks 05N5.** Let `R` be a ring, `S ⊆ R` a multiplicative subset, `Rₛ = S⁻¹R` and let
 > `R'` be a quotient of `Rₛ` (for instance `R' = S⁻¹(R/I) = Rₛ/I·Rₛ` for an ideal `I ⊆ R`). For
@@ -63,7 +63,7 @@ theorem exists_finite_isBaseChange_of_surjective_algebraMap {R : Type u} [CommRi
 
 [Tag 05N6](https://stacks.math.columbia.edu/tag/05N6) in the Stacks Project.
 
-**`Module.exists_finite_isLocalizedModule_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L476). The attribute's comment: “Localizations are abstract (`IsLocalization S Rₛ`, `IsLocalizedModule S f`); the induced isomorphism `S⁻¹M' → S⁻¹M` is pinned as `IsLocalizedModule S (f ∘ₗ φ)`; `M'` is produced in the universe of `R`. Items (1) and (2) are the two conjuncts, (2) as an implication about the same `M'`.”.
+**`Module.exists_finite_isLocalizedModule_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L476). The attribute's comment: “Localizations are abstract (`IsLocalization S Rₛ`, `IsLocalizedModule S f`); the induced isomorphism `S⁻¹M' → S⁻¹M` is pinned as `IsLocalizedModule S (f ∘ₗ φ)`; `M'` is produced in the universe of `R`. Items (1) and (2) are the two conjuncts, (2) as an implication about the same `M'`.”.
 
 > **Stacks 05N6.** Let `R` be a ring, `S ⊆ R` a multiplicative subset, `M` an `R`-module and
 > `f : M → Mₛ` a localization of `M` at `S`, over a localization `Rₛ` of `R` at `S`.
@@ -89,7 +89,7 @@ theorem exists_finite_isLocalizedModule_comp {R : Type u} [CommRing R] (S : Subm
 
 [Tag 05GJ](https://stacks.math.columbia.edu/tag/05GJ) in the Stacks Project.
 
-**`Module.exists_finite_isLocalizedModule_comp_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L525). The attribute's comment: “The case `S = p.primeCompl` of 05N6 (`Module.exists_finite_isLocalizedModule_comp`), stated in the same shape: localizations are abstract, the induced isomorphism `M'ₚ → Mₚ` is pinned as `IsLocalizedModule p.primeCompl (f ∘ₗ φ)`, `M'` is produced in the universe of `R`, and items (1) and (2) are the two conjuncts, (2) as an implication about the same `M'`.”.
+**`Module.exists_finite_isLocalizedModule_comp_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 525](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L525). The attribute's comment: “The case `S = p.primeCompl` of 05N6 (`Module.exists_finite_isLocalizedModule_comp`), stated in the same shape: localizations are abstract, the induced isomorphism `M'ₚ → Mₚ` is pinned as `IsLocalizedModule p.primeCompl (f ∘ₗ φ)`, `M'` is produced in the universe of `R`, and items (1) and (2) are the two conjuncts, (2) as an implication about the same `M'`.”.
 
 > **Stacks 05GJ.** Let `R` be a ring, `p ⊆ R` a prime ideal, `M` an `R`-module and
 > `f : M → Mₚ` a localization of `M` at `p.primeCompl`, over a localization `Rₚ` of `R` at `p`.
@@ -116,7 +116,7 @@ theorem exists_finite_isLocalizedModule_comp_atPrime {R : Type u} [CommRing R]
 
 [Tag 00QR](https://stacks.math.columbia.edu/tag/00QR) in the Stacks Project.
 
-**`exists_away_prod_of_localRingHom_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/LocalIsomorphism/ProductSplitting.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/LocalIsomorphism/ProductSplitting.lean#L429).
+**`exists_away_prod_of_localRingHom_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/LocalIsomorphism/ProductSplitting.lean, line 429](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/SpreadingOut/LocalIsomorphism/ProductSplitting.lean#L429).
 
 > Let `φ : R → S` be a ring map of commutative rings, and let `q ⊆ S` be a prime ideal lying over
 > the prime `p ⊆ R` (i.e. `p = q.comap φ`). Assume `S` is of finite presentation over `R`, and that
@@ -144,7 +144,7 @@ theorem exists_away_prod_of_localRingHom_bijective (R S : Type) [CommRing R] [Co
 
 [Tag 00QS](https://stacks.math.columbia.edu/tag/00QS) in the Stacks Project.
 
-**`Algebra.FinitePresentation.exists_algEquiv_localizationAway_awayLift_eq_of_algEquiv_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/LocalIsomorphism/AwayIsomorphism.lean, line 610](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/LocalIsomorphism/AwayIsomorphism.lean#L610). The attribute's comment: “The local rings `S_q`, `S'_{q'}` are any localizations at the primes (`IsLocalization.AtPrime Sq q` with `IsScalarTower R S Sq`, so that the `R`-algebra structure is the composite `R → S → Sq`), and `S_g`, `S'_{g'}` are the models `Localization.Away g`, `Localization.Away g'`, which by uniqueness of localizations costs no generality. Besides the isomorphism `S_g ≅ S'_{g'}` of the statement, the theorem records that it is compatible with the given isomorphism `S_q ≅ S'_{q'}`, which the proof in the source produces.”.
+**`Algebra.FinitePresentation.exists_algEquiv_localizationAway_awayLift_eq_of_algEquiv_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/LocalIsomorphism/AwayIsomorphism.lean, line 610](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/SpreadingOut/LocalIsomorphism/AwayIsomorphism.lean#L610). The attribute's comment: “The local rings `S_q`, `S'_{q'}` are any localizations at the primes (`IsLocalization.AtPrime Sq q` with `IsScalarTower R S Sq`, so that the `R`-algebra structure is the composite `R → S → Sq`), and `S_g`, `S'_{g'}` are the models `Localization.Away g`, `Localization.Away g'`, which by uniqueness of localizations costs no generality. Besides the isomorphism `S_g ≅ S'_{g'}` of the statement, the theorem records that it is compatible with the given isomorphism `S_q ≅ S'_{q'}`, which the proof in the source produces.”.
 
 > Let `R` be a ring, let `S` and `S'` be `R`-algebras of finite presentation, and let
 > `q ⊆ S`, `q' ⊆ S'` be primes. If `e : S_q ≅ S'_{q'}` is an isomorphism of `R`-algebras,
@@ -173,7 +173,7 @@ public theorem exists_algEquiv_localizationAway_awayLift_eq_of_algEquiv_atPrime 
 
 [Tag 0G8U](https://stacks.math.columbia.edu/tag/0G8U) in the Stacks Project.
 
-**`finiteType_of_isNilpotent_quotient_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nilpotent/Descent.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nilpotent/Descent.lean#L437). References: SGA 3 VIB (1.3.0), “(i)”.
+**`finiteType_of_isNilpotent_quotient_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nilpotent/Descent.lean, line 437](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Nilpotent/Descent.lean#L437). References: SGA 3 VIB (1.3.0), “(i)”.
 
 > **Stacks Tag 0G8U (Lemma 10.126.8).** Let `R` be a ring, let `I` be a nilpotent ideal
 > of `R`, and let `S` be an `R`-algebra such that the induced ring map `R ⧸ I → S ⧸ IS` is
@@ -192,7 +192,7 @@ theorem finiteType_of_isNilpotent_quotient_finiteType
 
 [Tag 07RD](https://stacks.math.columbia.edu/tag/07RD) in the Stacks Project.
 
-**`surjective_of_surjective_mod_locallyNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nilpotent/Descent.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nilpotent/Descent.lean#L260).
+**`surjective_of_surjective_mod_locallyNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nilpotent/Descent.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Nilpotent/Descent.lean#L260).
 
 > **Stacks Tag 07RD.** Let `R` be a commutative ring, `I ⊆ R` a locally
 > nilpotent ideal, and `f : S →ₐ[R] S'` an `R`-algebra map such that the induced
@@ -246,7 +246,7 @@ theorem surjective_of_surjective_mod_locallyNilpotent
 
 [Tag 087P](https://stacks.math.columbia.edu/tag/087P) in the Stacks Project.
 
-**`isomorphism_of_flat_surjective_087P`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/Away.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/Away.lean#L334).
+**`isomorphism_of_flat_surjective_087P`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/Away.lean, line 334](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/SpreadingOut/Away.lean#L334).
 
 > **Stacks Tag 087P (Lemma 10.126.10).**
 > Under the stated hypotheses there is `g ∈ S`, `g ∉ q`, with `φ_g : S_g → S'_g` an
@@ -267,7 +267,7 @@ theorem isomorphism_of_flat_surjective_087P
 
 [Tag 07RE](https://stacks.math.columbia.edu/tag/07RE) in the Stacks Project.
 
-**`AlgHom.bijective_of_bijective_quotientMapₐ_of_le_nilradical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 741](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L741). The attribute's comment: “That `I` consists of nilpotents is spelled `I ≤ nilradical R`, the source's `S/IS → S'/IS'` is `Ideal.quotientMapₐ` applied to `f`, and finite type, finite presentation and flatness are instance arguments.”. References: SGA 1 III (4.2), “affine case + finiteness”.
+**`AlgHom.bijective_of_bijective_quotientMapₐ_of_le_nilradical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean, line 741](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Descent.lean#L741). The attribute's comment: “That `I` consists of nilpotents is spelled `I ≤ nilradical R`, the source's `S/IS → S'/IS'` is `Ideal.quotientMapₐ` applied to `f`, and finite type, finite presentation and flatness are instance arguments.”. References: SGA 1 III (4.2), “affine case + finiteness”.
 
 > **Stacks 07RE**. Let `I ⊆ R` be an ideal all of whose elements are nilpotent, let `S` be of
 > finite type over `R` and let `S'` be of finite presentation and flat over `R`. If an `R`-algebra
@@ -294,4 +294,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.126, Tag 05N4](https://stacks.math.columbia.edu/tag/05N4)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

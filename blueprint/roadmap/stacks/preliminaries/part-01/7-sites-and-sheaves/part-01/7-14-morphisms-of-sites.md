@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.14 Morphisms of sites
 
-Section 7.14 of the Stacks Project, [Tag 00X0](https://stacks.math.columbia.edu/tag/00X0). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 7.14 of the Stacks Project, [Tag 00X0](https://stacks.math.columbia.edu/tag/00X0). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00X1, a definition
 
 [Tag 00X1](https://stacks.math.columbia.edu/tag/00X1) in the Stacks Project.
 
-**`Stacks.Sites.Site.IsMorphismOfSites`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/FamilySite.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/FamilySite.lean#L177).
+**`Stacks.Sites.Site.IsMorphismOfSites`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/FamilySite.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/FamilySite.lean#L177).
 
 > A *morphism of sites* `f : D → C` (Stacks 00X1) is given by a continuous functor
 > `u : C ⥤ D` (Stacks 00WV) such that the functor `u_s : Sh(C) ⥤ Sh(D)`, `G ↦ (u_p G)^#`, on
@@ -30,7 +30,7 @@ structure IsMorphismOfSites (SC : Site.{w} C) (SD : Site.{w} D) (u : C ⥤ D) : 
 
 [Tag 00X2](https://stacks.math.columbia.edu/tag/00X2) in the Stacks Project.
 
-**`StacksZariskiSite.topPushforward_eq_sheafPushforwardContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L45).
+**`StacksZariskiSite.topPushforward_eq_sheafPushforwardContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 45](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L45).
 
 > **Stacks 00X2.** The site-theoretic pushforward `u^s` along `u = Opens.map f` is the usual
 > topological pushforward `f_*` on sheaves of sets: Mathlib's `TopCat.Sheaf.pushforward` is defined
@@ -44,7 +44,7 @@ theorem topPushforward_eq_sheafPushforwardContinuous :
         (Opens.grothendieckTopology X)
 ```
 
-**`StacksZariskiSite.topPullback_eq_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L54).
+**`StacksZariskiSite.topPullback_eq_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L54).
 
 > **Stacks 00X2.** The site-theoretic pullback `u_s` along `u = Opens.map f` is the usual
 > topological pullback `f⁻¹` on sheaves of sets.
@@ -56,7 +56,7 @@ theorem topPullback_eq_sheafPullback :
         (Opens.grothendieckTopology X)
 ```
 
-**`StacksZariskiSite.topAdjunction_eq_sheafAdjunctionContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L64).
+**`StacksZariskiSite.topAdjunction_eq_sheafAdjunctionContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L64).
 
 > **Stacks 00X2.** Consequently the topological adjunction `f⁻¹ ⊣ f_*` is the site-theoretic
 > adjunction `u_s ⊣ u^s`; this is the step by which the example concludes `f⁻¹ ≅ u_s` from
@@ -69,7 +69,7 @@ theorem topAdjunction_eq_sheafAdjunctionContinuous :
         (Opens.grothendieckTopology X)
 ```
 
-**`StacksZariskiSite.isMorphismOfSites_opensMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L83). References: SGA 4 IV (4.1.1), “morphism of topoi Top(f)”; SGA 4 III (1.9.1), “continuity of f^\{-1}”.
+**`StacksZariskiSite.isMorphismOfSites_opensMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L83). References: SGA 4 IV (4.1.1), “morphism of topoi Top(f)”; SGA 4 III (1.9.1), “continuity of f^\{-1}”.
 
 > **Stacks 00X2.** The functor `u = Opens.map f : Y_Zar ⥤ X_Zar`, `V ↦ f⁻¹(V)`, defines a
 > morphism of sites `X_Zar → Y_Zar`: it is continuous, and the induced pullback `u_s = f⁻¹` on
@@ -92,7 +92,7 @@ theorem isMorphismOfSites_opensMap :
 
 [Tag 03CB](https://stacks.math.columbia.edu/tag/03CB) in the Stacks Project.
 
-**`isMorphismOfSites_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismDefs.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismDefs.lean#L42).
+**`isMorphismOfSites_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismDefs.lean, line 42](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismDefs.lean#L42).
 
 > **Stacks 03CB.** If `v : C₃ ⥤ C₂` and `u : C₂ ⥤ C₁` are continuous functors defining
 > morphisms of sites, then so is `v ⋙ u`: the left adjoints compose, and a composition of left
@@ -112,7 +112,7 @@ theorem isMorphismOfSites_comp
 
 [Tag 03CC](https://stacks.math.columbia.edu/tag/03CC) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsMorphismOfSites.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites.lean#L134). The attribute's comment: “The composition of two morphisms of sites is a morphism of sites, given by the composite of the two underlying continuous functors; this is what makes the composition of Stacks 03CC well defined.”.
+**`CategoryTheory.Functor.IsMorphismOfSites.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites.lean#L134). The attribute's comment: “The composition of two morphisms of sites is a morphism of sites, given by the composite of the two underlying continuous functors; this is what makes the composition of Stacks 03CC well defined.”.
 
 > The *composition* of morphisms of sites. If `f : D → C` is a morphism of sites given by
 > `u : C ⥤ D` and `g : E → D` is one given by `u' : D ⥤ E`, then the composite functor
@@ -130,7 +130,7 @@ theorem IsMorphismOfSites.comp {u : C ⥤ D} {u' : D ⥤ E} {J : GrothendieckTop
 
 [Tag 00X5](https://stacks.math.columbia.edu/tag/00X5) in the Stacks Project.
 
-**`isMorphismOfSites_of_essentiallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/SmallModel.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/SmallModel.lean#L173). The attribute's comment: “the site condition at the universe of a small model”.
+**`isMorphismOfSites_of_essentiallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/SmallModel.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/SmallModel.lean#L173). The attribute's comment: “the site condition at the universe of a small model”.
 
 > **Stacks 00X5 at the universe of a small model.**  A continuous representably flat functor
 > between two sites that are essentially small at `u` defines a morphism of sites for sheaves of
@@ -146,7 +146,7 @@ public theorem isMorphismOfSites_of_essentiallySmall (F : C ⥤ D) (J : Grothend
     IsMorphismOfSites.{u} F J K
 ```
 
-**`CategoryTheory.Functor.isMorphismOfSites_of_isFiltered_op`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSitesLimits.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSitesLimits.lean#L82). The attribute's comment: “A continuous functor all of whose index categories `(I_V^u)ᵒᵖ` are filtered defines a morphism of sites; equivalently a continuous representably flat functor does.”.
+**`CategoryTheory.Functor.isMorphismOfSites_of_isFiltered_op`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSitesLimits.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSitesLimits.lean#L82). The attribute's comment: “A continuous functor all of whose index categories `(I_V^u)ᵒᵖ` are filtered defines a morphism of sites; equivalently a continuous representably flat functor does.”.
 
 > Let `u : C ⥤ D` be a continuous functor between sites and assume that all the
 > categories `(I_V^u)ᵒᵖ` of Stacks 00VC are filtered. Then `u` defines a morphism of sites `D → C`,
@@ -162,7 +162,7 @@ theorem isMorphismOfSites_of_isFiltered_op (u : C ⥤ D) (J : GrothendieckTopolo
 
 [Tag 00X6](https://stacks.math.columbia.edu/tag/00X6) in the Stacks Project.
 
-**`CategoryTheory.Functor.isMorphismOfSites_of_isTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSitesLimits.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSitesLimits.lean#L107). The attribute's comment: “A continuous functor `u` such that `C` has a final object sent by `u` to a final object and has fibre products preserved by `u` defines a morphism of sites; this is the criterion under which `u` induces a morphism of topoi with exact pullback.”. References: SGA 4 IV (4.9.2), “sufficient condition”; SGA 4 III (1.3), “5)”.
+**`CategoryTheory.Functor.isMorphismOfSites_of_isTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSitesLimits.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSitesLimits.lean#L107). The attribute's comment: “A continuous functor `u` such that `C` has a final object sent by `u` to a final object and has fibre products preserved by `u` defines a morphism of sites; this is the criterion under which `u` induces a morphism of topoi with exact pullback.”. References: SGA 4 IV (4.9.2), “sufficient condition”; SGA 4 III (1.3), “5)”.
 
 > Let `u : C ⥤ D` be a continuous functor between sites. Assume furthermore that
 >
@@ -184,14 +184,14 @@ theorem isMorphismOfSites_of_isTerminal (u : C ⥤ D) (J : GrothendieckTopology 
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.preservesFiniteLimits_of_preservesTerminal_and_pullbacks`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.preservesFiniteLimits_of_preservesTerminal_and_pullbacks#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch07.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch07.lean#L38) (StacksFrontier): “If the category has a final object and fibre products, a functor preserving the final object and fibre products is left exact (preserves finite limits).”. References: SGA 4 I (2.4.2), “sufficiency”.
-- [`CategoryTheory.Limits.PreservesFiniteLimits.preservesFiniteLimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.PreservesFiniteLimits.preservesFiniteLimits#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch07.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch07.lean#L41) (StacksFrontier): “Conversely, a left exact functor preserves limits of every finite shape, in particular final objects and fibre products.”.
+- [`CategoryTheory.Limits.preservesFiniteLimits_of_preservesTerminal_and_pullbacks`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.preservesFiniteLimits_of_preservesTerminal_and_pullbacks#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch07.lean, line 38](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch07.lean#L38) (StacksFrontier): “If the category has a final object and fibre products, a functor preserving the final object and fibre products is left exact (preserves finite limits).”. References: SGA 4 I (2.4.2), “sufficiency”.
+- [`CategoryTheory.Limits.PreservesFiniteLimits.preservesFiniteLimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.PreservesFiniteLimits.preservesFiniteLimits#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch07.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch07.lean#L41) (StacksFrontier): “Conversely, a left exact functor preserves limits of every finite shape, in particular final objects and fibre products.”.
 
 ## Tag 00X8, a remark
 
 [Tag 00X8](https://stacks.math.columbia.edu/tag/00X8) in the Stacks Project.
 
-**`QuasiMorphismOfSites.IsQuasiMorphismOfSites`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/QuasiMorphism.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/QuasiMorphism.lean#L514). The attribute's comment: “the definition of quasi-morphism of sites”.
+**`QuasiMorphismOfSites.IsQuasiMorphismOfSites`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/QuasiMorphism.lean, line 514](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/QuasiMorphism.lean#L514). The attribute's comment: “the definition of quasi-morphism of sites”.
 
 > **Definition 5 (Quasi-morphism of sites).** Given a quasi-continuous functor
 > `u : C → D` (witnessed by `hqc`), `u` defines a quasi-morphism of sites
@@ -208,7 +208,7 @@ def IsQuasiMorphismOfSites
     (hqc : IsQuasiContinuous u PC PD) : Prop
 ```
 
-**`QuasiMorphismOfSites.isQuasiMorphismOfSites_of_isQuasiContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/QuasiMorphism.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/QuasiMorphism.lean#L548).
+**`QuasiMorphismOfSites.isQuasiMorphismOfSites_of_isQuasiContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/QuasiMorphism.lean, line 548](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/QuasiMorphism.lean#L548).
 
 > **Statement 1.** A quasi-continuous functor `u : C → D` between sites that
 > preserves the terminal object and preserves fibre products (pullbacks) defines a
@@ -233,7 +233,7 @@ theorem isQuasiMorphismOfSites_of_isQuasiContinuous
 
 [Tag 08H2](https://stacks.math.columbia.edu/tag/08H2) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.coversTop_obj_of_preservesTerminal_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismsOfSites.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismsOfSites.lean#L222). The attribute's comment: “For a morphism of sites f : D → C given by u : C ⥤ D, every object V of D has a covering \{V\_j → V} such that each V\_j admits a morphism V\_j ⟶ u(U\_j) for some object U\_j of C.”.
+**`CategoryTheory.GrothendieckTopology.coversTop_obj_of_preservesTerminal_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismsOfSites.lean, line 222](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismsOfSites.lean#L222). The attribute's comment: “For a morphism of sites f : D → C given by u : C ⥤ D, every object V of D has a covering \{V\_j → V} such that each V\_j admits a morphism V\_j ⟶ u(U\_j) for some object U\_j of C.”.
 
 > **Stacks 08H2.** Let `u : C ⥤ D` be a continuous functor of sites, giving a morphism of sites
 > `f : D → C`, and assume that `f⁻¹ = u_s : Sh(C) ⥤ Sh(D)` preserves the final object (as it does
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.14, Tag 00X0](https://stacks.math.columbia.edu/tag/00X0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.14 Geometrically integral algebraic spaces
 
-Section 72.14 of the Stacks Project, [Tag 0DMV](https://stacks.math.columbia.edu/tag/0DMV). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 72.14 of the Stacks Project, [Tag 0DMV](https://stacks.math.columbia.edu/tag/0DMV). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DMW, a definition
 
 [Tag 0DMW](https://stacks.math.columbia.edu/tag/0DMW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsGeometricallyIntegral`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIntegral.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIntegral.lean#L102).
+**`AlgebraicGeometry.Space.IsGeometricallyIntegral`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIntegral.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIntegral.lean#L102).
 
 > **Stacks 0DMW.** An algebraic space over a field `k` is *geometrically integral* when its
 > base change to every field extension of `k` is an integral algebraic space.
@@ -27,7 +27,7 @@ def IsGeometricallyIntegral (X : (BigFppfOver B (Spec (.of k)) hk)ᵒᵖ ⥤ Typ
 
 [Tag 0DMX](https://stacks.math.columbia.edu/tag/0DMX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyIntegral_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIntegral.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIntegral.lean#L169).
+**`AlgebraicGeometry.Space.isGeometricallyIntegral_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIntegral.lean, line 169](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIntegral.lean#L169).
 
 > **Stacks 0DMX.** A decent algebraic space over a field `k` is geometrically integral over
 > `k` exactly when it is geometrically reduced and geometrically irreducible over `k`.
@@ -43,7 +43,7 @@ theorem isGeometricallyIntegral_iff (hX : IsAlgebraicSpace B (Spec (.of k)) hk X
 
 [Tag 0DMY](https://stacks.math.columbia.edu/tag/0DMY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_connectedComponents_points_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctions.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctions.lean#L336). The attribute's comment: “part (2): the product is finite, there being one factor for each of the finitely many connected components of the point space”.
+**`AlgebraicGeometry.Space.finite_connectedComponents_points_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctions.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctions.lean#L336). The attribute's comment: “part (2): the product is finite, there being one factor for each of the finitely many connected components of the point space”.
 
 > **Stacks 0DMY, part (2), the number of factors.**  The point space of a proper algebraic
 > space over a field has finitely many connected components, so that the product decomposition of
@@ -58,7 +58,7 @@ theorem finite_connectedComponents_points_of_isProper (hf : IsProper B (Spec (.o
     Finite (ConnectedComponents (points B (Spec (.of k)) hS X))
 ```
 
-**`AlgebraicGeometry.Space.isField_componentFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctions.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctions.lean#L407). The attribute's comment: “part (3): the factors of a reduced space are fields”.
+**`AlgebraicGeometry.Space.isField_componentFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctions.lean, line 407](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctions.lean#L407). The attribute's comment: “part (3): the factors of a reduced space are fields”.
 
 > **Stacks 0DMY, part (3).**  For a reduced algebraic space, each factor of a componentwise
 > factorization of its global regular functions is a field:  the factor is an Artinian local ring
@@ -75,7 +75,7 @@ theorem isField_componentFunctions
     IsField (componentFunctions B (Spec (.of k)) hS X c)
 ```
 
-**`AlgebraicGeometry.Space.nonempty_componentwiseArtinianFactorization_of_isProper_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean#L101). The attribute's comment: “part (2): A is the product, over the connected components of |X|, of Artinian local k-algebras, the splitting being restriction to the components”.
+**`AlgebraicGeometry.Space.nonempty_componentwiseArtinianFactorization_of_isProper_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean#L101). The attribute's comment: “part (2): A is the product, over the connected components of |X|, of Artinian local k-algebras, the splitting being restriction to the components”.
 
 > **Stacks 0DMY, part (2).**  The global regular functions `A` of a proper algebraic space over
 > a field `k` split as the product, over the connected components of the point space `|X|`, of the
@@ -96,7 +96,7 @@ theorem nonempty_componentwiseArtinianFactorization_of_isProper_of_field
     Nonempty (ComponentwiseArtinianFactorization k B hS X)
 ```
 
-**`AlgebraicGeometry.Space.moduleFinite_componentFunctions_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean#L118). The attribute's comment: “part (3): the factors are finite over the base field”.
+**`AlgebraicGeometry.Space.moduleFinite_componentFunctions_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean#L118). The attribute's comment: “part (3): the factors are finite over the base field”.
 
 > **Stacks 0DMY, part (3), finiteness of the factors.**  Each factor of a componentwise
 > factorization of the global regular functions of a proper algebraic space over a field `k` is
@@ -116,7 +116,7 @@ theorem moduleFinite_componentFunctions_of_isProper (hf : IsProper B (Spec (.of 
         (fac.factorAlgebra c))
 ```
 
-**`AlgebraicGeometry.Space.exists_componentwiseArtinianFactorization_isField_finite_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean#L140). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.exists_componentwiseArtinianFactorization_isField_finite_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean#L140). The attribute's comment: “part (3)”.
 
 > **Stacks 0DMY, part (3).**  Let `X` be a reduced proper algebraic space over a field `k`.
 > Then `A = H⁰(X, 𝒪_X)` is a product of fields, each a finite extension of `k`: there is a
@@ -138,7 +138,7 @@ theorem exists_componentwiseArtinianFactorization_isField_finite_of_isProper
               (fac.factorAlgebra c))
 ```
 
-**`AlgebraicGeometry.Space.isSeparable_componentFunctions_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L91). The attribute's comment: “part (4): if X is geometrically reduced, each factor k\_i is finite separable over k”.
+**`AlgebraicGeometry.Space.isSeparable_componentFunctions_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L92). The attribute's comment: “part (4): if X is geometrically reduced, each factor k\_i is finite separable over k”.
 
 > **Stacks 0DMY, part (4).**  For a proper *geometrically* reduced algebraic space `X` over a
 > field `k`, each factor `k_i` of the global regular functions `A = ∏ k_i` is a finite separable
@@ -159,7 +159,7 @@ theorem isSeparable_componentFunctions_of_isProper (hf : IsProper B (Spec (.of k
         (fac.factorAlgebra c)
 ```
 
-**`AlgebraicGeometry.Space.irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L110). The attribute's comment: “part (5): if X is geometrically connected, A is geometrically irreducible over k”.
+**`AlgebraicGeometry.Space.irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L111). The attribute's comment: “part (5): if X is geometrically connected, A is geometrically irreducible over k”.
 
 > **Stacks 0DMY, part (5).**  For a proper geometrically connected algebraic space `X` over a
 > field `k`, the ring `A = H⁰(X, 𝒪_X)` of global regular functions is geometrically irreducible
@@ -172,7 +172,7 @@ theorem irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeomet
       IrreducibleSpace (PrimeSpectrum (globalFunctions B (Spec (.of k)) hS X ⊗[k] K))
 ```
 
-**`AlgebraicGeometry.Space.irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L127). The attribute's comment: “part (6): if X is geometrically irreducible, A is geometrically irreducible over k”.
+**`AlgebraicGeometry.Space.irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L128). The attribute's comment: “part (6): if X is geometrically irreducible, A is geometrically irreducible over k”.
 
 > **Stacks 0DMY, part (6).**  For a proper geometrically irreducible algebraic space `X` over
 > a field `k`, the ring `A = H⁰(X, 𝒪_X)` of global regular functions is geometrically irreducible
@@ -188,7 +188,7 @@ theorem irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeomet
       IrreducibleSpace (PrimeSpectrum (globalFunctions B (Spec (.of k)) hS X ⊗[k] K))
 ```
 
-**`AlgebraicGeometry.Space.bijective_baseToGlobalFunctions_of_isGeometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L148). The attribute's comment: “part (7), corrected form: if X is geometrically reduced and geometrically connected, A = k (the printed 'connected' is false: Spec Q(i) over Q)”.
+**`AlgebraicGeometry.Space.bijective_baseToGlobalFunctions_of_isGeometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L149). The attribute's comment: “part (7), corrected form: if X is geometrically reduced and geometrically connected, A = k (the printed 'connected' is false: Spec Q(i) over Q)”.
 
 > **Stacks 0DMY, part (7), in its corrected form.**  For a proper geometrically reduced and
 > geometrically connected algebraic space `X` over a field `k`, the canonical homomorphism
@@ -207,7 +207,7 @@ theorem bijective_baseToGlobalFunctions_of_isGeometricallyConnected
     Function.Bijective (baseToGlobalFunctions k B hS X)
 ```
 
-**`AlgebraicGeometry.Space.bijective_baseToGlobalFunctions_of_isGeometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L163). The attribute's comment: “part (8): if X is geometrically integral, A = k”.
+**`AlgebraicGeometry.Space.bijective_baseToGlobalFunctions_of_isGeometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L164). The attribute's comment: “part (8): if X is geometrically integral, A = k”.
 
 > **Stacks 0DMY, part (8).**  For a proper geometrically integral algebraic space `X` over a
 > field `k`, the canonical homomorphism `k ⟶ H⁰(X, 𝒪_X)` is bijective:  `A = k`.
@@ -223,13 +223,13 @@ theorem bijective_baseToGlobalFunctions_of_isGeometricallyIntegral
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.moduleFinite_globalFunctions_of_isProper`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalSections/Finiteness.lean#L341), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean#L53) (StacksFrontier): “part (1): A is finite over the base, here any Noetherian ring”.
+- [`AlgebraicGeometry.Space.moduleFinite_globalFunctions_of_isProper`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalSections/Finiteness.lean#L341), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsFinite.lean#L53) (StacksFrontier): “part (1): A is finite over the base, here any Noetherian ring”.
 
 ## Tag 0DMZ, a lemma
 
 [Tag 0DMZ](https://stacks.math.columbia.edu/tag/0DMZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isTrivial_of_nontrivial_sections_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperIntegralInvertibleTriviality.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperIntegralInvertibleTriviality.lean#L140).
+**`AlgebraicGeometry.Space.isTrivial_of_nontrivial_sections_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperIntegralInvertibleTriviality.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperIntegralInvertibleTriviality.lean#L140).
 
 > **Stacks 0DMZ.**  Let `k` be a field, let `X` be a proper integral algebraic space over `k`
 > and let `L` be an invertible `𝒪_X`-module.  If `H⁰(X, L)` and `H⁰(X, L^{⊗ -1})` are both
@@ -260,4 +260,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.14, Tag 0DMV](https://stacks.math.columbia.edu/tag/0DMV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

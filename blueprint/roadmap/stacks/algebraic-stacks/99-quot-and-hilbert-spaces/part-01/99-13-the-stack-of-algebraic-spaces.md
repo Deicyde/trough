@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.13 The stack of algebraic spaces
 
-Section 99.13 of the Stacks Project, [Tag 0D1D](https://stacks.math.columbia.edu/tag/0D1D). 10 tags here are carried by 22 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 99.13 of the Stacks Project, [Tag 0D1D](https://stacks.math.columbia.edu/tag/0D1D). 10 tags here are carried by 22 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0D1D, the section
 
 [Tag 0D1D](https://stacks.math.columbia.edu/tag/0D1D) in the Stacks Project.
 
-**`AlgebraicGeometry.cartesianProperFlatInclusion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L130). The attribute's comment: “the subcategory of finitely presented, flat and proper families”.
+**`AlgebraicGeometry.cartesianProperFlatInclusion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L130). The attribute's comment: “the subcategory of finitely presented, flat and proper families”.
 
 > **Stacks 0D1D.** The inclusion
 > `Spaces'_{fp, flat, proper} ⊂ Spaces'_{ft}` of the families of algebraic spaces that are of
@@ -26,7 +26,7 @@ abbrev cartesianProperFlatInclusion :
     CartesianProperFlatSpaces B S hS ⥤ CartesianFiniteTypeSpaces B S hS
 ```
 
-**`AlgebraicGeometry.fullyFaithfulCartesianProperFlatInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L139). The attribute's comment: “the subcategory is full”.
+**`AlgebraicGeometry.fullyFaithfulCartesianProperFlatInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L139). The attribute's comment: “the subcategory is full”.
 
 > **Stacks 0D1D.** The subcategory `Spaces'_{fp, flat, proper}` of `Spaces'_{ft}` is *full*:
 > a cartesian morphism of finite-type families whose source and target are of finite presentation,
@@ -37,7 +37,7 @@ def fullyFaithfulCartesianProperFlatInclusion :
     (cartesianProperFlatInclusion B S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.cartesianProperFlatInclusion_comp_cartesianFiniteTypeProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L147). The attribute's comment: “the projection of the subcategory is the restriction of the projection”.
+**`AlgebraicGeometry.cartesianProperFlatInclusion_comp_cartesianFiniteTypeProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L147). The attribute's comment: “the projection of the subcategory is the restriction of the projection”.
 
 > **Stacks 0D1D.** The projection `p'_{fp, flat, proper}` is the restriction of the projection
 > `p'_{ft}` to the subcategory `Spaces'_{fp, flat, proper}`.
@@ -50,17 +50,17 @@ theorem cartesianProperFlatInclusion_comp_cartesianFiniteTypeProjection :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.CartesianFiniteTypeSpaces`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L147), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L156) (StacksFrontier): “the category of finite-type families”.
-- [`AlgebraicGeometry.cartesianFiniteTypeProjection`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L153), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L159) (StacksFrontier): “the projection to the big fppf site”.
-- [`AlgebraicGeometry.isProperFlatSpace`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L168), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L162) (StacksFrontier): “the finitely presented, flat and proper condition”.
-- [`AlgebraicGeometry.CartesianProperFlatSpaces`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L194), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L165) (StacksFrontier): “the category of finitely presented, flat and proper families”.
-- [`AlgebraicGeometry.cartesianProperFlatProjection`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L201), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L168) (StacksFrontier): “the projection of the subcategory to the big fppf site”.
+- [`AlgebraicGeometry.CartesianFiniteTypeSpaces`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L147), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L156) (StacksFrontier): “the category of finite-type families”.
+- [`AlgebraicGeometry.cartesianFiniteTypeProjection`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L153), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L159) (StacksFrontier): “the projection to the big fppf site”.
+- [`AlgebraicGeometry.isProperFlatSpace`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L168), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L162) (StacksFrontier): “the finitely presented, flat and proper condition”.
+- [`AlgebraicGeometry.CartesianProperFlatSpaces`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L194), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L165) (StacksFrontier): “the category of finitely presented, flat and proper families”.
+- [`AlgebraicGeometry.cartesianProperFlatProjection`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L201), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpaces.lean#L168) (StacksFrontier): “the projection of the subcategory to the big fppf site”.
 
 ## Tag 0D1E, a lemma
 
 [Tag 0D1E](https://stacks.math.columbia.edu/tag/0D1E) in the Stacks Project.
 
-**`AlgebraicGeometry.cartesianFiniteTypeProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L160). The attribute's comment: “finite-type families”.
+**`AlgebraicGeometry.cartesianFiniteTypeProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L160). The attribute's comment: “finite-type families”.
 
 > Finite-type algebraic spaces over varying base schemes, with cartesian squares as morphisms,
 > form a category fibred in groupoids over the big fppf site of `S`.
@@ -70,7 +70,7 @@ theorem cartesianFiniteTypeProjection_isFiberedInGroupoids :
     (cartesianFiniteTypeProjection B S hS).IsFiberedInGroupoids
 ```
 
-**`AlgebraicGeometry.cartesianProperFlatProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L209). The attribute's comment: “finitely presented, flat and proper families”.
+**`AlgebraicGeometry.cartesianProperFlatProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CartesianFamilies.lean#L209). The attribute's comment: “finitely presented, flat and proper families”.
 
 > Algebraic spaces whose structure morphism is of finite presentation, flat and proper over a
 > varying base scheme, with cartesian squares as morphisms, form a category fibred in groupoids over
@@ -85,7 +85,7 @@ theorem cartesianProperFlatProjection_isFiberedInGroupoids :
 
 [Tag 0D1F](https://stacks.math.columbia.edu/tag/0D1F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasAlgebraicIsomFunctors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonal.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonal.lean#L512). The attribute's comment: “the Isom functor of two finitely presented, flat and proper families is an algebraic space, which is criterion (2) of Stacks 045G for the diagonal”.
+**`AlgebraicGeometry.Space.hasAlgebraicIsomFunctors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonal.lean, line 512](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonal.lean#L512). The attribute's comment: “the Isom functor of two finitely presented, flat and proper families is an algebraic space, which is criterion (2) of Stacks 045G for the diagonal”.
 
 > Criterion (2) of Stacks 045G in concrete form: the isomorphism functor of two finitely
 > presented, flat and proper families over a scheme of the site is an algebraic space.
@@ -95,7 +95,7 @@ theorem hasAlgebraicIsomFunctors :
     HasAlgebraicIsomFunctors B S hS
 ```
 
-**`AlgebraicGeometry.Space.hasRepresentableDiagonal_properFlatSpacesStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonal.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonal.lean#L540). The attribute's comment: “the diagonal is representable by algebraic spaces”.
+**`AlgebraicGeometry.Space.hasRepresentableDiagonal_properFlatSpacesStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonal.lean, line 540](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonal.lean#L540). The attribute's comment: “the diagonal is representable by algebraic spaces”.
 
 > **Stacks 0D1F.** The diagonal
 >
@@ -114,7 +114,7 @@ theorem hasRepresentableDiagonal_properFlatSpacesStack
     Stack.HasRepresentableDiagonal B S hS (properFlatSpacesStack B S hS)
 ```
 
-**`AlgebraicGeometry.Space.properFlatSpacesStack_hasRepresentableDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonalUnconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonalUnconditional.lean#L69). The attribute's comment: “the diagonal is representable by algebraic spaces; Stacks 0D01 is proved, `AlgebraicGeometry.Space.hasHilbertModels`”.
+**`AlgebraicGeometry.Space.properFlatSpacesStack_hasRepresentableDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonalUnconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesDiagonalUnconditional.lean#L69). The attribute's comment: “the diagonal is representable by algebraic spaces; Stacks 0D01 is proved, `AlgebraicGeometry.Space.hasHilbertModels`”.
 
 > **The diagonal of `Spaces'_{fp, flat, proper}` is representable by algebraic spaces.** The
 > diagonal
@@ -134,7 +134,7 @@ theorem properFlatSpacesStack_hasRepresentableDiagonal :
 
 [Tag 0D1G](https://stacks.math.columbia.edu/tag/0D1G) in the Stacks Project.
 
-**`AlgebraicGeometry.cartesianFiniteTypeProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L110). The attribute's comment: “Spaces'\_ft is fibred in groupoids and a stack (Stacks 02ZJ (3))”.
+**`AlgebraicGeometry.cartesianFiniteTypeProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L110). The attribute's comment: “Spaces'\_ft is fibred in groupoids and a stack (Stacks 02ZJ (3))”.
 
 > **Stacks 0D1G**, the finite-type families, in the form of Stacks 02ZJ (3): `Spaces'_ft` is
 > fibred in groupoids and is a stack over the big fppf site of `S` (Stacks 026F).
@@ -145,7 +145,7 @@ theorem cartesianFiniteTypeProjection_isStack :
       (cartesianFiniteTypeProjection B S hS).IsStack (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.cartesianProperFlatProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L336). The attribute's comment: “Spaces'\_\{fp, flat, proper} is fibred in groupoids and a stack (Stacks 02ZJ (3))”.
+**`AlgebraicGeometry.cartesianProperFlatProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L336). The attribute's comment: “Spaces'\_\{fp, flat, proper} is fibred in groupoids and a stack (Stacks 02ZJ (3))”.
 
 > **Stacks 0D1G**, the finitely presented, flat and proper families, in the form of Stacks 02ZJ
 > (3): `Spaces'_{fp, flat, proper}` is fibred in groupoids and is a stack over the big fppf site of
@@ -157,7 +157,7 @@ theorem cartesianProperFlatProjection_isStack :
       (cartesianProperFlatProjection B S hS).IsStack (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.stackOfSpaces_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L346).
+**`AlgebraicGeometry.stackOfSpaces_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 346](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L346).
 
 > **Stacks 0D1G.** The category `Spaces'_ft` is a stack in groupoids over the big fppf site of
 > `S`, and so is `Spaces'_{fp, flat, proper}` (Stacks 02ZI).
@@ -172,14 +172,14 @@ theorem stackOfSpaces_isStackInGroupoids.{w} :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.cartesianFiniteTypeProjection_isStackInGroupoids`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesGroupoid.lean#L393), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L94) (StacksFrontier): “Spaces'\_ft is a stack in groupoids (Stacks 02ZI)”.
-- [`AlgebraicGeometry.cartesianProperFlatProjection_isStackInGroupoids`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesGroupoid.lean#L415), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L329) (StacksFrontier): “Spaces'\_\{fp, flat, proper} is a stack in groupoids (Stacks 02ZI)”.
+- [`AlgebraicGeometry.cartesianFiniteTypeProjection_isStackInGroupoids`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesGroupoid.lean#L393), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L94) (StacksFrontier): “Spaces'\_ft is a stack in groupoids (Stacks 02ZI)”.
+- [`AlgebraicGeometry.cartesianProperFlatProjection_isStackInGroupoids`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesGroupoid.lean#L415), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 329](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L329) (StacksFrontier): “Spaces'\_\{fp, flat, proper} is a stack in groupoids (Stacks 02ZI)”.
 
 ## Tag 0E93, a lemma
 
 [Tag 0E93](https://stacks.math.columbia.edu/tag/0E93) in the Stacks Project.
 
-**`AlgebraicGeometry.SpacesOverSpace.finiteTypeBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L109). The attribute's comment: “the first equivalence: finite type morphisms X ⟶ T and functors 𝒮\_T ⟶ Spaces'\_ft”.
+**`AlgebraicGeometry.SpacesOverSpace.finiteTypeBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L109). The attribute's comment: “the first equivalence: finite type morphisms X ⟶ T and functors 𝒮\_T ⟶ Spaces'\_ft”.
 
 > **Stacks 0E93**, the first equivalence: finite type morphisms of algebraic spaces `X ⟶ T`,
 > with isomorphisms over `T`, are equivalent through base change to the functors over the site from
@@ -190,7 +190,7 @@ Declarations registered for the tag:
 theorem finiteTypeBaseChange_isEquivalence : (finiteTypeBaseChange B S hS T).IsEquivalence
 ```
 
-**`AlgebraicGeometry.SpacesOverSpace.properFlatBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L119). The attribute's comment: “the second equivalence: finitely presented, flat and proper morphisms X ⟶ T and functors 𝒮\_T ⟶ Spaces'\_\{fp, flat, proper}”.
+**`AlgebraicGeometry.SpacesOverSpace.properFlatBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L119). The attribute's comment: “the second equivalence: finitely presented, flat and proper morphisms X ⟶ T and functors 𝒮\_T ⟶ Spaces'\_\{fp, flat, proper}”.
 
 > **Stacks 0E93**, the second equivalence: finitely presented, flat and proper morphisms of
 > algebraic spaces `X ⟶ T`, with isomorphisms over `T`, are equivalent through base change to the
@@ -201,7 +201,7 @@ theorem finiteTypeBaseChange_isEquivalence : (finiteTypeBaseChange B S hS T).IsE
 theorem properFlatBaseChange_isEquivalence : (properFlatBaseChange B S hS T).IsEquivalence
 ```
 
-**`AlgebraicGeometry.SpacesOverSpace.spacesOverSpace_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L128). The attribute's comment: “both equivalences”.
+**`AlgebraicGeometry.SpacesOverSpace.spacesOverSpace_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L128). The attribute's comment: “both equivalences”.
 
 > **Stacks 0E93.** Base change along the points of an algebraic space `T` gives an equivalence
 > of finite type morphisms `X ⟶ T` with the functors over the site from `𝒮_T` to `Spaces'_ft`, and an
@@ -218,7 +218,7 @@ theorem spacesOverSpace_isEquivalence :
 
 [Tag 0D1H](https://stacks.math.columbia.edu/tag/0D1H) in the Stacks Project.
 
-**`AlgebraicGeometry.CartesianFiniteTypeSpacesOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean#L196). The attribute's comment: “the category of finite-type families over a base algebraic space”.
+**`AlgebraicGeometry.CartesianFiniteTypeSpacesOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean#L196). The attribute's comment: “the category of finite-type families over a base algebraic space”.
 
 > **Stacks 0D1H.** The category `Z-Spaces'_{ft}` of finite-type families of algebraic spaces
 > over a fixed algebraic space `Z`: an object is a finite-type family `X ⟶ T` of algebraic spaces
@@ -229,7 +229,7 @@ theorem spacesOverSpace_isEquivalence :
 abbrev CartesianFiniteTypeSpacesOver
 ```
 
-**`AlgebraicGeometry.isEquivalence_cartesianFiniteTypeSpacesOverToTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean#L227). The attribute's comment: “the 2-fibre product square for finite-type families”.
+**`AlgebraicGeometry.isEquivalence_cartesianFiniteTypeSpacesOverToTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean#L227). The attribute's comment: “the 2-fibre product square for finite-type families”.
 
 > **Stacks 0D1H** for finite-type families. The absolute and the relative categories of
 > finite-type families of algebraic spaces form a 2-fibre product square over the big fppf site of
@@ -241,7 +241,7 @@ theorem isEquivalence_cartesianFiniteTypeSpacesOverToTwoFibreProduct :
     (cartesianFiniteTypeSpacesOverToTwoFibreProduct B S hS Z).IsEquivalence
 ```
 
-**`AlgebraicGeometry.CartesianProperFlatSpacesOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean#L237). The attribute's comment: “the category of finitely presented, flat and proper families over a base space”.
+**`AlgebraicGeometry.CartesianProperFlatSpacesOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean#L237). The attribute's comment: “the category of finitely presented, flat and proper families over a base space”.
 
 > **Stacks 0D1H.** The category `Z-Spaces'_{fp, flat, proper}` of finitely presented, flat and
 > proper families of algebraic spaces over a fixed algebraic space `Z`: an object is such a family
@@ -252,7 +252,7 @@ theorem isEquivalence_cartesianFiniteTypeSpacesOverToTwoFibreProduct :
 abbrev CartesianProperFlatSpacesOver
 ```
 
-**`AlgebraicGeometry.isEquivalence_cartesianProperFlatSpacesOverToTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean#L268). The attribute's comment: “the 2-fibre product square for finitely presented, flat and proper families”.
+**`AlgebraicGeometry.isEquivalence_cartesianProperFlatSpacesOverToTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/FamiliesOverBaseSpace.lean#L268). The attribute's comment: “the 2-fibre product square for finitely presented, flat and proper families”.
 
 > **Stacks 0D1H** for finitely presented, flat and proper families. The absolute and the
 > relative categories of finitely presented, flat and proper families of algebraic spaces form a
@@ -268,7 +268,7 @@ theorem isEquivalence_cartesianProperFlatSpacesOverToTwoFibreProduct :
 
 [Tag 0D1I](https://stacks.math.columbia.edu/tag/0D1I) in the Stacks Project.
 
-**`AlgebraicGeometry.isLimitPreserving_cartesianProperFlatFiberedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesLimitPreservingUnconditional.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesLimitPreservingUnconditional.lean#L187). The attribute's comment: “over the big fppf site of an arbitrary base scheme `S`; the source's `Sch_fppf` is `S = Spec(ℤ)`”.
+**`AlgebraicGeometry.isLimitPreserving_cartesianProperFlatFiberedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesLimitPreservingUnconditional.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesLimitPreservingUnconditional.lean#L187). The attribute's comment: “over the big fppf site of an arbitrary base scheme `S`; the source's `Sch_fppf` is `S = Spec(ℤ)`”.
 
 > The stack `p'_{fp, flat, proper} : Spaces'_{fp, flat, proper} ⟶ Sch_fppf` of finitely
 > presented, flat and proper families of algebraic spaces is limit preserving (Stacks 07XL): for
@@ -291,7 +291,7 @@ theorem isLimitPreserving_cartesianProperFlatFiberedCategory
 
 [Tag 0D1J](https://stacks.math.columbia.edu/tag/0D1J) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.properPushoutRS`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperPushoutGluingUnconditional.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProperPushoutGluingUnconditional.lean#L44).
+**`AlgebraicGeometry.Space.properPushoutRS`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperPushoutGluingUnconditional.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/ProperPushoutGluingUnconditional.lean#L44).
 
 > **[Stacks Project, Tag 0D1J].** For every pushout `S' = S ⨿_T T'` of schemes of the site
 > along a thickening `T ⟶ T'` and an affine morphism `T ⟶ S`, the canonical restriction functor
@@ -306,7 +306,7 @@ def properPushoutRS : ProperPushoutRS B S₀ hS₀
 
 [Tag 0D1K](https://stacks.math.columbia.edu/tag/0D1K) in the Stacks Project.
 
-**`AlgebraicGeometry.ProperFlatSpaceDeformation.finiteDimensional_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean#L69). The attribute's comment: “(1): for a field k of finite type over Z and an object x of Spaces'\_\{fp,flat,proper} over Spec k, the predeformation category F\_\{X,k,x} over C\_Z is a deformation category whose tangent space T F\_\{X,k,x} and infinitesimal automorphisms Inf(F\_\{X,k,x}) (Section 07WY) are finite dimensional”.
+**`AlgebraicGeometry.ProperFlatSpaceDeformation.finiteDimensional_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean#L69). The attribute's comment: “(1): for a field k of finite type over Z and an object x of Spaces'\_\{fp,flat,proper} over Spec k, the predeformation category F\_\{X,k,x} over C\_Z is a deformation category whose tangent space T F\_\{X,k,x} and infinitesimal automorphisms Inf(F\_\{X,k,x}) (Section 07WY) are finite dimensional”.
 
 > Let `k` be a field of finite type over `ℤ` and let `x = (X → Spec k)` be an object of
 > `𝒳 = Spaces'_{fp, flat, proper}` over `Spec k`. Then the predeformation category `𝓕_{𝒳,k,x}` of
@@ -347,7 +347,7 @@ theorem finiteDimensional_predeformationCategory {k : Type u} [Field k]
             hD.satisfiesRS).functor.obj (FGModuleCat.of k (ULift.{u} k)))
 ```
 
-**`AlgebraicGeometry.ProperFlatSpaceDeformation.finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean#L114). The attribute's comment: “(2): for an object x of Spaces'\_\{fp,flat,proper} over a field k, the functors T\_x and Inf\_x of Stacks 07Y9 exist (the stack satisfies RS* by 0D1J) and T\_x(k) and Inf\_x(k) are finite dimensional; both finiteness statements hold for every k-linear functor carrying the identifications of 07Y9”.
+**`AlgebraicGeometry.ProperFlatSpaceDeformation.finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean#L114). The attribute's comment: “(2): for an object x of Spaces'\_\{fp,flat,proper} over a field k, the functors T\_x and Inf\_x of Stacks 07Y9 exist (the stack satisfies RS* by 0D1J) and T\_x(k) and Inf\_x(k) are finite dimensional; both finiteness statements hold for every k-linear functor carrying the identifications of 07Y9”.
 
 > Let `k` be a field and let `x = (X → Spec k)` be an object of
 > `𝒳 = Spaces'_{fp, flat, proper}` over `Spec k`. Then the tangent functor `T_x` and the functor of
@@ -388,7 +388,7 @@ theorem finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor {k : T
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.openVersalityOf_cartesianProperFlat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityOfDiagonal.lean#L110), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityTags.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityTags.lean#L26) (StacksFrontier): “both assertions: over any locally Noetherian base scheme, in particular `Spec(ℤ)` and, after base change, any Noetherian scheme `S`”.
+- [`AlgebraicGeometry.openVersalityOf_cartesianProperFlat`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityOfDiagonal.lean#L110), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityTags.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatOpennessOfVersalityTags.lean#L26) (StacksFrontier): “both assertions: over any locally Noetherian base scheme, in particular `Spec(ℤ)` and, after base change, any Noetherian scheme `S`”.
 
 ## Depends on
 
@@ -397,4 +397,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.13, Tag 0D1D](https://stacks.math.columbia.edu/tag/0D1D)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

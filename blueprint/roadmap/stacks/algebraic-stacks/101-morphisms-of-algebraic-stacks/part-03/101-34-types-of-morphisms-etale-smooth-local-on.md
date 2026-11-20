@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.34 Types of morphisms étale-smooth local on source-and-target
 
-Section 101.34 of the Stacks Project, [Tag 0CIE](https://stacks.math.columbia.edu/tag/0CIE). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.34 of the Stacks Project, [Tag 0CIE](https://stacks.math.columbia.edu/tag/0CIE). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CIF, a lemma
 
 [Tag 0CIF](https://stacks.math.columbia.edu/tag/0CIF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasPropertyOnEveryEtaleSmoothDiagram_iff_some`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismDiagramTests.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismDiagramTests.lean#L68). The attribute's comment: “equivalence of parts (1) and (2)”.
+**`AlgebraicGeometry.Stack.hasPropertyOnEveryEtaleSmoothDiagram_iff_some`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismDiagramTests.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismDiagramTests.lean#L68). The attribute's comment: “equivalence of parts (1) and (2)”.
 
 > **Stacks 0CIF, the equivalence of conditions (1) and (2).** Let `P` be a property of
 > morphisms of algebraic spaces over `S` which is étale-smooth local on the source-and-target, and
@@ -34,7 +34,7 @@ theorem hasPropertyOnEveryEtaleSmoothDiagram_iff_some
       HasPropertyOnSomeEtaleSmoothDiagram B S hS P f
 ```
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeEtaleSmoothDiagram_iff_relative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismRelativeConverse.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismRelativeConverse.lean#L373). The attribute's comment: “representable morphism”.
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeEtaleSmoothDiagram_iff_relative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismRelativeConverse.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismRelativeConverse.lean#L373). The attribute's comment: “representable morphism”.
 
 > **The third assertion of Stacks 0CIF.** For an étale-smooth local property `P` of morphisms of
 > algebraic spaces over `S` which is stable under base change and local at the target for the fppf
@@ -57,7 +57,7 @@ theorem hasPropertyOnSomeEtaleSmoothDiagram_iff_relative
       HasRelativeProperty.{u, u, u + 1, v} B S hS P f.hom hf
 ```
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeEtaleSmoothDiagram_iff_represented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismRepresented.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismRepresented.lean#L547). The attribute's comment: “representable source and target”.
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeEtaleSmoothDiagram_iff_represented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismRepresented.lean, line 547](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismRepresented.lean#L547). The attribute's comment: “representable source and target”.
 
 > **Stacks 0CIF, the assertion for representable source and target.** For a property `P` of
 > morphisms of algebraic spaces over `S` which is étale-smooth local on the source-and-target, and
@@ -80,7 +80,7 @@ theorem hasPropertyOnSomeEtaleSmoothDiagram_iff_represented :
 
 [Tag 0CIG](https://stacks.math.columbia.edu/tag/0CIG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HasEtaleSmoothLocalProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean#L189). The attribute's comment: “the property of a DM morphism of algebraic stacks induced by an etale-smooth local property P of morphisms of algebraic spaces: IsDM f together with the universal etale-smooth diagram test at P, which is condition (1) of Stacks 0CIF”.
+**`AlgebraicGeometry.Stack.HasEtaleSmoothLocalProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean, line 189](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean#L189). The attribute's comment: “the property of a DM morphism of algebraic stacks induced by an etale-smooth local property P of morphisms of algebraic spaces: IsDM f together with the universal etale-smooth diagram test at P, which is condition (1) of Stacks 0CIF”.
 
 > **Stacks 0CIG.** The property of Deligne–Mumford morphisms of algebraic stacks induced by an
 > étale-smooth local property `P` of morphisms of algebraic spaces over `S`: the morphism is
@@ -99,7 +99,7 @@ abbrev HasEtaleSmoothLocalProperty
 
 [Tag 0CIH](https://stacks.math.columbia.edu/tag/0CIH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasEtaleSmoothLocalProperty_comp_of_isEtaleSmoothLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismCompUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismCompUnconditional.lean#L59). The attribute's comment: “P etale-smooth local on the source-and-target (Stacks 0CFZ) and stable under composition; the composite of two DM 1-morphisms having the property of Stacks 0CIG has it”.
+**`AlgebraicGeometry.Stack.hasEtaleSmoothLocalProperty_comp_of_isEtaleSmoothLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismCompUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismCompUnconditional.lean#L59). The attribute's comment: “P etale-smooth local on the source-and-target (Stacks 0CFZ) and stable under composition; the composite of two DM 1-morphisms having the property of Stacks 0CIG has it”.
 
 > **Stacks 0CIH.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > étale-smooth local on the source-and-target and stable under composition. Then the property of
@@ -127,7 +127,7 @@ theorem hasEtaleSmoothLocalProperty_comp_of_isEtaleSmoothLocal
 
 [Tag 0CII](https://stacks.math.columbia.edu/tag/0CII) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasEtaleSmoothLocalProperty_snd_of_isTwoFibreProduct_of_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismBaseChange.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismBaseChange.lean#L63).
+**`AlgebraicGeometry.Stack.hasEtaleSmoothLocalProperty_snd_of_isTwoFibreProduct_of_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismBaseChange.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphismBaseChange.lean#L63).
 
 > **Stacks 0CII.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > étale-smooth local on the source-and-target and stable under base change. If a Deligne–Mumford
@@ -150,7 +150,7 @@ theorem hasEtaleSmoothLocalProperty_snd_of_isTwoFibreProduct_of_isStableUnderBas
 
 [Tag 0CIJ](https://stacks.math.columbia.edu/tag/0CIJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasEtaleSmoothLocalProperty_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean#L206).
+**`AlgebraicGeometry.Stack.hasEtaleSmoothLocalProperty_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean#L206).
 
 > **Stacks 0CIJ.** An implication between properties of morphisms of algebraic spaces over `S`
 > also holds for the properties of 1-morphisms of algebraic stacks that Stacks 0CIG induces from
@@ -171,4 +171,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.34, Tag 0CIE](https://stacks.math.columbia.edu/tag/0CIE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

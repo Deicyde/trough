@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.43 Ascending properties along regular ring maps
 
-Section 15.43 of the Stacks Project, [Tag 07QJ](https://stacks.math.columbia.edu/tag/07QJ). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.43 of the Stacks Project, [Tag 07QJ](https://stacks.math.columbia.edu/tag/07QJ). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07QK, a lemma
 
 [Tag 07QK](https://stacks.math.columbia.edu/tag/07QK) in the Stacks Project.
 
-**`isReduced_of_isRegularRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean#L79).
+**`isReduced_of_isRegularRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean#L79).
 
 > If `f : R →+* S` is regular, `R` and `S` are Noetherian, and `R` is
 > reduced, then `S` is reduced.
@@ -29,7 +29,7 @@ public theorem isReduced_of_isRegularRingHom {R : Type u} {S : Type v} [CommRing
 
 [Tag 0BFK](https://stacks.math.columbia.edu/tag/0BFK) in the Stacks Project.
 
-**`isNormalRing_of_flat_of_isGeometricallyRegular_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean#L114). References: EGA IV (6.5.4), “(ii), regular fibres”.
+**`isNormalRing_of_flat_of_isGeometricallyRegular_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean#L114). References: EGA IV (6.5.4), “(ii), regular fibres”.
 
 > Let `R → S` be a regular map of Noetherian rings. If `R` is normal, then `S` is normal.
 
@@ -47,7 +47,7 @@ public theorem isNormalRing_of_flat_of_isGeometricallyRegular_fiber
 
 [Tag 0H7S](https://stacks.math.columbia.edu/tag/0H7S) in the Stacks Project.
 
-**`isRegularRing_of_isRegularRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean#L143).
+**`isRegularRing_of_isRegularRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean#L143).
 
 > The Noetherian target of a regular ring homomorphism from a regular ring is regular.
 
@@ -62,7 +62,7 @@ public theorem isRegularRing_of_isRegularRingHom
 
 [Tag 0H7T](https://stacks.math.columbia.edu/tag/0H7T) in the Stacks Project.
 
-**`isCohenMacaulayRing_of_isRegularRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean#L211).
+**`isCohenMacaulayRing_of_isRegularRingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean, line 211](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Regular/AscentAlongRegularRingHom.lean#L211).
 
 > If `f : R →+* S` is regular, `S` is Noetherian, and `R` is Noetherian and
 > Cohen–Macaulay, then `S` is Cohen–Macaulay.
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.43, Tag 07QJ](https://stacks.math.columbia.edu/tag/07QJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.42 Valuative criterion for universal closedness
 
-Section 101.42 of the Stacks Project, [Tag 0CLV](https://stacks.math.columbia.edu/tag/0CLV). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.42 of the Stacks Project, [Tag 0CLV](https://stacks.math.columbia.edu/tag/0CLV). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CLW, a lemma
 
 [Tag 0CLW](https://stacks.math.columbia.edu/tag/0CLW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_isQuasiCompactMorphism_of_valuativeCriterionExistence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniversallyClosed.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniversallyClosed.lean#L381).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_isQuasiCompactMorphism_of_valuativeCriterionExistence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniversallyClosed.lean, line 381](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniversallyClosed.lean#L381).
 
 > **Stacks 0CLW.** A 1-morphism of algebraic stacks over `S` which is quasi-compact
 > (**Stacks 050U**) and satisfies the existence part of the valuative criterion (**Stacks 0CLK**)
@@ -32,7 +32,7 @@ theorem universallyClosed_of_isQuasiCompactMorphism_of_valuativeCriterionExisten
 
 [Tag 0CLX](https://stacks.math.columbia.edu/tag/0CLX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.valuativeCriterionExistence_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeExistenceUniversallyClosed.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeExistenceUniversallyClosed.lean#L387).
+**`AlgebraicGeometry.Stack.valuativeCriterionExistence_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeExistenceUniversallyClosed.lean, line 387](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeExistenceUniversallyClosed.lean#L387).
 
 > **Stacks 0CLX.** A quasi-separated, universally closed 1-morphism of algebraic stacks
 > satisfies the existence part of the valuative criterion.
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.42, Tag 0CLV](https://stacks.math.columbia.edu/tag/0CLV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

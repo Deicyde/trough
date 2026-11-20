@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.31 Cup product
 
-Section 20.31 of the Stacks Project, [Tag 0FKU](https://stacks.math.columbia.edu/tag/0FKU). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 20.31 of the Stacks Project, [Tag 0FKU](https://stacks.math.columbia.edu/tag/0FKU). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FKU, the section
 
 [Tag 0FKU](https://stacks.math.columbia.edu/tag/0FKU) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedGlobalCupProduct.section_cupProduct_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductSectionCanonical.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductSectionCanonical.lean#L91). The attribute's comment: “Section 20.31 IN FULL, both displays, on an arbitrary ringed space and with no parameter: the global cup product μ : RΓ(X, K) ⊗^L\_A RΓ(X, M) ⟶ RΓ(X, K ⊗^L M) in D(A) is globalCupProduct (canonicalOnePointComparison X), built from Lπ^* ⊣ Rπ\_* for the morphism π : (X, O\_X) ⟶ (pt, A) and the comparison of Tag 079U (first conjunct); it is the relative cup product recipe for that datum (second); read through the Leray identification it is the relative cup product of Tag 0B68 for π via D(pt, A) = D(A) (third and fourth); its tensor comparison is invertible (fifth); it is natural in both complexes (sixth); and the induced pairings H^i(X, K) × H^j(X, M) ⟶ H^\{i+j}(X, K ⊗^L M) are ξ ∪ η = μ(ξ ⊗ η) with the tensoring of classes of More on Algebra, Section 15.64 (seventh). The numbered items of the section are excluded, each having its own tag: 0FP2, 0G6W, 0FP3, 0FKV, 0FP4, 0FP5, 0FP6, 0H99”.
+**`Stacks.Cohomology.DerivedGlobalCupProduct.section_cupProduct_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductSectionCanonical.lean, line 91](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductSectionCanonical.lean#L91). The attribute's comment: “Section 20.31 IN FULL, both displays, on an arbitrary ringed space and with no parameter: the global cup product μ : RΓ(X, K) ⊗^L\_A RΓ(X, M) ⟶ RΓ(X, K ⊗^L M) in D(A) is globalCupProduct (canonicalOnePointComparison X), built from Lπ^* ⊣ Rπ\_* for the morphism π : (X, O\_X) ⟶ (pt, A) and the comparison of Tag 079U (first conjunct); it is the relative cup product recipe for that datum (second); read through the Leray identification it is the relative cup product of Tag 0B68 for π via D(pt, A) = D(A) (third and fourth); its tensor comparison is invertible (fifth); it is natural in both complexes (sixth); and the induced pairings H^i(X, K) × H^j(X, M) ⟶ H^\{i+j}(X, K ⊗^L M) are ξ ∪ η = μ(ξ ⊗ η) with the tensoring of classes of More on Algebra, Section 15.64 (seventh). The numbered items of the section are excluded, each having its own tag: 0FP2, 0G6W, 0FP3, 0FKV, 0FP4, 0FP5, 0FP6, 0H99”.
 
 > **Cohomology, Section 0FKU in full, with no parameter: both displays of the section, for the
 > global cup product of an arbitrary ringed space.**
@@ -91,7 +91,7 @@ theorem section_cupProduct_canonical (S : RingedSpace.{u, u}) :
 
 [Tag 0FP2](https://stacks.math.columbia.edu/tag/0FP2) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.homEquiv_symm_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductOfCohomologyClasses.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductOfCohomologyClasses.lean#L159). The attribute's comment: “the identification-free core, at arbitrary objects of `D(𝒪_Y)` in place of the source's shifted structure sheaves, and for an arbitrary morphism of ringed spaces”.
+**`Stacks.Cohomology.DerivedRelativeCupProduct.homEquiv_symm_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductOfCohomologyClasses.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductOfCohomologyClasses.lean#L159). The attribute's comment: “the identification-free core, at arbitrary objects of `D(𝒪_Y)` in place of the source's shifted structure sheaves, and for an arbitrary morphism of ringed spaces”.
 
 > The two constructions of the cup product agree: the adjunct of the tensor product `ξ ⊗ η` of
 > two cohomology classes followed by the relative cup product of Stacks 0B68 is the derived
@@ -116,7 +116,7 @@ theorem homEquiv_symm_relativeCupProduct
             (((derivedAdjunction f).homEquiv V M).symm η)
 ```
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.homEquiv_symm_comp_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductOfCohomologyClasses.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductOfCohomologyClasses.lean#L183). The attribute's comment: “stated for an arbitrary morphism of ringed spaces, with the source's identification `𝒪_Y[-i-j] = 𝒪_Y[-i] ⊗ᴸ 𝒪_Y[-j]` carried as an arbitrary morphism `χ`”.
+**`Stacks.Cohomology.DerivedRelativeCupProduct.homEquiv_symm_comp_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductOfCohomologyClasses.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductOfCohomologyClasses.lean#L183). The attribute's comment: “stated for an arbitrary morphism of ringed spaces, with the source's identification `𝒪_Y[-i-j] = 𝒪_Y[-i] ⊗ᴸ 𝒪_Y[-j]` carried as an arbitrary morphism `χ`”.
 
 > Let `χ : W ⟶ U ⊗^L_{𝒪_Y} V`. The adjunct of `χ` followed by `ξ ⊗ η` and the relative cup
 > product of Stacks 0B68 is `Lf^*χ` followed by the derived pullback-tensor comparison of
@@ -145,7 +145,7 @@ theorem homEquiv_symm_comp_relativeCupProduct
 
 [Tag 0G6W](https://stacks.math.columbia.edu/tag/0G6W) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedGlobalCupProduct.cupWithClassCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L106). The attribute's comment: “the construction of the map ξ ∪ - : RΓ(X, M)[-i] ⟶ RΓ(X, K ⊗^L M) attached to a class ξ ∈ H^i(X, K), the first clause of the remark, at the global cup product μ of Section 0FKU, `globalCupProductCanonical`, on an arbitrary ringed space”.
+**`Stacks.Cohomology.DerivedGlobalCupProduct.cupWithClassCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L106). The attribute's comment: “the construction of the map ξ ∪ - : RΓ(X, M)[-i] ⟶ RΓ(X, K ⊗^L M) attached to a class ξ ∈ H^i(X, K), the first clause of the remark, at the global cup product μ of Section 0FKU, `globalCupProductCanonical`, on an arbitrary ringed space”.
 
 > **The map `ξ ∪ -` at the canonical global cup product.** For a class `ξ ∈ Hⁱ(X, K)` it is the
 > morphism
@@ -163,7 +163,7 @@ def cupWithClassCanonical (K M : DerivedCategory (SheafOfModules.{u} (structureS
       (baseSections X).obj (((derivedTensorProductFunctor X.sheaf).obj K).obj M)
 ```
 
-**`Stacks.Cohomology.DerivedGlobalCupProduct.homologyFromSingle_cupWithClassCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L127). The attribute's comment: “the second clause of the remark: on cohomology ξ ∪ - is the cup product with ξ, for the global cup product `globalCupProductCanonical`. The cup product of two classes is in the composition shape of Section 0FKU and Tag 0FP2, A[-i-j] ⟶ A[-i] ⊗ᴸ A[-j] ⟶ RΓ(X, K) ⊗ᴸ RΓ(X, M) ⟶ RΓ(X, K ⊗ᴸ M), for every identification χ of A[-i-j] with A[-i] ⊗ᴸ A[-j]”.
+**`Stacks.Cohomology.DerivedGlobalCupProduct.homologyFromSingle_cupWithClassCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L127). The attribute's comment: “the second clause of the remark: on cohomology ξ ∪ - is the cup product with ξ, for the global cup product `globalCupProductCanonical`. The cup product of two classes is in the composition shape of Section 0FKU and Tag 0FP2, A[-i-j] ⟶ A[-i] ⊗ᴸ A[-j] ⟶ RΓ(X, K) ⊗ᴸ RΓ(X, M) ⟶ RΓ(X, K ⊗ᴸ M), for every identification χ of A[-i-j] with A[-i] ⊗ᴸ A[-j]”.
 
 > On cohomology the map `ξ ∪ -` at the canonical global cup product is the cup product with `ξ`:
 > for `ξ ∈ Hⁱ(X, K)` and `η ∈ Hʲ(X, M)`, the map `Hⁱ⁺ʲ(ξ ∪ -)` carries the class of `η`, read in
@@ -191,7 +191,7 @@ theorem homologyFromSingle_cupWithClassCanonical
             (globalCupProductCanonical X).app (K, M))
 ```
 
-**`Stacks.Cohomology.DerivedGlobalCupProduct.homologyFromSingle_cupWithClassCanonical_cupPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L155). The attribute's comment: “the second clause of the remark, with the cup product of two classes read against the cohomology-level pairing `cupPairing` of Section 0FKU at the global cup product `globalCupProductCanonical`: the tensoring of classes of Tag 068H followed by H^\{i+j}(μ), which is how the source defines ∪. The source's identification A[-i-j] = A[-i] ⊗ᴸ A[-j] is `pinnedSplitting`”.
+**`Stacks.Cohomology.DerivedGlobalCupProduct.homologyFromSingle_cupWithClassCanonical_cupPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/GlobalCupProductCanonicalInstances.lean#L155). The attribute's comment: “the second clause of the remark, with the cup product of two classes read against the cohomology-level pairing `cupPairing` of Section 0FKU at the global cup product `globalCupProductCanonical`: the tensoring of classes of Tag 068H followed by H^\{i+j}(μ), which is how the source defines ∪. The source's identification A[-i-j] = A[-i] ⊗ᴸ A[-j] is `pinnedSplitting`”.
 
 > On cohomology, `Hⁱ⁺ʲ(ξ ∪ -)` at the canonical global cup product carries the class of `η` to
 > `ξ ∪ η` as `Stacks.Cohomology.DerivedGlobalCupProduct.cupPairing` defines it for the canonical
@@ -218,7 +218,7 @@ theorem homologyFromSingle_cupWithClassCanonical_cupPairing
 
 [Tag 0FP3](https://stacks.math.columbia.edu/tag/0FP3) in the Stacks Project.
 
-**`Stacks.Cohomology.CupProductAndDerivedPushforwardOnRingedSpaces.naiveCupProduct_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductAndDerivedPushforward.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductAndDerivedPushforward.lean#L400).
+**`Stacks.Cohomology.CupProductAndDerivedPushforwardOnRingedSpaces.naiveCupProduct_relativeCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductAndDerivedPushforward.lean, line 400](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CupProductAndDerivedPushforward.lean#L400).
 
 > **Stacks 0FP3.**  For a morphism of ringed spaces `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` and complexes
 > `𝒦^•`, `ℳ^•` of `𝒪_X`-modules, the hexagon
@@ -254,7 +254,7 @@ theorem naiveCupProduct_relativeCupProduct :
 
 [Tag 0FKV](https://stacks.math.columbia.edu/tag/0FKV) in the Stacks Project.
 
-**`Stacks.Cech.CupProductSquare.cupProductSquareCommutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/CupProductSquareCommutes.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/CupProductSquareCommutes.lean#L279).
+**`Stacks.Cech.CupProductSquare.cupProductSquareCommutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/CupProductSquareCommutes.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/CupProductSquareCommutes.lean#L279).
 
 > **[Stacks, Tag 0FKV].**  Let `(X, 𝒪_X)` be a ringed space, `A = Γ(X, 𝒪_X)`, `𝒦^•` and `ℳ^•`
 > bounded below complexes of `𝒪_X`-modules and `𝒰 : X = ⋃ Uᵢ` an open covering.  The diagram
@@ -284,7 +284,7 @@ theorem cupProductSquareCommutes :
 
 [Tag 0FP4](https://stacks.math.columbia.edu/tag/0FP4) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductAssociativity.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductAssociativity.lean#L341). The attribute's comment: “associativity of the relative cup product, for a morphism of ringed spaces and arbitrary K, L, M in D(O\_X): the associativity constraints are those of Tag 0FPB (derivedAssociator), and their compatibility with the comparison of Tag 079U is pullbackTensorComparisonAssociative”.
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductAssociativity.lean, line 341](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductAssociativity.lean#L341). The attribute's comment: “associativity of the relative cup product, for a morphism of ringed spaces and arbitrary K, L, M in D(O\_X): the associativity constraints are those of Tag 0FPB (derivedAssociator), and their compatibility with the comparison of Tag 079U is pullbackTensorComparisonAssociative”.
 
 > **The relative cup product is associative.**  For a morphism of ringed spaces
 > `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` and arbitrary `K, L, M ∈ D(𝒪_X)` the square
@@ -327,7 +327,7 @@ theorem relativeCupProduct_assoc
 
 [Tag 0FP5](https://stacks.math.columbia.edu/tag/0FP5) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_braiding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductCommutativity.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductCommutativity.lean#L242). The attribute's comment: “the whole tag: for a morphism of ringed spaces and arbitrary K, L in D(𝒪\_X), the commutativity square of the relative cup product commutes. The commutativity constraints are derivedBraiding of Stacks 0FPB, and their compatibility with the Stacks 079U comparison is pullbackTensorComparisonBraided”.
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_braiding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductCommutativity.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductCommutativity.lean#L242). The attribute's comment: “the whole tag: for a morphism of ringed spaces and arbitrary K, L in D(𝒪\_X), the commutativity square of the relative cup product commutes. The commutativity constraints are derivedBraiding of Stacks 0FPB, and their compatibility with the Stacks 079U comparison is pullbackTensorComparisonBraided”.
 
 > **The relative cup product is commutative.**  For a morphism of ringed spaces
 > `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` and arbitrary `K, L ∈ D(𝒪_X)` the square
@@ -355,7 +355,7 @@ theorem relativeCupProduct_braiding (K L : DerivedCategory (Mod X.sheaf)) :
 
 [Tag 0FP6](https://stacks.math.columbia.edu/tag/0FP6) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductComposition.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductComposition.lean#L228). The attribute's comment: “for the composite adjunction and the composite pullback-tensor comparison”.
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductComposition.lean, line 228](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductComposition.lean#L228). The attribute's comment: “for the composite adjunction and the composite pullback-tensor comparison”.
 
 > **The relative cup product is compatible with composition.**  For the composite adjunction
 > `Lg^*Lf^* ⊣ Rf_*Rg_*` and the composite derived pullback-tensor comparison, the relative cup
@@ -380,7 +380,7 @@ theorem relativeCupProduct_comp
           (relativeCupProduct f K L)
 ```
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_comp'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductComposition.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductComposition.lean#L275).
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_comp'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductComposition.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductComposition.lean#L275).
 
 > **Stacks 0FP6: the relative cup product is compatible with composition.**  For composable
 > morphisms of ringed spaces `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` and `g : (Y, 𝒪_Y) ⟶ (Z, 𝒪_Z)` and
@@ -430,7 +430,7 @@ theorem relativeCupProduct_comp'
 
 [Tag 0H99](https://stacks.math.columbia.edu/tag/0H99) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_derivedBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductBaseChange.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductBaseChange.lean#L473).
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_derivedBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductBaseChange.lean, line 473](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProductBaseChange.lean#L473).
 
 > **Stacks 0H99: the relative cup product is compatible with a commutative square of ringed
 > spaces.**
@@ -476,4 +476,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.31, Tag 0FKU](https://stacks.math.columbia.edu/tag/0FKU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

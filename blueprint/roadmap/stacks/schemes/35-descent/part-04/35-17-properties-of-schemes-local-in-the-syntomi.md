@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.17 Properties of schemes local in the syntomic topology
 
-Section 35.17 of the Stacks Project, [Tag 0369](https://stacks.math.columbia.edu/tag/0369). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 35.17 of the Stacks Project, [Tag 0369](https://stacks.math.columbia.edu/tag/0369). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 036A, a lemma
 
 [Tag 036A](https://stacks.math.columbia.edu/tag/036A) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyNoetherian_and_hasPropertySk_isLocal_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/SerreCondition.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/SerreCondition.lean#L155).
+**`AlgebraicGeometry.isLocallyNoetherian_and_hasPropertySk_isLocal_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/SerreCondition.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/SerreCondition.lean#L155).
 
 > **Stacks Project, Tag 036A.** Being locally Noetherian and satisfying `(Sₖ)` is local
 > for syntomic coverings.
@@ -30,7 +30,7 @@ instance isLocallyNoetherian_and_hasPropertySk_isLocal_syntomic (k : ℕ) :
 
 [Tag 036B](https://stacks.math.columbia.edu/tag/036B) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulay_isLocal_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/CohenMacaulay.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/CohenMacaulay.lean#L54).
+**`AlgebraicGeometry.isCohenMacaulay_isLocal_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/CohenMacaulay.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/CohenMacaulay.lean#L54).
 
 > **Stacks Project, Tag 036B.** Being Cohen–Macaulay is local for syntomic coverings.
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.17, Tag 0369](https://stacks.math.columbia.edu/tag/0369)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

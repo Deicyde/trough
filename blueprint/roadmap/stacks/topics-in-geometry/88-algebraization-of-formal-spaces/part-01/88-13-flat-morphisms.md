@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.13 Flat morphisms
 
-Section 88.13 of the Stacks Project, [Tag 0GC8](https://stacks.math.columbia.edu/tag/0GC8). 8 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 88.13 of the Stacks Project, [Tag 0GC8](https://stacks.math.columbia.edu/tag/0GC8). 8 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GC9, a lemma
 
 [Tag 0GC9](https://stacks.math.columbia.edu/tag/0GC9) in the Stacks Project.
 
-**`TopologicalRing.flat_isLocalNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalProperty.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalProperty.lean#L311). References: SGA 3 VIIB (1.3.4), “Flatness clause”.
+**`TopologicalRing.flat_isLocalNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalProperty.lean, line 311](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalProperty.lean#L311). References: SGA 3 VIIB (1.3.4), “Flatness clause”.
 
 > **Flatness is a local property of morphisms of Noetherian adic topological rings**
 > (Stacks 0GC9): it ascends along completed étale localization diagrams, descends along faithfully
@@ -27,7 +27,7 @@ public theorem flat_isLocalNoetherian :
         [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] (φ : B →+* A) ↦ φ.Flat)
 ```
 
-**`TopologicalRing.flat_isLocalNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalPropertyRefined.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalPropertyRefined.lean#L70). References: SGA 3 VIIB (1.3.4), “Flatness clause”.
+**`TopologicalRing.flat_isLocalNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalPropertyRefined.lean, line 70](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalPropertyRefined.lean#L70). References: SGA 3 VIIB (1.3.4), “Flatness clause”.
 
 > **Flatness is a local property of morphisms of Noetherian adic topological rings**: it is
 > independent of the presentations of the source and the target, ascends along completed étale
@@ -45,7 +45,7 @@ public theorem flat_isLocalNoetherian' :
 
 [Tag 0GCA](https://stacks.math.columbia.edu/tag/0GCA) in the Stacks Project.
 
-**`TopologicalRing.flat_isStableUnderBaseChangeByFiniteTypeOnReductions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatBaseChange.lean, line 793](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatBaseChange.lean#L793). The attribute's comment: “part (1)”.
+**`TopologicalRing.flat_isStableUnderBaseChangeByFiniteTypeOnReductions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatBaseChange.lean, line 793](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Rig/FlatBaseChange.lean#L793). The attribute's comment: “part (1)”.
 
 > **Stacks 0GCA, part (1).** Flatness of morphisms of Noetherian adic topological rings
 > (Stacks 0GC9) is stable under completed tensor-product base change along morphisms of finite
@@ -59,7 +59,7 @@ public theorem flat_isStableUnderBaseChangeByFiniteTypeOnReductions :
       FiniteTypeOnReductionsProperty
 ```
 
-**`TopologicalRing.flatAdicFiniteType_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatBaseChange.lean, line 900](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatBaseChange.lean#L900). The attribute's comment: “part (2)”.
+**`TopologicalRing.flatAdicFiniteType_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatBaseChange.lean, line 900](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Rig/FlatBaseChange.lean#L900). The attribute's comment: “part (2)”.
 
 > **Stacks 0GCA, part (2).** Flatness (Stacks 0GC9) together with the property of Stacks
 > 0GBW, being adic and topologically of finite type, is stable under base change in the sense of
@@ -76,7 +76,7 @@ public theorem flatAdicFiniteType_isStableUnderBaseChange :
         φ.Flat ∧ RingHom.IsAdic φ ∧ IsTopologicallyOfFiniteType φ)
 ```
 
-**`TopologicalRing.flat_isStableUnderBaseChangeByFiniteTypeOnReductions'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatBaseChangeRefined.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatBaseChangeRefined.lean#L113). The attribute's comment: “part (1)”.
+**`TopologicalRing.flat_isStableUnderBaseChangeByFiniteTypeOnReductions'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatBaseChangeRefined.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Rig/FlatBaseChangeRefined.lean#L113). The attribute's comment: “part (1)”.
 
 > **Stacks 0GCA, part (1).** Flatness of morphisms of Noetherian adic topological rings
 > (Stacks 0GC9) is stable under completed tensor-product base change along morphisms of finite
@@ -90,7 +90,7 @@ public theorem flat_isStableUnderBaseChangeByFiniteTypeOnReductions' :
       FiniteTypeOnReductionsProperty
 ```
 
-**`TopologicalRing.flatAdicFiniteType_isStableUnderBaseChange'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatBaseChangeRefined.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/FlatBaseChangeRefined.lean#L170). The attribute's comment: “part (2)”.
+**`TopologicalRing.flatAdicFiniteType_isStableUnderBaseChange'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FlatBaseChangeRefined.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Rig/FlatBaseChangeRefined.lean#L170). The attribute's comment: “part (2)”.
 
 > **Stacks 0GCA, part (2).** Flatness (Stacks 0GC9) together with the property of Stacks
 > 0GBW, being adic and topologically of finite type, is stable under base change in the sense of
@@ -111,7 +111,7 @@ public theorem flatAdicFiniteType_isStableUnderBaseChange' :
 
 [Tag 0GCB](https://stacks.math.columbia.edu/tag/0GCB) in the Stacks Project.
 
-**`TopologicalRing.flat_isStableUnderCompositionNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalProperty.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalProperty.lean#L323).
+**`TopologicalRing.flat_isStableUnderCompositionNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalProperty.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalProperty.lean#L323).
 
 > **Stacks 0GCB.** Flatness, as a local property of morphisms of Noetherian adic topological
 > rings (Stacks 0GC9), is stable under composition: the composite of two flat ring homomorphisms
@@ -124,7 +124,7 @@ public theorem flat_isStableUnderCompositionNoetherian :
         [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] (φ : B →+* A) ↦ φ.Flat)
 ```
 
-**`TopologicalRing.flat_isStableUnderCompositionNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalPropertyRefined.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalPropertyRefined.lean#L83).
+**`TopologicalRing.flat_isStableUnderCompositionNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalPropertyRefined.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/FlatLocalPropertyRefined.lean#L83).
 
 > Flatness, as a local property of morphisms of Noetherian adic topological rings, is stable
 > under composition: the composite of two flat ring homomorphisms is flat.
@@ -140,7 +140,7 @@ public theorem flat_isStableUnderCompositionNoetherian' :
 
 [Tag 0GCC](https://stacks.math.columbia.edu/tag/0GCC) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Flat.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Flat.lean#L87).
+**`AlgebraicGeometry.FormalSpace.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Flat.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Flat.lean#L87).
 
 > **Stacks 0GCC.** A morphism of formal algebraic spaces over `S` is *flat* when every
 > morphism between affine, representable, étale charts of its source and target is induced by a
@@ -155,7 +155,7 @@ abbrev IsFlat (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 0GCD](https://stacks.math.columbia.edu/tag/0GCD) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFlat_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatCharacterizationLocallyNoetherian.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatCharacterizationLocallyNoetherian.lean#L101). The attribute's comment: “all four conditions, for a morphism of locally Noetherian formal algebraic spaces as in the source; Stacks 0AJ3, the refinement of Remark 0ANI and the locality of flatness (Stacks 0GC9) are proved, not assumed”.
+**`AlgebraicGeometry.FormalSpace.isFlat_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatCharacterizationLocallyNoetherian.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatCharacterizationLocallyNoetherian.lean#L101). The attribute's comment: “all four conditions, for a morphism of locally Noetherian formal algebraic spaces as in the source; Stacks 0AJ3, the refinement of Remark 0ANI and the locality of flatness (Stacks 0GC9) are proved, not assumed”.
 
 > **Stacks 0GCD.** For a morphism `f : X ⟶ Y` of locally Noetherian formal algebraic spaces
 > over `S` the following are equivalent:
@@ -193,7 +193,7 @@ theorem isFlat_tfae_of_isLocallyNoetherian {X Y : FppfSheaf B S hS} (f : X ⟶ Y
 
 [Tag 0GCE](https://stacks.math.columbia.edu/tag/0GCE) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFlat_pullback_snd_of_isLocallyOfFiniteTypeOnReductions_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeLocallyNoetherian.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeLocallyNoetherian.lean#L108). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.FormalSpace.isFlat_pullback_snd_of_isLocallyOfFiniteTypeOnReductions_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeLocallyNoetherian.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeLocallyNoetherian.lean#L108). The attribute's comment: “part (1)”.
 
 > **Stacks 0GCE, part (1).** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of locally
 > Noetherian formal algebraic spaces over `S`. If `f` is flat (Definition 0GCC) and the morphism
@@ -213,7 +213,7 @@ theorem isFlat_pullback_snd_of_isLocallyOfFiniteTypeOnReductions_of_isLocallyNoe
     IsFlat B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isFlat_and_isLocallyOfFiniteType_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeLocallyNoetherian.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeLocallyNoetherian.lean#L138). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.FormalSpace.isFlat_and_isLocallyOfFiniteType_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeLocallyNoetherian.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeLocallyNoetherian.lean#L138). The attribute's comment: “part (2)”.
 
 > **Stacks 0GCE, part (2).** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of locally
 > Noetherian formal algebraic spaces over `S`. If `f` is flat (Definition 0GCC) and locally of
@@ -234,7 +234,7 @@ theorem isFlat_and_isLocallyOfFiniteType_pullback_snd {X Y Z : FppfSheaf B S hS}
     IsFlat B S hS (pullback.snd f g) ∧ IsLocallyOfFiniteType B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isFlat_pullback_snd_of_isLocallyOfFiniteTypeOnReductions'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeRefined.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeRefined.lean#L80). The attribute's comment: “part (1), on the 0GBG transfer inputs and the 0GC7 (4) implies (1) inputs”.
+**`AlgebraicGeometry.FormalSpace.isFlat_pullback_snd_of_isLocallyOfFiniteTypeOnReductions'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeRefined.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeRefined.lean#L80). The attribute's comment: “part (1), on the 0GBG transfer inputs and the 0GC7 (4) implies (1) inputs”.
 
 > **Stacks 0GCE, part (1).** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of locally
 > Noetherian formal algebraic spaces over `S`. If `f` is flat in the sense of Definition 0GCC and
@@ -263,7 +263,7 @@ theorem isFlat_pullback_snd_of_isLocallyOfFiniteTypeOnReductions'
     IsFlat B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isLocallyOfFiniteType_pullback_snd_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeRefined.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeRefined.lean#L255). The attribute's comment: “part (2), locally of finite type, from Stacks 0AQ5 alone -- the second projection is a base change of `f`. No input of Remark 0GBF and no comparison of Stacks 0GC0 is used, and flatness of `f` is not used”.
+**`AlgebraicGeometry.FormalSpace.isLocallyOfFiniteType_pullback_snd_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeRefined.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Restricted/FlatBaseChangeRefined.lean#L255). The attribute's comment: “part (2), locally of finite type, from Stacks 0AQ5 alone -- the second projection is a base change of `f`. No input of Remark 0GBF and no comparison of Stacks 0GC0 is used, and flatness of `f` is not used”.
 
 > **Stacks 0GCE, part (2), locally of finite type.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be
 > morphisms of locally Noetherian formal algebraic spaces over `S`. If `f` is locally of finite
@@ -286,7 +286,7 @@ theorem isLocallyOfFiniteType_pullback_snd_of_isLocallyOfFiniteType {X Y Z : Fpp
 
 [Tag 0GCF](https://stacks.math.columbia.edu/tag/0GCF) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFlat_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatComposition.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatComposition.lean#L58).
+**`AlgebraicGeometry.FormalSpace.isFlat_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatComposition.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatComposition.lean#L58).
 
 > **Stacks 0GCF.** If `f : X ⟶ Y` and `g : Y ⟶ Z` are flat morphisms of locally Noetherian
 > formal algebraic spaces over `S`, then `g ∘ f` is flat.
@@ -306,7 +306,7 @@ theorem isFlat_comp_of_isLocallyNoetherian {X Y Z : FppfSheaf B S hS} (f : X ⟶
 
 [Tag 0GCG](https://stacks.math.columbia.edu/tag/0GCG) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFlat_of_hasPropertyULift_flatPropertyULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatOfBootstrapFlat.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatOfBootstrapFlat.lean#L223).
+**`AlgebraicGeometry.FormalSpace.isFlat_of_hasPropertyULift_flatPropertyULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatOfBootstrapFlat.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatOfBootstrapFlat.lean#L223).
 
 > **Stacks 0GCG.** A morphism `f : X ⟶ Y` of formal algebraic spaces over `S` which is
 > representable by algebraic spaces and flat in the Bootstrap sense of Stacks 03XZ is flat in the
@@ -332,4 +332,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.13, Tag 0GC8](https://stacks.math.columbia.edu/tag/0GC8)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

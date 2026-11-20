@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.51 Characterizing pseudo-coherent complexes, II
 
-Section 76.51 of the Stacks Project, [Tag 0CTP](https://stacks.math.columbia.edu/tag/0CTP). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.51 of the Stacks Project, [Tag 0CTP](https://stacks.math.columbia.edu/tag/0CTP). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CTQ, a lemma
 
 [Tag 0CTQ](https://stacks.math.columbia.edu/tag/0CTQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.torIndependent_baseChange_product_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceFlatBaseChange.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceFlatBaseChange.lean#L512).
+**`AlgebraicGeometry.Space.torIndependent_baseChange_product_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceFlatBaseChange.lean, line 512](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceFlatBaseChange.lean#L512).
 
 > Let `S` be a scheme, let
 > ```
@@ -45,7 +45,7 @@ public theorem torIndependent_baseChange_product_of_isFlat
 
 [Tag 0CTR](https://stacks.math.columbia.edu/tag/0CTR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.nonempty_derivedChowDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/General.lean, line 576](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/General.lean#L576).
+**`AlgebraicGeometry.Space.nonempty_derivedChowDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/General.lean, line 576](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/General.lean#L576).
 
 > **Stacks 0CTR (derived Chow lemma).** Let `A` be a ring and `X` an algebraic space separated
 > and of finite presentation over `A`. Every point `x ∈ |X|` carries a datum of the derived Chow
@@ -65,7 +65,7 @@ theorem nonempty_derivedChowDatum (X : AlgebraicSpaces B (Spec (.of A)) hA)
 
 [Tag 0CTS](https://stacks.math.columbia.edu/tag/0CTS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DerivedChowDatum.isFinitePresentation_overOpenToOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean#L179). The attribute's comment: “the closed immersion c|\_W : W ⟶ V of the statement is of finite presentation”.
+**`AlgebraicGeometry.Space.DerivedChowDatum.isFinitePresentation_overOpenToOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean#L179). The attribute's comment: “the closed immersion c|\_W : W ⟶ V of the statement is of finite presentation”.
 
 > **Stacks 0CTS, first assertion.** For `X` of finite presentation over `S`, the closed
 > immersion `c|_W : W ⟶ V` is of finite presentation.
@@ -76,7 +76,7 @@ theorem isFinitePresentation_overOpenToOpen
     IsFinitePresentation B S hS (overOpenToOpen D.i D.v).hom
 ```
 
-**`AlgebraicGeometry.Space.DerivedChowDatum.nonempty_restrict_derivedPushforward_tensor_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean#L196).
+**`AlgebraicGeometry.Space.DerivedChowDatum.nonempty_restrict_derivedPushforward_tensor_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean#L196).
 
 > **Stacks 0CTS.** For a datum `(n, Z, z, V, E)` of the derived Chow lemma on `X` and
 > `K ∈ D_QCoh(𝒪_X)`, `Rq_*(Lp^*K ⊗^𝐋 E)|_V ≅ R(c|_W)_* K|_W`, where `p` and `q` are the two
@@ -101,7 +101,7 @@ theorem nonempty_restrict_derivedPushforward_tensor_iso
 
 [Tag 0CTT](https://stacks.math.columbia.edu/tag/0CTT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyPseudoCoherent_of_isPseudoCoherent_derivedSections_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePseudoCoherent.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePseudoCoherent.lean#L73).
+**`AlgebraicGeometry.Space.isRelativelyPseudoCoherent_of_isPseudoCoherent_derivedSections_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePseudoCoherent.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePseudoCoherent.lean#L73).
 
 > **Stacks 0CTT.** Let `X` be an algebraic space separated and of finite presentation over `A`
 > and `K ∈ D_QCoh(𝒪_X)` with `RΓ(X, E ⊗^𝐋 K)` pseudo-coherent over `A` for every pseudo-coherent
@@ -127,7 +127,7 @@ theorem isRelativelyPseudoCoherent_of_isPseudoCoherent_derivedSections_tensor
 
 [Tag 0GFJ](https://stacks.math.columbia.edu/tag/0GFJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyPseudoCoherent_of_isPseudoCoherent_derivedSections_tensor_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePseudoCoherentPerfect.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePseudoCoherentPerfect.lean#L53).
+**`AlgebraicGeometry.Space.isRelativelyPseudoCoherent_of_isPseudoCoherent_derivedSections_tensor_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePseudoCoherentPerfect.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePseudoCoherentPerfect.lean#L53).
 
 > Let `X` be an algebraic space separated and of finite presentation over `A` and
 > `K ∈ D_QCoh(𝒪_X)` with `RΓ(X, E ⊗^𝐋 K)` pseudo-coherent over `A` for every perfect `E`. Then `K`
@@ -156,4 +156,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.51, Tag 0CTP](https://stacks.math.columbia.edu/tag/0CTP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

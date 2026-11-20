@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.6 Adic ring maps
 
-Section 87.6 of the Stacks Project, [Tag 0GX9](https://stacks.math.columbia.edu/tag/0GX9). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.6 of the Stacks Project, [Tag 0GX9](https://stacks.math.columbia.edu/tag/0GX9). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GBR, a definition
 
 [Tag 0GBR](https://stacks.math.columbia.edu/tag/0GBR) in the Stacks Project.
 
-**`RingHom.IsAdic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L44).
+**`RingHom.IsAdic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L44).
 
 > A ring homomorphism `φ : A →+* B` is adic if some ideal defining the
 > topology of `A` extends along `φ` to an ideal defining the topology of `B`.
@@ -28,7 +28,7 @@ public abbrev IsAdic {A B : Type*} [CommRing A] [CommRing B]
 
 [Tag 0GXA](https://stacks.math.columbia.edu/tag/0GXA) in the Stacks Project.
 
-**`RingHom.isAdic_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L362).
+**`RingHom.isAdic_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 362](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L362).
 
 > The composite of two continuous adic ring homomorphisms is adic.
 
@@ -44,7 +44,7 @@ public theorem isAdic_comp {A B C : Type*} [CommRing A] [CommRing B] [CommRing C
 
 [Tag 0GXB](https://stacks.math.columbia.edu/tag/0GXB) in the Stacks Project.
 
-**`RingHom.isAdic_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L383).
+**`RingHom.isAdic_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 383](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L383).
 
 > If a composite of continuous ring homomorphisms is adic and the middle ring is
 > pre-adic, then the second homomorphism is adic.
@@ -62,7 +62,7 @@ public theorem isAdic_of_comp {A B C : Type*} [CommRing A] [CommRing B] [CommRin
 
 [Tag 0GXC](https://stacks.math.columbia.edu/tag/0GXC) in the Stacks Project.
 
-**`RingHom.isTaut_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L435). The attribute's comment: “adic implies taut”.
+**`RingHom.isTaut_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 435](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L435). The attribute's comment: “adic implies taut”.
 
 > A continuous adic homomorphism of linearly topologized rings is taut.
 
@@ -79,7 +79,7 @@ public theorem isTaut_of_isAdic
 
 [Tag 0APU](https://stacks.math.columbia.edu/tag/0APU) in the Stacks Project.
 
-**`RingHom.exists_fg_ideal_isAdic_of_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L306). The attribute's comment: “the target is adic with a finitely generated ideal of definition”.
+**`RingHom.exists_fg_ideal_isAdic_of_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 306](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L306). The attribute's comment: “the target is adic with a finitely generated ideal of definition”.
 
 > The target of a taut continuous homomorphism from a pre-adic ring with a finitely generated
 > ideal of definition is itself adic with a finitely generated ideal of definition, provided that
@@ -96,7 +96,7 @@ public theorem exists_fg_ideal_isAdic_of_isTaut
     ∃ J : Ideal B, J.FG ∧ _root_.IsAdic J
 ```
 
-**`RingHom.isAdic_of_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L322). The attribute's comment: “the homomorphism is adic”.
+**`RingHom.isAdic_of_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 322](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L322). The attribute's comment: “the homomorphism is adic”.
 
 > A taut continuous homomorphism from a pre-adic ring with a finitely generated ideal of
 > definition to a complete linearly topologized ring is adic.
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.6, Tag 0GX9](https://stacks.math.columbia.edu/tag/0GX9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

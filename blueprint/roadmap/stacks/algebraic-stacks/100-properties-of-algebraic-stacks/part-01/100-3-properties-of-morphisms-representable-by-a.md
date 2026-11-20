@@ -8,13 +8,13 @@ proof: formalized
 
 # 100.3 Properties of morphisms representable by algebraic spaces
 
-Section 100.3 of the Stacks Project, [Tag 04XB](https://stacks.math.columbia.edu/tag/04XB). 8 tags here are carried by 22 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 100.3 of the Stacks Project, [Tag 04XB](https://stacks.math.columbia.edu/tag/04XB). 8 tags here are carried by 22 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04XB, the section
 
 [Tag 04XB](https://stacks.math.columbia.edu/tag/04XB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.representableMorphismProperties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismProperties.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismProperties.lean#L130).
+**`AlgebraicGeometry.Stack.representableMorphismProperties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismProperties.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableMorphismProperties.lean#L130).
 
 > **Stacks 04XB.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > preserved by arbitrary base change and local on the target for the fppf precoverage, and let a
@@ -119,7 +119,7 @@ theorem representableMorphismProperties :
 
 [Tag 04ZP](https://stacks.math.columbia.edu/tag/04ZP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_iff_isRepresentableByAlgebraicSpace_pt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableBySpacesOfFppfCover.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableBySpacesOfFppfCover.lean#L271).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_iff_isRepresentableByAlgebraicSpace_pt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableBySpacesOfFppfCover.lean, line 271](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableBySpacesOfFppfCover.lean#L271).
 
 > **Stacks 04ZP.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`, let `𝒲` be
 > represented by an algebraic space `W` and let `g : 𝒲 ⟶ 𝒴` be surjective, flat and locally of
@@ -156,7 +156,7 @@ theorem isRepresentableByAlgebraicSpaces_iff_isRepresentableByAlgebraicSpace_pt
       IsRepresentableByAlgebraicSpace B S hS Q.pt
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_of_isRepresentableByAlgebraicSpace_pt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableOfFlatCoverBaseChange.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableOfFlatCoverBaseChange.lean#L101). The attribute's comment: “the implication (2) ⟹ (1)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_of_isRepresentableByAlgebraicSpace_pt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableOfFlatCoverBaseChange.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableOfFlatCoverBaseChange.lean#L101). The attribute's comment: “the implication (2) ⟹ (1)”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`, let `g : 𝒲 ⟶ 𝒴` be
 > surjective, flat and locally of finite presentation with `𝒲` an algebraic space, and suppose a
@@ -176,13 +176,13 @@ theorem isRepresentableByAlgebraicSpaces_of_isRepresentableByAlgebraicSpace_pt
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isTwoFibreProduct`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L172), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L186) (StacksFrontier): “the implication (1) ⟹ (2)”.
+- [`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isTwoFibreProduct`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L172), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeRepresentableBySpace.lean#L186) (StacksFrontier): “the implication (1) ⟹ (2)”.
 
 ## Tag 04XC, a lemma
 
 [Tag 04XC](https://stacks.math.columbia.edu/tag/04XC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_forall_space_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertySpaceBaseChange.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertySpaceBaseChange.lean#L265).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_forall_space_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertySpaceBaseChange.lean, line 265](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertySpaceBaseChange.lean#L265).
 
 > **Stacks 04XC.** A 1-morphism of categories fibred in groupoids over the big fppf site of `S`
 > which is representable by algebraic spaces has the relative property `P` exactly when, for every
@@ -215,7 +215,7 @@ theorem hasRelativeProperty_iff_forall_space_baseChange :
 
 [Tag 04XD](https://stacks.math.columbia.edu/tag/04XD) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_prop_representingMap_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalEssentialSurjectivity.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalEssentialSurjectivity.lean#L493).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_prop_representingMap_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalEssentialSurjectivity.lean, line 493](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalEssentialSurjectivity.lean#L493).
 
 > **Properties of Stacks, Lemma 04XD.** In the situation above, `f` has the relative property
 > `P` of Stacks 03YK exactly when the morphism `V ⟶ W` of representing presheaves induced by the
@@ -260,7 +260,7 @@ theorem hasRelativeProperty_iff_prop_representingMap_of_fppf
 
 [Tag 06TY](https://stacks.math.columbia.edu/tag/06TY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_fppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyFppfCover.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyFppfCover.lean#L102).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_fppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyFppfCover.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyFppfCover.lean#L102).
 
 > Let `P` be a property of morphisms of algebraic spaces over `S` which is stable under base
 > change and local on the target for the fppf precoverage, let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of
@@ -292,7 +292,7 @@ theorem hasRelativeProperty_iff_of_fppfCover
 
 [Tag 06M2](https://stacks.math.columbia.edu/tag/06M2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_of_comp_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyCancelSourceLocal.lean, line 879](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyCancelSourceLocal.lean#L879).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_of_comp_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyCancelSourceLocal.lean, line 879](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyCancelSourceLocal.lean#L879).
 
 > A relative property local on the source descends along a representable
 > covering of the intermediate fibred category.
@@ -342,7 +342,7 @@ public theorem hasRelativeProperty_of_comp_of_cover
 
 [Tag 04Y6](https://stacks.math.columbia.edu/tag/04Y6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.GroupoidPresentation.pr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeProjection.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeProjection.lean#L455). The attribute's comment: “assertion (3): the morphism of groupoids pr : (U', R', s', t', c') ⟶ (U, R, s, t, c)”.
+**`AlgebraicGeometry.Stack.GroupoidPresentation.pr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeProjection.lean, line 455](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeProjection.lean#L455). The attribute's comment: “assertion (3): the morphism of groupoids pr : (U', R', s', t', c') ⟶ (U, R, s, t, c)”.
 
 > **Stacks 04Y6, assertion (3).** The morphism of groupoids in algebraic spaces
 > `pr : (U', R', s', t', c') ⟶ (U, R, s, t, c)`: on objects the projection `U' = U ×_𝒳 𝒳' ⟶ U`, on
@@ -356,7 +356,7 @@ noncomputable def pr : GroupoidInAlgebraicSpaces.Hom
     (baseChangedPresentation P g h𝒳 h𝒳' eU' eR').groupoid P.groupoid
 ```
 
-**`AlgebraicGeometry.Stack.GroupoidPresentation.quotientStackPr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeProjection.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeProjection.lean#L476). The attribute's comment: “assertion (3): the induced morphism [pr] of quotient stacks”.
+**`AlgebraicGeometry.Stack.GroupoidPresentation.quotientStackPr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeProjection.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeProjection.lean#L476). The attribute's comment: “assertion (3): the induced morphism [pr] of quotient stacks”.
 
 > **Stacks 04Y6, assertion (3).** The 1-morphism `[pr] : [U'/R'] ⟶ [U/R]` of quotient stacks
 > induced by `pr` through Stacks 046Q.
@@ -367,7 +367,7 @@ noncomputable def quotientStackPr :
       (quotientStack P.groupoid)
 ```
 
-**`AlgebraicGeometry.Stack.GroupoidPresentation.exists_baseChangedPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeRelation.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeRelation.lean#L164). The attribute's comment: “assertions (1) and (2): a groupoid of the form (U', R', s', t', c') and a presentation [U'/R'] -> X'; the 2-commutative square of assertions (3) and (4) is not claimed”.
+**`AlgebraicGeometry.Stack.GroupoidPresentation.exists_baseChangedPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeRelation.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeRelation.lean#L164). The attribute's comment: “assertions (1) and (2): a groupoid of the form (U', R', s', t', c') and a presentation [U'/R'] -> X'; the 2-commutative square of assertions (3) and (4) is not claimed”.
 
 > Let `g : 𝒳' ⟶ 𝒳` be a 1-morphism of algebraic stacks over `S` representable by algebraic
 > spaces and let `[U/R] ⟶ 𝒳` be a presentation. Then there is a presentation `[U'/R'] ⟶ 𝒳'` whose
@@ -389,7 +389,7 @@ theorem exists_baseChangedPresentation
         (presheafOfCategories (P'.groupoid.arrows.obj ⋙ typeToCat)).p)
 ```
 
-**`AlgebraicGeometry.Stack.GroupoidPresentation.nonempty_bcSquareIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeSquare.lean, line 1060](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeSquare.lean#L1060). The attribute's comment: “assertion (4): the square [U'/R'] -> X' -> X and [U'/R'] -> [U/R] -> X 2-commutes”.
+**`AlgebraicGeometry.Stack.GroupoidPresentation.nonempty_bcSquareIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeSquare.lean, line 1060](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeSquare.lean#L1060). The attribute's comment: “assertion (4): the square [U'/R'] -> X' -> X and [U'/R'] -> [U/R] -> X 2-commutes”.
 
 > **Stacks 04Y6, assertion (4).** The square
 >
@@ -412,7 +412,7 @@ theorem nonempty_bcSquareIso :
       BasedFunctor.comp (quotientStackPr P g eU' eR' h𝒳 h𝒳') P.basedFunctor)
 ```
 
-**`AlgebraicGeometry.Stack.GroupoidPresentation.exists_baseChangedPresentationSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeSquare.lean, line 1095](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeSquare.lean#L1095). The attribute's comment: “the whole statement: assertions (1), (2), (3) and (4) conjoined”.
+**`AlgebraicGeometry.Stack.GroupoidPresentation.exists_baseChangedPresentationSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeSquare.lean, line 1095](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/PresentationBaseChangeSquare.lean#L1095). The attribute's comment: “the whole statement: assertions (1), (2), (3) and (4) conjoined”.
 
 > **Stacks 04Y6, the whole statement.** Let `g : 𝒳' ⟶ 𝒳` be a 1-morphism of algebraic stacks
 > over `S` representable by algebraic spaces and let `[U/R] ⟶ 𝒳` be a presentation. Then there are a
@@ -455,7 +455,7 @@ theorem exists_baseChangedPresentationSquare
           BasedFunctor.comp (quotientStackMap pr') P.basedFunctor)
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.RepresentablePresentation.isTwoFibreProduct_relationBaseChangeSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean#L168). The attribute's comment: “R' = R ×\_𝒳 𝒳' for the canonical squares; no hypothesis carried”.
+**`CategoryTheory.CatFiberedInGroupoids.RepresentablePresentation.isTwoFibreProduct_relationBaseChangeSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean#L168). The attribute's comment: “R' = R ×\_𝒳 𝒳' for the canonical squares; no hypothesis carried”.
 
 > **Stacks 04Y6.** The canonical `R ×_{s, 𝒰} U'` is a base change of the relation `R` along
 > `g`: pasted onto the square of `U' = 𝒰 ×_𝒳 𝒳'`, it is a 2-fibre product of the cospan
@@ -467,7 +467,7 @@ noncomputable def isTwoFibreProduct_relationBaseChangeSquare :
       ((atlasBaseChangeSquare f g).pasteFst (relationBaseChangeSquare f g))
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.RepresentablePresentation.nonempty_iso_baseChangedRelationSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean#L180). The attribute's comment: “R ×\_𝒳 𝒳' = U' ×\_\{𝒳'} U' for the canonical squares; nothing carried”.
+**`CategoryTheory.CatFiberedInGroupoids.RepresentablePresentation.nonempty_iso_baseChangedRelationSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean#L180). The attribute's comment: “R ×\_𝒳 𝒳' = U' ×\_\{𝒳'} U' for the canonical squares; nothing carried”.
 
 > **Stacks 04Y6.** The displayed chain of the proof, for the canonical 2-fibre products:
 > `R ×_𝒳 𝒳' = 𝒰 ×_𝒳 𝒰 ×_𝒳 𝒳' = (𝒰 ×_𝒳 𝒳') ×_{𝒳'} (𝒰 ×_𝒳 𝒳')`. The base change of the relation
@@ -485,7 +485,7 @@ theorem nonempty_iso_baseChangedRelationSquare :
 
 [Tag 04ZQ](https://stacks.math.columbia.edu/tag/04ZQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.SpacesOverStack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L59). The attribute's comment: “the objects”.
+**`AlgebraicGeometry.Stack.SpacesOverStack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L59). The attribute's comment: “the objects”.
 
 > An object of the 2-category `Spaces/𝒴`: an algebraic stack over `S` together with a
 > 1-morphism to `𝒴` which is representable by algebraic spaces.
@@ -496,7 +496,7 @@ structure SpacesOverStack
     (𝒴 : AlgebraicStacks.{u, w} B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.SpacesOverStack.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L77). The attribute's comment: “the 1-morphisms”.
+**`AlgebraicGeometry.Stack.SpacesOverStack.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L77). The attribute's comment: “the 1-morphisms”.
 
 > A 1-morphism of `Spaces/𝒴`: a 1-morphism of the source stacks together with a 2-morphism
 > from the structure morphism of the source to its composite with that of the target.
@@ -505,7 +505,7 @@ structure SpacesOverStack
 structure Hom (F G : SpacesOverStack B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.SpacesOverStack.Hom₂`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L86). The attribute's comment: “the 2-morphisms”.
+**`AlgebraicGeometry.Stack.SpacesOverStack.Hom₂`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L86). The attribute's comment: “the 2-morphisms”.
 
 > A 2-morphism of `Spaces/𝒴`: a 2-morphism of the underlying 1-morphisms of source stacks,
 > compatible with the two comparison 2-morphisms.
@@ -514,7 +514,7 @@ structure Hom (F G : SpacesOverStack B S hS 𝒴)
 structure Hom₂ {F G : SpacesOverStack B S hS 𝒴} (f g : Hom F G)
 ```
 
-**`AlgebraicGeometry.Stack.SpacesOverStack.instCategoryStruct`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L148). The attribute's comment: “composition of 1-morphisms”.
+**`AlgebraicGeometry.Stack.SpacesOverStack.instCategoryStruct`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L148). The attribute's comment: “composition of 1-morphisms”.
 
 > The 1-morphisms of `Spaces/𝒴`, with their identities and composition.
 
@@ -522,7 +522,7 @@ structure Hom₂ {F G : SpacesOverStack B S hS 𝒴} (f g : Hom F G)
 instance instCategoryStruct : CategoryStruct.{u + 1} (SpacesOverStack B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.SpacesOverStack.instHomCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L156). The attribute's comment: “the hom-categories”.
+**`AlgebraicGeometry.Stack.SpacesOverStack.instHomCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L156). The attribute's comment: “the hom-categories”.
 
 > The category of 1-morphisms and 2-morphisms of `Spaces/𝒴` between two fixed objects: the
 > hom-category of its 2-category structure.
@@ -531,7 +531,7 @@ instance instCategoryStruct : CategoryStruct.{u + 1} (SpacesOverStack B S hS �
 instance instHomCategory (F G : SpacesOverStack B S hS 𝒴) : Category.{u + 1} (F ⟶ G)
 ```
 
-**`AlgebraicGeometry.Stack.SpacesOverStack.instBicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L229). The attribute's comment: “the 2-category structure”.
+**`AlgebraicGeometry.Stack.SpacesOverStack.instBicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean, line 229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStack.lean#L229). The attribute's comment: “the 2-category structure”.
 
 > The 2-category `Spaces/𝒴` of algebraic spaces over the algebraic stack `𝒴`, with the
 > objects `SpacesOverStack`, the 1-morphisms `Hom` and the 2-morphisms `Hom₂`.
@@ -540,7 +540,7 @@ instance instHomCategory (F G : SpacesOverStack B S hS 𝒴) : Category.{u + 1} 
 instance instBicategory : Bicategory.{u + 1, u + 1} (SpacesOverStack B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.SpacesOverStack.isSetoidCategory_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStackSetoid.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStackSetoid.lean#L136). The attribute's comment: “the hom-categories are setoids”.
+**`AlgebraicGeometry.Stack.SpacesOverStack.isSetoidCategory_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStackSetoid.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStackSetoid.lean#L136). The attribute's comment: “the hom-categories are setoids”.
 
 > **Stacks 04ZQ.** Every hom-category of `Spaces/𝒴` is a setoid in the sense of Stacks 02XZ:
 > it is a groupoid and it is thin, so a 1-morphism of `Spaces/𝒴` has no automorphism but the
@@ -552,7 +552,7 @@ theorem isSetoidCategory_hom (F G : SpacesOverStack B S hS 𝒴) :
     IsSetoidCategory (F ⟶ G)
 ```
 
-**`AlgebraicGeometry.Stack.SpacesOverStack.isoClassCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStackSetoid.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStackSetoid.lean#L155). The attribute's comment: “the category of isomorphism classes of 1-morphisms”.
+**`AlgebraicGeometry.Stack.SpacesOverStack.isoClassCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStackSetoid.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SpacesOverAlgebraicStackSetoid.lean#L155). The attribute's comment: “the category of isomorphism classes of 1-morphisms”.
 
 > **Stacks 04ZQ.** Replacing the 1-morphisms of `Spaces/𝒴` by their isomorphism classes gives a
 > category: the objects are those of `Spaces/𝒴`, a morphism `F ⟶ G` is an isomorphism class of
@@ -574,4 +574,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 100.3, Tag 04XB](https://stacks.math.columbia.edu/tag/04XB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

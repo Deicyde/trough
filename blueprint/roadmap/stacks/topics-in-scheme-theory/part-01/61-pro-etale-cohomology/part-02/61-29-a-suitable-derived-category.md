@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.29 A suitable derived category
 
-Section 61.29 of the Stacks Project, [Tag 09C0](https://stacks.math.columbia.edu/tag/09C0). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 61.29 of the Stacks Project, [Tag 09C0](https://stacks.math.columbia.edu/tag/09C0). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09C1, a definition
 
 [Tag 09C1](https://stacks.math.columbia.edu/tag/09C1) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.IsConstructibleDerivedSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean#L258). The attribute's comment: “constructible objects”.
+**`AlgebraicGeometry.ProEtale.IsConstructibleDerivedSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean, line 258](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean#L258). The attribute's comment: “constructible objects”.
 
 > **Stacks 09C1.** An object `K` of `D(X_proét, Λ)` is *constructible* with respect to the
 > ideal `I` of the Noetherian coefficient ring `Λ` when it is derived complete along the ideal
@@ -32,7 +32,7 @@ abbrev IsConstructibleDerivedSheaf
     (K : DerivedSheaves.{u, r, w} X Λ) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.constructibleDerivedSheaves`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean#L275). The attribute's comment: “the full subcategory”.
+**`AlgebraicGeometry.ProEtale.constructibleDerivedSheaves`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean#L275). The attribute's comment: “the full subcategory”.
 
 > **Stacks 09C1.** The full subcategory `D_cons(X, Λ)` of `D(X_proét, Λ)` on the
 > constructible objects.
@@ -46,7 +46,7 @@ abbrev constructibleDerivedSheaves
         ((constantCoefficientRingedSite.{u, r, w} X (Λ ⧸ I)).over U))
 ```
 
-**`AlgebraicGeometry.ProEtale.IsConstructibleViaDerivedReduction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleDerivedSheaves.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleDerivedSheaves.lean#L131). The attribute's comment: “constructible objects”.
+**`AlgebraicGeometry.ProEtale.IsConstructibleViaDerivedReduction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleDerivedSheaves.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleDerivedSheaves.lean#L131). The attribute's comment: “constructible objects”.
 
 > **Stacks 09C1.** An object `K` of `D(X_proét, Λ)` is *constructible* with respect to the
 > ideal `I` of the Noetherian coefficient ring `Λ` when it is derived complete along the ideal
@@ -57,7 +57,7 @@ abbrev constructibleDerivedSheaves
 abbrev IsConstructibleViaDerivedReduction (K : DerivedSheaves.{u, max (u + 1) w, w} X Λ) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.constructibleDerivedSheavesViaDerivedReduction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleDerivedSheaves.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleDerivedSheaves.lean#L142). The attribute's comment: “the full subcategory”.
+**`AlgebraicGeometry.ProEtale.constructibleDerivedSheavesViaDerivedReduction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleDerivedSheaves.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleDerivedSheaves.lean#L142). The attribute's comment: “the full subcategory”.
 
 > **Stacks 09C1.** The full subcategory `D_cons(X, Λ)` of `D(X_proét, Λ)` on the
 > constructible objects.
@@ -70,7 +70,7 @@ abbrev constructibleDerivedSheavesViaDerivedReduction
 
 [Tag 09C2](https://stacks.math.columbia.edu/tag/09C2) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.hasConstructibleCohomology_derivedReduction_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean#L106). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.ProEtale.hasConstructibleCohomology_derivedReduction_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean#L106). The attribute's comment: “part (3)”.
 
 > **The reductions of a constructible complex have constructible cohomology sheaves.** If `X`
 > is quasi-compact and `K` lies in `D_cons(X, Λ)`, every reduction
@@ -85,7 +85,7 @@ theorem hasConstructibleCohomology_derivedReduction_pow [CompactSpace X]
       ((derivedReduction.{u, w} X Λ (I ^ n)).obj K)
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_isDerivedLimit_derivedReductionTower_and_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean#L217). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.ProEtale.exists_isDerivedLimit_derivedReductionTower_and_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean#L217). The attribute's comment: “parts (1) and (2)”.
 
 > Let `X` be quasi-compact and `K` an object of `D_cons(X, Λ)`, and set
 > `Kₙ = K ⊗_Λ^L \underline{Λ/Iⁿ}`. There are integers `a` and `b` such that
@@ -115,7 +115,7 @@ theorem exists_isDerivedLimit_derivedReductionTower_and_hasTorAmplitude [Compact
         ((derivedReduction.{u, w} X Λ (I ^ n)).obj K) (Set.Icc a b)
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_etaleInverseImage_iso_derivedReduction_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean#L294). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.ProEtale.exists_etaleInverseImage_iso_derivedReduction_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean, line 294](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductions.lean#L294). The attribute's comment: “part (4)”.
 
 > **The reductions of a constructible complex come from the étale site.** If `X` is
 > quasi-compact and `K` lies in `D_cons(X, Λ)`, every reduction
@@ -141,7 +141,7 @@ theorem exists_etaleInverseImage_iso_derivedReduction_pow [CompactSpace X]
 
 [Tag 09C3](https://stacks.math.columbia.edu/tag/09C3) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.hasFiniteDisjointCompletedConstantModel_of_isLocallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/LocallyConstantCompletedModel.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/LocallyConstantCompletedModel.lean#L85).
+**`AlgebraicGeometry.ProEtale.hasFiniteDisjointCompletedConstantModel_of_isLocallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/LocallyConstantCompletedModel.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/LocallyConstantCompletedModel.lean#L85).
 
 > **Stacks 09C3.** Let `X` be a weakly contractible affine scheme, `Λ` a Noetherian ring,
 > `I ⊆ Λ` an ideal and `K` an object of `D_cons(X, Λ)` such that the cohomology sheaves of
@@ -169,7 +169,7 @@ theorem hasFiniteDisjointCompletedConstantModel_of_isLocallyConstant [IsAffine X
 
 [Tag 09C4](https://stacks.math.columbia.edu/tag/09C4) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.IsAdicConstructibleViaDerivedInverseImage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicConstructibleComplexes.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicConstructibleComplexes.lean#L82). The attribute's comment: “part (2): adic constructible”.
+**`AlgebraicGeometry.ProEtale.IsAdicConstructibleViaDerivedInverseImage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicConstructibleComplexes.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/AdicConstructibleComplexes.lean#L82). The attribute's comment: “part (2): adic constructible”.
 
 > **Stacks 09C4, part (2).** An object `K` of `D(X_proét, Λ)` is *adic constructible* if every
 > affine open `U` of `X` admits a decomposition `U = ∐ U_i` into constructible locally closed
@@ -179,7 +179,7 @@ theorem hasFiniteDisjointCompletedConstantModel_of_isLocallyConstant [IsAffine X
 abbrev IsAdicConstructibleViaDerivedInverseImage (K : DerivedSheaves.{u, r, w} X Λ) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsAdicLisseDerivedSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean#L462). The attribute's comment: “part (1): adic lisse”.
+**`AlgebraicGeometry.ProEtale.IsAdicLisseDerivedSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean, line 462](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean#L462). The attribute's comment: “part (1): adic lisse”.
 
 > **Stacks 09C4, part (1).** An object `K` of `D(X_proét, Λ)` is *adic lisse* if there is a
 > finite complex `M^•` of finite projective `Λ^∧`-modules such that `K` is pro-étale locally
@@ -190,7 +190,7 @@ abbrev IsAdicConstructibleViaDerivedInverseImage (K : DerivedSheaves.{u, r, w} X
 abbrev IsAdicLisseDerivedSheaf (K : DerivedSheaves.{u, r, w} X Λ) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsAdicConstructibleDerivedSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean#L544). The attribute's comment: “part (2): adic constructible”.
+**`AlgebraicGeometry.ProEtale.IsAdicConstructibleDerivedSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean, line 544](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleComplexes.lean#L544). The attribute's comment: “part (2): adic constructible”.
 
 > **Stacks 09C4, part (2).** An object `K` of `D(X_proét, Λ)` is *adic constructible* if every
 > affine open of `X` admits a decomposition into constructible locally closed subschemes on which
@@ -204,7 +204,7 @@ abbrev IsAdicConstructibleDerivedSheaf (K : DerivedSheaves.{u, r, w} X Λ) : Pro
 
 [Tag 09C5](https://stacks.math.columbia.edu/tag/09C5) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isMittagLefflerCategorical_derivedReductionSectionsSystem_of_isConstructibleViaDerivedReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicModelReductionSections.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicModelReductionSections.lean#L272). The attribute's comment: “the Mittag-Leffler condition for the inverse system n ↦ H^0(X, K ⊗\_Λ^L Λ/I^n) of sections modules, with its canonical transition maps; the hypothesis that each reduction is a complex of constant sheaves is read, as in the source's proof, as K ⊗\_Λ^L Λ/I^n ≅ \underline\{E\_n} for an object E\_n of D(Λ/I^n)”.
+**`AlgebraicGeometry.ProEtale.isMittagLefflerCategorical_derivedReductionSectionsSystem_of_isConstructibleViaDerivedReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicModelReductionSections.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/AdicModelReductionSections.lean#L272). The attribute's comment: “the Mittag-Leffler condition for the inverse system n ↦ H^0(X, K ⊗\_Λ^L Λ/I^n) of sections modules, with its canonical transition maps; the hypothesis that each reduction is a complex of constant sheaves is read, as in the source's proof, as K ⊗\_Λ^L Λ/I^n ≅ \underline\{E\_n} for an object E\_n of D(Λ/I^n)”.
 
 > **Stacks 09C5.** Let `X` be a weakly contractible affine scheme, `Λ` a Noetherian ring,
 > `I ⊆ Λ` an ideal and `K` an object of `D_cons(X, Λ)` such that every reduction
@@ -242,7 +242,7 @@ theorem
       ((derivedModuleEquiv.{u, max (u + 1) w, w} X Λ).inverse.obj K))
 ```
 
-**`AlgebraicGeometry.ProEtale.isMittagLefflerCategorical_derivedReductionSectionsSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductionSections.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductionSections.lean#L349). The attribute's comment: “the Mittag-Leffler condition for the inverse system n ↦ H^0(X, K ⊗\_Λ^L Λ/I^n) with its canonical transition maps induced by Λ/I^(n+1) → Λ/I^n; a complex of constant sheaves is read, as in the first sentence of the source's proof, as the constant complex of a complex of Λ/I^n-modules”.
+**`AlgebraicGeometry.ProEtale.isMittagLefflerCategorical_derivedReductionSectionsSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductionSections.lean, line 349](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleReductionSections.lean#L349). The attribute's comment: “the Mittag-Leffler condition for the inverse system n ↦ H^0(X, K ⊗\_Λ^L Λ/I^n) with its canonical transition maps induced by Λ/I^(n+1) → Λ/I^n; a complex of constant sheaves is read, as in the first sentence of the source's proof, as the constant complex of a complex of Λ/I^n-modules”.
 
 > **Stacks 09C5.** Let `X` be a weakly contractible affine scheme, `Λ` a Noetherian ring,
 > `I ⊆ Λ` an ideal and `K` an object of `D_cons(X, Λ)` such that for every `n ≥ 1` the reduction
@@ -289,7 +289,7 @@ theorem isMittagLefflerCategorical_derivedReductionSectionsSystem [IsAffine X]
 
 [Tag 09C6](https://stacks.math.columbia.edu/tag/09C6) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isAdicLisseDerivedSheaf_of_isLocallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicLisseOfLocallyConstant.lean, line 720](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicLisseOfLocallyConstant.lean#L720). The attribute's comment: “a constructible complex over a connected scheme whose reduction modulo I has locally constant cohomology sheaves is adic lisse”.
+**`AlgebraicGeometry.ProEtale.isAdicLisseDerivedSheaf_of_isLocallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicLisseOfLocallyConstant.lean, line 720](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/AdicLisseOfLocallyConstant.lean#L720). The attribute's comment: “a constructible complex over a connected scheme whose reduction modulo I has locally constant cohomology sheaves is adic lisse”.
 
 > Let `X` be a connected scheme, `Λ` a Noetherian ring and `I ⊆ Λ` an ideal. If `K` is in
 > `D_cons(X, Λ)` and `K ⊗_Λ^L \underline{Λ/I}` has locally constant cohomology sheaves, then `K` is
@@ -308,7 +308,7 @@ theorem isAdicLisseDerivedSheaf_of_isLocallyConstant [ConnectedSpace X] [IsNoeth
 
 [Tag 09C7](https://stacks.math.columbia.edu/tag/09C7) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isAdicConstructibleDerivedSheaf_of_isConstructibleDerivedSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicConstructibleOfConstructible.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicConstructibleOfConstructible.lean#L46).
+**`AlgebraicGeometry.ProEtale.isAdicConstructibleDerivedSheaf_of_isConstructibleDerivedSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicConstructibleOfConstructible.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/AdicConstructibleOfConstructible.lean#L46).
 
 > **Stacks 09C7.** Let `X` be a Noetherian scheme, `Λ` a Noetherian ring and `I ⊆ Λ` an
 > ideal. Every object `K` of `D_cons(X, Λ)` is adic constructible.
@@ -328,4 +328,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.29, Tag 09C0](https://stacks.math.columbia.edu/tag/09C0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

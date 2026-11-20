@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.31 Proper morphisms
 
-Section 87.31 of the Stacks Project, [Tag 0AM5](https://stacks.math.columbia.edu/tag/0AM5). 3 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.31 of the Stacks Project, [Tag 0AM5](https://stacks.math.columbia.edu/tag/0AM5). 3 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AM6, a definition
 
 [Tag 0AM6](https://stacks.math.columbia.edu/tag/0AM6) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsProper`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L111).
+**`AlgebraicGeometry.FormalSpace.IsProper`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L111).
 
 > **Stacks 0AM6.** A morphism of formal algebraic spaces over `S` is *proper* when it is
 > representable by algebraic spaces and every base change of it along a scheme-valued point of
@@ -26,7 +26,7 @@ Section 87.31 of the Stacks Project, [Tag 0AM5](https://stacks.math.columbia.edu
 abbrev IsProper {X Y : FppfSheaf B S hS} (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.FormalSpace.isProper_of_forall_surjective_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperEtaleLocal.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperEtaleLocal.lean#L85). The attribute's comment: “local on the target”.
+**`AlgebraicGeometry.FormalSpace.isProper_of_forall_surjective_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperEtaleLocal.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperEtaleLocal.lean#L85). The attribute's comment: “local on the target”.
 
 > **Properness of morphisms of formal algebraic spaces is local on the target.** A morphism
 > `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S` is proper in the sense of
@@ -51,7 +51,7 @@ theorem isProper_of_forall_surjective_etale_cover {X Y : FppfSheaf B S hS} (f : 
     IsProper B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isProper_of_isRepresentable_of_forall_fppfFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperEtaleLocal.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperEtaleLocal.lean#L152). The attribute's comment: “local on the target for a covering family, given representability”.
+**`AlgebraicGeometry.FormalSpace.isProper_of_isRepresentable_of_forall_fppfFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperEtaleLocal.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperEtaleLocal.lean#L152). The attribute's comment: “local on the target for a covering family, given representability”.
 
 > **Properness of a morphism representable by algebraic spaces is local on the target for a
 > covering family of the site.** Let `f : X ⟶ Y` be a morphism of fppf sheaves on the big fppf
@@ -84,7 +84,7 @@ theorem isProper_of_isRepresentable_of_forall_fppfFamily {X Y : FppfSheaf B S hS
 
 [Tag 0ART](https://stacks.math.columbia.edu/tag/0ART) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsProper.isProperOnSchemeBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L254). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.FormalSpace.IsProper.isProperOnSchemeBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L254). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 0ART, (1) implies (2).** A base change of a proper morphism of formal algebraic
 > spaces over `S` along a scheme over `S` in the site is proper. This is the base change
@@ -95,7 +95,7 @@ theorem IsProper.isProperOnSchemeBaseChanges {X Y : FppfSheaf B S hS} {f : X ⟶
     (hf : IsProper B S hS f) : IsProperOnSchemeBaseChanges B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isProper_of_isProperOnSchemeBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L263). The attribute's comment: “(2) implies (1)”.
+**`AlgebraicGeometry.FormalSpace.isProper_of_isProperOnSchemeBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 263](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L263). The attribute's comment: “(2) implies (1)”.
 
 > **Stacks 0ART, (2) implies (1).** A morphism of formal algebraic spaces over `S` all of
 > whose base changes along schemes over `S` in the site are proper is proper: the base change
@@ -107,7 +107,7 @@ theorem isProper_of_isProperOnSchemeBaseChanges {X Y : FppfSheaf B S hS} {f : X 
     (h : IsProperOnSchemeBaseChanges B S hS f) : IsProper B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isProper_iff_isProperOnSchemeBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L276). The attribute's comment: “(1) is equivalent to (2)”.
+**`AlgebraicGeometry.FormalSpace.isProper_iff_isProperOnSchemeBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 276](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L276). The attribute's comment: “(1) is equivalent to (2)”.
 
 > **Stacks 0ART, (1) is equivalent to (2).** A morphism of formal algebraic spaces over `S`
 > is proper exactly when each of its base changes along a scheme over `S` in the site is
@@ -118,7 +118,7 @@ theorem isProper_iff_isProperOnSchemeBaseChanges {X Y : FppfSheaf B S hS} (f : X
     IsProper B S hS f ↔ IsProperOnSchemeBaseChanges B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsProperOnSchemeBaseChanges.isProperOnAffineBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L284). The attribute's comment: “(2) implies (3)”.
+**`AlgebraicGeometry.FormalSpace.IsProperOnSchemeBaseChanges.isProperOnAffineBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 284](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L284). The attribute's comment: “(2) implies (3)”.
 
 > **Stacks 0ART, (2) implies (3).** The base change condition over all schemes over `S` in
 > the site restricts to the affine ones.
@@ -129,7 +129,7 @@ theorem IsProperOnSchemeBaseChanges.isProperOnAffineBaseChanges {X Y : FppfSheaf
     IsProperOnAffineBaseChanges B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsProperOnAffineBaseChanges.isAlgebraicAndProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L295). The attribute's comment: “(3) implies (4)”.
+**`AlgebraicGeometry.FormalSpace.IsProperOnAffineBaseChanges.isAlgebraicAndProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L295). The attribute's comment: “(3) implies (4)”.
 
 > **Stacks 0ART, (3) implies (4).** If every base change of a morphism of formal algebraic
 > spaces over `S` along an affine scheme `Z` over `S` in the site is proper, then every such
@@ -143,7 +143,7 @@ theorem IsProperOnAffineBaseChanges.isAlgebraicAndProper {X Y : FppfSheaf B S hS
     IsAlgebraicAndProperOnAffineBaseChanges B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsProper.hasProperFormalAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L307). The attribute's comment: “(1) implies (5)”.
+**`AlgebraicGeometry.FormalSpace.IsProper.hasProperFormalAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L307). The attribute's comment: “(1) implies (5)”.
 
 > **Stacks 0ART, (1) implies (5).** A proper morphism of formal algebraic spaces over `S`
 > has a covering of its target as in Definition 0AIM all of whose base changes of the morphism
@@ -156,7 +156,7 @@ theorem IsProper.hasProperFormalAtlas {X Y : FppfSheaf B S hS} {f : X ⟶ Y}
     HasProperFormalAtlas B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsAlgebraicAndProperOnAffineBaseChanges.isProperOnAffineBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineCriterion.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineCriterion.lean#L251). The attribute's comment: “(4) implies (3)”.
+**`AlgebraicGeometry.FormalSpace.IsAlgebraicAndProperOnAffineBaseChanges.isProperOnAffineBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineCriterion.lean, line 251](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineCriterion.lean#L251). The attribute's comment: “(4) implies (3)”.
 
 > **Stacks 0ART, (4) implies (3).** If every base change of a morphism of formal algebraic
 > spaces over `S` along an affine scheme `Z` over `S` in the site is an algebraic space over `S`
@@ -172,7 +172,7 @@ theorem IsAlgebraicAndProperOnAffineBaseChanges.isProperOnAffineBaseChanges
     IsProperOnAffineBaseChanges B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isProperOnAffineBaseChanges_iff_isAlgebraicAndProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineCriterion.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineCriterion.lean#L262). The attribute's comment: “(3) is equivalent to (4)”.
+**`AlgebraicGeometry.FormalSpace.isProperOnAffineBaseChanges_iff_isAlgebraicAndProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineCriterion.lean, line 262](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineCriterion.lean#L262). The attribute's comment: “(3) is equivalent to (4)”.
 
 > **Stacks 0ART, (3) is equivalent to (4).** Over an affine scheme of the site, properness
 > of the base change as a morphism of formal algebraic spaces and the conjunction of being an
@@ -186,7 +186,7 @@ theorem isProperOnAffineBaseChanges_iff_isAlgebraicAndProper {X Y : FppfSheaf B 
       IsAlgebraicAndProperOnAffineBaseChanges B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsProperOnAffineBaseChanges.isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineLocal.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineLocal.lean#L225). The attribute's comment: “(3) implies (1)”.
+**`AlgebraicGeometry.FormalSpace.IsProperOnAffineBaseChanges.isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineLocal.lean, line 225](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineLocal.lean#L225). The attribute's comment: “(3) implies (1)”.
 
 > **Stacks 0ART, (3) implies (1).** A morphism of formal algebraic spaces over `S` all of
 > whose base changes along affine schemes over `S` in the site are proper is proper.
@@ -202,7 +202,7 @@ theorem IsProperOnAffineBaseChanges.isProper {X Y : FppfSheaf B S hS} {f : X ⟶
     (h : IsProperOnAffineBaseChanges B S hS f) : IsProper B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isProper_iff_isProperOnAffineBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineLocal.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineLocal.lean#L242). The attribute's comment: “(1) is equivalent to (3)”.
+**`AlgebraicGeometry.FormalSpace.isProper_iff_isProperOnAffineBaseChanges`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineLocal.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperAffineLocal.lean#L242). The attribute's comment: “(1) is equivalent to (3)”.
 
 > **Stacks 0ART, (1) is equivalent to (3).** A morphism of formal algebraic spaces over `S`
 > is proper exactly when each of its base changes along an affine scheme over `S` in the site is
@@ -213,7 +213,7 @@ theorem isProper_iff_isProperOnAffineBaseChanges {X Y : FppfSheaf B S hS} (f : X
     IsProper B S hS f ↔ IsProperOnAffineBaseChanges B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasProperFormalAtlas.isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperFormalAtlas.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperFormalAtlas.lean#L371). The attribute's comment: “(5) implies (1)”.
+**`AlgebraicGeometry.FormalSpace.HasProperFormalAtlas.isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperFormalAtlas.lean, line 371](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperFormalAtlas.lean#L371). The attribute's comment: “(5) implies (1)”.
 
 > **Stacks 0ART, (5) implies (1).** A morphism of formal algebraic spaces over `S` admitting
 > *one* covering of its target as in Definition 0AIM all of whose base changes of the morphism are
@@ -230,7 +230,7 @@ theorem HasProperFormalAtlas.isProper {X Y : FppfSheaf B S hS} {f : X ⟶ Y}
     (h : HasProperFormalAtlas B S hS f) : IsProper B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isProper_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperTfae.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperTfae.lean#L76). The attribute's comment: “(1), (2), (3) and (4) are equivalent”.
+**`AlgebraicGeometry.FormalSpace.isProper_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperTfae.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperTfae.lean#L76). The attribute's comment: “(1), (2), (3) and (4) are equivalent”.
 
 > **Stacks 0ART, conditions (1), (2), (3) and (4) are equivalent.** For a morphism of fppf
 > sheaves on the big fppf site of `S`: being proper, having every base change along a scheme of
@@ -252,7 +252,7 @@ theorem isProper_tfae {X Y : FppfSheaf B S hS} (f : X ⟶ Y) :
         IsAlgebraicAndProperOnAffineBaseChanges B S hS f]
 ```
 
-**`AlgebraicGeometry.FormalSpace.isProper_tfae_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperTfae.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperTfae.lean#L100). The attribute's comment: “all five conditions are equivalent”.
+**`AlgebraicGeometry.FormalSpace.isProper_tfae_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperTfae.lean, line 100](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperTfae.lean#L100). The attribute's comment: “all five conditions are equivalent”.
 
 > **Stacks 0ART.** For a morphism `f : X ⟶ Y` of fppf sheaves on the big fppf site of `S`
 > whose target is a formal algebraic space over `S`, the five conditions of the source are
@@ -281,7 +281,7 @@ theorem isProper_tfae_of_isFormalAlgebraicSpace {X Y : FppfSheaf B S hS}
 
 [Tag 0GBT](https://stacks.math.columbia.edu/tag/0GBT) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsProper.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L146).
+**`AlgebraicGeometry.FormalSpace.IsProper.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Proper.lean#L146).
 
 > **Stacks 0GBT.** A base change of a proper morphism of formal algebraic spaces over `S` is
 > proper: representability by algebraic spaces is stable under base change, and so is the Bootstrap
@@ -301,4 +301,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.31, Tag 0AM5](https://stacks.math.columbia.edu/tag/0AM5)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

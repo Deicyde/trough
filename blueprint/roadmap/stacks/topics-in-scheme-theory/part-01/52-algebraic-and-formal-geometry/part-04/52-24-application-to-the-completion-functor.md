@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.24 Application to the completion functor
 
-Section 52.24 of the Stacks Project, [Tag 0EKX](https://stacks.math.columbia.edu/tag/0EKX). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.24 of the Stacks Project, [Tag 0EKX](https://stacks.math.columbia.edu/tag/0EKX). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EKY, a lemma
 
 [Tag 0EKY](https://stacks.math.columbia.edu/tag/0EKY) in the Stacks Project.
 
-**`Stacks.Algebraization.completionEquivalence_local_principal_finiteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LocalPrincipalEquivalence.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LocalPrincipalEquivalence.lean#L489).
+**`Stacks.Algebraization.completionEquivalence_local_principal_finiteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LocalPrincipalEquivalence.lean, line 489](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LocalPrincipalEquivalence.lean#L489).
 
 > **[Stacks, Tag 0EKY].** In Situation 0EHC assume
 >
@@ -101,7 +101,7 @@ theorem completionEquivalence_local_principal_finiteLocallyFree
 
 [Tag 0EKZ](https://stacks.math.columbia.edu/tag/0EKZ) in the Stacks Project.
 
-**`Stacks.Algebraization.completionEquivalence_principal_finiteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalEquivalence.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalEquivalence.lean#L495).
+**`Stacks.Algebraization.completionEquivalence_principal_finiteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalEquivalence.lean, line 495](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalEquivalence.lean#L495).
 
 > **[Stacks, Tag 0EKZ].** Let `S` be the standing situation of [Stacks, Tag 0EHC] and write
 > `U₀ = U ∩ V(f)`. Assume
@@ -175,7 +175,7 @@ theorem completionEquivalence_principal_finiteLocallyFree {f : S.A}
         HasFiniteFreeStalks S F → IsCompletionNearClosedFiniteLocallyFree S F)
 ```
 
-**`Stacks.Algebraization.isCompletionNearClosed_of_principal_shortExactSequences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalNonzerodivisor.lean, line 608](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalNonzerodivisor.lean#L608). The attribute's comment: “the essential-surjectivity half: over an f-adically complete A, a coherent I-adic system on U which has the short exact sequences 0 → Fₙ → F₍ₙ₊₁₎ → F₁ → 0 of the proof of Stacks 0DXW and whose H⁰(U, F₁) and H¹(U, F₁) are finite is the completion of a coherent module on an open neighbourhood of U ∩ V(f) in U, i.e. lies in the image of the colimit functor of this tag. Those two properties of the system are what the proof of Stacks 0DXW draws from its conditions (2) and (3), and they are what is asked for here in their place. This declaration does not cover full faithfulness, which is Stacks 0EKV; and finite local freeness of the module produced, and so its invertibility, is not among its conclusions, which give coherence alone — all that the final clause of Stacks 0DXW gives as well”.
+**`Stacks.Algebraization.isCompletionNearClosed_of_principal_shortExactSequences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalNonzerodivisor.lean, line 608](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalNonzerodivisor.lean#L608). The attribute's comment: “the essential-surjectivity half: over an f-adically complete A, a coherent I-adic system on U which has the short exact sequences 0 → Fₙ → F₍ₙ₊₁₎ → F₁ → 0 of the proof of Stacks 0DXW and whose H⁰(U, F₁) and H¹(U, F₁) are finite is the completion of a coherent module on an open neighbourhood of U ∩ V(f) in U, i.e. lies in the image of the colimit functor of this tag. Those two properties of the system are what the proof of Stacks 0DXW draws from its conditions (2) and (3), and they are what is asked for here in their place. This declaration does not cover full faithfulness, which is Stacks 0EKV; and finite local freeness of the module produced, and so its invertibility, is not among its conclusions, which give coherence alone — all that the final clause of Stacks 0DXW gives as well”.
 
 > **Stacks Project, Tag 0EKZ, the essential-surjectivity half.** Let `S` be an algebraization
 > situation whose ideal `I` is generated by `f ∈ A`, let `A` be `f`-adically complete, and let
@@ -216,4 +216,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.24, Tag 0EKX](https://stacks.math.columbia.edu/tag/0EKX)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

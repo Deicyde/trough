@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.31 Locally projective modules
 
-Section 66.31 of the Stacks Project, [Tag 060P](https://stacks.math.columbia.edu/tag/060P). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 66.31 of the Stacks Project, [Tag 060P](https://stacks.math.columbia.edu/tag/060P). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 060Q, a lemma
 
 [Tag 060Q](https://stacks.math.columbia.edu/tag/060Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_surjective_isLocallyProjective_iff_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectiveEtaleChart.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectiveEtaleChart.lean#L253).
+**`AlgebraicGeometry.Space.exists_surjective_isLocallyProjective_iff_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectiveEtaleChart.lean, line 253](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectiveEtaleChart.lean#L253).
 
 > **Stacks Project, Tag 060Q.** The restriction of an `𝒪_F`-module to the Zariski site of an
 > étale chart scheme is locally projective for *some* chart whose structure morphism is surjective
@@ -39,7 +39,7 @@ theorem exists_surjective_isLocallyProjective_iff_forall
 
 [Tag 060R](https://stacks.math.columbia.edu/tag/060R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsLocallyProjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjective.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjective.lean#L49).
+**`AlgebraicGeometry.Space.IsLocallyProjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjective.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjective.lean#L49).
 
 > **Stacks 060R.** A quasi-coherent module on an algebraic space is locally projective if its
 > restriction to every étale scheme chart is locally projective.
@@ -55,7 +55,7 @@ noncomputable abbrev IsLocallyProjective (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 060S](https://stacks.math.columbia.edu/tag/060S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyProjective_restrictToChartScheme_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectiveEtaleChart.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectiveEtaleChart.lean#L279).
+**`AlgebraicGeometry.Space.isLocallyProjective_restrictToChartScheme_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectiveEtaleChart.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectiveEtaleChart.lean#L279).
 
 > **Stacks Project, Tag 060S.** The pullback of a locally projective `𝒪_Y`-module along a
 > morphism `f : X ⟶ Y` of algebraic spaces is locally projective.
@@ -88,7 +88,7 @@ theorem isLocallyProjective_restrictToChartScheme_modulePullback
       (restrictToChartScheme B S hS X.1 X.2 ((modulePullback B S hS f).obj G) U)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyProjective_restrictToChartScheme_modulePullback_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectivePullbackSpaces.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectivePullbackSpaces.lean#L133).
+**`AlgebraicGeometry.Space.isLocallyProjective_restrictToChartScheme_modulePullback_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectivePullbackSpaces.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/LocallyProjectivePullbackSpaces.lean#L133).
 
 > **Stacks Project, Tag 060S.**  The inverse image of Stacks 03LU of a quasi-coherent
 > `𝒪_Y`-module whose chart restrictions are locally projective has locally projective chart
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.31, Tag 060P](https://stacks.math.columbia.edu/tag/060P)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

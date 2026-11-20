@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.32 Catenary algebraic spaces
 
-Section 76.32 of the Stacks Project, [Tag 0EDL](https://stacks.math.columbia.edu/tag/0EDL). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.32 of the Stacks Project, [Tag 0EDL](https://stacks.math.columbia.edu/tag/0EDL). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EDM, a lemma
 
 [Tag 0EDM](https://stacks.math.columbia.edu/tag/0EDM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_glueingSpace_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GlueingSpaceAway.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GlueingSpaceAway.lean#L544).
+**`AlgebraicGeometry.Space.exists_glueingSpace_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GlueingSpaceAway.lean, line 544](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GlueingSpaceAway.lean#L544).
 
 > **Stacks 0EDM.**  Let `f : X ⟶ Y` be an integral morphism of algebraic spaces over `S`, and
 > let `y : Spec k ⟶ Y` be a closed immersion.  Then `f` factors as `X ⟶ X' ⟶ Y` with
@@ -67,7 +67,7 @@ theorem exists_glueingSpace_factorization {X Y : AlgebraicSpaces B S hS} (f : X 
 
 [Tag 0EDN](https://stacks.math.columbia.edu/tag/0EDN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_dimensionFunction_inducedDimensionValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InducedDimensionFunction.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InducedDimensionFunction.lean#L72).
+**`AlgebraicGeometry.Space.exists_dimensionFunction_inducedDimensionValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InducedDimensionFunction.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InducedDimensionFunction.lean#L72).
 
 > **Stacks 0EDN.** Let `Y` be a decent, locally Noetherian, universally catenary algebraic
 > space and `δ` a dimension function on `|Y|`. If `X` is a decent algebraic space and `f : X ⟶ Y`
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.32, Tag 0EDL](https://stacks.math.columbia.edu/tag/0EDL)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

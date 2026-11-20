@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.10 Fibre products of cosimplicial objects
 
-Section 14.10 of the Stacks Project, [Tag 0171](https://stacks.math.columbia.edu/tag/0171). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 14.10 of the Stacks Project, [Tag 0171](https://stacks.math.columbia.edu/tag/0171). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0172, a definition
 
 [Tag 0172](https://stacks.math.columbia.edu/tag/0172) in the Stacks Project.
 
-**`CategoryTheory.Limits.pointwisePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L320). The attribute's comment: “stated for an arbitrary index category `D`: the fibre product of cosimplicial objects is the case `D = SimplexCategory`, and that of simplicial objects, Tag 016T, the case `D = SimplexCategoryᵒᵖ`”.
+**`CategoryTheory.Limits.pointwisePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 320](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L320). The attribute's comment: “stated for an arbitrary index category `D`: the fibre product of cosimplicial objects is the case `D = SimplexCategory`, and that of simplicial objects, Tag 016T, the case `D = SimplexCategoryᵒᵖ`”.
 
 > **Stacks 0172.** The fibre product of cosimplicial objects, as a pointwise pullback in a
 > functor category. Given a cospan `f : F ⟶ H`, `g : G ⟶ H` of morphisms of functors `D ⥤ C` all
@@ -34,7 +34,7 @@ noncomputable def pointwisePullback (f : F ⟶ H) (g : G ⟶ H)
 
 [Tag 0173](https://stacks.math.columbia.edu/tag/0173) in the Stacks Project.
 
-**`CategoryTheory.CosimplicialObject.isBijective_canonicalMap_pointwisePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/CosimplicialFibreProduct.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/CosimplicialFibreProduct.lean#L52). The attribute's comment: “the fibre product of sets `Mor(T, V) ×_{Mor(T, U)} Mor(T, W)` is `Types.PullbackObj`, the set of pairs `(f, g)` with `f ≫ a = g ≫ b`, and the identification is composition with the degreewise projections of `V ×_U W`”.
+**`CategoryTheory.CosimplicialObject.isBijective_canonicalMap_pointwisePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/CosimplicialFibreProduct.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/CosimplicialFibreProduct.lean#L52). The attribute's comment: “the fibre product of sets `Mor(T, V) ×_{Mor(T, U)} Mor(T, W)` is `Types.PullbackObj`, the set of pairs `(f, g)` with `f ≫ a = g ≫ b`, and the identification is composition with the degreewise projections of `V ×_U W`”.
 
 > **Stacks 0173**.
 > Let `C` be a category, `U V W` cosimplicial objects of `C`, and `a : V ⟶ U`, `b : W ⟶ U`
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.10, Tag 0171](https://stacks.math.columbia.edu/tag/0171)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

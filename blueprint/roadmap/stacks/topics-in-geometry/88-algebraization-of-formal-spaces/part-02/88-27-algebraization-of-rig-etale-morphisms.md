@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.27 Algebraization of rig-étale morphisms
 
-Section 88.27 of the Stacks Project, [Tag 0AR1](https://stacks.math.columbia.edu/tag/0AR1). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 88.27 of the Stacks Project, [Tag 0AR1](https://stacks.math.columbia.edu/tag/0AR1). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AR5, an equation
 
 [Tag 0AR5](https://stacks.math.columbia.edu/tag/0AR5) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.completionModificationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationFunctor.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationFunctor.lean#L102). The attribute's comment: “the completion functor under the source's hypotheses, X a locally Noetherian algebraic space and T closed; the three conditions placing f\_\{/T} in the right-hand category are proved by 0AIZ, 0AQ1 (2) and 0AR2”.
+**`AlgebraicGeometry.FormalSpace.completionModificationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationFunctor.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationFunctor.lean#L102). The attribute's comment: “the completion functor under the source's hypotheses, X a locally Noetherian algebraic space and T closed; the three conditions placing f\_\{/T} in the right-hand category are proved by 0AIZ, 0AQ1 (2) and 0AR2”.
 
 > **Stacks 0AR5.** Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be
 > closed and let `U ⊂ X` be the open subspace with `|U| = |X| ∖ T`. Completion along `T` is a
@@ -45,7 +45,7 @@ def completionModificationFunctor {X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 0GDQ](https://stacks.math.columbia.edu/tag/0GDQ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.completionModificationFunctorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigEtaleBaseChange.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigEtaleBaseChange.lean#L115). The attribute's comment: “the commutativity of the square as a natural isomorphism of the two composite functors, base change being defined by a universal property; the horizontal arrows are the functors of Stacks 0AR5 with the source's hypotheses, the left vertical arrow is base change along g on the finite-type modifications of Stacks 0AS2 and the right vertical arrow is base change along the completion of g”.
+**`AlgebraicGeometry.FormalSpace.completionModificationFunctorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigEtaleBaseChange.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigEtaleBaseChange.lean#L115). The attribute's comment: “the commutativity of the square as a natural isomorphism of the two composite functors, base change being defined by a universal property; the horizontal arrows are the functors of Stacks 0AR5 with the source's hypotheses, the left vertical arrow is base change along g on the finite-type modifications of Stacks 0AS2 and the right vertical arrow is base change along the completion of g”.
 
 > **Stacks 0GDQ.** Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be
 > closed with open complement `U`, and let `g : X₁ ⟶ X` be a morphism of algebraic spaces with `X₁`
@@ -79,7 +79,7 @@ def completionModificationFunctorBaseChangeIso {X₁ X : (BigFppfOver B S hS)ᵒ
 
 [Tag 0GDR](https://stacks.math.columbia.edu/tag/0GDR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.completionOverFunctor_map_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionLift.lean, line 824](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionLift.lean#L824).
+**`AlgebraicGeometry.Space.completionOverFunctor_map_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionLift.lean, line 824](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionLift.lean#L824).
 
 > **Stacks 0GDR.** Let `X` be a locally Noetherian algebraic space over `S`, `T ⊆ |X|`
 > closed and `U ⊂ X` the open subspace with `|U| = |X| ∖ T`. Let `f : X' ⟶ X` be a morphism of
@@ -110,7 +110,7 @@ theorem completionOverFunctor_map_bijective {X X' Y : (BigFppfOver B S hS)ᵒᵖ
       (fun a : Over.mk g ⟶ Over.mk f => (completionOverFunctor B S hS T).map a)
 ```
 
-**`AlgebraicGeometry.FormalSpace.finiteTypeModificationCompletionFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionLift.lean, line 863](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionLift.lean#L863). The attribute's comment: “in particular: the functor of Stacks 0AR5 is fully faithful”.
+**`AlgebraicGeometry.FormalSpace.finiteTypeModificationCompletionFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionLift.lean, line 863](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionLift.lean#L863). The attribute's comment: “in particular: the functor of Stacks 0AR5 is fully faithful”.
 
 > **Stacks 0GDR, the consequence: the functor of Stacks 0AR5 is fully faithful.** For a
 > locally Noetherian algebraic space `X` and a closed `T ⊆ |X|`, completion along `T` is fully
@@ -137,7 +137,7 @@ noncomputable def finiteTypeModificationCompletionFullyFaithful
 
 [Tag 0ARA](https://stacks.math.columbia.edu/tag/0ARA) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isEquivalence_completionModificationFunctor_affineOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionEssentialSurjectivity.lean, line 931](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionEssentialSurjectivity.lean#L931).
+**`AlgebraicGeometry.FormalSpace.isEquivalence_completionModificationFunctor_affineOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionEssentialSurjectivity.lean, line 931](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionEssentialSurjectivity.lean#L931).
 
 > **Stacks 0ARA.** Let `S` be a scheme, let `X` be a locally Noetherian algebraic space over
 > `S` which is affine, so `X = Spec R` with `R` Noetherian, let `T ⊆ |X|` be closed and let
@@ -167,7 +167,7 @@ theorem isEquivalence_completionModificationFunctor_affineOver
 
 [Tag 0ARB](https://stacks.math.columbia.edu/tag/0ARB) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isEquivalence_completionModificationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean#L75).
+**`AlgebraicGeometry.FormalSpace.isEquivalence_completionModificationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean#L75).
 
 > **Stacks 0ARB.** Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be
 > closed and let `U ⊂ X` be the open subspace with `|U| = |X| ∖ T`. The completion functor of
@@ -198,4 +198,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.27, Tag 0AR1](https://stacks.math.columbia.edu/tag/0AR1)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

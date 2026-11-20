@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.8 Künneth formula
 
-Section 50.8 of the Stacks Project, [Tag 0FM9](https://stacks.math.columbia.edu/tag/0FM9). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 50.8 of the Stacks Project, [Tag 0FM9](https://stacks.math.columbia.edu/tag/0FM9). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FMA, a lemma
 
 [Tag 0FMA](https://stacks.math.columbia.edu/tag/0FMA) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamBoxTotalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Kunneth.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/Kunneth.lean#L65).
+**`AlgebraicGeometry.Scheme.Hom.deRhamBoxTotalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Kunneth.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/Kunneth.lean#L65).
 
 > For two morphisms of schemes `a : X ⟶ S` and `b : Y ⟶ S` there is a canonical isomorphism of
 > complexes
@@ -33,7 +33,7 @@ noncomputable def deRhamBoxTotalIso :
     deRhamBoxTotal a b ≅ deRhamDiffOpComplex (pullback.fst a b ≫ a)
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamBoxTotalDegreeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/KunnethDegreewise.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/KunnethDegreewise.lean#L250). The attribute's comment: “the degreewise isomorphism: in each degree `n` an isomorphism `Tot(Ω^•_{X/S} ⊠ Ω^•_{Y/S})^n ≅ Ω^n_{X ×_S Y/S}`. NOT compatibility with the differentials, and so NOT the isomorphism of complexes”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamBoxTotalDegreeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/KunnethDegreewise.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/KunnethDegreewise.lean#L250). The attribute's comment: “the degreewise isomorphism: in each degree `n` an isomorphism `Tot(Ω^•_{X/S} ⊠ Ω^•_{Y/S})^n ≅ Ω^n_{X ×_S Y/S}`. NOT compatibility with the differentials, and so NOT the isomorphism of complexes”.
 
 > **Stacks Project, Tag 0FMA, the degreewise isomorphism.** In each degree `n` the total
 > complex `Tot(Ω^•_{X/S} ⊠ Ω^•_{Y/S})` of the box product of the two relative de Rham complexes is
@@ -52,7 +52,7 @@ noncomputable def deRhamBoxTotalDegreeIso (n : ℕ) :
 
 [Tag 0FMB](https://stacks.math.columbia.edu/tag/0FMB) in the Stacks Project.
 
-**`Stacks.Cohomology.BoxKunneth.deRhamGlobalKunnethMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/KunnethFormula.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/KunnethFormula.lean#L605). The attribute's comment: “the map: the global Künneth map of Tag 0FLR at the two de Rham complexes, read as ℤ-indexed complexes by extension by zero, followed by derived global sections of the Tag 0FMA isomorphism; it carries the one parameter of the Tag 0FLR map, the global cup product on the base, and the map of the source is this at the canonical global cup product globalCupProductCanonical of Section 0FKU. The step-(5) comparison is not carried, being constructed”.
+**`Stacks.Cohomology.BoxKunneth.deRhamGlobalKunnethMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/KunnethFormula.lean, line 605](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/KunnethFormula.lean#L605). The attribute's comment: “the map: the global Künneth map of Tag 0FLR at the two de Rham complexes, read as ℤ-indexed complexes by extension by zero, followed by derived global sections of the Tag 0FMA isomorphism; it carries the one parameter of the Tag 0FLR map, the global cup product on the base, and the map of the source is this at the canonical global cup product globalCupProductCanonical of Section 0FKU. The step-(5) comparison is not carried, being constructed”.
 
 > **The de Rham Künneth map of [Stacks, Tag 0FMB]**
 >
@@ -82,7 +82,7 @@ def deRhamGlobalKunnethMap (κ : GlobalCupProduct S.toRingedSpace) :
               ComplexShape.embeddingUpNat)))
 ```
 
-**`Stacks.Cohomology.BoxKunneth.isIso_deRhamGlobalKunnethMap_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/KunnethFormulaAffineSmooth.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/KunnethFormulaAffineSmooth.lean#L68). The attribute's comment: “the isomorphism at the source's hypotheses (S affine; X, Y smooth and quasi-compact with affine diagonal over S), for the map built from the canonical global cup product of Section 0FKU; nothing is assumed”.
+**`Stacks.Cohomology.BoxKunneth.isIso_deRhamGlobalKunnethMap_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/KunnethFormulaAffineSmooth.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/KunnethFormulaAffineSmooth.lean#L68). The attribute's comment: “the isomorphism at the source's hypotheses (S affine; X, Y smooth and quasi-compact with affine diagonal over S), for the map built from the canonical global cup product of Section 0FKU; nothing is assumed”.
 
 > **[Stacks, Tag 0FMB].** Let `S = Spec(A)` be affine and let `a : X ⟶ S` and `b : Y ⟶ S` be
 > smooth and quasi-compact with affine diagonal over `S`. Then the de Rham Künneth map
@@ -104,7 +104,7 @@ theorem isIso_deRhamGlobalKunnethMap_canonical [IsAffine S]
 
 [Tag 0FMC](https://stacks.math.columbia.edu/tag/0FMC) in the Stacks Project.
 
-**`Stacks.Cohomology.BoxKunneth.deRhamRelativeKunnethMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativeKunnethFormula.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/RelativeKunnethFormula.lean#L175). The attribute's comment: “the relative cup product whose invertibility the tag asserts”.
+**`Stacks.Cohomology.BoxKunneth.deRhamRelativeKunnethMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativeKunnethFormula.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/RelativeKunnethFormula.lean#L175). The attribute's comment: “the relative cup product whose invertibility the tag asserts”.
 
 > **The relative cup product of [Stacks, Tag 0FMC]**
 >
@@ -133,7 +133,7 @@ def deRhamRelativeKunnethMap :
               ComplexShape.embeddingUpNat)))
 ```
 
-**`Stacks.Cohomology.BoxKunneth.isIso_deRhamRelativeKunnethMap_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativeKunnethFormulaSmooth.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/RelativeKunnethFormulaSmooth.lean#L187).
+**`Stacks.Cohomology.BoxKunneth.isIso_deRhamRelativeKunnethMap_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/RelativeKunnethFormulaSmooth.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/RelativeKunnethFormulaSmooth.lean#L187).
 
 > **[Stacks, Tag 0FMC]: the relative Künneth formula for de Rham complexes.** Let `a : X ⟶ S`
 > and `b : Y ⟶ S` be smooth and quasi-compact morphisms of schemes with affine diagonals. Then the
@@ -160,4 +160,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.8, Tag 0FM9](https://stacks.math.columbia.edu/tag/0FM9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

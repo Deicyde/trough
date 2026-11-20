@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.27 Universal flattening
 
-Section 38.27 of the Stacks Project, [Tag 05PS](https://stacks.math.columbia.edu/tag/05PS). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 38.27 of the Stacks Project, [Tag 05PS](https://stacks.math.columbia.edu/tag/05PS). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05UC, a lemma
 
 [Tag 05UC](https://stacks.math.columbia.edu/tag/05UC) in the Stacks Project.
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.isImmersion_representableBy_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean#L95). The attribute's comment: “representability of H\_p by a locally closed immersion”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.isImmersion_representableBy_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean#L95). The attribute's comment: “representability of H\_p by a locally closed immersion”.
 
 > **Stacks Project, Tag 05UC.** In Situation 05MP, for each `p ≥ 0` the functor `H_p` of
 > 05MR is representable by a locally closed immersion `S_p ⟶ S`.
@@ -25,7 +25,7 @@ theorem isImmersion_representableBy_fittingRankStratum :
       Nonempty ((D.freeAtGenericPointsFunctor p).RepresentableBy W)
 ```
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.finitePresentation_hom_of_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean#L113). The attribute's comment: “finite presentation of S\_p ⟶ S when the module is of finite presentation”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.finitePresentation_hom_of_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean#L113). The attribute's comment: “finite presentation of S\_p ⟶ S when the module is of finite presentation”.
 
 > **Stacks Project, Tag 05UC.** In Situation 05MP, if `ℱ` is of finite presentation then
 > `S_p ⟶ S` is of finite presentation.
@@ -43,7 +43,7 @@ theorem finitePresentation_hom_of_representableBy [D.F.IsFinitePresentation]
 
 [Tag 05UD](https://stacks.math.columbia.edu/tag/05UD) in the Stacks Project.
 
-**`AlgebraicGeometry.FlatDimensionSituation.isFlat_etaleChart_and_iff_of_relativeAssassin_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionEtaleComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionEtaleComparison.lean#L373).
+**`AlgebraicGeometry.FlatDimensionSituation.isFlat_etaleChart_and_iff_of_relativeAssassin_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionEtaleComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionEtaleComparison.lean#L373).
 
 > **Stacks Project, Tag 05UD.** In Situation 05MT, let `h : X' ⟶ X` be étale and let `F'_n` be
 > the functor of Stacks 05MU for `(f ∘ h, h^* F)`. Then `F_n` is a subfunctor of `F'_n`, and if
@@ -66,7 +66,7 @@ theorem isFlat_etaleChart_and_iff_of_relativeAssassin_subset {X' : Scheme.{u}} (
 
 [Tag 05UE](https://stacks.math.columbia.edu/tag/05UE) in the Stacks Project.
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.exists_isSheaf_flatDimensionFunctor_and_iso_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/GenericRankCoproductSheaf.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/GenericRankCoproductSheaf.lean#L58).
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.exists_isSheaf_flatDimensionFunctor_and_iso_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/GenericRankCoproductSheaf.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/GenericRankCoproductSheaf.lean#L58).
 
 > **Stacks Project, Tag 05UE.** Let `f : X ⟶ S` be a smooth morphism of affine schemes with
 > geometrically irreducible fibres of dimension `d` and let `F` be a quasi-coherent `𝒪_X`-module
@@ -99,7 +99,7 @@ theorem exists_isSheaf_flatDimensionFunctor_and_iso_coproduct [IsAffine D.X] [Is
 
 [Tag 05UF](https://stacks.math.columbia.edu/tag/05UF) in the Stacks Project.
 
-**`AlgebraicGeometry.FlatDimensionSituation.exists_mono_finitePresentation_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FlatDimensionFunctorRepresentability.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FlatDimensionFunctorRepresentability.lean#L344).
+**`AlgebraicGeometry.FlatDimensionSituation.exists_mono_finitePresentation_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FlatDimensionFunctorRepresentability.lean, line 344](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FlatDimensionFunctorRepresentability.lean#L344).
 
 > **Stacks Project, Tag 05UF.** In Situation 05MT, let `s` be a point of `S` and let `d = n` be
 > the bound of the situation. Assume that
@@ -128,7 +128,7 @@ theorem exists_mono_finitePresentation_representableBy (s : D.S)
 
 [Tag 05UG](https://stacks.math.columbia.edu/tag/05UG) in the Stacks Project.
 
-**`AlgebraicGeometry.FlatDimensionSituation.exists_mono_finitePresentation_representableBy_of_isPure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FlatDimensionFunctorPure.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FlatDimensionFunctorPure.lean#L432).
+**`AlgebraicGeometry.FlatDimensionSituation.exists_mono_finitePresentation_representableBy_of_isPure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FlatDimensionFunctorPure.lean, line 432](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FlatDimensionFunctorPure.lean#L432).
 
 > **Stacks Project, Tag 05UG.** In Situation 05MT, assume moreover that `f` is of finite
 > presentation, that `F` is an `𝒪_X`-module of finite presentation, and that `F` is pure relative
@@ -149,7 +149,7 @@ theorem exists_mono_finitePresentation_representableBy_of_isPure [LocallyOfFinit
 
 [Tag 05UH](https://stacks.math.columbia.edu/tag/05UH) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_mono_finitePresentation_representableBy_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean#L79). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_mono_finitePresentation_representableBy_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean#L79). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 05UH, part (1).** Let `f : X ⟶ S` be of finite
 > presentation and let `F` be an `𝒪_X`-module of finite presentation which is pure relative to
@@ -168,7 +168,7 @@ theorem exists_mono_finitePresentation_representableBy_of_isPureRelative
           FlatnessSituation.{u}).flatFunctor Z)
 ```
 
-**`AlgebraicGeometry.exists_mono_finitePresentation_representableBy_of_isSchemePureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean#L100). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_mono_finitePresentation_representableBy_of_isSchemePureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean, line 100](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean#L100). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 05UH, part (2).** Let `f : X ⟶ S` be of finite
 > presentation and let `X` be pure relative to `S`. Then the universal flattening `Z ⟶ S` of `X`
@@ -183,7 +183,7 @@ theorem exists_mono_finitePresentation_representableBy_of_isSchemePureRelative
       Nonempty ((structureSheafFlatnessSituation f).flatFunctor.RepresentableBy Z)
 ```
 
-**`AlgebraicGeometry.exists_mono_finitePresentation_representableBy_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean#L115). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.exists_mono_finitePresentation_representableBy_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean#L115). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 05UH, part (3).** Let `f : X ⟶ S` be proper
 > and of finite presentation and let `F` be an `𝒪_X`-module of finite presentation. Then the
@@ -200,7 +200,7 @@ theorem exists_mono_finitePresentation_representableBy_of_isProper
           FlatnessSituation.{u}).flatFunctor Z)
 ```
 
-**`AlgebraicGeometry.exists_mono_finitePresentation_representableBy_structureSheaf_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean#L131). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.exists_mono_finitePresentation_representableBy_structureSheaf_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalFlatteningOfPure.lean#L131). The attribute's comment: “part (4)”.
 
 > **Stacks Project, Tag 05UH, part (4).** Let `f : X ⟶ S` be proper
 > and of finite presentation. Then the universal flattening `Z ⟶ S` of `X` exists, and it is a
@@ -221,4 +221,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.27, Tag 05PS](https://stacks.math.columbia.edu/tag/05PS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

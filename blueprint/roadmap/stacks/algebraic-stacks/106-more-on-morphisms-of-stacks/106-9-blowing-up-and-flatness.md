@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.9 Blowing up and flatness
 
-Section 106.9 of the Stacks Project, [Tag 0CQ3](https://stacks.math.columbia.edu/tag/0CQ3). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.9 of the Stacks Project, [Tag 0CQ3](https://stacks.math.columbia.edu/tag/0CQ3). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CQ4, a lemma
 
 [Tag 0CQ4](https://stacks.math.columbia.edu/tag/0CQ4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_admissibleBlowup_flat_finitePresentation_closedSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatteningByBlowupStack.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatteningByBlowupStack.lean#L42).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_admissibleBlowup_flat_finitePresentation_closedSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatteningByBlowupStack.lean, line 42](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatteningByBlowupStack.lean#L42).
 
 > **Flattening by blowing up.** Let `f : 𝒳 ⟶ Y` be a 1-morphism from an algebraic stack to an
 > algebraic space and `V ⊆ Y` an open subspace, with (1) `Y` quasi-compact and quasi-separated, (2)
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.9, Tag 0CQ3](https://stacks.math.columbia.edu/tag/0CQ3)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

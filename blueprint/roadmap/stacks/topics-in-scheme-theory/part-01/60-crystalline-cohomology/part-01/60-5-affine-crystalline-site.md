@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.5 Affine crystalline site
 
-Section 60.5 of the Stacks Project, [Tag 07HL](https://stacks.math.columbia.edu/tag/07HL). 8 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 60.5 of the Stacks Project, [Tag 07HL](https://stacks.math.columbia.edu/tag/07HL). 8 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07MD, a situation
 
 [Tag 07MD](https://stacks.math.columbia.edu/tag/07MD) in the Stacks Project.
 
-**`Crystalline.AffineCrystallineSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L87).
+**`Crystalline.AffineCrystallineSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L87).
 
 > **Stacks Project, Tag 07MD.** The standing affine crystalline situation over a divided
 > power ring `(A, I, γ)`: the ring `A` is a `ℤ_(p)`-algebra, `I` vanishes in `C`, and `p`
@@ -28,7 +28,7 @@ public structure AffineCrystallineSituation
 
 [Tag 07HM](https://stacks.math.columbia.edu/tag/07HM) in the Stacks Project.
 
-**`Crystalline.DividedPowerThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L113). The attribute's comment: “divided power thickenings and CRIS(C/A)”.
+**`Crystalline.DividedPowerThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L113). The attribute's comment: “divided power thickenings and CRIS(C/A)”.
 
 > **Stacks Project, Tag 07HM, part (1).** A divided power thickening in an affine
 > crystalline situation.
@@ -37,7 +37,7 @@ public structure AffineCrystallineSituation
 public structure DividedPowerThickening (S : AffineCrystallineSituation.{u, v})
 ```
 
-**`Crystalline.DividedPowerThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L138). The attribute's comment: “homomorphisms of divided power thickenings”.
+**`Crystalline.DividedPowerThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L138). The attribute's comment: “homomorphisms of divided power thickenings”.
 
 > **Stacks Project, Tag 07HM, part (2).** A morphism of divided power thickenings is a
 > divided power map over the base whose induced quotient map is compatible with the maps from
@@ -47,13 +47,13 @@ public structure DividedPowerThickening (S : AffineCrystallineSituation.{u, v})
 public structure Hom (X Y : DividedPowerThickening.{u, v, w} S)
 ```
 
-**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L147). The attribute's comment: “category structure on CRIS(C/A)”.
+**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L147). The attribute's comment: “category structure on CRIS(C/A)”.
 
 ```lean
 public instance : Category (DividedPowerThickening.{u, v, w} S)
 ```
 
-**`Crystalline.CrystallineThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L178). The attribute's comment: “the full subcategory Cris(C/A)”.
+**`Crystalline.CrystallineThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L178). The attribute's comment: “the full subcategory Cris(C/A)”.
 
 > **Stacks Project, Tag 07HM, part (4).** The little crystalline category `Cris(C/A)`,
 > the full subcategory of divided power thickenings for which `C → B/J` is an isomorphism.
@@ -66,7 +66,7 @@ public abbrev CrystallineThickening (S : AffineCrystallineSituation.{u, v})
 
 [Tag 07KF](https://stacks.math.columbia.edu/tag/07KF) in the Stacks Project.
 
-**`Crystalline.quotientFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean#L84).
+**`Crystalline.quotientFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean#L84).
 
 > **Stacks Project, Tag 07KF.** The functor sending a divided power thickening
 > `(B, J, δ)` in `CRIS(C/A)` to the `C`-algebra `B/J`.
@@ -80,7 +80,7 @@ public def quotientFunctor (S : AffineCrystallineSituation.{u, v}) :
 
 [Tag 07HN](https://stacks.math.columbia.edu/tag/07HN) in the Stacks Project.
 
-**`Crystalline.DividedPowerThickening.hasFiniteProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L473). The attribute's comment: “finite\_products”.
+**`Crystalline.DividedPowerThickening.hasFiniteProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 473](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L473). The attribute's comment: “finite\_products”.
 
 > **Stacks Project, Tag 07HN, finite-products part.** The category `CRIS(C/A)` of divided
 > power thickenings in an affine crystalline situation has finite products.
@@ -90,7 +90,7 @@ public instance hasFiniteProducts (S : AffineCrystallineSituation.{u, v}) :
     HasFiniteProducts (DividedPowerThickening.{u, v, w} S)
 ```
 
-**`Crystalline.hasNonemptyFiniteColimits_dividedPowerThickening`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L41). The attribute's comment: “cris\_colimits”.
+**`Crystalline.hasNonemptyFiniteColimits_dividedPowerThickening`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L41). The attribute's comment: “cris\_colimits”.
 
 > **Stacks Project, Tag 07HN.** In an affine crystalline situation, the
 > category `CRIS(C/A)` has all nonempty finite colimits.
@@ -102,7 +102,7 @@ public instance hasNonemptyFiniteColimits_dividedPowerThickening
       (DividedPowerThickening.{u, v, w} S)
 ```
 
-**`Crystalline.preservesColimitsOfShape_quotientFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L250). The attribute's comment: “quotient\_preserves\_colimits”.
+**`Crystalline.preservesColimitsOfShape_quotientFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L250). The attribute's comment: “quotient\_preserves\_colimits”.
 
 > **Stacks Project, Tag 07HN.** The quotient functor from `CRIS(C/A)` to
 > commutative `C`-algebras preserves all nonempty finite colimits.
@@ -114,7 +114,7 @@ public instance preservesColimitsOfShape_quotientFunctor
     PreservesColimitsOfShape J (quotientFunctor.{u, v, w} S)
 ```
 
-**`Crystalline.DividedPowerThickening.instHasNonemptyFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L334). The attribute's comment: “little\_cris\_colimits”.
+**`Crystalline.DividedPowerThickening.instHasNonemptyFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 334](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L334). The attribute's comment: “little\_cris\_colimits”.
 
 > **Stacks Project, Tag 07HN.** In an affine crystalline situation, the little
 > crystalline category `Cris(C/A)` has all finite nonempty colimits.
@@ -126,7 +126,7 @@ public instance instHasNonemptyFiniteColimits
       (CrystallineThickening.{u, v, w} S)
 ```
 
-**`Crystalline.preservesColimitsOfShape_crystallineThickeningInclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L352). The attribute's comment: “little\_cris\_inclusion”.
+**`Crystalline.preservesColimitsOfShape_crystallineThickeningInclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L352). The attribute's comment: “little\_cris\_inclusion”.
 
 > **Stacks Project, Tag 07HN.** The inclusion `Cris(C/A) ⥤ CRIS(C/A)`
 > preserves finite nonempty colimits.
@@ -140,7 +140,7 @@ public instance preservesColimitsOfShape_crystallineThickeningInclusion
       ObjectProperty (DividedPowerThickening.{u, v, w} S)).ι)
 ```
 
-**`Crystalline.not_hasProductsOfShape_of_infinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/UnboundedNilpotenceOrder.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/UnboundedNilpotenceOrder.lean#L292). The attribute's comment: “infinite\_products\_caveat”.
+**`Crystalline.not_hasProductsOfShape_of_infinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Examples/UnboundedNilpotenceOrder.lean, line 292](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/Examples/UnboundedNilpotenceOrder.lean#L292). The attribute's comment: “infinite\_products\_caveat”.
 
 > **Stacks Project, Tag 07HN, part (1), "but not infinite ones".**  In the affine crystalline
 > situation `(p, (ℤ_(p), (p), γ), 𝐅_p)`, the category `CRIS(𝐅_p/ℤ_(p))` has no products of any
@@ -159,7 +159,7 @@ theorem not_hasProductsOfShape_of_infinite (ι : Type) [Infinite ι] :
 
 [Tag 07KH](https://stacks.math.columbia.edu/tag/07KH) in the Stacks Project.
 
-**`Crystalline.CompletedCrystallineThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L95). The attribute's comment: “completed\_affine\_crystalline\_site”.
+**`Crystalline.CompletedCrystallineThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L95). The attribute's comment: “completed\_affine\_crystalline\_site”.
 
 > An object of the completed affine crystalline category `Cris^∧(C/A)`: a divided
 > power thickening whose underlying ring is complete for the `p`-adic topology.
@@ -169,7 +169,7 @@ public structure CompletedCrystallineThickening
     (S : AffineCrystallineSituation.{u, v})
 ```
 
-**`Crystalline.CompletedCrystallineThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L119). The attribute's comment: “completed\_affine\_crystalline\_site”.
+**`Crystalline.CompletedCrystallineThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L119). The attribute's comment: “completed\_affine\_crystalline\_site”.
 
 > A morphism in `Cris^∧(C/A)` is a divided power map over `A` whose induced quotient
 > map is compatible with the structural maps from `C`.
@@ -179,7 +179,7 @@ public structure Hom
     (X Y : CompletedCrystallineThickening.{u, v, w} S)
 ```
 
-**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L129). The attribute's comment: “completed\_affine\_crystalline\_site”.
+**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L129). The attribute's comment: “completed\_affine\_crystalline\_site”.
 
 > The category structure on the completed affine crystalline category `Cris^∧(C/A)`.
 
@@ -188,7 +188,7 @@ public instance :
     Category (CompletedCrystallineThickening.{u, v, w} S)
 ```
 
-**`Crystalline.crystallineEquivalenceNilpotentCompleted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L230). The attribute's comment: “nilpotent\_objects”.
+**`Crystalline.crystallineEquivalenceNilpotentCompleted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 230](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L230). The attribute's comment: “nilpotent\_objects”.
 
 > The ordinary crystalline category is canonically the full subcategory of the
 > completed crystalline category consisting of the `p`-nilpotent objects.
@@ -203,7 +203,7 @@ public noncomputable def crystallineEquivalenceNilpotentCompleted
       (∀ X Y (f : X ⟶ Y), HEq (E.functor.map f).hom.hom f.hom.hom) }
 ```
 
-**`Crystalline.exists_finiteLevelSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L383). The attribute's comment: “finite\_level\_approximation”.
+**`Crystalline.exists_finiteLevelSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 383](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L383). The attribute's comment: “finite\_level\_approximation”.
 
 > A completed crystalline thickening is the inverse limit of its finite-level
 > crystalline quotients by powers of `p`.
@@ -214,7 +214,7 @@ public theorem exists_finiteLevelSystem
     Nonempty (FiniteLevelSystem X)
 ```
 
-**`Crystalline.completedCrystallineToPro`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean#L569). The attribute's comment: “pro\_objects”.
+**`Crystalline.completedCrystallineToPro`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean, line 569](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean#L569). The attribute's comment: “pro\_objects”.
 
 > The canonical pro-object construction sends each completed thickening to its
 > system of sufficiently deep crystalline quotients. On a morphism, its component
@@ -245,7 +245,7 @@ public noncomputable def completedCrystallineToPro
                   (op (op i))) }
 ```
 
-**`Crystalline.completedCrystallineToPro_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean#L634). The attribute's comment: “pro\_objects”.
+**`Crystalline.completedCrystallineToPro_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean, line 634](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean#L634). The attribute's comment: “pro\_objects”.
 
 > Completed crystalline thickenings form a full subcategory of crystalline
 > pro-objects under the finite-level quotient construction.
@@ -260,7 +260,7 @@ public theorem completedCrystallineToPro_fullyFaithful
 
 [Tag 07KG](https://stacks.math.columbia.edu/tag/07KG) in the Stacks Project.
 
-**`Crystalline.eventually_pAdicIdeal_isSubDPIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean#L392). The attribute's comment: “part (1), envelope”.
+**`Crystalline.eventually_pAdicIdeal_isSubDPIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean, line 392](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean#L392). The attribute's comment: “part (1), envelope”.
 
 > Eventually the powers of `(p)` lie in the envelope ideal and are preserved
 > by its divided powers. This is the uncompleted assertion of part (1).
@@ -274,7 +274,7 @@ public theorem eventually_pAdicIdeal_isSubDPIdeal
         D.dividedPowers.IsSubDPIdeal (DividedPowers.pAdicIdeal (A := D) s.p ^ e)
 ```
 
-**`Crystalline.eventually_completed_pAdicIdeal_isSubDPIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean#L410). The attribute's comment: “part (1), completion”.
+**`Crystalline.eventually_completed_pAdicIdeal_isSubDPIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean, line 410](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/Envelope.lean#L410). The attribute's comment: “part (1), completion”.
 
 > The corresponding eventual stability in the completed envelope.
 
@@ -295,7 +295,7 @@ public theorem eventually_completed_pAdicIdeal_isSubDPIdeal
               s.p ^ e)
 ```
 
-**`Crystalline.eventually_quotient_envelope_equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean#L326). The attribute's comment: “part (2), finite-level envelope”.
+**`Crystalline.eventually_quotient_envelope_equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean, line 326](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean#L326). The attribute's comment: “part (2), finite-level envelope”.
 
 > At large levels the envelope of the reduced presentation is canonically
 > the reduction of the original envelope. The equation on presentation maps
@@ -325,7 +325,7 @@ public noncomputable def eventually_quotient_envelope_equiv
                 hcontained hstable) φ.symm.toRingHom}
 ```
 
-**`Crystalline.eventually_completed_quotient_equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean#L360). The attribute's comment: “part (2), completion quotient”.
+**`Crystalline.eventually_completed_quotient_equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean, line 360](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean#L360). The attribute's comment: “part (2), completion quotient”.
 
 > Completion does not change the finite quotients, compatibly with their
 > canonical maps and divided powers. This is the other identification in (2).
@@ -359,7 +359,7 @@ public noncomputable def eventually_completed_quotient_equiv
                 φ.symm.toRingHom}
 ```
 
-**`Crystalline.levelCrystallineThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean#L424). The attribute's comment: “part (3)”.
+**`Crystalline.levelCrystallineThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean, line 424](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/FiniteLevels.lean#L424). The attribute's comment: “part (3)”.
 
 > For large `e`, the finite envelope is a crystalline thickening of `C/A`.
 
@@ -378,7 +378,7 @@ public noncomputable def levelCrystallineThickening
                 (Ideal.Quotient.mk (DividedPowers.pAdicIdeal (A := P) s.p ^ e) x)))}
 ```
 
-**`Crystalline.completedEnvelope_isLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean#L52). The attribute's comment: “part (4)”.
+**`Crystalline.completedEnvelope_isLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean#L52). The attribute's comment: “part (4)”.
 
 > The completed envelope is the inverse limit of the *envelopes* at large
 > finite levels. The cone and the transition maps are fixed by the presentation
@@ -435,7 +435,7 @@ public noncomputable def completedEnvelope_isLimit
                     ∀ e (he : N ≤ e), (π e he).comp g = cone e he)
 ```
 
-**`Crystalline.completedCrystallineThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean#L365). The attribute's comment: “part (5)”.
+**`Crystalline.completedCrystallineThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean, line 365](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean#L365). The attribute's comment: “part (5)”.
 
 > The canonical completed divided power envelope is an object of the
 > completed affine crystalline site.
@@ -460,7 +460,7 @@ public noncomputable def completedCrystallineThickening
               (env.algebraMap.toRingHom x)))}
 ```
 
-**`Crystalline.completedLevelEnvelopeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyIdentification.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyIdentification.lean#L297). The attribute's comment: “part (2), the reduction of the completed envelope is the finite-level envelope”.
+**`Crystalline.completedLevelEnvelopeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyIdentification.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyIdentification.lean#L297). The attribute's comment: “part (2), the reduction of the completed envelope is the finite-level envelope”.
 
 > **The reduction of the completed envelope is the envelope of the reduced presentation**, as
 > divided power rings, compatibly with the maps out of the presentation algebra `P`.
@@ -502,7 +502,7 @@ def completedLevelEnvelopeIso (hf : Function.Surjective f) :
 
 [Tag 07HP](https://stacks.math.columbia.edu/tag/07HP) in the Stacks Project.
 
-**`Crystalline.exists_forall_le_levelEnvelope_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean#L504). The attribute's comment: “for every sufficiently large level”.
+**`Crystalline.exists_forall_le_levelEnvelope_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean, line 504](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean#L504). The attribute's comment: “for every sufficiently large level”.
 
 > **Every sufficiently high finite-level divided power envelope maps to a given affine divided
 > power thickening.**  The level above which this holds is the larger of the cutoff of
@@ -528,7 +528,7 @@ public theorem exists_forall_le_levelEnvelope_hom
         Nonempty (((levelCrystallineThickening s f hf).2 e he).1 ⟶ B)
 ```
 
-**`Crystalline.exists_levelEnvelope_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean, line 645](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean#L645).
+**`Crystalline.exists_levelEnvelope_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean, line 645](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Completed/InverseLimit.lean#L645).
 
 > A sufficiently high finite-level divided power envelope maps to any affine
 > divided power thickening.
@@ -545,7 +545,7 @@ public theorem exists_levelEnvelope_hom
         Nonempty (((levelCrystallineThickening s f hf).2 e he).1 ⟶ B)
 ```
 
-**`Crystalline.exists_forall_le_levelThickening_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyFinality.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyFinality.lean#L197). The attribute's comment: “for every sufficiently large finite level of the completed envelope”.
+**`Crystalline.exists_forall_le_levelThickening_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyFinality.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyFinality.lean#L197). The attribute's comment: “for every sufficiently large finite level of the completed envelope”.
 
 > **[Stacks, Lemma 60.5.6, Tag 07HP] for the finite levels of the completed divided power
 > envelope of a polynomial presentation, at every sufficiently large level**: every divided power
@@ -575,7 +575,7 @@ theorem exists_forall_le_levelThickening_hom (W : CompletedEnvelopeThickening s 
         Nonempty (levelThickeningObj W.thickening e h ⟶ B)
 ```
 
-**`Crystalline.exists_levelThickening_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyIdentification.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyIdentification.lean#L489). The attribute's comment: “for the finite levels of the completed envelope”.
+**`Crystalline.exists_levelThickening_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyIdentification.lean, line 489](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/LevelFamilyIdentification.lean#L489). The attribute's comment: “for the finite levels of the completed envelope”.
 
 > **[Stacks, Tag 07HP] for the second family of levels: every divided power thickening of `C/A`
 > receives a morphism from a finite level `D̂/(p)^e` of the completed envelope.**
@@ -624,7 +624,7 @@ theorem exists_levelThickening_hom (hf : Function.Surjective f)
 
 [Tag 07KI](https://stacks.math.columbia.edu/tag/07KI) in the Stacks Project.
 
-**`Crystalline.completedPolynomialEnvelopeThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineCrystallineSite/Basic.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineCrystallineSite/Basic.lean#L357). The attribute's comment: “the completed crystalline object”.
+**`Crystalline.completedPolynomialEnvelopeThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineCrystallineSite/Basic.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineCrystallineSite/Basic.lean#L357). The attribute's comment: “the completed crystalline object”.
 
 > The completed divided power envelope of a surjective polynomial presentation,
 > as an object of the completed crystalline site. Its underlying divided power
@@ -651,7 +651,7 @@ public noncomputable def completedPolynomialEnvelopeThickening
               env.algebraMap.toRingHom))}
 ```
 
-**`Crystalline.exists_hom_from_completedPolynomialEnvelope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineCrystallineSite/Basic.lean, line 668](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/AffineCrystallineSite/Basic.lean#L668). The attribute's comment: “existence of a morphism to every completed crystalline object”.
+**`Crystalline.exists_hom_from_completedPolynomialEnvelope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineCrystallineSite/Basic.lean, line 668](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/AffineCrystallineSite/Basic.lean#L668). The attribute's comment: “existence of a morphism to every completed crystalline object”.
 
 > Every completed crystalline thickening receives a morphism from the
 > completed divided power envelope of a surjective polynomial presentation.
@@ -676,4 +676,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.5, Tag 07HL](https://stacks.math.columbia.edu/tag/07HL)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

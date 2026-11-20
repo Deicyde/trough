@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0402",
@@ -137,7 +137,7 @@
     {
      "name": "Stacks.SheafOfModules.IsInvertible",
      "kind": "class",
-     "line": 131,
+     "line": 139,
      "private": false,
      "doc": "**Stacks Project, Tag 01CS**, equivalently **Tag 0409 (2)**. A sheaf of `O`-modules is\n*invertible* when its tensor functor is an equivalence. The universal property specifies that\ntensor functor independently of any chosen construction of sheafification, hence on every\nsite; so the ringed-space form of the definition and the ringed-site form coincide here.",
      "statement": "class IsInvertible\n    (L : SheafOfModules.{w} (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO)) : Prop",
@@ -151,7 +151,7 @@
     {
      "name": "Stacks.SheafOfModules.Invertible.isInvertible_iff_tensorRightFunctor_isEquivalence",
      "kind": "theorem",
-     "line": 132,
+     "line": 140,
      "private": false,
      "doc": "**Stacks Project, Tag 0409 (2)**, equivalently **Tag 01CS**, in the source's own form: a\nsheaf of `O`-modules `L` is invertible exactly when the functor `F ↦ (F ⊗_O L)^#` of the\nsource is an equivalence. The invertibility predicate is phrased through the universal\nproperty of tensoring on the *left*, so this is the criterion the source states and the\npredicate agreeing, the two tensor functors being identified by `tensorLeftIsoTensorRight`.",
      "statement": "theorem isInvertible_iff_tensorRightFunctor_isEquivalence\n    (L : SheafOfModules.{w} (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO)) :\n    IsInvertible O hO L ↔ ((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w}\n      ⟨O, Presheaf.isSheaf_of_isSheaf_comp _ O (forget₂ CommRingCat RingCat) hO⟩).flip.obj\n        L).IsEquivalence",
@@ -298,7 +298,7 @@
     {
      "name": "Stacks.SheafOfModules.tensorProduct_isInvertible",
      "kind": "theorem",
-     "line": 482,
+     "line": 523,
      "private": false,
      "doc": "**Stacks Project, Tag 01CT (1), Tag 040A (1).** The tensor product of two invertible sheaves\nof modules is invertible.",
      "statement": "theorem tensorProduct_isInvertible\n    (L N : SheafOfModules.{w} (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO))\n    [IsInvertible O hO L] [IsInvertible O hO N] :\n    IsInvertible O hO ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w}\n      ⟨O, Presheaf.isSheaf_of_isSheaf_comp _ O (forget₂ CommRingCat RingCat) hO⟩).obj L)).obj N)",
@@ -490,7 +490,7 @@
     {
      "name": "Stacks.Cohomology.Torsors.Generators.h1UnitsAddEquivPicardGroup",
      "kind": "def",
-     "line": 702,
+     "line": 696,
      "private": false,
      "doc": "**Stacks Project, Tag 040E.** Let `(C, O)` be a locally ringed site. There is a canonical\nisomorphism of abelian groups `H^1(C, O^*) = Pic(O)`.",
      "statement": "def h1UnitsAddEquivPicardGroup :\n    Sheaf.H (unitsAddSheaf X) 1 ≃+\n      Stacks.SheafOfModules.Picard.PicardGroup X.O.obj\n        (Stacks.SheafOfModules.Tensor.ringSheaf X.O).2",
@@ -513,7 +513,7 @@
     {
      "name": "Stacks.Cohomology.Torsors.Generators.h1UnitsAddEquivPicardGroup'",
      "kind": "def",
-     "line": 659,
+     "line": 655,
      "private": false,
      "doc": "**Stacks Project, Tag 040E.** Let `(C, O)` be a locally ringed site. There is a canonical\nisomorphism of abelian groups `H^1(C, O^*) = Pic(O)`.\n\nThis generalizes `Stacks.Cohomology.Torsors.Generators.h1UnitsAddEquivPicardGroup`,\nstated for `RingedSite.{u, u, u}`, to independent universes.",
      "statement": "def h1UnitsAddEquivPicardGroup' :\n    Sheaf.H (unitsAddSheaf X) 1 ≃+\n      Stacks.SheafOfModules.Picard.PicardGroup X.O.obj\n        (Stacks.SheafOfModules.Tensor.ringSheaf X.O).2",
@@ -1034,7 +1034,7 @@
     {
      "name": "AlgebraicGeometry.pairIso_torsor",
      "kind": "theorem",
-     "line": 682,
+     "line": 677,
      "private": false,
      "doc": "Once an isomorphism of pairs has been chosen, every other isomorphism is uniquely its scalar\ntranslate by a global `n`th root of unity.",
      "statement": "public theorem pairIso_torsor (S : Scheme.{u}) (n : ℕ)\n    (P Q : TrivializedPower S n) (φ : PairIso P Q) :\n    ∀ ψ : PairIso P Q, ∃! a :\n      (AlgebraicGeometry.rootsOfUnitySections n).obj (Opposite.op S),\n      IsScalarTranslate a φ ψ",
@@ -1048,7 +1048,7 @@
     {
      "name": "AlgebraicGeometry.scalarTranslate_pairIso",
      "kind": "theorem",
-     "line": 719,
+     "line": 714,
      "private": false,
      "doc": "Every global `n`th root of unity acts on a chosen isomorphism of pairs,\ngiving a unique isomorphism whose sheaf map is its specified scalar translate.",
      "statement": "public theorem scalarTranslate_pairIso (S : Scheme.{u}) (n : ℕ)\n    (P Q : TrivializedPower S n) (φ : PairIso P Q) :\n    ∀ a : (AlgebraicGeometry.rootsOfUnitySections n).obj (Opposite.op S),\n      ∃! ψ : PairIso P Q, IsScalarTranslate a φ ψ",
@@ -1068,7 +1068,7 @@
     {
      "name": "AlgebraicGeometry.pairIso_unitPair_iff",
      "kind": "theorem",
-     "line": 835,
+     "line": 830,
      "private": false,
      "doc": "Two pairs whose invertible sheaf is the structure sheaf are isomorphic exactly when their\ntrivializing units differ by the `n`th power of a global unit; so the isomorphism classes of such\npairs are the global units modulo `n`th powers.",
      "statement": "public theorem pairIso_unitPair_iff (S : Scheme.{u}) (n : ℕ)\n    (f g : (Scheme.Γ.obj (Opposite.op S))ˣ) :\n    Nonempty (PairIso (unitPair S n f) (unitPair S n g)) ↔\n      ∃ u : (Scheme.Γ.obj (Opposite.op S))ˣ, f = u ^ n * g",
@@ -1082,7 +1082,7 @@
     {
      "name": "AlgebraicGeometry.exists_trivializedPower_sheaf_iff",
      "kind": "theorem",
-     "line": 871,
+     "line": 866,
      "private": false,
      "doc": "An invertible sheaf carries a trivialization of its `n`th tensor power exactly when that\npower is trivial; so the invertible sheaves of pairs are exactly those whose class in the Picard\ngroup is `n`-torsion.",
      "statement": "public theorem exists_trivializedPower_sheaf_iff (S : Scheme.{u}) (n : ℕ)\n    (L : SheafOfModules.{u} (ringSheaf S))\n    (hL : IsInvertible S.presheaf (ringSheafCond S) L) :\n    (∃ P : TrivializedPower S n, P.sheaf = L) ↔\n      Nonempty (tensorPower S.presheaf (ringSheafCond S) L (n : ℤ) ≅\n        SheafOfModules.unit (ringSheaf S))",
@@ -1096,7 +1096,7 @@
     {
      "name": "AlgebraicGeometry.pairIso_iff_trivializationRatio_eq_pow",
      "kind": "theorem",
-     "line": 1043,
+     "line": 1038,
      "private": false,
      "doc": "Two pairs with the same, possibly nontrivial, invertible sheaf are isomorphic exactly when\ntheir trivializations differ by the `n`th power of a global unit.",
      "statement": "public theorem pairIso_iff_trivializationRatio_eq_pow (S : Scheme.{u}) (n : ℕ)\n    (L : SheafOfModules.{u} (ringSheaf S))\n    [hL : IsInvertible S.presheaf (ringSheafCond S) L]\n    (α β : tensorPower S.presheaf (ringSheafCond S) L (n : ℤ) ≅\n      SheafOfModules.unit (ringSheaf S)) :\n    Nonempty (PairIso ⟨L, hL, α⟩ ⟨L, hL, β⟩) ↔\n      ∃ u : (Scheme.Γ.obj (Opposite.op S))ˣ, trivializationRatio S n α β = u ^ n",
@@ -1110,7 +1110,7 @@
     {
      "name": "AlgebraicGeometry.exists_pairIso_unitPair",
      "kind": "theorem",
-     "line": 1081,
+     "line": 1076,
      "private": false,
      "doc": "A pair whose invertible sheaf is isomorphic to the structure sheaf — not only equal to it —\nis isomorphic to the pair given by the structure sheaf and a global unit.",
      "statement": "public theorem exists_pairIso_unitPair (S : Scheme.{u}) (n : ℕ) (P : TrivializedPower S n)\n    (e : P.sheaf ≅ SheafOfModules.unit (ringSheaf S)) :\n    ∃ f : (Scheme.Γ.obj (Opposite.op S))ˣ, Nonempty (PairIso P (unitPair S n f))",
@@ -8330,7 +8330,7 @@
     {
      "name": "AlgebraicGeometry.Space.relativelyRepresentable_separated_locallyQuasiFinite_of_isPullback",
      "kind": "theorem",
-     "line": 489,
+     "line": 490,
      "private": false,
      "doc": "**Stacks 046J**, conditional only on the fppf locality of separatedness.\n\nIn a cartesian square of sheaves on the big fppf site of `S` whose right-hand column `g` is\nrepresentable by algebraic spaces, surjective, flat and locally of finite presentation and\nwhose top row `a` is representable by algebraic spaces, separated and locally quasi-finite,\nthe bottom row `b` is representable by objects of the site, separated and locally\nquasi-finite.\n\nRepresentability of `b` by objects of the site is\n`AlgebraicGeometry.Space.relativelyRepresentable_of_isPullback_of_flat_surjective`, the\nsource's own argument by effective fppf descent of schemes.  Separatedness and local\nquasi-finiteness descend by Stacks 0421 and Stacks 0427, each read at the fppf precoverage\nfrom its fpqc form.",
      "statement": "theorem relativelyRepresentable_separated_locallyQuasiFinite_of_isPullback\n    {E F H G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}\n    (a : E ⟶ F) (f : E ⟶ H) (g : F ⟶ G) (b : H ⟶ G) (sq : IsPullback a f g b)\n    (hH : Presheaf.IsSheaf (BigFppfOver.topology B S hS) H)\n    (hG : Presheaf.IsSheaf (BigFppfOver.topology B S hS) G)\n    (hgRep : IsRepresentableByAlgebraicSpaces B S hS g)\n    (hgSurj : HasProperty B S hS (surjectiveMorphismProperty B S hS) g hgRep)\n    (hgFlat : HasProperty B S hS (flatProperty B S hS) g hgRep)\n    (hgLfp : HasProperty B S hS (locallyOfFinitePresentationProperty B S hS) g hgRep)\n    (haRep : IsRepresentableByAlgebraicSpaces B S hS a)\n    (haSep : HasProperty B S hS (separatedProperty B S hS) a haRep)\n    (haLqf : HasProperty B S hS (locallyQuasiFiniteProperty B S hS) a haRep) :\n    ∃ hbRep : IsRepresentableByAlgebraicSpaces B S hS b,\n      yoneda.relativelyRepresentable b ∧\n        HasProperty B S hS (separatedProperty B S hS) b hbRep ∧\n          HasProperty B S hS (locallyQuasiFiniteProperty B S hS) b hbRep",
@@ -18049,7 +18049,7 @@
     {
      "name": "sheafPushforwardContinuous_reflectsMonomorphisms_of_isCoverDense",
      "kind": "theorem",
-     "line": 84,
+     "line": 85,
      "private": false,
      "doc": "**Stacks 04D9.** If `u : C ⥤ D` is a continuous functor between sites\nwhich is also cover dense (i.e. every object of `D` is covered by\nimages of objects of `C` under `u`), then the pushforward functor on\nsheaves `f_* : Sheaf K A ⥤ Sheaf J A` reflects monomorphisms. For sheaves of sets these are\nthe injections (Stacks 00WN); the componentwise form is\n`injective_app_of_injective_sheafPushforwardContinuous_map`.",
      "statement": "theorem sheafPushforwardContinuous_reflectsMonomorphisms_of_isCoverDense\n    [u.IsContinuous J K] [u.IsCoverDense K] :\n    (u.sheafPushforwardContinuous A J K).ReflectsMonomorphisms",
@@ -18063,7 +18063,7 @@
     {
      "name": "sheafPushforwardContinuous_reflectsEpimorphisms_of_isCoverDense",
      "kind": "theorem",
-     "line": 97,
+     "line": 98,
      "private": false,
      "doc": "**Stacks 04D9.** If `u : C ⥤ D` is a continuous functor between sites\nwhich is also cover dense (i.e. every object of `D` is covered by\nimages of objects of `C` under `u`), then the pushforward functor on\nsheaves `f_* : Sheaf K A ⥤ Sheaf J A` reflects epimorphisms. For sheaves of sets these are\nthe surjections (Stacks 00WN); the local form is\n`isLocallySurjective_of_isLocallySurjective_sheafPushforwardContinuous_map`.",
      "statement": "theorem sheafPushforwardContinuous_reflectsEpimorphisms_of_isCoverDense\n    [u.IsContinuous J K] [u.IsCoverDense K] :\n    (u.sheafPushforwardContinuous A J K).ReflectsEpimorphisms",
@@ -19011,7 +19011,7 @@
     {
      "name": "formally_unramified_local",
      "kind": "theorem",
-     "line": 312,
+     "line": 310,
      "private": false,
      "doc": "Formally unramified is a local property: for a ring map `R → S`, being formally\nunramified is equivalent to all the localized maps `R → S_𝔮` being formally\nunramified, which in turn is equivalent to all the maps `R_𝔭 → S_𝔮` (with\n`𝔭 = R ∩ 𝔮`) being formally unramified.",
      "statement": "theorem formally_unramified_local\n    (R S : Type*) [CommRing R] [CommRing S] [Algebra R S] :\n    List.TFAE\n      [ Algebra.FormallyUnramified R S,\n        ∀ (𝔮 : Ideal S) [𝔮.IsPrime],\n          Algebra.FormallyUnramified R (Localization.AtPrime 𝔮),\n        ∀ (𝔮 : Ideal S) [𝔮.IsPrime],\n          haveI : (𝔮.comap (algebraMap R S)).IsPrime := Ideal.IsPrime.comap _\n          haveI : 𝔮.LiesOver (𝔮.comap (algebraMap R S)) := ⟨rfl⟩\n          haveI : Algebra (Localization.AtPrime (𝔮.comap (algebraMap R S)))\n              (Localization.AtPrime 𝔮) := Localization.AtPrime.algebraOfLiesOver _ 𝔮\n          Algebra.FormallyUnramified\n            (Localization.AtPrime (𝔮.comap (algebraMap R S)))\n            (Localization.AtPrime 𝔮) ]",
@@ -19037,7 +19037,7 @@
     {
      "name": "Algebra.FormallyUnramified.localization_map",
      "file": "StacksFrontier/RingTheory/Unramified/Basic.lean",
-     "line": 67,
+     "line": 65,
      "tier": "StacksFrontier",
      "comment": "(1)",
      "ega": [],
@@ -19046,7 +19046,7 @@
     {
      "name": "Algebra.FormallyUnramified.of_isLocalization",
      "file": "StacksFrontier/RingTheory/Unramified/Basic.lean",
-     "line": 68,
+     "line": 66,
      "tier": "StacksFrontier",
      "comment": "(2), together with `Algebra.FormallyUnramified.comp`",
      "ega": [
@@ -19202,7 +19202,7 @@
      "line": 57,
      "private": false,
      "doc": "The stalk `F_u = colim_{{(U, x)}ᵒᵖ} F(U)` of a presheaf `F` at an arbitrary functor\n`u : C ⥤ Type w`: the colimit of `F(U)` over the opposite of the category of neighbourhoods\n`(U, x)`, `x ∈ u(U)`, of `u`.",
-     "statement": "noncomputable def presheafStalk (F : Cᵒᵖ ⥤ A) [HasColimit ((CategoryOfElements.π u).op ⋙ F)] : A",
+     "statement": "noncomputable def presheafStalk (F : Cᵒᵖ ⥤ A) [HasColimit ((Functor.Elements.π u).op ⋙ F)] : A",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -19216,7 +19216,7 @@
      "line": 62,
      "private": false,
      "doc": "The canonical map `F(U) ⟶ F_u` attached to a neighbourhood `(U, x)` of `u`.",
-     "statement": "noncomputable def toPresheafStalk (U : C) (x : u.obj U) (F : Cᵒᵖ ⥤ A)\n    [HasColimit ((CategoryOfElements.π u).op ⋙ F)] : F.obj (op U) ⟶ u.presheafStalk F",
+     "statement": "noncomputable def toPresheafStalk (U : C) (x : u.obj U) (F : Cᵒᵖ ⥤ A)\n    [HasColimit ((Functor.Elements.π u).op ⋙ F)] : F.obj (op U) ⟶ u.presheafStalk F",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -19230,7 +19230,7 @@
      "line": 71,
      "private": false,
      "doc": "The canonical maps are compatible with morphisms of neighbourhoods: for\n`α : (V, y) ⟶ (U, x)`, i.e. `α : V ⟶ U` with `u(α)(y) = x`, the class of `(U, x, s)` equals the\nclass of `(V, y, α^* s)`.",
-     "statement": "theorem toPresheafStalk_w {V U : C} (α : V ⟶ U) (y : u.obj V) (F : Cᵒᵖ ⥤ A)\n    [HasColimit ((CategoryOfElements.π u).op ⋙ F)] :\n    F.map α.op ≫ u.toPresheafStalk V y F = u.toPresheafStalk U (u.map α y) F",
+     "statement": "theorem toPresheafStalk_w {V U : C} (α : V ⟶ U) (y : u.obj V) (F : Cᵒᵖ ⥤ A)\n    [HasColimit ((Functor.Elements.π u).op ⋙ F)] :\n    F.map α.op ≫ u.toPresheafStalk V y F = u.toPresheafStalk U (u.map α y) F",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -19257,8 +19257,8 @@
      "kind": "def",
      "line": 114,
      "private": false,
-     "doc": "For a presheaf of sets, an element of the stalk `F_u` is the class of a triple `(U, x, s)`\nwith `(U, x)` a neighbourhood of `u` and `s ∈ F(U)`, for the equivalence relation generated by\n`(U, x, s) ∼ (V, y, α^* s)`: the quotient `Functor.ColimitType` of the diagram\n`(CategoryOfElements.π u).op ⋙ F`.",
-     "statement": "noncomputable def presheafStalkEquivColimitType :\n    u.presheafStalk F ≃ ((CategoryOfElements.π u).op ⋙ F).ColimitType",
+     "doc": "For a presheaf of sets, an element of the stalk `F_u` is the class of a triple `(U, x, s)`\nwith `(U, x)` a neighbourhood of `u` and `s ∈ F(U)`, for the equivalence relation generated by\n`(U, x, s) ∼ (V, y, α^* s)`: the quotient `Functor.ColimitType` of the diagram\n`(Functor.Elements.π u).op ⋙ F`.",
+     "statement": "noncomputable def presheafStalkEquivColimitType :\n    u.presheafStalk F ≃ ((Functor.Elements.π u).op ⋙ F).ColimitType",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -22864,7 +22864,7 @@
     {
      "name": "CategoryTheory.Sheaf.exists_over_equiv_sheaf",
      "kind": "theorem",
-     "line": 59,
+     "line": 60,
      "private": false,
      "doc": "**Stacks 04GZ: `Sh(C)/F` is a topos.** For a sheaf `F` on a site `(C, J)`, the slice\n`Sh(C)/F` is equivalent to the category of sheaves of sets on a site, namely the site `C/F` of\n`sheafOverEquivalence`.",
      "statement": "theorem _root_.CategoryTheory.Sheaf.exists_over_equiv_sheaf (F : Sheaf J (Type u)) :\n    ∃ (D : Type u) (_ : SmallCategory D) (K : GrothendieckTopology D),\n      Nonempty (Over F ≌ Sheaf K (Type u))",
@@ -22878,7 +22878,7 @@
     {
      "name": "MorphismOfTopoi.sheafOverLocalization",
      "kind": "def",
-     "line": 92,
+     "line": 93,
      "private": false,
      "doc": "**Stacks 04GZ.** Let `(C, J)` be a site and `F` a sheaf on it. The localization morphism\n`j_F : Sh(C)/F ⟶ Sh(C)` is the morphism of topoi with inverse image `j_F⁻¹ = toOver F`, i.e.\n`H ↦ (H × F ⟶ F)`, and pushforward `j_{F,*} = overLocalizationPushforward J F`, its right\nadjoint.",
      "statement": "noncomputable def sheafOverLocalization (F : Sheaf J (Type u)) :\n    MorphismOfTopoi (Over F) (Sheaf J (Type u))",
@@ -22892,7 +22892,7 @@
     {
      "name": "MorphismOfTopoi.sheafOverLocalization_inverseImage_obj",
      "kind": "lemma",
-     "line": 99,
+     "line": 100,
      "private": false,
      "doc": "**Stacks 04GZ (1).** The inverse image of `j_F : Sh(C)/F ⟶ Sh(C)` is\n`H ↦ (H × F ⟶ F)`.",
      "statement": "lemma sheafOverLocalization_inverseImage_obj (F H : Sheaf J (Type u)) :\n    (sheafOverLocalization J F).inverseImage.obj H = Over.mk (snd H F)",
@@ -22906,7 +22906,7 @@
     {
      "name": "MorphismOfTopoi.sheafOverLocalizationShriek",
      "kind": "def",
-     "line": 106,
+     "line": 107,
      "private": false,
      "doc": "**Stacks 04GZ (2).** The functor `j_{F!}` of `j_F : Sh(C)/F ⟶ Sh(C)` is the forgetful functor\n`(G ⟶ F) ↦ G`: it is left adjoint to `j_F⁻¹`.",
      "statement": "noncomputable def sheafOverLocalizationShriek (F : Sheaf J (Type u)) :\n    Over.forget F ⊣ (sheafOverLocalization J F).inverseImage",
@@ -22920,7 +22920,7 @@
     {
      "name": "MorphismOfTopoi.sheafOverLocalization_isLocalization",
      "kind": "theorem",
-     "line": 115,
+     "line": 116,
      "private": false,
      "doc": "**Stacks 04GZ: `j_F` is a localization.** The triple of adjoints\n`j_{F!} ⊣ j_F⁻¹ ⊣ j_{F,*}` of `j_F : Sh(C)/F ⟶ Sh(C)`, with `j_{F!} = Over.forget F` and\n`j_F⁻¹ = toOver F`, as in Section 7.25 (tag 00XZ).",
      "statement": "theorem sheafOverLocalization_isLocalization (F : Sheaf J (Type u)) :\n    Nonempty (Over.forget F ⊣ (sheafOverLocalization J F).inverseImage) ∧\n      Nonempty ((sheafOverLocalization J F).inverseImage ⊣\n        (sheafOverLocalization J F).pushforward) ∧\n      (sheafOverLocalization J F).inverseImage = toOver F",
@@ -24275,7 +24275,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.exists_fac_of_etale_of_isSepClosed",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 318,
+     "line": 319,
      "tier": "StacksFrontier",
      "comment": "converse: a geometric point ū of U over u with (U, ū) → (S, s̄)",
      "ega": [
@@ -27308,7 +27308,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.preservesFiniteLimits_ringedSitePullback_of_isFlat",
      "kind": "theorem",
-     "line": 1147,
+     "line": 1150,
      "private": false,
      "doc": "**Stacks 04JC for a morphism of ringed sites.** If `f` is flat — that is, if `O_C` is flat\nas an `f⁻¹O_D`-module — then the pullback `f^* : Mod(O_D) ⥤ Mod(O_C)` of sheaves of modules\npreserves finite limits.\n\nThis is `Stacks.Sheaves.RingedToposModules.pullbackModules_exact_of_isFlatMap` at the morphism\nof ringed topoi of `f`. That result is stated for the pullback built over the four-field\nmorphism of ringed topoi of the modules development, whereas `ringedSitePullback` is built over\nthe two-field morphism of Stacks 01D3; the two are left adjoints of one and the same direct\nimage, by `AlgebraicGeometry.RingedToposHom.pullbackAdjPushforwardModulesViaComparison` and\n`AlgebraicGeometry.RingedToposHom.pullbackAdjPushforwardModules`, so they are identified by\nuniqueness of left adjoints and left exactness transfers along that isomorphism.",
      "statement": "theorem preservesFiniteLimits_ringedSitePullback_of_isFlat\n    (hf : AlgebraicGeometry.SheafOfModules.IsFlatMapULift\n      f.ringedToposHom.fSharpInverseImage) :\n    Limits.PreservesFiniteLimits (ringedSitePullback f)",
@@ -27336,7 +27336,7 @@
     {
      "name": "Stacks.Sheaves.RingedToposModules.pullbackModules_exact_of_isFlatMap",
      "kind": "theorem",
-     "line": 369,
+     "line": 395,
      "private": false,
      "doc": "**Stacks 04JC**, second assertion. Pullback of sheaves of modules along a *flat* morphism\nof ringed topoi is exact: it preserves finite limits and finite colimits. The first assertion,\nexactness of the inverse image of abelian sheaves, is\n`CategoryTheory.Sites.abelianInverseImage_exact`.",
      "statement": "theorem pullbackModules_exact_of_isFlatMap (f : AlgebraicGeometry.RingedToposHom X Y)\n    (hf : AlgebraicGeometry.SheafOfModules.IsFlatMapULift.{w, u, v} f.fSharpInverseImage) :\n    exactFunctor (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O))\n      (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))\n      (f.toRingedToposModulesHom.pullbackModules)",
@@ -37144,7 +37144,7 @@
      "sga": [],
      "declared": {
       "file": "StacksFrontier/CategoryTheory/FiberedInGroupoids/Split.lean",
-      "line": 83
+      "line": 84
      }
     },
     {
@@ -37170,7 +37170,7 @@
      "sga": [],
      "declared": {
       "file": "StacksFrontier/CategoryTheory/FiberedInGroupoids/Split.lean",
-      "line": 92
+      "line": 93
      }
     },
     {
@@ -37832,7 +37832,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.size_pullback_le",
      "kind": "theorem",
-     "line": 364,
+     "line": 365,
      "private": false,
      "doc": "**Stacks 04T6.** The size of a fibre product of schemes is bounded by the maximum of the\nsizes of the two factors.",
      "statement": "theorem Scheme.size_pullback_le {X Y S : Scheme.{u}} (f : X ⟶ S) (g : Y ⟶ S) :\n    Scheme.size (pullback f g) ≤ max (Scheme.size X) (Scheme.size Y)",
@@ -38128,7 +38128,7 @@
     {
      "name": "CategoryTheory.Functor.IsSplitFiberedInGroupoids",
      "kind": "def",
-     "line": 92,
+     "line": 93,
      "private": false,
      "doc": "**Stacks 04TL.**\nA *split category fibred in groupoids* over `𝒞` is a category fibred in groupoids `p : 𝒮 ⥤ 𝒞`\nthat is isomorphic over `𝒞` to the category `𝒮_F` attached to some presheaf of groupoids\n`F : 𝒞ᵒᵖ ⥤ Grpd` (Stacks 0049). The source is explicit that isomorphism over `𝒞`, and not merely\nequivalence over `𝒞`, is meant.",
      "statement": "def Functor.IsSplitFiberedInGroupoids (p : 𝒮 ⥤ 𝒞) : Prop",

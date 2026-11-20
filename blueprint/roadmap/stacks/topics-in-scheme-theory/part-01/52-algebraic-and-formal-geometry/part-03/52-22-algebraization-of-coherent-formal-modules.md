@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.22 Algebraization of coherent formal modules, V
 
-Section 52.22 of the Stacks Project, [Tag 0EJH](https://stacks.math.columbia.edu/tag/0EJH). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.22 of the Stacks Project, [Tag 0EJH](https://stacks.math.columbia.edu/tag/0EJH). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EJI, a lemma
 
 [Tag 0EJI](https://stacks.math.columbia.edu/tag/0EJI) in the Stacks Project.
 
-**`Stacks.Algebraization.canonicallyExtends_of_cd_one_of_proIso_depthThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/CanonicalExtensionCdOneDepthThree.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/CanonicalExtensionCdOneDepthThree.lean#L102).
+**`Stacks.Algebraization.canonicallyExtends_of_cd_one_of_proIso_depthThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/CanonicalExtensionCdOneDepthThree.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/CanonicalExtensionCdOneDepthThree.lean#L102).
 
 > **Stacks Project, Tag 0EJI.** In Situation 0EHC let `(ℱₙ)` be an object of
 > `Coh(U, I𝒪_U)`. Assume (1) `A` has a dualizing complex and `cd(A, I) = 1`, and (2) `(ℱₙ)` is
@@ -41,7 +41,7 @@ theorem canonicallyExtends_of_cd_one_of_proIso_depthThree
 
 [Tag 0EJJ](https://stacks.math.columbia.edu/tag/0EJJ) in the Stacks Project.
 
-**`Stacks.Algebraization.extendsToX_of_cd_one_of_satisfiesDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean#L80). The attribute's comment: “(ℱₙ) extends to X”.
+**`Stacks.Algebraization.extendsToX_of_cd_one_of_satisfiesDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean#L80). The attribute's comment: “(ℱₙ) extends to X”.
 
 > **Stacks Project, Tag 0EJJ (algebraization in cohomological dimension one).** In Situation
 > 0EHC let `(ℱₙ)` be an object of `Coh(U, I𝒪_U)`. Assume (1) `A` has a dualizing complex and
@@ -57,7 +57,7 @@ public theorem extendsToX_of_cd_one_of_satisfiesDepthInequalities
     ExtendsToX S (toKerSystem S F)
 ```
 
-**`Stacks.Algebraization.isCompletion_of_cd_one_of_satisfiesDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean#L100). The attribute's comment: “in particular, for I-adically complete A, (ℱₙ) is the completion of a coherent 𝒪\_U-module”.
+**`Stacks.Algebraization.isCompletion_of_cd_one_of_satisfiesDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean, line 100](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean#L100). The attribute's comment: “in particular, for I-adically complete A, (ℱₙ) is the completion of a coherent 𝒪\_U-module”.
 
 > **Stacks Project, Tag 0EJJ, the final clause.** In the situation of Tag 0EJJ, if moreover `A`
 > is `I`-adically complete, then `(ℱₙ)` is the completion of a coherent `𝒪_U`-module.
@@ -76,7 +76,7 @@ public theorem isCompletion_of_cd_one_of_satisfiesDepthInequalities [IsAdicCompl
 
 [Tag 0EJK](https://stacks.math.columbia.edu/tag/0EJK) in the Stacks Project.
 
-**`Stacks.Algebraization.extendsToX_of_blowUp_fiber_dim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationBlowupFibres.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationBlowupFibres.lean#L410). The attribute's comment: “the whole statement: under (1) a dualizing complex, (2) fibres of the blowup of I of dimension ≤ d - 1, (3) the (d + 1, d + 2)-inequalities or the bound depth + dim + δ > d + 2, the object (ℱₙ) of Coh(U, I𝒪\_U) extends to X”.
+**`Stacks.Algebraization.extendsToX_of_blowUp_fiber_dim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationBlowupFibres.lean, line 410](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationBlowupFibres.lean#L410). The attribute's comment: “the whole statement: under (1) a dualizing complex, (2) fibres of the blowup of I of dimension ≤ d - 1, (3) the (d + 1, d + 2)-inequalities or the bound depth + dim + δ > d + 2, the object (ℱₙ) of Coh(U, I𝒪\_U) extends to X”.
 
 > **Stacks Project, Tag 0EJK.** In Situation [Stacks, Tag 0EHC] let `(ℱₙ)` be an object of
 > `Coh(U, I𝒪_U)`. Assume
@@ -115,7 +115,7 @@ theorem extendsToX_of_blowUp_fiber_dim_lt (F : Stacks.Coherent.CoherentAdicSyste
 
 [Tag 0EJN](https://stacks.math.columbia.edu/tag/0EJN) in the Stacks Project.
 
-**`Stacks.Algebraization.algebraization_of_zeroLocus_eq_range_of_depthBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGenerators.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGenerators.lean#L131). The attribute's comment: “the whole statement: (F\_n) extends to X, and over an I-adically complete A it is the completion of a coherent O\_U-module”.
+**`Stacks.Algebraization.algebraization_of_zeroLocus_eq_range_of_depthBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGenerators.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGenerators.lean#L131). The attribute's comment: “the whole statement: (F\_n) extends to X, and over an I-adically complete A it is the completion of a coherent O\_U-module”.
 
 > **Stacks Project, Tag 0EJN (Algebraization for ideals with few generators).** In Situation
 > 0EHC let `(ℱₙ)` be an object of `Coh(U, I𝒪_U)`. Assume (1) `A` has a dualizing complex, (2)
@@ -145,7 +145,7 @@ public theorem algebraization_of_zeroLocus_eq_range_of_depthBound
 
 [Tag 0EJP](https://stacks.math.columbia.edu/tag/0EJP) in the Stacks Project.
 
-**`Stacks.Algebraization.extendsToX_and_essImage_of_isCohenMacaulay_of_span_eq_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGeneratorsCohenMacaulay.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGeneratorsCohenMacaulay.lean#L94). The attribute's comment: “the whole statement: under hypotheses (1)-(6) the system extends to X, and over an I-adically complete A it is the completion of a coherent O\_U-module; the example in (6) is free\_localizedModule\_completedStalk\_of\_isFiniteLocallyFreeAdic”.
+**`Stacks.Algebraization.extendsToX_and_essImage_of_isCohenMacaulay_of_span_eq_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGeneratorsCohenMacaulay.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGeneratorsCohenMacaulay.lean#L94). The attribute's comment: “the whole statement: under hypotheses (1)-(6) the system extends to X, and over an I-adically complete A it is the completion of a coherent O\_U-module; the example in (6) is free\_localizedModule\_completedStalk\_of\_isFiniteLocallyFreeAdic”.
 
 > **Stacks Project, Tag 0EJP.** In Situation 0EHC let `(ℱₙ)` be an object of `Coh(U, I𝒪_U)`.
 > Assume
@@ -189,4 +189,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.22, Tag 0EJH](https://stacks.math.columbia.edu/tag/0EJH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

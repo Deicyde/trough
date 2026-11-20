@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.62 Derived pushforward of quasi-coherent modules
 
-Section 110.62 of the Stacks Project, [Tag 07DC](https://stacks.math.columbia.edu/tag/07DC). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.62 of the Stacks Project, [Tag 07DC](https://stacks.math.columbia.edu/tag/07DC). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08IY, a lemma
 
 [Tag 08IY](https://stacks.math.columbia.edu/tag/08IY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isDerivedLimit_truncGETower_of_lqcohSheafFbc_algebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafLqcFbcDerivedLimitOfTruncations.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafLqcFbcDerivedLimitOfTruncations.lean#L97). The attribute's comment: “K is the derived limit of its canonical truncations from below: the distinguished triangle K → ∏ τ\_\{≥ -n}K → ∏ τ\_\{≥ -n}K → K[1] in D(𝒪\_𝒳), for an algebraic stack 𝒳 and a complex of fppf 𝒪\_𝒳-modules whose cohomology sheaves are locally quasi-coherent with the flat base change property of 0762, read with the inverse image of sheaves of modules”.
+**`AlgebraicGeometry.Stack.exists_isDerivedLimit_truncGETower_of_lqcohSheafFbc_algebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafLqcFbcDerivedLimitOfTruncations.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafLqcFbcDerivedLimitOfTruncations.lean#L97). The attribute's comment: “K is the derived limit of its canonical truncations from below: the distinguished triangle K → ∏ τ\_\{≥ -n}K → ∏ τ\_\{≥ -n}K → K[1] in D(𝒪\_𝒳), for an algebraic stack 𝒳 and a complex of fppf 𝒪\_𝒳-modules whose cohomology sheaves are locally quasi-coherent with the flat base change property of 0762, read with the inverse image of sheaves of modules”.
 
 > **Stacks 08IY.** Let `𝒳` be an algebraic stack and let `K` be an object of `D(𝒪_𝒳)`, the
 > derived category of the sheaves of `𝒪_𝒳`-modules on the fppf site of `𝒳`, whose cohomology
@@ -53,7 +53,7 @@ theorem exists_isDerivedLimit_truncGETower_of_lqcohSheafFbc_algebraicStack
 
 [Tag 08IZ](https://stacks.math.columbia.edu/tag/08IZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isIso_coproductToProduct_shiftedSingleFamily_algebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ShiftedSumOfModulesAlgebraicStack.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ShiftedSumOfModulesAlgebraicStack.lean#L108). The attribute's comment: “for an algebraic stack 𝒳 and a family (ℱ\_n)\_\{n ≥ 0} of locally quasi-coherent fppf 𝒪\_𝒳-modules with the flat base change property of 0762 (read with the inverse image of sheaves of modules), the canonical map ⊕\_n ℱ\_n[n] → ∏\_n ℱ\_n[n] is an isomorphism in D(𝒪\_𝒳); the index n runs over n ≥ 0, the case the section applies”.
+**`AlgebraicGeometry.Stack.isIso_coproductToProduct_shiftedSingleFamily_algebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ShiftedSumOfModulesAlgebraicStack.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ShiftedSumOfModulesAlgebraicStack.lean#L108). The attribute's comment: “for an algebraic stack 𝒳 and a family (ℱ\_n)\_\{n ≥ 0} of locally quasi-coherent fppf 𝒪\_𝒳-modules with the flat base change property of 0762 (read with the inverse image of sheaves of modules), the canonical map ⊕\_n ℱ\_n[n] → ∏\_n ℱ\_n[n] is an isomorphism in D(𝒪\_𝒳); the index n runs over n ≥ 0, the case the section applies”.
 
 > **Stacks 08IZ.** Let `𝒳` be an algebraic stack and let `ℱ_n`, `n ≥ 0`, be sheaves of
 > `𝒪_𝒳`-modules on its big fppf site which are locally quasi-coherent (**Stacks 06WJ**) and have
@@ -86,7 +86,7 @@ theorem isIso_coproductToProduct_shiftedSingleFamily_algebraicStack
 
 [Tag 07DD](https://stacks.math.columbia.edu/tag/07DD) in the Stacks Project.
 
-**`Stacks.Examples.UnboundedDerivedPushforward.not_forall_derivedPushforward_mem_derivedLocallyQuasicoherentFlatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardCounterexample.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardCounterexample.lean#L348). The attribute's comment: “D\_QCoh is read through the subcategory D\_LQCoh^fbc of D(O) whose Verdier quotient it is (Tag 07B6), and Rf\_* is the unbounded total derived direct image; the witness is the counterexample of Tag 07DC with p = 2”.
+**`Stacks.Examples.UnboundedDerivedPushforward.not_forall_derivedPushforward_mem_derivedLocallyQuasicoherentFlatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardCounterexample.lean, line 348](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardCounterexample.lean#L348). The attribute's comment: “D\_QCoh is read through the subcategory D\_LQCoh^fbc of D(O) whose Verdier quotient it is (Tag 07B6), and Rf\_* is the unbounded total derived direct image; the witness is the counterexample of Tag 07DC with p = 2”.
 
 > **Stacks 07DD.** A quasi-compact, quasi-separated morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks
 > need not send `D_{LQCoh^fbc}(𝒪_𝒳)` into `D_{LQCoh^fbc}(𝒪_𝒴)` under the unbounded derived direct
@@ -112,7 +112,7 @@ theorem not_forall_derivedPushforward_mem_derivedLocallyQuasicoherentFlatBaseCha
             ((fppfDerivedPushforwardOfStacks B S hS f).obj K)
 ```
 
-**`Stacks.Examples.UnboundedDerivedPushforward.exists_not_derivedCategoryB_lqcFbcFppf_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardStacks.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardStacks.lean#L113). The attribute's comment: “for the source's example: f : [Spec k[x]/(Z/pZ)] -> Spec k[x] with char k = p, over any big fppf site containing Spec k[x], E = sum of O\_X[m] in D\_LQCoh^fbc(O\_X) and Rf\_*E not in D\_LQCoh^fbc(O\_S), with LQCoh^fbc the class of the Verdier quotient D\_QCoh of 07B6 and Rf\_* the unbounded total derived direct image”.
+**`Stacks.Examples.UnboundedDerivedPushforward.exists_not_derivedCategoryB_lqcFbcFppf_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardStacks.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardStacks.lean#L114). The attribute's comment: “for the source's example: f : [Spec k[x]/(Z/pZ)] -> Spec k[x] with char k = p, over any big fppf site containing Spec k[x], E = sum of O\_X[m] in D\_LQCoh^fbc(O\_X) and Rf\_*E not in D\_LQCoh^fbc(O\_S), with LQCoh^fbc the class of the Verdier quotient D\_QCoh of 07B6 and Rf\_* the unbounded total derived direct image”.
 
 > **Stacks 07DD**, for the source's own example. Let `k` be a field of characteristic `p > 0`,
 > `S = Spec k[x]`, and let `𝒞` be any big fppf site containing `S`. The classifying stack
@@ -143,7 +143,7 @@ theorem exists_not_derivedCategoryB_lqcFbcFppf_derivedPushforward (p : ℕ) [Fac
               ((fppfModulesDerivedPushforward 𝒞 _ hS f).obj E)
 ```
 
-**`Stacks.Examples.UnboundedDerivedPushforward.exists_isQuasiCompact_isQuasiSeparated_not_derivedCategoryB_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardStacks.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardStacks.lean#L154). The attribute's comment: “Rf\_* does not carry D\_LQCoh^fbc(O\_X) into D\_LQCoh^fbc(O\_Y) for some qcqs f of algebraic stacks, so it does not induce D\_QCoh(O\_X) -> D\_QCoh(O\_Y) on the Verdier quotients of 07B6; Rf\_* is the unbounded total derived direct image”.
+**`Stacks.Examples.UnboundedDerivedPushforward.exists_isQuasiCompact_isQuasiSeparated_not_derivedCategoryB_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardStacks.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Examples/UnboundedDerivedPushforwardStacks.lean#L155). The attribute's comment: “Rf\_* does not carry D\_LQCoh^fbc(O\_X) into D\_LQCoh^fbc(O\_Y) for some qcqs f of algebraic stacks, so it does not induce D\_QCoh(O\_X) -> D\_QCoh(O\_Y) on the Verdier quotients of 07B6; Rf\_* is the unbounded total derived direct image”.
 
 > **Stacks 07DD.** A quasi-compact and quasi-separated morphism `f : 𝒳 ⟶ 𝒴` of algebraic
 > stacks need not induce a functor `Rf_* : D_QCoh(𝒪_𝒳) ⟶ D_QCoh(𝒪_𝒴)`: there are a big fppf site
@@ -172,4 +172,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.62, Tag 07DC](https://stacks.math.columbia.edu/tag/07DC)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.34 Zariski's Main Theorem
 
-Section 76.34 of the Stacks Project, [Tag 05W7](https://stacks.math.columbia.edu/tag/05W7). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.34 of the Stacks Project, [Tag 05W7](https://stacks.math.columbia.edu/tag/05W7). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 082I, a lemma
 
 [Tag 082I](https://stacks.math.columbia.edu/tag/082I) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRelativeNormalization.isIso_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQuasiFiniteLocus.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQuasiFiniteLocus.lean#L118). The attribute's comment: “the isomorphism conclusion when f is integral: the canonical morphism to the normalization is an isomorphism, so the open subspace may be taken to be the whole normalization”.
+**`AlgebraicGeometry.Space.IsRelativeNormalization.isIso_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQuasiFiniteLocus.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQuasiFiniteLocus.lean#L118). The attribute's comment: “the isomorphism conclusion when f is integral: the canonical morphism to the normalization is an isomorphism, so the open subspace may be taken to be the whole normalization”.
 
 > **Stacks 082I, the isomorphism conclusion for an integral morphism.** Let `f : X ⟶ Y` be an
 > integral morphism of algebraic spaces over `S` and let `ν : Y' ⟶ Y`, `f' : X ⟶ Y'` be the
@@ -31,7 +31,7 @@ theorem isIso_of_isIntegralHom (h : IsRelativeNormalization B S hS f ν f')
     (hf : IsIntegralHom B S hS f) : IsIso f'
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isIso_fromPreimage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQuasiFiniteLocus.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQuasiFiniteLocus.lean#L141). The attribute's comment: “both numbered conclusions in the case of a finite morphism, with the open subspace the whole normalization”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isIso_fromPreimage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQuasiFiniteLocus.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQuasiFiniteLocus.lean#L141). The attribute's comment: “both numbered conclusions in the case of a finite morphism, with the open subspace the whole normalization”.
 
 > **Stacks 082I for a finite morphism.** Let `f : X ⟶ Y` be a finite morphism of algebraic
 > spaces over `S` and let `ν : Y' ⟶ Y`, `f' : X ⟶ Y'` be the normalization of `Y` in `X`. Then
@@ -54,7 +54,7 @@ theorem exists_isOpenSubspace_isIso_fromPreimage_of_isFinite
           IsQuasiFiniteAt B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.IsRelativeNormalization.exists_isOpenSubspace_isIso_fromPreimage_and_range_pointsMap_preimage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteTypeSeparated.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteTypeSeparated.lean#L284). The attribute's comment: “both numbered conclusions, for every factorization of f with the universal property of Tag 0823 (the normalization of Y in X)”.
+**`AlgebraicGeometry.Space.IsRelativeNormalization.exists_isOpenSubspace_isIso_fromPreimage_and_range_pointsMap_preimage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteTypeSeparated.lean, line 284](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteTypeSeparated.lean#L284). The attribute's comment: “both numbered conclusions, for every factorization of f with the universal property of Tag 0823 (the normalization of Y in X)”.
 
 > **Stacks 082I.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is of
 > finite type and separated, and let `ν : Y' ⟶ Y`, `f' : X ⟶ Y'` be the normalization of `Y` in
@@ -80,7 +80,7 @@ theorem exists_isOpenSubspace_isIso_fromPreimage_and_range_pointsMap_preimage_eq
         {x : points B S hS X | IsQuasiFiniteAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isIso_fromPreimage_toNormalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteTypeSeparated.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteTypeSeparated.lean#L388). The attribute's comment: “both numbered conclusions, at the normalization of Y in X constructed in Definition 0822”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isIso_fromPreimage_toNormalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteTypeSeparated.lean, line 388](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteTypeSeparated.lean#L388). The attribute's comment: “both numbered conclusions, at the normalization of Y in X constructed in Definition 0822”.
 
 > **Stacks 082I, at the normalization of Definition 0822.** Let `f : X ⟶ Y` be a morphism of
 > algebraic spaces over `S` which is of finite type and separated, and let `X ⟶ Y' ⟶ Y` be the
@@ -109,7 +109,7 @@ theorem exists_isOpenSubspace_isIso_fromPreimage_toNormalizationInQcqs
 
 [Tag 082J](https://stacks.math.columbia.edu/tag/082J) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NormalizationInData.isIntegralHom_fromNorm_of_isQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean#L290). The attribute's comment: “the normalization morphism is integral”.
+**`AlgebraicGeometry.Space.NormalizationInData.isIntegralHom_fromNorm_of_isQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean#L290). The attribute's comment: “the normalization morphism is integral”.
 
 > **Stacks 0ABS and 082J, integrality of the normalization morphism.** Let `f : X ⟶ Y` be a
 > quasi-finite separated morphism of algebraic spaces over `S` and let `ν : Y' ⟶ Y`,
@@ -128,7 +128,7 @@ theorem isIntegralHom_fromNorm_of_isQuasiFinite_isSeparated
     IsIntegralHom B S hS N.fromNorm
 ```
 
-**`AlgebraicGeometry.Space.NormalizationInData.isOpenImmersion_toNorm_of_isQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean#L311). The attribute's comment: “the canonical morphism to the normalization is an open immersion”.
+**`AlgebraicGeometry.Space.NormalizationInData.isOpenImmersion_toNorm_of_isQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean, line 311](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean#L311). The attribute's comment: “the canonical morphism to the normalization is an open immersion”.
 
 > **Stacks 0ABS and 082J, the open immersion.** Let `f : X ⟶ Y` be a quasi-finite separated
 > morphism
@@ -148,7 +148,7 @@ theorem isOpenImmersion_toNorm_of_isQuasiFinite_isSeparated
     IsOpenImmersion B S hS N.toNorm
 ```
 
-**`AlgebraicGeometry.Space.NormalizationInData.isQuasiCompact_toNorm_of_isQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean#L342). The attribute's comment: “the canonical morphism to the normalization is quasi-compact”.
+**`AlgebraicGeometry.Space.NormalizationInData.isQuasiCompact_toNorm_of_isQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean, line 342](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean#L342). The attribute's comment: “the canonical morphism to the normalization is quasi-compact”.
 
 > **Stacks 0ABS and 082J, quasi-compactness of the open immersion.** Let `f : X ⟶ Y` be a
 > quasi-finite
@@ -166,7 +166,7 @@ theorem isQuasiCompact_toNorm_of_isQuasiFinite_isSeparated
     IsQuasiCompact B S hS N.toNorm
 ```
 
-**`AlgebraicGeometry.Space.isQuasiAffineHom_of_isQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean#L369). The attribute's comment: “a quasi-finite separated morphism is quasi-affine”. References: EGA IV (18.12.12), “more general”; EGA IV (8.11.2), “more general”.
+**`AlgebraicGeometry.Space.isQuasiAffineHom_of_isQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean, line 369](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremQuasiFinite.lean#L369). The attribute's comment: “a quasi-finite separated morphism is quasi-affine”. References: EGA IV (18.12.12), “more general”; EGA IV (8.11.2), “more general”.
 
 > **Stacks 0ABS and 082J, quasi-affineness.** A quasi-finite separated morphism of algebraic
 > spaces
@@ -188,7 +188,7 @@ theorem isQuasiAffineHom_of_isQuasiFinite_isSeparated
 
 [Tag 082K](https://stacks.math.columbia.edu/tag/082K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenImmersion_isFinite_comp_eq_of_isQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteFactorization.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteFactorization.lean#L75).
+**`AlgebraicGeometry.Space.exists_isOpenImmersion_isFinite_comp_eq_of_isQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteFactorization.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFiniteFactorization.lean#L75).
 
 > **Stacks 082K, Zariski's main theorem, the finite factorization.** Let
 > `f : X ⟶ Y` be a quasi-finite separated morphism of algebraic spaces over `S`, with `Y`
@@ -210,7 +210,7 @@ theorem exists_isOpenImmersion_isFinite_comp_eq_of_isQuasiFinite
 
 [Tag 0874](https://stacks.math.columbia.edu/tag/0874) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenImmersion_isFinitePresentation_comp_eq_of_isQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFinitePresentationUnconditional.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFinitePresentationUnconditional.lean#L51).
+**`AlgebraicGeometry.Space.exists_isOpenImmersion_isFinitePresentation_comp_eq_of_isQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFinitePresentationUnconditional.lean, line 51](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiMainTheoremFinitePresentationUnconditional.lean#L51).
 
 > **Stacks 0874.** Let `f : X ⟶ Y` be a quasi-finite separated morphism of algebraic spaces
 > over `S` which is locally of finite presentation, with `Y` quasi-compact and quasi-separated.
@@ -237,4 +237,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.34, Tag 05W7](https://stacks.math.columbia.edu/tag/05W7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

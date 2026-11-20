@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.22 Finite étale covers of punctured spectra, II
 
-Section 58.22 of the Stacks Project, [Tag 0BLU](https://stacks.math.columbia.edu/tag/0BLU). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 58.22 of the Stacks Project, [Tag 0BLU](https://stacks.math.columbia.edu/tag/0BLU). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BLN, a lemma
 
 [Tag 0BLN](https://stacks.math.columbia.edu/tag/0BLN) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.HasLargeMissingComponents.mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L260). The attribute's comment: “stability of the dimension hypothesis under shrinking `U'`”.
+**`AlgebraicGeometry.LocalLefschetzSituation.HasLargeMissingComponents.mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L260). The attribute's comment: “stability of the dimension hypothesis under shrinking `U'`”.
 
 > The dimension condition passes to smaller opens: a minimal prime in the smaller open lies in
 > the larger one.
@@ -25,7 +25,7 @@ theorem HasLargeMissingComponents.mono {S : LocalLefschetzSituation.{u}} {W W' :
     S.HasLargeMissingComponents W'
 ```
 
-**`AlgebraicGeometry.LocalLefschetzSituation.faithful_finiteEtaleBaseChange_of_hasLargeMissingComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L283). The attribute's comment: “faithfulness of restriction from an open `U'` with `U₀ ⊆ U' ⊆ U`”.
+**`AlgebraicGeometry.LocalLefschetzSituation.faithful_finiteEtaleBaseChange_of_hasLargeMissingComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 283](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L283). The attribute's comment: “faithfulness of restriction from an open `U'` with `U₀ ⊆ U' ⊆ U`”.
 
 > **Stacks Project, Tag 0BLN.** In the local Lefschetz situation let `U'` be an open of `X`
 > with `U₀ ⊆ U' ⊆ U`. If every minimal prime of `A` lying in `U'` but not in `U₀` has
@@ -39,7 +39,7 @@ theorem faithful_finiteEtaleBaseChange_of_hasLargeMissingComponents
     (finiteEtaleBaseChange r).Faithful
 ```
 
-**`AlgebraicGeometry.LocalLefschetzSituation.exists_hasLargeMissingComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L342). The attribute's comment: “existence of an open `U'` with `U₀ ⊆ U' ⊆ U` satisfying the dimension hypothesis”.
+**`AlgebraicGeometry.LocalLefschetzSituation.exists_hasLargeMissingComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 342](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L342). The attribute's comment: “existence of an open `U'` with `U₀ ⊆ U' ⊆ U` satisfying the dimension hypothesis”.
 
 > **Stacks Project, Tag 0BLN.** In the local Lefschetz situation there is an open `U'` of `X`
 > with `U₀ ⊆ U' ⊆ U` satisfying the dimension hypothesis: remove from `U` the one-dimensional
@@ -51,7 +51,7 @@ theorem exists_hasLargeMissingComponents (S : LocalLefschetzSituation.{u}) :
       S.HasLargeMissingComponents W
 ```
 
-**`AlgebraicGeometry.LocalLefschetzSituation.exists_le_faithful_finiteEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L419). The attribute's comment: “cofinality of the faithful neighbourhoods of `U₀` in `U`, the criterion for faithfulness of restriction from the colimit over all such neighbourhoods”.
+**`AlgebraicGeometry.LocalLefschetzSituation.exists_le_faithful_finiteEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 419](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L419). The attribute's comment: “cofinality of the faithful neighbourhoods of `U₀` in `U`, the criterion for faithfulness of restriction from the colimit over all such neighbourhoods”.
 
 > **Stacks Project, Tag 0BLN.** The opens `U'` with `U₀ ⊆ U' ⊆ U` for which restriction of
 > finite étale covers to `U₀` is faithful are cofinal among all opens between `U₀` and `U`: this
@@ -64,7 +64,7 @@ theorem exists_le_faithful_finiteEtaleBaseChange (S : LocalLefschetzSituation.{u
       W ≤ V ∧ (finiteEtaleBaseChange (S.homToOpen hWU₀)).Faithful
 ```
 
-**`AlgebraicGeometry.LocalLefschetzSituation.exists_le_finiteEtaleBaseChange_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L434). The attribute's comment: “faithfulness of restriction from the colimit over the opens between `U₀` and `U`, written out on representatives of the filtered colimit”.
+**`AlgebraicGeometry.LocalLefschetzSituation.exists_le_finiteEtaleBaseChange_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 434](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L434). The attribute's comment: “faithfulness of restriction from the colimit over the opens between `U₀` and `U`, written out on representatives of the filtered colimit”.
 
 > **Stacks Project, Tag 0BLN.** Two morphisms of finite étale covers of an open `U'` with
 > `U₀ ⊆ U' ⊆ U` which agree after base change to `U₀` already agree after base change to some
@@ -86,7 +86,7 @@ theorem exists_le_finiteEtaleBaseChange_map_eq (S : LocalLefschetzSituation.{u})
 
 [Tag 0DXX](https://stacks.math.columbia.edu/tag/0DXX) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.finiteEtaleColimitFullyFaithful_puncturedSpectrum_of_three_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ReducedThickening/ThreeDimensionalReduction.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ReducedThickening/ThreeDimensionalReduction.lean#L318). The attribute's comment: “the whole statement, under the source's hypotheses only: a dualizing complex and f-adic completeness, and dimension at least three for every irreducible component of X not contained in the zero locus of f”.
+**`Stacks.FundamentalGroup.finiteEtaleColimitFullyFaithful_puncturedSpectrum_of_three_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ReducedThickening/ThreeDimensionalReduction.lean, line 318](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ReducedThickening/ThreeDimensionalReduction.lean#L318). The attribute's comment: “the whole statement, under the source's hypotheses only: a dualizing complex and f-adic completeness, and dimension at least three for every irreducible component of X not contained in the zero locus of f”.
 
 > **Restriction of finite étale covers from the neighbourhoods of `U₀` in `U` is fully
 > faithful.**  Let `(A, 𝔪)` be a Noetherian local ring, `f ∈ A`, `X = Spec A`, `X₀ = V(f)`,
@@ -122,7 +122,7 @@ theorem finiteEtaleColimitFullyFaithful_puncturedSpectrum_of_three_le_ringKrullD
 
 [Tag 0BLP](https://stacks.math.columbia.edu/tag/0BLP) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.finiteEtaleColimitFullyFaithful_puncturedSpectrum_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PuncturedSpectrumFiniteEtaleFullyFaithful.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PuncturedSpectrumFiniteEtaleFullyFaithful.lean#L146). The attribute's comment: “the full statement, proved from the tag's three hypotheses through 0EKV and 0ELA”.
+**`Stacks.FundamentalGroup.finiteEtaleColimitFullyFaithful_puncturedSpectrum_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PuncturedSpectrumFiniteEtaleFullyFaithful.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PuncturedSpectrumFiniteEtaleFullyFaithful.lean#L147). The attribute's comment: “the full statement, proved from the tag's three hypotheses through 0EKV and 0ELA”.
 
 > **[Stacks, Tag 0BLP].** In Situation [Stacks, Tag 0BLF] — a Noetherian local ring `(A, 𝔪)`
 > and `f ∈ 𝔪`, with `U = Spec(A) ∖ {𝔪}` the punctured spectrum and `U₀ = U ∩ V(f)` the closed
@@ -162,4 +162,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.22, Tag 0BLU](https://stacks.math.columbia.edu/tag/0BLU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

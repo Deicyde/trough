@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.38 Scheme theoretic image
 
-Section 101.38 of the Stacks Project, [Tag 0CMH](https://stacks.math.columbia.edu/tag/0CMH). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.38 of the Stacks Project, [Tag 0CMH](https://stacks.math.columbia.edu/tag/0CMH). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CMI, a definition
 
 [Tag 0CMI](https://stacks.math.columbia.edu/tag/0CMI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsSchemeTheoreticImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L155). References: EGA I (9.5.3).
+**`AlgebraicGeometry.Stack.IsSchemeTheoreticImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L155). References: EGA I (9.5.3).
 
 > **Stacks 0CMI.** A property of the objects of `𝒴` is *the scheme theoretic image* of a
 > 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` when it cuts out a closed substack of `𝒴`
@@ -30,7 +30,7 @@ def IsSchemeTheoreticImage {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : 𝒳
 
 [Tag 0CMJ](https://stacks.math.columbia.edu/tag/0CMJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasSchemeTheoreticImage_comp_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L250). The attribute's comment: “existence\_iff”.
+**`AlgebraicGeometry.Stack.hasSchemeTheoreticImage_comp_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L250). The attribute's comment: “existence\_iff”.
 
 > **Stacks 0CMJ**, the existence assertion. Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic
 > stacks over `S` and let `g : 𝒲 ⟶ 𝒳` be a surjective, flat 1-morphism locally of finite
@@ -46,7 +46,7 @@ theorem hasSchemeTheoreticImage_comp_iff {𝒲 𝒳 𝒴 : AlgebraicStacks.{u, w
     HasSchemeTheoreticImage f ↔ HasSchemeTheoreticImage (g ≫ f)
 ```
 
-**`AlgebraicGeometry.Stack.eq_of_isSchemeTheoreticImage_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L264). The attribute's comment: “images\_equal”.
+**`AlgebraicGeometry.Stack.eq_of_isSchemeTheoreticImage_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 264](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L264). The attribute's comment: “images\_equal”.
 
 > **Stacks 0CMJ**, the agreement of the two images. Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of
 > algebraic stacks over `S` and let `g : 𝒲 ⟶ 𝒳` be a surjective, flat 1-morphism locally of finite
@@ -67,7 +67,7 @@ theorem eq_of_isSchemeTheoreticImage_comp {𝒲 𝒳 𝒴 : AlgebraicStacks.{u, 
 
 [Tag 0CPU](https://stacks.math.columbia.edu/tag/0CPU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.schemeTheoreticImageCandidate_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean#L94). The attribute's comment: “minimality of the candidate image”.
+**`AlgebraicGeometry.Stack.schemeTheoreticImageCandidate_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean#L94). The attribute's comment: “minimality of the candidate image”.
 
 > Minimality of the candidate image: the intersection of the closed substacks through which `f`
 > factors is contained in each of them.
@@ -78,7 +78,7 @@ theorem schemeTheoreticImageCandidate_le {𝒳 𝒴 : AlgebraicStacks.{u, w} B S
     (hfac : FactorsThroughSubstack f Q) : schemeTheoreticImageCandidate f ≤ Q
 ```
 
-**`AlgebraicGeometry.Stack.factorsThroughSubstack_schemeTheoreticImageCandidate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean#L144). The attribute's comment: “the candidate image factors f”.
+**`AlgebraicGeometry.Stack.factorsThroughSubstack_schemeTheoreticImageCandidate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean#L144). The attribute's comment: “the candidate image factors f”.
 
 > The factorization through the candidate image: `f` factors through the intersection of the
 > closed substacks of `𝒴` through which it factors, because factoring through a strictly full
@@ -90,7 +90,7 @@ theorem factorsThroughSubstack_schemeTheoreticImageCandidate
     FactorsThroughSubstack f (schemeTheoreticImageCandidate f)
 ```
 
-**`AlgebraicGeometry.Stack.hasSchemeTheoreticImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean#L201).
+**`AlgebraicGeometry.Stack.hasSchemeTheoreticImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageExistence.lean#L201).
 
 > **Stacks 0CPU.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. Then the
 > scheme theoretic image of `f` exists: there is a smallest closed substack of `𝒴` through which
@@ -105,7 +105,7 @@ theorem hasSchemeTheoreticImage {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f :
 
 [Tag 0CPV](https://stacks.math.columbia.edu/tag/0CPV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.le_inverseImage_of_isSchemeTheoreticImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L570). The attribute's comment: “containment”.
+**`AlgebraicGeometry.Stack.le_inverseImage_of_isSchemeTheoreticImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 570](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L570). The attribute's comment: “containment”.
 
 > **Stacks 0CPV**, the containment that induces the morphism. Let a commutative square of
 > algebraic stacks over `S` be given, with horizontal 1-morphisms `f₁ : 𝒳₁ ⟶ 𝒴₁`, `f₂ : 𝒳₂ ⟶ 𝒴₂`
@@ -125,7 +125,7 @@ theorem le_inverseImage_of_isSchemeTheoreticImage {f₁ : 𝒳₁ ⟶ 𝒴₁} {
     P₁ ≤ P₂.inverseImage b.hom.hom.toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.schemeTheoreticImageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L583). The attribute's comment: “induced\_morphism”.
+**`AlgebraicGeometry.Stack.schemeTheoreticImageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 583](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L583). The attribute's comment: “induced\_morphism”.
 
 > **Stacks 0CPV**, the induced 1-morphism. The 1-morphism `b : 𝒴₁ ⟶ 𝒴₂` of a commutative
 > square of algebraic stacks carries the scheme theoretic image of `f₁` into the scheme theoretic
@@ -140,7 +140,7 @@ def schemeTheoreticImageMap {f₁ : 𝒳₁ ⟶ 𝒴₁} {f₂ : 𝒳₂ ⟶ �
       fullSubcategoryAlgebraicStack 𝒴₂ P₂ h₂.isAlgebraicStack
 ```
 
-**`AlgebraicGeometry.Stack.schemeTheoreticImageMap_comp_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L595). The attribute's comment: “inclusion\_square”.
+**`AlgebraicGeometry.Stack.schemeTheoreticImageMap_comp_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 595](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L595). The attribute's comment: “inclusion\_square”.
 
 > **Stacks 0CPV**, the right-hand square of the induced diagram: the induced 1-morphism
 > `𝒵₁ ⟶ 𝒵₂` composed with the inclusion `𝒵₂ ⟶ 𝒴₂` is the inclusion `𝒵₁ ⟶ 𝒴₁` followed by `b`.
@@ -154,7 +154,7 @@ theorem schemeTheoreticImageMap_comp_inclusion {f₁ : 𝒳₁ ⟶ 𝒴₁} {f�
       fullSubcategoryInclusion 𝒴₁ P₁ h₁.isAlgebraicStack ≫ b
 ```
 
-**`AlgebraicGeometry.Stack.schemeTheoreticImageMapFactorizationSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 611](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L611). The attribute's comment: “factorization\_square”.
+**`AlgebraicGeometry.Stack.schemeTheoreticImageMapFactorizationSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean, line 611](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImage.lean#L611). The attribute's comment: “factorization\_square”.
 
 > **Stacks 0CPV**, the left-hand square of the induced diagram. Let `kᵢ : 𝒳ᵢ ⟶ 𝒵ᵢ` be
 > factorizations of `fᵢ` through the scheme theoretic images. Then the induced 1-morphism
@@ -180,7 +180,7 @@ noncomputable def schemeTheoreticImageMapFactorizationSquare {f₁ : 𝒳₁ ⟶
 
 [Tag 0CMK](https://stacks.math.columbia.edu/tag/0CMK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.schemeTheoreticImageCandidate_le_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean#L150). The attribute's comment: “containment”.
+**`AlgebraicGeometry.Stack.schemeTheoreticImageCandidate_le_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean#L150). The attribute's comment: “containment”.
 
 > **The easy containment of Stacks 0CMK, for any 2-commutative square.** Let `f : 𝒳 ⟶ 𝒴` and
 > `b : 𝒴' ⟶ 𝒴` be 1-morphisms of algebraic stacks over `S` and let `sq` be a 2-commutative square
@@ -204,7 +204,7 @@ public theorem schemeTheoreticImageCandidate_le_inverseImage (f : 𝒳 ⟶ 𝒴)
       (schemeTheoreticImageCandidate f).inverseImage b.hom.hom.toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.schemeTheoreticImageCandidate_inverseImage_fullSubcategoryInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean#L174). The attribute's comment: “closed\_substack\_case”.
+**`AlgebraicGeometry.Stack.schemeTheoreticImageCandidate_inverseImage_fullSubcategoryInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean, line 174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean#L174). The attribute's comment: “closed\_substack\_case”.
 
 > **Stacks 0CMK for the inclusion of a closed substack.** Let `P` cut out a closed substack of
 > `𝒴₂` and let `b : 𝒴₁ ⟶ 𝒴₂` be any 1-morphism of algebraic stacks over `S`. The base change of the
@@ -229,7 +229,7 @@ public theorem schemeTheoreticImageCandidate_inverseImage_fullSubcategoryInclusi
         b.hom.hom.toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.isSchemeTheoreticImage_inverseImage_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean, line 777](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean#L777). References: EGA IV (2.3.2), “more general”.
+**`AlgebraicGeometry.Stack.isSchemeTheoreticImage_inverseImage_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean, line 777](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImageFlatBaseChange.lean#L777). References: EGA IV (2.3.2), “more general”.
 
 > **Stacks 0CMK.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact 1-morphism of algebraic stacks over `S`
 > and let `b : 𝒴' ⟶ 𝒴` be a flat 1-morphism. Then formation of the scheme theoretic image commutes
@@ -258,7 +258,7 @@ theorem isSchemeTheoreticImage_inverseImage_of_isFlat (f : 𝒳 ⟶ 𝒴) (b : �
 
 [Tag 0CML](https://stacks.math.columbia.edu/tag/0CML) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.range_pointsMap_eq_closure_of_isSchemeTheoreticImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImagePointsClosure.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImagePointsClosure.lean#L129).
+**`AlgebraicGeometry.Stack.range_pointsMap_eq_closure_of_isSchemeTheoreticImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImagePointsClosure.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImagePointsClosure.lean#L129).
 
 > **Stacks 0CML.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact 1-morphism of algebraic stacks over `S`
 > and let `P` cut out its scheme theoretic image `𝒵 ⊆ 𝒴` (Stacks 0CMI). Then the points of `𝒵` are
@@ -292,7 +292,7 @@ theorem range_pointsMap_eq_closure_of_isSchemeTheoreticImage
 
 [Tag 0CPW](https://stacks.math.columbia.edu/tag/0CPW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isEquivalence_fst_of_isSchemeTheoreticImage_partialSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImagePartialSection.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImagePartialSection.lean#L369).
+**`AlgebraicGeometry.Stack.isEquivalence_fst_of_isSchemeTheoreticImage_partialSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImagePartialSection.lean, line 369](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SchemeTheoreticImagePartialSection.lean#L369).
 
 > **Stacks 0CPW.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` which is
 > representable by algebraic spaces and separated, let `𝒱 ⊆ 𝒴` be an open substack such that
@@ -326,4 +326,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.38, Tag 0CMH](https://stacks.math.columbia.edu/tag/0CMH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

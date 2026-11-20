@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.32 Affine bundles
 
-Section 42.32 of the Stacks Project, [Tag 02TS](https://stacks.math.columbia.edu/tag/02TS). 8 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.32 of the Stacks Project, [Tag 02TS](https://stacks.math.columbia.edu/tag/02TS). 8 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02TT, a lemma
 
 [Tag 02TT](https://stacks.math.columbia.edu/tag/02TT) in the Stacks Project.
 
-**`Stacks.Chow.flatPullbackChow_surjective_isAffineSpaceBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/AffineBundleSurjectivity.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/AffineBundleSurjectivity.lean#L149).
+**`Stacks.Chow.flatPullbackChow_surjective_isAffineSpaceBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/AffineBundleSurjectivity.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/AffineBundleSurjectivity.lean#L149).
 
 > Let `(S, δ)` be the base situation of chapter 42, let `X` and `Y` be locally of finite type
 > over `S` and let `f : X ⟶ Y` be flat of relative dimension `r` such that every point of `Y` has
@@ -29,7 +29,7 @@ theorem flatPullbackChow_surjective_isAffineSpaceBundle (C : ChowSituation.{u})
     Function.Surjective (flatPullbackChowOfRelativeDimension C (f ≫ sY) sY f rfl r hf k)
 ```
 
-**`Stacks.Chow.flatPullbackChow_surjective_of_isAffineSpaceBundle_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/Unconditional.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/Unconditional.lean#L99).
+**`Stacks.Chow.flatPullbackChow_surjective_of_isAffineSpaceBundle_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/Unconditional.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/Unconditional.lean#L99).
 
 > **Stacks 02TT.** Let `(S, δ)` be the base situation of chapter 42, let `X` and `Y` be locally
 > of finite type over `S`, and let `f : X ⟶ Y` be flat of relative dimension `r` such that every
@@ -49,7 +49,7 @@ theorem flatPullbackChow_surjective_of_isAffineSpaceBundle_unconditional (C : Ch
 
 [Tag 0B74](https://stacks.math.columbia.edu/tag/0B74) in the Stacks Project.
 
-**`Stacks.Chow.flatPullbackChow_totalSpaceToBase_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/LineBundleChowBijective.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/LineBundleChowBijective.lean#L59). The attribute's comment: “p^* : A\_k(X) → A\_\{k+1}(L) is bijective for all k, p : L → X a line bundle”.
+**`Stacks.Chow.flatPullbackChow_totalSpaceToBase_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/LineBundleChowBijective.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/LineBundleChowBijective.lean#L59). The attribute's comment: “p^* : A\_k(X) → A\_\{k+1}(L) is bijective for all k, p : L → X a line bundle”.
 
 > Let `(S, δ)` be as in Situation 02QL, let `X` be locally of finite type over `S`, let `ℒ` be an
 > invertible `𝒪_X`-module and let `p : L = \underline{\Spec}(\Sym^*(ℒ)) ⟶ X` be the associated line
@@ -70,7 +70,7 @@ theorem flatPullbackChow_totalSpaceToBase_bijective (k : ℤ) :
 
 [Tag 02TU](https://stacks.math.columbia.edu/tag/02TU) in the Stacks Project.
 
-**`Stacks.Chow.flatPullbackChow_bijective_vectorBundle_and_affineSpaceBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean#L63). The attribute's comment: “the whole remark: both assertions”.
+**`Stacks.Chow.flatPullbackChow_bijective_vectorBundle_and_affineSpaceBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean#L63). The attribute's comment: “the whole remark: both assertions”.
 
 > **Remark 02TU.** Let `(S, δ)` be as in Situation 02QL.
 >
@@ -99,14 +99,14 @@ theorem flatPullbackChow_bijective_vectorBundle_and_affineSpaceBundle (C : ChowS
 
 Declarations registered for the tag:
 
-- [`Stacks.Chow.flatPullbackChow_bijective_vectorBundleToBase`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleChowBijective.lean#L340), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean#L45) (StacksFrontier): “first assertion: flat pullback along the vector bundle of a finite locally free module of rank r is an isomorphism of Chow groups in every degree (Lemma 02TY)”.
-- [`Stacks.Chow.flatPullbackChow_bijective_of_isAffineSpaceBundle`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundleInjective/Bijectivity.lean#L89), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean#L49) (StacksFrontier): “second assertion: flat pullback along a morphism which is Zariski-locally on the target the projection U × A^r to U is an isomorphism of Chow groups in every degree (Remark 0GUB); flatness and relative dimension r follow from the local triviality”.
+- [`Stacks.Chow.flatPullbackChow_bijective_vectorBundleToBase`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleChowBijective.lean#L340), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean, line 45](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean#L45) (StacksFrontier): “first assertion: flat pullback along the vector bundle of a finite locally free module of rank r is an isomorphism of Chow groups in every degree (Lemma 02TY)”.
+- [`Stacks.Chow.flatPullbackChow_bijective_of_isAffineSpaceBundle`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundleInjective/Bijectivity.lean#L89), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/BundlePullbackIsomorphism.lean#L49) (StacksFrontier): “second assertion: flat pullback along a morphism which is Zariski-locally on the target the projection U × A^r to U is an isomorphism of Chow groups in every degree (Remark 0GUB); flatness and relative dimension r follow from the local triviality”.
 
 ## Tag 0F96, a lemma
 
 [Tag 0F96](https://stacks.math.columbia.edu/tag/0F96) in the Stacks Project.
 
-**`Stacks.LineBundle.Situation.isRelativeEffectiveCartierDivisor_ker_zeroSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/AffineSpaceBundleSmooth.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/AffineSpaceBundleSmooth.lean#L112). The attribute's comment: “(1), the zero section is a relative effective Cartier divisor”.
+**`Stacks.LineBundle.Situation.isRelativeEffectiveCartierDivisor_ker_zeroSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/AffineSpaceBundleSmooth.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/AffineSpaceBundleSmooth.lean#L112). The attribute's comment: “(1), the zero section is a relative effective Cartier divisor”.
 
 > **The image of the zero section of a line bundle is a relative effective Cartier divisor**,
 > part of clause (1) of [Stacks, Tag 0F96]. The projection of the total space is smooth of relative
@@ -120,7 +120,7 @@ theorem Situation.isRelativeEffectiveCartierDivisor_ker_zeroSection (D : Situati
       D.zeroSection.ker
 ```
 
-**`Stacks.Chow.zeroSectionGysinChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionGysin.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionGysin.lean#L210). The attribute's comment: “part (3)”.
+**`Stacks.Chow.zeroSectionGysinChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionGysin.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionGysin.lean#L210). The attribute's comment: “part (3)”.
 
 > **Stacks 0F96, clause (3).** The image `o(X)` of the zero section of a line bundle
 > `p : L ⟶ X` is an effective Cartier divisor on `L`, so it has a Gysin map; composed with the
@@ -140,7 +140,7 @@ def zeroSectionGysinChow (k : ℤ) :
     chowGroup C (D.totalSpaceToBase ≫ sX) (k + 1) →+ chowGroup C sX k
 ```
 
-**`Stacks.Chow.zeroSectionGysinChow_comp_flatPullbackChowOfRelativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionGysinRetraction.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionGysinRetraction.lean#L248). The attribute's comment: “part (4)”.
+**`Stacks.Chow.zeroSectionGysinChow_comp_flatPullbackChowOfRelativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionGysinRetraction.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionGysinRetraction.lean#L248). The attribute's comment: “part (4)”.
 
 > **Stacks 0F96, clause (4).** The source's phrasing: the composite
 >
@@ -159,7 +159,7 @@ theorem zeroSectionGysinChow_comp_flatPullbackChowOfRelativeDimension (k : ℤ) 
       AddMonoidHom.id (chowGroup C sX k)
 ```
 
-**`Stacks.Chow.zeroSectionChowPushforward_eq_neg_flatPullbackChow_firstChernClassCapChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionProjectionFormula.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionProjectionFormula.lean#L352). The attribute's comment: “part (5)”.
+**`Stacks.Chow.zeroSectionChowPushforward_eq_neg_flatPullbackChow_firstChernClassCapChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionProjectionFormula.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionProjectionFormula.lean#L352). The attribute's comment: “part (5)”.
 
 > Let `(S, δ)` be the base situation of chapter 42, let `X` be locally of finite type over `S`,
 > let `ℒ` be an invertible `𝒪_X`-module and let `p : L ⟶ X` be the associated line bundle with
@@ -181,7 +181,7 @@ theorem zeroSectionChowPushforward_eq_neg_flatPullbackChow_firstChernClassCapCho
           rfl 1 D.relativeDimension_totalSpaceToBase k (firstChernClassCapChow C k sX D.L α))
 ```
 
-**`Stacks.Chow.zeroSectionChowPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionPushforward.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionPushforward.lean#L64). The attribute's comment: “part (2)”.
+**`Stacks.Chow.zeroSectionChowPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionPushforward.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionPushforward.lean#L64). The attribute's comment: “part (2)”.
 
 > The proper pushforward on Chow groups along the zero section `o : X ⟶ L` of a line bundle,
 >
@@ -192,7 +192,7 @@ def zeroSectionChowPushforward (k : ℤ) :
     chowGroup C sX k →+ chowGroup C (D.totalSpaceToBase ≫ sX) k
 ```
 
-**`Stacks.Chow.zeroSectionGysinChow_zeroSectionChowPushforward_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionSelfIntersection.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionSelfIntersection.lean#L239). The attribute's comment: “part (6)”. References: SGA 5 VII (9.2), “special case”.
+**`Stacks.Chow.zeroSectionGysinChow_zeroSectionChowPushforward_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionSelfIntersection.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionSelfIntersection.lean#L239). The attribute's comment: “part (6)”. References: SGA 5 VII (9.2), “special case”.
 
 > **Stacks 0F96, clause (6).** The Gysin map of the zero section of a line bundle `p : L ⟶ X`
 > composed with the pushforward along it is intersection with the first Chern class of `ℒ`, with a
@@ -222,7 +222,7 @@ theorem zeroSectionGysinChow_zeroSectionChowPushforward_mk (k : ℤ)
       -firstChernClassCapOfInvertible C sX k D.L α
 ```
 
-**`Stacks.Chow.zeroSectionGysinChow_comp_zeroSectionChowPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionSelfIntersection.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionSelfIntersection.lean#L328). The attribute's comment: “part (6)”.
+**`Stacks.Chow.zeroSectionGysinChow_comp_zeroSectionChowPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionSelfIntersection.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionSelfIntersection.lean#L328). The attribute's comment: “part (6)”.
 
 > **Stacks 0F96, clause (6).** The source's phrasing: the composite
 >
@@ -240,7 +240,7 @@ theorem zeroSectionGysinChow_comp_zeroSectionChowPushforward (k : ℤ) :
       -firstChernClassCapOfInvertible C sX k D.L
 ```
 
-**`Stacks.LineBundle.Situation.isRegularSection_tautologicalSectionBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/TautologicalSectionBaseRegular.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/TautologicalSectionBaseRegular.lean#L54). The attribute's comment: “part (1), the section is regular”.
+**`Stacks.LineBundle.Situation.isRegularSection_tautologicalSectionBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/TautologicalSectionBaseRegular.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/TautologicalSectionBaseRegular.lean#L54). The attribute's comment: “part (1), the section is regular”.
 
 > The tautological global section of `p^*(L^{⊗ -1})` is a regular section, that is,
 > multiplication by it is injective.
@@ -251,7 +251,7 @@ theorem Situation.isRegularSection_tautologicalSectionBase :
       D.totalSpace.ringCatSheaf.property D.tautologicalSectionBaseSections
 ```
 
-**`Stacks.LineBundle.Situation.zeroScheme_tautologicalSectionBase_eq_ker_zeroSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/ZeroSectionZeroScheme.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/ZeroSectionZeroScheme.lean#L190). The attribute's comment: “part (1), the zero scheme”.
+**`Stacks.LineBundle.Situation.zeroScheme_tautologicalSectionBase_eq_ker_zeroSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/ZeroSectionZeroScheme.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/ZeroSectionZeroScheme.lean#L190). The attribute's comment: “part (1), the zero scheme”.
 
 > **Clause (1) of [Stacks, Tag 0F96], the zero scheme.** Let `L` be an invertible module on a
 > scheme `X`, let `p : Tot(L) ⟶ X` be the associated line bundle and let `o : X ⟶ Tot(L)` be its
@@ -268,7 +268,7 @@ theorem Situation.zeroScheme_tautologicalSectionBase_eq_ker_zeroSection :
       D.zeroSection.ker
 ```
 
-**`Stacks.LineBundle.Situation.isRegularSection_tautologicalSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/ZeroSectionZeroScheme.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/ZeroSectionZeroScheme.lean#L214). The attribute's comment: “part (1), the section is regular”.
+**`Stacks.LineBundle.Situation.isRegularSection_tautologicalSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/ZeroSectionZeroScheme.lean, line 214](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/ZeroSectionZeroScheme.lean#L214). The attribute's comment: “part (1), the section is regular”.
 
 > **Clause (1) of [Stacks, Tag 0F96], regularity of the section.** The tautological global
 > section of `p^*(L^{⊗ -1})` is a regular section, that is, multiplication by it is injective:
@@ -286,7 +286,7 @@ theorem Situation.isRegularSection_tautologicalSection :
 
 [Tag 0F97](https://stacks.math.columbia.edu/tag/0F97) in the Stacks Project.
 
-**`Stacks.Chow.TensorZeroScheme.pullbackTensorSection_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/Basic.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/Basic.lean#L279). The attribute's comment: “the construction and conditions (1), (3); (2) and (4)-(7) not proved here”.
+**`Stacks.Chow.TensorZeroScheme.pullbackTensorSection_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/Basic.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/Basic.lean#L279). The attribute's comment: “the construction and conditions (1), (3); (2) and (4)-(7) not proved here”.
 
 > The pullback `p^*s` of the section to the zero scheme `L` of `z₁ ⊗ z₂ - q^*s`, read in
 > `p^*L₁ ⊗ p^*L₂`, is the product `s₁ ⊗ s₂` of the two restricted fibre coordinates.
@@ -301,7 +301,7 @@ theorem pullbackTensorSection_proj :
         (section₁ Y L₁ L₂ s) (section₂ Y L₁ L₂ s)
 ```
 
-**`Stacks.Chow.TensorZeroScheme.exists_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/DecompositionExistence.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/DecompositionExistence.lean#L100).
+**`Stacks.Chow.TensorZeroScheme.exists_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/DecompositionExistence.lean, line 100](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/DecompositionExistence.lean#L100).
 
 > **[Stacks, Tag 0F97].** Let `Y` be a scheme, `L₁`, `L₂` invertible `𝒪_Y`-modules, `s` a
 > global section of `L₁ ⊗ L₂` and `i : D → Y` its zero scheme. There is a commutative diagram
@@ -321,7 +321,7 @@ theorem exists_decomposition : ∃ R : Decomposition Y L₁ L₂ s, R.IsStableUn
 
 [Tag 0F98](https://stacks.math.columbia.edu/tag/0F98) in the Stacks Project.
 
-**`Stacks.Chow.TensorZeroScheme.gysinChowBranch₁_flatPullbackChowProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionBranchChowIdentity.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionBranchChowIdentity.lean#L200).
+**`Stacks.Chow.TensorZeroScheme.gysinChowBranch₁_flatPullbackChowProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionBranchChowIdentity.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/ZeroSectionBranchChowIdentity.lean#L200).
 
 > In the situation of [Stacks, Tag 0F97],
 >
@@ -338,7 +338,7 @@ theorem gysinChowBranch₁_flatPullbackChowProj (α : Stacks.Chow.chowGroup C sY
 
 [Tag 0F99](https://stacks.math.columbia.edu/tag/0F99) in the Stacks Project.
 
-**`Stacks.Chow.TensorZeroScheme.exists_principalReduction_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/PrincipalReductionExistence.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/PrincipalReductionExistence.lean#L533).
+**`Stacks.Chow.TensorZeroScheme.exists_principalReduction_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/PrincipalReductionExistence.lean, line 533](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/TensorZeroScheme/PrincipalReductionExistence.lean#L533).
 
 > **[Stacks, Tag 0F99].** For a scheme `X` locally of finite type over the base situation of
 > chapter 42 and a triple `(ℒ, s, i : D ⟶ X)` as in [Stacks, Tag 02T8] there is a commutative
@@ -362,7 +362,7 @@ theorem exists_principalReduction_isStableUnderBaseChange :
 
 [Tag 0GUB](https://stacks.math.columbia.edu/tag/0GUB) in the Stacks Project.
 
-**`Stacks.Chow.flatPullbackChow_bijective_of_isAffineSpaceBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundleInjective/Bijectivity.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundleInjective/Bijectivity.lean#L89).
+**`Stacks.Chow.flatPullbackChow_bijective_of_isAffineSpaceBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundleInjective/Bijectivity.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundleInjective/Bijectivity.lean#L89).
 
 > **Stacks 0GUB.** Let `(S, δ)` be as in Situation 02QL, let `Y` be locally of finite type over
 > `S`, let `r ≥ 0` and let `f : X ⟶ Y` be a morphism of schemes such that every point of `Y` lies in
@@ -391,4 +391,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.32, Tag 02TS](https://stacks.math.columbia.edu/tag/02TS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

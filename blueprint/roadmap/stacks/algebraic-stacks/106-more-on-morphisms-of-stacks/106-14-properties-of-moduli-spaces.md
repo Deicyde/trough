@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.14 Properties of moduli spaces
 
-Section 106.14 of the Stacks Project, [Tag 0DUW](https://stacks.math.columbia.edu/tag/0DUW). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.14 of the Stacks Project, [Tag 0DUW](https://stacks.math.columbia.edu/tag/0DUW). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DUX, a lemma
 
 [Tag 0DUX](https://stacks.math.columbia.edu/tag/0DUX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_of_isCategoricalModuliSpace_of_isFinite_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/KeelMori/ModuliFiniteType.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/KeelMori/ModuliFiniteType.lean#L54).
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_of_isCategoricalModuliSpace_of_isFinite_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/KeelMori/ModuliFiniteType.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/KeelMori/ModuliFiniteType.lean#L54).
 
 > **Stacks 0DUX.** Let `p : 𝒳 ⟶ Y` be a 1-morphism from an algebraic stack to an algebraic
 > space such that the inertia `I_𝒳 ⟶ 𝒳` is finite, `Y` is locally Noetherian and `p` is locally
@@ -41,7 +41,7 @@ theorem isLocallyOfFiniteType_of_isCategoricalModuliSpace_of_isFinite_inertia
 
 [Tag 0DUY](https://stacks.math.columbia.edu/tag/0DUY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAbsolutelyQuasiSeparated_and_isAbsolutelySeparated_of_isFinite_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ModuliSeparation/KeelMoriModuliSpaceSeparation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ModuliSeparation/KeelMoriModuliSpaceSeparation.lean#L77).
+**`AlgebraicGeometry.Stack.isAbsolutelyQuasiSeparated_and_isAbsolutelySeparated_of_isFinite_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ModuliSeparation/KeelMoriModuliSpaceSeparation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ModuliSeparation/KeelMoriModuliSpaceSeparation.lean#L77).
 
 > **Stacks 0DUY.** Let `𝒳` be an algebraic stack whose inertia `I_𝒳 ⟶ 𝒳` is finite, and let
 > `f : 𝒳 ⟶ M` be a categorical moduli space — for instance the moduli space constructed in
@@ -65,7 +65,7 @@ theorem isAbsolutelyQuasiSeparated_and_isAbsolutelySeparated_of_isFinite_inertia
         Space.IsAbsolutelySeparated B S hS hZ M.obj)
 ```
 
-**`AlgebraicGeometry.Stack.isAbsolutelyQuasiSeparated_and_isAbsolutelySeparated_of_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ModuliSeparation/ModuliSpaceSeparation.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ModuliSeparation/ModuliSpaceSeparation.lean#L148).
+**`AlgebraicGeometry.Stack.isAbsolutelyQuasiSeparated_and_isAbsolutelySeparated_of_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ModuliSeparation/ModuliSpaceSeparation.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ModuliSeparation/ModuliSpaceSeparation.lean#L148).
 
 > **Stacks 0DUY.** Let `f : 𝒳 ⟶ M` be a universal homeomorphism (Stacks 0CI7) from an algebraic
 > stack over `S` to an algebraic space over `S` — for instance the moduli space of the Keel–Mori
@@ -92,7 +92,7 @@ theorem isAbsolutelyQuasiSeparated_and_isAbsolutelySeparated_of_universalHomeomo
 
 [Tag 0DUZ](https://stacks.math.columbia.edu/tag/0DUZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isProper_of_isCategoricalModuliSpace_of_isFinite_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ModuliProperness/ModuliSpaceProper.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ModuliProperness/ModuliSpaceProper.lean#L74).
+**`AlgebraicGeometry.Stack.isProper_of_isCategoricalModuliSpace_of_isFinite_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ModuliProperness/ModuliSpaceProper.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ModuliProperness/ModuliSpaceProper.lean#L74).
 
 > **Stacks 0DUZ.** Let `p : 𝒳 ⟶ Y` be a 1-morphism from an algebraic stack to an algebraic
 > space. Assume
@@ -127,4 +127,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.14, Tag 0DUW](https://stacks.math.columbia.edu/tag/0DUW)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

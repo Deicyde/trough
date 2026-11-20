@@ -8,13 +8,13 @@ proof: formalized
 
 # 93.16 Unobstructed deformation problems
 
-Section 93.16 of the Stacks Project, [Tag 0DZG](https://stacks.math.columbia.edu/tag/0DZG). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 93.16 of the Stacks Project, [Tag 0DZG](https://stacks.math.columbia.edu/tag/0DZG). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DZH, a lemma
 
 [Tag 0DZH](https://stacks.math.columbia.edu/tag/0DZH) in the Stacks Project.
 
-**`Deformation.Examples.ringDeformationCategory_isSmooth_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/RingsUnobstructed.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/RingsUnobstructed.lean#L282).
+**`Deformation.Examples.ringDeformationCategory_isSmooth_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/RingsUnobstructed.lean, line 282](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/RingsUnobstructed.lean#L282).
 
 > **Stacks 0DZH.** In the setting of Stacks 0DY1, the deformation category of a local
 > complete intersection `P` over a field `k` is unobstructed: the structure functor of
@@ -36,7 +36,7 @@ public theorem ringDeformationCategory_isSmooth_of_isLocalCompleteIntersection
 
 [Tag 0DZN](https://stacks.math.columbia.edu/tag/0DZN) in the Stacks Project.
 
-**`Deformation.Examples.GluingSituation.isSmooth_toChartProductOfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverSmooth.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverSmooth.lean#L384). The attribute's comment: “clause 1: Def\_X ⟶ Def\_\{P\_1} × Def\_\{P\_2} is smooth when U\_12 is smooth over k; unconditional, the hypothesis on P\_12 being the source's own”.
+**`Deformation.Examples.GluingSituation.isSmooth_toChartProductOfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverSmooth.lean, line 384](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverSmooth.lean#L384). The attribute's comment: “clause 1: Def\_X ⟶ Def\_\{P\_1} × Def\_\{P\_2} is smooth when U\_12 is smooth over k; unconditional, the hypothesis on P\_12 being the source's own”.
 
 > **Stacks Project, Tag 0DZN**, first clause. In Situation 0DYY, if `U₁₂ → Spec(k)` is smooth
 > then `Def_X ⟶ Def_{U₁} × Def_{U₂} = Def_{P₁} × Def_{P₂}` is smooth.
@@ -46,7 +46,7 @@ theorem isSmooth_toChartProductOfCover (hU₁₂ : Algebra.Smooth k S.P₁₂) :
     IsSmooth (toChartProductOfCover S)
 ```
 
-**`Deformation.Examples.GluingSituation.isSmooth_toChartProductOfCover_comp_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverSmooth.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverSmooth.lean#L407). The attribute's comment: “clause 2: Def\_X ⟶ Def\_\{P\_2} is smooth when U\_12 is smooth over k and U\_1 is a local complete intersection over k; unconditional, the hypotheses on P\_12 and P\_1 being the source's own”.
+**`Deformation.Examples.GluingSituation.isSmooth_toChartProductOfCover_comp_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverSmooth.lean, line 407](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverSmooth.lean#L407). The attribute's comment: “clause 2: Def\_X ⟶ Def\_\{P\_2} is smooth when U\_12 is smooth over k and U\_1 is a local complete intersection over k; unconditional, the hypotheses on P\_12 and P\_1 being the source's own”.
 
 > **Stacks Project, Tag 0DZN**, second clause. In Situation 0DYY, if `U₁₂ → Spec(k)` is smooth
 > and `U₁` is in addition a local complete intersection over `k`, then
@@ -64,7 +64,7 @@ theorem isSmooth_toChartProductOfCover_comp_snd (hU₁₂ : Algebra.Smooth k S.P
 
 [Tag 0DZP](https://stacks.math.columbia.edu/tag/0DZP) in the Stacks Project.
 
-**`Deformation.Examples.isSmooth_localRingFunctors_and_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/CurveIsolatedSingularities.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/CurveIsolatedSingularities.lean#L131).
+**`Deformation.Examples.isSmooth_localRingFunctors_and_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/CurveIsolatedSingularities.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Geometric/CurveIsolatedSingularities.lean#L131).
 
 > Let `X` be a separated scheme of finite type over `k` with `dim X ≤ 1`, and let `p_i` be
 > finitely many distinct closed points of `X` outside of which `X → Spec k` is smooth. In the chain
@@ -104,7 +104,7 @@ theorem isSmooth_localRingFunctors_and_chain [IsSeparated X.hom] [LocallyOfFinit
 
 [Tag 0DZQ](https://stacks.math.columbia.edu/tag/0DZQ) in the Stacks Project.
 
-**`Deformation.Examples.isSmooth_baseProjection_schemeDeformationCategoryProjection_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesUnobstructedUnconditional.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SchemesUnobstructedUnconditional.lean#L102). References: SGA 7 VI (4.10), “(a)”; SGA 7 VI (4.13), “(b), special case”.
+**`Deformation.Examples.isSmooth_baseProjection_schemeDeformationCategoryProjection_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesUnobstructedUnconditional.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Geometric/SchemesUnobstructedUnconditional.lean#L102). References: SGA 7 VI (4.10), “(a)”; SGA 7 VI (4.13), “(b), special case”.
 
 > **[Stacks, Tag 0DZQ].** Let `X` be a scheme over a field `k` which is separated and of finite
 > type over `k`, of dimension at most one, a local complete intersection over `k`, and smooth over
@@ -138,4 +138,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 93.16, Tag 0DZG](https://stacks.math.columbia.edu/tag/0DZG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

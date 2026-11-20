@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.12 The spectral sequence for a smooth morphism
 
-Section 50.12 of the Stacks Project, [Tag 0FMK](https://stacks.math.columbia.edu/tag/0FMK). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 50.12 of the Stacks Project, [Tag 0FMK](https://stacks.math.columbia.edu/tag/0FMK). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FMK, the section
 
 [Tag 0FMK](https://stacks.math.columbia.edu/tag/0FMK) in the Stacks Project.
 
-**`Stacks.DeRhamSmooth.deRhamSmoothFiltration_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltration.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltration.lean#L111). The attribute's comment: “the filtered complex: F^kΩ^•\_\{X/S} is the image of the wedge map out of Tot(f^\{-1}σ\_\{≥k}Ω^•\_\{Y/S} ⊗\_\{p^\{-1}O\_S} Ω^•\_\{X/S}), a decreasing filtration of Ω^•\_\{X/S} by subcomplexes with F^0Ω^•\_\{X/S} = Ω^•\_\{X/S}; it holds for every f, smooth or not”.
+**`Stacks.DeRhamSmooth.deRhamSmoothFiltration_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltration.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltration.lean#L111). The attribute's comment: “the filtered complex: F^kΩ^•\_\{X/S} is the image of the wedge map out of Tot(f^\{-1}σ\_\{≥k}Ω^•\_\{Y/S} ⊗\_\{p^\{-1}O\_S} Ω^•\_\{X/S}), a decreasing filtration of Ω^•\_\{X/S} by subcomplexes with F^0Ω^•\_\{X/S} = Ω^•\_\{X/S}; it holds for every f, smooth or not”.
 
 > **Stacks Project, Section 0FMK.** For `f : X ⟶ Y` over a base `S`, the canonical pullback map
 > `ρ : f^{-1}Ω^•_{Y/S} ⟶ Ω^•_{X/S}` of `(f∘g)^{-1}𝒪_S`-modules filters the relative de Rham complex
@@ -45,7 +45,7 @@ theorem deRhamSmoothFiltration_spec :
       ∀ k : ℤ, k ≤ 0 → IsIso ((deRhamSmoothFiltration f g).filtration.ι.app (op k))
 ```
 
-**`Stacks.DeRhamSmooth.relativeDifferentialsShortComplex_shortExact_and_locally_split`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean#L61). The attribute's comment: “the locally split short exact sequence 0 → f^*Ω\_\{Y/S} → Ω\_\{X/S} → Ω\_\{X/Y} → 0 of a smooth f (Tag 02K4)”.
+**`Stacks.DeRhamSmooth.relativeDifferentialsShortComplex_shortExact_and_locally_split`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean, line 61](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean#L61). The attribute's comment: “the locally split short exact sequence 0 → f^*Ω\_\{Y/S} → Ω\_\{X/S} → Ω\_\{X/Y} → 0 of a smooth f (Tag 02K4)”.
 
 > **Stacks Project, Section 0FMK: the locally split short exact sequence.** For `f : X ⟶ Y`
 > smooth over a base `S`, the sequence `0 ⟶ f^*Ω_{Y/S} ⟶ Ω_{X/S} ⟶ Ω_{X/Y} ⟶ 0` is short exact,
@@ -58,7 +58,7 @@ theorem relativeDifferentialsShortComplex_shortExact_and_locally_split [Smooth f
         Nonempty (Scheme.Hom.relativeDifferentialsShortComplexRestrict f g U).Splitting
 ```
 
-**`Stacks.DeRhamSmooth.relativeDifferentialsExteriorFiltration_smooth_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean#L82). The attribute's comment: “the filtration Ω^p\_\{X/S} = F^0 ⊃ F^1 ⊃ … ⊃ F^\{p+1} = 0 induced by f^*Ω\_\{Y/S} ⊆ Ω\_\{X/S}, with gr^kΩ^p\_\{X/S} ≅ f^*Ω^k\_\{Y/S} ⊗\_\{O\_X} Ω^\{p-k}\_\{X/Y} for k = 0, …, p (for k < p the canonical comparison is an isomorphism; for k = p, gr^p = F^p since F^\{p+1} = 0)”.
+**`Stacks.DeRhamSmooth.relativeDifferentialsExteriorFiltration_smooth_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean#L82). The attribute's comment: “the filtration Ω^p\_\{X/S} = F^0 ⊃ F^1 ⊃ … ⊃ F^\{p+1} = 0 induced by f^*Ω\_\{Y/S} ⊆ Ω\_\{X/S}, with gr^kΩ^p\_\{X/S} ≅ f^*Ω^k\_\{Y/S} ⊗\_\{O\_X} Ω^\{p-k}\_\{X/Y} for k = 0, …, p (for k < p the canonical comparison is an isomorphism; for k = p, gr^p = F^p since F^\{p+1} = 0)”.
 
 > **Stacks Project, Section 0FMK: the filtration of `Ω^p_{X/S}` and its successive
 > quotients.** For `f : X ⟶ Y` smooth over a base `S` and every `p`, the filtration of
@@ -87,7 +87,7 @@ theorem relativeDifferentialsExteriorFiltration_smooth_spec [Smooth f] (p : ℕ)
             AlgebraicGeometry.Scheme.Hom.relativeDifferentialForms f ((0 : ℕ) : ℤ)))
 ```
 
-**`Stacks.DeRhamSmooth.gradedPieceIsoGradedTargetComplexOfSmooth`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean#L127). The attribute's comment: “the graded pieces of the filtered complex: gr^kΩ^•\_\{X/S} ≅ f^\{-1}Ω^k\_\{Y/S}[-k] ⊗\_\{f^\{-1}O\_Y} Ω^•\_\{X/Y} as complexes, for f smooth”.
+**`Stacks.DeRhamSmooth.gradedPieceIsoGradedTargetComplexOfSmooth`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean#L127). The attribute's comment: “the graded pieces of the filtered complex: gr^kΩ^•\_\{X/S} ≅ f^\{-1}Ω^k\_\{Y/S}[-k] ⊗\_\{f^\{-1}O\_Y} Ω^•\_\{X/Y} as complexes, for f smooth”.
 
 > **Stacks Project, Section 0FMK: the graded pieces of the filtered complex.** For
 > `f : X ⟶ Y` smooth over a base `S` and every `k`, the `k`-th graded piece of the filtration of
@@ -107,7 +107,7 @@ def gradedPieceIsoGradedTargetComplexOfSmooth [Smooth f] (k : ℕ) :
       gradedTargetComplex f g k
 ```
 
-**`Stacks.DeRhamSmooth.nonempty_gradedPiece_X_iso_pulledBackTargetFormsTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean#L139). The attribute's comment: “gr^kΩ^p\_\{X/S} ≅ f^\{-1}Ω^k\_\{Y/S} ⊗\_\{f^\{-1}O\_Y} Ω^\{p-k}\_\{X/Y} in each degree p = k + j, for f smooth”.
+**`Stacks.DeRhamSmooth.nonempty_gradedPiece_X_iso_pulledBackTargetFormsTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/SmoothFiltrationGradedPieces.lean#L139). The attribute's comment: “gr^kΩ^p\_\{X/S} ≅ f^\{-1}Ω^k\_\{Y/S} ⊗\_\{f^\{-1}O\_Y} Ω^\{p-k}\_\{X/Y} in each degree p = k + j, for f smooth”.
 
 > **Stacks Project, Section 0FMK: the graded pieces in each degree, over `f^{-1}𝒪_Y`.** For
 > `f : X ⟶ Y` smooth over a base `S` and `p = k + j`, the degree-`p` term of the `k`-th graded piece
@@ -128,7 +128,7 @@ theorem nonempty_gradedPiece_X_iso_pulledBackTargetFormsTensor [Smooth f] (k j p
 
 [Tag 0FMM](https://stacks.math.columbia.edu/tag/0FMM) in the Stacks Project.
 
-**`Stacks.DeRhamSmooth.exists_boundedDeRhamSpectralSequence_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothSpectralSequenceTheorem.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/SmoothSpectralSequenceTheorem.lean#L59). The attribute's comment: “the bounded spectral sequence of a quasi-compact, quasi-separated, smooth morphism, with first page H^q(Ω^p\_\{Y/S} ⊗ᴸ Rf\_*Ω^•\_\{X/Y}) and abutment R^\{p+q}f\_*Ω^•\_\{X/S}”.
+**`Stacks.DeRhamSmooth.exists_boundedDeRhamSpectralSequence_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothSpectralSequenceTheorem.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/SmoothSpectralSequenceTheorem.lean#L59). The attribute's comment: “the bounded spectral sequence of a quasi-compact, quasi-separated, smooth morphism, with first page H^q(Ω^p\_\{Y/S} ⊗ᴸ Rf\_*Ω^•\_\{X/Y}) and abutment R^\{p+q}f\_*Ω^•\_\{X/S}”.
 
 > Let `f : X ⟶ Y` be a quasi-compact, quasi-separated and smooth morphism of schemes over a base
 > scheme `S`, with `g : Y ⟶ S` the structure morphism of the target. There is a bounded cohomological
@@ -152,7 +152,7 @@ theorem exists_boundedDeRhamSpectralSequence_of_smooth
 
 [Tag 0FMN](https://stacks.math.columbia.edu/tag/0FMN) in the Stacks Project.
 
-**`Stacks.DeRhamRigidity.isLocallyFree_deRhamCohomologySheaf_of_proper_smooth_rat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ArtinianRigidity/LocallyFreeRat.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/ArtinianRigidity/LocallyFreeRat.lean#L46). The attribute's comment: “if f is proper in addition to being smooth and S is a scheme over Q, then H^q\_dR(X/Y) is finite locally free (the sentence the source defers to a future reference)”.
+**`Stacks.DeRhamRigidity.isLocallyFree_deRhamCohomologySheaf_of_proper_smooth_rat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/ArtinianRigidity/LocallyFreeRat.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/ArtinianRigidity/LocallyFreeRat.lean#L46). The attribute's comment: “if f is proper in addition to being smooth and S is a scheme over Q, then H^q\_dR(X/Y) is finite locally free (the sentence the source defers to a future reference)”.
 
 > **The de Rham cohomology sheaves of a proper smooth morphism over `ℚ` are finite locally
 > free** ([Stacks, Tag 0FMN], the sentence the source defers to a future reference). Let
@@ -169,7 +169,7 @@ theorem isLocallyFree_deRhamCohomologySheaf_of_proper_smooth_rat {X Y S : Scheme
     AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFree.{u, u, u} (deRhamCohomologySheaf f q)
 ```
 
-**`Stacks.DeRhamSmooth.deRhamSmoothSpectralSequence_gaussManin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/GaussManinConnection.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/GaussManinConnection.lean#L103). The attribute's comment: “the first page Ω^p\_\{Y/S} ⊗ ℋ^q\_dR(X/Y) for flat ℋ^q\_dR, d\_1^\{0,q} the integrable Gauss–Manin connection and d\_1^\{•,q} its de Rham complex; the finite local freeness for proper f over ℚ is deferred by the source and omitted”.
+**`Stacks.DeRhamSmooth.deRhamSmoothSpectralSequence_gaussManin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/GaussManinConnection.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/GaussManinConnection.lean#L103). The attribute's comment: “the first page Ω^p\_\{Y/S} ⊗ ℋ^q\_dR(X/Y) for flat ℋ^q\_dR, d\_1^\{0,q} the integrable Gauss–Manin connection and d\_1^\{•,q} its de Rham complex; the finite local freeness for proper f over ℚ is deferred by the source and omitted”.
 
 > **Stacks Project, Tag 0FMN.** Let `f : X ⟶ Y` be a quasi-compact, quasi-separated, smooth
 > morphism of schemes over `S`, with `g : Y ⟶ S` the structure morphism of the target, and suppose
@@ -220,7 +220,7 @@ theorem deRhamSmoothSpectralSequence_gaussManin (q : ℤ) :
                 (modulesOnRing (deRhamCohomologySheaf f q))).hom)
 ```
 
-**`Stacks.DeRhamSmooth.deRhamCohomologySheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothCohomologySheaves.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/SmoothCohomologySheaves.lean#L180). The attribute's comment: “the cohomology sheaves ℋ^q\_dR(X/Y) = H^q(Rf\_*Ω^•\_\{X/Y})”. References: SGA 7 XXII (3.3), “more general”.
+**`Stacks.DeRhamSmooth.deRhamCohomologySheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothCohomologySheaves.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/SmoothCohomologySheaves.lean#L180). The attribute's comment: “the cohomology sheaves ℋ^q\_dR(X/Y) = H^q(Rf\_*Ω^•\_\{X/Y})”. References: SGA 7 XXII (3.3), “more general”.
 
 > **`ℋ^q_dR(X/Y) = H^q(Rf_*Ω^•_{X/Y})`**, the `q`-th de Rham cohomology sheaf of `X` over `Y`:
 > the `q`-th cohomology sheaf of the derived direct image along `f` of the relative de Rham complex
@@ -236,7 +236,7 @@ theorem deRhamSmoothSpectralSequence_gaussManin (q : ℤ) :
 def deRhamCohomologySheaf (q : ℤ) : Y.Modules
 ```
 
-**`Stacks.DeRhamSmooth.deRhamFirstPageFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothCohomologySheaves.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/SmoothCohomologySheaves.lean#L193). The attribute's comment: “the module Ω^p\_\{Y/S} ⊗\_\{𝒪\_Y} ℋ^q\_dR(X/Y) of the flat case”.
+**`Stacks.DeRhamSmooth.deRhamFirstPageFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/SmoothCohomologySheaves.lean, line 193](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/SmoothCohomologySheaves.lean#L193). The attribute's comment: “the module Ω^p\_\{Y/S} ⊗\_\{𝒪\_Y} ℋ^q\_dR(X/Y) of the flat case”.
 
 > **`Ω^p_{Y/S} ⊗_{𝒪_Y} ℋ^q_dR(X/Y)`**, the module the remark [Stacks, Tag 0FMN] writes the
 > first page of the spectral sequence of [Stacks, Tag 0FMM] as when the `ℋ^q_dR(X/Y)` are flat:
@@ -259,4 +259,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.12, Tag 0FMK](https://stacks.math.columbia.edu/tag/0FMK)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

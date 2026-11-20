@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.36 Unramified morphisms
 
-Section 101.36 of the Stacks Project, [Tag 0CIS](https://stacks.math.columbia.edu/tag/0CIS). 10 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.36 of the Stacks Project, [Tag 0CIS](https://stacks.math.columbia.edu/tag/0CIS). 10 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CIT, a definition
 
 [Tag 0CIT](https://stacks.math.columbia.edu/tag/0CIT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsUnramified`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean#L218).
+**`AlgebraicGeometry.Stack.IsUnramified`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean, line 218](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean#L218).
 
 > **Stacks 0CIT.** A 1-morphism of algebraic stacks over `S` is *unramified* when it is
 > Deligne–Mumford and its universal étale-smooth diagram tests are unramified morphisms of
@@ -29,7 +29,7 @@ abbrev IsUnramified {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ �
 
 [Tag 0CIU](https://stacks.math.columbia.edu/tag/0CIU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedMorphismComp.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedMorphismComp.lean#L58). The attribute's comment: “for 1-morphisms of algebraic stacks over a scheme S of the big fppf site; proved as in the source through Stacks 0CIH, with Stacks 06N3 (1) => (2) supplied by existsEtalePresentationOfIsAbsolutelyDM”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedMorphismComp.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedMorphismComp.lean#L58). The attribute's comment: “for 1-morphisms of algebraic stacks over a scheme S of the big fppf site; proved as in the source through Stacks 0CIH, with Stacks 06N3 (1) => (2) supplied by existsEtalePresentationOfIsAbsolutelyDM”.
 
 > **Stacks 0CIU.** The composition of unramified 1-morphisms of algebraic stacks over `S` is
 > unramified: for `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` unramified, so is `f ≫ g`.
@@ -49,7 +49,7 @@ theorem isUnramified_comp
 
 [Tag 0CIV](https://stacks.math.columbia.edu/tag/0CIV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isUnramified_baseChange_of_isUnramifiedOnEveryEtaleDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedBaseChange.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedBaseChange.lean#L99). The attribute's comment: “f : X -> Y is unramified in the sense of Stacks 0CIT, g : Y' -> Y is any 1-morphism of algebraic stacks over S and R is any 2-fibre product of (g, f); the base change R.fst : R.pt -> Y' is unramified in the sense of Stacks 0CIT”.
+**`AlgebraicGeometry.Stack.isUnramified_baseChange_of_isUnramifiedOnEveryEtaleDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedBaseChange.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedBaseChange.lean#L99). The attribute's comment: “f : X -> Y is unramified in the sense of Stacks 0CIT, g : Y' -> Y is any 1-morphism of algebraic stacks over S and R is any 2-fibre product of (g, f); the base change R.fst : R.pt -> Y' is unramified in the sense of Stacks 0CIT”.
 
 > A base change of an unramified 1-morphism of algebraic stacks over `S` is unramified: if
 > `f : 𝒳 ⟶ 𝒴` is unramified, `g : 𝒴' ⟶ 𝒴` is any 1-morphism and `R` is any 2-fibre product of
@@ -63,7 +63,7 @@ theorem isUnramified_baseChange_of_isUnramifiedOnEveryEtaleDiagram
     IsUnramified B S hS R.fst
 ```
 
-**`AlgebraicGeometry.Stack.isUnramified_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedBaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedBaseChange.lean#L111). The attribute's comment: “the same statement with the 2-fibre product written as a square of (f, g): for f unramified in the sense of Stacks 0CIT and any g, the second projection R.snd is unramified”.
+**`AlgebraicGeometry.Stack.isUnramified_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedBaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedBaseChange.lean#L111). The attribute's comment: “the same statement with the 2-fibre product written as a square of (f, g): for f unramified in the sense of Stacks 0CIT and any g, the second projection R.snd is unramified”.
 
 > If `f : 𝒳 ⟶ 𝒴` is unramified, `g : 𝒴' ⟶ 𝒴` is any 1-morphism and `R` is any 2-fibre product
 > of `(f, g)`, then the projection `R.snd : R.pt ⟶ 𝒴'` is unramified in the sense of Stacks 0CIT.
@@ -80,7 +80,7 @@ theorem isUnramified_snd_of_isTwoFibreProduct
 
 [Tag 0CIW](https://stacks.math.columbia.edu/tag/0CIW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isUnramified_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedAlgebraicStack.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedAlgebraicStack.lean#L37).
+**`AlgebraicGeometry.Stack.isUnramified_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedAlgebraicStack.lean, line 37](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedAlgebraicStack.lean#L37).
 
 > An étale 1-morphism of algebraic stacks over `S` is unramified.
 
@@ -93,7 +93,7 @@ theorem isUnramified_of_isEtale {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} {f :
 
 [Tag 0CIX](https://stacks.math.columbia.edu/tag/0CIX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionUnramified.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionUnramified.lean#L58).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionUnramified.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionUnramified.lean#L58).
 
 > **Stacks 0CIX.** An immersion of algebraic stacks over `S`, in the sense of Stacks 04YL,
 > part (3), is unramified in the sense of Stacks 0CIT.
@@ -107,7 +107,7 @@ theorem isUnramified_of_isImmersion (j : 𝒵 ⟶ 𝒳) (hj : IsImmersion B S hS
 
 [Tag 0CIY](https://stacks.math.columbia.edu/tag/0CIY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isUnramified_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedCharacterizationTFAE.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedCharacterizationTFAE.lean#L52).
+**`AlgebraicGeometry.Stack.isUnramified_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedCharacterizationTFAE.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedCharacterizationTFAE.lean#L52).
 
 > **Stacks 0CIY.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are
 > equivalent:
@@ -124,7 +124,7 @@ theorem isUnramified_tfae {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : 𝒳 
       HasUnramifiedEtalePresentationOverFlatCover.{u, w} B S hS f].TFAE
 ```
 
-**`AlgebraicGeometry.Stack.isUnramified_of_isUnramifiedOnEveryEtaleDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedEtaleDiagram.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedEtaleDiagram.lean#L113). The attribute's comment: “the implication (2) => (1)”.
+**`AlgebraicGeometry.Stack.isUnramified_of_isUnramifiedOnEveryEtaleDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedEtaleDiagram.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedEtaleDiagram.lean#L113). The attribute's comment: “the implication (2) => (1)”.
 
 > **Stacks 0CIY, the implication (2) ⇒ (1).** A Deligne–Mumford 1-morphism of algebraic stacks
 > over `S` whose every étale diagram of algebraic spaces has unramified top horizontal morphism is
@@ -137,7 +137,7 @@ theorem isUnramified_of_isUnramifiedOnEveryEtaleDiagram
     IsUnramified B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isUnramifiedOnEveryEtaleDiagram_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedEtaleDiagramForward.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedEtaleDiagramForward.lean#L85). The attribute's comment: “the implication (1) => (2)”.
+**`AlgebraicGeometry.Stack.isUnramifiedOnEveryEtaleDiagram_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedEtaleDiagramForward.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedEtaleDiagramForward.lean#L85). The attribute's comment: “the implication (1) => (2)”.
 
 > **Stacks 0CIY, the implication (1) ⇒ (2).** An unramified 1-morphism of algebraic stacks is
 > DM and every étale diagram of algebraic spaces over it has unramified top horizontal morphism.
@@ -148,7 +148,7 @@ theorem isUnramifiedOnEveryEtaleDiagram_of_isUnramified
     IsUnramifiedOnEveryEtaleDiagram.{u, w} B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isDM_of_surjectiveEtalePresentation_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedFlatPresentation.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedFlatPresentation.lean#L111). The attribute's comment: “the Deligne-Mumford condition on f, which is the first conjunct of each of parts (1) and (2), from part (3); the unramifiedness of T -> W asserted by part (3) is not needed for it, and the easy direction of Stacks 06N3 that the source cites is taken in the form Stacks 06MB part (1), whose absolute Deligne-Mumford conclusion asks the big site to contain the terminal scheme”.
+**`AlgebraicGeometry.Stack.isDM_of_surjectiveEtalePresentation_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedFlatPresentation.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedFlatPresentation.lean#L111). The attribute's comment: “the Deligne-Mumford condition on f, which is the first conjunct of each of parts (1) and (2), from part (3); the unramifiedness of T -> W asserted by part (3) is not needed for it, and the easy direction of Stacks 06N3 that the source cites is taken in the form Stacks 06MB part (1), whose absolute Deligne-Mumford conclusion asks the big site to contain the terminal scheme”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`, let `W` be an algebraic space
 > with a surjective, flat, locally-of-finite-presentation 1-morphism `c : W ⟶ 𝒴`, and let the
@@ -175,7 +175,7 @@ theorem isDM_of_surjectiveEtalePresentation_flatBaseChange
 
 [Tag 0H2Z](https://stacks.math.columbia.edu/tag/0H2Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedIsLocallyQuasiFinite.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedIsLocallyQuasiFinite.lean#L253).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedIsLocallyQuasiFinite.lean, line 253](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedIsLocallyQuasiFinite.lean#L253).
 
 > **Stacks 0H2Z.** An unramified 1-morphism of algebraic stacks over `S` (**Stacks 0CIT**) is
 > locally quasi-finite (**Stacks 06PU**): it is quasi-DM, locally of finite type, and its fibre over
@@ -194,7 +194,7 @@ theorem isLocallyQuasiFinite_of_isUnramified
     IsLocallyQuasiFinite B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedLocallyQuasiFinite.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedLocallyQuasiFinite.lean#L121). The attribute's comment: “the quasi-DM conjunct of local quasi-finiteness, unconditionally. The local finite type conjunct is `isLocallyOfFiniteType_of_isUnramified`; the field-valued-fibre conjunct is NOT carried”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedLocallyQuasiFinite.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedLocallyQuasiFinite.lean#L121). The attribute's comment: “the quasi-DM conjunct of local quasi-finiteness, unconditionally. The local finite type conjunct is `isLocallyOfFiniteType_of_isUnramified`; the field-valued-fibre conjunct is NOT carried”.
 
 > **The quasi-DM conjunct of Stacks 0H2Z.** An unramified 1-morphism of algebraic stacks over
 > `S` is quasi-DM, with a representable relative diagonal.
@@ -213,7 +213,7 @@ theorem isQuasiDM_of_isUnramified {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S 
 
 [Tag 0CIZ](https://stacks.math.columbia.edu/tag/0CIZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isUnramified_of_comp_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedPermanenceUnconditional.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedPermanenceUnconditional.lean#L58). The attribute's comment: “The whole statement, under exactly the source's hypotheses.”.
+**`AlgebraicGeometry.Stack.isUnramified_of_comp_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedPermanenceUnconditional.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedPermanenceUnconditional.lean#L58). The attribute's comment: “The whole statement, under exactly the source's hypotheses.”.
 
 > **Stacks 0CIZ.** Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be 1-morphisms of algebraic stacks over
 > `S`. If `f ≫ g` is unramified and `g` is Deligne–Mumford, then `f` is unramified.
@@ -233,7 +233,7 @@ theorem isUnramified_of_comp_of_isDM {𝒳 𝒴 𝒵 : AlgebraicStacks.{u, w} B 
 
 [Tag 0CJ0](https://stacks.math.columbia.edu/tag/0CJ0) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_iff_isLocallyOfFiniteType_and_isEtale_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedDiagonalCriterion.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedDiagonalCriterion.lean#L235). The attribute's comment: “both implications: unramified iff locally of finite type with etale diagonal”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_iff_isLocallyOfFiniteType_and_isEtale_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedDiagonalCriterion.lean, line 235](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedDiagonalCriterion.lean#L235). The attribute's comment: “both implications: unramified iff locally of finite type with etale diagonal”.
 
 > **Stacks 0CJ0.** A 1-morphism of algebraic stacks over `S` admitting a diagram of algebraic
 > spaces as in `AlgebraicGeometry.Stack.HasDiagonalDescentChart` is unramified exactly when it is
@@ -254,7 +254,7 @@ theorem isUnramified_iff_isLocallyOfFiniteType_and_isEtale_relativeDiagonal
         Stack.IsEtale B S hS (relativeDiagonal B S hS f))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_iff_isLocallyOfFiniteType_isEtale_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedDiagonalEtale.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedDiagonalEtale.lean#L55).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_iff_isLocallyOfFiniteType_isEtale_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedDiagonalEtale.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedDiagonalEtale.lean#L55).
 
 > **Stacks 0CJ0.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is unramified if and
 > only if it is locally of finite type and its relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_𝒴 𝒳` is étale.
@@ -278,7 +278,7 @@ theorem isUnramified_iff_isLocallyOfFiniteType_isEtale_relativeDiagonal
 
 [Tag 0CJ1](https://stacks.math.columbia.edu/tag/0CJ1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_of_isLocallyOfFinitePresentation_of_isFlat_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleFlatUnramifiedCriterion.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleFlatUnramifiedCriterion.lean#L241). The attribute's comment: “part (2) implies part (1)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_of_isLocallyOfFinitePresentation_of_isFlat_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleFlatUnramifiedCriterion.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleFlatUnramifiedCriterion.lean#L241). The attribute's comment: “part (2) implies part (1)”.
 
 > **Stacks 0CJ1, (2) ⇒ (1).** A 1-morphism of algebraic stacks over `S` which is locally of
 > finite presentation, flat and unramified is étale. No diagram has to be supplied.
@@ -299,7 +299,7 @@ theorem isEtale_of_isLocallyOfFinitePresentation_of_isFlat_of_isUnramified
     Stack.IsEtale B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleFlatUnramifiedTFAE.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleFlatUnramifiedTFAE.lean#L66).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleFlatUnramifiedTFAE.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleFlatUnramifiedTFAE.lean#L66).
 
 > **Stacks 0CJ1.** For a 1-morphism `f` of algebraic stacks over `S` the following are
 > equivalent: `f` is étale; `f` is locally of finite presentation, flat and unramified; `f` is
@@ -325,4 +325,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.36, Tag 0CIS](https://stacks.math.columbia.edu/tag/0CIS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 39.16 Groupoids and group schemes
 
-Section 39.16 of the Stacks Project, [Tag 03LK](https://stacks.math.columbia.edu/tag/03LK). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 39.16 of the Stacks Project, [Tag 03LK](https://stacks.math.columbia.edu/tag/03LK). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0234, a lemma
 
 [Tag 0234](https://stacks.math.columbia.edu/tag/0234) in the Stacks Project.
 
-**`AlgebraicGeometry.groupoidSchemeOfAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/ActionGroupoid.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/ActionGroupoid.lean#L210). References: SGA 3 V (10.2).
+**`AlgebraicGeometry.groupoidSchemeOfAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/ActionGroupoid.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/ActionGroupoid.lean#L210). References: SGA 3 V (10.2).
 
 > The action groupoid scheme of a group scheme action, with objects `X`, arrows `G ×_Y X`,
 > and the source, target, composition, identity, and inverse maps given by the standard
@@ -28,7 +28,7 @@ noncomputable def groupoidSchemeOfAction : ActionGroupoidConstruction Y G X
 
 [Tag 03LL](https://stacks.math.columbia.edu/tag/03LL) in the Stacks Project.
 
-**`AlgebraicGeometry.equivariantQuasicoherentModuleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean#L293). The attribute's comment: “the equivalence (F, α) ↦ (F, α)”.
+**`AlgebraicGeometry.equivariantQuasicoherentModuleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean, line 293](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean#L293). The attribute's comment: “the equivalence (F, α) ↦ (F, α)”.
 
 > **Stacks Project, Tag 03LL.** The rule `(F, α) ↦ (F, α)` is an equivalence between
 > `G`-equivariant quasi-coherent modules on `X` (Stacks 03LF, cocycle on `G ×_Y G ×_Y X`) and
@@ -41,7 +41,7 @@ noncomputable def equivariantQuasicoherentModuleEquivalence :
       GroupoidScheme.QuasicoherentModule (groupoidSchemeOfAction Y G X).groupoid
 ```
 
-**`AlgebraicGeometry.equivariantQuasicoherentModuleEquivalence_functor_obj_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean#L307). The attribute's comment: “underlying module”.
+**`AlgebraicGeometry.equivariantQuasicoherentModuleEquivalence_functor_obj_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean#L307). The attribute's comment: “underlying module”.
 
 > **Stacks Project, Tag 03LL.** The equivalence keeps the underlying quasi-coherent module.
 
@@ -51,7 +51,7 @@ theorem equivariantQuasicoherentModuleEquivalence_functor_obj_module
     ((equivariantQuasicoherentModuleEquivalence Y G X).functor.obj M).module = M.module
 ```
 
-**`AlgebraicGeometry.equivariantQuasicoherentModuleEquivalence_functor_obj_alpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean#L314). The attribute's comment: “the map α”.
+**`AlgebraicGeometry.equivariantQuasicoherentModuleEquivalence_functor_obj_alpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean#L314). The attribute's comment: “the map α”.
 
 > **Stacks Project, Tag 03LL.** The equivalence keeps the map `α`.
 
@@ -61,7 +61,7 @@ theorem equivariantQuasicoherentModuleEquivalence_functor_obj_alpha
     ((equivariantQuasicoherentModuleEquivalence Y G X).functor.obj M).alpha = M.alpha
 ```
 
-**`AlgebraicGeometry.equivariantQuasicoherentModuleEquivalence_functor_map_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean#L322). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.equivariantQuasicoherentModuleEquivalence_functor_map_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean, line 322](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/EquivariantQuasicoherentModule.lean#L322). The attribute's comment: “morphisms”.
 
 > **Stacks Project, Tag 03LL.** On morphisms the equivalence is the identity on the underlying
 > morphism of modules.
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.16, Tag 03LK](https://stacks.math.columbia.edu/tag/03LK)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.48 Duals
 
-Section 21.48 of the Stacks Project, [Tag 0FPP](https://stacks.math.columbia.edu/tag/0FPP). 8 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.48 of the Stacks Project, [Tag 0FPP](https://stacks.math.columbia.edu/tag/0FPP). 8 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FPQ, a lemma
 
 [Tag 0FPQ](https://stacks.math.columbia.edu/tag/0FPQ) in the Stacks Project.
 
-**`Stacks.Cohomology.MonoidalComplexesOfModules.symmetricMonoidalComplexes`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Monoidal/ComplexesOfModules.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Monoidal/ComplexesOfModules.lean#L133). References: SGA 4 XVII (4.1.6), “⊗ on complexes”.
+**`Stacks.Cohomology.MonoidalComplexesOfModules.symmetricMonoidalComplexes`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Monoidal/ComplexesOfModules.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Monoidal/ComplexesOfModules.lean#L133). References: SGA 4 XVII (4.1.6), “⊗ on complexes”.
 
 > Complexes of modules on any ringed site form a symmetric monoidal category; its tensor
 > bifunctor is totalized sheaf tensor.
@@ -27,7 +27,7 @@ public def symmetricMonoidalComplexes : SymmetricMonoidalComplexes R
 
 [Tag 0FPR](https://stacks.math.columbia.edu/tag/0FPR) in the Stacks Project.
 
-**`Stacks.SheafOfModules.Strict.isLeftDual_dualComplexOfLocallyStrictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Duals/LeftDualOfALocallyStrictlyPerfectComplex.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Duals/LeftDualOfALocallyStrictlyPerfectComplex.lean#L457). The attribute's comment: “for a complex `ℱ^•` of 𝒪-modules such that every object of the site has a covering sieve on whose members `ℱ^•` is strictly perfect (Tag 08FL), the complex `𝒢^• = SheafHom^•(ℱ^•, 𝒪)` with η = ∑ ηₙ and ε = ∑ εₙ is a left dual of `ℱ^•` (Tag 0FFP) in the monoidal category of complexes of Tag 0FPQ. The left dual is an `ExactPairing`, so both triangle identities hold; η and ε are pinned down by their degree-zero components on the summands `ℱ^n ⊗ 𝒢^{-n}` and `𝒢^{-n} ⊗ ℱ^n`, which are the coevaluation ηₙ and the evaluation εₙ of Tag 0FNY at `ℱ^n`. The complex is `dualComplexOfLocallyStrictlyPerfect`, with terms `SheafHom(ℱ^{-j}, 𝒪)` (`dualComplexOfLocallyStrictlyPerfect_X`) and the signed-transpose differential of Tag 0FNK (`dualComplex_d`); the pairing itself is `exactPairingDualComplexOfLocallyStrictlyPerfect`. The converse is Tag 0FPS”.
+**`Stacks.SheafOfModules.Strict.isLeftDual_dualComplexOfLocallyStrictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Duals/LeftDualOfALocallyStrictlyPerfectComplex.lean, line 457](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Duals/LeftDualOfALocallyStrictlyPerfectComplex.lean#L457). The attribute's comment: “for a complex `ℱ^•` of 𝒪-modules such that every object of the site has a covering sieve on whose members `ℱ^•` is strictly perfect (Tag 08FL), the complex `𝒢^• = SheafHom^•(ℱ^•, 𝒪)` with η = ∑ ηₙ and ε = ∑ εₙ is a left dual of `ℱ^•` (Tag 0FFP) in the monoidal category of complexes of Tag 0FPQ. The left dual is an `ExactPairing`, so both triangle identities hold; η and ε are pinned down by their degree-zero components on the summands `ℱ^n ⊗ 𝒢^{-n}` and `𝒢^{-n} ⊗ ℱ^n`, which are the coevaluation ηₙ and the evaluation εₙ of Tag 0FNY at `ℱ^n`. The complex is `dualComplexOfLocallyStrictlyPerfect`, with terms `SheafHom(ℱ^{-j}, 𝒪)` (`dualComplexOfLocallyStrictlyPerfect_X`) and the signed-transpose differential of Tag 0FNK (`dualComplex_d`); the pairing itself is `exactPairingDualComplexOfLocallyStrictlyPerfect`. The converse is Tag 0FPS”.
 
 > **[Stacks, Tag 0FPR].** Let `(C, 𝒪)` be a ringed site and let `ℱ^•` be a complex of
 > `𝒪`-modules such that for every object `U` of `C` there exists a covering `{U_i → U}` with
@@ -84,7 +84,7 @@ theorem isLeftDual_dualComplexOfLocallyStrictlyPerfect (hK : IsLocallyStrictlyPe
 
 [Tag 0FPS](https://stacks.math.columbia.edu/tag/0FPS) in the Stacks Project.
 
-**`Stacks.SheafOfModules.Strict.isLocallyStrictlyPerfect_and_isoDualComplex_of_exactPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Duals/ComplexWithALeftDual.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Duals/ComplexWithALeftDual.lean#L157). The attribute's comment: “the WHOLE tag, under the tag's OWN hypothesis that `ℱ^•` has a left dual `𝒢^•` in the monoidal category of complexes of 𝒪-modules of Tag 0FPQ, whose tensor product is the one of Tag 01CA. Both conclusions: every object of the site has a covering on whose members `ℱ^•` is strictly perfect in the sense of Tag 08FL — the witness `Stacks.SheafOfModules.Strict.IsLocallyStrictlyPerfect`, unfolding to the covering sieve and `IsStrictlyPerfect` of the restricted complex — and `𝒢^•` is the left dual of Example 0FPR with its pairings: it is isomorphic to `Stacks.SheafOfModules.Strict.dualComplexOfLocallyStrictlyPerfect`, the complex `SheafHom^•(ℱ^•, 𝒪)`, by an isomorphism matching the coevaluation and the evaluation of the given pairing with those of `Stacks.SheafOfModules.Strict.exactPairingDualComplexOfLocallyStrictlyPerfect`, the η = ∑ ηₙ and ε = ∑ εₙ of that example — which is uniqueness of left duals (Tag 0FFR)”.
+**`Stacks.SheafOfModules.Strict.isLocallyStrictlyPerfect_and_isoDualComplex_of_exactPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Duals/ComplexWithALeftDual.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Duals/ComplexWithALeftDual.lean#L157). The attribute's comment: “the WHOLE tag, under the tag's OWN hypothesis that `ℱ^•` has a left dual `𝒢^•` in the monoidal category of complexes of 𝒪-modules of Tag 0FPQ, whose tensor product is the one of Tag 01CA. Both conclusions: every object of the site has a covering on whose members `ℱ^•` is strictly perfect in the sense of Tag 08FL — the witness `Stacks.SheafOfModules.Strict.IsLocallyStrictlyPerfect`, unfolding to the covering sieve and `IsStrictlyPerfect` of the restricted complex — and `𝒢^•` is the left dual of Example 0FPR with its pairings: it is isomorphic to `Stacks.SheafOfModules.Strict.dualComplexOfLocallyStrictlyPerfect`, the complex `SheafHom^•(ℱ^•, 𝒪)`, by an isomorphism matching the coevaluation and the evaluation of the given pairing with those of `Stacks.SheafOfModules.Strict.exactPairingDualComplexOfLocallyStrictlyPerfect`, the η = ∑ ηₙ and ε = ∑ εₙ of that example — which is uniqueness of left duals (Tag 0FFR)”.
 
 > **[Stacks, Tag 0FPS]**. Let `(C, 𝒪)` be a ringed site and `ℱ^•` a complex of `𝒪`-modules with a
 > left dual `𝒢^•` in the monoidal category of complexes of `𝒪`-modules. Then every object of the site
@@ -112,7 +112,7 @@ theorem isLocallyStrictlyPerfect_and_isoDualComplex_of_exactPairing
 
 [Tag 08JJ](https://stacks.math.columbia.edu/tag/08JJ) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isIso_tensorDualToSheafHom_of_localSummand`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualSheafHom.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualSheafHom.lean#L535). The attribute's comment: “step (5) of the proof only: the canonical map `F ⊗_𝒪 SheafHom(E, 𝒪) ⟶ SheafHom(E, F)` is an isomorphism for `E` locally a summand of a finite free module and `F` arbitrary. None of the tag's four assertions is proved here; in particular the derived statement `M ⊗^L_𝒪 K^∨ ≅ RSheafHom(K, M)` for perfect `K` is not, and still needs a complex-level comparison with its Koszul signs, the tensor-side analogue of Tag 08JH, locality of the derived tensor product on a slice, and a K-flat representative on a ringed site.”. References: EGA 0 (5.4.2), “more general”; SGA 5 IIIB (5.0), “more general”.
+**`Stacks.SheafOfModules.isIso_tensorDualToSheafHom_of_localSummand`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualSheafHom.lean, line 537](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorDualSheafHom.lean#L537). The attribute's comment: “step (5) of the proof only: the canonical map `F ⊗_𝒪 SheafHom(E, 𝒪) ⟶ SheafHom(E, F)` is an isomorphism for `E` locally a summand of a finite free module and `F` arbitrary. None of the tag's four assertions is proved here; in particular the derived statement `M ⊗^L_𝒪 K^∨ ≅ RSheafHom(K, M)` for perfect `K` is not, and still needs a complex-level comparison with its Koszul signs, the tensor-side analogue of Tag 08JH, locality of the derived tensor product on a slice, and a K-flat representative on a ringed site.”. References: EGA 0 (5.4.2), “more general”; SGA 5 IIIB (5.0), “more general”.
 
 > **Step (5) of the proof of Stacks 08JJ.** Let `(C, 𝒪)` be a ringed site, let `E` be a sheaf of
 > `𝒪`-modules which is locally a direct summand of a finite free sheaf of modules, and let `F` be an
@@ -135,7 +135,7 @@ theorem isIso_tensorDualToSheafHom_of_localSummand
     IsIso (tensorDualToSheafHom 𝒪 h𝒪 E F)
 ```
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedSheafHomEvaluation_of_coversTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/EvaluationLocality.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/EvaluationLocality.lean#L289). The attribute's comment: “the locality step for the evaluation morphism of Tag 0A97 only: invertibility of `ev : RSheafHom(L, M) ⊗^L_O K ⟶ RSheafHom(RSheafHom(K, L), M)`, and hence of the bidual map `K ⟶ (K^∨)^∨` of `AlgebraicGeometry.RingedSite.derivedBidual`, may be checked after restriction to the slices over a family of objects covering the final object, where it becomes quasi-isomorphy of the evaluation morphism of internal Hom complexes of Tag 0A92. NONE of the four assertions of Tag 08JJ is proved here and in particular the bidual map is NOT shown to be invertible for a perfect K: quasi-isomorphy over each member of the covering family is a HYPOTHESIS below. The base case that discharges it — that `evaluationMap` is a quasi-isomorphism when its source complex is strictly perfect (Tag 08FL) — is `AlgebraicGeometry.RingedSite.quasiIso_evaluationMap_of_isStrictlyPerfect`, and the second assertion of Tag 08JJ follows from the two together, in `AlgebraicGeometry.RingedSite.isIso_derivedBidual_of_isPerfect`. The reduction performed here is the same one `Stacks.SheafOfModules.isIso_of_coversTop_mapDerivedCategory` performs for an arbitrary morphism of `D(Mod(O))`, but carried out at the chain level, because the derived evaluation morphism has no restriction compatibility of its own; the chain-level square it uses is `AlgebraicGeometry.RingedSite.evaluationMap_restrict_square`”.
+**`AlgebraicGeometry.RingedSite.isIso_derivedSheafHomEvaluation_of_coversTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/EvaluationLocality.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/EvaluationLocality.lean#L289). The attribute's comment: “the locality step for the evaluation morphism of Tag 0A97 only: invertibility of `ev : RSheafHom(L, M) ⊗^L_O K ⟶ RSheafHom(RSheafHom(K, L), M)`, and hence of the bidual map `K ⟶ (K^∨)^∨` of `AlgebraicGeometry.RingedSite.derivedBidual`, may be checked after restriction to the slices over a family of objects covering the final object, where it becomes quasi-isomorphy of the evaluation morphism of internal Hom complexes of Tag 0A92. NONE of the four assertions of Tag 08JJ is proved here and in particular the bidual map is NOT shown to be invertible for a perfect K: quasi-isomorphy over each member of the covering family is a HYPOTHESIS below. The base case that discharges it — that `evaluationMap` is a quasi-isomorphism when its source complex is strictly perfect (Tag 08FL) — is `AlgebraicGeometry.RingedSite.quasiIso_evaluationMap_of_isStrictlyPerfect`, and the second assertion of Tag 08JJ follows from the two together, in `AlgebraicGeometry.RingedSite.isIso_derivedBidual_of_isPerfect`. The reduction performed here is the same one `Stacks.SheafOfModules.isIso_of_coversTop_mapDerivedCategory` performs for an arbitrary morphism of `D(Mod(O))`, but carried out at the chain level, because the derived evaluation morphism has no restriction compatibility of its own; the chain-level square it uses is `AlgebraicGeometry.RingedSite.evaluationMap_restrict_square`”.
 
 > **Invertibility of the evaluation morphism of derived internal Homs is local on the site.**
 > Let `V : ι → C` be a family of objects covering the final object of the site, let `A` be a K-flat
@@ -157,7 +157,7 @@ theorem isIso_derivedSheafHomEvaluation_of_coversTop
     IsIso (derivedSheafHomEvaluation X T Hd K L M)
 ```
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedBidual_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/EvaluationPerfect.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/EvaluationPerfect.lean#L155). The attribute's comment: “the canonical map `K ⟶ (K^∨)^∨` is an isomorphism for a perfect object `K` of `D(O)`, where `K^∨` is the derived dual `RSheafHom_O(K, O)`; this is one of the four assertions of the tag, and the hypothesis is perfection of `K` alone”.
+**`AlgebraicGeometry.RingedSite.isIso_derivedBidual_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/EvaluationPerfect.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/EvaluationPerfect.lean#L155). The attribute's comment: “the canonical map `K ⟶ (K^∨)^∨` is an isomorphism for a perfect object `K` of `D(O)`, where `K^∨` is the derived dual `RSheafHom_O(K, O)`; this is one of the four assertions of the tag, and the hypothesis is perfection of `K` alone”.
 
 > **The bidual map of a perfect object is an isomorphism.** For a perfect object
 > `K` of `D(O)` the canonical map
@@ -174,7 +174,7 @@ theorem isIso_derivedBidual_of_isPerfect
     IsIso (derivedBidual X T K)
 ```
 
-**`AlgebraicGeometry.RingedSite.isPerfect_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/Duals.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/Duals.lean#L267). The attribute's comment: “the dual of a perfect object is perfect”. References: SGA 6 I (7.3), “perfect ⇒ dual perfect”; SGA 6 III (4.9), “Case S = X = Y”.
+**`AlgebraicGeometry.RingedSite.isPerfect_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/Duals.lean, line 267](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/Duals.lean#L267). The attribute's comment: “the dual of a perfect object is perfect”. References: SGA 6 I (7.3), “perfect ⇒ dual perfect”; SGA 6 III (4.9), “Case S = X = Y”.
 
 > **Stacks 08JJ, first assertion.** Let `(C, O)` be a ringed site and let `K` be a perfect
 > object of `D(O)`. Then the dual `K^∨ = RSheafHom(K, O)` is perfect as well.
@@ -191,7 +191,7 @@ theorem isPerfect_derivedDual
     (hK : X.IsPerfect K) : X.IsPerfect (derivedDual X K)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedDualTensorSheafHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean#L196). The attribute's comment: “the isomorphism M ⊗^L\_O K^∨ ≅ RSheafHom\_O(K, M) for perfect K; not the invertibility of the canonical map of Stacks 08JD, which is a different morphism of the same type”.
+**`AlgebraicGeometry.RingedSite.derivedDualTensorSheafHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean#L196). The attribute's comment: “the isomorphism M ⊗^L\_O K^∨ ≅ RSheafHom\_O(K, M) for perfect K; not the invertibility of the canonical map of Stacks 08JD, which is a different morphism of the same type”.
 
 > **Stacks 08JJ: tensoring with the dual of a perfect object is derived internal Hom.** Let
 > `(C, O)` be a ringed site, let `K` be a perfect object of `D(O)` with dual
@@ -212,7 +212,7 @@ def derivedDualTensorSheafHomIso
       ((derivedSheafHomBifunctor X).obj (op K)).obj M
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedDualTensorSheafHomIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean#L212). The attribute's comment: “that isomorphism is functorial in M”.
+**`AlgebraicGeometry.RingedSite.derivedDualTensorSheafHomIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean#L212). The attribute's comment: “that isomorphism is functorial in M”.
 
 > **Stacks 08JJ: the isomorphism is functorial in `M`.** This is the functoriality the source
 > asserts: the diagonal of Stacks 0BYS is natural in its tensor factor and the right unit
@@ -230,7 +230,7 @@ theorem derivedDualTensorSheafHomIso_naturality
         ((derivedSheafHomBifunctor X).obj (op K)).map f
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedDualTensorGlobalSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean#L276). The attribute's comment: “the identification H⁰(C, M ⊗^L\_O K^∨) = Hom\_\{D(O)}(K, M) for perfect K, as an isomorphism of abelian groups; not the bijectivity of the induced map of Stacks 08JD”.
+**`AlgebraicGeometry.RingedSite.derivedDualTensorGlobalSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean, line 276](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHom.lean#L276). The attribute's comment: “the identification H⁰(C, M ⊗^L\_O K^∨) = Hom\_\{D(O)}(K, M) for perfect K, as an isomorphism of abelian groups; not the bijectivity of the induced map of Stacks 08JD”.
 
 > **Stacks 08JJ: `H⁰(C, M ⊗^L_O K^∨) = Hom_{D(O)}(K, M)` for perfect `K`.** The degree-zero
 > global hypercohomology of `M ⊗^L_O K^∨` is the group of morphisms `K ⟶ M` in `D(O)`.
@@ -250,7 +250,7 @@ def derivedDualTensorGlobalSectionsEquiv
             (derivedDual X K))) : Type u) ≃+ (K ⟶ M)
 ```
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedTensorDualToSheafHom_of_isPerfect_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHomCanonical.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHomCanonical.lean#L482). The attribute's comment: “the canonical map M ⊗^L\_O L^∨ ⟶ RSheafHom\_O(L, M) of Stacks 08JD is an isomorphism for a perfect L”.
+**`AlgebraicGeometry.RingedSite.isIso_derivedTensorDualToSheafHom_of_isPerfect_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHomCanonical.lean, line 482](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorSheafHomCanonical.lean#L482). The attribute's comment: “the canonical map M ⊗^L\_O L^∨ ⟶ RSheafHom\_O(L, M) of Stacks 08JD is an isomorphism for a perfect L”.
 
 > **Stacks 08JJ, third assertion, for the canonical map of Stacks 08JD.** Let `(C, O)` be a
 > ringed site, let `L` be a **perfect** object of `D(O)` with dual `L^∨ = RSheafHom(L, O)` and let
@@ -279,7 +279,7 @@ theorem isIso_derivedTensorDualToSheafHom_of_isPerfect_canonical
       (Stacks.SheafOfModules.canonicalDerivedTensorProduct X) L M)
 ```
 
-**`Stacks.SheafOfModules.isIso_of_coversTop_mapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Slice/DerivedIsomorphismLocality.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Slice/DerivedIsomorphismLocality.lean#L112). The attribute's comment: “the locality step of the proof only: invertibility of a morphism of `D(Mod(O))` may be checked after restriction to the slices over a family of objects covering the final object. Stacks 08JJ uses this reduction twice, for the bidual map `K ⟶ (K^∨)^∨` and for the canonical map `M ⊗^L_O K^∨ ⟶ RSheafHom_O(K, M)`; neither of those maps is shown to be an isomorphism here, and none of the tag's four assertions is proved here.”.
+**`Stacks.SheafOfModules.isIso_of_coversTop_mapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Slice/DerivedIsomorphismLocality.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Slice/DerivedIsomorphismLocality.lean#L112). The attribute's comment: “the locality step of the proof only: invertibility of a morphism of `D(Mod(O))` may be checked after restriction to the slices over a family of objects covering the final object. Stacks 08JJ uses this reduction twice, for the bidual map `K ⟶ (K^∨)^∨` and for the canonical map `M ⊗^L_O K^∨ ⟶ RSheafHom_O(K, M)`; neither of those maps is shown to be an isomorphism here, and none of the tag's four assertions is proved here.”.
 
 > **Invertibility in the derived category of sheaves of modules is local on the site.** Let
 > `V : ι → C` be a family of objects covering the final object of the site. A morphism of
@@ -297,7 +297,7 @@ theorem isIso_of_coversTop_mapDerivedCategory {ι : Type*} {V : ι → C} (hV : 
 
 [Tag 0FPT](https://stacks.math.columbia.edu/tag/0FPT) in the Stacks Project.
 
-**`Stacks.DerivedTensor.RingedSite.DerivedTensorProduct.braidingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean#L116). The attribute's comment: “the commutativity constraint at a pair of objects, as an isomorphism; not the monoidal structure and not its coherence axioms”.
+**`Stacks.DerivedTensor.RingedSite.DerivedTensorProduct.braidingIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean#L116). The attribute's comment: “the commutativity constraint at a pair of objects, as an isomorphism; not the monoidal structure and not its coherence axioms”.
 
 > **[Stacks, Tag 0FPT], the commutativity constraint.** The derived tensor product of two
 > objects of `D(𝒪)` is symmetric: `A ⊗^L_𝒪 B ≅ B ⊗^L_𝒪 A`.
@@ -311,7 +311,7 @@ def braidingIso (A B : DerivedModules X.O) :
     (T.tensor.obj A).obj B ≅ (T.tensor.obj B).obj A
 ```
 
-**`Stacks.DerivedTensor.RingedSite.DerivedTensorProduct.rightUnitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean#L139). The attribute's comment: “the unit constraint on the right at an object, as an isomorphism; not the monoidal structure and not its coherence axioms”.
+**`Stacks.DerivedTensor.RingedSite.DerivedTensorProduct.rightUnitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean#L139). The attribute's comment: “the unit constraint on the right at an object, as an isomorphism; not the monoidal structure and not its coherence axioms”.
 
 > **[Stacks, Tag 0FPT], the unit constraint on the right.** The structure sheaf in degree zero
 > is a unit for the derived tensor product: `A ⊗^L_𝒪 𝒪 ≅ A`.
@@ -325,7 +325,7 @@ def rightUnitIso (A : DerivedModules X.O) :
     (T.tensor.obj A).obj (unitObject X) ≅ A
 ```
 
-**`Stacks.DerivedTensor.RingedSite.DerivedTensorProduct.leftUnitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean#L154). The attribute's comment: “the unit constraint on the left at an object, as an isomorphism; not the monoidal structure and not its coherence axioms”.
+**`Stacks.DerivedTensor.RingedSite.DerivedTensorProduct.leftUnitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DerivedSymmetryAndUnit.lean#L154). The attribute's comment: “the unit constraint on the left at an object, as an isomorphism; not the monoidal structure and not its coherence axioms”.
 
 > **[Stacks, Tag 0FPT], the unit constraint on the left.** The structure sheaf in degree zero
 > is a unit for the derived tensor product on the other side too: `𝒪 ⊗^L_𝒪 A ≅ A`.
@@ -337,7 +337,7 @@ def leftUnitIso (A : DerivedModules X.O) :
     (T.tensor.obj (unitObject X)).obj A ≅ A
 ```
 
-**`Stacks.SheafOfModules.DerivedMonoidal.symmetricMonoidalDerivedTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Monoidal/DerivedTensorConstraints.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Monoidal/DerivedTensorConstraints.lean#L198).
+**`Stacks.SheafOfModules.DerivedMonoidal.symmetricMonoidalDerivedTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Monoidal/DerivedTensorConstraints.lean, line 198](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Monoidal/DerivedTensorConstraints.lean#L198).
 
 > **The derived category of modules on a ringed site is a symmetric monoidal category with
 > tensor product the derived tensor product and the usual associativity and commutativity
@@ -352,7 +352,7 @@ public def symmetricMonoidalDerivedTensor : SymmetricMonoidalDerivedTensor R
 
 [Tag 0FPU](https://stacks.math.columbia.edu/tag/0FPU) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedTensorDualToSheafHom_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L268). The attribute's comment: “tensor\_hom\_iso”. References: SGA 5 IIIB (5.0).
+**`AlgebraicGeometry.RingedSite.isIso_derivedTensorDualToSheafHom_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L268). The attribute's comment: “tensor\_hom\_iso”. References: SGA 5 IIIB (5.0).
 
 > **Stacks 0FPU: the canonical map `K ⊗^𝐋_O K^∨ ⟶ R𝓗om_O(K, K)` is an isomorphism.**  For a
 > perfect object `K` of `D(O)` the canonical map of Stacks 08JD at `M = K` is invertible.
@@ -372,7 +372,7 @@ theorem isIso_derivedTensorDualToSheafHom_self
       (Stacks.SheafOfModules.canonicalDerivedTensorProduct X) K K)
 ```
 
-**`AlgebraicGeometry.RingedSite.coevaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L290). The attribute's comment: “coevaluation”.
+**`AlgebraicGeometry.RingedSite.coevaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L290). The attribute's comment: “coevaluation”.
 
 > **Stacks 0FPU: the coevaluation of a perfect object.**  For a perfect object `K` of `D(O)`
 > with dual `K^∨ = R𝓗om_O(K, O)` the coevaluation is the morphism
@@ -396,7 +396,7 @@ def coevaluation
       ((Stacks.SheafOfModules.derivedTensorProductFunctor X).obj K).obj (derivedDual X K)
 ```
 
-**`AlgebraicGeometry.RingedSite.evaluation_coevaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L440). The attribute's comment: “left\_dual”.
+**`AlgebraicGeometry.RingedSite.evaluation_coevaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 440](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L440). The attribute's comment: “left\_dual”.
 
 > **Stacks 0FPU, the triangle identity on the perfect object.**  For a perfect `K`, with the
 > coevaluation `η` and the evaluation `ε`,
@@ -416,7 +416,7 @@ theorem evaluation_coevaluation
         K ◁ monoidalEvaluation X K = (λ_ K).hom ≫ (ρ_ K).inv
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedDualExactPairing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L468). The attribute's comment: “left\_dual”.
+**`AlgebraicGeometry.RingedSite.derivedDualExactPairing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 468](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L468). The attribute's comment: “left\_dual”.
 
 > **Stacks 0FPU: the derived dual of a perfect object is a left dual.**  For a perfect object
 > `K` of `D(O)` the pair `(η, ε)` is an exact pairing — `K^∨ = R𝓗om_O(K, O)` is a left dual of `K`
@@ -433,7 +433,7 @@ def derivedDualExactPairing
     (hK : X.IsPerfect K) : ExactPairing K (derivedDual X K)
 ```
 
-**`AlgebraicGeometry.RingedSite.coevaluation_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L482). The attribute's comment: “left\_dual”.
+**`AlgebraicGeometry.RingedSite.coevaluation_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 482](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L482). The attribute's comment: “left\_dual”.
 
 > **Stacks 0FPU, the triangle identity on the derived dual.**  For a perfect `K`,
 >
@@ -452,7 +452,7 @@ theorem coevaluation_evaluation
       (ρ_ (derivedDual X K)).hom ≫ (λ_ (derivedDual X K)).inv
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_exactPairing_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L543). The attribute's comment: “left\_dual”.
+**`AlgebraicGeometry.RingedSite.exists_exactPairing_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean, line 543](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualLeftDual.lean#L543). The attribute's comment: “left\_dual”.
 
 > **Stacks 0FPU: the derived dual of a perfect object is a left dual, on an arbitrary ringed
 > site.**  Let `(C, O)` be a ringed site and `K` a perfect object of `D(O)`, with dual
@@ -476,7 +476,7 @@ theorem exists_exactPairing_derivedDual
         P.evaluation' = monoidalEvaluation Y K
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedDualEvaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualityPairing.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualityPairing.lean#L210). The attribute's comment: “evaluation”.
+**`AlgebraicGeometry.RingedSite.derivedDualEvaluation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualityPairing.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualityPairing.lean#L210). The attribute's comment: “evaluation”.
 
 > **Stacks 0FPU: the evaluation map.** For an object `K` of `D(O)` with dual
 > `K^∨ = RSheafHom(K, O)` the evaluation is the morphism
@@ -498,7 +498,7 @@ def derivedDualEvaluation
 
 [Tag 0FPV](https://stacks.math.columbia.edu/tag/0FPV) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.isPerfect_and_isIso_derivedDualToLeftDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LeftDualIsPerfect.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LeftDualIsPerfect.lean#L151). The attribute's comment: “both assertions: `M` is perfect, and the left dual `N` is the object `RSheafHom(M, O)` of Example 0FPU, by the morphism `derivedDualToLeftDual` which the pairing matches with the evaluation of Example 0FPU and which carries the evaluation of the pairing to that of Example 0FPU. The monoidal structure on `D(O)` is the one of Tag 0FPT, `Stacks.SheafOfModules.DerivedMonoidal.derivedMonoidal`, a left dual is Mathlib's `CategoryTheory.ExactPairing` (Definition 0FFP), and perfect is `AlgebraicGeometry.RingedSite.IsPerfect` (Definition 08G5)”.
+**`AlgebraicGeometry.RingedSite.isPerfect_and_isIso_derivedDualToLeftDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LeftDualIsPerfect.lean, line 151](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LeftDualIsPerfect.lean#L151). The attribute's comment: “both assertions: `M` is perfect, and the left dual `N` is the object `RSheafHom(M, O)` of Example 0FPU, by the morphism `derivedDualToLeftDual` which the pairing matches with the evaluation of Example 0FPU and which carries the evaluation of the pairing to that of Example 0FPU. The monoidal structure on `D(O)` is the one of Tag 0FPT, `Stacks.SheafOfModules.DerivedMonoidal.derivedMonoidal`, a left dual is Mathlib's `CategoryTheory.ExactPairing` (Definition 0FFP), and perfect is `AlgebraicGeometry.RingedSite.IsPerfect` (Definition 08G5)”.
 
 > **Stacks 0FPV.** Let `(C, O)` be a ringed site and let `M` be an object of `D(O)` with a left
 > dual `N` in the symmetric monoidal category `D(O)` of Stacks 0FPT. Then `M` is perfect, and the
@@ -519,7 +519,7 @@ theorem isPerfect_and_isIso_derivedDualToLeftDual
           derivedDualToLeftDual M N ▷ M ≫ ε_ M N = derivedDualEvaluationMonoidal M)
 ```
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedDualToLeftDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LeftDualIsTheDerivedDual.lean, line 910](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LeftDualIsTheDerivedDual.lean#L910). The attribute's comment: “the left dual is the object constructed in Example 0FPU, namely the derived dual `RSheafHom(M, O)` of Tag 08JD, and the identification is the morphism matched with the evaluation of Example 0FPU by the pairing; see `AlgebraicGeometry.RingedSite.whiskerRight_derivedDualToLeftDual` for the compatibility of the two evaluations. The monoidal structure on `D(O)` is the one of Tag 0FPT, `Stacks.SheafOfModules.DerivedMonoidal.derivedMonoidal`, and a left dual is Mathlib's `CategoryTheory.ExactPairing`, which is Definition 0FFP”.
+**`AlgebraicGeometry.RingedSite.isIso_derivedDualToLeftDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LeftDualIsTheDerivedDual.lean, line 910](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LeftDualIsTheDerivedDual.lean#L910). The attribute's comment: “the left dual is the object constructed in Example 0FPU, namely the derived dual `RSheafHom(M, O)` of Tag 08JD, and the identification is the morphism matched with the evaluation of Example 0FPU by the pairing; see `AlgebraicGeometry.RingedSite.whiskerRight_derivedDualToLeftDual` for the compatibility of the two evaluations. The monoidal structure on `D(O)` is the one of Tag 0FPT, `Stacks.SheafOfModules.DerivedMonoidal.derivedMonoidal`, and a left dual is Mathlib's `CategoryTheory.ExactPairing`, which is Definition 0FFP”.
 
 > **Stacks 0FPV, second assertion: a left dual of `M` is the dual object of Example 0FPU.**
 > The morphism `M^∨ = RSheafHom(M, O) ⟶ N` which the exact pairing matches with the evaluation of
@@ -534,7 +534,7 @@ theorem isIso_derivedDualToLeftDual : IsIso (derivedDualToLeftDual M N)
 
 [Tag 0A0A](https://stacks.math.columbia.edu/tag/0A0A) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.isDerivedLimit_tensorDerivedDual_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomOfAHomotopyColimit.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomOfAHomotopyColimit.lean#L272). The attribute's comment: “the stated identity `RSheafHom(K, E) = R lim (E ⊗^L_O Kₙ^∨)` for `K = hocolim Kₙ`, with two inputs of the source's proof assumed rather than proved: `hcomp`, that the canonical map `RSheafHom(⊕ Kₙ, E) ⟶ ∏ RSheafHom(Kₙ, E)` is an isomorphism, which is the last step of the proof; and `hdual`, clause 3 of Stacks 08JJ, that the canonical map of Stacks 08JD `E ⊗^L_O Kₙ^∨ ⟶ RSheafHom(Kₙ, E)` is an isomorphism, which no declaration of this library asserts. The perfectness of the `Kₙ` is used in the source only to invoke that clause, so it is not assumed here, and the existence of the direct sum `⊕ Kₙ` and of the two products is not assumed either, being supplied by the instances of Stacks 07D9; everything else of the tag is proved, in particular the whole comparison of triangles.”.
+**`AlgebraicGeometry.RingedSite.isDerivedLimit_tensorDerivedDual_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomOfAHomotopyColimit.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomOfAHomotopyColimit.lean#L272). The attribute's comment: “the stated identity `RSheafHom(K, E) = R lim (E ⊗^L_O Kₙ^∨)` for `K = hocolim Kₙ`, with two inputs of the source's proof assumed rather than proved: `hcomp`, that the canonical map `RSheafHom(⊕ Kₙ, E) ⟶ ∏ RSheafHom(Kₙ, E)` is an isomorphism, which is the last step of the proof; and `hdual`, clause 3 of Stacks 08JJ, that the canonical map of Stacks 08JD `E ⊗^L_O Kₙ^∨ ⟶ RSheafHom(Kₙ, E)` is an isomorphism, which no declaration of this library asserts. The perfectness of the `Kₙ` is used in the source only to invoke that clause, so it is not assumed here, and the existence of the direct sum `⊕ Kₙ` and of the two products is not assumed either, being supplied by the instances of Stacks 07D9; everything else of the tag is proved, in particular the whole comparison of triangles.”.
 
 > **Stacks 0A0A.**  Let `(Kₙ)` be a system of objects of `D(O)` and let `K = hocolim Kₙ`.  For
 > every object `E` of `D(O)`,
@@ -566,7 +566,7 @@ theorem isDerivedLimit_tensorDerivedDual_of_isHomotopyColimit
       (((derivedSheafHomBifunctor X).flip.obj E).obj (op K))
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedHom_isDerivedLimit_tensorDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualSystemLimit.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualSystemLimit.lean#L152). The attribute's comment: “the identity `R𝑆heafHom(K, E) = R lim (E ⊗^L_O Kₙ^∨)` for a system of perfect objects `Kₙ` with derived colimit `K`, at the hypotheses of the source: the perfectness of each `Kₙ` and `K = hocolim Kₙ`. The direct-sum comparison and the identification of Stacks 08JJ that the source's proof uses are both proved in the library, so this needs nothing beyond those two hypotheses: the ringed site carries no hypothesis, the sheafification and additivity instances the statement's constructions need being synthesized rather than assumed, and the existence of `⊕ Kₙ` and of the products coming from the instances of Stacks 07D9”.
+**`AlgebraicGeometry.RingedSite.derivedHom_isDerivedLimit_tensorDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualSystemLimit.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DerivedDualSystemLimit.lean#L152). The attribute's comment: “the identity `R𝑆heafHom(K, E) = R lim (E ⊗^L_O Kₙ^∨)` for a system of perfect objects `Kₙ` with derived colimit `K`, at the hypotheses of the source: the perfectness of each `Kₙ` and `K = hocolim Kₙ`. The direct-sum comparison and the identification of Stacks 08JJ that the source's proof uses are both proved in the library, so this needs nothing beyond those two hypotheses: the ringed site carries no hypothesis, the sheafification and additivity instances the statement's constructions need being synthesized rather than assumed, and the existence of `⊕ Kₙ` and of the products coming from the instances of Stacks 07D9”.
 
 > **Stacks 0A0A: derived internal Hom out of a homotopy colimit of perfect objects.** Let
 > `(𝒞, 𝒪)` be a ringed site, let `(Kₙ)` be a system of perfect objects of `D(𝒪)`, let
@@ -589,7 +589,7 @@ theorem derivedHom_isDerivedLimit_tensorDual
       (((derivedSheafHomBifunctor X).obj (op K)).obj E)
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedLimit_tensorDerivedDual_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorDerivedLimit.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorDerivedLimit.lean#L122). The attribute's comment: “the stated identity `RSheafHom(K, E) = R lim (E ⊗^L_O Kₙ^∨)` for `K = hocolim Kₙ` with the `Kₙ` perfect, for the canonical derived tensor product, with both inputs of the source's proof proved rather than assumed”.
+**`AlgebraicGeometry.RingedSite.isDerivedLimit_tensorDerivedDual_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorDerivedLimit.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/DualTensorDerivedLimit.lean#L122). The attribute's comment: “the stated identity `RSheafHom(K, E) = R lim (E ⊗^L_O Kₙ^∨)` for `K = hocolim Kₙ` with the `Kₙ` perfect, for the canonical derived tensor product, with both inputs of the source's proof proved rather than assumed”.
 
 > **Stacks 0A0A for a system of perfect objects.** Let `(Kₙ)` be a system of perfect objects
 > of `D(𝒪)` whose direct sum exists and let `K = hocolim Kₙ`. For every object `E` of `D(𝒪)`,
@@ -627,4 +627,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.48, Tag 0FPP](https://stacks.math.columbia.edu/tag/0FPP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

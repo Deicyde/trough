@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.29 Unbounded complexes
 
-Section 13.29 of the Stacks Project, [Tag 06XW](https://stacks.math.columbia.edu/tag/06XW). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.29 of the Stacks Project, [Tag 06XW](https://stacks.math.columbia.edu/tag/06XW). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06XX, a lemma
 
 [Tag 06XX](https://stacks.math.columbia.edu/tag/06XX) in the Stacks Project.
 
-**`CochainComplex.exists_sequence_quasiIso_truncLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncLEResolutions.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncLEResolutions.lean#L443).
+**`CochainComplex.exists_sequence_quasiIso_truncLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncLEResolutions.lean, line 443](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncLEResolutions.lean#L443).
 
 > **Stacks 06XX.** Let `A` be an abelian category and let `P` be a class of objects of `A`
 > which contains a zero object, is closed under finite direct sums, and is such that every object
@@ -43,7 +43,7 @@ public theorem exists_sequence_quasiIso_truncLE (P : ObjectProperty A) [P.Contai
 
 [Tag 0794](https://stacks.math.columbia.edu/tag/0794) in the Stacks Project.
 
-**`CategoryTheory.Functor.isLeftDerivable_of_acyclic_mapHomologicalComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/LeftDerivedFunctor.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/LeftDerivedFunctor.lean#L474).
+**`CategoryTheory.Functor.isLeftDerivable_of_acyclic_mapHomologicalComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/LeftDerivedFunctor.lean, line 474](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/LeftDerivedFunctor.lean#L474).
 
 > **Stacks 0794.** Let `F : 𝒜 ⥤ ℬ` be a right exact functor of abelian categories and let `P`
 > be a class of objects of `𝒜`. Assume
@@ -85,7 +85,7 @@ public theorem isLeftDerivable_of_acyclic_mapHomologicalComplex
 
 [Tag 070F](https://stacks.math.columbia.edu/tag/070F) in the Stacks Project.
 
-**`CochainComplex.exists_sequence_quasiIso_truncGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncGEResolutions.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncGEResolutions.lean#L468).
+**`CochainComplex.exists_sequence_quasiIso_truncGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncGEResolutions.lean, line 468](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncGEResolutions.lean#L468).
 
 > **Stacks 070F.** Let `A` be an abelian category and let `P` be a class of objects of `A`
 > which contains a zero object, is closed under finite products, and is such that every object of
@@ -117,4 +117,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.29, Tag 06XW](https://stacks.math.columbia.edu/tag/06XW)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

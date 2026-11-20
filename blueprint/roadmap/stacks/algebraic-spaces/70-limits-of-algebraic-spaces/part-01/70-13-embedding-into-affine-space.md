@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.13 Embedding into affine space
 
-Section 70.13 of the Stacks Project, [Tag 088K](https://stacks.math.columbia.edu/tag/088K). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 70.13 of the Stacks Project, [Tag 088K](https://stacks.math.columbia.edu/tag/088K). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 088L, a lemma
 
 [Tag 088L](https://stacks.math.columbia.edu/tag/088L) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isImmersion_affineSpaceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean, line 1020](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean#L1020). The attribute's comment: “with the cutoff-cofinality side condition on the sections of `U` that the directed limit in the proof requires; quasi-separatedness of `X` is not needed”.
+**`AlgebraicGeometry.Space.exists_isImmersion_affineSpaceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean, line 1020](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean#L1020). The attribute's comment: “with the cutoff-cofinality side condition on the sections of `U` that the directed limit in the proof requires; quasi-separatedness of `X` is not needed”.
 
 > **Stacks 088L.**  Let `f : U ⟶ X` be a morphism of algebraic spaces over `S` with `U` an
 > affine scheme, `f` locally of finite type and `X` locally separated.  Then `U` admits an
@@ -42,7 +42,7 @@ theorem exists_isImmersion_affineSpaceOver (B : BigFppfSite.{u}) (S : Scheme.{u}
       j ≫ prod.fst = f ∧ IsImmersion B S hS j
 ```
 
-**`AlgebraicGeometry.Space.exists_isImmersion_affineSpaceOver_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean, line 1069](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean#L1069). The attribute's comment: “verbatim, over a big fppf site whose size cutoff is a regular cardinal”.
+**`AlgebraicGeometry.Space.exists_isImmersion_affineSpaceOver_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean, line 1069](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean#L1069). The attribute's comment: “verbatim, over a big fppf site whose size cutoff is a regular cardinal”.
 
 > **Stacks 088L** over a big fppf site whose size cutoff is a regular cardinal: an affine
 > scheme locally of finite type over a locally separated algebraic space admits an immersion
@@ -64,7 +64,7 @@ theorem exists_isImmersion_affineSpaceOver_of_isRegular (B : BigFppfSite.{u}) (S
       j ≫ prod.fst = f ∧ IsImmersion B S hS j
 ```
 
-**`AlgebraicGeometry.Space.exists_isImmersion_affineSpaceOver_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean, line 1125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean#L1125).
+**`AlgebraicGeometry.Space.exists_isImmersion_affineSpaceOver_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean, line 1125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpace.lean#L1125).
 
 > **Stacks 088L.**  Let `f : U ⟶ X` be a morphism of algebraic spaces over `S` with `U` an
 > affine scheme, `f` locally of finite type, and `X` quasi-separated and locally separated.
@@ -94,7 +94,7 @@ theorem exists_isImmersion_affineSpaceOver_of_isAbsolutelyQuasiSeparated (B : Bi
 
 [Tag 088M](https://stacks.math.columbia.edu/tag/088M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_not_isAbsolutelyLocallySeparated_not_isImmersion'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpaceSharpUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpaceSharpUnconditional.lean#L64). The attribute's comment: “the failure of 088L without local separatedness; the question the remark raises about quasi-separatedness is open and is not a theorem”.
+**`AlgebraicGeometry.Space.exists_not_isAbsolutelyLocallySeparated_not_isImmersion'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpaceSharpUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EmbeddingIntoAffineSpaceSharpUnconditional.lean#L64). The attribute's comment: “the failure of 088L without local separatedness; the question the remark raises about quasi-separatedness is open and is not a theorem”.
 
 > **Stacks 088M**: the hypothesis of Stacks 088L that `X` be locally separated cannot be
 > dropped.
@@ -132,7 +132,7 @@ theorem exists_not_isAbsolutelyLocallySeparated_not_isImmersion'
 
 [Tag 088N](https://stacks.math.columbia.edu/tag/088N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_denseOpen_isImmersion_affineSpaceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DenseOpenEmbeddingIntoAffineSpace/ComponentGlueing.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DenseOpenEmbeddingIntoAffineSpace/ComponentGlueing.lean#L348).
+**`AlgebraicGeometry.Space.exists_denseOpen_isImmersion_affineSpaceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DenseOpenEmbeddingIntoAffineSpace/ComponentGlueing.lean, line 348](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DenseOpenEmbeddingIntoAffineSpace/ComponentGlueing.lean#L348).
 
 > **Stacks 088N.**  Let `f : Y ⟶ X` be a morphism of algebraic spaces over `S` with `X`
 > Noetherian and `f` of finite presentation.  Then `Y` has a dense open subspace which admits,
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.13, Tag 088K](https://stacks.math.columbia.edu/tag/088K)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

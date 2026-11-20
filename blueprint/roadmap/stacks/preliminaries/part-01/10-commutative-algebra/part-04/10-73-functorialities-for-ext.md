@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.73 Functorialities for Ext
 
-Section 10.73 of the Stacks Project, [Tag 087M](https://stacks.math.columbia.edu/tag/087M). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.73 of the Stacks Project, [Tag 087M](https://stacks.math.columbia.edu/tag/087M). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 087N, a lemma
 
 [Tag 087N](https://stacks.math.columbia.edu/tag/087N) in the Stacks Project.
 
-**`extendScalarsExtComparison_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ext/BaseChange.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ext/BaseChange.lean#L386).
+**`extendScalarsExtComparison_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ext/BaseChange.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ext/BaseChange.lean#L386).
 
 > **Flat base change for Ext.**
 > For a flat ring map `f : R → R'`, an `R`-module `M`, an `R'`-module `N'`, and
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.73, Tag 087M](https://stacks.math.columbia.edu/tag/087M)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

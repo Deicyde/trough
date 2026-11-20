@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.17 Euler characteristics
 
-Section 72.17 of the Stacks Project, [Tag 0DN0](https://stacks.math.columbia.edu/tag/0DN0). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 72.17 of the Stacks Project, [Tag 0DN0](https://stacks.math.columbia.edu/tag/0DN0). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DN1, a definition
 
 [Tag 0DN1](https://stacks.math.columbia.edu/tag/0DN1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eulerCharacteristic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristic.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristic.lean#L296).
+**`AlgebraicGeometry.Space.eulerCharacteristic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristic.lean, line 296](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristic.lean#L296).
 
 > **Stacks 0DN1.** The Euler characteristic of a coherent module `F` on a proper algebraic
 > space `X` over a field `k`: the alternating sum `∑ᵢ (-1)ⁱ dim_k Hⁱ(X, F)` of the dimensions over
@@ -31,7 +31,7 @@ def eulerCharacteristic (f : X ⟶ yoneda.obj (baseObject k B hk))
 
 [Tag 0DN2](https://stacks.math.columbia.edu/tag/0DN2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eulerCharacteristic_add_of_shortExact_of_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristic.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristic.lean#L430).
+**`AlgebraicGeometry.Space.eulerCharacteristic_add_of_shortExact_of_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristic.lean, line 430](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristic.lean#L430).
 
 > **Stacks 0DN2.** Let `k` be a field, `X` a proper algebraic space over `k` and
 > `0 ⟶ F₁ ⟶ F₂ ⟶ F₃ ⟶ 0` a short exact sequence of coherent `𝒪_X`-modules. Then
@@ -54,7 +54,7 @@ theorem eulerCharacteristic_add_of_shortExact_of_outer
         eulerCharacteristic.{u, w} k B hk X hX f hf S.X₃
 ```
 
-**`AlgebraicGeometry.Space.eulerCharacteristic_add_of_shortExact_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicAdditivity.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicAdditivity.lean#L65).
+**`AlgebraicGeometry.Space.eulerCharacteristic_add_of_shortExact_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicAdditivity.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicAdditivity.lean#L65).
 
 > **Stacks 0DN2.**  Let `k` be a field, `X` a proper algebraic space over `k` and
 > `0 ⟶ F₁ ⟶ F₂ ⟶ F₃ ⟶ 0` a short exact sequence of coherent `𝒪_X`-modules.  Then
@@ -81,7 +81,7 @@ theorem eulerCharacteristic_add_of_shortExact_of_isProper
 
 [Tag 0EDD](https://stacks.math.columbia.edu/tag/0EDD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eulerCharacteristic_eq_finsum_eulerCharacteristic_higherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicHigherDirectImage.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicHigherDirectImage.lean#L140).
+**`AlgebraicGeometry.Space.eulerCharacteristic_eq_finsum_eulerCharacteristic_higherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicHigherDirectImage.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicHigherDirectImage.lean#L140).
 
 > Let `k` be a field, `f : Y ⟶ X` a morphism of algebraic spaces proper over
 > `k` and `𝓖` a coherent `𝒪_Y`-module. Then only finitely many of the higher direct images
@@ -107,7 +107,7 @@ theorem eulerCharacteristic_eq_finsum_eulerCharacteristic_higherDirectImage (f :
             (((modulePushforward B (Spec (.of k)) hk f).rightDerived i).obj G))
 ```
 
-**`AlgebraicGeometry.Space.exists_eulerCharacteristic_eq_finsum_eulerCharacteristic_higherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicHigherDirectImage.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicHigherDirectImage.lean#L250). The attribute's comment: “for a coherent module in the universe of the Euler characteristic, the higher direct images being taken of its descent to the universe of the structure sheaf”.
+**`AlgebraicGeometry.Space.exists_eulerCharacteristic_eq_finsum_eulerCharacteristic_higherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicHigherDirectImage.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EulerCharacteristicHigherDirectImage.lean#L250). The attribute's comment: “for a coherent module in the universe of the Euler characteristic, the higher direct images being taken of its descent to the universe of the structure sheaf”.
 
 > For a coherent module `𝓖'` with sections in the universe of the Euler characteristic: `𝓖'` is
 > the universe lift of a coherent module `𝓖` with sections in the universe of the structure sheaf,
@@ -138,4 +138,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.17, Tag 0DN0](https://stacks.math.columbia.edu/tag/0DN0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

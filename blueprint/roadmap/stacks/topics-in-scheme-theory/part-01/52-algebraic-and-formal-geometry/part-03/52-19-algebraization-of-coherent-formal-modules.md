@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.19 Algebraization of coherent formal modules, III
 
-Section 52.19 of the Stacks Project, [Tag 0EJ2](https://stacks.math.columbia.edu/tag/0EJ2). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.19 of the Stacks Project, [Tag 0EJ2](https://stacks.math.columbia.edu/tag/0EJ2). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EJ3, a definition
 
 [Tag 0EJ3](https://stacks.math.columbia.edu/tag/0EJ3) in the Stacks Project.
 
-**`Stacks.Algebraization.SatisfiesDepthInequalities`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalities.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalities.lean#L149). The attribute's comment: “the (a, b)-inequalities”.
+**`Stacks.Algebraization.SatisfiesDepthInequalities`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalities.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalities.lean#L149). The attribute's comment: “the (a, b)-inequalities”.
 
 > **Stacks Project, Tag 0EJ3.** A coherent `I`-adic system on `U` satisfies the
 > `(a, b)`-inequalities when, at every point of `U ∩ Y` and every prime `𝔭` of the completed local
@@ -26,7 +26,7 @@ Section 52.19 of the Stacks Project, [Tag 0EJ2](https://stacks.math.columbia.edu
 public abbrev SatisfiesDepthInequalities (a b : ℤ) : Prop
 ```
 
-**`Stacks.Algebraization.SatisfiesStrictDepthInequalities`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalities.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalities.lean#L166). The attribute's comment: “the strict (a, b)-inequalities”.
+**`Stacks.Algebraization.SatisfiesStrictDepthInequalities`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalities.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalities.lean#L166). The attribute's comment: “the strict (a, b)-inequalities”.
 
 > **Stacks Project, Tag 0EJ3.** A coherent `I`-adic system on `U` satisfies the strict
 > `(a, b)`-inequalities when, at every point of `U ∩ Y` and every prime `𝔭` of the completed local
@@ -41,7 +41,7 @@ public abbrev SatisfiesStrictDepthInequalities (a b : ℤ) : Prop
 
 [Tag 0EJ4](https://stacks.math.columbia.edu/tag/0EJ4) in the Stacks Project.
 
-**`Stacks.Algebraization.satisfiesDepthInequalities_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L688). The attribute's comment: “part (1)”.
+**`Stacks.Algebraization.satisfiesDepthInequalities_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 688](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L688). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0EJ4 (1).** A coherent `I`-adic system on `U` annihilated by a fixed
 > power of `I` satisfies the `(a, b)`-inequalities for every pair of bounds, since every formal
@@ -58,7 +58,7 @@ public theorem satisfiesDepthInequalities_of_annihilated
     SatisfiesDepthInequalities S F a b
 ```
 
-**`Stacks.Algebraization.satisfiesStrictDepthInequalities_of_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 748](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L748). The attribute's comment: “part (2)”.
+**`Stacks.Algebraization.satisfiesStrictDepthInequalities_of_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 748](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L748). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0EJ4 (2).** A coherent `I`-adic system on `U` satisfying the
 > `(a + 1, b)`-inequalities satisfies the strict `(a, b)`-inequalities: in the case distinguished
@@ -73,7 +73,7 @@ public theorem satisfiesStrictDepthInequalities_of_succ
     SatisfiesStrictDepthInequalities S F a b
 ```
 
-**`Stacks.Algebraization.satisfiesDepthInequalities_iff_bootstrapSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 1028](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L1028). The attribute's comment: “part (3)”.
+**`Stacks.Algebraization.satisfiesDepthInequalities_iff_bootstrapSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 1028](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L1028). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 0EJ4 (3).** If `cd(A, I) ≤ d` and `A` has a dualizing complex, then a
 > coherent `I`-adic system on `U` satisfies the `(s, s + d)`-inequalities exactly when, at every
@@ -108,7 +108,7 @@ public theorem satisfiesDepthInequalities_iff_bootstrapSituation
           B.s = s - ((S.distanceToZ z).toNat : ℤ) ∧ B.d = d
 ```
 
-**`Stacks.Algebraization.satisfiesDepthInequalities_of_strict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 1283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L1283). The attribute's comment: “part (4)”.
+**`Stacks.Algebraization.satisfiesDepthInequalities_of_strict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 1283](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L1283). The attribute's comment: “part (4)”.
 
 > **Stacks Project, Tag 0EJ4 (4).** If `cd(A, I) ≤ d` and `A` has a dualizing complex, then
 > the strict `(s, s + d)`-inequalities imply the ordinary `(s, s + d)`-inequalities: in the case
@@ -132,7 +132,7 @@ public theorem satisfiesDepthInequalities_of_strict
     SatisfiesDepthInequalities S F s (s + d)
 ```
 
-**`Stacks.Algebraization.satisfiesDepthInequalities_elementary_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 1411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L1411).
+**`Stacks.Algebraization.satisfiesDepthInequalities_elementary_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean, line 1411](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesBootstrap.lean#L1411).
 
 > **Stacks Project, Tag 0EJ4.** The four elementary properties of the depth–distance
 > inequalities, as one statement about a coherent `I`-adic system `(ℱₙ)` on `U` in an
@@ -197,7 +197,7 @@ public theorem satisfiesDepthInequalities_elementary_properties
 
 [Tag 0EKW](https://stacks.math.columbia.edu/tag/0EKW) in the Stacks Project.
 
-**`Stacks.Algebraization.satisfiesDepthInequalities_two_three_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesCohomologicalDimensionOne.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesCohomologicalDimensionOne.lean#L423).
+**`Stacks.Algebraization.satisfiesDepthInequalities_two_three_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesCohomologicalDimensionOne.lean, line 423](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesCohomologicalDimensionOne.lean#L423).
 
 > In Situation 0EHC let `(ℱ_n)` be an object of
 > `Coh(U, I𝒪_U)`. If `cd(A, I) = 1`, then `(ℱ_n)` satisfies the `(2, 3)`-inequalities if and only
@@ -220,7 +220,7 @@ public theorem satisfiesDepthInequalities_two_three_iff (S : AlgebraizationSitua
 
 [Tag 0EJ5](https://stacks.math.columbia.edu/tag/0EJ5) in the Stacks Project.
 
-**`Stacks.Algebraization.one_le_depth_stalk_of_mixed_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthMixedComponents.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthMixedComponents.lean#L136).
+**`Stacks.Algebraization.one_le_depth_stalk_of_mixed_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthMixedComponents.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthMixedComponents.lean#L136).
 
 > **Stacks Project, Tag 0EJ5.** Let `A` be a Noetherian ring with ideals `I ⊆ 𝔞`, write
 > `X = Spec(A)`, `Y = V(I)`, `Z = V(𝔞)`, `U = X ∖ Z`, and suppose `A` is `I`-adically complete,
@@ -269,7 +269,7 @@ public theorem one_le_depth_stalk_of_mixed_irreducibleComponents
 
 [Tag 0EJ6](https://stacks.math.columbia.edu/tag/0EJ6) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_globalToFormalSections_of_satisfiesStrictDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthRecoverSections.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthRecoverSections.lean#L431). The attribute's comment: “H^0(U,F) = lim H^0(U,F/I^nF) under the strict (1,1+d)-inequalities and depth two off the formal locus”.
+**`Stacks.Algebraization.isIso_globalToFormalSections_of_satisfiesStrictDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthRecoverSections.lean, line 431](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthRecoverSections.lean#L431). The attribute's comment: “H^0(U,F) = lim H^0(U,F/I^nF) under the strict (1,1+d)-inequalities and depth two off the formal locus”.
 
 > **Stacks Project, Tag 0EJ6.** Let `A` be a Noetherian ring with ideals `I ⊆ 𝔞`, write
 > `X = Spec(A)`, `Y = V(I)`, `Z = V(𝔞)`, `U = X ∖ Z`, and let `ℱ` be a coherent `𝒪_U`-module and
@@ -311,7 +311,7 @@ public theorem isIso_globalToFormalSections_of_satisfiesStrictDepthInequalities
 
 [Tag 0EJ7](https://stacks.math.columbia.edu/tag/0EJ7) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFunctor_map_bijective_of_satisfiesStrictDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthFullyFaithful.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthFullyFaithful.lean#L337). The attribute's comment: “Hom\_U(G,F) = Hom\_\{Coh(U,IO\_U)}(G^∧,F^∧) for every coherent G, under the strict (1,1+d)-inequalities and depth two off the formal locus; 0EJ6 applied to F itself”.
+**`Stacks.Algebraization.completionFunctor_map_bijective_of_satisfiesStrictDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthFullyFaithful.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthFullyFaithful.lean#L337). The attribute's comment: “Hom\_U(G,F) = Hom\_\{Coh(U,IO\_U)}(G^∧,F^∧) for every coherent G, under the strict (1,1+d)-inequalities and depth two off the formal locus; 0EJ6 applied to F itself”.
 
 > **Stacks Project, Tag 0EJ7.** Let `A` be a Noetherian ring with ideals `I ⊆ 𝔞`, write
 > `X = Spec(A)`, `Y = V(I)`, `Z = V(𝔞)`, `U = X ∖ Z`, and let `ℱ` be a coherent `𝒪_U`-module and
@@ -358,7 +358,7 @@ public theorem completionFunctor_map_bijective_of_satisfiesStrictDepthInequaliti
 
 [Tag 0EJ8](https://stacks.math.columbia.edu/tag/0EJ8) in the Stacks Project.
 
-**`Stacks.Algebraization.existsUnique_completionCompatibleIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean#L161). The attribute's comment: “the uniqueness half: two depth-two algebraizations are isomorphic by a unique isomorphism compatible with the identifications of completions”.
+**`Stacks.Algebraization.existsUnique_completionCompatibleIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean, line 161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean#L161). The attribute's comment: “the uniqueness half: two depth-two algebraizations are isomorphic by a unique isomorphism compatible with the identifications of completions”.
 
 > **The uniqueness half of [Stacks, Tag 0EJ8].** In an algebraization situation, let `(ℱ_n)` be a
 > coherent `I𝒪_U`-adic system and let `d ≥ 1`. Assume
@@ -391,7 +391,7 @@ public theorem existsUnique_completionCompatibleIso
       (completionFunctor S.U.toScheme (idealOnOpen S)).map e.hom ≫ ψ.hom = φ.hom
 ```
 
-**`Stacks.Algebraization.exists_completionIso_depthTwoOffFormalLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean#L239). The attribute's comment: “the existence half: a depth-two algebraization exists”.
+**`Stacks.Algebraization.exists_completionIso_depthTwoOffFormalLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean#L239). The attribute's comment: “the existence half: a depth-two algebraization exists”.
 
 > **The existence half of [Stacks, Tag 0EJ8].** In an algebraization situation, let `(ℱ_n)` be a
 > coherent `I𝒪_U`-adic system and let `d ≥ 1`. Assume
@@ -433,7 +433,7 @@ public theorem exists_completionIso_depthTwoOffFormalLocus
         FormalSectionsII.DepthTwoOffFormalLocus S.A S.I S.a H.obj
 ```
 
-**`Stacks.Algebraization.existsUnique_depthTwoAlgebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean#L298). The attribute's comment: “existence and uniqueness, up to unique isomorphism compatible with the identifications of completions, of the depth-two algebraization”.
+**`Stacks.Algebraization.existsUnique_depthTwoAlgebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/UniqueDepthTwoAlgebraization.lean#L298). The attribute's comment: “existence and uniqueness, up to unique isomorphism compatible with the identifications of completions, of the depth-two algebraization”.
 
 > **Stacks Project, Tag 0EJ8.** In an algebraization situation, let `(ℱ_n)` be a coherent
 > `I𝒪_U`-adic system, an object of `Coh(U, I𝒪_U)`, and let `d ≥ 1`. Assume
@@ -482,4 +482,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.19, Tag 0EJ2](https://stacks.math.columbia.edu/tag/0EJ2)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

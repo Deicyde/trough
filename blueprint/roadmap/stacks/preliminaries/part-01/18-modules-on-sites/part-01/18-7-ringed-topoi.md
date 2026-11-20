@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.7 Ringed topoi
 
-Section 18.7 of the Stacks Project, [Tag 01D2](https://stacks.math.columbia.edu/tag/01D2). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 18.7 of the Stacks Project, [Tag 01D2](https://stacks.math.columbia.edu/tag/01D2). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 01D3, a definition
 
 [Tag 01D3](https://stacks.math.columbia.edu/tag/01D3) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposHom.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposHom.lean#L128). The attribute's comment: “part (2): morphisms of ringed topoi”. References: SGA 4 Vbis (1.3.2), “absolute case (D = pt)”; SGA 4 IV (13.1).
+**`AlgebraicGeometry.RingedToposHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposHom.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposHom.lean#L128). The attribute's comment: “part (2): morphisms of ringed topoi”. References: SGA 4 Vbis (1.3.2), “absolute case (D = pt)”; SGA 4 IV (13.1).
 
 > **Stacks 01D3, part (2).** A morphism of ringed topoi: a morphism of the underlying topoi
 > together with a map from the structure sheaf of the target to the direct image of the structure
@@ -33,7 +33,7 @@ structure RingedToposHom (X : RingedTopos.{v, u, w}) (Y : RingedTopos.{v', u', w
     [Y.J.HasSheafCompose (forget₂ CommRingCat.{w'} RingCat.{w'})]
 ```
 
-**`AlgebraicGeometry.RingedToposHom.comp_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposHomCompAssoc.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposHomCompAssoc.lean#L62). The attribute's comment: “part (3): composition is associative”.
+**`AlgebraicGeometry.RingedToposHom.comp_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposHomCompAssoc.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposHomCompAssoc.lean#L62). The attribute's comment: “part (3): composition is associative”.
 
 > **Composition of morphisms of ringed topoi is associative.**
 
@@ -42,7 +42,7 @@ theorem comp_assoc (f : RingedToposHom X Y) (g : RingedToposHom Y Z) (h : Ringed
     h.comp (g.comp f) = (h.comp g).comp f
 ```
 
-**`AlgebraicGeometry.RingedTopos`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/RingedTopos.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/RingedTopos.lean#L47). The attribute's comment: “part (1): ringed topoi”. References: SGA 4 Vbis (1.3.1), “absolute case (D = pt)”; SGA 4 IV (11.1.1), “ringed topos”.
+**`AlgebraicGeometry.RingedTopos`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/RingedTopos.lean, line 47](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/RingedTopos.lean#L47). The attribute's comment: “part (1): ringed topoi”. References: SGA 4 Vbis (1.3.1), “absolute case (D = pt)”; SGA 4 IV (11.1.1), “ringed topos”.
 
 > A site with a sheaf of commutative rings.
 
@@ -50,7 +50,7 @@ theorem comp_assoc (f : RingedToposHom X Y) (g : RingedToposHom Y Z) (h : Ringed
 structure RingedTopos.{v₁, u₁, w₁}
 ```
 
-**`AlgebraicGeometry.RingedToposHom.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/RingedToposComp.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/RingedToposComp.lean#L299). The attribute's comment: “part (3): composition”.
+**`AlgebraicGeometry.RingedToposHom.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/RingedToposComp.lean, line 299](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/ToposThickening/Trivialization/RingedToposComp.lean#L299). The attribute's comment: “part (3): composition”.
 
 > The composition of two morphisms of ringed topoi: the underlying morphisms of topoi compose,
 > and the structure map of the composite is
@@ -66,7 +66,7 @@ noncomputable def comp (g : RingedToposHom Y Z) (f : RingedToposHom X Y) :
 
 [Tag 03CR](https://stacks.math.columbia.edu/tag/03CR) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom.exists_twoSided_isDenseSubsite_morphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/RingedToposReplacement.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/RingedToposReplacement.lean#L185). The attribute's comment: “Every morphism of ringed topoi fits into a commutative square whose two vertical arrows are the equivalences induced by special cocontinuous functors, with the replacement structure sheaves the direct images of the given ones and the two structure maps the identity, and whose bottom arrow comes from a continuous functor `u : D' ⥤ C'` preserving all finite limits, with both replacement sites having all finite limits and subcanonical topologies and with prescribed families of sheaves becoming representable on them. Conclusions (1)-(7); the addendum on an equivalence is `exists_oneSided_isDenseSubsite_of_isEquivalence`.”.
+**`AlgebraicGeometry.RingedToposHom.exists_twoSided_isDenseSubsite_morphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/RingedToposReplacement.lean, line 185](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/RingedToposReplacement.lean#L185). The attribute's comment: “Every morphism of ringed topoi fits into a commutative square whose two vertical arrows are the equivalences induced by special cocontinuous functors, with the replacement structure sheaves the direct images of the given ones and the two structure maps the identity, and whose bottom arrow comes from a continuous functor `u : D' ⥤ C'` preserving all finite limits, with both replacement sites having all finite limits and subcanonical topologies and with prescribed families of sheaves becoming representable on them. Conclusions (1)-(7); the addendum on an equivalence is `exists_oneSided_isDenseSubsite_of_isEquivalence`.”.
 
 > **Stacks 03CR.** Let `(f, f♯) : (Sh(C), O_C) → (Sh(D), O_D)` be a morphism of ringed topoi.
 > Then there are sites `(C', J')` and `(D', K')`, special cocontinuous functors `v : C ⥤ C'` and
@@ -119,7 +119,7 @@ theorem exists_twoSided_isDenseSubsite_morphismOfSites (X Y : RingedTopos.{u, u,
               (RingedToposHom.comp (X := X) (Y := Y) (Z := Y') e f))
 ```
 
-**`AlgebraicGeometry.RingedToposHom.exists_oneSided_isDenseSubsite_of_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/RingedToposReplacement.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/RingedToposReplacement.lean#L244). The attribute's comment: “the addendum: an equivalence of ringed topoi is factored over a *single* replacement site `C' = D'`, with the middle morphism of ringed topoi the identity — the identity morphism of topoi together with an isomorphism `e_*O_D ≅ g_*O_C` of the two replacement structure sheaves, which is the agreement of the structure sheaves the source asserts. See the module's implementation notes for why that isomorphism cannot be an equality.”.
+**`AlgebraicGeometry.RingedToposHom.exists_oneSided_isDenseSubsite_of_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/RingedToposReplacement.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/RingedToposReplacement.lean#L244). The attribute's comment: “the addendum: an equivalence of ringed topoi is factored over a *single* replacement site `C' = D'`, with the middle morphism of ringed topoi the identity — the identity morphism of topoi together with an isomorphism `e_*O_D ≅ g_*O_C` of the two replacement structure sheaves, which is the agreement of the structure sheaves the source asserts. See the module's implementation notes for why that isomorphism cannot be an equality.”.
 
 > **Stacks 03CR, the addendum.** If `(f, f♯) : (Sh(C), O_C) → (Sh(D), O_D)` is an *equivalence*
 > of ringed topoi — that is, `f` is an equivalence of topoi and `f♯` is an isomorphism — then the
@@ -169,4 +169,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.7, Tag 01D2](https://stacks.math.columbia.edu/tag/01D2)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

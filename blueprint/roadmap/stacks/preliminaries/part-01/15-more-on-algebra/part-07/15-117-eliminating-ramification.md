@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.117 Eliminating ramification
 
-Section 15.117 of the Stacks Project, [Tag 09EL](https://stacks.math.columbia.edu/tag/09EL). 19 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.117 of the Stacks Project, [Tag 09EL](https://stacks.math.columbia.edu/tag/09EL). 19 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09EN, a definition
 
 [Tag 09EN](https://stacks.math.columbia.edu/tag/09EN) in the Stacks Project.
 
-**`IsDiscreteValuationRing.IntegralClosureBaseChange.IsWeakSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean#L144). The attribute's comment: “(1), weak solution”.
+**`IsDiscreteValuationRing.IntegralClosureBaseChange.IsWeakSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean#L144). The attribute's comment: “(1), weak solution”.
 
 > Every localization arising from the base change has ramification index one.
 
@@ -32,7 +32,7 @@ def IsWeakSolution
     (D : IntegralClosureBaseChange A B K L K₁) : Prop
 ```
 
-**`IsDiscreteValuationRing.IntegralClosureBaseChange.IsSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean#L163). The attribute's comment: “(2), solution”.
+**`IsDiscreteValuationRing.IntegralClosureBaseChange.IsSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean, line 163](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean#L163). The attribute's comment: “(2), solution”.
 
 > Every localization arising from the base change is formally smooth for the adic topology
 > defined by the maximal ideal of the target localization.
@@ -52,7 +52,7 @@ def IsSolution.{v}
       A B K L K₁) : Prop
 ```
 
-**`IsDiscreteValuationRing.IntegralClosureBaseChange.IsSeparableSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean#L188). The attribute's comment: “separable solution”.
+**`IsDiscreteValuationRing.IntegralClosureBaseChange.IsSeparableSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean, line 188](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/Solution.lean#L188). The attribute's comment: “separable solution”.
 
 > A solution whose finite extension `K₁/K` is separable.
 
@@ -75,7 +75,7 @@ def IsSeparableSolution.{v}
 
 [Tag 09EP](https://stacks.math.columbia.edu/tag/09EP) in the Stacks Project.
 
-**`IsDiscreteValuationRing.weakSolution_isInseparable_and_inseparable_isSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/Inseparability.lean, line 924](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/Inseparability.lean#L924).
+**`IsDiscreteValuationRing.weakSolution_isInseparable_and_inseparable_isSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/Inseparability.lean, line 924](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/Inseparability.lean#L924).
 
 > For `k[[x]] → k[[x^(1/p)]]` in positive characteristic `p`, every weak solution is
 > inseparable, while every finite inseparable extension of `k((x))` is a solution.
@@ -116,7 +116,7 @@ theorem weakSolution_isInseparable_and_inseparable_isSolution
 
 [Tag 09ER](https://stacks.math.columbia.edu/tag/09ER) in the Stacks Project.
 
-**`IsDiscreteValuationRing.isField_tensorProduct_and_isDVR_baseChange_of_totallyRamified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/TotallyRamified.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/TotallyRamified.lean#L272).
+**`IsDiscreteValuationRing.isField_tensorProduct_and_isDVR_baseChange_of_totallyRamified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/TotallyRamified.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/TotallyRamified.lean#L272).
 
 > A finite separable extension totally ramified with respect to the lower discrete valuation
 > ring preserves a weakly unramified extension after tensor-product base change. The tensor
@@ -172,7 +172,7 @@ theorem isField_tensorProduct_and_isDVR_baseChange_of_totallyRamified
 
 [Tag 09ES](https://stacks.math.columbia.edu/tag/09ES) in the Stacks Project.
 
-**`IsDiscreteValuationRing.weakSolutions_and_solutions_go_down_and_compose`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EppSolution.lean, line 1210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/EppSolution.lean#L1210).
+**`IsDiscreteValuationRing.weakSolutions_and_solutions_go_down_and_compose`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EppSolution.lean, line 1210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/EppSolution.lean#L1210).
 
 > Weak solutions and solutions descend along a tower of extensions of discrete valuation
 > rings. Conversely, they compose provided every field factor of the intermediate reduced tensor
@@ -225,7 +225,7 @@ theorem weakSolutions_and_solutions_go_down_and_compose
 
 [Tag 09EU](https://stacks.math.columbia.edu/tag/09EU) in the Stacks Project.
 
-**`IsDiscreteValuationRing.normal_extension_acts_transitively_on_maximalSpectrum_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/GaloisAction.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/GaloisAction.lean#L394).
+**`IsDiscreteValuationRing.normal_extension_acts_transitively_on_maximalSpectrum_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/GaloisAction.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/WeakSolution/GaloisAction.lean#L394).
 
 > After a finite normal extension `K₁/K`, the automorphisms of `K₁` over `K` act
 > compatibly on the reduced base change `L₁`, on the integral closure `A₁` of `A` in `K₁`,
@@ -280,7 +280,7 @@ theorem normal_extension_acts_transitively_on_maximalSpectrum_integralClosure
 
 [Tag 09EW](https://stacks.math.columbia.edu/tag/09EW) in the Stacks Project.
 
-**`Stacks.EisensteinExtension.exists_totallyRamifiedExtension_with_uniformizer_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Eisenstein.lean, line 636](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Eisenstein.lean#L636).
+**`Stacks.EisensteinExtension.exists_totallyRamifiedExtension_with_uniformizer_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Eisenstein.lean, line 636](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/Kummer/Eisenstein.lean#L636).
 
 > Let `A` be a discrete valuation ring with fraction field `K` and residue characteristic
 > `p > 0`, with uniformizer `π`, and let `n > 1`. For every power `q` of `p` there is a separable
@@ -315,7 +315,7 @@ theorem exists_totallyRamifiedExtension_with_uniformizer_eq
 
 [Tag 09EX](https://stacks.math.columbia.edu/tag/09EX) in the Stacks Project.
 
-**`Stacks.DiscreteValuationRing.AdjoinPthRoot.statement1_not_pth_power`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean#L184). The attribute's comment: “(1)”.
+**`Stacks.DiscreteValuationRing.AdjoinPthRoot.statement1_not_pth_power`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean#L184). The attribute's comment: “(1)”.
 
 > If the residue class `abar` of `a` is not a `p`-th power in the residue field `kappa_A`,
 > then `a` is not a `p`-th power in `K`.
@@ -326,7 +326,7 @@ theorem statement1_not_pth_power
     ¬ ∃ b : K, algebraMap A K a = b ^ p
 ```
 
-**`Stacks.DiscreteValuationRing.AdjoinPthRoot.statement2_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean#L451). The attribute's comment: “(2)”.
+**`Stacks.DiscreteValuationRing.AdjoinPthRoot.statement2_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean, line 451](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean#L451). The attribute's comment: “(2)”.
 
 > The integral closure of `A` in `K[a^{1/p}]` equals
 > `A[a^{1/p}] = A[alpha]`.
@@ -338,7 +338,7 @@ theorem statement2_integralClosure
       = ringExt (A := A) (K := K) p a
 ```
 
-**`Stacks.DiscreteValuationRing.AdjoinPthRoot.statement3_dvr_weaklyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean#L480). The attribute's comment: “(3)”.
+**`Stacks.DiscreteValuationRing.AdjoinPthRoot.statement3_dvr_weaklyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean, line 480](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/AdjoinPthRoot.lean#L480). The attribute's comment: “(3)”.
 
 > The ring `A[a^{1/p}] = A[alpha]` is a discrete valuation ring, and the extension
 > `A ⊆ A[a^{1/p}]` is weakly unramified: every uniformizer (irreducible element) of `A` maps to a
@@ -359,7 +359,7 @@ theorem statement3_dvr_weaklyUnramified
 
 [Tag 09EY](https://stacks.math.columbia.edu/tag/09EY) in the Stacks Project.
 
-**`IsDiscreteValuationRing.weaklyUnramified_or_adjoin_root_or_after_totallyRamified_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/PurelyInseparable.lean, line 899](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/PurelyInseparable.lean#L899).
+**`IsDiscreteValuationRing.weaklyUnramified_or_adjoin_root_or_after_totallyRamified_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/PurelyInseparable.lean, line 899](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/PurelyInseparable.lean#L899).
 
 > For a weakly unramified extension `A → B` of discrete valuation rings with `B`
 > Nagata, followed by a purely inseparable extension of fraction fields of prime degree `p`,
@@ -438,7 +438,7 @@ theorem weaklyUnramified_or_adjoin_root_or_after_totallyRamified_baseChange
 
 [Tag 09EZ](https://stacks.math.columbia.edu/tag/09EZ) in the Stacks Project.
 
-**`IsLocalRing.exists_residueField_section_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/ResidueSection.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalRing/ResidueSection.lean#L51).
+**`IsLocalRing.exists_residueField_section_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/ResidueSection.lean, line 51](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalRing/ResidueSection.lean#L51).
 
 > A local ring of prime characteristic with nilpotent maximal ideal has a coefficient field,
 > and it can be extended compatibly across a local homomorphism whose target also has nilpotent
@@ -467,7 +467,7 @@ theorem exists_residueField_section_compatible
 
 [Tag 09F0](https://stacks.math.columbia.edu/tag/09F0) in the Stacks Project.
 
-**`IsDiscreteValuationRing.isGalois_and_ramification_cases_of_adjoin_root_artinSchreier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/ArtinSchreier/RamificationCases.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/ArtinSchreier/RamificationCases.lean#L689).
+**`IsDiscreteValuationRing.isGalois_and_ramification_cases_of_adjoin_root_artinSchreier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/ArtinSchreier/RamificationCases.lean, line 689](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/ArtinSchreier/RamificationCases.lean#L689).
 
 > Let `A` be a discrete valuation ring with fraction field `K` of characteristic
 > `p > 0`. If `L = K[z]` and `z ^ p - z = ξ`, then `L / K` is Galois and is either
@@ -529,7 +529,7 @@ theorem isGalois_and_ramification_cases_of_adjoin_root_artinSchreier
 
 [Tag 09F1](https://stacks.math.columbia.edu/tag/09F1) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_isGalois_totallyRamified_isWeakSolution_of_charP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/ArtinSchreier/CharPSolution.lean, line 690](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/ArtinSchreier/CharPSolution.lean#L690).
+**`IsDiscreteValuationRing.exists_isGalois_totallyRamified_isWeakSolution_of_charP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/ArtinSchreier/CharPSolution.lean, line 690](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/ArtinSchreier/CharPSolution.lean#L690).
 
 > In equal characteristic `p`, a weakly unramified extension `A ⊆ B` followed
 > by a degree-`p` Galois extension of fraction fields admits a finite Galois base
@@ -581,7 +581,7 @@ theorem exists_isGalois_totallyRamified_isWeakSolution_of_charP
 
 [Tag 09F2](https://stacks.math.columbia.edu/tag/09F2) in the Stacks Project.
 
-**`main_statement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Cyclotomic/OneAddPow/QuotientPolynomial.lean, line 768](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/Cyclotomic/OneAddPow/QuotientPolynomial.lean#L768).
+**`main_statement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Cyclotomic/OneAddPow/QuotientPolynomial.lean, line 768](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/NumberTheory/Cyclotomic/OneAddPow/QuotientPolynomial.lean#L768).
 
 > **Lemma 15.117.13 (Stacks tag 09F2).**
 > Let `p` be prime, `A` a commutative ring containing a primitive `p`-th root of unity `ζ`
@@ -611,7 +611,7 @@ theorem main_statement :
 
 [Tag 09F3](https://stacks.math.columbia.edu/tag/09F3) in the Stacks Project.
 
-**`isGalois_and_ramification_cases_of_adjoin_root_cyclotomic_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Cyclotomic/OneAddPow/RamificationCases.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/Cyclotomic/OneAddPow/RamificationCases.lean#L511).
+**`isGalois_and_ramification_cases_of_adjoin_root_cyclotomic_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Cyclotomic/OneAddPow/RamificationCases.lean, line 511](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/NumberTheory/Cyclotomic/OneAddPow/RamificationCases.lean#L511).
 
 > Let `A` be a mixed-characteristic discrete valuation ring containing a primitive
 > `p`-th root of unity, and let `P` be the cyclotomic quotient polynomial of Tag 09F2.
@@ -677,7 +677,7 @@ theorem isGalois_and_ramification_cases_of_adjoin_root_cyclotomic_quotient
 
 [Tag 09F4](https://stacks.math.columbia.edu/tag/09F4) in the Stacks Project.
 
-**`Stacks.DegreePExtensionLevel.exists_totallyRamified_isGalois_isWeakSolution_or_finiteLevel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/ExtensionLevel/FiniteLevel.lean, line 1205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/ExtensionLevel/FiniteLevel.lean#L1205).
+**`Stacks.DegreePExtensionLevel.exists_totallyRamified_isGalois_isWeakSolution_or_finiteLevel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/ExtensionLevel/FiniteLevel.lean, line 1205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/ExtensionLevel/FiniteLevel.lean#L1205).
 
 > **Stacks 09F4.** Let `A ⊆ B ⊆ C` be extensions of discrete valuation rings with fraction
 > fields `K ⊆ L ⊆ M`, where `A` has mixed characteristic `(0, p)`, `A ⊆ B` is weakly unramified,
@@ -749,7 +749,7 @@ theorem exists_totallyRamified_isGalois_isWeakSolution_or_finiteLevel
 
 [Tag 09F5](https://stacks.math.columbia.edu/tag/09F5) in the Stacks Project.
 
-**`Stacks.DiscreteValuationRing.EppLevelInduction.exists_totallyRamified_isWeakSolution_or_extensionLevel_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/ExtensionLevel/LevelLowering.lean, line 850](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/ExtensionLevel/LevelLowering.lean#L850).
+**`Stacks.DiscreteValuationRing.EppLevelInduction.exists_totallyRamified_isWeakSolution_or_extensionLevel_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/ExtensionLevel/LevelLowering.lean, line 850](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/ExtensionLevel/LevelLowering.lean#L850).
 
 > The traditional Tag 09F5 interface.  The global residue-field hypothesis identifies the
 > perfect core with the image of the base residue field, so the finite-support alternative in
@@ -827,7 +827,7 @@ theorem exists_totallyRamified_isWeakSolution_or_extensionLevel_le
 
 [Tag 09F6](https://stacks.math.columbia.edu/tag/09F6) in the Stacks Project.
 
-**`IsDiscreteValuationRing.eval_sub_pow_sub_mem_uniformizer_zpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamification.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamification.lean#L163).
+**`IsDiscreteValuationRing.eval_sub_pow_sub_mem_uniformizer_zpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamification.lean, line 163](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamification.lean#L163).
 
 > For the Kummer polynomial `P` associated to a primitive `p`-th root of unity,
 > if `w = 1 - ζ` has order `e₁` and `π ^ n P(z)` is integral, then
@@ -854,7 +854,7 @@ theorem eval_sub_pow_sub_mem_uniformizer_zpow
 
 [Tag 09F7](https://stacks.math.columbia.edu/tag/09F7) in the Stacks Project.
 
-**`IsDiscreteValuationRing.add_mul_correction_sModEq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamification.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamification.lean#L219).
+**`IsDiscreteValuationRing.add_mul_correction_sModEq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamification.lean, line 219](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamification.lean#L219).
 
 > **Stacks 09F7.** The correction term in the finite-level group law vanishes modulo
 > `π ^ (-2n + p e₁) B`.
@@ -878,7 +878,7 @@ theorem add_mul_correction_sModEq
 
 [Tag 09F8](https://stacks.math.columbia.edu/tag/09F8) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_finite_extension_isWeakSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EppAlgClosedResidue/IntermediateFieldInduction.lean, line 681](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/EppAlgClosedResidue/IntermediateFieldInduction.lean#L681).
+**`IsDiscreteValuationRing.exists_finite_extension_isWeakSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EppAlgClosedResidue/IntermediateFieldInduction.lean, line 681](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/EppAlgClosedResidue/IntermediateFieldInduction.lean#L681).
 
 > Epp's theorem in the complete case: under the residue-field intersection
 > hypothesis, every finite extension at the top of a weakly unramified tower admits
@@ -924,7 +924,7 @@ theorem exists_finite_extension_isWeakSolution
 
 [Tag 09F9](https://stacks.math.columbia.edu/tag/09F9) in the Stacks Project.
 
-**`Stacks.EppTheorem.exists_finite_extension_isWeakSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EppTheorem.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/EppTheorem.lean#L26).
+**`Stacks.EppTheorem.exists_finite_extension_isWeakSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EppTheorem.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/EppTheorem.lean#L26).
 
 > Epp's theorem when all input types lie in one universe.
 
@@ -952,4 +952,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.117, Tag 09EL](https://stacks.math.columbia.edu/tag/09EL)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

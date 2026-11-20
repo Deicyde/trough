@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.16 Compact and perfect objects
 
-Section 75.16 of the Stacks Project, [Tag 09M7](https://stacks.math.columbia.edu/tag/09M7). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 75.16 of the Stacks Project, [Tag 09M7](https://stacks.math.columbia.edu/tag/09M7). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09M8, a proposition
 
 [Tag 09M8](https://stacks.math.columbia.edu/tag/09M8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectCompactQcqs.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectCompactQcqs.lean#L156).
+**`AlgebraicGeometry.Space.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectCompactQcqs.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectCompactQcqs.lean#L156).
 
 > **Stacks 09M8.** Let `X` be a quasi-compact and quasi-separated algebraic space over `S`. An
 > object of `D_QCoh(𝒪_X)` is compact if and only if it is perfect.
@@ -31,7 +31,7 @@ theorem isCompactObject_iff_isPerfect (X : AlgebraicSpaces B S hS)
 
 [Tag 0GFC](https://stacks.math.columbia.edu/tag/0GFC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.triangEnvelope_eq_isPerfect_of_isWeakTriangulatedGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean#L87).
+**`AlgebraicGeometry.Space.triangEnvelope_eq_isPerfect_of_isWeakTriangulatedGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean#L87).
 
 > **Stacks 0GFC.** Let `X` be a quasi-compact and quasi-separated algebraic space over `S`, and
 > let `G` be a perfect object of `D(𝒪_X)` which is a generator of `D_QCoh(𝒪_X)`. Then `G` is a
@@ -55,7 +55,7 @@ theorem triangEnvelope_eq_isPerfect_of_isWeakTriangulatedGenerator (X : Algebrai
       fun E => (smallEtaleRingedSite B S hS X.1 X.2).IsPerfect E.obj
 ```
 
-**`AlgebraicGeometry.Space.exists_isPerfect_isWeakTriangulatedGenerator_triangEnvelope_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean#L109). The attribute's comment: “the existence of a perfect generator G of D\_QCoh(O\_X), by 09IY”.
+**`AlgebraicGeometry.Space.exists_isPerfect_isWeakTriangulatedGenerator_triangEnvelope_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean#L109). The attribute's comment: “the existence of a perfect generator G of D\_QCoh(O\_X), by 09IY”.
 
 > **Stacks 0GFC, the existence clause.** On a quasi-compact and quasi-separated algebraic space
 > `X` over `S` there is a perfect object `G` of `D(𝒪_X)` which is a generator of `D_QCoh(𝒪_X)`
@@ -79,7 +79,7 @@ theorem exists_isPerfect_isWeakTriangulatedGenerator_triangEnvelope_eq
 
 [Tag 0AED](https://stacks.math.columbia.edu/tag/0AED) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCompactObject_iff_isPerfect_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedCompactPerfect.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedCompactPerfect.lean#L77).
+**`AlgebraicGeometry.Space.isCompactObject_iff_isPerfect_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedCompactPerfect.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedCompactPerfect.lean#L77).
 
 > **Stacks 0AED.** Let `S` be a scheme, `X` a quasi-compact and quasi-separated algebraic space
 > over `S`, and `T ⊆ |X|` a closed subset such that `|X| ∖ T` is quasi-compact. An object of
@@ -104,7 +104,7 @@ theorem isCompactObject_iff_isPerfect_of_supported (X : AlgebraicSpaces B S hS)
 
 [Tag 0GFD](https://stacks.math.columbia.edu/tag/0GFD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.triangEnvelope_singleton_eq_isPerfect_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectClassicalGenerator.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectClassicalGenerator.lean#L71).
+**`AlgebraicGeometry.Space.triangEnvelope_singleton_eq_isPerfect_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectClassicalGenerator.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectClassicalGenerator.lean#L71).
 
 > Let `S` be a scheme, `X` a quasi-compact and quasi-separated algebraic space over `S`, and
 > `T ⊆ |X|` a closed subset such that `|X| ∖ T` is quasi-compact. Let `G` be a perfect object of
@@ -138,7 +138,7 @@ theorem triangEnvelope_singleton_eq_isPerfect_of_supported (X : AlgebraicSpaces 
 
 [Tag 0AEE](https://stacks.math.columbia.edu/tag/0AEE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isPerfect_comp_tensor_eq_zero_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectAnnihilator.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectAnnihilator.lean#L182).
+**`AlgebraicGeometry.Space.exists_isPerfect_comp_tensor_eq_zero_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectAnnihilator.lean, line 182](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPerfectAnnihilator.lean#L182).
 
 > **Stacks 0AEE.** Let `S` be a scheme, `X` a quasi-compact and quasi-separated algebraic space
 > over `S`, and `T ⊆ |X|` a closed subset whose complement `U` is quasi-compact. Let `α : P ⟶ E` be a
@@ -181,4 +181,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.16, Tag 09M7](https://stacks.math.columbia.edu/tag/09M7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

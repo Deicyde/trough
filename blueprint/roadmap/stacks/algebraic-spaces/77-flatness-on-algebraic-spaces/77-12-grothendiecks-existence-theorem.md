@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.12 Grothendieck's Existence Theorem
 
-Section 77.12 of the Stacks Project, [Tag 0CX3](https://stacks.math.columbia.edu/tag/0CX3). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 77.12 of the Stacks Project, [Tag 0CX3](https://stacks.math.columbia.edu/tag/0CX3). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CX4, a situation
 
 [Tag 0CX4](https://stacks.math.columbia.edu/tag/0CX4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatSheafExistenceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatSheafSystem.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatSheafSystem.lean#L85). The attribute's comment: “the situation as stated, with exactly the source's data and hypotheses; the two containment fields say that Spec A and Spec Aₙ are schemes of the chosen big fppf site”.
+**`AlgebraicGeometry.Space.FlatSheafExistenceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatSheafSystem.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatSheafSystem.lean#L85). The attribute's comment: “the situation as stated, with exactly the source's data and hypotheses; the two containment fields say that Spec A and Spec Aₙ are schemes of the chosen big fppf site”.
 
 > **Situation [Stacks, Tag 0CX4].** An inverse system of rings `(Aₙ)` with surjective
 > transition maps whose kernels are locally nilpotent; an algebraic space `X` separated and of finite
@@ -30,7 +30,7 @@ structure FlatSheafExistenceSituation
 
 [Tag 0CX5](https://stacks.math.columbia.edu/tag/0CX5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.derivedLimit_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatSheafDerivedLimit.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatSheafDerivedLimit.lean#L59). The attribute's comment: “the full statement: DQ\_X exists and R lim F\_n exists in D(O\_X); for every coherator DQ\_X and every such derived limit L, K = DQ\_X(L) is a derived limit of (F\_n) in D\_QCoh(O\_X), and every derived limit K of (F\_n) in D\_QCoh(O\_X) lies in D^b with cohomology sheaves only in degrees at least 0; proved with no hypothesis beyond Situation 0CX4”.
+**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.derivedLimit_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatSheafDerivedLimit.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatSheafDerivedLimit.lean#L59). The attribute's comment: “the full statement: DQ\_X exists and R lim F\_n exists in D(O\_X); for every coherator DQ\_X and every such derived limit L, K = DQ\_X(L) is a derived limit of (F\_n) in D\_QCoh(O\_X), and every derived limit K of (F\_n) in D\_QCoh(O\_X) lies in D^b with cohomology sheaves only in degrees at least 0; proved with no hypothesis beyond Situation 0CX4”.
 
 > **[Stacks, Tag 0CX5].** In Situation [Stacks, Tag 0CX4] consider
 > `K = R lim_{D_QCoh(𝒪_X)}(Fₙ) = DQ_X(R lim_{D(𝒪_X)} Fₙ)`. Then `K` is in `D^b_QCoh(𝒪_X)` and in fact
@@ -70,7 +70,7 @@ theorem derivedLimit_bounded :
 
 [Tag 0CX6](https://stacks.math.columbia.edu/tag/0CX6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.ringIsPerfect_limitSections_and_isIso_baseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/PerfectSectionsOfLimitTheorem.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/PerfectSectionsOfLimitTheorem.lean#L102). The attribute's comment: “both parts in full, for every perfect E on X and every n, with K = DQ\_X(R lim\_\{D(O\_X)} F\_n) the object of 0CX5, whose coherator and derived limit exist by derivedLimit\_bounded: (1) RΓ(X, K ⊗^L E) is perfect in D(A) and the canonical map RΓ(X, K ⊗^L E) ⊗^L\_A A\_n → RΓ(X\_n, F\_n ⊗^L E|\_\{X\_n}) is an isomorphism; (2) RHom\_X(E, K) is perfect in D(A) and the canonical map RHom\_X(E, K) ⊗^L\_A A\_n → RHom\_\{X\_n}(E|\_\{X\_n}, F\_n) is an isomorphism”.
+**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.ringIsPerfect_limitSections_and_isIso_baseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/PerfectSectionsOfLimitTheorem.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/PerfectSectionsOfLimitTheorem.lean#L102). The attribute's comment: “both parts in full, for every perfect E on X and every n, with K = DQ\_X(R lim\_\{D(O\_X)} F\_n) the object of 0CX5, whose coherator and derived limit exist by derivedLimit\_bounded: (1) RΓ(X, K ⊗^L E) is perfect in D(A) and the canonical map RΓ(X, K ⊗^L E) ⊗^L\_A A\_n → RΓ(X\_n, F\_n ⊗^L E|\_\{X\_n}) is an isomorphism; (2) RHom\_X(E, K) is perfect in D(A) and the canonical map RHom\_X(E, K) ⊗^L\_A A\_n → RHom\_\{X\_n}(E|\_\{X\_n}, F\_n) is an isomorphism”.
 
 > **[Stacks, Tag 0CX6].** In Situation [Stacks, Tag 0CX4] let
 > `K = R lim_{D_QCoh(𝒪_X)} Fₙ = DQ_X(R lim_{D(𝒪_X)} Fₙ)` be the object of [Stacks, Tag 0CX5]
@@ -104,7 +104,7 @@ theorem ringIsPerfect_limitSections_and_isIso_baseChangeMap
 
 [Tag 0CX7](https://stacks.math.columbia.edu/tag/0CX7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.isRelativelyPseudoCoherent_coheratorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/RelativePseudoCoherenceOfLimit.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/RelativePseudoCoherenceOfLimit.lean#L43). The attribute's comment: “the full statement: for every coherator DQ\_X and every derived limit L of (F\_n) in D(O\_X), the K = DQ\_X(L) of 0CX5 is pseudo-coherent relative to A, with no hypotheses beyond Situation 0CX4; 0CX6, 0CWH and 0CTT are all proved in the library”.
+**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.isRelativelyPseudoCoherent_coheratorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/RelativePseudoCoherenceOfLimit.lean, line 43](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/RelativePseudoCoherenceOfLimit.lean#L43). The attribute's comment: “the full statement: for every coherator DQ\_X and every derived limit L of (F\_n) in D(O\_X), the K = DQ\_X(L) of 0CX5 is pseudo-coherent relative to A, with no hypotheses beyond Situation 0CX4; 0CX6, 0CWH and 0CTT are all proved in the library”.
 
 > **[Stacks, Tag 0CX7].** In Situation [Stacks, Tag 0CX4] let `K = DQ_X(L)` be as in
 > [Stacks, Tag 0CX5]: `DQ_X` is a coherator (`adj : ι ⊣ DQ_X`, the right adjoint of the inclusion
@@ -126,7 +126,7 @@ theorem isRelativelyPseudoCoherent_coheratorObj
 
 [Tag 0CX8](https://stacks.math.columbia.edu/tag/0CX8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.isIso_etaleStageBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EtaleStageBaseChange.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EtaleStageBaseChange.lean#L60). The attribute's comment: “the full statement: for every coherator DQ\_X and every presentation of L = R lim F\_n in D(O\_X), every n and every etale U → X with U quasi-compact and quasi-separated, the canonical map RΓ(U, K) ⊗^L\_A A\_n → RΓ(U\_n, F\_n) in D(A\_n) induced by K = DQ\_X(L) → F\_n is an isomorphism, U\_n = U ×\_X X\_n, under exactly the source's hypotheses”.
+**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.isIso_etaleStageBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EtaleStageBaseChange.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EtaleStageBaseChange.lean#L60). The attribute's comment: “the full statement: for every coherator DQ\_X and every presentation of L = R lim F\_n in D(O\_X), every n and every etale U → X with U quasi-compact and quasi-separated, the canonical map RΓ(U, K) ⊗^L\_A A\_n → RΓ(U\_n, F\_n) in D(A\_n) induced by K = DQ\_X(L) → F\_n is an isomorphism, U\_n = U ×\_X X\_n, under exactly the source's hypotheses”.
 
 > **[Stacks, Tag 0CX8].** In Situation [Stacks, Tag 0CX4] let `K = DQ_X(L)` be as in
 > [Stacks, Tag 0CX5]: `DQ_X` is a coherator (`adj : ι ⊣ DQ_X`) and
@@ -161,7 +161,7 @@ theorem isIso_etaleStageBaseChangeMap
 
 [Tag 0CX9](https://stacks.math.columbia.edu/tag/0CX9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.exists_isExistenceNeighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/ExistenceNeighbourhoodExists.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/ExistenceNeighbourhoodExists.lean#L56). The attribute's comment: “the full statement: for every coherator DQ\_X and every presentation of L = R lim F\_n in D(O\_X), K = DQ\_X(L) has an open subspace W containing X\_0 with H^i(K)|\_W = 0 for i ≠ 0, H^0(K)|\_W of finite presentation, and F\_n = H^0(K)|\_W ⊗ O\_\{X\_n} through the canonical maps K → F\_n”.
+**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.exists_isExistenceNeighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/ExistenceNeighbourhoodExists.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/ExistenceNeighbourhoodExists.lean#L56). The attribute's comment: “the full statement: for every coherator DQ\_X and every presentation of L = R lim F\_n in D(O\_X), K = DQ\_X(L) has an open subspace W containing X\_0 with H^i(K)|\_W = 0 for i ≠ 0, H^0(K)|\_W of finite presentation, and F\_n = H^0(K)|\_W ⊗ O\_\{X\_n} through the canonical maps K → F\_n”.
 
 > In Situation [Stacks, Tag 0CX4] let `K = DQ_X(L)` be as in [Stacks, Tag 0CX5]: `DQ_X` is a
 > coherator (`adj : ι ⊣ DQ_X`) and `L ⟶ ∏ Fₙ ⟶ ∏ Fₙ ⟶ L[1]` (first map `p`) presents `L` as
@@ -192,7 +192,7 @@ theorem exists_isExistenceNeighbourhood
 
 [Tag 0CXA](https://stacks.math.columbia.edu/tag/0CXA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.exists_isExistenceNeighbourhood_hasProperSupport_coheratorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/ExistenceNeighbourhoodProperSupport.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/ExistenceNeighbourhoodProperSupport.lean#L237). The attribute's comment: “the full statement: for every coherator DQ\_X and every presentation of L = R lim F\_n in D(O\_X), K = DQ\_X(L) with its canonical maps K → F\_n, and every open W as in 0CX9 for that K, there is a smaller open W', again as in 0CX9, on which the support of H^0(K)|\_W' is proper over A”.
+**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.exists_isExistenceNeighbourhood_hasProperSupport_coheratorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/ExistenceNeighbourhoodProperSupport.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/ExistenceNeighbourhoodProperSupport.lean#L237). The attribute's comment: “the full statement: for every coherator DQ\_X and every presentation of L = R lim F\_n in D(O\_X), K = DQ\_X(L) with its canonical maps K → F\_n, and every open W as in 0CX9 for that K, there is a smaller open W', again as in 0CX9, on which the support of H^0(K)|\_W' is proper over A”.
 
 > **Stacks 0CXA.** In Situation 0CX4 let `K = DQ_X(L)` be as in Stacks 0CX5: `DQ_X` is a
 > coherator (`adj : ι ⊣ DQ_X`) and `L ⟶ ∏ Fₙ ⟶ ∏ Fₙ ⟶ L[1]` (first map `p`) presents `L` as
@@ -237,7 +237,7 @@ theorem exists_isExistenceNeighbourhood_hasProperSupport_coheratorObj
 
 [Tag 0CXB](https://stacks.math.columbia.edu/tag/0CXB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.exists_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatExistenceTheorem.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatExistenceTheorem.lean#L50).
+**`AlgebraicGeometry.Space.FlatSheafExistenceSituation.exists_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatExistenceTheorem.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/FlatExistenceTheorem.lean#L50).
 
 > **Grothendieck's existence theorem, [Stacks, Tag 0CXB].** In Situation [Stacks, Tag 0CX4]
 > there exists a finitely presented `𝒪_X`-module `F`, flat over `A`, whose support is closed and
@@ -276,4 +276,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.12, Tag 0CX3](https://stacks.math.columbia.edu/tag/0CX3)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

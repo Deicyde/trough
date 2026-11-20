@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.11 Deducing fully faithfulness
 
-Section 57.11 of the Stacks Project, [Tag 0G23](https://stacks.math.columbia.edu/tag/0G23). 6 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.11 of the Stacks Project, [Tag 0G23](https://stacks.math.columbia.edu/tag/0G23). 6 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G24, a lemma
 
 [Tag 0G24](https://stacks.math.columbia.edu/tag/0G24) in the Stacks Project.
 
-**`AlgebraicGeometry.fullyFaithful_of_bijective_on_spanning_set`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/SpanningSet.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/SpanningSet.lean#L304).
+**`AlgebraicGeometry.fullyFaithful_of_bijective_on_spanning_set`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/SpanningSet.lean, line 304](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/SpanningSet.lean#L304).
 
 > **Stacks Project, Tag 0G24.** Let `F : C ⥤ D` be an exact functor of
 > pre-triangulated categories which has both adjoints. If a set `S` detects zero objects by maps
@@ -44,7 +44,7 @@ public theorem fullyFaithful_of_bijective_on_spanning_set
 
 [Tag 0G02](https://stacks.math.columbia.edu/tag/0G02) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_ringKrullDim_eq_and_homAddEquiv_homologyDerivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedPointMatlisDuality.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedPointMatlisDuality.lean#L324). The attribute's comment: “the scheme-level statement: k a field, X a scheme of finite type over k which is regular, x a closed point of X, F a coherent 𝒪\_X-module supported at x and F' a coherent 𝒪\_X-module supported at x whose stalk at x is a Matlis dual of F\_x; then Hom\_X(F, M) is identified additively with H⁰(X, M ⊗^L\_\{𝒪\_X} F'[-d\_x]), d\_x = dim 𝒪\_\{X,x}, functorially in M. The identification is produced for every M in D(𝒪\_X), which generalizes the source's clause for M in D\_perf(𝒪\_X). The local ring is read as the RingCat-valued stalk of the sheaf of rings, which is the local ring 𝒪\_\{X,x} by AlgebraicGeometry.ringCatStalkRingEquiv and is where the Matlis-duality hypothesis is stated; the dimension clause d\_x = dim 𝒪\_\{X,x} is stated at the CommRingCat-valued stalk X.presheaf.stalk x. The duality at the point to which the source's proof reduces this -- for A a regular local ring of dimension d, Hom\_\{D(A)}(N, K) is H⁰(K ⊗^L\_A N'[-d]) functorially in K -- is registered separately, on Dualizing.exists\_addEquiv\_hom\_homology\_derivedTensor\_matlisDual”.
+**`AlgebraicGeometry.exists_ringKrullDim_eq_and_homAddEquiv_homologyDerivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedPointMatlisDuality.lean, line 324](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/ClosedPointMatlisDuality.lean#L324). The attribute's comment: “the scheme-level statement: k a field, X a scheme of finite type over k which is regular, x a closed point of X, F a coherent 𝒪\_X-module supported at x and F' a coherent 𝒪\_X-module supported at x whose stalk at x is a Matlis dual of F\_x; then Hom\_X(F, M) is identified additively with H⁰(X, M ⊗^L\_\{𝒪\_X} F'[-d\_x]), d\_x = dim 𝒪\_\{X,x}, functorially in M. The identification is produced for every M in D(𝒪\_X), which generalizes the source's clause for M in D\_perf(𝒪\_X). The local ring is read as the RingCat-valued stalk of the sheaf of rings, which is the local ring 𝒪\_\{X,x} by AlgebraicGeometry.ringCatStalkRingEquiv and is where the Matlis-duality hypothesis is stated; the dimension clause d\_x = dim 𝒪\_\{X,x} is stated at the CommRingCat-valued stalk X.presheaf.stalk x. The duality at the point to which the source's proof reduces this -- for A a regular local ring of dimension d, Hom\_\{D(A)}(N, K) is H⁰(K ⊗^L\_A N'[-d]) functorially in K -- is registered separately, on Dualizing.exists\_addEquiv\_hom\_homology\_derivedTensor\_matlisDual”.
 
 > **Stacks 0G02.** Let `k` be a field, `X` a scheme of finite type over `k` which is regular,
 > `x ∈ X` a closed point, `F` a coherent `𝒪_X`-module supported at `x`, and `F'` a coherent
@@ -86,7 +86,7 @@ theorem exists_ringKrullDim_eq_and_homAddEquiv_homologyDerivedTensor
               (e M a)
 ```
 
-**`Dualizing.exists_addEquiv_hom_homology_derivedTensor_matlisDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RegularLocalFiniteLengthDuality.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/RegularLocalFiniteLengthDuality.lean#L403). The attribute's comment: “duality at the point”.
+**`Dualizing.exists_addEquiv_hom_homology_derivedTensor_matlisDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/RegularLocalFiniteLengthDuality.lean, line 403](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/RegularLocalFiniteLengthDuality.lean#L403). The attribute's comment: “duality at the point”.
 
 > **Stacks 0G02**, the duality at the point to which the source reduces its statement. Let `A`
 > be a regular local ring of dimension `d`, let `N` be an `A`-module of finite length and let `N'`
@@ -123,7 +123,7 @@ public theorem exists_addEquiv_hom_homology_derivedTensor_matlisDual
 
 [Tag 0G03](https://stacks.math.columbia.edu/tag/0G03) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_mem_isZero_stalkHomology_of_isZero_homology_globalSections_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L246). The attribute's comment: “part (5), for X a Noetherian scheme (which every scheme of finite type over a field is), x a closed point and K perfect: H^i(X, -) is the cohomology of the derived global sections of the ringed site of opens, and H^i(K)|\_U = 0 is read as the vanishing of the stalk of H^i(K) at every point of U”.
+**`AlgebraicGeometry.exists_mem_isZero_stalkHomology_of_isZero_homology_globalSections_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L246). The attribute's comment: “part (5), for X a Noetherian scheme (which every scheme of finite type over a field is), x a closed point and K perfect: H^i(X, -) is the cohomology of the derived global sections of the ringed site of opens, and H^i(K)|\_U = 0 is read as the vanishing of the stalk of H^i(K) at every point of U”.
 
 > **[Stacks, Tag 0G03] part (5), global form.** Let `X` be a Noetherian scheme, `x` a closed
 > point of `X`, `𝒪_x` the skyscraper at `x` with value `κ(x)` and `K` a perfect object of
@@ -142,7 +142,7 @@ theorem exists_mem_isZero_stalkHomology_of_isZero_homology_globalSections_derive
         ((DerivedCategory.homologyFunctor X.Modules i).obj K))
 ```
 
-**`AlgebraicGeometry.exists_mem_forall_isZero_stalkHomology_of_isZero_homology_globalSections_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L263). The attribute's comment: “part (6), for X a Noetherian scheme (which every scheme of finite type over a field is), x a closed point and K perfect: if H^i(X, K ⊗^L 𝒪\_x) = 0 for all i then every cohomology sheaf of K has vanishing stalk at every point of an open neighbourhood of x”.
+**`AlgebraicGeometry.exists_mem_forall_isZero_stalkHomology_of_isZero_homology_globalSections_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 263](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L263). The attribute's comment: “part (6), for X a Noetherian scheme (which every scheme of finite type over a field is), x a closed point and K perfect: if H^i(X, K ⊗^L 𝒪\_x) = 0 for all i then every cohomology sheaf of K has vanishing stalk at every point of an open neighbourhood of x”.
 
 > **[Stacks, Tag 0G03] part (6), global form.** In the situation of part (5), if
 > `H^i(X, K ⊗^𝐋_{𝒪_X} 𝒪_x) = 0` for all `i`, then `K` is zero on an open neighbourhood of `x`.
@@ -159,7 +159,7 @@ theorem exists_mem_forall_isZero_stalkHomology_of_isZero_homology_globalSections
         ((DerivedCategory.homologyFunctor X.Modules i).obj K))
 ```
 
-**`AlgebraicGeometry.exists_mem_isZero_stalkHomology_of_subsingleton_hom_from_residueFieldSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L313). The attribute's comment: “part (1), at the source's hypotheses: k a field, X a regular scheme of finite type over k, x a closed point, 𝒪\_x the skyscraper at x with value κ(x), K perfect. Ext^i\_X(𝒪\_x, K) is Hom\_\{D(𝒪\_X)}(𝒪\_x, K[i]); d\_x = dim 𝒪\_\{X,x} is the natural number d with ringKrullDim 𝒪\_\{X,x} = d, produced by the conclusion; H^\{i-d\_x}(K)|\_U = 0 is read as the vanishing of the stalk of H^\{i-d\_x}(K) at every point of U”.
+**`AlgebraicGeometry.exists_mem_isZero_stalkHomology_of_subsingleton_hom_from_residueFieldSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 313](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L313). The attribute's comment: “part (1), at the source's hypotheses: k a field, X a regular scheme of finite type over k, x a closed point, 𝒪\_x the skyscraper at x with value κ(x), K perfect. Ext^i\_X(𝒪\_x, K) is Hom\_\{D(𝒪\_X)}(𝒪\_x, K[i]); d\_x = dim 𝒪\_\{X,x} is the natural number d with ringKrullDim 𝒪\_\{X,x} = d, produced by the conclusion; H^\{i-d\_x}(K)|\_U = 0 is read as the vanishing of the stalk of H^\{i-d\_x}(K) at every point of U”.
 
 > **[Stacks, Tag 0G03] part (1).** Let `k` be a field, `X` a regular scheme of finite type
 > over `k`, `x ∈ X` a closed point, `𝒪_x` the skyscraper at `x` with value `κ(x)`, `d` the
@@ -181,7 +181,7 @@ theorem exists_mem_isZero_stalkHomology_of_subsingleton_hom_from_residueFieldSky
           ((DerivedCategory.homologyFunctor X.Modules (i - d)).obj K))
 ```
 
-**`AlgebraicGeometry.exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_from_residueFieldSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L374). The attribute's comment: “part (2), at the source's hypotheses: k a field, X a regular scheme of finite type over k, x a closed point, K perfect; if Hom\_\{D(𝒪\_X)}(𝒪\_x, K[i]) = 0 for all i then every cohomology sheaf of K has vanishing stalk at every point of an open neighbourhood of x”.
+**`AlgebraicGeometry.exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_from_residueFieldSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 374](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L374). The attribute's comment: “part (2), at the source's hypotheses: k a field, X a regular scheme of finite type over k, x a closed point, K perfect; if Hom\_\{D(𝒪\_X)}(𝒪\_x, K[i]) = 0 for all i then every cohomology sheaf of K has vanishing stalk at every point of an open neighbourhood of x”.
 
 > **[Stacks, Tag 0G03] part (2).** Let `k` be a field, `X` a regular scheme of finite type
 > over `k`, `x ∈ X` a closed point, `𝒪_x` the skyscraper at `x` with value `κ(x)` and `K` a perfect
@@ -201,7 +201,7 @@ theorem exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_from_residueF
         ((DerivedCategory.homologyFunctor X.Modules i).obj K))
 ```
 
-**`AlgebraicGeometry.exists_mem_isZero_stalkHomology_derivedDual_of_subsingleton_hom_to_residueFieldSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L439). The attribute's comment: “part (3), for X a Noetherian scheme (which every scheme of finite type over a field is), x a closed point and K perfect: Ext^i\_X(K, 𝒪\_x) is Hom\_\{D(𝒪\_X)}(K, 𝒪\_x[i]), K^∨ is R𝓗om(K, 𝒪\_X), and H^i(K^∨)|\_U = 0 is read as the vanishing of the stalk of H^i(K^∨) at every point of U”.
+**`AlgebraicGeometry.exists_mem_isZero_stalkHomology_derivedDual_of_subsingleton_hom_to_residueFieldSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 439](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L439). The attribute's comment: “part (3), for X a Noetherian scheme (which every scheme of finite type over a field is), x a closed point and K perfect: Ext^i\_X(K, 𝒪\_x) is Hom\_\{D(𝒪\_X)}(K, 𝒪\_x[i]), K^∨ is R𝓗om(K, 𝒪\_X), and H^i(K^∨)|\_U = 0 is read as the vanishing of the stalk of H^i(K^∨) at every point of U”.
 
 > **[Stacks, Tag 0G03] part (3).** Let `X` be a Noetherian scheme, `x ∈ X` a closed point,
 > `𝒪_x` the skyscraper at `x` with value `κ(x)` and `K` a perfect object of `D(𝒪_X)`, with dual
@@ -220,7 +220,7 @@ theorem exists_mem_isZero_stalkHomology_derivedDual_of_subsingleton_hom_to_resid
           (Stacks.SheafOfModules.derivedDual X.sheaf K)))
 ```
 
-**`AlgebraicGeometry.exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_to_residueFieldSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L472). The attribute's comment: “part (4), for X a Noetherian scheme (which every scheme of finite type over a field is), x any point and K perfect: if Hom\_\{D(𝒪\_X)}(K, 𝒪\_x[i]) = 0 for all i then every cohomology sheaf of K has vanishing stalk at every point of an open neighbourhood of x”.
+**`AlgebraicGeometry.exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_to_residueFieldSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean, line 472](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/LocalVanishingCriteria.lean#L472). The attribute's comment: “part (4), for X a Noetherian scheme (which every scheme of finite type over a field is), x any point and K perfect: if Hom\_\{D(𝒪\_X)}(K, 𝒪\_x[i]) = 0 for all i then every cohomology sheaf of K has vanishing stalk at every point of an open neighbourhood of x”.
 
 > **[Stacks, Tag 0G03] part (4).** Let `X` be a Noetherian scheme, `x ∈ X` a point, `𝒪_x`
 > the skyscraper at `x` with value `κ(x)` and `K` a perfect object of `D(𝒪_X)`. If
@@ -236,7 +236,7 @@ theorem exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_to_residueFie
       IsZero (OXModule.stalk ((DerivedCategory.homologyFunctor X.Modules i).obj K) y)
 ```
 
-**`AlgebraicGeometry.residueFieldSkyscraperIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraperComparison.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraperComparison.lean#L256). The attribute's comment: “the two spellings of the residue-field skyscraper 𝒪\_x agree, identifying part (4)'s with the one used by parts (1), (2), (3), (5), (6)”.
+**`AlgebraicGeometry.residueFieldSkyscraperIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraperComparison.lean, line 256](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraperComparison.lean#L256). The attribute's comment: “the two spellings of the residue-field skyscraper 𝒪\_x agree, identifying part (4)'s with the one used by parts (1), (2), (3), (5), (6)”.
 
 > **The two residue-field skyscrapers at `x` agree.**  The sheafification of the skyscraper
 > presheaf of modules at `x` with value `κ(x)` is the skyscraper sheaf of modules at `x` with value
@@ -247,7 +247,7 @@ def residueFieldSkyscraperIso :
     residueFieldSkyscraper X x ≅ residueFieldSkyscraperSheaf X x
 ```
 
-**`AlgebraicGeometry.exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_to_residueFieldSkyscraperSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraperComparison.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraperComparison.lean#L271). The attribute's comment: “part (4), for X a Noetherian scheme (which every scheme of finite type over a field is), x any point and K perfect, with 𝒪\_x read as residueFieldSkyscraperSheaf, the spelling parts (1), (2), (3), (5) and (6) use: if Hom\_\{D(𝒪\_X)}(K, 𝒪\_x[i]) = 0 for all i then every cohomology sheaf of K has vanishing stalk at every point of an open neighbourhood of x”.
+**`AlgebraicGeometry.exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_to_residueFieldSkyscraperSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraperComparison.lean, line 271](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraperComparison.lean#L271). The attribute's comment: “part (4), for X a Noetherian scheme (which every scheme of finite type over a field is), x any point and K perfect, with 𝒪\_x read as residueFieldSkyscraperSheaf, the spelling parts (1), (2), (3), (5) and (6) use: if Hom\_\{D(𝒪\_X)}(K, 𝒪\_x[i]) = 0 for all i then every cohomology sheaf of K has vanishing stalk at every point of an open neighbourhood of x”.
 
 > Let `X` be a Noetherian scheme, `x ∈ X` a point, `𝒪_x` the skyscraper sheaf
 > `residueFieldSkyscraperSheaf X x` at `x` with value `κ(x)` and `K` a perfect object of `D(𝒪_X)`.
@@ -264,7 +264,7 @@ theorem exists_mem_forall_isZero_stalkHomology_of_subsingleton_hom_to_residueFie
       IsZero (OXModule.stalk ((DerivedCategory.homologyFunctor X.Modules i).obj K) y)
 ```
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.exists_mem_forall_stalkHomology_isZero_of_pointSheaf_hom_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/MapsFromPointSheaf.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/MapsFromPointSheaf.lean#L360). The attribute's comment: “part (2), for `X` a regular Noetherian scheme (a regular scheme of finite type over a field, the source's hypothesis, is one) and `K` perfect: `K` being zero in an open neighbourhood of `x` is read as the vanishing of every cohomology stalk at every point of the neighbourhood”.
+**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.exists_mem_forall_stalkHomology_isZero_of_pointSheaf_hom_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/MapsFromPointSheaf.lean, line 360](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/MapsFromPointSheaf.lean#L360). The attribute's comment: “part (2), for `X` a regular Noetherian scheme (a regular scheme of finite type over a field, the source's hypothesis, is one) and `K` perfect: `K` being zero in an open neighbourhood of `x` is read as the vanishing of every cohomology stalk at every point of the neighbourhood”.
 
 > **[Stacks, Tag 0G03] part (2).** Let `X` be a regular Noetherian scheme, `x` a closed point
 > of `X`, `𝒪_x` the skyscraper sheaf at `x` with value `κ(x)` and `K` a perfect object of
@@ -285,7 +285,7 @@ theorem exists_mem_forall_stalkHomology_isZero_of_pointSheaf_hom_shift (hX : IsR
 
 [Tag 0GWZ](https://stacks.math.columbia.edu/tag/0GWZ) in the Stacks Project.
 
-**`AlgebraicGeometry.stalkHomology_isZero_iff_hom_residueFieldSkyscraper_subsingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraper.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraper.lean#L1011).
+**`AlgebraicGeometry.stalkHomology_isZero_iff_hom_residueFieldSkyscraper_subsingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraper.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/DeducingFullyFaithfulness/ResidueFieldSkyscraper.lean#L1011).
 
 > For a bounded complex with coherent cohomology, stalk cohomology above `b`
 > vanishes exactly when all maps to the residue-field skyscraper in those degrees vanish.
@@ -312,7 +312,7 @@ public theorem stalkHomology_isZero_iff_hom_residueFieldSkyscraper_subsingleton
 
 [Tag 0G25](https://stacks.math.columbia.edu/tag/0G25) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.fullyFaithful_iff_bijective_ext_perfectPointSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/FixingZeroDimensional.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/FixingZeroDimensional.lean#L551).
+**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.fullyFaithful_iff_bijective_ext_perfectPointSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/FixingZeroDimensional.lean, line 551](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/FixingZeroDimensional.lean#L551).
 
 > **[Stacks, Tag 0G25].** Let `k` be a field and let `X`, `Y` be proper schemes over `k` with
 > `X` regular. A `k`-linear exact functor `F : D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)` is fully faithful if and
@@ -343,7 +343,7 @@ theorem fullyFaithful_iff_bijective_ext_perfectPointSheaf (hX : IsRegular X.left
 
 [Tag 0G26](https://stacks.math.columbia.edu/tag/0G26) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.fullyFaithful_of_fixes_zeroDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/FixingZeroDimensional.lean, line 799](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/FixingZeroDimensional.lean#L799).
+**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.fullyFaithful_of_fixes_zeroDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/FixingZeroDimensional.lean, line 799](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/FixingZeroDimensional.lean#L799).
 
 > **[Stacks, Tag 0G26].** Let `k` be a field, let `X` be a proper scheme over `k` which is
 > regular, and let `F : D_perf(𝒪_X) ⥤ D_perf(𝒪_X)` be a `k`-linear exact functor. Assume that for
@@ -378,4 +378,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.11, Tag 0G23](https://stacks.math.columbia.edu/tag/0G23)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

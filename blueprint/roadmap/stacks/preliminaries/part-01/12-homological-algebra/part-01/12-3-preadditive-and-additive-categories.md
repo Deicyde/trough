@@ -8,13 +8,13 @@ proof: formalized
 
 # 12.3 Preadditive and additive categories
 
-Section 12.3 of the Stacks Project, [Tag 09SE](https://stacks.math.columbia.edu/tag/09SE). 16 tags here are carried by 15 declarations of the repository (2 in StacksCore and 13 in StacksFrontier) and 31 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 12.3 of the Stacks Project, [Tag 09SE](https://stacks.math.columbia.edu/tag/09SE). 16 tags here are carried by 15 declarations of the repository (2 in StacksCore and 13 in StacksFrontier) and 31 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00ZZ, a lemma
 
 [Tag 00ZZ](https://stacks.math.columbia.edu/tag/00ZZ) in the Stacks Project.
 
-**`CategoryTheory.factors_through_zero_iff_eq_zero`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean, line 21](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean#L21). The attribute's comment: “part 2”.
+**`CategoryTheory.factors_through_zero_iff_eq_zero`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean, line 21](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean#L21). The attribute's comment: “part 2”.
 
 > If `Z` is a zero object, then a morphism `α : y ⟶ z` factors through `Z` if
 > and only if `α = 0`.
@@ -27,11 +27,11 @@ theorem factors_through_zero_iff_eq_zero
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.IsInitial.isZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsInitial.isZero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean#L10) (StacksCore).
-- [`CategoryTheory.Limits.IsTerminal.isZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsTerminal.isZero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean#L11) (StacksCore).
-- [`CategoryTheory.Limits.IsZero.iff_id_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsZero.iff_id_eq_zero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean, line 12](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean#L12) (StacksCore).
-- [`CategoryTheory.Limits.IsZero.isInitial`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsZero.isInitial#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean#L11) (StacksCore).
-- [`CategoryTheory.Limits.IsZero.isTerminal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsZero.isTerminal#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean, line 12](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean#L12) (StacksCore).
+- [`CategoryTheory.Limits.IsInitial.isZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsInitial.isZero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean, line 10](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean#L10) (StacksCore).
+- [`CategoryTheory.Limits.IsTerminal.isZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsTerminal.isZero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean, line 11](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean#L11) (StacksCore).
+- [`CategoryTheory.Limits.IsZero.iff_id_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsZero.iff_id_eq_zero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean, line 12](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean#L12) (StacksCore).
+- [`CategoryTheory.Limits.IsZero.isInitial`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsZero.isInitial#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean, line 11](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean#L11) (StacksCore).
+- [`CategoryTheory.Limits.IsZero.isTerminal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsZero.isTerminal#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean, line 12](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean#L12) (StacksCore).
 
 ## Tag 0100, a definition
 
@@ -39,7 +39,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.IsZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsZero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean#L10) (StacksCore).
+- [`CategoryTheory.Limits.IsZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.IsZero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean, line 10](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/ZeroObjects.lean#L10) (StacksCore).
 
 ## Tag 0101, a lemma
 
@@ -47,9 +47,9 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.biprodIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprodIso#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 14](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L14) (StacksCore).
-- [`CategoryTheory.Limits.HasBinaryBiproduct.of_hasBinaryProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.HasBinaryBiproduct.of_hasBinaryProduct#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Preadditive/Biproducts.lean, line 14](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Preadditive/Biproducts.lean#L14) (StacksCore).
-- [`CategoryTheory.Limits.HasBinaryBiproduct.of_hasBinaryCoproduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.HasBinaryBiproduct.of_hasBinaryCoproduct#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Preadditive/Biproducts.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Preadditive/Biproducts.lean#L15) (StacksCore).
+- [`CategoryTheory.Limits.biprodIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprodIso#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 14](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L14) (StacksCore).
+- [`CategoryTheory.Limits.HasBinaryBiproduct.of_hasBinaryProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.HasBinaryBiproduct.of_hasBinaryProduct#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Preadditive/Biproducts.lean, line 14](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Preadditive/Biproducts.lean#L14) (StacksCore).
+- [`CategoryTheory.Limits.HasBinaryBiproduct.of_hasBinaryCoproduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.HasBinaryBiproduct.of_hasBinaryCoproduct#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Preadditive/Biproducts.lean, line 15](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Preadditive/Biproducts.lean#L15) (StacksCore).
 
 ## Tag 0102, a definition
 
@@ -57,17 +57,17 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.biprod`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L15) (StacksCore).
-- [`CategoryTheory.Limits.biprod.inl_fst`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod.inl_fst#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L16) (StacksCore).
-- [`CategoryTheory.Limits.biprod.inl_snd`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod.inl_snd#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L17) (StacksCore).
-- [`CategoryTheory.Limits.biprod.inr_snd`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod.inr_snd#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 18](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L18) (StacksCore).
-- [`CategoryTheory.Limits.biprod.inr_fst`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod.inr_fst#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L19) (StacksCore).
+- [`CategoryTheory.Limits.biprod`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 15](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L15) (StacksCore).
+- [`CategoryTheory.Limits.biprod.inl_fst`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod.inl_fst#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 16](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L16) (StacksCore).
+- [`CategoryTheory.Limits.biprod.inl_snd`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod.inl_snd#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 17](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L17) (StacksCore).
+- [`CategoryTheory.Limits.biprod.inr_snd`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod.inr_snd#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 18](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L18) (StacksCore).
+- [`CategoryTheory.Limits.biprod.inr_fst`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.biprod.inr_fst#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 19](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L19) (StacksCore).
 
 ## Tag 0103, a remark
 
 [Tag 0103](https://stacks.math.columbia.edu/tag/0103) in the Stacks Project.
 
-**`CategoryTheory.Limits.BinaryBicone.nonempty_isBilimit_iff_total_and_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/BiproductsUniqueness.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/BiproductsUniqueness.lean#L41). The attribute's comment: “all three parts: uniqueness of `i, j` given `p, q` together with `i ∘ p + j ∘ q = id`, uniqueness of `p, q` given `i, j`, and the recognition criterion (a bicone with `i ∘ p + j ∘ q = id` is a direct sum); the data of the recognition criterion is Mathlib's `isBinaryBilimitOfTotal`”.
+**`CategoryTheory.Limits.BinaryBicone.nonempty_isBilimit_iff_total_and_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/BiproductsUniqueness.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Preadditive/BiproductsUniqueness.lean#L41). The attribute's comment: “all three parts: uniqueness of `i, j` given `p, q` together with `i ∘ p + j ∘ q = id`, uniqueness of `p, q` given `i, j`, and the recognition criterion (a bicone with `i ∘ p + j ∘ q = id` is a direct sum); the data of the recognition criterion is Mathlib's `isBinaryBilimitOfTotal`”.
 
 > In a preadditive category, a binary bicone `b` over `X` and `Y` (maps `i = b.inl`,
 > `j = b.inr`, `p = b.fst`, `q = b.snd` with `p ∘ i = id`, `q ∘ j = id`, `p ∘ j = 0`, `q ∘ i = 0`)
@@ -89,8 +89,8 @@ theorem BinaryBicone.nonempty_isBilimit_iff_total_and_unique {X Y : C} (b : Bina
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.preservesFiniteBiproductsOfAdditive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.preservesFiniteBiproductsOfAdditive#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Preadditive/AdditiveFunctor.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Preadditive/AdditiveFunctor.lean#L8) (StacksCore).
-- [`CategoryTheory.Limits.isBinaryBilimitOfTotal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.isBinaryBilimitOfTotal#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Preadditive/Biproducts.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Preadditive/Biproducts.lean#L16) (StacksCore).
+- [`CategoryTheory.Functor.preservesFiniteBiproductsOfAdditive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.preservesFiniteBiproductsOfAdditive#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Preadditive/AdditiveFunctor.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Preadditive/AdditiveFunctor.lean#L8) (StacksCore).
+- [`CategoryTheory.Limits.isBinaryBilimitOfTotal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.isBinaryBilimitOfTotal#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Preadditive/Biproducts.lean, line 16](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Preadditive/Biproducts.lean#L16) (StacksCore).
 
 ## Tag 0105, a lemma
 
@@ -98,16 +98,16 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.preservesFiniteBiproductsOfAdditive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.preservesFiniteBiproductsOfAdditive#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch12.lean, line 13](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch12.lean#L13) (StacksFrontier): “An additive functor transforms direct sums to direct sums (it preserves all finite biproducts).”.
-- [`CategoryTheory.Limits.preservesBinaryBiproducts_of_preservesBiproducts`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.preservesBinaryBiproducts_of_preservesBiproducts#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch12.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch12.lean#L15) (StacksFrontier): “Preserving biproducts indexed by a two-element type is preserving binary direct sums.”.
-- [`CategoryTheory.Functor.preservesZeroMorphisms_of_additive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.preservesZeroMorphisms_of_additive#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch12.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch12.lean#L17) (StacksFrontier): “An additive functor preserves zero morphisms.”.
-- [`CategoryTheory.Functor.map_isZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.map_isZero#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch12.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch12.lean#L19) (StacksFrontier): “A functor preserving zero morphisms transforms zero objects to zero objects.”.
+- [`CategoryTheory.Functor.preservesFiniteBiproductsOfAdditive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.preservesFiniteBiproductsOfAdditive#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch12.lean, line 13](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch12.lean#L13) (StacksFrontier): “An additive functor transforms direct sums to direct sums (it preserves all finite biproducts).”.
+- [`CategoryTheory.Limits.preservesBinaryBiproducts_of_preservesBiproducts`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.preservesBinaryBiproducts_of_preservesBiproducts#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch12.lean, line 15](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch12.lean#L15) (StacksFrontier): “Preserving biproducts indexed by a two-element type is preserving binary direct sums.”.
+- [`CategoryTheory.Functor.preservesZeroMorphisms_of_additive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.preservesZeroMorphisms_of_additive#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch12.lean, line 17](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch12.lean#L17) (StacksFrontier): “An additive functor preserves zero morphisms.”.
+- [`CategoryTheory.Functor.map_isZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.map_isZero#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch12.lean, line 19](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch12.lean#L19) (StacksFrontier): “A functor preserving zero morphisms transforms zero objects to zero objects.”.
 
 ## Tag 0104, a definition
 
 [Tag 0104](https://stacks.math.columbia.edu/tag/0104) in the Stacks Project.
 
-**`CategoryTheory.Limits.Preadditive.tfae_hasFiniteProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/AdditiveCategory.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/AdditiveCategory.lean#L40). The attribute's comment: “A preadditive category has finite products if and only if it has finite direct sums, if and only if it has a zero object and binary direct sums. Mathlib has no `Additive` class: an additive category is a category with `[Preadditive C] [HasFiniteBiproducts C]`.”.
+**`CategoryTheory.Limits.Preadditive.tfae_hasFiniteProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/AdditiveCategory.lean, line 40](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Preadditive/AdditiveCategory.lean#L40). The attribute's comment: “A preadditive category has finite products if and only if it has finite direct sums, if and only if it has a zero object and binary direct sums. Mathlib has no `Additive` class: an additive category is a category with `[Preadditive C] [HasFiniteBiproducts C]`.”.
 
 > In a preadditive category, having finite products, having finite biproducts (direct sums),
 > and having a zero object and binary biproducts are equivalent. So the additive categories of the
@@ -122,7 +122,7 @@ theorem tfae_hasFiniteProducts :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.map_zero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.map_zero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Preserves/Shapes/Zero.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Preserves/Shapes/Zero.lean#L8) (StacksCore).
+- [`CategoryTheory.Functor.map_zero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.map_zero#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Preserves/Shapes/Zero.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Preserves/Shapes/Zero.lean#L8) (StacksCore).
 
 ## Tag 0106, a definition
 
@@ -130,10 +130,10 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Abelian.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.image#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Abelian/Images.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Abelian/Images.lean#L25) (StacksCore).
-- [`CategoryTheory.Abelian.coimage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.coimage#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Abelian/Images.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Abelian/Images.lean#L26) (StacksCore).
-- [`CategoryTheory.Limits.kernel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.kernel#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/Kernels.lean, line 18](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/Kernels.lean#L18) (StacksCore). References: SGA 3 VIII (3.4); SGA 4 I (2.1.1), “special case”.
-- [`CategoryTheory.Limits.cokernel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.cokernel#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/Kernels.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/Kernels.lean#L19) (StacksCore). References: EGA III (7.4.2), “more general”; SGA 4 I (2.1.1), “special case”.
+- [`CategoryTheory.Abelian.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.image#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Abelian/Images.lean, line 25](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Abelian/Images.lean#L25) (StacksCore).
+- [`CategoryTheory.Abelian.coimage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.coimage#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Abelian/Images.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Abelian/Images.lean#L26) (StacksCore).
+- [`CategoryTheory.Limits.kernel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.kernel#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/Kernels.lean, line 18](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/Kernels.lean#L18) (StacksCore). References: SGA 3 VIII (3.4); SGA 4 I (2.1.1), “special case”.
+- [`CategoryTheory.Limits.cokernel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.cokernel#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/Kernels.lean, line 19](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/Kernels.lean#L19) (StacksCore). References: EGA III (7.4.2), “more general”; SGA 4 I (2.1.1), “special case”.
 
 ## Tag 09QG, a lemma
 
@@ -141,16 +141,16 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.kernelBiprodFstIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.kernelBiprodFstIso#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L20) (StacksCore).
-- [`CategoryTheory.Limits.cokernelBiproductιIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.cokernelBiproductιIso#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 21](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L21) (StacksCore).
-- [`CategoryTheory.Limits.BinaryBicone.isLimitSndKernelFork`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.BinaryBicone.isLimitSndKernelFork#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Stacks09QG.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Stacks09QG.lean#L17) (StacksFrontier): “For a direct sum `c` of `x` and `y`, `i = c.inl` is a kernel of `q = c.snd`.”.
-- [`CategoryTheory.Limits.BinaryBicone.isColimitInrCokernelCofork`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.BinaryBicone.isColimitInrCokernelCofork#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Stacks09QG.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Stacks09QG.lean#L19) (StacksFrontier): “For a direct sum `c` of `x` and `y`, `p = c.fst` is a cokernel of `j = c.inr`.”.
+- [`CategoryTheory.Limits.kernelBiprodFstIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.kernelBiprodFstIso#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 20](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L20) (StacksCore).
+- [`CategoryTheory.Limits.cokernelBiproductιIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.cokernelBiproductιIso#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean, line 21](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/BinaryBiproducts.lean#L21) (StacksCore).
+- [`CategoryTheory.Limits.BinaryBicone.isLimitSndKernelFork`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.BinaryBicone.isLimitSndKernelFork#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Stacks09QG.lean, line 17](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Stacks09QG.lean#L17) (StacksFrontier): “For a direct sum `c` of `x` and `y`, `i = c.inl` is a kernel of `q = c.snd`.”.
+- [`CategoryTheory.Limits.BinaryBicone.isColimitInrCokernelCofork`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.BinaryBicone.isColimitInrCokernelCofork#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Stacks09QG.lean, line 19](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Stacks09QG.lean#L19) (StacksFrontier): “For a direct sum `c` of `x` and `y`, `p = c.fst` is a cokernel of `j = c.inr`.”.
 
 ## Tag 0E43, a lemma
 
 [Tag 0E43](https://stacks.math.columbia.edu/tag/0E43) in the Stacks Project.
 
-**`CategoryTheory.Limits.kernel_mono_and_cokernel_epi_and_coimage_epi_and_image_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/KernelMono.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/KernelMono.lean#L34). The attribute's comment: “all four parts; kernels and cokernels are arbitrary limit (co)forks”.
+**`CategoryTheory.Limits.kernel_mono_and_cokernel_epi_and_coimage_epi_and_image_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/KernelMono.lean, line 34](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Preadditive/KernelMono.lean#L34). The attribute's comment: “all four parts; kernels and cokernels are arbitrary limit (co)forks”.
 
 > Let `f : x ⟶ y` be a morphism in a preadditive category. (1) Every kernel of `f` (a kernel
 > fork that is a limit) is a monomorphism; (2) every cokernel of `f` (a cokernel cofork that is a
@@ -168,14 +168,14 @@ theorem kernel_mono_and_cokernel_epi_and_coimage_epi_and_image_mono {x y : C} (f
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.equalizer.ι_mono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.equalizer.ι_mono#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/Equalizers.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/Equalizers.lean#L10) (StacksCore).
-- [`CategoryTheory.Limits.coequalizer.π_epi`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.coequalizer.π_epi#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/Equalizers.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Limits/Shapes/Equalizers.lean#L11) (StacksCore). References: SGA 3 IV (1.2), “(2), special case”.
+- [`CategoryTheory.Limits.equalizer.ι_mono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.equalizer.ι_mono#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/Equalizers.lean, line 10](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/Equalizers.lean#L10) (StacksCore).
+- [`CategoryTheory.Limits.coequalizer.π_epi`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.coequalizer.π_epi#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Limits/Shapes/Equalizers.lean, line 11](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Limits/Shapes/Equalizers.lean#L11) (StacksCore). References: SGA 3 IV (1.2), “(2), special case”.
 
 ## Tag 0107, a lemma
 
 [Tag 0107](https://stacks.math.columbia.edu/tag/0107) in the Stacks Project.
 
-**`unique_factorThru`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Abelian/Images.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Abelian/Images.lean#L31).
+**`unique_factorThru`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Abelian/Images.lean, line 31](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Abelian/Images.lean#L31).
 
 ```lean
 lemma unique_factorThru {C : Type*} [Category* C] [Preadditive C] {X Y : C} (f : X ⟶ Y)
@@ -184,7 +184,7 @@ lemma unique_factorThru {C : Type*} [Category* C] [Preadditive C] {X Y : C} (f :
     Abelian.image.ι f = f) : φ = Abelian.coimageImageComparison f
 ```
 
-**`CategoryTheory.Abelian.existsUnique_coimage_π_comp_comp_image_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/CoimageImageFactorisation.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Abelian/CoimageImageFactorisation.lean#L30). The attribute's comment: “existence and uniqueness of the middle map `Coim(f) ⟶ Im(f)`, which is `coimageImageComparison f`”.
+**`CategoryTheory.Abelian.existsUnique_coimage_π_comp_comp_image_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/CoimageImageFactorisation.lean, line 30](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Abelian/CoimageImageFactorisation.lean#L30). The attribute's comment: “existence and uniqueness of the middle map `Coim(f) ⟶ Im(f)`, which is `coimageImageComparison f`”.
 
 > **Stacks 0107.** A morphism `f : X ⟶ Y` of a preadditive category whose kernel, cokernel,
 > image and coimage exist factors uniquely as `X ⟶ Coim(f) ⟶ Im(f) ⟶ Y`: there is a unique
@@ -201,7 +201,7 @@ theorem existsUnique_coimage_π_comp_comp_image_ι {C : Type*} [Category* C] [Pr
 
 [Tag 0H9N](https://stacks.math.columbia.edu/tag/0H9N) in the Stacks Project.
 
-**`CategoryTheory.Idempotents.comp_id_sub_eq_zero_and_id_sub_comp_eq_zero_and_id_sub_idem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L43).
+**`CategoryTheory.Idempotents.comp_id_sub_eq_zero_and_id_sub_comp_eq_zero_and_id_sub_idem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 43](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L43).
 
 > **Stacks 0H9N.** For an idempotent `f : x ⟶ x` of a preadditive category, with
 > `g = 𝟙 x - f`, one has `f ∘ g = 0`, `g ∘ f = 0` and `g ∘ g = g`.
@@ -216,7 +216,7 @@ theorem comp_id_sub_eq_zero_and_id_sub_comp_eq_zero_and_id_sub_idem {x : C} (f :
 
 [Tag 0H9P](https://stacks.math.columbia.edu/tag/0H9P) in the Stacks Project.
 
-**`CategoryTheory.Idempotents.comp_retraction_eq_id_and_isColimit_of_isLimit_kernelFork_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L73). The attribute's comment: “(1)”.
+**`CategoryTheory.Idempotents.comp_retraction_eq_id_and_isColimit_of_isLimit_kernelFork_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L73). The attribute's comment: “(1)”.
 
 > **Stacks 0H9P (1).** Let `f : x ⟶ x` be idempotent in a preadditive category, with
 > kernel `i : K ⟶ x`, and let `p : x ⟶ K` be the (unique) morphism with `g = i ∘ p`, where
@@ -229,7 +229,7 @@ theorem comp_retraction_eq_id_and_isColimit_of_isLimit_kernelFork_idempotent
     i ≫ p = 𝟙 K ∧ ∃ hfp : f ≫ p = 0, Nonempty (IsColimit (CokernelCofork.ofπ p hfp))
 ```
 
-**`CategoryTheory.Idempotents.comp_retraction_eq_id_and_isLimit_of_isColimit_cokernelCofork_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L104). The attribute's comment: “(2)”.
+**`CategoryTheory.Idempotents.comp_retraction_eq_id_and_isLimit_of_isColimit_cokernelCofork_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L104). The attribute's comment: “(2)”.
 
 > **Stacks 0H9P (2).** Let `f : x ⟶ x` be idempotent in a preadditive category, with
 > cokernel `p : x ⟶ K`, and let `i : K ⟶ x` be the (unique) morphism with `g = i ∘ p`, where
@@ -242,7 +242,7 @@ theorem comp_retraction_eq_id_and_isLimit_of_isColimit_cokernelCofork_idempotent
     i ≫ p = 𝟙 K ∧ ∃ hif : i ≫ f = 0, Nonempty (IsLimit (KernelFork.ofι i hif))
 ```
 
-**`CategoryTheory.Idempotents.comp_retraction_eq_id_and_isColimit_of_isLimit_kernelFork_id_sub_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L120). The attribute's comment: “(3)”.
+**`CategoryTheory.Idempotents.comp_retraction_eq_id_and_isColimit_of_isLimit_kernelFork_id_sub_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L120). The attribute's comment: “(3)”.
 
 > **Stacks 0H9P (3).** Let `f : x ⟶ x` be idempotent in a preadditive category and
 > `g = 𝟙 x - f`. If `g` has kernel `j : L ⟶ x` and `q : x ⟶ L` is the (unique) morphism with
@@ -256,7 +256,7 @@ theorem comp_retraction_eq_id_and_isColimit_of_isLimit_kernelFork_id_sub_idempot
       ∃ hgq : (𝟙 x - f) ≫ q = 0, Nonempty (IsColimit (CokernelCofork.ofπ q hgq))
 ```
 
-**`CategoryTheory.Idempotents.comp_retraction_eq_id_and_isLimit_of_isColimit_cokernelCofork_id_sub_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L132). The attribute's comment: “(4)”.
+**`CategoryTheory.Idempotents.comp_retraction_eq_id_and_isLimit_of_isColimit_cokernelCofork_id_sub_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L132). The attribute's comment: “(4)”.
 
 > **Stacks 0H9P (4).** Let `f : x ⟶ x` be idempotent in a preadditive category and
 > `g = 𝟙 x - f`. If `g` has cokernel `q : x ⟶ L` and `j : L ⟶ x` is the (unique) morphism with
@@ -274,7 +274,7 @@ theorem comp_retraction_eq_id_and_isLimit_of_isColimit_cokernelCofork_id_sub_ide
 
 [Tag 0H9Q](https://stacks.math.columbia.edu/tag/0H9Q) in the Stacks Project.
 
-**`CategoryTheory.Idempotents.nonempty_biprod_iso_of_idempotent_kernel_or_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L149).
+**`CategoryTheory.Idempotents.nonempty_biprod_iso_of_idempotent_kernel_or_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L149).
 
 > **Stacks 0H9Q.** Let `f : x ⟶ x` be idempotent in a preadditive category and
 > `g = 𝟙 x - f`. Suppose `f` has a kernel `i : K ⟶ x` or a cokernel `p : x ⟶ K`, and `g` has a
@@ -305,7 +305,7 @@ theorem nonempty_biprod_iso_of_idempotent_kernel_or_cokernel (hf : f ≫ f = f) 
 
 [Tag 0H9R](https://stacks.math.columbia.edu/tag/0H9R) in the Stacks Project.
 
-**`CategoryTheory.Idempotents.nonempty_isLimit_kernelFork_id_sub_of_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L235). The attribute's comment: “(1)”.
+**`CategoryTheory.Idempotents.nonempty_isLimit_kernelFork_id_sub_of_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 235](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L235). The attribute's comment: “(1)”.
 
 > **Stacks 0H9R (1).** Let `j : y ⟶ x` and `q : x ⟶ y` be morphisms of a preadditive
 > category with `q ∘ j = 𝟙 y`. Then `𝟙 x - j ∘ q` has kernel `j`.
@@ -315,7 +315,7 @@ theorem nonempty_isLimit_kernelFork_id_sub_of_retraction (hjq : j ≫ q = 𝟙 y
     ∃ w : j ≫ (𝟙 x - q ≫ j) = 0, Nonempty (IsLimit (KernelFork.ofι j w))
 ```
 
-**`CategoryTheory.Idempotents.nonempty_isColimit_cokernelCofork_id_sub_of_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L242). The attribute's comment: “(2)”.
+**`CategoryTheory.Idempotents.nonempty_isColimit_cokernelCofork_id_sub_of_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L242). The attribute's comment: “(2)”.
 
 > **Stacks 0H9R (2).** Let `j : y ⟶ x` and `q : x ⟶ y` be morphisms of a preadditive
 > category with `q ∘ j = 𝟙 y`. Then `𝟙 x - j ∘ q` has cokernel `q`.
@@ -329,7 +329,7 @@ theorem nonempty_isColimit_cokernelCofork_id_sub_of_retraction (hjq : j ≫ q = 
 
 [Tag 0H9S](https://stacks.math.columbia.edu/tag/0H9S) in the Stacks Project.
 
-**`CategoryTheory.Idempotents.kernel_cokernel_biprod_of_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L254).
+**`CategoryTheory.Idempotents.kernel_cokernel_biprod_of_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Idempotents/KernelCokernelSplitting.lean#L254).
 
 > **Stacks 0H9S.** Let `j : y ⟶ x` and `q : x ⟶ y` be morphisms of a preadditive category
 > with `q ∘ j = 𝟙 y`. If `j ∘ q` has a kernel or a cokernel, then it has both, and
@@ -358,4 +358,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.3, Tag 09SE](https://stacks.math.columbia.edu/tag/09SE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

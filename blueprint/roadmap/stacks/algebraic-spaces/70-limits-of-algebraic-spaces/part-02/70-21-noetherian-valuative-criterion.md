@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.21 Noetherian valuative criterion
 
-Section 70.21 of the Stacks Project, [Tag 0CMB](https://stacks.math.columbia.edu/tag/0CMB). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 70.21 of the Stacks Project, [Tag 0CMB](https://stacks.math.columbia.edu/tag/0CMB). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CMC, a lemma
 
 [Tag 0CMC](https://stacks.math.columbia.edu/tag/0CMC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_discreteValuationSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeCriterion.lean, line 614](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeCriterion.lean#L614). The attribute's comment: “corrected: the residue-field clause is asserted when f x ≠ y; as printed it is false (the identity of Spec of an algebraically closed field), see errata.md”.
+**`AlgebraicGeometry.Space.exists_discreteValuationSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeCriterion.lean, line 614](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeCriterion.lean#L614). The attribute's comment: “corrected: the residue-field clause is asserted when f x ≠ y; as printed it is false (the identity of Spec of an algebraically closed field), see errata.md”.
 
 > **Stacks 0CMC.** Let `f : X ⟶ Y` be a morphism of finite type of algebraic spaces over `S`,
 > with `Y` locally Noetherian, and let `y` be a point of `Y` in the closure of the image of the
@@ -117,14 +117,14 @@ theorem exists_discreteValuationSpecialization {X Y : (BigFppfOver B S hS)ᵒᵖ
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.ValuativeSquare`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L201) (StacksFrontier): “solid square”.
-- [`AlgebraicGeometry.Space.ValuativeSquare.Lift`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L106), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L202) (StacksFrontier): “dotted arrow”.
+- [`AlgebraicGeometry.Space.ValuativeSquare`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L201) (StacksFrontier): “solid square”.
+- [`AlgebraicGeometry.Space.ValuativeSquare.Lift`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L106), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Criterion.lean#L202) (StacksFrontier): “dotted arrow”.
 
 ## Tag 0H1W, a lemma
 
 [Tag 0H1W](https://stacks.math.columbia.edu/tag/0H1W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.discreteUniqueness_of_uniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L132). The attribute's comment: “(2) implies (3)”.
+**`AlgebraicGeometry.Space.discreteUniqueness_of_uniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L132). The attribute's comment: “(2) implies (3)”.
 
 > **Stacks 0H1W, (2) implies (3).** Testing uniqueness of dotted arrows on all valuation
 > rings is stronger than testing it on the discrete ones.
@@ -134,7 +134,7 @@ theorem discreteUniqueness_of_uniqueness {f : X ⟶ Y}
     (hu : ValuativeCriterion.Uniqueness f) : ValuativeCriterion.DiscreteUniqueness f
 ```
 
-**`AlgebraicGeometry.Space.codimensionZeroUniqueness_of_discreteUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L140). The attribute's comment: “(3) implies (4)”.
+**`AlgebraicGeometry.Space.codimensionZeroUniqueness_of_discreteUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L140). The attribute's comment: “(3) implies (4)”.
 
 > **Stacks 0H1W, (3) implies (4).** Testing uniqueness of dotted arrows on all discrete
 > valuation rings is stronger than testing it only on the diagrams whose generic arrow picks out
@@ -146,7 +146,7 @@ theorem codimensionZeroUniqueness_of_discreteUniqueness {f : X ⟶ Y}
     ValuativeCriterion.CodimensionZeroUniqueness f
 ```
 
-**`AlgebraicGeometry.Space.discreteUniqueness_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L148). The attribute's comment: “(1) implies (3)”.
+**`AlgebraicGeometry.Space.discreteUniqueness_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L148). The attribute's comment: “(1) implies (3)”.
 
 > **Stacks 0H1W, (1) implies (3).** A separated morphism of algebraic spaces has at most one
 > dotted arrow in every valuative diagram with a discrete valuation ring.
@@ -156,7 +156,7 @@ theorem discreteUniqueness_of_isSeparated (f : X ⟶ Y) (hf : IsSeparated B S hS
     ValuativeCriterion.DiscreteUniqueness f
 ```
 
-**`AlgebraicGeometry.Space.codimensionZeroUniqueness_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L156). The attribute's comment: “(1) implies (4)”.
+**`AlgebraicGeometry.Space.codimensionZeroUniqueness_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L156). The attribute's comment: “(1) implies (4)”.
 
 > **Stacks 0H1W, (1) implies (4).** A separated morphism of algebraic spaces has at most one
 > dotted arrow in every valuative diagram with a discrete valuation ring whose generic arrow
@@ -167,7 +167,7 @@ theorem codimensionZeroUniqueness_of_isSeparated (f : X ⟶ Y) (hf : IsSeparated
     ValuativeCriterion.CodimensionZeroUniqueness f
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_iff_valuativeCriterion_uniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L163). The attribute's comment: “(1) is equivalent to (2)”.
+**`AlgebraicGeometry.Space.isSeparated_iff_valuativeCriterion_uniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean, line 163](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatedness.lean#L163). The attribute's comment: “(1) is equivalent to (2)”.
 
 > **Stacks 0H1W, (1) is equivalent to (2).** A quasi-separated morphism of algebraic spaces
 > is separated exactly when it satisfies the uniqueness part of the valuative criterion.
@@ -179,7 +179,7 @@ theorem isSeparated_iff_valuativeCriterion_uniqueness
     IsSeparated B S hS f ↔ ValuativeCriterion.Uniqueness f
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_tfae_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatednessTFAE.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatednessTFAE.lean#L78).
+**`AlgebraicGeometry.Space.isSeparated_tfae_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatednessTFAE.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparatednessTFAE.lean#L78).
 
 > **Stacks 0H1W.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > quasi-separated and locally of finite type, with `Y` locally Noetherian. The following are
@@ -208,7 +208,7 @@ theorem isSeparated_tfae_of_isLocallyOfFiniteType
 
 [Tag 0H1X](https://stacks.math.columbia.edu/tag/0H1X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_tfae_of_isQuasiSeparated_of_codimensionZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeProperCodimensionZero.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeProperCodimensionZero.lean#L496).
+**`AlgebraicGeometry.Space.isProper_tfae_of_isQuasiSeparated_of_codimensionZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeProperCodimensionZero.lean, line 496](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeProperCodimensionZero.lean#L496).
 
 > **Stacks 0H1X.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > quasi-separated and of finite type, with `Y` locally Noetherian. The following are equivalent:
@@ -247,7 +247,7 @@ theorem isProper_tfae_of_isQuasiSeparated_of_codimensionZero
 
 [Tag 0H1Y](https://stacks.math.columbia.edu/tag/0H1Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_implications_and_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianUniversallyClosedImplications.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianUniversallyClosedImplications.lean#L173).
+**`AlgebraicGeometry.Space.universallyClosed_implications_and_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianUniversallyClosedImplications.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianUniversallyClosedImplications.lean#L173).
 
 > **Stacks 0H1Y, corrected.** Let `f : X ⟶ Y` be a morphism of finite type of algebraic spaces
 > over `S`, with `Y` locally Noetherian, and number the conditions of Stacks 0H1Y as in
@@ -336,4 +336,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.21, Tag 0CMB](https://stacks.math.columbia.edu/tag/0CMB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

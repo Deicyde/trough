@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.5 The stack of coherent sheaves
 
-Section 99.5 of the Stacks Project, [Tag 08KA](https://stacks.math.columbia.edu/tag/08KA). 12 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 99.5 of the Stacks Project, [Tag 08KA](https://stacks.math.columbia.edu/tag/08KA). 12 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08KB, a situation
 
 [Tag 08KB](https://stacks.math.columbia.edu/tag/08KB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean#L217). The attribute's comment: “the relative algebraic space”.
+**`AlgebraicGeometry.Space.CoherentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean#L217). The attribute's comment: “the relative algebraic space”.
 
 > **Stacks 08KB, the standing data.**  A morphism `f : X ⟶ Y` of algebraic spaces over `S` of
 > finite presentation: the relative algebraic space whose coherent sheaves with proper support
@@ -24,7 +24,7 @@ Section 99.5 of the Stacks Project, [Tag 08KA](https://stacks.math.columbia.edu/
 structure CoherentSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.Space.CoherentObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean#L404). The attribute's comment: “objects”.
+**`AlgebraicGeometry.Space.CoherentObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean, line 404](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean#L404). The attribute's comment: “objects”.
 
 > **Stacks 08KB, the objects.**  An object of `Coh_{X/Y}`: a scheme `T` of the site over `Y`
 > together with a quasi-coherent `𝒪_{X_T}`-module of finite presentation which is flat over `T`
@@ -34,7 +34,7 @@ structure CoherentSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Conta
 structure CoherentObject (D : CoherentSituation B S hS)
 ```
 
-**`AlgebraicGeometry.Space.CoherentHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean#L427). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.Space.CoherentHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean, line 427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStack.lean#L427). The attribute's comment: “morphisms”.
 
 > **Stacks 08KB, the morphisms.**  A morphism of `Coh_{X/Y}`: a morphism `h : T ⟶ T'` of
 > test schemes over `Y` together with an isomorphism `(X_h)^*F' ⟶ F` of `𝒪_{X_T}`-modules.
@@ -43,7 +43,7 @@ structure CoherentObject (D : CoherentSituation B S hS)
 structure CoherentHom {D : CoherentSituation B S hS} (A A' : CoherentObject D)
 ```
 
-**`AlgebraicGeometry.Space.CoherentSituation.categoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCategory.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCategory.lean#L227). The attribute's comment: “the category structure on Coh\_\{X/Y}: the identity and associativity laws, which Stacks 08KB asserts by designation and this library had left unverified”.
+**`AlgebraicGeometry.Space.CoherentSituation.categoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCategory.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCategory.lean#L227). The attribute's comment: “the category structure on Coh\_\{X/Y}: the identity and associativity laws, which Stacks 08KB asserts by designation and this library had left unverified”.
 
 > **`Coh_{X/Y}` is a category**, for the canonical pseudofunctoriality datum
 > `AlgebraicGeometry.Space.modulePushforwardCoherence` of the direct images of Stacks 03LU.
@@ -56,7 +56,7 @@ def categoryData : CoherentCategoryData (modulePushforwardCoherence B S hS) D
 
 [Tag 08W5](https://stacks.math.columbia.edu/tag/08W5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.projection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCanonical.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCanonical.lean#L79). The attribute's comment: “Coh\_\{X/Y} with the category structure of Stacks 08KB; no hypotheses”.
+**`AlgebraicGeometry.Space.CoherentSituation.projection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCanonical.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCanonical.lean#L79). The attribute's comment: “Coh\_\{X/Y} with the category structure of Stacks 08KB; no hypotheses”.
 
 > **Stacks 08W5.**  In the situation of Stacks 08KB the projection
 > `p : Coh_{X/Y} ⟶ (Sch/S)_fppf`, which sends an object `(T, g, F)` to its test scheme `T`, is
@@ -81,7 +81,7 @@ theorem projection_isFiberedInGroupoids :
 
 [Tag 08W6](https://stacks.math.columbia.edu/tag/08W6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.coherentCFG_diagonal_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CoherentStackDiagonalRepresentable.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/CoherentStackDiagonalRepresentable.lean#L65).
+**`AlgebraicGeometry.Space.CoherentSituation.coherentCFG_diagonal_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CoherentStackDiagonalRepresentable.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/CoherentStackDiagonalRepresentable.lean#L65).
 
 > **Stacks 08W6.** In Situation 08KB, with `𝒳 = Coh_{X/Y}` the stack of coherent sheaves with
 > proper support of a morphism `f : X ⟶ Y` of finite presentation of algebraic spaces over `S`,
@@ -97,7 +97,7 @@ theorem coherentCFG_diagonal_isRepresentableByAlgebraicSpaces (D : CoherentSitua
 
 [Tag 08KC](https://stacks.math.columbia.edu/tag/08KC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackIsStackInGroupoids.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackIsStackInGroupoids.lean#L65).
+**`AlgebraicGeometry.Space.CoherentSituation.isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackIsStackInGroupoids.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackIsStackInGroupoids.lean#L65).
 
 > **Stacks 08KC.**  In Situation 08KB the projection `Coh_{X/Y} ⟶ (Sch/S)_fppf`,
 > `(T, g, F) ↦ T`, makes the category `Coh_{X/Y}` of Stacks 08KB a stack in groupoids over the big
@@ -113,7 +113,7 @@ theorem isStackInGroupoids :
 
 [Tag 08LP](https://stacks.math.columbia.edu/tag/08LP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.canonicalBaseChangeSquare_isTwoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCanonical.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCanonical.lean#L107). The attribute's comment: “the base-change square is 2-cartesian”.
+**`AlgebraicGeometry.Space.CoherentSituation.canonicalBaseChangeSquare_isTwoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCanonical.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCanonical.lean#L107). The attribute's comment: “the base-change square is 2-cartesian”.
 
 > The square `Coh_{X'/Y'} ⟶ Coh_{X/Y}`, `𝒮_{Y'} ⟶ 𝒮_Y` is 2-cartesian: `Coh_{X'/Y'}`, with
 > the base-change functor and the projection forgetting the module, is a 2-fibre product of the
@@ -124,7 +124,7 @@ def canonicalBaseChangeSquare_isTwoFibreProduct (g : Y' ⟶ D.Y) :
     Bicategory.IsTwoFibreProduct (D.canonicalBaseChangeSquare g)
 ```
 
-**`AlgebraicGeometry.Space.coherentToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackProjection.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackProjection.lean#L187). The attribute's comment: “the projection to the base”.
+**`AlgebraicGeometry.Space.coherentToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackProjection.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackProjection.lean#L187). The attribute's comment: “the projection to the base”.
 
 > **Stacks 08LP, the projection to the base.**  The rule `(T, g, ℱ) ↦ (T, g)` which forgets the
 > module is a 1-morphism `Coh_{X/Y} ⟶ 𝒮_Y` of categories over the big fppf site of `S`: it lands in
@@ -140,7 +140,7 @@ def coherentToBase (cd : CoherentCategoryData hc D) :
 
 [Tag 08KD](https://stacks.math.columbia.edu/tag/08KD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.isLimitPreserving_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackLimitFlatProperSupport.lean, line 706](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackLimitFlatProperSupport.lean#L706). The attribute's comment: “at a small index category”.
+**`AlgebraicGeometry.Space.CoherentSituation.isLimitPreserving_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackLimitFlatProperSupport.lean, line 706](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackLimitFlatProperSupport.lean#L706). The attribute's comment: “at a small index category”.
 
 > **Stacks 08KD.** In Situation 08KB, let `f : X ⟶ Y` be a morphism of finite presentation of
 > algebraic spaces over `S` and assume `Y` locally of finite presentation over `S`. Then
@@ -162,7 +162,7 @@ theorem isLimitPreserving_coherent
 
 [Tag 08LQ](https://stacks.math.columbia.edu/tag/08LQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.fiberSquareComparison_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushoutModules.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushoutModules.lean#L485).
+**`AlgebraicGeometry.Space.CoherentSituation.fiberSquareComparison_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushoutModules.lean, line 485](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushoutModules.lean#L485).
 
 > **Stacks Project, Tag 08LQ.**  In Situation 08KB, let `f : X ⟶ B` be a morphism of algebraic
 > spaces over `S` of finite presentation, and let
@@ -210,7 +210,7 @@ theorem fiberSquareComparison_isEquivalence (D : CoherentSituation B S hS)
 
 [Tag 08W7](https://stacks.math.columbia.edu/tag/08W7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinitePresentationOnSite_tfae_of_isPullback_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackThickeningFinitePresentation.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackThickeningFinitePresentation.lean#L102).
+**`AlgebraicGeometry.Space.isFinitePresentationOnSite_tfae_of_isPullback_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackThickeningFinitePresentation.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackThickeningFinitePresentation.lean#L102).
 
 > **Stacks 08W7.** Let `X ⟶ X'` over `T ⟶ T'` be a cartesian square of algebraic spaces in
 > which `t : T ⟶ T'` is a first order thickening, let `ℱ'` be an `𝒪_{X'}`-module flat over `T'`
@@ -237,7 +237,7 @@ theorem isFinitePresentationOnSite_tfae_of_isPullback_of_isFirstOrderThickening
 
 [Tag 08W8](https://stacks.math.columbia.edu/tag/08W8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.finiteDimensional_tangentSpace_and_infinitesimalAutomorphisms_cohDef`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackInfFinite.lean, line 686](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackInfFinite.lean#L686).
+**`AlgebraicGeometry.Space.CoherentSituation.finiteDimensional_tangentSpace_and_infinitesimalAutomorphisms_cohDef`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackInfFinite.lean, line 686](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackInfFinite.lean#L686).
 
 > **Stacks 08W8.** In Situation 08KB (`f : X ⟶ Y` of finite presentation) assume that `S` is
 > locally Noetherian and `Y ⟶ S` locally of finite presentation. Let `k` be a field of finite type
@@ -279,7 +279,7 @@ theorem finiteDimensional_tangentSpace_and_infinitesimalAutomorphisms_cohDef
 
 [Tag 08W9](https://stacks.math.columbia.edu/tag/08W9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.isEquivalence_approximationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackApproximation.lean, line 942](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackApproximation.lean#L942).
+**`AlgebraicGeometry.Space.CoherentSituation.isEquivalence_approximationFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackApproximation.lean, line 942](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackApproximation.lean#L942).
 
 > In Situation 08KB, with `f : X ⟶ Y` separated, the functor of Artin's Axioms, Equation 07X6,
 > at `Coh_{X/Y}` — from objects over spectra of Noetherian complete local rings with residue field
@@ -296,7 +296,7 @@ theorem isEquivalence_approximationFunctor (hsep : IsSeparated B S hS D.f.hom) :
 
 [Tag 08WA](https://stacks.math.columbia.edu/tag/08WA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.hasOpenVersality_coherentCFG_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenVersalityOfFlat.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenVersalityOfFlat.lean#L49).
+**`AlgebraicGeometry.Space.CoherentSituation.hasOpenVersality_coherentCFG_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenVersalityOfFlat.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenVersalityOfFlat.lean#L49).
 
 > **Openness of versality for `Coh_{X/B}`** (Stacks 08WA). In Situation Stacks 08KB assume that
 > `S` is a locally Noetherian scheme, `S = B` (here: the base `Y` is final) and `f : X → B` is flat.
@@ -320,7 +320,7 @@ theorem hasOpenVersality_coherentCFG_of_isFlat
 
 [Tag 08WC](https://stacks.math.columbia.edu/tag/08WC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.isAlgebraicStack_coherentCFG_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackAlgebraicFlat.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackAlgebraicFlat.lean#L41).
+**`AlgebraicGeometry.Space.CoherentSituation.isAlgebraicStack_coherentCFG_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackAlgebraicFlat.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackAlgebraicFlat.lean#L41).
 
 > **Algebraicity of the stack of coherent sheaves, flat case.** Let `S` be a scheme and
 > `f : X ⟶ B` a morphism of algebraic spaces over `S` which is of finite presentation (a field of the
@@ -341,4 +341,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.5, Tag 08KA](https://stacks.math.columbia.edu/tag/08KA)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

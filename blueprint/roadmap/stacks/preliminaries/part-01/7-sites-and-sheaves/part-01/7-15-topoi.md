@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.15 Topoi
 
-Section 7.15 of the Stacks Project, [Tag 00X9](https://stacks.math.columbia.edu/tag/00X9). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 7.15 of the Stacks Project, [Tag 00X9](https://stacks.math.columbia.edu/tag/00X9). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00XA, a definition
 
 [Tag 00XA](https://stacks.math.columbia.edu/tag/00XA) in the Stacks Project.
 
-**`SheafToposMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean#L38). The attribute's comment: “(1); the composition (2) is `SheafToposMorphism.comp`”.
+**`SheafToposMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean, line 38](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean#L38). The attribute's comment: “(1); the composition (2) is `SheafToposMorphism.comp`”.
 
 > **Stacks 00XA (1).** Let `(C, J)` and `(D, K)` be sites. A *morphism of topoi* `f` from
 > `Sh(D)` to `Sh(C)` is a pair of functors `f_* : Sh(D) ⥤ Sh(C)` and `f⁻¹ : Sh(C) ⥤ Sh(D)`
@@ -28,7 +28,7 @@ abbrev SheafToposMorphism {C : Type u₁} [Category.{v₁} C] (J : GrothendieckT
     {D : Type u₂} [Category.{v₂} D] (K : GrothendieckTopology D)
 ```
 
-**`SheafToposMorphism.comp`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean#L53). The attribute's comment: “(2)”.
+**`SheafToposMorphism.comp`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean#L53). The attribute's comment: “(2)”.
 
 > **Stacks 00XA (2).** Given morphisms of topoi `f : Sh(D) → Sh(C)` and `g : Sh(E) → Sh(D)`,
 > the composition `f ∘ g : Sh(E) → Sh(C)` is the morphism of topoi given by the functors
@@ -44,7 +44,7 @@ abbrev comp (f : SheafToposMorphism.{w} J K) (g : SheafToposMorphism.{w} K L) :
 
 [Tag 00XC](https://stacks.math.columbia.edu/tag/00XC) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsMorphismOfSites.morphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismOfTopoi.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/MorphismOfTopoi.lean#L99).
+**`CategoryTheory.Functor.IsMorphismOfSites.morphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismOfTopoi.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/MorphismOfTopoi.lean#L99).
 
 > Given a morphism of sites `f : D → C`, i.e. a continuous functor `u : C ⥤ D` whose associated
 > functor `u_s` on sheaves of sets is exact, the pair `(f⁻¹ = u_s, f_* = u^s)` is a morphism of topoi
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.15, Tag 00X9](https://stacks.math.columbia.edu/tag/00X9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

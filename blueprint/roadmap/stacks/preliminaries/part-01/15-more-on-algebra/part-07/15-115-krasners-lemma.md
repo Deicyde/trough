@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.115 Krasner's lemma
 
-Section 15.115 of the Stacks Project, [Tag 0BU9](https://stacks.math.columbia.edu/tag/0BU9). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.115 of the Stacks Project, [Tag 0BU9](https://stacks.math.columbia.edu/tag/0BU9). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09EI, a lemma
 
 [Tag 09EI](https://stacks.math.columbia.edu/tag/09EI) in the Stacks Project.
 
-**`krasner_lemma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Krasner.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Krasner.lean#L363).
+**`krasner_lemma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Krasner.lean, line 363](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Krasner.lean#L363).
 
 > **Krasner's lemma (Stacks Tag 09EI).** Let `A` be a complete local Noetherian
 > domain of Krull dimension `1` with maximal ideal `m`. If `α` is a root of `P` that
@@ -44,7 +44,7 @@ theorem krasner_lemma
 
 [Tag 09EJ](https://stacks.math.columbia.edu/tag/09EJ) in the Stacks Project.
 
-**`Krasner.exists_finite_separable_extension_tensorProduct_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Krasner.lean, line 913](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Krasner.lean#L913).
+**`Krasner.exists_finite_separable_extension_tensorProduct_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Krasner.lean, line 913](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Krasner.lean#L913).
 
 > **Stacks 09EJ.** Let `A` be a Noetherian local ring whose completion at its maximal ideal is a
 > one-dimensional domain. A finite separable extension of the fraction field of the completion is
@@ -79,7 +79,7 @@ theorem exists_finite_separable_extension_tensorProduct_equiv
 
 [Tag 09EK](https://stacks.math.columbia.edu/tag/09EK) in the Stacks Project.
 
-**`IsDiscreteValuationRing.HasMixedCharacteristic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L52).
+**`IsDiscreteValuationRing.HasMixedCharacteristic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L52).
 
 > A discrete valuation ring has mixed characteristic `(0, p)` if `p` is positive, its residue
 > field has characteristic `p`, and its fraction field has characteristic zero.
@@ -89,7 +89,7 @@ abbrev HasMixedCharacteristic (A : Type*) [CommRing A] [IsDomain A]
     [IsDiscreteValuationRing A] (p : ℕ) : Prop
 ```
 
-**`IsDiscreteValuationRing.integerLocalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L58).
+**`IsDiscreteValuationRing.integerLocalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L58).
 
 > The localization `ℤ_(p)` associated to a mixed-characteristic discrete valuation ring.
 
@@ -98,7 +98,7 @@ noncomputable abbrev integerLocalization (A : Type*) [CommRing A] [IsDomain A]
     [IsDiscreteValuationRing A] {p : ℕ} (h : HasMixedCharacteristic A p) : Type
 ```
 
-**`IsDiscreteValuationRing.mixedCharacteristicRingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L67).
+**`IsDiscreteValuationRing.mixedCharacteristicRingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L67).
 
 > The canonical map `ℤ_(p) → A` attached to a mixed-characteristic discrete valuation ring.
 
@@ -108,7 +108,7 @@ noncomputable def mixedCharacteristicRingHom (A : Type*) [CommRing A] [IsDomain 
     integerLocalization A h →+* A
 ```
 
-**`IsDiscreteValuationRing.absoluteRamificationIndex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L93).
+**`IsDiscreteValuationRing.absoluteRamificationIndex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L93).
 
 > The absolute ramification index of a mixed-characteristic discrete valuation ring, namely the
 > ramification index of its canonical extension `ℤ_(p) → A`.
@@ -118,7 +118,7 @@ noncomputable def absoluteRamificationIndex (A : Type*) [CommRing A] [IsDomain A
     [IsDiscreteValuationRing A] {p : ℕ} (h : HasMixedCharacteristic A p) : ℕ
 ```
 
-**`IsDiscreteValuationRing.hasMixedCharacteristic_iff_mixedCharZero_and_integerLocalization_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L102).
+**`IsDiscreteValuationRing.hasMixedCharacteristic_iff_mixedCharZero_and_integerLocalization_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DiscreteValuationRing/MixedCharacteristic.lean#L102).
 
 > For a discrete valuation ring, the residue-field formulation of mixed characteristic agrees
 > with Mathlib's `MixedCharZero`; moreover, the maximal ideal lies over `(p)` and the canonical map
@@ -143,4 +143,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.115, Tag 0BU9](https://stacks.math.columbia.edu/tag/0BU9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

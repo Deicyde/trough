@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.13 Algebraization of formal sections, III
 
-Section 52.13 of the Stacks Project, [Tag 0EIJ](https://stacks.math.columbia.edu/tag/0EIJ). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.13 of the Stacks Project, [Tag 0EIJ](https://stacks.math.columbia.edu/tag/0EIJ). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EG4, a proposition
 
 [Tag 0EG4](https://stacks.math.columbia.edu/tag/0EG4) in the Stacks Project.
 
-**`Stacks.Algebraization.adicLimit_allDegrees`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSectionsAlgebraization/AdicLimitTheorem.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSectionsAlgebraization/AdicLimitTheorem.lean#L152).
+**`Stacks.Algebraization.adicLimit_allDegrees`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSectionsAlgebraization/AdicLimitTheorem.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSectionsAlgebraization/AdicLimitTheorem.lean#L152).
 
 > **Stacks Project, Tag 0EG4.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A`, let `F` be a
 > coherent module on `U = Spec(A) ∖ V(𝔞)` and let `s ≥ 0`. Assume
@@ -50,7 +50,7 @@ theorem adicLimit_allDegrees
     IsIso (colimit.desc (nearVanishingCohomology A I a F s) (nearVanishingCocone A I a F s))
 ```
 
-**`Stacks.Algebraization.isIso_comparisonMap_of_sourceSheafDepthHypothesis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSectionsAlgebraization/DegreeZeroAdicLimit.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSectionsAlgebraization/DegreeZeroAdicLimit.lean#L213). The attribute's comment: “the case s = 0: the first assertion is empty there and the colim/lim assertion in degree 0 is IsIso (comparisonMap A I a F), by Proposition 0EG2 as in the source. Hypotheses (1) and (2) of the source are present, (2) at s = 0 in the source's shape; hypothesis (3) is absent because 0EG2 removes it. Every s, with every conclusion, is Stacks.Algebraization.adicLimit\_allDegrees in AdicLimitTheorem.lean”.
+**`Stacks.Algebraization.isIso_comparisonMap_of_sourceSheafDepthHypothesis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSectionsAlgebraization/DegreeZeroAdicLimit.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSectionsAlgebraization/DegreeZeroAdicLimit.lean#L213). The attribute's comment: “the case s = 0: the first assertion is empty there and the colim/lim assertion in degree 0 is IsIso (comparisonMap A I a F), by Proposition 0EG2 as in the source. Hypotheses (1) and (2) of the source are present, (2) at s = 0 in the source's shape; hypothesis (3) is absent because 0EG2 removes it. Every s, with every conclusion, is Stacks.Algebraization.adicLimit\_allDegrees in AdicLimitTheorem.lean”.
 
 > **Stacks Project, Tag 0EG4 for `s = 0`.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A` and
 > let `F` be a coherent module on `U = Spec(A) ∖ V(𝔞)`. Assume `A` is `I`-adically complete and has
@@ -79,7 +79,7 @@ public theorem isIso_comparisonMap_of_sourceSheafDepthHypothesis [F.IsCoherent] 
 
 [Tag 0EKM](https://stacks.math.columbia.edu/tag/0EKM) in the Stacks Project.
 
-**`Stacks.Algebraization.HigherComplementTower.bijective_sheafCohomologyToTowerSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ComplementFormalFunctionsSheaf.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/ComplementFormalFunctionsSheaf.lean#L136). The attribute's comment: “H^i(U, -) is the sheaf cohomology of Stacks 01E3 on the open subscheme U = Spec(A) ∖ V(𝔞), and the inverse limit is the group of compatible sequences of the tower of the H^i(U, (M/fⁿM)~)”.
+**`Stacks.Algebraization.HigherComplementTower.bijective_sheafCohomologyToTowerSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ComplementFormalFunctionsSheaf.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/ComplementFormalFunctionsSheaf.lean#L136). The attribute's comment: “H^i(U, -) is the sheaf cohomology of Stacks 01E3 on the open subscheme U = Spec(A) ∖ V(𝔞), and the inverse limit is the group of compatible sequences of the tower of the H^i(U, (M/fⁿM)~)”.
 
 > Let `A` be a Noetherian ring. Let `f ∈ 𝔞 ⊆ A` be an element of an ideal of `A`. Let `M` be a
 > finite `A`-module and let `s ≥ 0`. Assume `A` is `f`-adically complete and `H^k_𝔞(M)` is
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.13, Tag 0EIJ](https://stacks.math.columbia.edu/tag/0EIJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

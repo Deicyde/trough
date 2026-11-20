@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.69 Characterizing pseudo-coherent complexes, III
 
-Section 37.69 of the Stacks Project, [Tag 0CSI](https://stacks.math.columbia.edu/tag/0CSI). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 37.69 of the Stacks Project, [Tag 0CSI](https://stacks.math.columbia.edu/tag/0CSI). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CTA, a lemma
 
 [Tag 0CTA](https://stacks.math.columbia.edu/tag/0CTA) in the Stacks Project.
 
-**`AlgebraicGeometry.torIndependent_pullback_product_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/TorIndependenceBaseChange.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/TorIndependenceBaseChange.lean#L272).
+**`AlgebraicGeometry.torIndependent_pullback_product_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/TorIndependenceBaseChange.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/TorIndependenceBaseChange.lean#L272).
 
 > In a commutative square, flatness of the right-hand object
 > over the base and of the upper-left object over the lower-left object implies the indicated Tor
@@ -57,7 +57,7 @@ theorem torIndependent_pullback_product_of_flat
 
 [Tag 0CSJ](https://stacks.math.columbia.edu/tag/0CSJ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_derivedChowDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowLemmaGeneral.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowLemmaGeneral.lean#L348).
+**`AlgebraicGeometry.exists_derivedChowDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowLemmaGeneral.lean, line 348](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowLemmaGeneral.lean#L348).
 
 > **Derived Chow's lemma**, [Stacks, Tag 0CSJ]. Let `A` be a ring and let `X` be a separated
 > scheme of finite presentation over `A`, with structure morphism `f : X ⟶ Spec A`. For every
@@ -117,7 +117,7 @@ theorem exists_derivedChowDatum {A : Type u} [CommRing A] {X : Scheme.{u}}
 
 [Tag 0CSK](https://stacks.math.columbia.edu/tag/0CSK) in the Stacks Project.
 
-**`AlgebraicGeometry.isClosedImmersion_chowDatumMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukai.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukai.lean#L336). The attribute's comment: “the morphism U ⟶ V of the statement is a closed immersion; finite presentation of U ⟶ V is finitePresentation\_chowDatumMorphism\_of\_locallyOfFinitePresentation, the derived comparison for K in D\_QCoh(O\_X) is chowDatum\_derivedPushforward\_tensor\_restrict\_iso\_of\_isDQCoh, and the whole statement is chowDatum\_fourierMukai”.
+**`AlgebraicGeometry.isClosedImmersion_chowDatumMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukai.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukai.lean#L337). The attribute's comment: “the morphism U ⟶ V of the statement is a closed immersion; finite presentation of U ⟶ V is finitePresentation\_chowDatumMorphism\_of\_locallyOfFinitePresentation, the derived comparison for K in D\_QCoh(O\_X) is chowDatum\_derivedPushforward\_tensor\_restrict\_iso\_of\_isDQCoh, and the whole statement is chowDatum\_fourierMukai”.
 
 > **[Stacks, Tag 0CSK], first assertion: `U ⟶ V` is a closed immersion.**  It is the inverse of
 > an isomorphism, a transport along an equality of opens, and the closed immersion `c|_V`.
@@ -129,7 +129,7 @@ theorem isClosedImmersion_chowDatumMorphism (hb : IsIso ((iZ ≫ p) ∣_ U))
     IsClosedImmersion (chowDatumMorphism p q iZ U V hb hW)
 ```
 
-**`AlgebraicGeometry.chowDatum_derivedPushforward_tensor_restrict_iso_of_isDQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean#L200). The attribute's comment: “the derived comparison Rq\_*(Lp^*K ⊗ᴸ E)|\_V ≅ R(U → V)\_*(K|\_U) for K in D\_QCoh(O\_X), which is the condition on K that Tag 0CSK itself states. Everything else the statement fixes — p, q, iZ, U, V, E and the three conditions hb, hW, hE on them — is the datum of Lemma 0CSJ, hE being clause (5) of that lemma in the very shape exists\_derivedChowDatum produces it. Nothing further enters: the projection formula of Tag 08EU and clause (5) in the restricted form the computation reads it in are both proved here, as derivedProjectionFormulaUnitRightIso and DerivedChow.pushforwardUnitRestrictIso. The whole statement, with the two geometric assertions that U ⟶ V is a closed immersion and is of finite presentation, is chowDatum\_fourierMukai”.
+**`AlgebraicGeometry.chowDatum_derivedPushforward_tensor_restrict_iso_of_isDQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean#L200). The attribute's comment: “the derived comparison Rq\_*(Lp^*K ⊗ᴸ E)|\_V ≅ R(U → V)\_*(K|\_U) for K in D\_QCoh(O\_X), which is the condition on K that Tag 0CSK itself states. Everything else the statement fixes — p, q, iZ, U, V, E and the three conditions hb, hW, hE on them — is the datum of Lemma 0CSJ, hE being clause (5) of that lemma in the very shape exists\_derivedChowDatum produces it. Nothing further enters: the projection formula of Tag 08EU and clause (5) in the restricted form the computation reads it in are both proved here, as derivedProjectionFormulaUnitRightIso and DerivedChow.pushforwardUnitRestrictIso. The whole statement, with the two geometric assertions that U ⟶ V is a closed immersion and is of finite presentation, is chowDatum\_fourierMukai”.
 
 > **[Stacks, Tag 0CSK], the derived comparison, at a quasi-coherent complex.**  In the
 > situation of derived Chow's lemma — `p : T ⟶ X` and `q : T ⟶ P` the two projections of
@@ -168,7 +168,7 @@ theorem chowDatum_derivedPushforward_tensor_restrict_iso_of_isDQCoh
         ((derivedPullback (ofScheme U.ι)).obj K))
 ```
 
-**`AlgebraicGeometry.finitePresentation_chowDatumMorphism_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean#L258). The attribute's comment: “the morphism U ⟶ V of the statement is of finite presentation, for X locally of finite presentation over the base and P locally of finite type over it, which covers X of finite presentation over A and P = P^n\_A; the whole statement is chowDatum\_fourierMukai”.
+**`AlgebraicGeometry.finitePresentation_chowDatumMorphism_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean, line 258](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean#L258). The attribute's comment: “the morphism U ⟶ V of the statement is of finite presentation, for X locally of finite presentation over the base and P locally of finite type over it, which covers X of finite presentation over A and P = P^n\_A; the whole statement is chowDatum\_fourierMukai”.
 
 > **The morphism `U ⟶ V` of [Stacks, Tag 0CSK] is of finite presentation**, as soon as
 > `X ⟶ S` is locally of finite presentation and `P ⟶ S` is locally of finite type.  It is a closed
@@ -191,7 +191,7 @@ theorem finitePresentation_chowDatumMorphism_of_locallyOfFinitePresentation {S :
     AlgebraicGeometry.FinitePresentation (chowDatumMorphism p q iZ U V hb hW)
 ```
 
-**`AlgebraicGeometry.chowDatum_fourierMukai`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean#L291).
+**`AlgebraicGeometry.chowDatum_fourierMukai`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean, line 291](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/DerivedChowFourierMukaiQCoh.lean#L291).
 
 > **[Stacks, Tag 0CSK].**  Let `A` be a ring, let `f : X ⟶ Spec A` be locally of finite
 > presentation (in the source, `X` is separated and of finite presentation over `A`), let
@@ -254,7 +254,7 @@ theorem chowDatum_fourierMukai {A : Type u} [CommRing A] {X : Scheme.{u}}
 
 [Tag 0CSL](https://stacks.math.columbia.edu/tag/0CSL) in the Stacks Project.
 
-**`AlgebraicGeometry.isPseudoCoherent_of_derivedGlobalSectionsOver_tensor_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/PseudoCoherentByPseudoCoherentTwists.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/PseudoCoherentByPseudoCoherentTwists.lean#L141).
+**`AlgebraicGeometry.isPseudoCoherent_of_derivedGlobalSectionsOver_tensor_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/PseudoCoherentByPseudoCoherentTwists.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/PseudoCoherentByPseudoCoherentTwists.lean#L141).
 
 > Let `A` be a ring, let `X` be a scheme separated and of finite presentation over `A`, with
 > structure morphism `f : X ⟶ Spec A`, and let `K ∈ D_QCoh(𝒪_X)`. If `RΓ(X, E ⊗^𝐋 K)` is a
@@ -283,7 +283,7 @@ theorem isPseudoCoherent_of_derivedGlobalSectionsOver_tensor_isPseudoCoherent
 
 [Tag 0GES](https://stacks.math.columbia.edu/tag/0GES) in the Stacks Project.
 
-**`AlgebraicGeometry.isPseudoCoherent_of_derivedGlobalSectionsOver_tensor_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/PseudoCoherentByPerfectTwists.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/PseudoCoherentByPerfectTwists.lean#L111).
+**`AlgebraicGeometry.isPseudoCoherent_of_derivedGlobalSectionsOver_tensor_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/PseudoCoherentByPerfectTwists.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PseudoCoherentThree/PseudoCoherentByPerfectTwists.lean#L111).
 
 > **[Stacks, Tag 0GES].** Let `A` be a ring, let `X` be a scheme separated and of finite
 > presentation over `A`, with structure morphism `f : X ⟶ Spec A`, and let `K ∈ D_QCoh(𝒪_X)`. If
@@ -308,7 +308,7 @@ theorem isPseudoCoherent_of_derivedGlobalSectionsOver_tensor_isPerfect
 
 [Tag 0GET](https://stacks.math.columbia.edu/tag/0GET) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isRelativelyPerfect_of_isPerfect_derivedGlobalSectionsOver_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectFromGlobalSections.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectFromGlobalSections.lean#L95). The attribute's comment: “The full lemma: for `X` separated, of finite presentation and flat over `A`, an object `K` of `D_QCoh(𝒪_X)` with `RΓ(X, E ⊗^L K)` perfect in `D(A)` for every perfect `E` is `Spec(A)`-perfect (Stacks 0DI0).”.
+**`AlgebraicGeometry.Scheme.Hom.isRelativelyPerfect_of_isPerfect_derivedGlobalSectionsOver_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectFromGlobalSections.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectFromGlobalSections.lean#L95). The attribute's comment: “The full lemma: for `X` separated, of finite presentation and flat over `A`, an object `K` of `D_QCoh(𝒪_X)` with `RΓ(X, E ⊗^L K)` perfect in `D(A)` for every perfect `E` is `Spec(A)`-perfect (Stacks 0DI0).”.
 
 > **Stacks 0GET.** Let `A` be a ring and let `X` be a scheme separated, of finite presentation
 > and flat over `A`, with structure morphism `f : X ⟶ Spec A`. Let `K` be an object of
@@ -343,4 +343,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.69, Tag 0CSI](https://stacks.math.columbia.edu/tag/0CSI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

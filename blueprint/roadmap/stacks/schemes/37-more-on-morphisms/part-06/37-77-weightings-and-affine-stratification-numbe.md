@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.77 Weightings and affine stratification numbers
 
-Section 37.77 of the Stacks Project, [Tag 0F3Q](https://stacks.math.columbia.edu/tag/0F3Q). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 37.77 of the Stacks Project, [Tag 0F3Q](https://stacks.math.columbia.edu/tag/0F3Q). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0F3R, a lemma
 
 [Tag 0F3R](https://stacks.math.columbia.edu/tag/0F3R) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAffineOpen_separableDegreeWeightedFiberSum_eq_max`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/AffineMaxLocus.lean, line 1130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/AffineMaxLocus.lean#L1130).
+**`AlgebraicGeometry.exists_isAffineOpen_separableDegreeWeightedFiberSum_eq_max`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/AffineMaxLocus.lean, line 1130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/AffineMaxLocus.lean#L1130).
 
 > **Stacks Project, Tag 0F3R.** Let `f : X ⟶ Y` be a quasi-finite morphism of finite
 > presentation between affine schemes and let `w` be an everywhere positive weighting of `f`.
@@ -39,7 +39,7 @@ theorem exists_isAffineOpen_separableDegreeWeightedFiberSum_eq_max
 
 [Tag 0F3S](https://stacks.math.columbia.edu/tag/0F3S) in the Stacks Project.
 
-**`AlgebraicGeometry.affineStratificationNumber_le_ncard_separableDegreeWeightedFiberSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/AffineStratification/WeightingBound.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AffineStratification/WeightingBound.lean#L208). The attribute's comment: “quasi-finite as LocallyOfFiniteType and LocallyQuasiFinite; bound as in source”.
+**`AlgebraicGeometry.affineStratificationNumber_le_ncard_separableDegreeWeightedFiberSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/AffineStratification/WeightingBound.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AffineStratification/WeightingBound.lean#L208). The attribute's comment: “quasi-finite as LocallyOfFiniteType and LocallyQuasiFinite; bound as in source”.
 
 > Let `f : X ⟶ Y` be a surjective quasi-finite morphism of
 > schemes and let `w : X → ℤ_{>0}` be a positive weighting of `f`. If `X` is affine and `Y` is
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.77, Tag 0F3Q](https://stacks.math.columbia.edu/tag/0F3Q)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

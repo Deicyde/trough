@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.20 The theorem on formal functions
 
-Section 30.20 of the Stacks Project, [Tag 02O7](https://stacks.math.columbia.edu/tag/02O7). 10 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 30.20 of the Stacks Project, [Tag 02O7](https://stacks.math.columbia.edu/tag/02O7). 10 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02O7, the section
 
 [Tag 02O7](https://stacks.math.columbia.edu/tag/02O7) in the Stacks Project.
 
-**`Stacks.Blowup.pushforwardReesGradedModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean#L116). The attribute's comment: “⨁ₙ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base”.
+**`Stacks.Blowup.pushforwardReesGradedModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean#L116). The attribute's comment: “⨁ₙ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base”.
 
 > **[Stacks, Tag 02O7]: the graded `⨁ₙ ℐⁿ`-module `⨁ₙ f_*(ℐⁿℱ)` on the base, in degree
 > zero.**  The maps `pushforwardReesSmul` make the pushforwards of the ideal-power multiples of
@@ -30,7 +30,7 @@ Section 30.20 of the Stacks Project, [Tag 02O7](https://stacks.math.columbia.edu
 public def pushforwardReesGradedModule : SheafOfModules.GradedModule (reesGradedAlgebra I)
 ```
 
-**`Stacks.Blowup.pushforwardReesGradedModulePlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean#L450). The attribute's comment: “⨁ₙ R ᵖ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base, in every degree p”. References: EGA III (3.3.1), “special case”.
+**`Stacks.Blowup.pushforwardReesGradedModulePlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean#L450). The attribute's comment: “⨁ₙ R ᵖ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base, in every degree p”. References: EGA III (3.3.1), “special case”.
 
 > **[Stacks, Tag 02O7]: the graded `⨁ₙ ℐⁿ`-module `⨁ₙ R ᵖ f_*(ℐⁿℱ)` on the base, in every
 > degree `p`.**  This is the structure the setup paragraph of the source obtains "by localizing and
@@ -53,7 +53,7 @@ public def pushforwardReesGradedModulePlus (f : X ⟶ Y) (I : Y.IdealSheafData) 
 
 [Tag 02O8](https://stacks.math.columbia.edu/tag/02O8) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.isCohomologyReesFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/ReesCohomologyFiniteReduction.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/ReesCohomologyFiniteReduction.lean#L46). References: EGA III (3.3.2); EGA III (4.1.7.12), “more general”.
+**`Stacks.Cohomology.FormalFunctions.isCohomologyReesFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/ReesCohomologyFiniteReduction.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalFunctions/ReesCohomologyFiniteReduction.lean#L46). References: EGA III (3.3.2); EGA III (4.1.7.12), “more general”.
 
 > **[Stacks, Tag 02O8].** For `A` Noetherian, `f : X ⟶ Spec A` proper and `ℱ` coherent, the
 > graded module `⨁_{n ≥ 0} Hᵖ(X, Iⁿℱ)` is a finite module over the Rees algebra
@@ -74,7 +74,7 @@ public theorem isCohomologyReesFinite [IsNoetherianRing A]
 
 [Tag 02O9](https://stacks.math.columbia.edu/tag/02O9) in the Stacks Project.
 
-**`Stacks.Algebraization.isQuasicoherent_and_isFiniteType_pushforwardReesGradedModulePlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/HigherDirectImageFiniteTypeSpan.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/HigherDirectImageFiniteTypeSpan.lean#L426). References: EGA III (2.4.2), “special case”; SGA 2 XII (5.8), “(ii), special case”.
+**`Stacks.Algebraization.isQuasicoherent_and_isFiniteType_pushforwardReesGradedModulePlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/HigherDirectImageFiniteTypeSpan.lean, line 426](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/HigherDirectImageFiniteTypeSpan.lean#L426). References: EGA III (2.4.2), “special case”; SGA 2 XII (5.8), “(ii), special case”.
 
 > **Stacks Project, Tag 02O9.** Let `f : X ⟶ Y` be a morphism of schemes, `ℱ` an `𝒪_X`-module
 > and `ℐ ⊆ 𝒪_Y` a quasi-coherent sheaf of ideals, and assume `Y` locally Noetherian, `f` proper
@@ -103,7 +103,7 @@ public theorem isQuasicoherent_and_isFiniteType_pushforwardReesGradedModulePlus
 
 [Tag 02OA](https://stacks.math.columbia.edu/tag/02OA) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L104). The attribute's comment: “all five parts, for a proper scheme over a Noetherian ring and a coherent module”.
+**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L104). The attribute's comment: “all five parts, for a proper scheme over a Noetherian ring and a coherent module”.
 
 > **[Stacks, Tag 02OA].** For `A` Noetherian, `I ⊆ A` an ideal, `f : X ⟶ Spec A` proper and
 > `ℱ` coherent there is one integer `c ≥ 0` such that
@@ -168,7 +168,7 @@ theorem exists_uniform_bound_cohomology_of_isProper [IsNoetherianRing A]
 
 [Tag 02OB](https://stacks.math.columbia.edu/tag/02OB) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L184). References: SGA 2 IX (1.1), “Clause (3), special case”; SGA 2 IX (2.1), “(iii)”.
+**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L184). References: SGA 2 IX (1.1), “Clause (3), special case”; SGA 2 IX (2.1), “(iii)”.
 
 > **[Stacks, Tag 02OB].** For `A` Noetherian, `J ⊆ A` an ideal, `f : X ⟶ Spec A` proper and
 > `ℱ` coherent there is a single `c ≥ 0` such that, with `𝓙 = J · 𝒪_X`:
@@ -214,7 +214,7 @@ theorem exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper [IsNoethe
 
 [Tag 02OC](https://stacks.math.columbia.edu/tag/02OC) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.exists_formalFunctionsEquiv_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L243). References: EGA III (4.1.7).
+**`Stacks.Cohomology.FormalFunctions.exists_formalFunctionsEquiv_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/ArtinReesChain.lean#L243). References: EGA III (4.1.7).
 
 > **[Stacks, Tag 02OC].** For `A` Noetherian, `I ⊆ A` an ideal, `f : X ⟶ Spec A` proper and
 > `ℱ` coherent, the maps `Hᵖ(X, ℱ)/IⁿHᵖ(X, ℱ) → Hᵖ(X, ℱ/𝓘ⁿℱ)` assemble into an isomorphism
@@ -260,7 +260,7 @@ theorem exists_formalFunctionsEquiv_of_isProper [IsNoetherianRing A]
 
 [Tag 087U](https://stacks.math.columbia.edu/tag/087U) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_cohomologyToLimit_of_isProper_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean#L207). The attribute's comment: “for all p ≥ 0: A Noetherian and J-adically complete, f : X ⟶ Spec A proper, F coherent; 02O6 and 02OB are proved theorems used in the proof”. References: SGA 2 IX (1.3), “The edge φ'\_i”.
+**`Stacks.Algebraization.isIso_cohomologyToLimit_of_isProper_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/FullyFaithfulComplete.lean#L207). The attribute's comment: “for all p ≥ 0: A Noetherian and J-adically complete, f : X ⟶ Spec A proper, F coherent; 02O6 and 02OB are proved theorems used in the proof”. References: SGA 2 IX (1.3), “The edge φ'\_i”.
 
 > **The theorem on formal functions over a complete base, [Stacks, Tag 087U].** For `A`
 > Noetherian and complete with respect to `J`, `f : X ⟶ Spec A` proper and `F` coherent, the
@@ -285,7 +285,7 @@ public theorem isIso_cohomologyToLimit_of_isProper_of_isAdicComplete
 
 [Tag 02OD](https://stacks.math.columbia.edu/tag/02OD) in the Stacks Project.
 
-**`Stacks.FormalFunctions.nonempty_adicCompletionHigherDirectImageStalkEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/CompletionStalkLimit.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/CompletionStalkLimit.lean#L119). References: EGA III (4.2.4), “Degree p = 0 case”.
+**`Stacks.FormalFunctions.nonempty_adicCompletionHigherDirectImageStalkEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/CompletionStalkLimit.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalFunctions/CompletionStalkLimit.lean#L119). References: EGA III (4.2.4), “Degree p = 0 case”.
 
 > **Stacks Project, Tag 02OD.** Let `f : X ⟶ Y` be a proper morphism of schemes with `Y`
 > locally Noetherian, let `ℱ` be a coherent `𝒪_X`-module and let `y` be a point of `Y`. Let
@@ -305,7 +305,7 @@ public theorem nonempty_adicCompletionHigherDirectImageStalkEquiv (f : X ⟶ Y)
         towerLimit (infinitesimalCohomology f F y p) (infinitesimalCohomologyMap f F y p))
 ```
 
-**`Stacks.Cohomology.FormalFunctions.pushforwardPullbackBaseIdealIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean#L175). The attribute's comment: “the second step of the tag's proof: the identification i\_\{n*} ℱ\_n ≅ ℱ / 𝔪ⁿ ℱ, over an affine base and for the quotient by the n-th power of the ideal sheaf generated by an ideal of that base. The tag's conclusion is NOT asserted: that needs Tag 02OC, which rests on Tag 02O8, together with Tag 02KH”.
+**`Stacks.Cohomology.FormalFunctions.pushforwardPullbackBaseIdealIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean#L175). The attribute's comment: “the second step of the tag's proof: the identification i\_\{n*} ℱ\_n ≅ ℱ / 𝔪ⁿ ℱ, over an affine base and for the quotient by the n-th power of the ideal sheaf generated by an ideal of that base. The tag's conclusion is NOT asserted: that needs Tag 02OC, which rests on Tag 02O8, together with Tag 02KH”.
 
 > **`i_{n*} ℱ_n ≅ ℱ / I ⁿ ℱ`.** The direct image of the restriction of `ℱ` to the infinitesimal
 > neighbourhood `X_n = X ×_{Spec A} Spec (A / I ⁿ)` is the quotient of `ℱ` by the `n`-th power of
@@ -331,7 +331,7 @@ public def pushforwardPullbackBaseIdealIso :
       idealPowerQuotient (baseIdealSheaf A I f) n F
 ```
 
-**`Stacks.FormalFunctions.infinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean#L260). The attribute's comment: “the infinitesimal neighbourhoods X\_n = X ×\_Y Spec(𝒪\_\{Y,y}/𝔪ⁿ) of the fibre, the setup paragraph of the tag. The conclusion -- that the completed stalk of R^p f\_* ℱ at y is the limit of the H^p(X\_n, ℱ\_n) -- is NOT asserted here: see the implementation notes for its three inputs and which of them are now available”.
+**`Stacks.FormalFunctions.infinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean#L260). The attribute's comment: “the infinitesimal neighbourhoods X\_n = X ×\_Y Spec(𝒪\_\{Y,y}/𝔪ⁿ) of the fibre, the setup paragraph of the tag. The conclusion -- that the completed stalk of R^p f\_* ℱ at y is the limit of the H^p(X\_n, ℱ\_n) -- is NOT asserted here: see the implementation notes for its three inputs and which of them are now available”.
 
 > The `n`-th infinitesimal neighbourhood `X_n = Spec (𝒪_{Y,y}/𝔪_y ^ n) ×_Y X` of the fibre of
 > `f : X ⟶ Y` over `y`.
@@ -344,7 +344,7 @@ public abbrev infinitesimalNeighbourhood (f : X ⟶ Y) (y : Y) (n : ℕ) : Schem
 
 [Tag 02OE](https://stacks.math.columbia.edu/tag/02OE) in the Stacks Project.
 
-**`Stacks.FormalFunctions.isZero_stalk_higherDirectImage_of_finite_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean#L142).
+**`Stacks.FormalFunctions.isZero_stalk_higherDirectImage_of_finite_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean#L142).
 
 > **Stacks Project, Tag 02OE.** Let `f : X ⟶ Y` be a morphism of schemes and let `y : Y`.
 > Assume `Y` is locally Noetherian, `f` is proper, and the fibre `f ⁻¹' {y}` is finite. Then for
@@ -368,7 +368,7 @@ theorem isZero_stalk_higherDirectImage_of_finite_fibre {X Y : Scheme.{u}} (f : X
 
 [Tag 02V7](https://stacks.math.columbia.edu/tag/02V7) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FibreDimension.isZero_stalk_rightDerivedPlus_of_fiber_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageFibreDimension/GeneralDimension.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HigherDirectImageFibreDimension/GeneralDimension.lean#L133). References: EGA III (4.2.2), “partial”; SGA 6 X (4.4), “Stalk form of (4.4.5)”.
+**`Stacks.AlgebraicGeometry.FibreDimension.isZero_stalk_rightDerivedPlus_of_fiber_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageFibreDimension/GeneralDimension.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/HigherDirectImageFibreDimension/GeneralDimension.lean#L133). References: EGA III (4.2.2), “partial”; SGA 6 X (4.4), “Stalk form of (4.4.5)”.
 
 > **[Stacks, Tag 02V7].** Let `f : X ⟶ Y` be a morphism of schemes and let `y ∈ Y`. Assume
 > `Y` locally Noetherian, `f` proper and `dim(X_y) = d`. Then for every coherent sheaf `ℱ` on `X`
@@ -396,4 +396,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.20, Tag 02O7](https://stacks.math.columbia.edu/tag/02O7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

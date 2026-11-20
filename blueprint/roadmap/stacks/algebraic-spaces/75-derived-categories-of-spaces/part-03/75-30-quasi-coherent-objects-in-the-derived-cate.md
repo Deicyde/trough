@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.30 Quasi-coherent objects in the derived category
 
-Section 75.30 of the Stacks Project, [Tag 0H05](https://stacks.math.columbia.edu/tag/0H05). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 75.30 of the Stacks Project, [Tag 0H05](https://stacks.math.columbia.edu/tag/0H05). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0H06, a lemma
 
 [Tag 0H06](https://stacks.math.columbia.edu/tag/0H06) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedAffineEtaleChain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L570). The attribute's comment: “the chain of equivalences (1) ≃ (2) ≃ (3) ≃ (4)”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedAffineEtaleChain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 570](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L570). The attribute's comment: “the chain of equivalences (1) ≃ (2) ≃ (3) ≃ (4)”.
 
 > **Stacks 0H06.** For an algebraic space `F` over `S`, the four categories
 >
@@ -44,7 +44,7 @@ noncomputable def quasicoherentDerivedAffineEtaleChain :
         QC.{w} (affineEtaleBaseChangeData.{u, w} B S hS F hF))
 ```
 
-**`AlgebraicGeometry.Space.isTriangulated_quasicoherentDerivedAffineEtaleChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L384). The attribute's comment: “the four categories (1) D\_QCoh(O\_X), (2) D\_QCoh(X\_affine\_etale, O\_X), (3) D\_QCoh(X\_affine, O\_X) and (4) QC(X\_affine, O\_X) are full triangulated subcategories of the derived categories they sit in, which is the triangulated structure the tag speaks of”.
+**`AlgebraicGeometry.Space.isTriangulated_quasicoherentDerivedAffineEtaleChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 384](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L384). The attribute's comment: “the four categories (1) D\_QCoh(O\_X), (2) D\_QCoh(X\_affine\_etale, O\_X), (3) D\_QCoh(X\_affine, O\_X) and (4) QC(X\_affine, O\_X) are full triangulated subcategories of the derived categories they sit in, which is the triangulated structure the tag speaks of”.
 
 > **The four categories of Stacks 0H06 are full triangulated subcategories** of the derived
 > categories they sit in: in order, `D_QCoh(𝒪_F) ⊆ D(𝒪_F)`,
@@ -76,7 +76,7 @@ theorem isTriangulated_quasicoherentDerivedAffineEtaleChain :
         (IsQC.{w} (affineEtaleBaseChangeData.{u, w} B S hS F hF))
 ```
 
-**`AlgebraicGeometry.Space.isTriangulatedEquivalence_quasicoherentDerivedAffineEtaleChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L703). The attribute's comment: “each of the three equivalences (1) D\_QCoh(O\_X) ≃ (2) D\_QCoh(X\_affine\_etale, O\_X), (2) ≃ (3) D\_QCoh(X\_affine, O\_X) and (3) ≃ (4) QC(X\_affine, O\_X) is an exact equivalence of triangulated categories: functor and inverse both commute with the translation [1], compatibly on unit and counit, and both preserve distinguished triangles”.
+**`AlgebraicGeometry.Space.isTriangulatedEquivalence_quasicoherentDerivedAffineEtaleChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 703](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L703). The attribute's comment: “each of the three equivalences (1) D\_QCoh(O\_X) ≃ (2) D\_QCoh(X\_affine\_etale, O\_X), (2) ≃ (3) D\_QCoh(X\_affine, O\_X) and (3) ≃ (4) QC(X\_affine, O\_X) is an exact equivalence of triangulated categories: functor and inverse both commute with the translation [1], compatibly on unit and counit, and both preserve distinguished triangles”.
 
 > **The three equivalences of Stacks 0H06 are exact equivalences of triangulated categories**,
 > in Mathlib's bundled form: for an algebraic space `F` over `S`, each of
@@ -109,7 +109,7 @@ theorem isTriangulatedEquivalence_quasicoherentDerivedAffineEtaleChain :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.representableQuasiCoherentDerivedEquivalence`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/Equivalence.lean#L112), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/BigAffineSiteTag.lean, line 21](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/BigAffineSiteTag.lean#L21) (StacksFrontier): “the equivalence QC((Aff/X), 𝒪) ≌ D\_QCoh(𝒪\_X), on the proof of Stacks 0H0K”.
+- [`AlgebraicGeometry.Stack.representableQuasiCoherentDerivedEquivalence`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/Equivalence.lean#L112), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/BigAffineSiteTag.lean, line 21](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/BigAffineSiteTag.lean#L21) (StacksFrontier): “the equivalence QC((Aff/X), 𝒪) ≌ D\_QCoh(𝒪\_X), on the proof of Stacks 0H0K”.
 
 ## Depends on
 
@@ -118,4 +118,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.30, Tag 0H05](https://stacks.math.columbia.edu/tag/0H05)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

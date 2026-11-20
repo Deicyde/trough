@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.8 Deriving torsion
 
-Section 47.8 of the Stacks Project, [Tag 0BJA](https://stacks.math.columbia.edu/tag/0BJA). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 47.8 of the Stacks Project, [Tag 0BJA](https://stacks.math.columbia.edu/tag/0BJA). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0A6L, a lemma
 
 [Tag 0A6L](https://stacks.math.columbia.edu/tag/0A6L) in the Stacks Project.
 
-**`Dualizing.derivedInclusion_adj_derivedPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean, line 878](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean#L878).
+**`Dualizing.derivedInclusion_adj_derivedPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean, line 878](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean#L878).
 
 > **Stacks 0A6L.** Local cohomology `RΓ_I`, as the named total right derived functor of
 > the `I`-power-torsion-submodule functor, is right adjoint to the derived inclusion of the
@@ -38,7 +38,7 @@ theorem derivedInclusion_adj_derivedPowerTorsion
 
 [Tag 0954](https://stacks.math.columbia.edu/tag/0954) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomologyHomologyIsoColimitExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TorsionColimit.lean, line 609](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/TorsionColimit.lean#L609). The attribute's comment: “cohomology-module identification”.
+**`Stacks.LocalCohomology.localCohomologyHomologyIsoColimitExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TorsionColimit.lean, line 609](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/TorsionColimit.lean#L609). The attribute's comment: “cohomology-module identification”.
 
 > **Stacks 0954.** In every degree, local cohomology is the filtered colimit of the Ext modules
 > from the quotients by powers of the ideal.
@@ -51,7 +51,7 @@ noncomputable def localCohomologyHomologyIsoColimitExt (I : Ideal R)
       colimit (extPowers R I K q)
 ```
 
-**`Stacks.LocalCohomology.localCohomology_isHomotopyColimit_derivedHomPowers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TorsionColimit.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/TorsionColimit.lean#L640). The attribute's comment: “derived-category identification”.
+**`Stacks.LocalCohomology.localCohomology_isHomotopyColimit_derivedHomPowers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TorsionColimit.lean, line 640](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/TorsionColimit.lean#L640). The attribute's comment: “derived-category identification”.
 
 > **Stacks 0954.** Local cohomology is the homotopy colimit of the derived Hom complexes from
 > the powers of the ideal.
@@ -66,7 +66,7 @@ theorem localCohomology_isHomotopyColimit_derivedHomPowers (I : Ideal R)
 
 [Tag 0A6M](https://stacks.math.columbia.edu/tag/0A6M) in the Stacks Project.
 
-**`Dualizing.derivedPowerTorsion_isZero_of_isIso_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivingTorsion/DerivedVanishing.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DerivingTorsion/DerivedVanishing.lean#L64).
+**`Dualizing.derivedPowerTorsion_isZero_of_isIso_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivingTorsion/DerivedVanishing.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/DerivingTorsion/DerivedVanishing.lean#L64).
 
 > **Stacks 0A6M.** Let `I` be a finitely generated ideal of `A` and let `K ∈ D(A)` be such that
 > multiplication by some `f ∈ I` is an isomorphism of `K` (e.g. `K` is a complex of
@@ -85,7 +85,7 @@ theorem derivedPowerTorsion_isZero_of_isIso_smul
 
 [Tag 0A6N](https://stacks.math.columbia.edu/tag/0A6N) in the Stacks Project.
 
-**`Dualizing.powerTorsionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean#L222).
+**`Dualizing.powerTorsionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean, line 222](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean#L222).
 
 > **Stacks 0A6N.** The canonical functor from the derived category of `I`-power-torsion
 > `A`-modules to the full subcategory of `D(A)` on the objects with `I`-power-torsion cohomology.
@@ -101,7 +101,7 @@ noncomputable def powerTorsionComparison
 
 [Tag 0A6P](https://stacks.math.columbia.edu/tag/0A6P) in the Stacks Project.
 
-**`Dualizing.bijective_derivedInclusion_map_singleFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean#L246). The attribute's comment: “part (1), the Hom comparison”.
+**`Dualizing.bijective_derivedInclusion_map_singleFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean#L246). The attribute's comment: “part (1), the Hom comparison”.
 
 > The inclusion of power-torsion modules induces a bijection on derived
 > morphisms between modules concentrated in degree zero.
@@ -118,7 +118,7 @@ theorem bijective_derivedInclusion_map_singleFunctor
     Function.Bijective (fun f : X ⟶ Y ↦ F.map f)
 ```
 
-**`Dualizing.bijective_mapExt_one_powerTorsionModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean#L361). The attribute's comment: “part (2), the Ext¹ comparison”.
+**`Dualizing.bijective_mapExt_one_powerTorsionModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean, line 361](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/DerivedTorsion.lean#L361). The attribute's comment: “part (2), the Ext¹ comparison”.
 
 > **Stacks 0A6P, Ext¹ comparison.** The exact inclusion of the category of
 > `I`-power-torsion modules into all `A`-modules induces a bijection on Ext¹.
@@ -131,7 +131,7 @@ theorem bijective_mapExt_one_powerTorsionModule
       ((powerTorsionModuleProperty A I hI).ι.mapExtAddHom M N 1)
 ```
 
-**`Dualizing.exists_not_surjective_mapExt_two_powerTorsionModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean#L344). The attribute's comment: “part (3)”.
+**`Dualizing.exists_not_surjective_mapExt_two_powerTorsionModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean, line 344](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean#L344). The attribute's comment: “part (3)”.
 
 > **Stacks 0A6P (3).** The comparison map
 > `Ext²_{D(I^∞-torsion)}(M, N) ⟶ Ext²_{D(A)}(M, N)` between `I`-power-torsion modules is not
@@ -151,7 +151,7 @@ theorem exists_not_surjective_mapExt_two_powerTorsionModule :
         ((powerTorsionModuleProperty A I hI).ι.mapExtAddHom M N 2)
 ```
 
-**`Dualizing.exists_not_isEquivalence_powerTorsionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean#L361). The attribute's comment: “part (4)”.
+**`Dualizing.exists_not_isEquivalence_powerTorsionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean, line 361](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean#L361). The attribute's comment: “part (4)”.
 
 > **Stacks 0A6P (4).** The comparison functor of Stacks 0A6N,
 > `D(I^∞-torsion) ⟶ D_{I^∞-torsion}(A)`, is not an equivalence in general.
@@ -166,7 +166,7 @@ theorem exists_not_isEquivalence_powerTorsionComparison :
       ¬ (powerTorsionComparison.{0, 0} A I hI).IsEquivalence
 ```
 
-**`Dualizing.bijective_hom_and_ext_one_and_exists_not_surjective_ext_two_and_not_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean#L385). The attribute's comment: “all four parts conjoined”.
+**`Dualizing.bijective_hom_and_ext_one_and_exists_not_surjective_ext_two_and_not_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean, line 385](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/TorsionExtCounterexample.lean#L385). The attribute's comment: “all four parts conjoined”.
 
 > **Stacks 0A6P, all four parts.** For every ring `A`, every finitely generated ideal
 > `I ⊆ A` and all `I`-power-torsion `A`-modules `M` and `N`:
@@ -211,4 +211,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.8, Tag 0BJA](https://stacks.math.columbia.edu/tag/0BJA)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

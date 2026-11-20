@@ -8,13 +8,13 @@ proof: formalized
 
 # 79.14 The finite part of a groupoid
 
-Section 79.14 of the Stacks Project, [Tag 04RT](https://stacks.math.columbia.edu/tag/04RT). 2 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 79.14 of the Stacks Project, [Tag 04RT](https://stacks.math.columbia.edu/tag/04RT). 2 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04RT, the section
 
 [Tag 04RT](https://stacks.math.columbia.edu/tag/04RT) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.finitePartGroupoid_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidSpec.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidSpec.lean#L110). The attribute's comment: “the finite part (U', Z\_univ, s', t', c', e', i') of the groupoid, with the rules for its structure morphisms and its morphism of groupoids to (U, R, s, t, c, e, i)”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.finitePartGroupoid_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidSpec.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidSpec.lean#L110). The attribute's comment: “the finite part (U', Z\_univ, s', t', c', e', i') of the groupoid, with the rules for its structure morphisms and its morphism of groupoids to (U, R, s, t, c, e, i)”.
 
 > **Stacks 04RT, the finite part of a groupoid.** Let `(U, R, s, t, c, e, i)` be a groupoid in
 > algebraic spaces over `B` whose source morphism `s` is separated and locally of finite type. The
@@ -112,7 +112,7 @@ theorem finitePartGroupoid_spec (hsep : Space.IsSeparated C S hS G.source.hom)
 
 [Tag 04RU](https://stacks.math.columbia.edu/tag/04RU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FinitePartUniversalOpen`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 1845](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L1845). The attribute's comment: “clauses (1) and (2) stated; not the groupoid structure”.
+**`AlgebraicGeometry.Space.FinitePartUniversalOpen`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 1845](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L1845). The attribute's comment: “clauses (1) and (2) stated; not the groupoid structure”.
 
 > **Stacks 04RU, clauses (1) and (2).** The two structure spaces of the finite part of a
 > groupoid in algebraic spaces over `B`: the object space `U'` with its étale projection
@@ -126,7 +126,7 @@ public structure FinitePartUniversalOpen
     (G : AlgebraicGeometry.GroupoidInAlgebraicSpaces C S hS B)
 ```
 
-**`AlgebraicGeometry.Space.finitePartUniversalOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 1890](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L1890). The attribute's comment: “clauses (1) and (2); not the groupoid structure or its morphism”.
+**`AlgebraicGeometry.Space.finitePartUniversalOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 1890](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L1890). The attribute's comment: “clauses (1) and (2); not the groupoid structure or its morphism”.
 
 > **Stacks 04RU, clauses (1) and (2).** For a groupoid in algebraic spaces over `B` whose
 > source and target are separated and locally of finite type, the object space `(R_s/U, e)_fin`
@@ -145,7 +145,7 @@ public noncomputable def finitePartUniversalOpen
     FinitePartUniversalOpen G
 ```
 
-**`AlgebraicGeometry.Space.FinitePartGroupoid`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 1948](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L1948). The attribute's comment: “clause (3), the groupoid structure on the finite part and its morphism to R”.
+**`AlgebraicGeometry.Space.FinitePartGroupoid`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 1948](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L1948). The attribute's comment: “clause (3), the groupoid structure on the finite part and its morphism to R”.
 
 > **Stacks 04RU, clause (3).** The groupoid in algebraic spaces
 > `(U', Z_univ, s', t', c')` carried by the finite part of `(U, R, s, t, c)`, together with its
@@ -158,7 +158,7 @@ public structure FinitePartGroupoid
     (G : AlgebraicGeometry.GroupoidInAlgebraicSpaces C S hS B)
 ```
 
-**`AlgebraicGeometry.Space.nonempty_finitePartGroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2007](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2007). The attribute's comment: “clause (3), the groupoid structure on the finite part and its morphism to R”.
+**`AlgebraicGeometry.Space.nonempty_finitePartGroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2007](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2007). The attribute's comment: “clause (3), the groupoid structure on the finite part and its morphism to R”.
 
 > **Stacks 04RU, clause (3).** For a groupoid in algebraic spaces over `B` whose source and
 > target are separated and locally of finite type, the finite part carries a groupoid
@@ -176,7 +176,7 @@ public theorem nonempty_finitePartGroupoid
     Nonempty (FinitePartGroupoid G)
 ```
 
-**`AlgebraicGeometry.Space.finitePartGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2728](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2728). The attribute's comment: “the groupoid (U', Z\_univ, s', t', c', e', i') on the finite part”.
+**`AlgebraicGeometry.Space.finitePartGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2728](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2728). The attribute's comment: “the groupoid (U', Z\_univ, s', t', c', e', i') on the finite part”.
 
 > **Stacks 04RU.** The groupoid in algebraic spaces `(U', Z_univ, s', t', c', e', i')` over `B`
 > carried by the finite part of `(U, R, s, t, c, e, i)`.
@@ -186,7 +186,7 @@ public noncomputable def finitePartGroupoid :
     AlgebraicGeometry.GroupoidInAlgebraicSpaces C S hS B
 ```
 
-**`AlgebraicGeometry.Space.finitePartGroupoidHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2735). The attribute's comment: “the canonical morphism of groupoids over B to (U, R, s, t, c, e, i)”.
+**`AlgebraicGeometry.Space.finitePartGroupoidHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2735](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2735). The attribute's comment: “the canonical morphism of groupoids over B to (U, R, s, t, c, e, i)”.
 
 > **Stacks 04RU.** The canonical morphism of groupoids in algebraic spaces over `B`
 > `(U', Z_univ, s', t', c', e', i') ⟶ (U, R, s, t, c, e, i)` whose existence the lemma asserts.
@@ -197,7 +197,7 @@ public noncomputable def finitePartGroupoidHom :
       (finitePartGroupoid G hs_sep ht_sep hs_lft ht_lft) G
 ```
 
-**`AlgebraicGeometry.Space.finitePartGroupoid_objectProjection_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2778). The attribute's comment: “clause (1), g : U' ⟶ U is identified with (R\_s/U, e)\_fin ⟶ U”.
+**`AlgebraicGeometry.Space.finitePartGroupoid_objectProjection_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2778](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2778). The attribute's comment: “clause (1), g : U' ⟶ U is identified with (R\_s/U, e)\_fin ⟶ U”.
 
 > **Stacks 04RU, clause (1).** Under the identification of `U'` with `(R_s/U, e)_fin` the
 > projection `g : U' ⟶ U` is the projection of the finite part.
@@ -212,7 +212,7 @@ public theorem finitePartGroupoid_objectProjection_spec :
         (AlgebraicGeometry.Space.finiteOpenSubspacePresheaf C S hS G.source).baseMap
 ```
 
-**`AlgebraicGeometry.Space.finitePartGroupoidUniversalOpen_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2809](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2809). The attribute's comment: “clause (2), Z\_univ is the universal finite open subspace of R ×\_\{s, U, g} U'”.
+**`AlgebraicGeometry.Space.finitePartGroupoidUniversalOpen_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2809](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2809). The attribute's comment: “clause (2), Z\_univ is the universal finite open subspace of R ×\_\{s, U, g} U'”.
 
 > **Stacks 04RU, clause (2), universality.** `Z_univ` is the finite open subspace of
 > `R ×_{s, U, g} U'` classified by the inclusion of `U'` into the finite part of `s`; this is what
@@ -229,7 +229,7 @@ public theorem finitePartGroupoidUniversalOpen_spec :
       finitePartGroupoidUniversalOpen G hs_sep ht_sep hs_lft ht_lft
 ```
 
-**`AlgebraicGeometry.Space.finitePartGroupoidUniversalOpen_containsUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2821](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2821). The attribute's comment: “clause (2), Z\_univ contains the base change of the unit e”.
+**`AlgebraicGeometry.Space.finitePartGroupoidUniversalOpen_containsUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2821](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2821). The attribute's comment: “clause (2), Z\_univ contains the base change of the unit e”.
 
 > **Stacks 04RU, clause (2), the unit.** `Z_univ` contains the base change of the unit `e`.
 
@@ -241,7 +241,7 @@ public theorem finitePartGroupoidUniversalOpen_containsUnit :
       (finitePartGroupoidUniversalOpen G hs_sep ht_sep hs_lft ht_lft)
 ```
 
-**`AlgebraicGeometry.Space.finitePartGroupoidUniversalOpen_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2831](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2831). The attribute's comment: “clause (2), Z\_univ is closed in R ×\_\{s, U, g} U' as well as open”.
+**`AlgebraicGeometry.Space.finitePartGroupoidUniversalOpen_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2831](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2831). The attribute's comment: “clause (2), Z\_univ is closed in R ×\_\{s, U, g} U' as well as open”.
 
 > **Stacks 04RU, clause (2), closedness.** `Z_univ` is closed in `R ×_{s, U, g} U'` as well as
 > open.
@@ -252,7 +252,7 @@ public theorem finitePartGroupoidUniversalOpen_closed :
       (finitePartGroupoidUniversalOpen G hs_sep ht_sep hs_lft ht_lft).subspace
 ```
 
-**`AlgebraicGeometry.Space.finitePartGroupoid_arrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2839](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2839). The attribute's comment: “clause (2), the arrow space of the finite part is Z\_univ”.
+**`AlgebraicGeometry.Space.finitePartGroupoid_arrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2839](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2839). The attribute's comment: “clause (2), the arrow space of the finite part is Z\_univ”.
 
 > **Stacks 04RU, clause (2), the arrow space.** The space of arrows of the groupoid on the
 > finite part *is* the universal finite open subspace `Z_univ`.
@@ -263,7 +263,7 @@ public theorem finitePartGroupoid_arrows :
       (finitePartGroupoidUniversalOpen G hs_sep ht_sep hs_lft ht_lft).subspace.toFunctor
 ```
 
-**`AlgebraicGeometry.Space.finitePartGroupoidHom_mapArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2859](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2859). The attribute's comment: “the arrow map of the canonical morphism is Z\_univ ⊂ R ×\_\{s, U, g} U' ⟶ R”.
+**`AlgebraicGeometry.Space.finitePartGroupoidHom_mapArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean, line 2859](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/Groupoid.lean#L2859). The attribute's comment: “the arrow map of the canonical morphism is Z\_univ ⊂ R ×\_\{s, U, g} U' ⟶ R”.
 
 > **Stacks 04RU.** Under the identification of the arrow space with `Z_univ`, the canonical
 > morphism of groupoids sends an arrow of the finite part to its underlying arrow of `R`, i.e. it is
@@ -279,7 +279,7 @@ public theorem finitePartGroupoidHom_mapArrows :
           G.source.hom
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.finitePartGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidStructure.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidStructure.lean#L641). The attribute's comment: “the groupoid structure on the finite part”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.finitePartGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidStructure.lean, line 641](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidStructure.lean#L641). The attribute's comment: “the groupoid structure on the finite part”.
 
 > **Stacks 04RU, the groupoid structure.** For a groupoid in algebraic spaces over `B` whose
 > source morphism is separated and locally of finite type, the finite part
@@ -291,7 +291,7 @@ noncomputable def finitePartGroupoid (hsep : Space.IsSeparated C S hS G.source.h
     GroupoidInAlgebraicSpaces C S hS B
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.finitePartGroupoidHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidStructure.lean, line 653](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidStructure.lean#L653). The attribute's comment: “the canonical morphism of groupoids from the finite part to the given groupoid”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.finitePartGroupoidHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidStructure.lean, line 653](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/FinitePart/GroupoidStructure.lean#L653). The attribute's comment: “the canonical morphism of groupoids from the finite part to the given groupoid”.
 
 > **Stacks 04RU, the canonical morphism of groupoids.** For a groupoid in algebraic spaces over
 > `B` whose source morphism is separated and locally of finite type, the canonical morphism of
@@ -312,4 +312,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 79.14, Tag 04RT](https://stacks.math.columbia.edu/tag/04RT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

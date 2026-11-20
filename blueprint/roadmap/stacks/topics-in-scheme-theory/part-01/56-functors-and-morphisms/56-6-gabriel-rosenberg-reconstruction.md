@@ -8,13 +8,13 @@ proof: formalized
 
 # 56.6 Gabriel-Rosenberg reconstruction
 
-Section 56.6 of the Stacks Project, [Tag 0GPD](https://stacks.math.columbia.edu/tag/0GPD). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 56.6 of the Stacks Project, [Tag 0GPD](https://stacks.math.columbia.edu/tag/0GPD). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GPE, a lemma
 
 [Tag 0GPE](https://stacks.math.columbia.edu/tag/0GPE) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentable_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/CompactObjects.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/CompactObjects.lean#L152).
+**`AlgebraicGeometry.isFinitelyPresentable_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/CompactObjects.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/CompactObjects.lean#L152).
 
 > **Stacks Project, Tag 0GPE.**  A quasi-coherent module on a quasi-compact and quasi-separated
 > scheme is a categorically compact object of the category of quasi-coherent modules if and only if
@@ -31,7 +31,7 @@ theorem isFinitelyPresentable_iff_isFinitePresentation
 
 [Tag 0GPF](https://stacks.math.columbia.edu/tag/0GPF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_nonzero_hom_of_supp_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedNonzeroHom.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedNonzeroHom.lean#L358). References: SGA 2 VII (1.3), “affine case”.
+**`AlgebraicGeometry.exists_nonzero_hom_of_supp_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedNonzeroHom.lean, line 358](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedNonzeroHom.lean#L358). References: SGA 2 VII (1.3), “affine case”.
 
 > **Stacks Project, Tag 0GPF.** If the support of a nonzero quasi-coherent module on an
 > affine scheme is contained in that of a finitely presented module, then there is a nonzero
@@ -50,7 +50,7 @@ theorem exists_nonzero_hom_of_supp_subset
 
 [Tag 0GPG](https://stacks.math.columbia.edu/tag/0GPG) in the Stacks Project.
 
-**`AlgebraicGeometry.supportContained_eq_serreCoproductClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreSubcategory.lean, line 780](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreSubcategory.lean#L780).
+**`AlgebraicGeometry.supportContained_eq_serreCoproductClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreSubcategory.lean, line 780](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreSubcategory.lean#L780).
 
 > **Stacks Project, Tag 0GPG.** On a quasi-compact and quasi-separated scheme, the
 > quasi-coherent modules supported on the support of a finitely presented module are exactly
@@ -73,7 +73,7 @@ theorem supportContained_eq_serreCoproductClosure (X : Scheme.{u}) [CompactSpace
 
 [Tag 0GPH](https://stacks.math.columbia.edu/tag/0GPH) in the Stacks Project.
 
-**`AlgebraicGeometry.quasicoherentSupportedOn_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean#L229). The attribute's comment: “the full subcategory of modules supported on `Z` is a Serre subcategory”.
+**`AlgebraicGeometry.quasicoherentSupportedOn_isSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean, line 229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean#L229). The attribute's comment: “the full subcategory of modules supported on `Z` is a Serre subcategory”.
 
 > Quasi-coherent modules supported on a fixed subset of a scheme form a Serre subcategory of
 > the category of all quasi-coherent modules.
@@ -83,7 +83,7 @@ public instance quasicoherentSupportedOn_isSerreClass (X : Scheme.{u}) (Z : Set 
     (quasicoherentSupportedOn X Z).IsSerreClass
 ```
 
-**`AlgebraicGeometry.quasicoherentRestriction_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean#L307). The attribute's comment: “restriction is the localization at the supported Serre subcategory”.
+**`AlgebraicGeometry.quasicoherentRestriction_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean#L307). The attribute's comment: “restriction is the localization at the supported Serre subcategory”.
 
 > **[Stacks, Tag 0GPH].** Let `X` be a quasi-compact and quasi-separated scheme and let `U` be
 > a quasi-compact open whose complement is the closed subset `Z`.  Restriction along `U ↪ X`
@@ -99,7 +99,7 @@ public theorem quasicoherentRestriction_isLocalization (X : Scheme.{u}) [Compact
       (quasicoherentSupportedOn X Z).isoModSerre
 ```
 
-**`AlgebraicGeometry.quasicoherentSupportedQuotientEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean#L378). The attribute's comment: “the induced equivalence from the quotient category”.
+**`AlgebraicGeometry.quasicoherentSupportedQuotientEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean, line 378](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean#L378). The attribute's comment: “the induced equivalence from the quotient category”.
 
 > **[Stacks, Tag 0GPH].** The equivalence `QCoh(𝒪_X)/𝒜 ≌ QCoh(𝒪_U)` induced by restriction,
 > where `𝒜` is the Serre subcategory of quasi-coherent modules supported on the closed complement
@@ -114,7 +114,7 @@ public noncomputable def quasicoherentSupportedQuotientEquivalence (X : Scheme.{
       (SheafOfModules.isQuasicoherent U.toScheme.ringCatSheaf).FullSubcategory
 ```
 
-**`AlgebraicGeometry.quasicoherentSupportedQuotientEquivalenceFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean#L390). The attribute's comment: “the equivalence is induced by the restriction functor”.
+**`AlgebraicGeometry.quasicoherentSupportedQuotientEquivalenceFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean, line 390](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/SupportedSerreQuotient.lean#L390). The attribute's comment: “the equivalence is induced by the restriction functor”.
 
 > The equivalence `QCoh(𝒪_X)/𝒜 ≌ QCoh(𝒪_U)` of [Stacks, Tag 0GPH] is the one induced by the
 > restriction functor: composing it with the quotient functor gives back restriction.
@@ -132,7 +132,7 @@ public noncomputable def quasicoherentSupportedQuotientEquivalenceFunctorIso (X 
 
 [Tag 0GPI](https://stacks.math.columbia.edu/tag/0GPI) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineOfModuleCategory.isAffine_of_quasicoherentModules_equivalent_moduleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/AffineOfModuleCategory.lean, line 1142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/AffineOfModuleCategory.lean#L1142). The attribute's comment: “`[CommRing R]` reads the tag's `a ring`: the rank-one step needs `End P` commutative. For noncommutative `R` the conclusion still holds by Morita equivalence (`Mod (M₂ k) ≌ Mod k`), but that rank-one step fails outright.”.
+**`AlgebraicGeometry.AffineOfModuleCategory.isAffine_of_quasicoherentModules_equivalent_moduleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/AffineOfModuleCategory.lean, line 1142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/AffineOfModuleCategory.lean#L1142). The attribute's comment: “`[CommRing R]` reads the tag's `a ring`: the rank-one step needs `End P` commutative. For noncommutative `R` the conclusion still holds by Morita equivalence (`Mod (M₂ k) ≌ Mod k`), but that rank-one step fails outright.”.
 
 > **Stacks Project, Tag 0GPI.** A quasi-compact and quasi-separated scheme whose category
 > of quasi-coherent modules is equivalent to the category of modules over a commutative ring
@@ -150,7 +150,7 @@ public theorem isAffine_of_quasicoherentModules_equivalent_moduleCat
     IsAffine X
 ```
 
-**`AlgebraicGeometry.AffineOfModuleCategory.isAffine_of_quasicoherentModules_equivalence_moduleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/AffineOfModuleCategory.lean, line 1165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/AffineOfModuleCategory.lean#L1165). The attribute's comment: “the hypothesis in the orientation of the source, `QCoh(𝒪_X) ≌ Mod R`; `[CommRing R]` reads the tag's `a ring`, exactly as for the mirror form `isAffine_of_quasicoherentModules_equivalent_moduleCat`”.
+**`AlgebraicGeometry.AffineOfModuleCategory.isAffine_of_quasicoherentModules_equivalence_moduleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/AffineOfModuleCategory.lean, line 1165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/AffineOfModuleCategory.lean#L1165). The attribute's comment: “the hypothesis in the orientation of the source, `QCoh(𝒪_X) ≌ Mod R`; `[CommRing R]` reads the tag's `a ring`, exactly as for the mirror form `isAffine_of_quasicoherentModules_equivalent_moduleCat`”.
 
 > **Stacks Project, Tag 0GPI**, with the equivalence written in the orientation of the source:
 > a quasi-compact and quasi-separated scheme whose category of quasi-coherent modules is equivalent
@@ -171,7 +171,7 @@ public theorem isAffine_of_quasicoherentModules_equivalence_moduleCat
 
 [Tag 0GPJ](https://stacks.math.columbia.edu/tag/0GPJ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_natIso_pullbackTensorFunctor_of_quasicoherentEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/ReconstructionGlobalComparison.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/ReconstructionGlobalComparison.lean#L113). The attribute's comment: “the tag IN FULL, for `X` and `Y` quasi-compact and quasi-separated: an equivalence of the categories of quasi-coherent modules gives an isomorphism of schemes `g : Y ≅ X`, an invertible `𝒪_Y`-module `M`, and a NATURAL isomorphism `e(𝓕) ≅ g^*𝓕 ⊗ M`. No cover, no affineness and no further hypothesis of any kind beyond qcqs. The scheme half is `exists_schemeIso_of_quasicoherentEquivalence` and the module half `isInvertible_map_quasicoherentUnit_of_quasicoherentEquivalence`, both already unconditional; what is new is the comparison of functors, which the Stacks source dismisses with "We omit the details". It is glued from the per-chart comparisons `chartComparisonIso` by `exists_natIso_of_chartComparison`, whose agreement hypothesis is discharged by the rigidity `natIso_eq_of_app_unit_eq_of_iso` once the comparisons are normalised at `𝒪_X`; the normalisation is `chartComparisonIso_hom_app_quasicoherentUnit` and it is automatic, because the module is `e(𝒪_X)` and the identification of its restriction with the chart's `L` is `restrictMapUnitIsoOfChartIso`, built from the same `α` and `β`. As in the affine case the comparison is stated after forgetting quasi-coherence, between functors into all `𝒪_Y`-modules”.
+**`AlgebraicGeometry.exists_natIso_pullbackTensorFunctor_of_quasicoherentEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/ReconstructionGlobalComparison.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/ReconstructionGlobalComparison.lean#L113). The attribute's comment: “the tag IN FULL, for `X` and `Y` quasi-compact and quasi-separated: an equivalence of the categories of quasi-coherent modules gives an isomorphism of schemes `g : Y ≅ X`, an invertible `𝒪_Y`-module `M`, and a NATURAL isomorphism `e(𝓕) ≅ g^*𝓕 ⊗ M`. No cover, no affineness and no further hypothesis of any kind beyond qcqs. The scheme half is `exists_schemeIso_of_quasicoherentEquivalence` and the module half `isInvertible_map_quasicoherentUnit_of_quasicoherentEquivalence`, both already unconditional; what is new is the comparison of functors, which the Stacks source dismisses with "We omit the details". It is glued from the per-chart comparisons `chartComparisonIso` by `exists_natIso_of_chartComparison`, whose agreement hypothesis is discharged by the rigidity `natIso_eq_of_app_unit_eq_of_iso` once the comparisons are normalised at `𝒪_X`; the normalisation is `chartComparisonIso_hom_app_quasicoherentUnit` and it is automatic, because the module is `e(𝒪_X)` and the identification of its restriction with the chart's `L` is `restrictMapUnitIsoOfChartIso`, built from the same `α` and `β`. As in the affine case the comparison is stated after forgetting quasi-coherence, between functors into all `𝒪_Y`-modules”.
 
 > **Stacks Project, Tag 0GPJ.**  Let `X` and `Y` be quasi-compact and quasi-separated schemes
 > and let `e : QCoh(𝒪_X) ≌ QCoh(𝒪_Y)` be an equivalence of their categories of quasi-coherent
@@ -205,4 +205,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 56.6, Tag 0GPD](https://stacks.math.columbia.edu/tag/0GPD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

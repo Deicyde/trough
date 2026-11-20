@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.25 Right derived functors via resolution functors
 
-Section 13.25 of the Stacks Project, [Tag 05TM](https://stacks.math.columbia.edu/tag/05TM). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.25 of the Stacks Project, [Tag 05TM](https://stacks.math.columbia.edu/tag/05TM). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05TN, a lemma
 
 [Tag 05TN](https://stacks.math.columbia.edu/tag/05TN) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_iso_rightDerivedFunctorPlus_of_comp_Qh_iso_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean, line 1292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean#L1292).
+**`CategoryTheory.Functor.exists_iso_rightDerivedFunctorPlus_of_comp_Qh_iso_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean, line 1292](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean#L1292).
 
 > Let `F : C ⥤ D` be an additive functor between abelian categories with `C` having enough
 > injectives, let `ℐ ⊆ C` be the subcategory of injective objects, and let
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.25, Tag 05TM](https://stacks.math.columbia.edu/tag/05TM)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

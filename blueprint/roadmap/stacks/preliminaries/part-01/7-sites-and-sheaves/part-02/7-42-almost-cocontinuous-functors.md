@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.42 Almost cocontinuous functors
 
-Section 7.42 of the Stacks Project, [Tag 04B4](https://stacks.math.columbia.edu/tag/04B4). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 7.42 of the Stacks Project, [Tag 04B4](https://stacks.math.columbia.edu/tag/04B4). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04B5, a definition
 
 [Tag 04B5](https://stacks.math.columbia.edu/tag/04B5) in the Stacks Project.
 
-**`SheafTheoreticallyEmpty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/SheafTheoreticallyEmpty.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/SheafTheoreticallyEmpty.lean#L28).
+**`SheafTheoreticallyEmpty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/SheafTheoreticallyEmpty.lean, line 28](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cocontinuous/SheafTheoreticallyEmpty.lean#L28).
 
 > **Stacks 04B5.** An object `U` of a site is *sheaf theoretically empty* if the
 > sheafification of the canonical map `∅ ⟶ h_U` from the initial presheaf to the presheaf
@@ -28,7 +28,7 @@ def SheafTheoreticallyEmpty [HasWeakSheafify J (Type v)] (U : C) : Prop
 
 [Tag 04B6](https://stacks.math.columbia.edu/tag/04B6) in the Stacks Project.
 
-**`StacksSheafTheoreticallyEmpty.tfae_sheafTheoreticallyEmpty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/EmptyPresheaf.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/EmptyPresheaf.lean#L159).
+**`StacksSheafTheoreticallyEmpty.tfae_sheafTheoreticallyEmpty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/EmptyPresheaf.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cocontinuous/EmptyPresheaf.lean#L159).
 
 > **Stacks 04B6.**  For an object `U` of a site `(C, J)` the following are equivalent:
 > (1) `U` is sheaf theoretically empty, i.e. `∅^# ⟶ h_U^#` is an isomorphism of sheaves;
@@ -47,7 +47,7 @@ theorem tfae_sheafTheoreticallyEmpty [HasWeakSheafify J (Type u)] (U : C) :
       (⊥ : Sieve U) ∈ J U]
 ```
 
-**`StacksSheafTheoreticallyEmpty.isIso_map_emptyPresheafTo_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/EmptyPresheaf.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/EmptyPresheaf.lean#L177).
+**`StacksSheafTheoreticallyEmpty.isIso_map_emptyPresheafTo_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/EmptyPresheaf.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cocontinuous/EmptyPresheaf.lean#L177).
 
 > **Stacks 04B6**, final assertion.  If `U` is sheaf theoretically empty, then so is `U'` for
 > every morphism `U' ⟶ U` of `C`.
@@ -62,7 +62,7 @@ theorem isIso_map_emptyPresheafTo_of_hom [HasWeakSheafify J (Type u)] {U U' : C}
 
 [Tag 04B7](https://stacks.math.columbia.edu/tag/04B7) in the Stacks Project.
 
-**`IsAlmostCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousDefs.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousDefs.lean#L35).
+**`IsAlmostCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousDefs.lean, line 35](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousDefs.lean#L35).
 
 > **Stacks 04B7.** A functor `u : C ⥤ D` between sites `(C, J)` and `(D, K)` is *almost
 > cocontinuous* if for every object `U` of `C` and every covering sieve `S` of `u U` there is a
@@ -78,7 +78,7 @@ def IsAlmostCocontinuous (u : C ⥤ D) (J : GrothendieckTopology C)
 
 [Tag 04B8](https://stacks.math.columbia.edu/tag/04B8) in the Stacks Project.
 
-**`CategoryTheory.Functor.isIso_homEquiv_symm_whiskerLeft_toSheafify_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean#L427). The attribute's comment: “For `u` continuous and almost cocontinuous and `G` a presheaf of sets on `D` with `G(V)` a singleton for every sheaf theoretically empty `V`, the canonical morphism `(u^p G)^# ⟶ u^p(G^#)` is an isomorphism.”.
+**`CategoryTheory.Functor.isIso_homEquiv_symm_whiskerLeft_toSheafify_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean, line 427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean#L427). The attribute's comment: “For `u` continuous and almost cocontinuous and `G` a presheaf of sets on `D` with `G(V)` a singleton for every sheaf theoretically empty `V`, the canonical morphism `(u^p G)^# ⟶ u^p(G^#)` is an isomorphism.”.
 
 > **Stacks 04B8.** Let `(C, J)` and `(D, K)` be sites and let `u : C ⥤ D` be continuous and
 > almost cocontinuous (Stacks 04B7). Let `G` be a presheaf of sets on `D` such that `G(V)` is a
@@ -108,7 +108,7 @@ public theorem isIso_homEquiv_symm_whiskerLeft_toSheafify_of_isAlmostCocontinuou
 
 [Tag 04B9](https://stacks.math.columbia.edu/tag/04B9) in the Stacks Project.
 
-**`CategoryTheory.Functor.preservesColimitsOfShape_sheafPushforwardContinuous_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean#L457). The attribute's comment: “For `u` continuous and almost cocontinuous, `u^s = u^p : Sh(D) → Sh(C)` commutes with pushouts and coequalizers, and more generally with finite connected colimits.”.
+**`CategoryTheory.Functor.preservesColimitsOfShape_sheafPushforwardContinuous_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean, line 457](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean#L457). The attribute's comment: “For `u` continuous and almost cocontinuous, `u^s = u^p : Sh(D) → Sh(C)` commutes with pushouts and coequalizers, and more generally with finite connected colimits.”.
 
 > **Stacks 04B9.** Let `(C, J)` and `(D, K)` be sites and let `u : C ⥤ D` be continuous and
 > almost cocontinuous, and assume sheafification of `Type w`-valued presheaves on `(D, K)` inverts
@@ -131,7 +131,7 @@ public theorem preservesColimitsOfShape_sheafPushforwardContinuous_of_isAlmostCo
 
 [Tag 04BA](https://stacks.math.columbia.edu/tag/04BA) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsMorphismOfSites.preservesColimitsOfShape_pushforward_morphismOfTopoi_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean#L574). The attribute's comment: “For a morphism of sites `f : D → C` whose continuous functor `u : C → D` is almost cocontinuous, `f_*` commutes with pushouts and coequalizers, and more generally with finite connected colimits.”.
+**`CategoryTheory.Functor.IsMorphismOfSites.preservesColimitsOfShape_pushforward_morphismOfTopoi_of_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean, line 574](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cocontinuous/AlmostCocontinuousFunctors.lean#L574). The attribute's comment: “For a morphism of sites `f : D → C` whose continuous functor `u : C → D` is almost cocontinuous, `f_*` commutes with pushouts and coequalizers, and more generally with finite connected colimits.”.
 
 > **Stacks 04BA.** Let `f : D → C` be a morphism of sites (Stacks 00X1) associated to the
 > continuous functor `u : C ⥤ D`, so that `f_* : Sh(D) ⥤ Sh(C)` is the pushforward of the morphism
@@ -155,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.42, Tag 04B4](https://stacks.math.columbia.edu/tag/04B4)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

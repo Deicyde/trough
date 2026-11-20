@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.39 Polynomial relations among Chern classes
 
-Section 42.39 of the Stacks Project, [Tag 02UB](https://stacks.math.columbia.edu/tag/02UB). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.39 of the Stacks Project, [Tag 02UB](https://stacks.math.columbia.edu/tag/02UB). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02UD, a lemma
 
 [Tag 02UD](https://stacks.math.columbia.edu/tag/02UD) in the Stacks Project.
 
-**`Stacks.Chow.TotalChowClass.totalChern_sheafTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TwistFormula.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TwistFormula.lean#L513). The attribute's comment: “Equation (02UE) in A^*(X), as the single identity c(E tensor L) = T\_\{r,c\_1(L)}(c(E)) of total Chow cohomology classes, under the source's hypotheses and no others. It is Equation (02UE) in each degree i by Stacks.Chow.TotalChowClass.totalChern\_sheafTensor\_degree”.
+**`Stacks.Chow.TotalChowClass.totalChern_sheafTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TwistFormula.lean, line 513](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TwistFormula.lean#L513). The attribute's comment: “Equation (02UE) in A^*(X), as the single identity c(E tensor L) = T\_\{r,c\_1(L)}(c(E)) of total Chow cohomology classes, under the source's hypotheses and no others. It is Equation (02UE) in each degree i by Stacks.Chow.TotalChowClass.totalChern\_sheafTensor\_degree”.
 
 > **Stacks 02UD for total classes**: for `ℰ` finite locally free of rank `r` and `ℒ`
 > invertible, `c(ℰ ⊗ ℒ) = T_{r,c₁(ℒ)}(c(ℰ))`, that is,
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.39, Tag 02UB](https://stacks.math.columbia.edu/tag/02UB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

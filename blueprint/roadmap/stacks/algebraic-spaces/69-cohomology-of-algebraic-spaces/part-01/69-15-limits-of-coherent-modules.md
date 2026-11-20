@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.15 Limits of coherent modules
 
-Section 69.15 of the Stacks Project, [Tag 07UU](https://stacks.math.columbia.edu/tag/07UU). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 69.15 of the Stacks Project, [Tag 07UU](https://stacks.math.columbia.edu/tag/07UU). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07UV, a lemma
 
 [Tag 07UV](https://stacks.math.columbia.edu/tag/07UV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiltered_and_nonempty_isColimit_coherentSubobjectCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubmoduleColimitNoetherian.lean, line 841](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubmoduleColimitNoetherian.lean#L841).
+**`AlgebraicGeometry.Space.isFiltered_and_nonempty_isColimit_coherentSubobjectCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubmoduleColimitNoetherian.lean, line 841](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSubmoduleColimitNoetherian.lean#L841).
 
 > Let `X` be a Noetherian algebraic space over a scheme `S`.  Every quasi-coherent
 > `𝒪_X`-module `F` is the filtered colimit of its coherent submodules: the coherent submodules of `F`
@@ -32,7 +32,7 @@ theorem isFiltered_and_nonempty_isColimit_coherentSubobjectCocone
 
 [Tag 07UW](https://stacks.math.columbia.edu/tag/07UW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFiltered_isColimit_isFinitePresentation_of_isAffineHom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationColimitAffineOverNoetherianUnconditional.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationColimitAffineOverNoetherianUnconditional.lean#L209). The attribute's comment: “for an affine morphism f : X ⟶ Y of algebraic spaces over S with Y Noetherian, every quasi-coherent 𝒪\_X-module is a filtered colimit of finitely presented 𝒪\_X-modules”.
+**`AlgebraicGeometry.Space.exists_isFiltered_isColimit_isFinitePresentation_of_isAffineHom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationColimitAffineOverNoetherianUnconditional.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationColimitAffineOverNoetherianUnconditional.lean#L209). The attribute's comment: “for an affine morphism f : X ⟶ Y of algebraic spaces over S with Y Noetherian, every quasi-coherent 𝒪\_X-module is a filtered colimit of finitely presented 𝒪\_X-modules”.
 
 > **Stacks 07UW.**  Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over a scheme
 > `S` with `Y` Noetherian.  Then every quasi-coherent `𝒪_X`-module is a filtered colimit of
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.15, Tag 07UU](https://stacks.math.columbia.edu/tag/07UU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

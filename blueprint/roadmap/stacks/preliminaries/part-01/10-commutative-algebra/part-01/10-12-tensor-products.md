@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.12 Tensor products
 
-Section 10.12 of the Stacks Project, [Tag 00CV](https://stacks.math.columbia.edu/tag/00CV). 16 tags here are carried by 15 declarations of the repository (3 in StacksCore and 12 in StacksFrontier) and 27 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.12 of the Stacks Project, [Tag 00CV](https://stacks.math.columbia.edu/tag/00CV). 16 tags here are carried by 15 declarations of the repository (3 in StacksCore and 12 in StacksFrontier) and 27 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00CW, a definition
 
@@ -16,13 +16,13 @@ Section 10.12 of the Stacks Project, [Tag 00CV](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`LinearMap.mk₂`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.mk₂#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/BilinearMap.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/BilinearMap.lean#L8) (StacksCore).
+- [`LinearMap.mk₂`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.mk₂#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/BilinearMap.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/BilinearMap.lean#L8) (StacksCore).
 
 ## Tag 00CX, a lemma
 
 [Tag 00CX](https://stacks.math.columbia.edu/tag/00CX) in the Stacks Project.
 
-**`TensorProduct.existsUnique_linearEquiv_compr₂_eq_of_universal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean#L48). The attribute's comment: “Uniqueness: two universal pairs `(T, g)`, `(T', g')` admit a unique isomorphism `j : T ≃ T'` with `j ∘ g = g'`; the universal property quantifies over modules in the universe of `T` and `T'`.”.
+**`TensorProduct.existsUnique_linearEquiv_compr₂_eq_of_universal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean#L48). The attribute's comment: “Uniqueness: two universal pairs `(T, g)`, `(T', g')` admit a unique isomorphism `j : T ≃ T'` with `j ∘ g = g'`; the universal property quantifies over modules in the universe of `T` and `T'`.”.
 
 > **Stacks 00CX** (uniqueness). If `(T, g)` and `(T', g')` are two pairs of an `R`-module and an
 > `R`-bilinear map `M × N → _` which both have the universal property (every bilinear map `f` to an
@@ -41,7 +41,7 @@ theorem existsUnique_linearEquiv_compr₂_eq_of_universal {T T' : Type w} [AddCo
     ∃! j : T ≃ₗ[R] T', g.compr₂ j.toLinearMap = g'
 ```
 
-**`IsTensorProduct.existsUnique_linearEquiv_compr₂_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean#L83). The attribute's comment: “Uniqueness, for pairs exhibited as tensor products by `IsTensorProduct`: there is a unique isomorphism `j : T ≃ T'` with `j ∘ g = g'`.”.
+**`IsTensorProduct.existsUnique_linearEquiv_compr₂_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean#L83). The attribute's comment: “Uniqueness, for pairs exhibited as tensor products by `IsTensorProduct`: there is a unique isomorphism `j : T ≃ T'` with `j ∘ g = g'`.”.
 
 > **Stacks 00CX** (uniqueness, for `IsTensorProduct`). If `g : M × N → T` and `g' : M × N → T'`
 > are bilinear maps exhibiting `T` and `T'` as tensor products of `M` and `N` (Mathlib's
@@ -56,9 +56,9 @@ theorem existsUnique_linearEquiv_compr₂_eq {g : M →ₗ[R] N →ₗ[R] T} {g'
 
 Declarations registered for the tag:
 
-- [`TensorProduct.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lift#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Basic.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/Basic.lean#L8) (StacksCore). References: EGA III (7.2.1), “special case”; SGA 3 VIIB (0.3.5).
-- [`TensorProduct.lift.unique`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lift.unique#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Basic.lean, line 9](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/Basic.lean#L9) (StacksCore).
-- [`TensorProduct.lift.tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lift.tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean#L30) (StacksFrontier): “The factorization identity `f = f̃ ∘ g`: `TensorProduct.lift f` composed with `m ⊗ₜ n` is `f m n`.”.
+- [`TensorProduct.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lift#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Basic.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/Basic.lean#L8) (StacksCore). References: EGA III (7.2.1), “special case”; SGA 3 VIIB (0.3.5).
+- [`TensorProduct.lift.unique`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lift.unique#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Basic.lean, line 9](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/Basic.lean#L9) (StacksCore).
+- [`TensorProduct.lift.tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lift.tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean, line 30](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/UniversalPair.lean#L30) (StacksFrontier): “The factorization identity `f = f̃ ∘ g`: `TensorProduct.lift f` composed with `m ⊗ₜ n` is `f m n`.”.
 
 ## Tag 00CY, a lemma
 
@@ -66,22 +66,22 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`TensorProduct.directSumLeft`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.directSumLeft#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/DirectSum/TensorProduct.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/DirectSum/TensorProduct.lean#L8) (StacksCore). References: EGA III (7.2.6), “special case”; SGA 3 I (4.7.3), “special case”.
-- [`TensorProduct.lid`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lid#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Associator.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/Associator.lean#L8) (StacksCore). References: SGA 3 VIIB (0.3.2), “special case”.
-- [`TensorProduct.comm`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.comm#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Basic.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/Basic.lean#L10) (StacksCore).
-- [`TensorProduct.comm`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.comm#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L25) (StacksFrontier): “the first isomorphism”.
-- [`TensorProduct.comm_tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.comm_tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L26) (StacksFrontier): “the first isomorphism, on pure tensors”.
-- [`TensorProduct.prodLeft`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.prodLeft#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 27](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L27) (StacksFrontier): “the second isomorphism”. References: EGA III (7.2.6), “special case”.
-- [`TensorProduct.prodLeft_tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.prodLeft_tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L29) (StacksFrontier): “the second isomorphism, on pure tensors”.
-- [`TensorProduct.lid`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lid#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L30) (StacksFrontier): “the third isomorphism”. References: SGA 3 VIIB (0.3.2), “special case”.
-- [`TensorProduct.lid_tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lid_tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L31) (StacksFrontier): “the third isomorphism, on pure tensors”.
-- [`TensorProduct.ext'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.ext'#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L32) (StacksFrontier): “uniqueness of each of the three”.
+- [`TensorProduct.directSumLeft`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.directSumLeft#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/DirectSum/TensorProduct.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/DirectSum/TensorProduct.lean#L8) (StacksCore). References: EGA III (7.2.6), “special case”; SGA 3 I (4.7.3), “special case”.
+- [`TensorProduct.lid`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lid#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Associator.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/Associator.lean#L8) (StacksCore). References: SGA 3 VIIB (0.3.2), “special case”.
+- [`TensorProduct.comm`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.comm#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Basic.lean, line 10](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/Basic.lean#L10) (StacksCore).
+- [`TensorProduct.comm`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.comm#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 25](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L25) (StacksFrontier): “the first isomorphism”.
+- [`TensorProduct.comm_tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.comm_tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L26) (StacksFrontier): “the first isomorphism, on pure tensors”.
+- [`TensorProduct.prodLeft`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.prodLeft#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 27](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L27) (StacksFrontier): “the second isomorphism”. References: EGA III (7.2.6), “special case”.
+- [`TensorProduct.prodLeft_tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.prodLeft_tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 29](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L29) (StacksFrontier): “the second isomorphism, on pure tensors”.
+- [`TensorProduct.lid`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lid#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 30](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L30) (StacksFrontier): “the third isomorphism”. References: SGA 3 VIIB (0.3.2), “special case”.
+- [`TensorProduct.lid_tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lid_tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 31](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L31) (StacksFrontier): “the third isomorphism, on pure tensors”.
+- [`TensorProduct.ext'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.ext'#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean, line 32](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/CanonicalIsos.lean#L32) (StacksFrontier): “uniqueness of each of the three”.
 
 ## Tag 00CZ, a lemma
 
 [Tag 00CZ](https://stacks.math.columbia.edu/tag/00CZ) in the Stacks Project.
 
-**`PiTensorProduct.existsUnique_linearEquiv_of_universal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/PiTensorProduct/Universal.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/PiTensorProduct/Universal.lean#L33). The attribute's comment: “Uniqueness clause: such a `T` is unique up to unique isomorphism; the existence of `(T, g)` with the universal property is `PiTensorProduct.lift` with `PiTensorProduct.lift.unique`.”.
+**`PiTensorProduct.existsUnique_linearEquiv_of_universal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/PiTensorProduct/Universal.lean, line 33](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/PiTensorProduct/Universal.lean#L33). The attribute's comment: “Uniqueness clause: such a `T` is unique up to unique isomorphism; the existence of `(T, g)` with the universal property is `PiTensorProduct.lift` with `PiTensorProduct.lift.unique`.”.
 
 > **Stacks 00CZ.** The tensor product is unique up to unique isomorphism: if a module `T`
 > and a multilinear map `g : Π i, s i → T` have the universal property (every multilinear map
@@ -98,14 +98,14 @@ theorem existsUnique_linearEquiv_of_universal (T : Type t) [AddCommMonoid T] [Mo
 
 Declarations registered for the tag:
 
-- [`PiTensorProduct.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PiTensorProduct.lift#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/PiTensorProduct/Basic.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/PiTensorProduct/Basic.lean#L8) (StacksCore).
-- [`PiTensorProduct.lift.unique`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PiTensorProduct.lift.unique#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/PiTensorProduct/Basic.lean, line 9](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/PiTensorProduct/Basic.lean#L9) (StacksCore).
+- [`PiTensorProduct.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PiTensorProduct.lift#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/PiTensorProduct/Basic.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/PiTensorProduct/Basic.lean#L8) (StacksCore).
+- [`PiTensorProduct.lift.unique`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PiTensorProduct.lift.unique#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/PiTensorProduct/Basic.lean, line 9](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/PiTensorProduct/Basic.lean#L9) (StacksCore).
 
 ## Tag 00D0, a lemma
 
 [Tag 00D0](https://stacks.math.columbia.edu/tag/00D0) in the Stacks Project.
 
-**`PiTensorProduct.tmulTmulLeftEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean#L102). The attribute's comment: “the map `f`; the three modules are the family `M 0`, `M 1`, `M 2` and the threefold tensor product is `PiTensorProduct` over `Fin 3`”.
+**`PiTensorProduct.tmulTmulLeftEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean#L102). The attribute's comment: “the map `f`; the three modules are the family `M 0`, `M 1`, `M 2` and the threefold tensor product is `PiTensorProduct` over `Fin 3`”.
 
 > **Stacks 00D0**, the map `f`: the isomorphism `(M ⊗_R N) ⊗_R P ≅ M ⊗_R N ⊗_R P` from the
 > iterated tensor product to the threefold tensor product of Stacks 00CZ, with
@@ -115,7 +115,7 @@ Declarations registered for the tag:
 noncomputable def tmulTmulLeftEquiv : ((M 0 ⊗[R] M 1) ⊗[R] M 2) ≃ₗ[R] ⨂[R] i, M i
 ```
 
-**`PiTensorProduct.tmulTmulRightEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean#L135). The attribute's comment: “the map `g`; the three modules are the family `M 0`, `M 1`, `M 2` and the threefold tensor product is `PiTensorProduct` over `Fin 3`”.
+**`PiTensorProduct.tmulTmulRightEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean#L135). The attribute's comment: “the map `g`; the three modules are the family `M 0`, `M 1`, `M 2` and the threefold tensor product is `PiTensorProduct` over `Fin 3`”.
 
 > **Stacks 00D0**, the map `g`: the isomorphism `M ⊗_R N ⊗_R P ≅ M ⊗_R (N ⊗_R P)` from the
 > threefold tensor product of Stacks 00CZ to the iterated tensor product, with
@@ -125,7 +125,7 @@ noncomputable def tmulTmulLeftEquiv : ((M 0 ⊗[R] M 1) ⊗[R] M 2) ≃ₗ[R] �
 noncomputable def tmulTmulRightEquiv : (⨂[R] i, M i) ≃ₗ[R] M 0 ⊗[R] (M 1 ⊗[R] M 2)
 ```
 
-**`PiTensorProduct.tmulTmulLeftEquiv_trans_tmulTmulRightEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean#L158). The attribute's comment: “the composite `g ∘ f` is `TensorProduct.assoc`”.
+**`PiTensorProduct.tmulTmulLeftEquiv_trans_tmulTmulRightEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean#L158). The attribute's comment: “the composite `g ∘ f` is `TensorProduct.assoc`”.
 
 > **Stacks 00D0**, the composite: `g ∘ f` is the associator
 > `TensorProduct.assoc : (M ⊗_R N) ⊗_R P ≅ M ⊗_R (N ⊗_R P)`.
@@ -137,14 +137,14 @@ theorem tmulTmulLeftEquiv_trans_tmulTmulRightEquiv :
 
 Declarations registered for the tag:
 
-- [`TensorProduct.assoc`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.assoc#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Associator.lean, line 9](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/Associator.lean#L9) (StacksCore).
-- [`TensorProduct.assoc_tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.assoc_tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean#L29) (StacksFrontier): “the composite g ∘ f, on pure tensors”.
+- [`TensorProduct.assoc`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.assoc#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Associator.lean, line 9](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/Associator.lean#L9) (StacksCore).
+- [`TensorProduct.assoc_tmul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.assoc_tmul#doc) registered with `add_to_stacks` in [StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean, line 29](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/PiTensorProduct/FinThree.lean#L29) (StacksFrontier): “the composite g ∘ f, on pure tensors”.
 
 ## Tag 00D1, a definition
 
 [Tag 00D1](https://stacks.math.columbia.edu/tag/00D1) in the Stacks Project.
 
-**`DistribMulAction.commute_toAddMonoidEnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Bimodule.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Bimodule.lean#L95). The attribute's comment: “The source's condition, that multiplication by `a` and multiplication by `b` commute, at the level of the multiplication operators: an equation in `AddMonoid.End N`. The condition as a class on the two actions is `SMulCommClass`, tagged below.”.
+**`DistribMulAction.commute_toAddMonoidEnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Bimodule.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Module/Bimodule.lean#L95). The attribute's comment: “The source's condition, that multiplication by `a` and multiplication by `b` commute, at the level of the multiplication operators: an equation in `AddMonoid.End N`. The condition as a class on the two actions is `SMulCommClass`, tagged below.”.
 
 > **Stacks 00D1.** In an `(A, B)`-bimodule multiplication by `a : A` and multiplication by
 > `b : B` commute, as additive endomorphisms of `N`: this is the source's own phrasing of the
@@ -163,13 +163,13 @@ public theorem DistribMulAction.commute_toAddMonoidEnd {A B N : Type*} [Monoid A
 
 Declarations registered for the tag:
 
-- [`SMulCommClass`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SMulCommClass#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/Bimodule.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Bimodule.lean#L104) (StacksFrontier): “An `(A, B)`-bimodule is a type with `[Module A N] [Module B N] [SMulCommClass A B N]`: the source's data is the two module structures, and its one condition, that the actions commute, is this class, `smul_comm` being `a • b • n = b • a • n`, the source's `b (a n) = a (b n)` read from the other side. The class asks only for two `SMul`s, so this covers semirings acting on an additive commutative monoid as well as the source's rings acting on an abelian group. Writing the `B`-action on the right is the source's notation, not a further condition; the genuine right-action form is this class at `Bᵐᵒᵖ`, the bimodule set-up of `Mathlib/Algebra/Module/Bimodule.lean`.”.
+- [`SMulCommClass`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SMulCommClass#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/Bimodule.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Module/Bimodule.lean#L104) (StacksFrontier): “An `(A, B)`-bimodule is a type with `[Module A N] [Module B N] [SMulCommClass A B N]`: the source's data is the two module structures, and its one condition, that the actions commute, is this class, `smul_comm` being `a • b • n = b • a • n`, the source's `b (a n) = a (b n)` read from the other side. The class asks only for two `SMul`s, so this covers semirings acting on an additive commutative monoid as well as the source's rings acting on an abelian group. Writing the `B`-action on the right is the source's notation, not a further condition; the genuine right-action form is this class at `Bᵐᵒᵖ`, the bimodule set-up of `Mathlib/Algebra/Module/Bimodule.lean`.”.
 
 ## Tag 00D2, a lemma
 
 [Tag 00D2](https://stacks.math.columbia.edu/tag/00D2) in the Stacks Project.
 
-**`TensorProduct.smulCommClass_bimoduleAssoc_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean#L103). The attribute's comment: “The `(A, B)`-bimodule structure on `(M ⊗_A N) ⊗_B P`: `A` acts through `M`, `B` through `N` (`TensorProduct.rightModule`), and the two actions commute.”.
+**`TensorProduct.smulCommClass_bimoduleAssoc_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean#L103). The attribute's comment: “The `(A, B)`-bimodule structure on `(M ⊗_A N) ⊗_B P`: `A` acts through `M`, `B` through `N` (`TensorProduct.rightModule`), and the two actions commute.”.
 
 > **Stacks 00D2**, the bimodule structure on `(M ⊗_A N) ⊗_B P`: here `B` acts on `M ⊗_A N`
 > through `N`, and `A` and `B` act on the outer tensor product through its left factor.
@@ -178,7 +178,7 @@ Declarations registered for the tag:
 theorem smulCommClass_bimoduleAssoc_left : SMulCommClass A B ((M ⊗[A] N) ⊗[B] P)
 ```
 
-**`TensorProduct.smulCommClass_bimoduleAssoc_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean#L111). The attribute's comment: “The `(A, B)`-bimodule structure on `M ⊗_A (N ⊗_B P)`: `A` acts through `M`, `B` through `N` (`TensorProduct.rightModule`), and the two actions commute.”.
+**`TensorProduct.smulCommClass_bimoduleAssoc_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean#L111). The attribute's comment: “The `(A, B)`-bimodule structure on `M ⊗_A (N ⊗_B P)`: `A` acts through `M`, `B` through `N` (`TensorProduct.rightModule`), and the two actions commute.”.
 
 > **Stacks 00D2**, the bimodule structure on `M ⊗_A (N ⊗_B P)`: here `A` and `B` act on
 > `N ⊗_B P` through `N`, `A` acts on the outer tensor product through `M` and `B` through
@@ -188,7 +188,7 @@ theorem smulCommClass_bimoduleAssoc_left : SMulCommClass A B ((M ⊗[A] N) ⊗[B
 theorem smulCommClass_bimoduleAssoc_right : SMulCommClass A B (M ⊗[A] (N ⊗[B] P))
 ```
 
-**`TensorProduct.bimoduleAssoc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean#L181). The attribute's comment: “The isomorphism `(M ⊗_A N) ⊗_B P ≅ M ⊗_A (N ⊗_B P)` for an `(A, B)`-bimodule `N`, with no ring map between `A` and `B`, as an `A`-linear isomorphism; the same map as a `B`-linear isomorphism is `TensorProduct.bimoduleAssocRight`.”.
+**`TensorProduct.bimoduleAssoc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean#L181). The attribute's comment: “The isomorphism `(M ⊗_A N) ⊗_B P ≅ M ⊗_A (N ⊗_B P)` for an `(A, B)`-bimodule `N`, with no ring map between `A` and `B`, as an `A`-linear isomorphism; the same map as a `B`-linear isomorphism is `TensorProduct.bimoduleAssocRight`.”.
 
 > **Stacks 00D2**: for an `A`-module `M`, a `B`-module `P` and an `(A, B)`-bimodule `N`,
 > `(M ⊗_A N) ⊗_B P ≅ M ⊗_A (N ⊗_B P)` via `(m ⊗ n) ⊗ p ↦ m ⊗ (n ⊗ p)`, an `A`-linear isomorphism.
@@ -198,7 +198,7 @@ theorem smulCommClass_bimoduleAssoc_right : SMulCommClass A B (M ⊗[A] (N ⊗[B
 noncomputable def bimoduleAssoc : ((M ⊗[A] N) ⊗[B] P) ≃ₗ[A] M ⊗[A] (N ⊗[B] P)
 ```
 
-**`TensorProduct.bimoduleAssocRight`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean#L232). The attribute's comment: “The isomorphism `(M ⊗_A N) ⊗_B P ≅ M ⊗_A (N ⊗_B P)` as a `B`-linear isomorphism; its underlying additive equivalence is that of the `A`-linear `TensorProduct.bimoduleAssoc`.”.
+**`TensorProduct.bimoduleAssocRight`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/BimoduleAssoc.lean#L232). The attribute's comment: “The isomorphism `(M ⊗_A N) ⊗_B P ≅ M ⊗_A (N ⊗_B P)` as a `B`-linear isomorphism; its underlying additive equivalence is that of the `A`-linear `TensorProduct.bimoduleAssoc`.”.
 
 > **Stacks 00D2**: `bimoduleAssoc` as a `B`-linear isomorphism; its underlying map is that of
 > the `A`-linear `bimoduleAssoc` (`bimoduleAssocRight_toAddEquiv`), so the two triple tensor
@@ -210,7 +210,7 @@ noncomputable def bimoduleAssocRight : ((M ⊗[A] N) ⊗[B] P) ≃ₗ[B] M ⊗[A
 
 Declarations registered for the tag:
 
-- [`TensorProduct.AlgebraTensorModule.assoc`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.AlgebraTensorModule.assoc#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Tower.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/Tower.lean#L11) (StacksCore).
+- [`TensorProduct.AlgebraTensorModule.assoc`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.AlgebraTensorModule.assoc#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Tower.lean, line 11](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/Tower.lean#L11) (StacksCore).
 
 ## Tag 00DE, a lemma
 
@@ -218,7 +218,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`TensorProduct.lift.equiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lift.equiv#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Associator.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/Associator.lean#L10) (StacksCore).
+- [`TensorProduct.lift.equiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.lift.equiv#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/Associator.lean, line 10](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/Associator.lean#L10) (StacksCore).
 
 ## Tag 00DD, a lemma
 
@@ -226,7 +226,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`TensorProduct.directLimitLeft`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.directLimitLeft#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/DirectLimit.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/DirectLimit.lean#L8) (StacksCore). References: EGA 0 (4.3.2), “special case”; EGA III (6.5.6), “special case”; SGA 4 V (8.2.4), “special case”; SGA 5 V (1.2.1), “special case”.
+- [`TensorProduct.directLimitLeft`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TensorProduct.directLimitLeft#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/DirectLimit.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/DirectLimit.lean#L8) (StacksCore). References: EGA 0 (4.3.2), “special case”; EGA III (6.5.6), “special case”; SGA 4 V (8.2.4), “special case”; SGA 5 V (1.2.1), “special case”.
 
 ## Tag 00DF, a lemma
 
@@ -234,14 +234,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`rTensor_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=rTensor_exact#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/RightExactness.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/RightExactness.lean#L8) (StacksCore). References: EGA 0 (4.1.5), “special case”; EGA III (7.2.6), “partial”; SGA 3 VIIB (0.3.2), “Corollary, special case”.
-- [`LinearMap.rTensor_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.rTensor_surjective#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/RightExactness.lean, line 9](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/TensorProduct/RightExactness.lean#L9) (StacksCore).
+- [`rTensor_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=rTensor_exact#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/RightExactness.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/RightExactness.lean#L8) (StacksCore). References: EGA 0 (4.1.5), “special case”; EGA III (7.2.6), “partial”; SGA 3 VIIB (0.3.2), “Corollary, special case”.
+- [`LinearMap.rTensor_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.rTensor_surjective#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/TensorProduct/RightExactness.lean, line 9](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/TensorProduct/RightExactness.lean#L9) (StacksCore).
 
 ## Tag 00DH, a remark
 
 [Tag 00DH](https://stacks.math.columbia.edu/tag/00DH) in the Stacks Project.
 
-**`tensorRight_not_preserve_exactness`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Counterexamples/TensorProduct.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Counterexamples/TensorProduct.lean#L25).
+**`tensorRight_not_preserve_exactness`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Counterexamples/TensorProduct.lean, line 25](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Counterexamples/TensorProduct.lean#L25).
 
 ```lean
 theorem tensorRight_not_preserve_exactness :
@@ -260,7 +260,7 @@ theorem tensorRight_not_preserve_exactness :
 
 [Tag 00DI](https://stacks.math.columbia.edu/tag/00DI) in the Stacks Project.
 
-**`TensorProduct.not_injective_rTensor_zmod_two_lsmul_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/NotLeftExact.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/TensorProduct/NotLeftExact.lean#L84).
+**`TensorProduct.not_injective_rTensor_zmod_two_lsmul_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/TensorProduct/NotLeftExact.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/TensorProduct/NotLeftExact.lean#L84).
 
 > **Stacks 00DI**.
 > Multiplication by `2` is an injective map of `ℤ`-modules `ℤ → ℤ`, but the induced map
@@ -280,13 +280,13 @@ public theorem TensorProduct.not_injective_rTensor_zmod_two_lsmul_two :
 
 Declarations registered for the tag:
 
-- [`Module.Flat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Flat#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Flat/Basic.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Flat/Basic.lean#L8) (StacksCore). References: EGA 0 (10.3.1.2); EGA 0 (10.3.1.3); EGA 0 (6.1.1); EGA IV (6.1.3); EGA IV (2.1.12); SGA 1 IV (4.3); SGA 3 VIIB (2.2.1), “special case”; SGA 4 V (1.1), “special case”; SGA 4 XVII (5.5.6.3); SGA 4½ Etat 0 (6.2), “special case”; SGA 5 IIIB (5.10); SGA 5 IIIB (6.1), “partial”; SGA 6 X (7.18.1).
+- [`Module.Flat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Flat#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Flat/Basic.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Flat/Basic.lean#L8) (StacksCore). References: EGA 0 (10.3.1.2); EGA 0 (10.3.1.3); EGA 0 (6.1.1); EGA IV (6.1.3); EGA IV (2.1.12); SGA 1 IV (4.3); SGA 3 VIIB (2.2.1), “special case”; SGA 4 V (1.1), “special case”; SGA 4 XVII (5.5.6.3); SGA 4½ Etat 0 (6.2), “special case”; SGA 5 IIIB (5.10); SGA 5 IIIB (6.1), “partial”; SGA 6 X (7.18.1).
 
 ## Tag 05BS, a lemma
 
 [Tag 05BS](https://stacks.math.columbia.edu/tag/05BS) in the Stacks Project.
 
-**`Module.FinitePresentation.tensorProduct`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/TensorProduct/Finite.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/TensorProduct/Finite.lean#L38). The attribute's comment: “part 2”.
+**`Module.FinitePresentation.tensorProduct`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/TensorProduct/Finite.lean, line 38](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/TensorProduct/Finite.lean#L38). The attribute's comment: “part 2”.
 
 > **Stacks 05BS (2).** The tensor product of two finitely presented modules is finitely
 > presented.
@@ -299,7 +299,7 @@ instance Module.FinitePresentation.tensorProduct
 
 Declarations registered for the tag:
 
-- [`Module.Finite.tensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.tensorProduct#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/TensorProduct/Finite.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/TensorProduct/Finite.lean#L31) (StacksCore): “part 1”. References: EGA 0 (5.2.1), “special case”.
+- [`Module.Finite.tensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.tensorProduct#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/TensorProduct/Finite.lean, line 31](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/TensorProduct/Finite.lean#L31) (StacksCore): “part 1”. References: EGA 0 (5.2.1), “special case”.
 
 ## Tag 00DK, a lemma
 
@@ -307,13 +307,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`LocalizedModule.equivTensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocalizedModule.equivTensorProduct#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Localization/BaseChange.lean, line 24](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Localization/BaseChange.lean#L24) (StacksCore). References: EGA 0 (1.2.5); EGA 0 (1.5.4), “partial”; EGA 0 (6.3.1); EGA 0 (6.3.3), “partial”.
+- [`LocalizedModule.equivTensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocalizedModule.equivTensorProduct#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Localization/BaseChange.lean, line 24](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Localization/BaseChange.lean#L24) (StacksCore). References: EGA 0 (1.2.5); EGA 0 (1.5.4), “partial”; EGA 0 (6.3.1); EGA 0 (6.3.3), “partial”.
 
 ## Tag 00DL, a lemma
 
 [Tag 00DL](https://stacks.math.columbia.edu/tag/00DL) in the Stacks Project.
 
-**`IsLocalization.tensorLocalizeEquivTensor`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Localization/BaseChange.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Localization/BaseChange.lean#L62). References: EGA 0 (1.3.4), “more general”.
+**`IsLocalization.tensorLocalizeEquivTensor`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Localization/BaseChange.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Localization/BaseChange.lean#L62). References: EGA 0 (1.3.4), “more general”.
 
 > **Stacks 00DL.** Localization commutes with tensor product: for any localization `P` of
 > `M ⊗[R] N` at `S`, there is a canonical `Rₛ`-linear isomorphism `M' ⊗[Rₛ] N' ≃ P`. Taking
@@ -333,4 +333,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.12, Tag 00CV](https://stacks.math.columbia.edu/tag/00CV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

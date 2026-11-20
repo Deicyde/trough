@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.76 Functorialities for Tor
 
-Section 10.76 of the Stacks Project, [Tag 00M7](https://stacks.math.columbia.edu/tag/00M7). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.76 of the Stacks Project, [Tag 00M7](https://stacks.math.columbia.edu/tag/00M7). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00M8, a lemma
 
 [Tag 00M8](https://stacks.math.columbia.edu/tag/00M8) in the Stacks Project.
 
-**`isIso_torBaseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/BaseChangeComparison.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Tor/BaseChangeComparison.lean#L397).
+**`isIso_torBaseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/BaseChangeComparison.lean, line 397](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Tor/BaseChangeComparison.lean#L397).
 
 > **Flat base change for `Tor`** (Stacks 00M8). Let `R → R'` be a flat homomorphism of
 > commutative rings and let `M`, `N` be `R`-modules. Then for every `i` the natural `R'`-linear map
@@ -33,7 +33,7 @@ theorem isIso_torBaseChangeComparison [Module.Flat R R'] (i : ℕ) (M N : Module
 
 [Tag 0BNF](https://stacks.math.columbia.edu/tag/0BNF) in the Stacks Project.
 
-**`tor_commutes_filtered_colimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/BaseChange.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Tor/BaseChange.lean#L439). References: EGA III (6.3.12), “special case”; EGA III (6.3.6), “special case”; EGA III (6.5.6), “special case”.
+**`tor_commutes_filtered_colimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Tor/BaseChange.lean, line 439](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Tor/BaseChange.lean#L439). References: EGA III (6.3.12), “special case”; EGA III (6.3.6), “special case”; EGA III (6.5.6), “special case”.
 
 > **Tor commutes with filtered colimits.** Applying `Tor_n^R(-, N)` to the direct-limit
 > colimit cocone of a directed system `(G i)` of `R`-modules yields again a colimit cocone, i.e. the
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.76, Tag 00M7](https://stacks.math.columbia.edu/tag/00M7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.12 Functoriality for stacks
 
-Section 8.12 of the Stacks Project, [Tag 04WA](https://stacks.math.columbia.edu/tag/04WA). 12 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 8.12 of the Stacks Project, [Tag 04WA](https://stacks.math.columbia.edu/tag/04WA). 12 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04WB, a lemma
 
 [Tag 04WB](https://stacks.math.columbia.edu/tag/04WB) in the Stacks Project.
 
-**`CategoryTheory.StrictPullback.isFibered_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/Pushforward.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/Pushforward.lean#L163).
+**`CategoryTheory.StrictPullback.isFibered_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/Pushforward.lean, line 163](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/Pushforward.lean#L163).
 
 > **Stacks 04WB**.
 > If `p : 𝒮 ⥤ 𝒟` is a fibred category, then so is the pushforward `u^p𝒮 ⥤ 𝒞` along any
@@ -29,7 +29,7 @@ theorem isFibered_structureFunctor (u : 𝒞 ⥤ 𝒟) (p : 𝒮 ⥤ 𝒟) [p.Is
 
 [Tag 04WC](https://stacks.math.columbia.edu/tag/04WC) in the Stacks Project.
 
-**`CategoryTheory.StrictPullback.isStack_structureFunctor_toGrothendieck`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PushforwardStackCovering.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PushforwardStackCovering.lean#L111).
+**`CategoryTheory.StrictPullback.isStack_structureFunctor_toGrothendieck`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PushforwardStackCovering.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PushforwardStackCovering.lean#L111).
 
 > **Stacks 04WC**.
 > Let `(𝒞, J₀)` be a site in the sense of Stacks 00VH, given by its coverings `J₀`, and let
@@ -56,7 +56,7 @@ theorem isStack_structureFunctor_toGrothendieck (J₀ : Precoverage 𝒞) [J₀.
 
 [Tag 04WD](https://stacks.math.columbia.edu/tag/04WD) in the Stacks Project.
 
-**`CategoryTheory.StrictPullback.isStack_isFiberedInGroupoids_structureFunctor_toGrothendieck`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PushforwardStackCovering.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PushforwardStackCovering.lean#L134). The attribute's comment: “a stack in groupoids (Stacks 02ZI) is rendered as `Functor.IsStack` together with `Functor.IsFiberedInGroupoids`; stacks over a site given by coverings are stacks for the Grothendieck topology the coverings generate”.
+**`CategoryTheory.StrictPullback.isStack_isFiberedInGroupoids_structureFunctor_toGrothendieck`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PushforwardStackCovering.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PushforwardStackCovering.lean#L134). The attribute's comment: “a stack in groupoids (Stacks 02ZI) is rendered as `Functor.IsStack` together with `Functor.IsFiberedInGroupoids`; stacks over a site given by coverings are stacks for the Grothendieck topology the coverings generate”.
 
 > **Stacks 04WD**.
 > Let `(𝒞, J₀)` be a site in the sense of Stacks 00VH, `(𝒟, K₀)` a category with coverings, and
@@ -84,7 +84,7 @@ theorem isStack_isFiberedInGroupoids_structureFunctor_toGrothendieck (J₀ : Pre
 
 [Tag 04WE](https://stacks.math.columbia.edu/tag/04WE) in the Stacks Project.
 
-**`CategoryTheory.pushforwardFibredCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/Pushforward.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/Pushforward.lean#L188).
+**`CategoryTheory.pushforwardFibredCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/Pushforward.lean, line 188](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/Pushforward.lean#L188).
 
 > **Stacks 04WE**.
 > Notation: for a morphism of sites `f : 𝒟 → 𝒞` given by a continuous functor
@@ -103,7 +103,7 @@ def pushforwardFibredCategory (J : GrothendieckTopology 𝒞) (K : GrothendieckT
 
 [Tag 04WF](https://stacks.math.columbia.edu/tag/04WF) in the Stacks Project.
 
-**`CategoryTheory.Comma.hasRightCalculusOfFractions_stronglyCartesianOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFractions.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFractions.lean#L273).
+**`CategoryTheory.Comma.hasRightCalculusOfFractions_stronglyCartesianOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFractions.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFractions.lean#L273).
 
 > **The morphisms with identity base component and strongly cartesian fibre component form a
 > right multiplicative system.** Let `u : 𝒞 ⥤ 𝒟` be a functor, let `p : 𝒮 ⥤ 𝒞` be a fibred category,
@@ -130,7 +130,7 @@ public theorem Comma.hasRightCalculusOfFractions_stronglyCartesianOver
 
 [Tag 04WG](https://stacks.math.columbia.edu/tag/04WG) in the Stacks Project.
 
-**`CategoryTheory.Comma.pullbackLocalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean#L125).
+**`CategoryTheory.Comma.pullbackLocalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean#L125).
 
 > **`u_p 𝒮 = R⁻¹ u_pp 𝒮`**, the localization of `u_pp 𝒮 = Comma (𝟭 𝒟) (p ⋙ u)` at the set `R`
 > of Stacks 04WF.
@@ -139,7 +139,7 @@ public theorem Comma.hasRightCalculusOfFractions_stronglyCartesianOver
 abbrev pullbackLocalization
 ```
 
-**`CategoryTheory.Comma.pullbackProj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean#L140).
+**`CategoryTheory.Comma.pullbackProj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean#L140).
 
 > **The structure functor `p_p : u_p 𝒮 ⥤ 𝒟`**, the extension of `p_pp` to the localization
 > `u_p 𝒮` obtained from the universal property because `p_pp` inverts `R`. This is how `u_p 𝒮` is
@@ -149,7 +149,7 @@ abbrev pullbackLocalization
 noncomputable def pullbackProj : pullbackLocalization p u ⥤ 𝒟
 ```
 
-**`CategoryTheory.Comma.isFibered_pullbackProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean#L328).
+**`CategoryTheory.Comma.isFibered_pullbackProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackFibred.lean#L328).
 
 > **`u_p 𝒮` is a fibred category over `𝒟`** (Stacks 04WG). Let `u : 𝒞 ⥤ 𝒟` be a functor, let
 > `p : 𝒮 ⥤ 𝒞` be a fibred category, assume `𝒞` has nonempty finite limits and that `u` commutes
@@ -169,7 +169,7 @@ theorem isFibered_pullbackProj
 
 [Tag 04WH](https://stacks.math.columbia.edu/tag/04WH) in the Stacks Project.
 
-**`CategoryTheory.Comma.isFiberedInGroupoids_pullbackProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackGroupoid.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackGroupoid.lean#L186).
+**`CategoryTheory.Comma.isFiberedInGroupoids_pullbackProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackGroupoid.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackGroupoid.lean#L186).
 
 > **`u_p 𝒮` is fibred in groupoids over `𝒟`** (Stacks 04WH). With notation and assumptions as in
 > Stacks 04WG — `u : 𝒞 ⥤ 𝒟` a functor commuting with nonempty finite limits, `𝒞` with nonempty finite
@@ -191,7 +191,7 @@ theorem isFiberedInGroupoids_pullbackProj (hp : p.IsFiberedInGroupoids)
 
 [Tag 04WI](https://stacks.math.columbia.edu/tag/04WI) in the Stacks Project.
 
-**`CategoryTheory.equivalenceIsFibredOneMorphismStrictPullbackPullbackLocalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackAdjunction.lean, line 1440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackAdjunction.lean#L1440).
+**`CategoryTheory.equivalenceIsFibredOneMorphismStrictPullbackPullbackLocalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackAdjunction.lean, line 1440](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackAdjunction.lean#L1440).
 
 > **The pullback of a fibred category along `u` is adjoint to the pushforward along `u`**
 > (Stacks 04WI). Let `u : 𝒞 ⥤ 𝒟` be a functor, let `p : 𝒮 ⥤ 𝒞` and `q : 𝒯 ⥤ 𝒟` be fibred
@@ -226,7 +226,7 @@ noncomputable def equivalenceIsFibredOneMorphismStrictPullbackPullbackLocalizati
 
 [Tag 04WJ](https://stacks.math.columbia.edu/tag/04WJ) in the Stacks Project.
 
-**`CategoryTheory.Comma.pullbackStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStack.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStack.lean#L115).
+**`CategoryTheory.Comma.pullbackStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStack.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStack.lean#L115).
 
 > **The pullback `f⁻¹𝒮` of the stack `𝒮` along the morphism of sites `f`** (Stacks 04WJ), given
 > as its structure functor over `𝒟`.
@@ -253,7 +253,7 @@ def pullbackStack (p : 𝒮 ⥤ 𝒞) (u : 𝒞 ⥤ 𝒟) [p.IsFibered] [HasFini
     𝒳 ⥤ 𝒟
 ```
 
-**`CategoryTheory.Comma.pullbackStackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStack.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStack.lean#L131).
+**`CategoryTheory.Comma.pullbackStackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStack.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStack.lean#L131).
 
 > **The canonical 1-morphism `u_p 𝒮 ⥤ f⁻¹𝒮`** (Stacks 04WJ), exhibiting the pullback of `𝒮`
 > along `f` as the stackification of `u_p 𝒮`.
@@ -276,7 +276,7 @@ def pullbackStackMap (p : 𝒮 ⥤ 𝒞) (u : 𝒞 ⥤ 𝒟) [p.IsFibered] [HasF
 
 [Tag 04WK](https://stacks.math.columbia.edu/tag/04WK) in the Stacks Project.
 
-**`CategoryTheory.Functor.equivalenceFibredMorStrictPullbackStackification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackAdjunction.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackAdjunction.lean#L195).
+**`CategoryTheory.Functor.equivalenceFibredMorStrictPullbackStackification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackAdjunction.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackAdjunction.lean#L195).
 
 > **The pullback of a stack along `f` is adjoint to the pushforward along `f`** (Stacks 04WK).
 > Let `f : 𝒟 ⟶ 𝒞` be the morphism of sites given by a functor `u : 𝒞 ⥤ 𝒟` as in Sites 00X6, let
@@ -307,7 +307,7 @@ noncomputable def equivalenceFibredMorStrictPullbackStackification
     FibredMor p (StrictPullback.structureFunctor u q) ≌ FibredMor p' q
 ```
 
-**`CategoryTheory.Functor.equivalenceFibredMorPushforwardPullbackStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackAdjunction.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackAdjunction.lean#L241).
+**`CategoryTheory.Functor.equivalenceFibredMorPushforwardPullbackStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackAdjunction.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackAdjunction.lean#L241).
 
 > **Stacks 04WK**, written with the pushforward `f_*𝒯` of Stacks 04WE and the pullback `f⁻¹𝒮`
 > of Stacks 04WJ. Let `f : 𝒟 ⟶ 𝒞` be the morphism of sites attached by Sites 00X6 to a continuous
@@ -341,7 +341,7 @@ noncomputable def equivalenceFibredMorPushforwardPullbackStack
 
 [Tag 04WR](https://stacks.math.columbia.edu/tag/04WR) in the Stacks Project.
 
-**`CategoryTheory.pullback_stackification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackification/LocalEssSurj.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackification/LocalEssSurj.lean#L259).
+**`CategoryTheory.pullback_stackification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackification/LocalEssSurj.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackification/LocalEssSurj.lean#L259).
 
 > Let `f : 𝒟 ⟶ 𝒞` be the morphism of sites given by a continuous
 > `u : 𝒞 ⥤ 𝒟` satisfying the hypotheses of Sites 00X6, let `p : 𝒮 ⥤ 𝒞` be a fibred category and let
@@ -394,7 +394,7 @@ theorem pullback_stackification
 
 [Tag 04WS](https://stacks.math.columbia.edu/tag/04WS) in the Stacks Project.
 
-**`CategoryTheory.Comma.equivalenceOverPullbackStackCan`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackEquivalence.lean, line 1092](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackEquivalence.lean#L1092). The attribute's comment: “(1)”.
+**`CategoryTheory.Comma.equivalenceOverPullbackStackCan`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackEquivalence.lean, line 1092](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackEquivalence.lean#L1092). The attribute's comment: “(1)”.
 
 > **Stacks 04WS (1), as data.** Let `u : 𝒞 ⥤ 𝒟` satisfy the assumptions of Sites 00XU —
 > continuous, cocontinuous, fully faithful, `𝒞` finitely complete and `u` left exact — and let
@@ -419,7 +419,7 @@ noncomputable def equivalenceOverPullbackStackCan
       (pullbackStackCan p u hG)
 ```
 
-**`CategoryTheory.Comma.equivalenceFibredMorPullbackStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackEquivalence.lean, line 1172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackEquivalence.lean#L1172). The attribute's comment: “(2)”.
+**`CategoryTheory.Comma.equivalenceFibredMorPullbackStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackEquivalence.lean, line 1172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Functoriality/PullbackStackEquivalence.lean#L1172). The attribute's comment: “(2)”.
 
 > **Stacks 04WS (2), for the pullbacks given by supplied stackifications.** Let `u : 𝒞 ⥤ 𝒟`
 > satisfy the assumptions of Sites 00XU and let `f : 𝒟 ⟶ 𝒞` be the associated morphism of sites.
@@ -448,4 +448,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.12, Tag 04WA](https://stacks.math.columbia.edu/tag/04WA)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

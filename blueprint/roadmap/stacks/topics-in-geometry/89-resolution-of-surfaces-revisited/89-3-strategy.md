@@ -8,13 +8,13 @@ proof: formalized
 
 # 89.3 Strategy
 
-Section 89.3 of the Stacks Project, [Tag 0BH9](https://stacks.math.columbia.edu/tag/0BH9). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 89.3 of the Stacks Project, [Tag 0BH9](https://stacks.math.columbia.edu/tag/0BH9). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BHA, an equation
 
 [Tag 0BHA](https://stacks.math.columbia.edu/tag/0BHA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.modificationsAwayFromPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean#L274). The attribute's comment: “the source category of the functor”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.modificationsAwayFromPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean#L274). The attribute's comment: “the source category of the functor”.
 
 > **Stacks 0BHA.** The category `C_{X, {x₁, …, xₙ}}` of algebraic spaces over `X` which are
 > unchanged over `X ∖ {x₁, …, xₙ}`.
@@ -23,7 +23,7 @@ Section 89.3 of the Stacks Project, [Tag 0BH9](https://stacks.math.columbia.edu/
 abbrev modificationsAwayFromPoints
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.modificationsAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean#L279). The attribute's comment: “the factors of the target category of the functor”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.modificationsAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean#L279). The attribute's comment: “the factors of the target category of the functor”.
 
 > **Stacks 0BHA.** The category `C_{Uᵢ, uᵢ}` of algebraic spaces over the `i`th neighborhood
 > which are unchanged over `Uᵢ ∖ {uᵢ}`.
@@ -32,7 +32,7 @@ abbrev modificationsAwayFromPoints
 abbrev modificationsAt (i : Fin n)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.restrictionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean#L300). The attribute's comment: “the functor given by base change”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.restrictionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean#L300). The attribute's comment: “the functor given by base change”.
 
 > **Stacks 0BHA.** The functor `F : C_{X, {x₁, …, xₙ}} ⟶ C_{U₁, u₁} × … × C_{Uₙ, uₙ}` given by
 > base change along the chosen elementary étale neighborhoods.
@@ -42,7 +42,7 @@ def restrictionFunctor :
     D.modificationsAwayFromPoints ⥤ ∀ i : Fin n, D.modificationsAt i
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.restrictionFunctorCompιIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean#L306). The attribute's comment: “base change computes the functor”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.restrictionFunctorCompιIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean, line 306](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPoints.lean#L306). The attribute's comment: “base change computes the functor”.
 
 > **Stacks 0BHA.** The `i`th component of `F` is base change along `Uᵢ ⟶ X`.
 
@@ -58,7 +58,7 @@ def restrictionFunctorCompιIso (i : Fin n) :
 
 [Tag 0BHB](https://stacks.math.columbia.edu/tag/0BHB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isEquivalence_restrictionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationExcisionEssSurj.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationExcisionEssSurj.lean#L109).
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isEquivalence_restrictionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationExcisionEssSurj.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationExcisionEssSurj.lean#L109).
 
 > **Stacks 0BHB.** The functor `F` of Stacks 0BHA, base change of the modifications of `X`
 > away from the chosen closed points to the chosen elementary étale neighborhoods, is an
@@ -84,7 +84,7 @@ theorem isEquivalence_restrictionFunctor : D.restrictionFunctor.IsEquivalence
 
 [Tag 0BHC](https://stacks.math.columbia.edu/tag/0BHC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isQuasiCompact_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L380). The attribute's comment: “quasi-compactness”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isQuasiCompact_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 380](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L380). The attribute's comment: “quasi-compactness”.
 
 > **Stacks 0BHC, quasi-compactness.** A modification of `X` away from `{x₁, …, xₙ}` is
 > quasi-compact exactly when each of its restrictions under the functor `F` of Stacks 0BHA is.
@@ -95,7 +95,7 @@ theorem isQuasiCompact_iff_forall_restrictionComponent :
       ∀ i, IsQuasiCompact B S hS ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isQuasiSeparated_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L403). The attribute's comment: “quasi-separatedness”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isQuasiSeparated_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 403](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L403). The attribute's comment: “quasi-separatedness”.
 
 > **Stacks 0BHC, quasi-separatedness.** A modification of `X` away from `{x₁, …, xₙ}` is
 > quasi-separated exactly when each of its restrictions under the functor `F` of Stacks 0BHA
@@ -107,7 +107,7 @@ theorem isQuasiSeparated_iff_forall_restrictionComponent :
       ∀ i, IsQuasiSeparated B S hS ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isSeparated_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L426). The attribute's comment: “separatedness”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isSeparated_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 426](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L426). The attribute's comment: “separatedness”.
 
 > **Stacks 0BHC, separatedness.** A modification of `X` away from `{x₁, …, xₙ}` is separated
 > exactly when each of its restrictions under the functor `F` of Stacks 0BHA is.
@@ -118,7 +118,7 @@ theorem isSeparated_iff_forall_restrictionComponent :
       ∀ i, IsSeparated B S hS ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isLocallyOfFinitePresentation_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L454). The attribute's comment: “local finite presentation”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isLocallyOfFinitePresentation_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 454](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L454). The attribute's comment: “local finite presentation”.
 
 > **Stacks 0BHC, local finite presentation.** A modification of `X` away from `{x₁, …, xₙ}`
 > is locally of finite presentation exactly when each of its restrictions under the functor `F`
@@ -131,7 +131,7 @@ theorem isLocallyOfFinitePresentation_iff_forall_restrictionComponent :
         ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isLocallyOfFiniteType_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L486). The attribute's comment: “local finite type”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isLocallyOfFiniteType_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 486](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L486). The attribute's comment: “local finite type”.
 
 > **Stacks 0BHC, local finite type.** A modification of `X` away from `{x₁, …, xₙ}` is
 > locally of finite type exactly when each of its restrictions under the functor `F` of
@@ -143,7 +143,7 @@ theorem isLocallyOfFiniteType_iff_forall_restrictionComponent :
       ∀ i, IsLocallyOfFiniteType B S hS ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isFiniteType_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L518). The attribute's comment: “finite type”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isFiniteType_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 518](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L518). The attribute's comment: “finite type”.
 
 > **Stacks 0BHC, finite type.** A modification of `X` away from `{x₁, …, xₙ}` is of finite
 > type exactly when each of its restrictions under the functor `F` of Stacks 0BHA is.
@@ -154,7 +154,7 @@ theorem isFiniteType_iff_forall_restrictionComponent :
       ∀ i, IsFiniteType B S hS ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isFinitePresentation_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L530). The attribute's comment: “finite presentation”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isFinitePresentation_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 530](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L530). The attribute's comment: “finite presentation”.
 
 > **Stacks 0BHC, finite presentation.** A modification of `X` away from `{x₁, …, xₙ}` is of
 > finite presentation exactly when each of its restrictions under the functor `F` of
@@ -166,7 +166,7 @@ theorem isFinitePresentation_iff_forall_restrictionComponent :
       ∀ i, IsFinitePresentation B S hS ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isProper_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L543). The attribute's comment: “properness”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isProper_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 543](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L543). The attribute's comment: “properness”.
 
 > **Stacks 0BHC, properness.** A modification of `X` away from `{x₁, …, xₙ}` is proper
 > exactly when each of its restrictions under the functor `F` of Stacks 0BHA is.
@@ -177,7 +177,7 @@ theorem isProper_iff_forall_restrictionComponent :
       ∀ i, IsProper B S hS ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isIntegralHom_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L565). The attribute's comment: “integrality”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isIntegralHom_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 565](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L565). The attribute's comment: “integrality”.
 
 > **Stacks 0BHC, integrality.** A modification of `X` away from `{x₁, …, xₙ}` is integral
 > exactly when each of its restrictions under the functor `F` of Stacks 0BHA is.
@@ -188,7 +188,7 @@ theorem isIntegralHom_iff_forall_restrictionComponent :
       ∀ i, IsIntegralHom B S hS ((D.restrictionComponent i).obj M).obj.hom
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isFinite_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L583). The attribute's comment: “finiteness”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.isFinite_iff_forall_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 583](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L583). The attribute's comment: “finiteness”.
 
 > **Stacks 0BHC, finiteness.** A modification of `X` away from `{x₁, …, xₙ}` is finite
 > exactly when each of its restrictions under the functor `F` of Stacks 0BHA is.
@@ -203,7 +203,7 @@ theorem isFinite_iff_forall_restrictionComponent :
 
 [Tag 0BHD](https://stacks.math.columbia.edu/tag/0BHD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.fibreAtPointIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L223). The attribute's comment: “the fibres agree”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.fibreAtPointIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationsAtClosedPointsProperties.lean#L223). The attribute's comment: “the fibres agree”.
 
 > **Stacks 0BHD.** If `f : Y ⟶ X` corresponds to `gᵢ : Yᵢ ⟶ Uᵢ` under the functor `F` of
 > Stacks 0BHA, then `Y_{xᵢ} ≅ (Yᵢ)_{uᵢ}` as algebraic spaces: both are the fibre product of `f`
@@ -221,4 +221,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 89.3, Tag 0BH9](https://stacks.math.columbia.edu/tag/0BH9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

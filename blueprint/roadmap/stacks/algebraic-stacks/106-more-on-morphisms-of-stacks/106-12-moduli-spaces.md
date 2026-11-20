@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.12 Moduli spaces
 
-Section 106.12 of the Stacks Project, [Tag 0DUF](https://stacks.math.columbia.edu/tag/0DUF). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.12 of the Stacks Project, [Tag 0DUF](https://stacks.math.columbia.edu/tag/0DUF). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DUG, a definition
 
 [Tag 0DUG](https://stacks.math.columbia.edu/tag/0DUG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsCategoricalModuliSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean#L60). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.IsCategoricalModuliSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean#L60). The attribute's comment: “part (1)”.
 
 > A 1-morphism from a category fibred in groupoids to the
 > category attached to an algebraic space `Y` is a *categorical moduli space* when every
@@ -29,7 +29,7 @@ abbrev IsCategoricalModuliSpace
     (f : 𝒳 ⟶ fibredCategory B S hS Y.obj) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsUniformCategoricalModuliSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean#L73). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.IsUniformCategoricalModuliSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean#L73). The attribute's comment: “part (2)”.
 
 > A categorical moduli space is *uniform* when every base change of it along a flat morphism
 > of algebraic spaces, given by any 2-fibre product of the cospan, is again a categorical moduli
@@ -42,7 +42,7 @@ abbrev IsUniformCategoricalModuliSpace
     (f : 𝒳 ⟶ fibredCategory B S hS Y.obj) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsCategoricalModuliSpaceIn`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean#L86). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Stack.IsCategoricalModuliSpaceIn`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean#L86). The attribute's comment: “part (3)”.
 
 > The universal factorization property with the target algebraic spaces restricted to the full
 > subcategory selected by the object predicate `C`, which `Y` is required to meet.
@@ -55,7 +55,7 @@ abbrev IsCategoricalModuliSpaceIn
     (f : 𝒳 ⟶ fibredCategory B S hS Y.obj) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsUniformCategoricalModuliSpaceIn`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean#L101). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Stack.IsUniformCategoricalModuliSpaceIn`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/CategoricalModuliSpace.lean#L101). The attribute's comment: “part (4)”.
 
 > A categorical moduli space in the full subcategory selected by
 > `C` is *uniform in* `C` when its base change along every flat morphism of that subcategory is
@@ -73,7 +73,7 @@ abbrev IsUniformCategoricalModuliSpaceIn
 
 [Tag 0DUH](https://stacks.math.columbia.edu/tag/0DUH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.quotientStackHomEquivInvariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/MorphismsToAlgebraicSpaces.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/MorphismsToAlgebraicSpaces.lean#L294).
+**`AlgebraicGeometry.Stack.quotientStackHomEquivInvariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/MorphismsToAlgebraicSpaces.lean, line 294](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/MorphismsToAlgebraicSpaces.lean#L294).
 
 > For a groupoid in algebraic spaces `(U, R, s, t, c)` over an algebraic space `B` over a scheme
 > `S` of a big fppf site, and an algebraic space `Y` over `S`, the 1-morphisms `[U/R] ⟶ Y` of stacks
@@ -86,7 +86,7 @@ noncomputable def quotientStackHomEquivInvariant :
       {φ : G.objects ⟶ Y // Space.IsInvariant (Space.groupoidPreRelation G) φ.hom}
 ```
 
-**`AlgebraicGeometry.Stack.quotientStackHomEquivInvariant_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/MorphismsToAlgebraicSpaces.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/MorphismsToAlgebraicSpaces.lean#L323). The attribute's comment: “the correspondence is restriction along the projection”.
+**`AlgebraicGeometry.Stack.quotientStackHomEquivInvariant_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/MorphismsToAlgebraicSpaces.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/MorphismsToAlgebraicSpaces.lean#L323). The attribute's comment: “the correspondence is restriction along the projection”.
 
 > The correspondence is restriction along the projection: the 1-morphism `[U/R] ⟶ Y`
 > corresponding to an `R`-invariant morphism `φ : U ⟶ Y` restricts along the projection
@@ -103,7 +103,7 @@ theorem quotientStackHomEquivInvariant_spec
 
 [Tag 0DUI](https://stacks.math.columbia.edu/tag/0DUI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.quotientStack_isCategoricalModuliSpace_iff_isCategoricalQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean#L265). The attribute's comment: “the non-uniform case, for a groupoid over the terminal base as in the source”.
+**`AlgebraicGeometry.Stack.quotientStack_isCategoricalModuliSpace_iff_isCategoricalQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean, line 265](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean#L265). The attribute's comment: “the non-uniform case, for a groupoid over the terminal base as in the source”.
 
 > Let `G = (U, R, s, t, c)` be a groupoid in algebraic spaces over a terminal base, let
 > `j = (t, s)` be its pre-relation and let `f : [U/R] ⟶ Y` be a 1-morphism to the category attached
@@ -122,7 +122,7 @@ theorem quotientStack_isCategoricalModuliSpace_iff_isCategoricalQuotient (hB : I
           (Over.mk G.objectsToBase : Over B) ⟶ Over.mk (hB.from Y))
 ```
 
-**`AlgebraicGeometry.Stack.quotientStack_isCategoricalModuliSpace_iff_isCategoricalQuotient_prodLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean#L284). The attribute's comment: “the non-uniform case at the pre-relation (t, s) the groupoid cuts out”.
+**`AlgebraicGeometry.Stack.quotientStack_isCategoricalModuliSpace_iff_isCategoricalQuotient_prodLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean, line 284](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean#L284). The attribute's comment: “the non-uniform case at the pre-relation (t, s) the groupoid cuts out”.
 
 > Let `G` be a groupoid in algebraic spaces over a terminal base and let `f : [U/R] ⟶ Y` be a
 > 1-morphism to the category attached to an algebraic space `Y`. Then `f` is a categorical moduli
@@ -142,7 +142,7 @@ theorem quotientStack_isCategoricalModuliSpace_iff_isCategoricalQuotient_prodLif
           (Over.mk G.objectsToBase : Over B) ⟶ Over.mk (hB.from Y))
 ```
 
-**`AlgebraicGeometry.Stack.quotientStack_isCategoricalModuliSpaceIn_iff_isCategoricalQuotientIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean#L303). The attribute's comment: “the non-uniform case in a full subcategory, for a groupoid over the terminal base”.
+**`AlgebraicGeometry.Stack.quotientStack_isCategoricalModuliSpaceIn_iff_isCategoricalQuotientIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean, line 303](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackModuliSpace.lean#L303). The attribute's comment: “the non-uniform case in a full subcategory, for a groupoid over the terminal base”.
 
 > With the same data as
 > `AlgebraicGeometry.Stack.quotientStack_isCategoricalModuliSpace_iff_isCategoricalQuotient` and a
@@ -163,7 +163,7 @@ theorem quotientStack_isCategoricalModuliSpaceIn_iff_isCategoricalQuotientIn (hB
           (Over.mk G.objectsToBase : Over B) ⟶ Over.mk (hB.from Y))
 ```
 
-**`AlgebraicGeometry.Stack.quotientStack_isUniformCategoricalModuliSpace_iff_isUniformCategoricalQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean#L558). The attribute's comment: “the uniform case, for a groupoid over the terminal base as in the source”.
+**`AlgebraicGeometry.Stack.quotientStack_isUniformCategoricalModuliSpace_iff_isUniformCategoricalQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean, line 558](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean#L558). The attribute's comment: “the uniform case, for a groupoid over the terminal base as in the source”.
 
 > Let `G = (U, R, s, t, c)` be a groupoid in algebraic spaces over a terminal base, let
 > `f : [U/R] ⟶ Y` be a 1-morphism to the category attached to an algebraic space `Y` and let
@@ -195,7 +195,7 @@ theorem quotientStack_isUniformCategoricalModuliSpace_iff_isUniformCategoricalQu
             (restrictedMorphism_isInvariant G f) a)
 ```
 
-**`AlgebraicGeometry.Stack.quotientStack_isUniformCategoricalModuliSpaceIn_iff_isUniformCategoricalQuotientIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean#L588). The attribute's comment: “variant: the uniform case in a full subcategory, over every flat Y' ⟶ Y and with the subcategory containing every base change of R and U; the tag is quotientStack\_isUniformModuliSpaceIn\_iff\_isUniformQuotientIn\_of\_isClosedUnderLimitsOfShape”.
+**`AlgebraicGeometry.Stack.quotientStack_isUniformCategoricalModuliSpaceIn_iff_isUniformCategoricalQuotientIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean, line 588](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean#L588). The attribute's comment: “variant: the uniform case in a full subcategory, over every flat Y' ⟶ Y and with the subcategory containing every base change of R and U; the tag is quotientStack\_isUniformModuliSpaceIn\_iff\_isUniformQuotientIn\_of\_isClosedUnderLimitsOfShape”.
 
 > The uniform case in a full subcategory. With the same data as
 > `quotientStack_isUniformCategoricalModuliSpace_iff_isUniformCategoricalQuotient` and a full
@@ -231,7 +231,7 @@ theorem quotientStack_isUniformCategoricalModuliSpaceIn_iff_isUniformCategorical
             (restrictedMorphism_isInvariant G f) a)
 ```
 
-**`AlgebraicGeometry.Stack.quotientStack_isUniformModuliSpaceIn_iff_isUniformQuotientIn_of_isClosedUnderLimitsOfShape`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean#L626). The attribute's comment: “uniform, in a full subcategory”.
+**`AlgebraicGeometry.Stack.quotientStack_isUniformModuliSpaceIn_iff_isUniformQuotientIn_of_isClosedUnderLimitsOfShape`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean, line 626](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean#L626). The attribute's comment: “uniform, in a full subcategory”.
 
 > Let `G = (U, R, s, t, c)` be a groupoid in algebraic spaces over a terminal base,
 > `f : [U/R] ⟶ Y` a 1-morphism to the category attached to an algebraic space `Y`, and `φ : U ⟶ Y`
@@ -270,7 +270,7 @@ theorem quotientStack_isUniformModuliSpaceIn_iff_isUniformQuotientIn_of_isClosed
 
 [Tag 0DUJ](https://stacks.math.columbia.edu/tag/0DUJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isUniformCategoricalModuliSpace_of_affineFlatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniformCategoricalModuliSpaceAffine.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniformCategoricalModuliSpaceAffine.lean#L330).
+**`AlgebraicGeometry.Stack.isUniformCategoricalModuliSpace_of_affineFlatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniformCategoricalModuliSpaceAffine.lean, line 330](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/UniformCategoricalModuliSpaceAffine.lean#L330).
 
 > **Stacks 0DUJ.** A 1-morphism from a category fibred in groupoids over the big fppf site of
 > `S` to the category attached to an algebraic space `Y` is a *uniform* categorical moduli space as
@@ -302,4 +302,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.12, Tag 0DUF](https://stacks.math.columbia.edu/tag/0DUF)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

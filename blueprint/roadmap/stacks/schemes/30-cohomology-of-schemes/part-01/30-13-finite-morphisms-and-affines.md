@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.13 Finite morphisms and affines
 
-Section 30.13 of the Stacks Project, [Tag 01YN](https://stacks.math.columbia.edu/tag/01YN). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 30.13 of the Stacks Project, [Tag 01YN](https://stacks.math.columbia.edu/tag/01YN). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 01YO, a lemma
 
 [Tag 01YO](https://stacks.math.columbia.edu/tag/01YO) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FiniteSurjectiveCoherentSupport.exists_isCoherent_supp_pushforward_eq_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteSurjectiveCoherentSupport/Basic.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiniteSurjectiveCoherentSupport/Basic.lean#L341).
+**`Stacks.AlgebraicGeometry.FiniteSurjectiveCoherentSupport.exists_isCoherent_supp_pushforward_eq_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteSurjectiveCoherentSupport/Basic.lean, line 341](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FiniteSurjectiveCoherentSupport/Basic.lean#L341).
 
 > **[Stacks, Tag 01YO].** Let `f : Y ⟶ X` be finite and surjective with `X` locally Noetherian
 > and let `i : Z ⟶ X` be an integral closed subscheme with generic point `ξ`. Then there is a
@@ -42,7 +42,7 @@ theorem exists_isCoherent_supp_pushforward_eq_range
 
 [Tag 01YP](https://stacks.math.columbia.edu/tag/01YP) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.PushforwardIdealSubsheaf.idealPowSmul_pushforward_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SheafPushforward/Basic.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SheafPushforward/Basic.lean#L228). The attribute's comment: “𝒥 · f₊ℱ = f₊((f⁻¹𝒥) · ℱ) as an equality of subsheaves of f₊ℱ, for f affine, ℱ quasi-coherent and 𝒥 a quasi-coherent sheaf of ideals”.
+**`Stacks.AlgebraicGeometry.PushforwardIdealSubsheaf.idealPowSmul_pushforward_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SheafPushforward/Basic.lean, line 228](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SheafPushforward/Basic.lean#L228). The attribute's comment: “𝒥 · f₊ℱ = f₊((f⁻¹𝒥) · ℱ) as an equality of subsheaves of f₊ℱ, for f affine, ℱ quasi-coherent and 𝒥 a quasi-coherent sheaf of ideals”.
 
 > **[Stacks, Tag 01YP], as an equality of subsheaves of `f₊ℱ`.** For an affine morphism
 > `f : Y ⟶ X`, a quasi-coherent `ℱ` and a quasi-coherent sheaf of ideals `𝒥` on `X`,
@@ -73,7 +73,7 @@ theorem idealPowSmul_pushforward_eq (f : Y ⟶ X) [IsAffineHom f] (J : X.IdealSh
 
 [Tag 01YQ](https://stacks.math.columbia.edu/tag/01YQ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.Tag01YQClauseThree.isAffine_of_isFinite_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClauseThree/GenericStalkInput.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClauseThree/GenericStalkInput.lean#L61).
+**`Stacks.AlgebraicGeometry.Tag01YQClauseThree.isAffine_of_isFinite_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClauseThree/GenericStalkInput.lean, line 61](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ClauseThree/GenericStalkInput.lean#L61).
 
 > A Noetherian scheme admitting a finite surjective morphism from an affine scheme is affine.
 
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.13, Tag 01YN](https://stacks.math.columbia.edu/tag/01YN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

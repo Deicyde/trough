@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.10 Inherited topologies
 
-Section 8.10 of the Stacks Project, [Tag 06NT](https://stacks.math.columbia.edu/tag/06NT). 6 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 8.10 of the Stacks Project, [Tag 06NT](https://stacks.math.columbia.edu/tag/06NT). 6 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06NU, a lemma
 
 [Tag 06NU](https://stacks.math.columbia.edu/tag/06NU) in the Stacks Project.
 
-**`CategoryTheory.Functor.inheritedPrecoverage_hasIsos`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L160). The attribute's comment: “Axiom (1): isomorphisms cover.”.
+**`CategoryTheory.Functor.inheritedPrecoverage_hasIsos`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L160). The attribute's comment: “Axiom (1): isomorphisms cover.”.
 
 > **Stacks 06NU**, axiom (1) of a site: a family consisting of a single isomorphism of `𝒮` is a
 > covering, because an isomorphism is strongly cartesian and its image is an isomorphism of `𝒞`.
@@ -24,7 +24,7 @@ instance inheritedPrecoverage_hasIsos [Precoverage.HasIsos K] :
     Precoverage.HasIsos (p.inheritedPrecoverage K)
 ```
 
-**`CategoryTheory.Functor.inheritedPrecoverage_isStableUnderComposition`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L173). The attribute's comment: “Axiom (2): coverings are stable under composition.”.
+**`CategoryTheory.Functor.inheritedPrecoverage_isStableUnderComposition`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L173). The attribute's comment: “Axiom (2): coverings are stable under composition.”.
 
 > **Stacks 06NU**, axiom (2) of a site: refining a covering by coverings again gives a covering,
 > because a composition of strongly cartesian morphisms is strongly cartesian (Stacks 02XL) and the
@@ -36,7 +36,7 @@ instance inheritedPrecoverage_isStableUnderComposition
     Precoverage.IsStableUnderComposition (p.inheritedPrecoverage K)
 ```
 
-**`CategoryTheory.Functor.inheritedPrecoverage_hasPullbacks_of_hasPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L197). The attribute's comment: “Axiom (3), existence of the fibre products, for a site with `K.HasPullbacks`.”.
+**`CategoryTheory.Functor.inheritedPrecoverage_hasPullbacks_of_hasPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L197). The attribute's comment: “Axiom (3), existence of the fibre products, for a site with `K.HasPullbacks`.”.
 
 > **Stacks 06NU**, the existence half of axiom (3) of a site: given a covering `{ x i ⟶ x }` of
 > `𝒮` and a morphism `y ⟶ x`, the fibre products `x i ×_x y` exist. The site `(𝒞, K)` is only
@@ -49,7 +49,7 @@ instance inheritedPrecoverage_hasPullbacks_of_hasPullbacks [p.IsFibered] [K.HasP
     (p.inheritedPrecoverage K).HasPullbacks
 ```
 
-**`CategoryTheory.Functor.inheritedPrecoverage_isStableUnderBaseChange_of_hasPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L212). The attribute's comment: “Axiom (3), base change of a covering is a covering, given `K.HasPullbacks`.”.
+**`CategoryTheory.Functor.inheritedPrecoverage_isStableUnderBaseChange_of_hasPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L212). The attribute's comment: “Axiom (3), base change of a covering is a covering, given `K.HasPullbacks`.”.
 
 > **Stacks 06NU**, the covering half of axiom (3) of a site: the family of projections
 > `{ x i ×_x y ⟶ y }` of a covering `{ x i ⟶ x }` along `y ⟶ x` is again a covering. The site
@@ -67,7 +67,7 @@ instance inheritedPrecoverage_isStableUnderBaseChange_of_hasPullbacks [p.IsFiber
 
 [Tag 06NV](https://stacks.math.columbia.edu/tag/06NV) in the Stacks Project.
 
-**`CategoryTheory.Functor.inheritedTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L253).
+**`CategoryTheory.Functor.inheritedTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean, line 253](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/InheritedSite.lean#L253).
 
 > The Grothendieck topology on a fibred category `p : 𝒮 ⥤ 𝒞` inherited from a topology `J` on the
 > base: the topology generated by the collection `CategoryTheory.Functor.inheritedPrecoverage` of
@@ -82,7 +82,7 @@ def inheritedTopology (p : 𝒮 ⥤ 𝒞) (J : GrothendieckTopology 𝒞) : Grot
 
 [Tag 06NW](https://stacks.math.columbia.edu/tag/06NW) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.isContinuous_inheritedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismContinuity.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismContinuity.lean#L292). The attribute's comment: “continuity of `u` for the inherited topologies; no fibre products in the base”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.isContinuous_inheritedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismContinuity.lean, line 292](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismContinuity.lean#L292). The attribute's comment: “continuity of `u` for the inherited topologies; no fibre products in the base”.
 
 > **Stacks 06NW, continuity half, for a 1-morphism of fibred categories, over any base.** A
 > 1-morphism `u` of fibred categories over a site `(𝒞, J)` is a continuous functor from the topology
@@ -95,7 +95,7 @@ theorem IsFibredOneMorphism.isContinuous_inheritedTopology (J : GrothendieckTopo
     u.IsContinuous (p'.inheritedTopology J) (p.inheritedTopology J)
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.isCocontinuous_inheritedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismContinuity.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismContinuity.lean#L342). The attribute's comment: “cocontinuity of `u` for the inherited topologies; no fibre products in the base”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.isCocontinuous_inheritedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismContinuity.lean, line 342](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismContinuity.lean#L342). The attribute's comment: “cocontinuity of `u` for the inherited topologies; no fibre products in the base”.
 
 > **Stacks 06NW, cocontinuity half, for a 1-morphism of fibred categories, over any base.** A
 > 1-morphism `u` of fibred categories over a site `(𝒞, J)` is a cocontinuous functor from the
@@ -109,7 +109,7 @@ theorem IsFibredOneMorphism.isCocontinuous_inheritedTopology (J : GrothendieckTo
     u.IsCocontinuous (p'.inheritedTopology J) (p.inheritedTopology J)
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.sheafPushforwardContinuousCompSheafToPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L73). The attribute's comment: “`f⁻¹ = F^s = F^p`: the inverse image is restriction along `F.op`, unsheafified.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.sheafPushforwardContinuousCompSheafToPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L73). The attribute's comment: “`f⁻¹ = F^s = F^p`: the inverse image is restriction along `F.op`, unsheafified.”.
 
 > **Stacks 06NW, `f⁻¹ = F^p`, over any base.** The inverse image of the morphism of topoi
 > induced by a 1-morphism `F` of fibred categories over a site is plain restriction along `F.op`: as
@@ -124,7 +124,7 @@ def IsFibredOneMorphism.sheafPushforwardContinuousCompSheafToPresheafIso :
       sheafToPresheaf (q.inheritedTopology J) A ⋙ (whiskeringLeft _ _ _).obj F.op
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.sheafPushforwardContinuous_obj_obj_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L85). The attribute's comment: “The formula `f⁻¹(𝒢)(x) = 𝒢(F(x))`.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.sheafPushforwardContinuous_obj_obj_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L85). The attribute's comment: “The formula `f⁻¹(𝒢)(x) = 𝒢(F(x))`.”.
 
 > **Stacks 06NW, `f⁻¹(𝒢)(x) = 𝒢(F(x))`, over any base.** The sections of the inverse image of
 > a sheaf `𝒢` on `𝒴` over an object `x` of `𝒳` are the sections of `𝒢` over `F x`. No fibre
@@ -139,7 +139,7 @@ theorem IsFibredOneMorphism.sheafPushforwardContinuous_obj_obj_obj :
         𝒢.obj.obj (Opposite.op (F.obj x))
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.preservesFiniteLimits_sheafPushforwardContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L98). The attribute's comment: “Left exactness of `f⁻¹`, part of `f` being a morphism of topoi.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.preservesFiniteLimits_sheafPushforwardContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L98). The attribute's comment: “Left exactness of `f⁻¹`, part of `f` being a morphism of topoi.”.
 
 > **Stacks 06NW, left exactness of `f⁻¹`, over any base.** The inverse image of the morphism of
 > topoi induced by a 1-morphism of fibred categories over a site preserves finite limits. No fibre
@@ -153,7 +153,7 @@ theorem IsFibredOneMorphism.preservesFiniteLimits_sheafPushforwardContinuous
       (q.inheritedTopology J))
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.sheafPushforwardCocontinuousCompSheafToPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L118). The attribute's comment: “`f_* = {}_sF = {}_pF`: the direct image is the right Kan extension along `F.op`.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.sheafPushforwardCocontinuousCompSheafToPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L118). The attribute's comment: “`f_* = {}_sF = {}_pF`: the direct image is the right Kan extension along `F.op`.”.
 
 > **Stacks 06NW, `f_* = {}_pF`, over any base.** The direct image of the morphism of topoi
 > induced by a 1-morphism `F` of fibred categories over a site is the right Kan extension along
@@ -169,7 +169,7 @@ noncomputable def IsFibredOneMorphism.sheafPushforwardCocontinuousCompSheafToPre
       sheafToPresheaf (p.inheritedTopology J) A ⋙ F.op.ran
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.sheafAdjunctionCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L132). The attribute's comment: “The adjunction `f⁻¹ ⊣ f_*` between `F^s` and `{}_sF`.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.sheafAdjunctionCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L132). The attribute's comment: “The adjunction `f⁻¹ ⊣ f_*` between `F^s` and `{}_sF`.”.
 
 > **Stacks 06NW, the adjunction `f⁻¹ ⊣ f_*`, over any base.** For a 1-morphism `F` of fibred
 > categories over a site, restriction `F.sheafPushforwardContinuous` along `F.op` is left adjoint to
@@ -185,7 +185,7 @@ noncomputable def IsFibredOneMorphism.sheafAdjunctionCocontinuous
       F.sheafPushforwardCocontinuous A (p.inheritedTopology J) (q.inheritedTopology J)
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.morphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L150). The attribute's comment: “The morphism of topoi `f = (F^s, {}_sF) : Sh(𝒳) ⟶ Sh(𝒴)`.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.morphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L150). The attribute's comment: “The morphism of topoi `f = (F^s, {}_sF) : Sh(𝒳) ⟶ Sh(𝒴)`.”.
 
 > **Stacks 06NW, the morphism of topoi, over any base.** A 1-morphism `F : 𝒳 ⥤ 𝒴` of fibred
 > categories over a site `(𝒞, J)` induces a morphism of topoi `f : Sh(𝒳) ⟶ Sh(𝒴)` between the
@@ -201,7 +201,7 @@ noncomputable def IsFibredOneMorphism.morphismOfTopoi [HasFiniteLimits A]
     MorphismOfTopoi (Sheaf (p.inheritedTopology J) A) (Sheaf (q.inheritedTopology J) A)
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.preservesFiniteLimits_sheafPushforwardContinuous_type`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L198). The attribute's comment: “Left exactness of `f⁻¹` on sheaves of sets, with no hypothesis beyond the source's.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.preservesFiniteLimits_sheafPushforwardContinuous_type`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 198](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L198). The attribute's comment: “Left exactness of `f⁻¹` on sheaves of sets, with no hypothesis beyond the source's.”.
 
 > **Stacks 06NW, left exactness of `f⁻¹`, for sheaves of sets.** The inverse image of the
 > morphism of topoi induced by a 1-morphism of fibred categories over a site preserves finite limits
@@ -214,7 +214,7 @@ theorem IsFibredOneMorphism.preservesFiniteLimits_sheafPushforwardContinuous_typ
       (q.inheritedTopology J))
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.sheafPushforwardCocontinuousCompSheafToPresheafIsoType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L209). The attribute's comment: “`f_* = {}_pF` on sheaves of sets, with no hypothesis beyond the source's.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.sheafPushforwardCocontinuousCompSheafToPresheafIsoType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L209). The attribute's comment: “`f_* = {}_pF` on sheaves of sets, with no hypothesis beyond the source's.”.
 
 > **Stacks 06NW, `f_* = {}_pF`, for sheaves of sets.** On sheaves of sets, the direct image of
 > the morphism of topoi induced by a 1-morphism `F` of fibred categories over a site is the right Kan
@@ -230,7 +230,7 @@ noncomputable def IsFibredOneMorphism.sheafPushforwardCocontinuousCompSheafToPre
       sheafToPresheaf (p.inheritedTopology J) (Type (max u₂ v₃ w)) ⋙ F.op.ran
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.sheafAdjunctionCocontinuousType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L221). The attribute's comment: “The adjunction `f⁻¹ ⊣ f_*` on sheaves of sets, no hypothesis beyond the source's.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.sheafAdjunctionCocontinuousType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 221](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L221). The attribute's comment: “The adjunction `f⁻¹ ⊣ f_*` on sheaves of sets, no hypothesis beyond the source's.”.
 
 > **Stacks 06NW, the adjunction `f⁻¹ ⊣ f_*`, for sheaves of sets.** On sheaves of sets,
 > restriction along `F.op` is left adjoint to the right Kan extension along `F.op`, with no
@@ -246,7 +246,7 @@ noncomputable def IsFibredOneMorphism.sheafAdjunctionCocontinuousType :
         (q.inheritedTopology J)
 ```
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.morphismOfTopoiType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L237). The attribute's comment: “The morphism of topoi `f : Sh(𝒳) ⟶ Sh(𝒴)` of sheaves of sets, with no hypothesis beyond the source's.”.
+**`CategoryTheory.Functor.IsFibredOneMorphism.morphismOfTopoiType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/OneMorphismTopoi.lean#L237). The attribute's comment: “The morphism of topoi `f : Sh(𝒳) ⟶ Sh(𝒴)` of sheaves of sets, with no hypothesis beyond the source's.”.
 
 > **Stacks 06NW, the morphism of topoi, for sheaves of sets.** A 1-morphism `F : 𝒳 ⥤ 𝒴` of
 > fibred categories over a site `(𝒞, J)` induces a morphism of topoi `f : Sh(𝒳) ⟶ Sh(𝒴)` between the
@@ -264,7 +264,7 @@ noncomputable def IsFibredOneMorphism.morphismOfTopoiType :
 
 [Tag 0CN0](https://stacks.math.columbia.edu/tag/0CN0) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.isEquivalence_overPost`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Localization.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/Localization.lean#L114). The attribute's comment: “the equivalence of categories 𝒳/x ⥤ 𝒞/U”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.isEquivalence_overPost`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Localization.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Gerbe/Localization.lean#L114). The attribute's comment: “the equivalence of categories 𝒳/x ⥤ 𝒞/U”.
 
 > For `p : 𝒳 ⥤ 𝒞` fibred in groupoids and `x` an object of `𝒳`, the functor
 > `Over.post p : 𝒳/x ⥤ 𝒞/p x` induced by `p` is an equivalence of categories.
@@ -274,7 +274,7 @@ theorem IsFiberedInGroupoids.isEquivalence_overPost (hp : p.IsFiberedInGroupoids
     (Over.post (X := x) p).IsEquivalence
 ```
 
-**`CategoryTheory.Functor.IsInheritedTopology.mem_over_iff_functorPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Localization.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/Localization.lean#L153). The attribute's comment: “coverings of x' in 𝒳/x correspond to coverings of p x' in 𝒞/U”.
+**`CategoryTheory.Functor.IsInheritedTopology.mem_over_iff_functorPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Localization.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Gerbe/Localization.lean#L153). The attribute's comment: “coverings of x' in 𝒳/x correspond to coverings of p x' in 𝒞/U”.
 
 > For `p` fibred in groupoids and `J𝒳` inherited from `(𝒞, J)`, a sieve on an object of `𝒳/x` is
 > covering for the topology that `J𝒳` induces on `𝒳/x` exactly when its image under `Over.post p` is
@@ -294,7 +294,7 @@ theorem IsInheritedTopology.mem_over_iff_functorPushforward (hp : p.IsFiberedInG
 
 [Tag 06NX](https://stacks.math.columbia.edu/tag/06NX) in the Stacks Project.
 
-**`CategoryTheory.Functor.isStackInGroupoids_of_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/Basic.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/Basic.lean#L35).
+**`CategoryTheory.Functor.isStackInGroupoids_of_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/Basic.lean, line 35](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/Basic.lean#L35).
 
 > Let `(𝒞, J)` be a site, let `p : 𝒳 ⥤ 𝒞` and `q : 𝒴 ⥤ 𝒞` be stacks in groupoids over
 > `𝒞` and let `F : 𝒳 ⥤ 𝒴` be a 1-morphism of categories over `𝒞`, that is `F ⋙ q = p`.
@@ -316,7 +316,7 @@ theorem isStackInGroupoids_of_isFiberedInGroupoids
 
 [Tag 09WX](https://stacks.math.columbia.edu/tag/09WX) in the Stacks Project.
 
-**`CategoryTheory.Functor.isStack_comp_of_isInheritedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/StackOverStack/IsStack.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/StackOverStack/IsStack.lean#L315).
+**`CategoryTheory.Functor.isStack_comp_of_isInheritedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/StackOverStack/IsStack.lean, line 315](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/StackOverStack/IsStack.lean#L315).
 
 > Let `(𝒞, J)` be a site, let `p : 𝒳 ⥤ 𝒞` be a stack over `𝒞`, endow `𝒳` with the topology `J𝒳`
 > inherited from `(𝒞, J)` and let `q : 𝒴 ⥤ 𝒳` be a stack over `(𝒳, J𝒳)`. Then `𝒴` is a stack over
@@ -338,4 +338,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.10, Tag 06NT](https://stacks.math.columbia.edu/tag/06NT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

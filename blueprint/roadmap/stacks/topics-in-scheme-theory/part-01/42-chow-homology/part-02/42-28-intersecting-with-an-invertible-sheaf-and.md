@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.28 Intersecting with an invertible sheaf and rational equivalence
 
-Section 42.28 of the Stacks Project, [Tag 02TG](https://stacks.math.columbia.edu/tag/02TG). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.28 of the Stacks Project, [Tag 02TG](https://stacks.math.columbia.edu/tag/02TG). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02TH, a lemma
 
 [Tag 02TH](https://stacks.math.columbia.edu/tag/02TH) in the Stacks Project.
 
-**`Stacks.Chow.KeyFormulaSituation.firstChernClassCapOfInvertible_comm_weilDivisorCycleN`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapComm.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapComm.lean#L69). The attribute's comment: “the identity for two invertible modules with nonzero meromorphic sections on an integral, locally Noetherian scheme of delta-dimension `k + 2`, with no hypothesis: the key formula of Stacks 0AYC is discharged by `Stacks.Chow.KeyFormulaSituation.keyFormula_toKeyFormulaData` and the two divisor cycles of Stacks 02SJ are the canonical ones of the two sections”.
+**`Stacks.Chow.KeyFormulaSituation.firstChernClassCapOfInvertible_comm_weilDivisorCycleN`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapComm.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapComm.lean#L69). The attribute's comment: “the identity for two invertible modules with nonzero meromorphic sections on an integral, locally Noetherian scheme of delta-dimension `k + 2`, with no hypothesis: the key formula of Stacks 0AYC is discharged by `Stacks.Chow.KeyFormulaSituation.keyFormula_toKeyFormulaData` and the two divisor cycles of Stacks 02SJ are the canonical ones of the two sections”.
 
 > **Stacks 02TH for the two canonical divisor cycles.** On an integral, locally Noetherian
 > scheme of delta-dimension `k + 2`,
@@ -34,7 +34,7 @@ theorem firstChernClassCapOfInvertible_comm_weilDivisorCycleN
       firstChernClassCapOfInvertible C p k L (ℱ.weilDivisorCycleN C p hn)
 ```
 
-**`Stacks.Chow.firstChernClassCapOfInvertible_divisorOfMeromorphicSection_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapCommutativity.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapCommutativity.lean#L92).
+**`Stacks.Chow.firstChernClassCapOfInvertible_divisorOfMeromorphicSection_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapCommutativity.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapCommutativity.lean#L92).
 
 > **Stacks 02TH.** Let `X` be integral and locally of finite type over the base scheme `S` of
 > chapter 42, with `dim_δ(X) = n`, let `L` and `N` be invertible `𝒪_X`-modules, and let `s` and `t`
@@ -62,7 +62,7 @@ theorem firstChernClassCapOfInvertible_divisorOfMeromorphicSection_comm (n : ℤ
         (cycleGroupOfEq (by ring) (divisorOfMeromorphicSectionCycle C p n hn N t ht))
 ```
 
-**`Stacks.Chow.firstChernClassCapOfInvertible_divisorCycle_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapDischarge.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapDischarge.lean#L497).
+**`Stacks.Chow.firstChernClassCapOfInvertible_divisorCycle_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapDischarge.lean, line 497](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapDischarge.lean#L497).
 
 > **Stacks 02TH.** Let `X` be integral and locally of finite type over the base scheme `S` of
 > chapter 42, of delta-dimension `k + 2`, let `L` and `N` be invertible modules on `X` and let `s`
@@ -95,7 +95,7 @@ theorem firstChernClassCapOfInvertible_divisorCycle_comm
 
 [Tag 02TI](https://stacks.math.columbia.edu/tag/02TI) in the Stacks Project.
 
-**`Stacks.Chow.firstChernCapFactorsEverywhere`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean#L156). The attribute's comment: “the factoring itself, with no hypothesis: capping with the first Chern class of an invertible module kills every cycle rationally equivalent to zero, for every scheme locally of finite type over the base and every module”.
+**`Stacks.Chow.firstChernCapFactorsEverywhere`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean#L156). The attribute's comment: “the factoring itself, with no hypothesis: capping with the first Chern class of an invertible module kills every cycle rationally equivalent to zero, for every scheme locally of finite type over the base and every module”.
 
 > **Stacks 02TI, with no hypothesis.** Intersecting with the first Chern class of an invertible
 > module kills every `(k+1)`-cycle rationally equivalent to zero, whatever the scheme locally of
@@ -108,7 +108,7 @@ theorem firstChernClassCapOfInvertible_divisorCycle_comm
 theorem firstChernCapFactorsEverywhere : FirstChernCapFactorsEverywhere C k
 ```
 
-**`Stacks.Chow.firstChernClassCapChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean#L176). The attribute's comment: “the descended operation c\_1(L) cap - : A\_\{k+1}(X) ⟶ A\_k(X), agreeing with the cap product of 02SO on cycle representatives (firstChernClassCapChow\_mk)”.
+**`Stacks.Chow.firstChernClassCapChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean#L176). The attribute's comment: “the descended operation c\_1(L) cap - : A\_\{k+1}(X) ⟶ A\_k(X), agreeing with the cap product of 02SO on cycle representatives (firstChernClassCapChow\_mk)”.
 
 > **Stacks 02TI.** Intersection with the first Chern class of an invertible module, as an
 > operation `c₁(L) ∩ - : A_{k+1}(X) ⟶ A_k(X)` on Chow groups.
@@ -121,7 +121,7 @@ def firstChernClassCapChow : chowGroup C p (k + 1) →+ chowGroup C p k
 
 [Tag 02TJ](https://stacks.math.columbia.edu/tag/02TJ) in the Stacks Project.
 
-**`Stacks.Chow.firstChernClassCapOnChowOfInvertible_comm_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/FirstChernCommOfInvertible.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/FirstChernCommOfInvertible.lean#L79). The attribute's comment: “the commutativity itself, with no hypotheses beyond the source's: it is `Stacks.Chow.firstChernClassCapOnChowOfInvertible_comm` with both of its inputs supplied by the theorems named below, and it is the one registration of this tag. The four descended cap products are `Stacks.Chow.firstChernClassCapOnChowOfInvertible`, and the Stacks 02TI input each of them needs — the reduced form `Stacks.Chow.FirstChernCapKillsPrincipalDivisor`, the vanishing of the cap product on one principal divisor on an integral scheme, to which `Stacks.Chow.firstChernCapFactorsEverywhere_iff_killsPrincipalDivisor` shows Stacks 02TI is equivalent — is supplied in both degrees by `Stacks.Chow.firstChernCapKillsPrincipalDivisor`, which proves it outright. Stacks 02TH for the restrictions of the two modules to the integral closed subschemes of `X` of delta-dimension `k + 2`, as an equality of classes in `A_k(W)`, which is what the source reduces to, is `Stacks.Chow.GenuineChern.firstChernCapCommutesOnIntegralComponents`, which proves it out of the key formula of Stacks 0AYC. The four cycle-level rules of Stacks 02SO and the four separate instances of Stacks 02TI that `Stacks.Chow.firstChernClassCapOnChow_comm` takes as inputs are all theorems here, and the passage from the integral subschemes to every class is proved too”.
+**`Stacks.Chow.firstChernClassCapOnChowOfInvertible_comm_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/FirstChernCommOfInvertible.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/FirstChernCommOfInvertible.lean#L79). The attribute's comment: “the commutativity itself, with no hypotheses beyond the source's: it is `Stacks.Chow.firstChernClassCapOnChowOfInvertible_comm` with both of its inputs supplied by the theorems named below, and it is the one registration of this tag. The four descended cap products are `Stacks.Chow.firstChernClassCapOnChowOfInvertible`, and the Stacks 02TI input each of them needs — the reduced form `Stacks.Chow.FirstChernCapKillsPrincipalDivisor`, the vanishing of the cap product on one principal divisor on an integral scheme, to which `Stacks.Chow.firstChernCapFactorsEverywhere_iff_killsPrincipalDivisor` shows Stacks 02TI is equivalent — is supplied in both degrees by `Stacks.Chow.firstChernCapKillsPrincipalDivisor`, which proves it outright. Stacks 02TH for the restrictions of the two modules to the integral closed subschemes of `X` of delta-dimension `k + 2`, as an equality of classes in `A_k(W)`, which is what the source reduces to, is `Stacks.Chow.GenuineChern.firstChernCapCommutesOnIntegralComponents`, which proves it out of the key formula of Stacks 0AYC. The four cycle-level rules of Stacks 02SO and the four separate instances of Stacks 02TI that `Stacks.Chow.firstChernClassCapOnChow_comm` takes as inputs are all theorems here, and the passage from the integral subschemes to every class is proved too”.
 
 > **Stacks 02TJ.** For two invertible modules `ℒ` and `𝒩` on a scheme `X` locally of finite type
 > over the base, intersecting successively with the two first Chern classes is independent of the
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.28, Tag 02TG](https://stacks.math.columbia.edu/tag/02TG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

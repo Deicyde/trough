@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.10 Chow's lemma for algebraic stacks
 
-Section 106.10 of the Stacks Project, [Tag 0CQ5](https://stacks.math.columbia.edu/tag/0CQ5). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.10 of the Stacks Project, [Tag 0CQ5](https://stacks.math.columbia.edu/tag/0CQ5). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CQ6, a lemma
 
 [Tag 0CQ6](https://stacks.math.columbia.edu/tag/0CQ6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_finite_surjective_zariskiLocal_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChowFiniteCoverFactorizationUnconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChowFiniteCoverFactorizationUnconditional.lean#L61). The attribute's comment: “Chow's lemma for algebraic stacks: a flat surjection locally of finite presentation onto a quasi-compact open of a qcqs algebraic space splits Zariski locally after a finite surjective base change.”.
+**`AlgebraicGeometry.Stack.exists_finite_surjective_zariskiLocal_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChowFiniteCoverFactorizationUnconditional.lean, line 61](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ChowFiniteCoverFactorizationUnconditional.lean#L61). The attribute's comment: “Chow's lemma for algebraic stacks: a flat surjection locally of finite presentation onto a quasi-compact open of a qcqs algebraic space splits Zariski locally after a finite surjective base change.”.
 
 > **[Stacks, Tag 0CQ6].** Let `Y` be a quasi-compact and quasi-separated algebraic space over
 > `S`, let `V ⊆ Y` be a quasi-compact open subspace and let `f : 𝒳 ⟶ V` be a surjective and flat
@@ -61,7 +61,7 @@ theorem exists_finite_surjective_zariskiLocal_factorization
 
 [Tag 0CQ7](https://stacks.math.columbia.edu/tag/0CQ7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.hasProperCompactifiableCover_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/C1575Private/ChowGerbeProperCover.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/C1575Private/ChowGerbeProperCover.lean#L202).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.hasProperCompactifiableCover_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/C1575Private/ChowGerbeProperCover.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/C1575Private/ChowGerbeProperCover.lean#L202).
 
 > **[Stacks, Tag 0CQ7].** Let `f : 𝒳 ⟶ Y` be a 1-morphism from an algebraic stack to an
 > algebraic space and `V ⊆ Y` an open subspace. Assume that `f` is separated and of finite type,
@@ -88,7 +88,7 @@ theorem hasProperCompactifiableCover_of_isGerbeOver {Y : (BigFppfOver B S hS)ᵒ
 
 [Tag 0CQ8](https://stacks.math.columbia.edu/tag/0CQ8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.hasChowCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChowLemmaAlgebraicStacks.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChowLemmaAlgebraicStacks.lean#L66). The attribute's comment: “Chow's lemma for algebraic stacks: the commutative diagram is a 2-isomorphism `a ≫ f ≅ i ≫ p` in the 2-category of algebraic stacks over S, with X and X̄ algebraic spaces”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.hasChowCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChowLemmaAlgebraicStacks.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ChowLemmaAlgebraicStacks.lean#L66). The attribute's comment: “Chow's lemma for algebraic stacks: the commutative diagram is a 2-isomorphism `a ≫ f ≅ i ≫ p` in the 2-category of algebraic stacks over S, with X and X̄ algebraic spaces”.
 
 > **Chow's lemma for algebraic stacks (Stacks 0CQ8).** Let `f : 𝒳 ⟶ Y` be a 1-morphism from an
 > algebraic stack to an algebraic space over `S`, with `Y` quasi-compact and quasi-separated and `f`
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.10, Tag 0CQ5](https://stacks.math.columbia.edu/tag/0CQ5)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

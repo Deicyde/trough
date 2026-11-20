@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.23 Flat resolutions
 
-Section 24.23 of the Stacks Project, [Tag 0FSA](https://stacks.math.columbia.edu/tag/0FSA). 9 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 24.23 of the Stacks Project, [Tag 0FSA](https://stacks.math.columbia.edu/tag/0FSA). 9 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FSA, the section
 
 [Tag 0FSA](https://stacks.math.columbia.edu/tag/0FSA) in the Stacks Project.
 
-**`SheafOfModules.IsGoodToposBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedModuleToposPullback.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedModuleToposPullback.lean#L431).
+**`SheafOfModules.IsGoodToposBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedModuleToposPullback.lean, line 431](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedModuleToposPullback.lean#L431).
 
 > **A good right differential graded module**, with condition (3) read over the source's own
 > base changes. A right differential graded `A`-module is good when it is flat as a graded
@@ -75,7 +75,7 @@ def IsGoodToposBaseChange (P : DifferentialGradedModule.{w, w, w} A) : Prop
 
 [Tag 0FSB](https://stacks.math.columbia.edu/tag/0FSB) in the Stacks Project.
 
-**`SheafOfModules.dgExtensionByZeroRegular_isGoodToposBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodExtensionByZeroToposBaseChange.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodExtensionByZeroToposBaseChange.lean#L256).
+**`SheafOfModules.dgExtensionByZeroRegular_isGoodToposBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodExtensionByZeroToposBaseChange.lean, line 256](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodExtensionByZeroToposBaseChange.lean#L256).
 
 > **Tag 0FSB: the extension by zero `j_!A_U` of the restriction of `A` to the slice site at `U`
 > is a good right differential graded `A`-module.** It is flat as a graded module, it is K-flat,
@@ -97,7 +97,7 @@ theorem dgExtensionByZeroRegular_isGoodToposBaseChange :
 
 [Tag 0FSC](https://stacks.math.columbia.edu/tag/0FSC) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.IsAdmissibleShortExact.isGoodToposBaseChange_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean#L124). The attribute's comment: “the third term: if the first and the middle term of an admissible short exact sequence are good in the sense of 0FSA (`SheafOfModules.IsGoodToposBaseChange`, condition (3) over every morphism of ringed topoi), so is the third”.
+**`SheafOfModules.DifferentialGradedModule.IsAdmissibleShortExact.isGoodToposBaseChange_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean#L124). The attribute's comment: “the third term: if the first and the middle term of an admissible short exact sequence are good in the sense of 0FSA (`SheafOfModules.IsGoodToposBaseChange`, condition (3) over every morphism of ringed topoi), so is the third”.
 
 > **Tag 0FSC, the third term.** If the first and the middle term of an admissible short exact
 > sequence of right differential graded modules are good in the sense of Tag 0FSA, so is the third.
@@ -114,7 +114,7 @@ theorem isGoodToposBaseChange_right (h : IsAdmissibleShortExact f g)
     IsGoodToposBaseChange.{w, v₁, u₁} M
 ```
 
-**`SheafOfModules.DifferentialGradedModule.IsAdmissibleShortExact.isGoodToposBaseChange_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean#L155). The attribute's comment: “the first term: if the middle and the third term of an admissible short exact sequence are good in the sense of 0FSA (`SheafOfModules.IsGoodToposBaseChange`, condition (3) over every morphism of ringed topoi), so is the first”.
+**`SheafOfModules.DifferentialGradedModule.IsAdmissibleShortExact.isGoodToposBaseChange_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean#L155). The attribute's comment: “the first term: if the middle and the third term of an admissible short exact sequence are good in the sense of 0FSA (`SheafOfModules.IsGoodToposBaseChange`, condition (3) over every morphism of ringed topoi), so is the first”.
 
 > **Tag 0FSC, the first term.** If the middle and the third term of an admissible short exact
 > sequence of right differential graded modules are good in the sense of Tag 0FSA, so is the first.
@@ -129,7 +129,7 @@ theorem isGoodToposBaseChange_left (h : IsAdmissibleShortExact f g)
     IsGoodToposBaseChange.{w, v₁, u₁} K
 ```
 
-**`SheafOfModules.DifferentialGradedModule.IsAdmissibleShortExact.isGoodToposBaseChange_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean#L172). The attribute's comment: “the middle term: if the two outer terms of an admissible short exact sequence are good in the sense of 0FSA (`SheafOfModules.IsGoodToposBaseChange`, condition (3) over every morphism of ringed topoi), so is the middle one”.
+**`SheafOfModules.DifferentialGradedModule.IsAdmissibleShortExact.isGoodToposBaseChange_middle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedAdmissibleTopos.lean#L172). The attribute's comment: “the middle term: if the two outer terms of an admissible short exact sequence are good in the sense of 0FSA (`SheafOfModules.IsGoodToposBaseChange`, condition (3) over every morphism of ringed topoi), so is the middle one”.
 
 > **Tag 0FSC, the middle term.** If the two outer terms of an admissible short exact sequence of
 > right differential graded modules are good in the sense of Tag 0FSA, so is the middle one.
@@ -147,7 +147,7 @@ theorem isGoodToposBaseChange_middle (h : IsAdmissibleShortExact f g)
 
 [Tag 0FSD](https://stacks.math.columbia.edu/tag/0FSD) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.PullbackData.preservesColimitsOfSize_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedPullbackColimits.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedPullbackColimits.lean#L77). The attribute's comment: “colimits commute with pullback: the pullback along a morphism of ringed sites preserves every colimit, being the left adjoint of the direct image”.
+**`SheafOfModules.DifferentialGradedModule.PullbackData.preservesColimitsOfSize_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedPullbackColimits.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedPullbackColimits.lean#L77). The attribute's comment: “colimits commute with pullback: the pullback along a morphism of ringed sites preserves every colimit, being the left adjoint of the direct image”.
 
 > **The pullback of sheaves of differential graded modules along a morphism of ringed sites
 > preserves colimits of every shape.** The pullback is a left adjoint, the direct image along the
@@ -157,7 +157,7 @@ theorem isGoodToposBaseChange_middle (h : IsAdmissibleShortExact f g)
 theorem preservesColimitsOfSize_functor : PreservesColimitsOfSize.{w, w'} P.functor
 ```
 
-**`SheafOfModules.RelativeTensor.isColimit_dgTensorFunctor_mapCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L127). The attribute's comment: “the relative tensor product with a fixed left differential graded module commutes, as a functor to complexes, with the colimits of right differential graded modules”.
+**`SheafOfModules.RelativeTensor.isColimit_dgTensorFunctor_mapCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L127). The attribute's comment: “the relative tensor product with a fixed left differential graded module commutes, as a functor to complexes, with the colimits of right differential graded modules”.
 
 > **The relative tensor product `- ⊗_A N` carries a colimit cocone of right differential
 > graded modules to a colimit cocone of complexes of `O`-modules.** A cocone of complexes is
@@ -171,7 +171,7 @@ noncomputable def isColimit_dgTensorFunctor_mapCocone
     {c : Cocone K} (hc : IsColimit c) : IsColimit ((dgTensorFunctor N).mapCocone c)
 ```
 
-**`SheafOfModules.RelativeTensor.isKFlat_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L142). The attribute's comment: “a colimit of K-flat right differential graded modules is K-flat, the K-flatness half of the lemma, for an index category whose colimits of sheaves of modules are exact”.
+**`SheafOfModules.RelativeTensor.isKFlat_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L142). The attribute's comment: “a colimit of K-flat right differential graded modules is K-flat, the K-flatness half of the lemma, for an index category whose colimits of sheaves of modules are exact”.
 
 > **A colimit of K-flat right differential graded modules is K-flat**, along any shape whose
 > colimits of sheaves of modules are exact.
@@ -181,7 +181,7 @@ theorem isKFlat_of_isColimit {K : D ⥤ DifferentialGradedModule.{t, m, m} A} {c
     (hc : IsColimit c) (hK : ∀ d : D, IsKFlat (K.obj d)) : IsKFlat c.pt
 ```
 
-**`SheafOfModules.RelativeTensor.isKFlat_of_isColimitCofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L152). The attribute's comment: “an arbitrary direct sum of K-flat right differential graded modules is K-flat, the K-flatness half of the direct sum clause”.
+**`SheafOfModules.RelativeTensor.isKFlat_of_isColimitCofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L152). The attribute's comment: “an arbitrary direct sum of K-flat right differential graded modules is K-flat, the K-flatness half of the direct sum clause”.
 
 > **An arbitrary direct sum of K-flat right differential graded modules is K-flat.**
 
@@ -190,7 +190,7 @@ theorem isKFlat_of_isColimitCofan {ι : Type m} {P : ι → DifferentialGradedMo
     {c : Cofan P} (hc : IsColimit c) (hP : ∀ i, IsKFlat (P i)) : IsKFlat c.pt
 ```
 
-**`SheafOfModules.RelativeTensor.isKFlat_of_isColimit_isFiltered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L160). The attribute's comment: “a filtered colimit of K-flat right differential graded modules is K-flat, the K-flatness half of the filtered colimit clause”.
+**`SheafOfModules.RelativeTensor.isKFlat_of_isColimit_isFiltered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L160). The attribute's comment: “a filtered colimit of K-flat right differential graded modules is K-flat, the K-flatness half of the filtered colimit clause”.
 
 > **A filtered colimit of K-flat right differential graded modules is K-flat.**
 
@@ -200,7 +200,7 @@ theorem isKFlat_of_isColimit_isFiltered {D : Type m} [SmallCategory D] [IsFilter
     (hK : ∀ d : D, IsKFlat (K.obj d)) : IsKFlat c.pt
 ```
 
-**`SheafOfModules.DifferentialGradedModule.isGradedFlat_and_isKFlat_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L181). The attribute's comment: “flatness of the underlying graded module and K-flatness pass to a colimit of right differential graded modules, for an index category whose colimits of sheaves of modules are exact”.
+**`SheafOfModules.DifferentialGradedModule.isGradedFlat_and_isKFlat_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedColimit.lean#L181). The attribute's comment: “flatness of the underlying graded module and K-flatness pass to a colimit of right differential graded modules, for an index category whose colimits of sheaves of modules are exact”.
 
 > Flatness of the underlying graded module and K-flatness pass together to a colimit of right
 > differential graded modules, along any shape whose colimits of sheaves of modules are exact.
@@ -218,7 +218,7 @@ theorem isGradedFlat_and_isKFlat_of_isColimit {D : Type m} [Category.{m} D]
       RelativeTensor.IsKFlat c.pt
 ```
 
-**`SheafOfModules.isGoodToposBaseChange_of_isColimitCofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedToposDirectSum.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedToposDirectSum.lean#L67).
+**`SheafOfModules.isGoodToposBaseChange_of_isColimitCofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedToposDirectSum.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedToposDirectSum.lean#L67).
 
 > **An arbitrary direct sum of good right differential graded modules is good**, goodness being
 > `SheafOfModules.IsGoodToposBaseChange`: conditions (1) and (2) of Tag 0FSA together with
@@ -231,7 +231,7 @@ theorem isGoodToposBaseChange_of_isColimitCofan {ι : Type w}
     IsGoodToposBaseChange.{w, v₁, u₁} c.pt
 ```
 
-**`SheafOfModules.isGoodToposBaseChange_of_isColimit_isFiltered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedToposDirectSum.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedToposDirectSum.lean#L79).
+**`SheafOfModules.isGoodToposBaseChange_of_isColimit_isFiltered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedToposDirectSum.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedToposDirectSum.lean#L79).
 
 > **A filtered colimit of good right differential graded modules is good**, goodness being
 > `SheafOfModules.IsGoodToposBaseChange`.
@@ -243,7 +243,7 @@ theorem isGoodToposBaseChange_of_isColimit_isFiltered {D : Type w} [SmallCategor
     IsGoodToposBaseChange.{w, v₁, u₁} c.pt
 ```
 
-**`SheafOfModules.RelativeTensor.isGradedFlat_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean#L101). The attribute's comment: “a colimit of flat right graded modules is flat, the graded-flatness half of the lemma, for an index category whose colimits of sheaves of modules are exact”.
+**`SheafOfModules.RelativeTensor.isGradedFlat_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean#L101). The attribute's comment: “a colimit of flat right graded modules is flat, the graded-flatness half of the lemma, for an index category whose colimits of sheaves of modules are exact”.
 
 > **A colimit of flat right graded modules is flat**, along any shape whose colimits of
 > sheaves of modules are exact.
@@ -253,7 +253,7 @@ theorem isGradedFlat_of_isColimit {K : D ⥤ GradedModule.{t, m, m} A} {c : Coco
     (hc : IsColimit c) (hK : ∀ d : D, IsGradedFlat (K.obj d)) : IsGradedFlat c.pt
 ```
 
-**`SheafOfModules.RelativeTensor.isGradedFlat_of_isColimitCofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean#L141). The attribute's comment: “an arbitrary direct sum of flat right graded modules is flat, the graded-flatness half of the direct sum clause”.
+**`SheafOfModules.RelativeTensor.isGradedFlat_of_isColimitCofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean#L141). The attribute's comment: “an arbitrary direct sum of flat right graded modules is flat, the graded-flatness half of the direct sum clause”.
 
 > **An arbitrary direct sum of flat right graded modules is flat.**
 
@@ -262,7 +262,7 @@ theorem isGradedFlat_of_isColimitCofan {ι : Type m} {P : ι → GradedModule.{t
     {c : Cofan P} (hc : IsColimit c) (hP : ∀ i, IsGradedFlat (P i)) : IsGradedFlat c.pt
 ```
 
-**`SheafOfModules.RelativeTensor.isGradedFlat_of_isColimit_isFiltered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean#L149). The attribute's comment: “a filtered colimit of flat right graded modules is flat, the graded-flatness half of the filtered colimit clause”.
+**`SheafOfModules.RelativeTensor.isGradedFlat_of_isColimit_isFiltered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedFlatColimit.lean#L149). The attribute's comment: “a filtered colimit of flat right graded modules is flat, the graded-flatness half of the filtered colimit clause”.
 
 > **A filtered colimit of flat right graded modules is flat.**
 
@@ -276,7 +276,7 @@ theorem isGradedFlat_of_isColimit_isFiltered {D : Type m} [SmallCategory D] [IsF
 
 [Tag 0FSE](https://stacks.math.columbia.edu/tag/0FSE) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.exists_flat_surjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionQuotient.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionQuotient.lean#L376). The attribute's comment: “the resolution is built from M alone: the first stage of the tower of Tag 0FSH, the twisted extension of the free module on the closed sections of M by the free module on the boundary pairs of its homomorphism to M. Clause (2) is concluded as surjectivity on the sections killed by the differential, which is stronger than surjectivity of Ker(d\_P) to Ker(d\_M), and also as an epimorphism on the sheaves of cocycles. Clause (3) is concluded here as conditions (1) and (2) of the definition of good in Section 0FSA, flatness of the underlying graded module and K-flatness, over a ringed site and with the ring universe and the module universe independent, and the whole of condition (3) for this same module is concluded over a ringed topos by exists\_good\_surjection”.
+**`SheafOfModules.DifferentialGradedModule.exists_flat_surjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionQuotient.lean, line 376](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionQuotient.lean#L376). The attribute's comment: “the resolution is built from M alone: the first stage of the tower of Tag 0FSH, the twisted extension of the free module on the closed sections of M by the free module on the boundary pairs of its homomorphism to M. Clause (2) is concluded as surjectivity on the sections killed by the differential, which is stronger than surjectivity of Ker(d\_P) to Ker(d\_M), and also as an epimorphism on the sheaves of cocycles. Clause (3) is concluded here as conditions (1) and (2) of the definition of good in Section 0FSA, flatness of the underlying graded module and K-flatness, over a ringed site and with the ring universe and the module universe independent, and the whole of condition (3) for this same module is concluded over a ringed topos by exists\_good\_surjection”.
 
 > **Tag 0FSE.** Every right differential graded `A`-module `M` receives a homomorphism from a
 > right differential graded `A`-module which is surjective, which is surjective on the sheaves of
@@ -305,7 +305,7 @@ theorem exists_flat_surjection (M : DifferentialGradedModule.{t, m, m} A) :
             RelativeTensor.IsKFlat Q
 ```
 
-**`SheafOfModules.DifferentialGradedModule.exists_good_surjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionToposQuotient.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionToposQuotient.lean#L124).
+**`SheafOfModules.DifferentialGradedModule.exists_good_surjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionToposQuotient.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionToposQuotient.lean#L124).
 
 > **Tag 0FSE.** Every right differential graded `A`-module `M` receives a homomorphism from a
 > right differential graded `A`-module which is surjective, which is surjective on the sheaves of
@@ -341,7 +341,7 @@ theorem exists_good_surjection [HasWeakSheafify Y.J (Type w)]
 
 [Tag 0FSF](https://stacks.math.columbia.edu/tag/0FSF) in the Stacks Project.
 
-**`Stacks.SheafOfGradedSets`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModule.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModule.lean#L181). The attribute's comment: “sheaf\_of\_graded\_sets”.
+**`Stacks.SheafOfGradedSets`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModule.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModule.lean#L181). The attribute's comment: “sheaf\_of\_graded\_sets”.
 
 > A sheaf of graded sets on a site: a sheaf of sets together with a degree morphism to the
 > constant sheaf of integers.
@@ -350,7 +350,7 @@ theorem exists_good_surjection [HasWeakSheafify Y.J (Type w)]
 structure SheafOfGradedSets (J : GrothendieckTopology C) [HasWeakSheafify J (Type w)]
 ```
 
-**`SheafOfModules.freeGradedModuleData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModule.lean, line 1770](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModule.lean#L1770). The attribute's comment: “free\_graded\_mathcal\_a\_module\_mathcal\_a\_mathcal\_s”.
+**`SheafOfModules.freeGradedModuleData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModule.lean, line 1770](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModule.lean#L1770). The attribute's comment: “free\_graded\_mathcal\_a\_module\_mathcal\_a\_mathcal\_s”.
 
 > **The free graded `A`-module on a sheaf of graded sets**, with its presentation, its
 > generators, its universal property and — whenever `A` is the graded algebra underlying a
@@ -364,7 +364,7 @@ noncomputable def freeGradedModuleData : FreeGradedModuleData A S
 
 [Tag 0FSG](https://stacks.math.columbia.edu/tag/0FSG) in the Stacks Project.
 
-**`SheafOfModules.freeDGModule_isGoodToposBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedModuleToposPullback.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedModuleToposPullback.lean#L502). The attribute's comment: “the free differential graded module on a sheaf of graded sets is good, with condition (3) of 0FSA read over morphisms of ringed topoi”.
+**`SheafOfModules.freeDGModule_isGoodToposBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedModuleToposPullback.lean, line 502](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeDifferentialGradedModuleToposPullback.lean#L502). The attribute's comment: “the free differential graded module on a sheaf of graded sets is good, with condition (3) of 0FSA read over morphisms of ringed topoi”.
 
 > **Tag 0FSG: the free differential graded module `A[S]` on a sheaf of graded sets is good**, at
 > the source's own quantification. Conditions (1) and (2) are the two unconditional theorems of
@@ -379,7 +379,7 @@ theorem freeDGModule_isGoodToposBaseChange [HasWeakSheafify Y.J (Type w)]
     IsGoodToposBaseChange.{w, v₁, u₁} (freeDGModule S A)
 ```
 
-**`SheafOfModules.freeDGModule_isGradedFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModuleFlat/FlatAndKFlat.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModuleFlat/FlatAndKFlat.lean#L483). The attribute's comment: “condition (1) of good (Stacks 0FSA) for the free graded module A[S] on a sheaf of graded sets: the underlying graded module is flat. No hypotheses; the source's own argument. Condition (2) is SheafOfModules.freeDGModule\_isKFlat in this file; condition (3) is not proved here, and goodness is concluded at SheafOfModules.freeDGModule\_isGoodToposBaseChange, where condition (3) is read over morphisms of ringed topoi as 0FSA states it. At the three site-indexed readings IsGood, IsGoodCocontinuousBaseChange and IsGoodSiteBaseChange condition (3) is still open -- see the implementation notes”.
+**`SheafOfModules.freeDGModule_isGradedFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModuleFlat/FlatAndKFlat.lean, line 483](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModuleFlat/FlatAndKFlat.lean#L483). The attribute's comment: “condition (1) of good (Stacks 0FSA) for the free graded module A[S] on a sheaf of graded sets: the underlying graded module is flat. No hypotheses; the source's own argument. Condition (2) is SheafOfModules.freeDGModule\_isKFlat in this file; condition (3) is not proved here, and goodness is concluded at SheafOfModules.freeDGModule\_isGoodToposBaseChange, where condition (3) is read over morphisms of ringed topoi as 0FSA states it. At the three site-indexed readings IsGood, IsGoodCocontinuousBaseChange and IsGoodSiteBaseChange condition (3) is still open -- see the implementation notes”.
 
 > **Tag 0FSG, condition (1) of Tag 0FSA.** The graded module underlying the free differential
 > graded `A`-module `A[S]` on a sheaf of graded sets is flat. The differential plays no part: the
@@ -393,7 +393,7 @@ theorem freeDGModule_isGradedFlat (D : DifferentialGradedAlgebra.{t, m} (toRingC
     RelativeTensor.IsGradedFlat (GradedModule.ofDifferentialGraded (freeDGModule S D))
 ```
 
-**`SheafOfModules.freeDGModule_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModuleFlat/FlatAndKFlat.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModuleFlat/FlatAndKFlat.lean#L519). The attribute's comment: “condition (2) of good (Stacks 0FSA) for the free differential graded module D[S] on a sheaf of graded sets: D[S] tensor\_D N is acyclic for every acyclic left differential graded D-module N. No hypotheses; the source's own argument. Condition (1) is SheafOfModules.freeDGModule\_isGradedFlat in this file; condition (3) is not proved here, and goodness is concluded at SheafOfModules.freeDGModule\_isGoodToposBaseChange, where condition (3) is read over morphisms of ringed topoi as 0FSA states it. At the three site-indexed readings IsGood, IsGoodCocontinuousBaseChange and IsGoodSiteBaseChange condition (3) is still open -- see the implementation notes”.
+**`SheafOfModules.freeDGModule_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModuleFlat/FlatAndKFlat.lean, line 519](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FreeGradedModuleFlat/FlatAndKFlat.lean#L519). The attribute's comment: “condition (2) of good (Stacks 0FSA) for the free differential graded module D[S] on a sheaf of graded sets: D[S] tensor\_D N is acyclic for every acyclic left differential graded D-module N. No hypotheses; the source's own argument. Condition (1) is SheafOfModules.freeDGModule\_isGradedFlat in this file; condition (3) is not proved here, and goodness is concluded at SheafOfModules.freeDGModule\_isGoodToposBaseChange, where condition (3) is read over morphisms of ringed topoi as 0FSA states it. At the three site-indexed readings IsGood, IsGoodCocontinuousBaseChange and IsGoodSiteBaseChange condition (3) is still open -- see the implementation notes”.
 
 > **Tag 0FSG, condition (2) of Tag 0FSA.** The free differential graded `D`-module `D[S]` on a
 > sheaf of graded sets is K-flat: `D[S] ⊗_D N` is acyclic for every acyclic left differential
@@ -416,7 +416,7 @@ theorem freeDGModule_isKFlat : RelativeTensor.IsKFlat (freeDGModule S D)
 
 [Tag 0FSH](https://stacks.math.columbia.edu/tag/0FSH) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.exists_good_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionToposTower.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionToposTower.lean#L138).
+**`SheafOfModules.DifferentialGradedModule.exists_good_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionToposTower.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionToposTower.lean#L138).
 
 > **Tag 0FSH: every right differential graded `A`-module receives a quasi-isomorphism from a
 > good one.** Goodness is `SheafOfModules.IsGoodToposBaseChange`: flat as a graded module, K-flat,
@@ -440,7 +440,7 @@ theorem exists_good_quasiIso [HasWeakSheafify Y.J (Type w)]
       QuasiIso f.toHomologicalComplex ∧ IsGoodToposBaseChange.{w, v₁, u₁} Q
 ```
 
-**`SheafOfModules.DifferentialGradedModule.exists_flat_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionTower.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionTower.lean#L150). The attribute's comment: “the tower of the first proof, built from M alone: the free differential graded module on the sheaf of graded sets of closed sections of M, then the twisted extensions by the free modules on the boundary pairs of each stage, then the colimit. The ring universe and the module universe stay independent here; at a common universe the same tower reaches the full goodness of Section 0FSA in SheafOfModules.DifferentialGradedModule.exists\_good\_quasiIso”.
+**`SheafOfModules.DifferentialGradedModule.exists_flat_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionTower.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodDifferentialGradedResolutionTower.lean#L150). The attribute's comment: “the tower of the first proof, built from M alone: the free differential graded module on the sheaf of graded sets of closed sections of M, then the twisted extensions by the free modules on the boundary pairs of each stage, then the colimit. The ring universe and the module universe stay independent here; at a common universe the same tower reaches the full goodness of Section 0FSA in SheafOfModules.DifferentialGradedModule.exists\_good\_quasiIso”.
 
 > **Every right differential graded `A`-module receives a quasi-isomorphism from a right
 > differential graded `A`-module which is flat as a graded module and K-flat.**
@@ -462,7 +462,7 @@ theorem exists_flat_quasiIso (M : DifferentialGradedModule.{t, m, m} A) :
 
 [Tag 0FSI](https://stacks.math.columbia.edu/tag/0FSI) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.acyclic_dgTensor_of_isGood_of_acyclic_topos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodAcyclicDifferentialGradedToposPullback.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodAcyclicDifferentialGradedToposPullback.lean#L123). The attribute's comment: “part (1)”.
+**`SheafOfModules.DifferentialGradedModule.acyclic_dgTensor_of_isGood_of_acyclic_topos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodAcyclicDifferentialGradedToposPullback.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodAcyclicDifferentialGradedToposPullback.lean#L123). The attribute's comment: “part (1)”.
 
 > **Tag 0FSI (1).** *"Let `(C, O)` be a ringed site. Let `A` be a sheaf of differential graded
 > algebras on `(C, O)`. Let `P` be a good acyclic right differential graded `A`-module. Then for any
@@ -478,7 +478,7 @@ theorem acyclic_dgTensor_of_isGood_of_acyclic_topos {Y : AlgebraicGeometry.Ringe
     (RelativeTensor.dgTensor P N).Acyclic
 ```
 
-**`SheafOfModules.DifferentialGradedModule.exists_toposCorepresentableBy_and_acyclic_and_isGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodAcyclicDifferentialGradedToposPullback.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodAcyclicDifferentialGradedToposPullback.lean#L141). The attribute's comment: “part (2)”.
+**`SheafOfModules.DifferentialGradedModule.exists_toposCorepresentableBy_and_acyclic_and_isGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodAcyclicDifferentialGradedToposPullback.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GoodAcyclicDifferentialGradedToposPullback.lean#L141). The attribute's comment: “part (2)”.
 
 > **Tag 0FSI (2).** *"Let `(C, O)` be a ringed site. Let `A` be a sheaf of differential graded
 > algebras on `(C, O)`. Let `P` be a good acyclic right differential graded `A`-module. Then for any
@@ -516,4 +516,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.23, Tag 0FSA](https://stacks.math.columbia.edu/tag/0FSA)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

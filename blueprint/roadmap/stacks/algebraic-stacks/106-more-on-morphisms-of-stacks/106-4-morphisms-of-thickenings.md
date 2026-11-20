@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.4 Morphisms of thickenings
 
-Section 106.4 of the Stacks Project, [Tag 0CJ8](https://stacks.math.columbia.edu/tag/0CJ8). 1 tag here is carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.4 of the Stacks Project, [Tag 0CJ8](https://stacks.math.columbia.edu/tag/0CJ8). 1 tag here is carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CJ9, a lemma
 
 [Tag 0CJ9](https://stacks.math.columbia.edu/tag/0CJ9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAffineHom_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismAffineIntegral.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismAffineIntegral.lean#L216). The attribute's comment: “part (1): affine”.
+**`AlgebraicGeometry.Stack.isAffineHom_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismAffineIntegral.lean, line 216](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismAffineIntegral.lean#L216). The attribute's comment: “part (1): affine”.
 
 > **Stacks 0CJ9, part (1).** In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of
 > algebraic stacks over `S`, the restricted 1-morphism `f` is affine (**Stacks 0CHQ**) if and only
@@ -31,7 +31,7 @@ theorem isAffineHom_inner_iff_outer (m : ThickeningMorphism i j hi hj) :
     AlgebraicStacks.IsAffineHom B S hS m.inner ↔ AlgebraicStacks.IsAffineHom B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.isIntegralHom_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismAffineIntegral.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismAffineIntegral.lean#L242). The attribute's comment: “part (5): integral”.
+**`AlgebraicGeometry.Stack.isIntegralHom_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismAffineIntegral.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismAffineIntegral.lean#L242). The attribute's comment: “part (5): integral”.
 
 > **Stacks 0CJ9, part (5).** In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of
 > algebraic stacks over `S`, the restricted 1-morphism `f` is integral (**Stacks 0CHU**) if and
@@ -47,7 +47,7 @@ theorem isIntegralHom_inner_iff_outer (m : ThickeningMorphism i j hi hj) :
       AlgebraicStacks.IsIntegralHom B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean#L95). The attribute's comment: “part (10): quasi-separated”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean#L95). The attribute's comment: “part (10): quasi-separated”.
 
 > **Stacks 0CJ9, part (10), the quasi-separated half.** In a morphism of thickenings
 > `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of algebraic stacks over `S`, the restricted 1-morphism `f` is
@@ -64,7 +64,7 @@ theorem isQuasiSeparated_inner_iff_outer (m : ThickeningMorphism i j hi hj) :
       AlgebraicStacks.IsQuasiSeparated B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.isSeparated_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean#L108). The attribute's comment: “part (10): separated”.
+**`AlgebraicGeometry.Stack.isSeparated_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean#L108). The attribute's comment: “part (10): separated”.
 
 > **Stacks 0CJ9, part (10), the separated half.** In a morphism of thickenings
 > `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of algebraic stacks over `S`, the restricted 1-morphism `f` is
@@ -79,7 +79,7 @@ theorem isSeparated_inner_iff_outer (m : ThickeningMorphism i j hi hj) :
     AlgebraicStacks.IsSeparated B S hS m.inner ↔ AlgebraicStacks.IsSeparated B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.thickeningMorphism_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean#L132).
+**`AlgebraicGeometry.Stack.thickeningMorphism_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismProperties.lean#L132).
 
 > **Stacks 0CJ9.** Let `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` be a morphism of thickenings of
 > algebraic stacks over `S`, `f = m.inner` and `f' = m.outer`. Then
@@ -127,7 +127,7 @@ theorem thickeningMorphism_inner_iff_outer (m : ThickeningMorphism i j hi hj) :
       IsRepresentableByAlgebraicSpaces B S hS m.outer.hom.hom)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableMorphism_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismRepresentable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismRepresentable.lean#L131). The attribute's comment: “part (11): representable”.
+**`AlgebraicGeometry.Stack.isRepresentableMorphism_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismRepresentable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismRepresentable.lean#L131). The attribute's comment: “part (11): representable”.
 
 > **Stacks 0CJ9, part (11).** In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of
 > algebraic stacks over `S`, the restricted 1-morphism `f` is representable (by schemes,
@@ -141,7 +141,7 @@ theorem isRepresentableMorphism_inner_iff_outer (m : ThickeningMorphism i j hi h
         (CatFiberedInGroupoids.homFunctor m.outer.hom)
 ```
 
-**`AlgebraicGeometry.Stack.universallyClosed_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean#L295). The attribute's comment: “part (4): universally closed”.
+**`AlgebraicGeometry.Stack.universallyClosed_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean#L295). The attribute's comment: “part (4): universally closed”.
 
 > **Stacks 0CJ9, part (4).** In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of
 > algebraic stacks over `S`, the restricted 1-morphism `f` is universally closed (**Stacks 0513**)
@@ -158,7 +158,7 @@ theorem universallyClosed_inner_iff_outer (m : ThickeningMorphism i j hi hj) :
       AlgebraicStacks.UniversallyClosed B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.universallyOpen_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean#L338). The attribute's comment: “part (7): universally open”.
+**`AlgebraicGeometry.Stack.universallyOpen_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean#L338). The attribute's comment: “part (7): universally open”.
 
 > **Stacks 0CJ9, part (7).** In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of
 > algebraic stacks over `S`, the restricted 1-morphism `f` is universally open (**Stacks 06U2**)
@@ -170,7 +170,7 @@ theorem universallyOpen_inner_iff_outer (m : ThickeningMorphism i j hi hj) :
       AlgebraicStacks.UniversallyOpen B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean#L383). The attribute's comment: “part (3): quasi-compact”.
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean, line 383](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningMorphismTopologicalProperties.lean#L383). The attribute's comment: “part (3): quasi-compact”.
 
 > **Stacks 0CJ9, part (3).** In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of
 > algebraic stacks over `S`, the restricted 1-morphism `f` is quasi-compact (**Stacks 050U**) if
@@ -186,7 +186,7 @@ theorem isQuasiCompactMorphism_inner_iff_outer (m : ThickeningMorphism i j hi hj
     IsQuasiCompactMorphism B S hS m.inner ↔ IsQuasiCompactMorphism B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDM_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L355). The attribute's comment: “item (8): quasi-DM”.
+**`AlgebraicGeometry.Stack.isQuasiDM_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 355](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L355). The attribute's comment: “item (8): quasi-DM”.
 
 > In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of algebraic stacks over `S`,
 > the 1-morphism `f` is quasi-DM if and only if `f'` is quasi-DM.
@@ -196,7 +196,7 @@ theorem isQuasiDM_inner_iff_outer :
     AlgebraicStacks.IsQuasiDM B S hS m.inner ↔ AlgebraicStacks.IsQuasiDM B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.isDM_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L369). The attribute's comment: “item (9): DM”.
+**`AlgebraicGeometry.Stack.isDM_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 369](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L369). The attribute's comment: “item (9): DM”.
 
 > In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of algebraic stacks over `S`,
 > the 1-morphism `f` is Deligne–Mumford if and only if `f'` is Deligne–Mumford.
@@ -205,7 +205,7 @@ theorem isQuasiDM_inner_iff_outer :
 theorem isDM_inner_iff_outer : IsDM B S hS m.inner ↔ IsDM B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L409). The attribute's comment: “item (12): representable by algebraic spaces”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 409](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L409). The attribute's comment: “item (12): representable by algebraic spaces”.
 
 > In a morphism of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of algebraic stacks over `S`,
 > the 1-morphism `f` is representable by algebraic spaces if and only if `f'` is.
@@ -216,7 +216,7 @@ theorem isRepresentableByAlgebraicSpaces_inner_iff_outer :
       IsRepresentableByAlgebraicSpaces B S hS m.outer.hom.hom
 ```
 
-**`AlgebraicGeometry.Stack.isSurjective_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSurjective.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSurjective.lean#L113). The attribute's comment: “part (2): surjective”.
+**`AlgebraicGeometry.Stack.isSurjective_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSurjective.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSurjective.lean#L113). The attribute's comment: “part (2): surjective”.
 
 > **Stacks 0CJ9, part (2).** In a morphism of thickenings of algebraic stacks over `S`, the
 > restricted 1-morphism is surjective if and only if the ambient 1-morphism is surjective.
@@ -232,7 +232,7 @@ theorem isSurjective_inner_iff_outer {𝒳 𝒳' 𝒴 𝒴' : AlgebraicStacks.{u
     IsSurjective B S hS m.inner ↔ IsSurjective B S hS m.outer
 ```
 
-**`AlgebraicGeometry.Stack.universallyInjective_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversallyInjective.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversallyInjective.lean#L285). The attribute's comment: “part (6): universally injective”.
+**`AlgebraicGeometry.Stack.universallyInjective_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversallyInjective.lean, line 285](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversallyInjective.lean#L285). The attribute's comment: “part (6): universally injective”.
 
 > **Stacks 0CJ9, part (6).** In a morphism of thickenings of algebraic stacks over `S`, the
 > restricted 1-morphism is universally injective if and only if the ambient 1-morphism is
@@ -250,4 +250,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.4, Tag 0CJ8](https://stacks.math.columbia.edu/tag/0CJ8)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

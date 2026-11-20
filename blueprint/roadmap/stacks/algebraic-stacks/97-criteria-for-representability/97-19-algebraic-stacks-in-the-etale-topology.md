@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.19 Algebraic stacks in the étale topology
 
-Section 97.19 of the Stacks Project, [Tag 076U](https://stacks.math.columbia.edu/tag/076U). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 97.19 of the Stacks Project, [Tag 076U](https://stacks.math.columbia.edu/tag/076U). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 076V, a lemma
 
 [Tag 076V](https://stacks.math.columbia.edu/tag/076V) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_of_isStackInGroupoids_etale_of_smoothAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleStackCriterion.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleStackCriterion.lean#L456). The attribute's comment: “the criterion, with hypotheses (2) and (3) in the topology-independent form of the corresponding clauses of Stacks 026O”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_of_isStackInGroupoids_etale_of_smoothAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleStackCriterion.lean, line 456](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleStackCriterion.lean#L456). The attribute's comment: “the criterion, with hypotheses (2) and (3) in the topology-independent form of the corresponding clauses of Stacks 026O”.
 
 > **Stacks 076V.** Let `S` be a scheme of a big fppf site and let `𝒳` be a category over the
 > common underlying category of the big fppf and big étale sites of `S` such that
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.19, Tag 076U](https://stacks.math.columbia.edu/tag/076U)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

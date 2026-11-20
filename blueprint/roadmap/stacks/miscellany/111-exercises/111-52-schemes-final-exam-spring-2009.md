@@ -8,13 +8,13 @@ proof: formalized
 
 # 111.52 Schemes, Final Exam, Spring 2009
 
-Section 111.52 of the Stacks Project, [Tag 02AV](https://stacks.math.columbia.edu/tag/02AV). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 111.52 of the Stacks Project, [Tag 02AV](https://stacks.math.columbia.edu/tag/02AV). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02AX, a remark
 
 [Tag 02AX](https://stacks.math.columbia.edu/tag/02AX) in the Stacks Project.
 
-**`Stacks.ProjectiveSpace.Cohomology.projectivePlane_exists_iso_twistingSheaf_and_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Exercises/ProjectivePlaneInvertibleSheaves.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/ProjectivePlaneInvertibleSheaves.lean#L145). The attribute's comment: “invertible sheaves on ℙ²\_k are the twists 𝒪(n), and Γ(ℙ²\_k, 𝒪(n)) is the degree-n part of k[X₀, X₁, X₂] for every n ∈ ℤ (through the canonical map for n ≥ 0)”.
+**`Stacks.ProjectiveSpace.Cohomology.projectivePlane_exists_iso_twistingSheaf_and_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Exercises/ProjectivePlaneInvertibleSheaves.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/ProjectivePlaneInvertibleSheaves.lean#L145). The attribute's comment: “invertible sheaves on ℙ²\_k are the twists 𝒪(n), and Γ(ℙ²\_k, 𝒪(n)) is the degree-n part of k[X₀, X₁, X₂] for every n ∈ ℤ (through the canonical map for n ≥ 0)”.
 
 > **Stacks Project, Tag 02AX.** Let `k` be a field and `ℙ²_k = Proj k[X₀, X₁, X₂]`.
 >
@@ -45,7 +45,7 @@ theorem projectivePlane_exists_iso_twistingSheaf_and_sections (k : Type u) [Fiel
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistSheafOfModules`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean#L178), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/ProjectiveSpaceTwist.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/ProjectiveSpaceTwist.lean#L22) (StacksFrontier): “sheaf\_twist”.
+- [`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistSheafOfModules`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean#L178), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/ProjectiveSpaceTwist.lean, line 22](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/ProjectiveSpaceTwist.lean#L22) (StacksFrontier): “sheaf\_twist”.
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 111.52, Tag 02AV](https://stacks.math.columbia.edu/tag/02AV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

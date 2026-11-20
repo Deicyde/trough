@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.22 Simplicial objects in abelian categories
 
-Section 14.22 of the Stacks Project, [Tag 018Y](https://stacks.math.columbia.edu/tag/018Y). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 14.22 of the Stacks Project, [Tag 018Y](https://stacks.math.columbia.edu/tag/018Y). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 018Z, a lemma
 
 [Tag 018Z](https://stacks.math.columbia.edu/tag/018Z) in the Stacks Project.
 
-**`CategoryTheory.ShortComplex.exact_iff_exact_map_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L96). The attribute's comment: “(4): a sequence of (co)simplicial objects of an abelian category is exact if and only if it is exact in each degree, stated for functors `J ⥤ A` from any category `J`”.
+**`CategoryTheory.ShortComplex.exact_iff_exact_map_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L96). The attribute's comment: “(4): a sequence of (co)simplicial objects of an abelian category is exact if and only if it is exact in each degree, stated for functors `J ⥤ A` from any category `J`”.
 
 > **Stacks 018Z (4)**.
 > A short complex `S` of functors `J ⥤ A`, with `A` an abelian category, is exact if and only if
@@ -27,7 +27,7 @@ public theorem exact_iff_exact_map_evaluation (S : ShortComplex (J ⥤ A)) :
     S.Exact ↔ ∀ j : J, (S.map ((evaluation J A).obj j)).Exact
 ```
 
-**`CategoryTheory.SimplicialObject.mono_iff_mono_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L116). The attribute's comment: “(2) for simplicial objects: a morphism is a monomorphism if and only if it is a monomorphism in each degree”.
+**`CategoryTheory.SimplicialObject.mono_iff_mono_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L116). The attribute's comment: “(2) for simplicial objects: a morphism is a monomorphism if and only if it is a monomorphism in each degree”.
 
 > **Stacks 018Z (2)**, simplicial objects.
 > A morphism `f : X ⟶ Y` of simplicial objects of an abelian category is a monomorphism if and only
@@ -38,7 +38,7 @@ public theorem mono_iff_mono_app {X Y : SimplicialObject A} (f : X ⟶ Y) :
     Mono f ↔ ∀ n : ℕ, Mono (f.app (Opposite.op (SimplexCategory.mk n)))
 ```
 
-**`CategoryTheory.SimplicialObject.epi_iff_epi_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L125). The attribute's comment: “(3) for simplicial objects: a morphism is an epimorphism if and only if it is an epimorphism in each degree”.
+**`CategoryTheory.SimplicialObject.epi_iff_epi_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L125). The attribute's comment: “(3) for simplicial objects: a morphism is an epimorphism if and only if it is an epimorphism in each degree”.
 
 > **Stacks 018Z (3)**, simplicial objects.
 > A morphism `f : X ⟶ Y` of simplicial objects of an abelian category is an epimorphism if and only
@@ -49,7 +49,7 @@ public theorem epi_iff_epi_app {X Y : SimplicialObject A} (f : X ⟶ Y) :
     Epi f ↔ ∀ n : ℕ, Epi (f.app (Opposite.op (SimplexCategory.mk n)))
 ```
 
-**`CategoryTheory.CosimplicialObject.mono_iff_mono_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L138). The attribute's comment: “(2) for cosimplicial objects: a morphism is a monomorphism if and only if it is a monomorphism in each degree”.
+**`CategoryTheory.CosimplicialObject.mono_iff_mono_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L138). The attribute's comment: “(2) for cosimplicial objects: a morphism is a monomorphism if and only if it is a monomorphism in each degree”.
 
 > **Stacks 018Z (2)**, cosimplicial objects.
 > A morphism `f : X ⟶ Y` of cosimplicial objects of an abelian category is a monomorphism if and
@@ -60,7 +60,7 @@ public theorem mono_iff_mono_app {X Y : CosimplicialObject A} (f : X ⟶ Y) :
     Mono f ↔ ∀ n : ℕ, Mono (f.app (SimplexCategory.mk n))
 ```
 
-**`CategoryTheory.CosimplicialObject.epi_iff_epi_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L147). The attribute's comment: “(3) for cosimplicial objects: a morphism is an epimorphism if and only if it is an epimorphism in each degree”.
+**`CategoryTheory.CosimplicialObject.epi_iff_epi_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L147). The attribute's comment: “(3) for cosimplicial objects: a morphism is an epimorphism if and only if it is an epimorphism in each degree”.
 
 > **Stacks 018Z (3)**, cosimplicial objects.
 > A morphism `f : X ⟶ Y` of cosimplicial objects of an abelian category is an epimorphism if and
@@ -73,13 +73,13 @@ public theorem epi_iff_epi_app {X Y : CosimplicialObject A} (f : X ⟶ Y) :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Abelian.functorCategoryAbelian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.functorCategoryAbelian#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L104) (StacksFrontier): “(1): the categories `SimplicialObject A` and `CosimplicialObject A` of simplicial and cosimplicial objects of an abelian category `A` are abelian; they are the functor categories `SimplexCategoryᵒᵖ ⥤ A` and `SimplexCategory ⥤ A`, which this instance makes abelian.”.
+- [`CategoryTheory.Abelian.functorCategoryAbelian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.functorCategoryAbelian#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L104) (StacksFrontier): “(1): the categories `SimplicialObject A` and `CosimplicialObject A` of simplicial and cosimplicial objects of an abelian category `A` are abelian; they are the functor categories `SimplexCategoryᵒᵖ ⥤ A` and `SimplexCategory ⥤ A`, which this instance makes abelian.”.
 
 ## Tag 0190, a lemma
 
 [Tag 0190](https://stacks.math.columbia.edu/tag/0190) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.EilenbergMacLane.eilenbergMacLaneIsoEmKAk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/EilenbergMacLaneExplicit.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/EilenbergMacLaneExplicit.lean#L237). The attribute's comment: “parts (2) and (3): `i_{k!}U` is isomorphic, as a simplicial object, to the simplicial object `emKAk A k` defined by the rules of (2) and (3)”.
+**`CategoryTheory.SimplicialObject.EilenbergMacLane.eilenbergMacLaneIsoEmKAk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/EilenbergMacLaneExplicit.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/EilenbergMacLaneExplicit.lean#L237). The attribute's comment: “parts (2) and (3): `i_{k!}U` is isomorphic, as a simplicial object, to the simplicial object `emKAk A k` defined by the rules of (2) and (3)”.
 
 > **Stacks 0190** (2)-(3).
 > The Eilenberg-MacLane object `K(A, k) = i_{k!}U` of [Stacks, Tag 0191] (the left Kan extension
@@ -92,7 +92,7 @@ Declarations registered for the tag:
 noncomputable def eilenbergMacLaneIsoEmKAk (k : ℕ) : eilenbergMacLane A k ≅ emKAk A k
 ```
 
-**`CategoryTheory.SimplicialObject.Truncated.app_top_injective_and_exists_iff_faces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/TopDegree.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/TopDegree.lean#L171). The attribute's comment: “(1) for `k ≥ 1`, written `k = j + 1`, with the faces `d^k_i` and degeneracies `s^{k-1}_i`; each hom-set is identified with its set of top components. For `k = 0` (where both conditions are empty) see `exists_iso_sk_surjSum_cosk_injSum`.”.
+**`CategoryTheory.SimplicialObject.Truncated.app_top_injective_and_exists_iff_faces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/TopDegree.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/TopDegree.lean#L171). The attribute's comment: “(1) for `k ≥ 1`, written `k = j + 1`, with the faces `d^k_i` and degeneracies `s^{k-1}_i`; each hom-set is identified with its set of top components. For `k = 0` (where both conditions are empty) see `exists_iso_sk_surjSum_cosk_injSum`.”.
 
 > **Stacks 0190** (1), in terms of faces and degeneracies.
 > Let `k = j + 1 ≥ 1` and let `U` be a `k`-truncated simplicial object of `C` with `U_i = 0` for
@@ -123,7 +123,7 @@ theorem app_top_injective_and_exists_iff_faces {j : ℕ}
             V.map (SimplexCategory.Truncated.Hom.tr (SimplexCategory.σ i)).op ≫ f = 0)
 ```
 
-**`CategoryTheory.SimplicialObject.Truncated.exists_iso_sk_surjSum_cosk_injSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/TopDegree.lean, line 725](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/TopDegree.lean#L725). The attribute's comment: “(1)–(7). (1) is the first conjunct, with the conditions stated over all non-surjective (resp. non-injective) operators, which also covers `k = 0`; the face and degeneracy form for `k ≥ 1` is `app_top_injective_and_exists_iff_faces`. (2)–(5) are the isomorphisms `e₁`, `e₂` onto `surjSum` and `injSum`, whose terms and operators are by definition the sums and matrices of the statement. (6) is the matrix of `e₁⁻¹ ≫ c ≫ e₂` in each degree, `c = skToCosk U` being the unique morphism restricting to the identity of `U`. (7) is `Mono c`.”.
+**`CategoryTheory.SimplicialObject.Truncated.exists_iso_sk_surjSum_cosk_injSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/TopDegree.lean, line 725](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/TopDegree.lean#L725). The attribute's comment: “(1)–(7). (1) is the first conjunct, with the conditions stated over all non-surjective (resp. non-injective) operators, which also covers `k = 0`; the face and degeneracy form for `k ≥ 1` is `app_top_injective_and_exists_iff_faces`. (2)–(5) are the isomorphisms `e₁`, `e₂` onto `surjSum` and `injSum`, whose terms and operators are by definition the sums and matrices of the statement. (6) is the matrix of `e₁⁻¹ ≫ c ≫ e₂` in each degree, `c = skToCosk U` being the unique morphism restricting to the identity of `U`. (7) is `Mono c`.”.
 
 > **Stacks 0190**.
 > Let `𝒜` be an abelian category, let `k : ℕ` and let `U` be a `k`-truncated simplicial object of
@@ -171,7 +171,7 @@ theorem exists_iso_sk_surjSum_cosk_injSum {U : SimplicialObject.Truncated 𝒜 k
 
 [Tag 0191](https://stacks.math.columbia.edu/tag/0191) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.eilenbergMacLane`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/EilenbergMacLane.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/EilenbergMacLane.lean#L66).
+**`CategoryTheory.SimplicialObject.eilenbergMacLane`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/EilenbergMacLane.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/EilenbergMacLane.lean#L66).
 
 > **Stacks 0191**.
 > For an object `A` of `C` and an integer `k ≥ 0`, the *Eilenberg-MacLane object* `K(A, k)` is
@@ -191,7 +191,7 @@ public noncomputable def eilenbergMacLane (A : C) (k : ℕ)
 
 [Tag 0192](https://stacks.math.columbia.edu/tag/0192) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.EilenbergMacLane.eilenbergMacLaneShortComplex_shortExact_and_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/EilenbergMacLaneExplicit.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/EilenbergMacLaneExplicit.lean#L279).
+**`CategoryTheory.SimplicialObject.EilenbergMacLane.eilenbergMacLaneShortComplex_shortExact_and_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/EilenbergMacLaneExplicit.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/EilenbergMacLaneExplicit.lean#L279).
 
 > **Stacks 0192**.
 > Let `𝒜` be an abelian category, `A` an object of `𝒜` and `k ≥ 0`. Let `E` be the simplicial
@@ -214,7 +214,7 @@ theorem eilenbergMacLaneShortComplex_shortExact_and_splitting (k : ℕ) :
 
 [Tag 0193](https://stacks.math.columbia.edu/tag/0193) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.exists_mono_isColimit_sk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L425).
+**`CategoryTheory.SimplicialObject.exists_mono_isColimit_sk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean, line 425](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Abelian.lean#L425).
 
 > **Stacks 0193**.
 > Let `V` be a simplicial object of an abelian category `A`. Then there are monomorphisms
@@ -237,4 +237,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.22, Tag 018Y](https://stacks.math.columbia.edu/tag/018Y)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

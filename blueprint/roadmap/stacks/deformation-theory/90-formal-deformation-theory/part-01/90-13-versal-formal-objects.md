@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.13 Versal formal objects
 
-Section 90.13 of the Stacks Project, [Tag 06SX](https://stacks.math.columbia.edu/tag/06SX). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 90.13 of the Stacks Project, [Tag 06SX](https://stacks.math.columbia.edu/tag/06SX). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06SY, a lemma
 
 [Tag 06SY](https://stacks.math.columbia.edu/tag/06SY) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS1_of_versal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 788](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L788).
+**`Deformation.schlessingerConditionS1_of_versal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 788](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/Basic.lean#L788).
 
 > A predeformation category with a versal formal object satisfies
 > Schlessinger's condition (S1).
@@ -34,7 +34,7 @@ public theorem schlessingerConditionS1_of_versal
 
 [Tag 06IU](https://stacks.math.columbia.edu/tag/06IU) in the Stacks Project.
 
-**`Deformation.isVersal_iff_differential_surjective_and_base_lifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/VersalCriterion.lean, line 1263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/VersalCriterion.lean#L1263).
+**`Deformation.isVersal_iff_differential_surjective_and_base_lifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/VersalCriterion.lean, line 1263](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/VersalCriterion.lean#L1263).
 
 > Surjectivity on tangent spaces together with lifting the map of underlying
 > complete local algebras across every small-extension triangle characterizes
@@ -72,7 +72,7 @@ public theorem isVersal_iff_differential_surjective_and_base_lifts
 
 [Tag 06SZ](https://stacks.math.columbia.edu/tag/06SZ) in the Stacks Project.
 
-**`Deformation.exists_least_lifting_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/LeastLiftingIdeal.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/LeastLiftingIdeal.lean#L126).
+**`Deformation.exists_least_lifting_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/LeastLiftingIdeal.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/VersalObject/LeastLiftingIdeal.lean#L126).
 
 > The ideals of the kernel of a surjection `B ⟶ A` over whose quotients
 > an object over `A` lifts have a least member when (S1) holds.
@@ -103,7 +103,7 @@ theorem exists_least_lifting_ideal
 
 [Tag 06IW](https://stacks.math.columbia.edu/tag/06IW) in the Stacks Project.
 
-**`Deformation.exists_versalFormalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/VersalExistence.lean, line 1981](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/VersalExistence.lean#L1981). The attribute's comment: “existence of a versal formal object”. References: SGA 7 VI (1.11), “(i)+(ii) => versal”.
+**`Deformation.exists_versalFormalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/VersalExistence.lean, line 1981](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/VersalExistence.lean#L1981). The attribute's comment: “existence of a versal formal object”. References: SGA 7 VI (1.11), “(i)+(ii) => versal”.
 
 > **Schlessinger's existence theorem.** A predeformation category over `𝒞_Λ` which satisfies
 > his conditions (S1) and (S2) and whose tangent space is finite dimensional has a versal formal
@@ -141,7 +141,7 @@ public theorem exists_versalFormalObject
 
 [Tag 0D3G](https://stacks.math.columbia.edu/tag/0D3G) in the Stacks Project.
 
-**`Deformation.exists_versalFormalObject_of_schlessingerConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean#L308). The attribute's comment: “(H1) + (H2) + (H3) implies a versal formal object exists”. References: SGA 7 VI (1.11), “set-valued functor”.
+**`Deformation.exists_versalFormalObject_of_schlessingerConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean#L308). The attribute's comment: “(H1) + (H2) + (H3) implies a versal formal object exists”. References: SGA 7 VI (1.11), “set-valued functor”.
 
 > **Stacks Project, Tag 0D3G.** A set-valued predeformation functor on `𝒞_Λ` satisfying
 > Schlessinger's conditions (H1) and (H2) — that is, (S1) and (S2) in the elementary form of
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.13, Tag 06SX](https://stacks.math.columbia.edu/tag/06SX)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

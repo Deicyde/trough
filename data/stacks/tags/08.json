@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0800",
@@ -4908,7 +4908,7 @@
     {
      "name": "AlgebraicGeometry.Space.isEffectiveCartierDivisor_sumClosedSubspaces",
      "kind": "theorem",
-     "line": 700,
+     "line": 703,
      "private": false,
      "doc": "**Stacks 083V.** The sum of two effective Cartier divisors on an algebraic space is again an\neffective Cartier divisor: its defining ideal sheaf is the tensor product of the defining ideal\nsheaves of the summands, and a tensor product of invertible sheaves is invertible.",
      "statement": "theorem isEffectiveCartierDivisor_sumClosedSubspaces\n    (hD₁ : IsEffectiveCartierDivisor B S hS X D₁)\n    (hD₂ : IsEffectiveCartierDivisor B S hS X D₂) :\n    IsEffectiveCartierDivisor B S hS X (sumClosedSubspaces B S hS X D₁ D₂)",
@@ -5258,7 +5258,7 @@
     {
      "name": "AlgebraicGeometry.Space.existsUnique_tensorInvertibleSheafIso",
      "kind": "theorem",
-     "line": 1310,
+     "line": 1363,
      "private": false,
      "doc": "**Stacks 0842.** For two effective Cartier divisors `D₁, D₂` on an algebraic space `X` with\nsum `D = D₁ + D₂` there is a *unique* isomorphism\n`𝒪_X(D₁) ⊗_{𝒪_X} 𝒪_X(D₂) ⟶ 𝒪_X(D)` carrying `1_{D₁} ⊗ 1_{D₂}` to `1_D`.",
      "statement": "theorem existsUnique_tensorInvertibleSheafIso :\n    ∃! e : (((Stacks.SheafOfModules.Tensor.sheafTensor.{u + 1, u, u, u, u}\n        ⟨(structureCommRings B S hS X), Presheaf.isSheaf_of_isSheaf_comp _\n        ((structureCommRings B S hS X)) (forget₂ CommRingCat RingCat)\n        ((structureRingSheaf B S hS X).property)⟩).obj\n        ((associatedInvertibleSheaf B S hS X D₁ hD₁))).obj\n        ((associatedInvertibleSheaf B S hS X D₂ hD₂))) ≅\n        associatedInvertibleSheaf B S hS X (sumClosedSubspaces B S hS X D₁ D₂)\n          (isEffectiveCartierDivisor_sumClosedSubspaces B S hS X D₁ D₂ hD₁ hD₂),\n      ∀ U : (SmallEtale B S hS X.1)ᵒᵖ,\n        (e.hom.val.app U).hom\n            ((tensorCanonicalSection B S hS X D₁ D₂ hD₁ hD₂).val U) =\n          (canonicalSection B S hS X (sumClosedSubspaces B S hS X D₁ D₂)\n            (isEffectiveCartierDivisor_sumClosedSubspaces B S hS X D₁ D₂ hD₁ hD₂)).val U",
@@ -5539,7 +5539,7 @@
     {
      "name": "AlgebraicGeometry.Space.canonicalSection_isRegular",
      "kind": "theorem",
-     "line": 307,
+     "line": 284,
      "private": false,
      "doc": "**Stacks 0847, part (1).** The canonical section `1_D` of the invertible sheaf `𝒪_X(D)`\nattached to an effective Cartier divisor `D ⊆ X` is a regular section: multiplication by it is a\nmonomorphism `𝒪_X ⟶ 𝒪_X(D)`.  Tensoring by the invertible sheaf `𝓘_D` reflects monomorphisms,\nand it turns multiplication by `1_D` into the inclusion `𝓘_D ⟶ 𝒪_X`.",
      "statement": "theorem canonicalSection_isRegular :\n    IsRegularSection (structureCommRings B S hS X) (structureRingSheaf B S hS X).property\n      (canonicalSection B S hS X D hD)",
@@ -7142,7 +7142,7 @@
     {
      "name": "AlgebraicGeometry.Space.RelativeProjSituation.epi_psiTwistHom_one",
      "kind": "theorem",
-     "line": 182,
+     "line": 184,
      "private": false,
      "doc": "**Stacks 085D (2).**  For a quasi-coherent graded `𝒪_X`-algebra `𝒜` on an algebraic space `X`\ngenerated as an `𝒜₀`-algebra by `𝒜₁`, and `P = Proj_X(𝒜)` the relative Proj of\nStacks 084A–084B, the canonical map `ψ₁ : π^*𝒜₁ ⟶ 𝒪_P(1)` of Stacks 084D is surjective (an\nepimorphism of `𝒪_P`-modules on the small étale site of `P`).\n\nOn the atlas `U ×_X P = Proj_U(u^*𝒜)` of `P` it is Tag 01NR's `ψ₁`, surjective by the case of\nschemes; surjectivity descends along the surjective étale atlas.",
      "statement": "theorem epi_psiTwistHom_one (hgen : s.IsGeneratedInDegreeOne) : Epi (s.psiTwistHom Px 1)",
@@ -7156,7 +7156,7 @@
     {
      "name": "AlgebraicGeometry.Space.RelativeProjSituation.isInvertibleModule_twistModule",
      "kind": "theorem",
-     "line": 211,
+     "line": 213,
      "private": false,
      "doc": "**Stacks 085D (3), invertibility.**  For a quasi-coherent graded `𝒪_X`-algebra `𝒜` on an\nalgebraic space `X` generated as an `𝒜₀`-algebra by `𝒜₁`, and `P = Proj_X(𝒜)` the relative Proj\nof Stacks 084A–084B, every twist `𝒪_P(n)`, `n ∈ ℤ`, of Stacks 084D is an invertible\n`𝒪_P`-module.\n\nIts inverse image along the atlas `U ×_X P = Proj_U(u^*𝒜)` of `P` is the module attached to the\ntwist `𝒪(n)` of `Proj_U(u^*𝒜)`, invertible by the case of schemes; invertibility of a\nquasi-coherent module descends along the fpqc covering formed by the atlas.",
      "statement": "theorem isInvertibleModule_twistModule (hgen : s.IsGeneratedInDegreeOne) (n : ℤ) :\n    IsInvertibleModule\n      (⟨s.relativeProjFunctor, s.isAlgebraicSpace_relativeProjFunctor⟩ :\n        AlgebraicSpaces s.site s.base s.containsBase)\n      (s.twistModule Px n).obj",
@@ -7170,7 +7170,7 @@
     {
      "name": "AlgebraicGeometry.Space.RelativeProjSituation.isIso_mulSheaf_twistGradedAlgebra",
      "kind": "theorem",
-     "line": 293,
+     "line": 295,
      "private": false,
      "doc": "**Stacks 085D (3), multiplication.**  For a quasi-coherent graded `𝒪_X`-algebra `𝒜` on an\nalgebraic space `X` generated as an `𝒜₀`-algebra by `𝒜₁`, and `P = Proj_X(𝒜)` the relative Proj\nof Stacks 084A–084B, the multiplication maps of `⨁_{n ∈ ℤ} 𝒪_P(n)` (Stacks 084D) induce\nisomorphisms `𝒪_P(n) ⊗_{𝒪_P} 𝒪_P(m) ⟶ 𝒪_P(n + m)` for all integers `n` and `m`, the tensor\nproduct being the tensor product sheaf of `𝒪_P`-modules.\n\nIt is `AlgebraicGeometry.Space.RelativeProjSituation.isIso_twistAlgebraMul` read through the\nidentification of the two tensor products (`…mulSheaf_twistGradedAlgebra`).",
      "statement": "theorem isIso_mulSheaf_twistGradedAlgebra (hgen : s.IsGeneratedInDegreeOne) (n m : ℤ) :\n    haveI := SmallEtale.instHasSheafify s.site s.base s.containsBase s.relativeProjFunctor\n      AddCommGrpCat.{u}\n    haveI := SmallEtale.instWEqualsLocallyBijective s.site s.base s.containsBase\n      s.relativeProjFunctor AddCommGrpCat.{u}\n    IsIso (SheafOfModules.GradedAlgebra.mulSheaf.{u, u + 1, u, u}\n        (J := SmallEtale.topology s.site s.base s.containsBase s.relativeProjFunctor)\n        (s.twistGradedAlgebra Px) n m)",
@@ -11578,7 +11578,7 @@
      "line": 544,
      "private": false,
      "doc": "The Grassmannian functor `G(k, n)` is representable by a scheme when `0 < k < n`.\n\nThis is the content of Constructions, Section 089R: the functor `G(k, n) : Sch → Sets` sending a\nscheme `S` to the isomorphism classes of surjections `𝒪_S^n → 𝒬` with `𝒬` finite locally free of\nrank `n - k`, acting on morphisms by pullback (`AlgebraicGeometry.Grassmannian.functor`, 089S), is\nrepresented by a scheme (089T).",
-     "statement": "public theorem functor_isRepresentable (k n : ℕ) (hk : 0 < k) (hkn : k < n) :\n    (functor.{u} k n).IsRepresentable",
+     "statement": "public theorem functor_isRepresentable (k n : ℕ) :\n    (functor.{u} k n).IsRepresentable",
      "sorry": false,
      "ega": [],
      "sga": [
@@ -11623,7 +11623,7 @@
      "line": 544,
      "private": false,
      "doc": "The Grassmannian functor `G(k, n)` is representable by a scheme when `0 < k < n`.\n\nThis is the content of Constructions, Section 089R: the functor `G(k, n) : Sch → Sets` sending a\nscheme `S` to the isomorphism classes of surjections `𝒪_S^n → 𝒬` with `𝒬` finite locally free of\nrank `n - k`, acting on morphisms by pullback (`AlgebraicGeometry.Grassmannian.functor`, 089S), is\nrepresented by a scheme (089T).",
-     "statement": "public theorem functor_isRepresentable (k n : ℕ) (hk : 0 < k) (hkn : k < n) :\n    (functor.{u} k n).IsRepresentable",
+     "statement": "public theorem functor_isRepresentable (k n : ℕ) :\n    (functor.{u} k n).IsRepresentable",
      "sorry": false,
      "ega": [],
      "sga": [
@@ -16235,7 +16235,7 @@
     {
      "name": "Stacks.Cohomology.MixedDerivedTensorOnARingedSpace.derivedLinearMixedTensorIso",
      "kind": "def",
-     "line": 396,
+     "line": 397,
      "private": false,
      "doc": "**Stacks 08DE, through the one-sided K-flat descent of the mixed tensor product.**  The\ncanonical bifunctorial isomorphism\n\n`F ⊗^L_{O_X} Lf^*G ≅ F ⊗^L_{f⁻¹O_Y} f⁻¹G`\n\nin `D(O_X)`, for a morphism `f : (X, O_X) ⟶ (Y, O_Y)` of ringed spaces, `F` in `D(O_X)` and\n`G` in `D(O_Y)`.  The right-hand side is the derived tensor product over `f⁻¹O_Y` of `F` and\n`f⁻¹G`, an object of `D(O_X)` through `F`.  It is stated between the two uncurried bifunctors on\n`D(O_X) × D(O_Y)`, so that bifunctoriality is part of its type, and the left-hand one is written\nwith the ringed-space derived pullback of Tag 06YJ.",
      "statement": "def derivedLinearMixedTensorIso :\n    spaceLinearDerivedTensorPullback f ≅ spaceDerivedMixedTensorInverseImage f",
@@ -17036,7 +17036,7 @@
     {
      "name": "AlgebraicGeometry.affineTensorComplexIso",
      "kind": "def",
-     "line": 250,
+     "line": 247,
      "private": false,
      "doc": "**The totalised affine tensor comparison.** For complexes `M^•` and `K^•` of `R`-modules, the\ncomplex of `𝒪_{Spec R}`-modules associated to the total tensor complex `Tot(M^• ⊗_R K^•)` is\ncanonically the total tensor complex `Tot(M̃^• ⊗_{𝒪_{Spec R}} K̃^•)` of the associated complexes.\n\nThe isomorphism is returned together with the formula for its value on the summand of total\ndegree `n` indexed by `(i, j)`: there it is the degreewise comparison\n`AlgebraicGeometry.tildeTensorIso` of [Stacks, Tag 01I8] at `M^i` and `K^j`. That formula\ndetermines the isomorphism, since the source of total degree `n` is the direct sum of those\nsummands, so it is carried in the type rather than stated separately.",
      "statement": "public def affineTensorComplexIso (R : CommRingCat.{u})\n    (M K : CochainComplex (ModuleCat.{u} R) ℤ) :\n    { e : tildeComplexMod (A := R) (M ⊗ K) ≅\n        ((tensorComplex.{u, u, u} (specCommRingSheaf R)).obj (tildeComplexMod (A := R) M)).obj\n          (tildeComplexMod (A := R) K) //\n      ∀ (i j n : ℤ) (h : i + j = n),\n        (tilde.functor R).map (HomologicalComplex.ιMapBifunctor M K\n            (curriedTensor (ModuleCat.{u} R)) (ComplexShape.up ℤ) i j n h) ≫ e.hom.f n =\n          (tildeTensorIso R (M.X i) (K.X j)).hom ≫\n            HomologicalComplex.ιMapBifunctor (tildeComplexMod (A := R) M)\n              (tildeComplexMod (A := R) K)\n              (sheafTensor.{u, u, u, u, u} (specCommRingSheaf R)) (ComplexShape.up ℤ) i j n h }",
@@ -17050,7 +17050,7 @@
     {
      "name": "AlgebraicGeometry.affineDerivedTensorIso",
      "kind": "def",
-     "line": 343,
+     "line": 340,
      "private": false,
      "doc": "**Stacks Project, Tag 08DX, part (2).** On the spectrum of a commutative ring `R`, the\nderived tensor product of two associated complexes of sheaves of modules is the complex\nassociated to their derived tensor product over `R`:\n\n`M̃^• ⊗_{𝒪_{Spec R}}^{L} K̃^•  ≅  (M^• ⊗_R^{L} K^•)~`.\n\nBoth arguments are replaced by K-flat representatives, where the two derived tensor products are\ncomputed by ordinary total tensor complexes and the comparison is the totalised ordinary\ncomparison `affineTensorComplexIso` of [Stacks, Tag 01I8]; the representatives are supplied by\nthe definite choices of `kFlatRep`.",
      "statement": "public def affineDerivedTensorIso (R : CommRingCat.{u})\n    (M K : CochainComplex.DerivedTensor.DObj (R : Type u)) :\n    (((Stacks.Cohomology.TorAmplitude.derTensor.{u, u} (Spec R).toRingedSpace).tensor.obj\n          ((tildeDS R).obj M)).obj ((tildeDS R).obj K)) ≅\n      (tildeDS R).obj\n        (((CochainComplex.DerivedTensor.canonicalDerivedTensorProduct\n          (R : Type u)).tensor.obj M).obj K)",
@@ -18628,7 +18628,7 @@
     {
      "name": "Stacks.SheafOfModules.isFlat_iff_hasLocalSingleRelationFactorizations",
      "kind": "theorem",
-     "line": 458,
+     "line": 474,
      "private": false,
      "doc": "**Stacks 08FC, parts (1) and (2).**  A sheaf of modules on a ringed site is flat exactly\nwhen every single finite relation among its sections locally factors through a finite free\nmodule by a matrix annihilating that relation.",
      "statement": "theorem isFlat_iff_hasLocalSingleRelationFactorizations\n    (F : _root_.SheafOfModules.{max v w} (commRingSheafToRingSheaf O)) :\n    IsFlat F ↔ HasLocalSingleRelationFactorizations O F",
@@ -18642,7 +18642,7 @@
     {
      "name": "Stacks.SheafOfModules.hasLocalSingleRelationFactorizations_of_isFlat_freeUniverse",
      "kind": "theorem",
-     "line": 1036,
+     "line": 1060,
      "private": false,
      "doc": "A flat sheaf of modules satisfies the single-relation form of the local equational criterion:\nevery relation `∑ᵢ aᵢ • sᵢ = 0` among its sections over an object `U` admits, on a covering sieve\nof `U`, a factorisation of the restricted sections through a finite free module by a matrix\nannihilating the restricted relation. The universe `w` of the sections of the structure sheaf is\nindependent of the universes of the site.",
      "statement": "theorem hasLocalSingleRelationFactorizations_of_isFlat_freeUniverse\n    {F : _root_.SheafOfModules.{w} (commRingSheafToRingSheaf O)} (hF : IsFlat F) :\n    HasLocalSingleRelationFactorizations O F",
@@ -18661,9 +18661,9 @@
     {
      "name": "Stacks.SheafOfModules.isFlat_of_hasLocalSingleRelationFactorizations_freeUniverse",
      "kind": "theorem",
-     "line": 281,
+     "line": 299,
      "private": false,
-     "doc": "**Stacks 08FC, (2) implies (1).** A sheaf of modules satisfying the single-relation form of\nthe local equational criterion is flat: every relation `∑ᵢ aᵢ • sᵢ = 0` among its sections\nfactoring locally through a finite free module annihilating the relation forces the tensor\nendofunctor `- ⊗ F` on sheaves of modules to be exact.\n\nThis is the universe-general form of\n`Stacks.SheafOfModules.isFlat_of_hasLocalSingleRelationFactorizations`, which proves the same\nimplication for a structure sheaf `O : Sheaf J CommRingCat.{max v w}` on a site with morphisms\nin `Type v`. Here the section universe `w` is independent of `u` and `v`, and `HasWeakSheafify`\nis assumed in place of `HasSheafify`. A ringed site whose sections are unrelated to its\nmorphisms cannot be fed to the `max v w` form, because `w =?= max v u` is not a solvable\nuniverse constraint. The proof sheafifies the local injectivity of the presheaf-level tensor map\nthrough `Stacks.SheafOfModules.mono_shf_map_of_isLocallyInjective`.\n\nTogether with `Stacks.SheafOfModules.hasLocalSingleRelationFactorizations_of_isFlat_freeUniverse`\nthis gives the equivalence of parts (1) and (2) of the source at those universes.",
+     "doc": "**Stacks 08FC, (2) implies (1).** A sheaf of modules satisfying the single-relation form of\nthe local equational criterion is flat: every relation `∑ᵢ aᵢ • sᵢ = 0` among its sections\nfactoring locally through a finite free module annihilating the relation forces the tensor\nendofunctor `- ⊗ F` on sheaves of modules to be exact.\n\nThis is the universe-general form of\n`Stacks.SheafOfModules.isFlat_of_hasLocalSingleRelationFactorizations`, which proves the same\nimplication for a structure sheaf `O : Sheaf J CommRingCat.{max v w}` on a site with morphisms\nin `Type v`. Here the section universe `w` is independent of `u` and `v`, and `HasWeakSheafify`\nis assumed in place of `HasSheafify`. A ringed site whose sections are unrelated to its\nmorphisms cannot be fed to the `max v w` form, because `w =?= max v u` is not a solvable\nuniverse constraint. The proof sheafifies the local injectivity of the presheaf-level tensor map\nthrough `Stacks.SheafOfModules.mono_shf_map_of_isLocallyInjective`, carried over by\n`Stacks.SheafOfModules.Tensor.sheafificationIso` to the sealed sheafification\n`Stacks.SheafOfModules.Tensor.sheafification O` with which\n`Stacks.SheafOfModules.Tensor.sheafTensor` ends.\n\nTogether with `Stacks.SheafOfModules.hasLocalSingleRelationFactorizations_of_isFlat_freeUniverse`\nthis gives the equivalence of parts (1) and (2) of the source at those universes.",
      "statement": "theorem isFlat_of_hasLocalSingleRelationFactorizations_freeUniverse\n    (F : _root_.SheafOfModules.{w} (commRingSheafToRingSheaf O))\n    (hF : HasLocalSingleRelationFactorizations O F) : IsFlat F",
      "sorry": false,
      "ega": [],
@@ -18729,7 +18729,7 @@
     {
      "name": "AlgebraicGeometry.DerivedChow.derivedPushforwardRestrictOpenIso",
      "kind": "def",
-     "line": 199,
+     "line": 200,
      "private": false,
      "doc": "**[Stacks, Tag 08FE] at an open of the target of a morphism of schemes.**  Restricting the\nderived direct image along `q` to an open `V` of the target is the derived direct image along\n`q ∣_ V` of the restriction to `q ⁻¹ᵁ V`: \"forming the total direct image commutes with\nlocalization\".",
      "statement": "def derivedPushforwardRestrictOpenIso :\n    derivedPushforward (ofScheme q) ⋙ derivedPullback (ofScheme V.ι) ≅\n      derivedPullback (ofScheme (q ⁻¹ᵁ V).ι) ⋙ derivedPushforward (ofScheme (q ∣_ V))",
@@ -21484,7 +21484,7 @@
     {
      "name": "AlgebraicGeometry.RingedSite.Hom.isPseudoCoherentFrom_derivedPullback_general",
      "kind": "theorem",
-     "line": 310,
+     "line": 312,
      "private": false,
      "doc": "**Stacks 08H4.** Let `f : (C, O) ⟶ (D, O')` be a morphism of ringed sites, given by a\ncontinuous functor `u : D ⥤ C` whose sheaf pullback `u_s` is exact, and let `E` be an\n`m`-pseudo-coherent object of `D(O')`. Then `Lf^* E` is `m`-pseudo-coherent.\n\nNo finite limits are asked of either site and `u` need not be left exact. The statement is at\n`RingedSite.{u, u, u}`, the universes at which\n`AlgebraicGeometry.RingedSite.Hom.toRingedToposSiteHom` and the derived pullback `Lf^*` of\nStacks 06YY are defined for a morphism of ringed sites.\n\nStacks 08H2 (the site-theoretic Sites 7.14.10) makes the objects `u(W)` cover every object of\n`C`: each `U` has a covering `{U_i → U}` with maps `U_i → u(W_i)`.\n`CategoryTheory.GrothendieckTopology.coversTop_obj_subtype` refines that covering to the `u(W)`\nover which `K` carries a strictly perfect approximation. Over such an object the pullback of the\napproximation is a derived strictly perfect approximation of `(Lf^* E)|_{u(W)}`, by the cone\nargument for the triangulated, bounded-above-preserving `L(f')^*` together with\n`L(f')^* P = (f')^* P` on the strictly perfect `P` and Stacks 08H3; it descends along any arrow\ninto `u(W)` by exactness of restriction, which is what the arrows of that covering supply.",
      "statement": "theorem Hom.isPseudoCoherentFrom_derivedPullback_general\n    (E : DerivedCategory\n      (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf (ringedTopos Y).O)))\n    (m : ℤ)\n    (hE : Y.IsPseudoCoherentFrom E m) :\n    X.IsPseudoCoherentFrom ((derivedPullback f.toRingedToposSiteHom).obj E) m",
@@ -21524,7 +21524,7 @@
     {
      "name": "AlgebraicGeometry.RingedSite.Hom.isPerfect_derivedPullback_of_isPerfect",
      "kind": "theorem",
-     "line": 274,
+     "line": 276,
      "private": false,
      "doc": "**Stacks 08H6.** Let `f : (C, O_C) ⟶ (D, O_D)` be a morphism of ringed sites and let `E` be\nan object of `D(O_D)`. If `E` is perfect, then `Lf^* E` is perfect in `D(O_C)`.\n\nThe morphism of ringed sites is the one of Stacks 00X1: a continuous functor `u : D ⥤ C` whose\n`u_s` is exact. Neither site is assumed to have finite limits and `u` is not assumed to preserve\nthem.\n\nStacks 08H2 makes the objects `u(W)` cover the final object of `Sh(C)`, and\n`CategoryTheory.GrothendieckTopology.coversTop_obj_subtype` refines that covering to the `u(W)`\nover which `K` carries a strictly perfect derived model. Over such an object the pullback of the\nmodel is a strictly perfect derived model of `(Lf^* E)|_{u(W)}`\n(`hasStrictlyPerfectModel_image`, through the derived localization square\n`AlgebraicGeometry.RingedSite.Hom.nonempty_derivedPullbackLocalizedIso_of_noFiniteLimits`), and\nit descends along any arrow into `u(W)` by exactness of restriction\n(`hasStrictlyPerfectModel_of_hom`), which is what the arrows of that covering supply; Stacks\n08G6 (1) assembles.",
      "statement": "theorem Hom.isPerfect_derivedPullback_of_isPerfect\n    (E : DerivedCategory\n      (SheafOfModules.{0} (Stacks.SheafOfModules.Tensor.ringSheaf (ringedTopos Y).O)))\n    (hE : Y.IsPerfect E) :\n    X.IsPerfect ((derivedPullback f.toRingedToposSiteHom).obj E)",
@@ -22232,7 +22232,7 @@
     {
      "name": "CommAlgCat.ind_etale_of_comp",
      "kind": "theorem",
-     "line": 1346,
+     "line": 1345,
      "private": false,
      "doc": "**A filtered colimit of étale algebras over a filtered colimit of étale algebras.** Let\n`A → B → C` be ring maps. If `B` and `C` are filtered colimits of étale `A`-algebras, then `C` is\na filtered colimit of étale `B`-algebras.",
      "statement": "theorem ind_etale_of_comp {A B C : Type u} [CommRing A] [CommRing B] [CommRing C]\n    [Algebra A B] [Algebra B C] [Algebra A C] [IsScalarTower A B C]\n    (hB : (CommAlgCat.etale.{u} A).ind.{u} (CommAlgCat.of A B))\n    (hC : (CommAlgCat.etale.{u} A).ind.{u} (CommAlgCat.of A C)) :\n    (CommAlgCat.etale.{u} B).ind.{u} (CommAlgCat.of B C)",
@@ -22252,7 +22252,7 @@
     {
      "name": "HenselianLocalRing.existsUnique_algEquiv_of_ind_etale",
      "kind": "theorem",
-     "line": 1085,
+     "line": 1084,
      "private": false,
      "doc": "**Uniqueness of the henselization** (Stacks 08HT). Let `R` be a ring, let `S` and `S'` be\nhenselian local `R`-algebras that are filtered colimits of étale `R`-algebras, and let\n`p : S →ₐ[R] K` and `p' : S' →ₐ[R] K` be surjections onto a field `K`, so that `K` is the residue\nfield of both. Then there is an `R`-algebra isomorphism `e : S ≃ₐ[R] S'` such that an `R`-algebra\nmap `f : S → S'` satisfies `p' ∘ f = p` if and only if `f = e`; in particular `e` is the unique\n`R`-algebra isomorphism `S → S'` compatible with the maps to `K`.",
      "statement": "theorem HenselianLocalRing.existsUnique_algEquiv_of_ind_etale\n    {R : Type u} [CommRing R] {S S' : Type u} [CommRing S] [CommRing S'] [Algebra R S]\n    [Algebra R S'] [HenselianLocalRing S] [HenselianLocalRing S']\n    (hS : (CommAlgCat.etale.{u} R).ind.{u} (CommAlgCat.of R S))\n    (hS' : (CommAlgCat.etale.{u} R).ind.{u} (CommAlgCat.of R S'))\n    {K : Type v} [Field K] [Algebra R K] (p : S →ₐ[R] K) (p' : S' →ₐ[R] K)\n    (hp : Function.Surjective p) (hp' : Function.Surjective p') :\n    ∃ e : S ≃ₐ[R] S', ∀ f : S →ₐ[R] S', p'.comp f = p ↔ f = (e : S →ₐ[R] S')",
@@ -22374,10 +22374,10 @@
     {
      "name": "RingTheory.TorIndependence.localizedModuleTorEquiv",
      "kind": "def",
-     "line": 99,
+     "line": 98,
      "private": false,
      "doc": "**Stacks 08HX**, the displayed identification. Let `s` be a prime of `A ⊗[R] B` and let\n`p = A ∩ s`, `q = B ∩ s` lie over the prime `r` of `R`. Then\n`Tor_i^R(A, B)_s ≃ Tor_i^{R_r}(A_p, B_q)_s` as `A ⊗[R] B`-modules, where `Tor_i^{R_r}(A_p, B_q)`\nis regarded as an `A ⊗[R] B`-module along the canonical map `A ⊗[R] B → A_p ⊗[R_r] B_q`.\nIt is the localization at `s` of the canonical change-of-rings map, and comes from the\nisomorphism of Stacks 08HW.",
-     "statement": "public def localizedModuleTorEquiv\n    (R A B : Type u) [CommRing R] [CommRing A] [CommRing B] [Algebra R A] [Algebra R B]\n    (s : PrimeSpectrum (A ⊗[R] B))\n    (r : PrimeSpectrum R) (p : PrimeSpectrum A) (q : PrimeSpectrum B)\n    [p.asIdeal.LiesOver r.asIdeal] [q.asIdeal.LiesOver r.asIdeal]\n    [Algebra (Localization.AtPrime r.asIdeal) (Localization.AtPrime p.asIdeal)]\n    [Algebra (Localization.AtPrime r.asIdeal) (Localization.AtPrime q.asIdeal)]\n    [Localization.AtPrime.IsLiesOverAlgebra r.asIdeal p.asIdeal]\n    [Localization.AtPrime.IsLiesOverAlgebra r.asIdeal q.asIdeal]\n    (hp : p.asIdeal = s.asIdeal.comap (Algebra.TensorProduct.includeLeft : A →ₐ[R] A ⊗[R] B))\n    (hq : q.asIdeal = s.asIdeal.comap (Algebra.TensorProduct.includeRight : B →ₐ[R] A ⊗[R] B))\n    (i : ℕ) :\n    letI := TorChangeOfRings.moduleStructure TorChangeOfRings.canonicalSystem_nonempty R A B i\n    letI := TorChangeOfRings.moduleStructure TorChangeOfRings.canonicalSystem_nonempty\n      (Localization.AtPrime r.asIdeal) (Localization.AtPrime p.asIdeal)\n      (Localization.AtPrime q.asIdeal) i\n    letI : Module (A ⊗[R] B) (TorChangeOfRings.torObj (Localization.AtPrime r.asIdeal) i\n        (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal)) :=\n      Module.compHom _ (TorChangeOfRings.tensorProductMap R (Localization.AtPrime r.asIdeal) A B\n        (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal)\n        (IsScalarTower.toAlgHom R A _) (IsScalarTower.toAlgHom R B _))\n    LocalizedModule s.asIdeal.primeCompl (TorChangeOfRings.torObj R i A B) ≃ₗ[A ⊗[R] B]\n      LocalizedModule s.asIdeal.primeCompl\n        (TorChangeOfRings.torObj (Localization.AtPrime r.asIdeal) i\n          (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal))",
+     "statement": "public def localizedModuleTorEquiv\n    (R A B : Type u) [CommRing R] [CommRing A] [CommRing B] [Algebra R A] [Algebra R B]\n    (s : PrimeSpectrum (A ⊗[R] B))\n    (r : PrimeSpectrum R) (p : PrimeSpectrum A) (q : PrimeSpectrum B)\n    [p.asIdeal.LiesOver r.asIdeal] [q.asIdeal.LiesOver r.asIdeal]\n    [Algebra (Localization.AtPrime r.asIdeal) (Localization.AtPrime p.asIdeal)]\n    [Algebra (Localization.AtPrime r.asIdeal) (Localization.AtPrime q.asIdeal)]\n    [IsScalarTower R (Localization.AtPrime r.asIdeal) (Localization.AtPrime p.asIdeal)]\n    [IsScalarTower R (Localization.AtPrime r.asIdeal) (Localization.AtPrime q.asIdeal)]\n    (hp : p.asIdeal = s.asIdeal.comap (Algebra.TensorProduct.includeLeft : A →ₐ[R] A ⊗[R] B))\n    (hq : q.asIdeal = s.asIdeal.comap (Algebra.TensorProduct.includeRight : B →ₐ[R] A ⊗[R] B))\n    (i : ℕ) :\n    letI := TorChangeOfRings.moduleStructure TorChangeOfRings.canonicalSystem_nonempty R A B i\n    letI := TorChangeOfRings.moduleStructure TorChangeOfRings.canonicalSystem_nonempty\n      (Localization.AtPrime r.asIdeal) (Localization.AtPrime p.asIdeal)\n      (Localization.AtPrime q.asIdeal) i\n    letI : Module (A ⊗[R] B) (TorChangeOfRings.torObj (Localization.AtPrime r.asIdeal) i\n        (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal)) :=\n      Module.compHom _ (TorChangeOfRings.tensorProductMap R (Localization.AtPrime r.asIdeal) A B\n        (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal)\n        (IsScalarTower.toAlgHom R A _) (IsScalarTower.toAlgHom R B _))\n    LocalizedModule s.asIdeal.primeCompl (TorChangeOfRings.torObj R i A B) ≃ₗ[A ⊗[R] B]\n      LocalizedModule s.asIdeal.primeCompl\n        (TorChangeOfRings.torObj (Localization.AtPrime r.asIdeal) i\n          (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal))",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -24662,7 +24662,7 @@
     {
      "name": "Stacks.SheafOfModules.isIso_tensorDualToSheafHom_of_localSummand",
      "kind": "theorem",
-     "line": 535,
+     "line": 537,
      "private": false,
      "doc": "**Step (5) of the proof of Stacks 08JJ.** Let `(C, 𝒪)` be a ringed site, let `E` be a sheaf of\n`𝒪`-modules which is locally a direct summand of a finite free sheaf of modules, and let `F` be an\narbitrary sheaf of `𝒪`-modules. Then the canonical map\n\n`F ⊗_𝒪 SheafHom(E, 𝒪) ⟶ SheafHom(E, F)`\n\nis an isomorphism.\n\nThe map is `Stacks.SheafOfModules.tensorDualToSheafHom`, pinned down on local sections by\n`Stacks.SheafOfModules.tensorDualToSheafHom_toTensorSheafSection`. At `E = F` this is the first\nassertion of Tag 0FNY, `Stacks.SheafOfModules.isIso_tensorDualToEndomorphism_of_localSummand`.\n\nThe hypothesis is the one of Tag 0FNY, that `E` is a summand of a finite free module *locally*;\nStacks 08JJ's step (5) asks for a global summand, which is a special case.",
      "statement": "theorem isIso_tensorDualToSheafHom_of_localSummand\n    (hE : IsLocallyDirectSummandOfFiniteFree 𝒪 h𝒪 E) :\n    IsIso (tensorDualToSheafHom 𝒪 h𝒪 E F)",
@@ -25285,7 +25285,7 @@
     {
      "name": "Algebra.Generators.naiveCotangentComplex_localizationAway",
      "kind": "theorem",
-     "line": 1014,
+     "line": 1012,
      "private": false,
      "doc": "**Stacks 08JZ, the formation of the naive cotangent complex commutes with localization at an\nelement.** Let `A → B` be a ring map, let `g ∈ B`, let `B_g` be a localization of `B` away from\n`g`, let `α : P = A[x_i, i ∈ ι] → B` be a presentation with kernel `I` and let `f ∈ P` be an\nelement mapped to `g` by `α`. Then `β = (localizationAway T g).comp P : P[x] → B_g` is a\npresentation of `B_g` over `A` extending `α` and sending `x` to `1/g`, and\n\n* its kernel `J` is generated by `I` and `f x - 1`;\n* (1) `J/J² = (I/I²)_g ⊕ B_g (f x - 1)`: there is an isomorphism `J/J² ≅ (I/I²) ⊗_B B_g ⊕ B_g`\n  restricting to the canonical map on the first summand and sending `(0, 1)` to the class of\n  `f x - 1`;\n* (2) `Ω_{P[x]/A} ⊗ B_g = Ω_{P/A} ⊗ B_g ⊕ B_g dx`: there is an isomorphism\n  `Ω_{P[x]/A} ⊗ B_g ≅ (Ω_{P/A} ⊗_P B) ⊗_B B_g ⊕ B_g` restricting to the canonical map on the first\n  summand and sending `(0, 1)` to `dx`;\n* (3) `NL(β) ≅ NL(α) ⊗_B B_g ⊕ (B_g --g--> B_g)`: isomorphisms in both degrees which intertwine\n  the differential of `NL(β)` with the direct sum of the base changed differential of `NL(α)` and\n  multiplication by `g` on `B_g`, and restrict to the canonical maps on the first summands;\n* hence, for any presentations `P'` of `B` and `Q` of `B_g` over `A` (for example the canonical\n  ones, whose complexes are `NL_{B/A}` and `NL_{B_g/A}`) and any morphism `φ` of presentations,\n  the induced map `NL(P') ⊗_B B_g → NL(Q)` is a homotopy equivalence: a chain map with a chain\n  homotopy inverse `(ψ₁, ψ₀)` and homotopies `s`, `t`.",
      "statement": "public theorem naiveCotangentComplex_localizationAway\n    (g : S) [IsLocalization.Away g T] {ι : Type*} (P : Generators R S ι) (f : P.Ring)\n    (hf : algebraMap P.Ring S f = g) :\n    (∀ i, ((localizationAway T g).comp P).val (Sum.inr i) = algebraMap S T (P.val i)) ∧\n      ((localizationAway T g).comp P).val (Sum.inl ()) = IsLocalization.Away.invSelf g ∧\n      ((localizationAway T g).comp P).ker =\n        Ideal.map ((localizationAway T g).toComp P).toAlgHom P.ker ⊔\n          Ideal.span {rename Sum.inr f * X (Sum.inl ()) - 1} ∧\n      (∃ e : ((localizationAway T g).comp P).toExtension.Cotangent ≃ₗ[T]\n          T ⊗[S] P.toExtension.Cotangent × T,\n        e.symm.toLinearMap ∘ₗ LinearMap.inl T _ _ =\n            (Extension.Cotangent.map\n              ((localizationAway T g).toComp P).toExtensionHom).liftBaseChange T ∧\n          ∃ h : rename Sum.inr f * X (Sum.inl ()) - 1 ∈ ((localizationAway T g).comp P).ker,\n            e.symm (0, 1) = Extension.Cotangent.mk ⟨_, h⟩) ∧\n      (∃ e : ((localizationAway T g).comp P).toExtension.CotangentSpace ≃ₗ[T]\n          T ⊗[S] P.toExtension.CotangentSpace × T,\n        e.symm.toLinearMap ∘ₗ LinearMap.inl T _ _ =\n            (Extension.CotangentSpace.map\n              ((localizationAway T g).toComp P).toExtensionHom).liftBaseChange T ∧\n          e.symm (0, 1) = ((1 : T) ⊗ₜ[((localizationAway T g).comp P).Ring]\n            KaehlerDifferential.D R ((localizationAway T g).comp P).Ring (X (Sum.inl ())) :)) ∧\n      (∃ (e₁ : ((localizationAway T g).comp P).toExtension.Cotangent ≃ₗ[T]\n          T ⊗[S] P.toExtension.Cotangent × T)\n        (e₀ : ((localizationAway T g).comp P).toExtension.CotangentSpace ≃ₗ[T]\n          T ⊗[S] P.toExtension.CotangentSpace × T),\n        e₀.toLinearMap ∘ₗ ((localizationAway T g).comp P).toExtension.cotangentComplex =\n            (P.toExtension.cotangentComplex.baseChange T).prodMap\n              (algebraMap S T g • LinearMap.id) ∘ₗ e₁.toLinearMap ∧\n          e₁.symm.toLinearMap ∘ₗ LinearMap.inl T _ _ =\n            (Extension.Cotangent.map\n              ((localizationAway T g).toComp P).toExtensionHom).liftBaseChange T ∧\n          e₀.symm.toLinearMap ∘ₗ LinearMap.inl T _ _ =\n            (Extension.CotangentSpace.map\n              ((localizationAway T g).toComp P).toExtensionHom).liftBaseChange T) ∧\n      ∀ {ι' κ : Type*} (P' : Generators R S ι') (Q : Generators R T κ)\n        (φ : P'.toExtension.Hom Q.toExtension),\n        Q.toExtension.cotangentComplex ∘ₗ (Extension.Cotangent.map φ).liftBaseChange T =\n            (Extension.CotangentSpace.map φ).liftBaseChange T ∘ₗ\n              P'.toExtension.cotangentComplex.baseChange T ∧\n          ∃ (ψ₁ : Q.toExtension.Cotangent →ₗ[T] T ⊗[S] P'.toExtension.Cotangent)\n            (ψ₀ : Q.toExtension.CotangentSpace →ₗ[T] T ⊗[S] P'.toExtension.CotangentSpace)\n            (s : T ⊗[S] P'.toExtension.CotangentSpace →ₗ[T] T ⊗[S] P'.toExtension.Cotangent)\n            (t : Q.toExtension.CotangentSpace →ₗ[T] Q.toExtension.Cotangent),\n            P'.toExtension.cotangentComplex.baseChange T ∘ₗ ψ₁ =\n                ψ₀ ∘ₗ Q.toExtension.cotangentComplex ∧\n              LinearMap.id - ψ₁ ∘ₗ (Extension.Cotangent.map φ).liftBaseChange T =\n                s ∘ₗ P'.toExtension.cotangentComplex.baseChange T ∧\n              LinearMap.id - ψ₀ ∘ₗ (Extension.CotangentSpace.map φ).liftBaseChange T =\n                P'.toExtension.cotangentComplex.baseChange T ∘ₗ s ∧\n              LinearMap.id - (Extension.Cotangent.map φ).liftBaseChange T ∘ₗ ψ₁ =\n                t ∘ₗ Q.toExtension.cotangentComplex ∧\n              LinearMap.id - (Extension.CotangentSpace.map φ).liftBaseChange T ∘ₗ ψ₀ =\n                Q.toExtension.cotangentComplex ∘ₗ t",
@@ -26496,7 +26496,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.firstOrderExtensionAction",
      "kind": "def",
-     "line": 616,
+     "line": 566,
      "private": false,
      "doc": "**Stacks Project, Tag 08L4.** The canonical map `c_{ℱ'} : i^* ℐ ⊗_{𝒪_X} ℱ ⟶ 𝒦` of an\nextension `0 ⟶ i_* 𝒦 ⟶ ℱ' ⟶ i_* ℱ ⟶ 0` of `𝒪_{X'}`-modules across a first order thickening\n`i`.\n\nThe bundled equation is the local lifting characterisation from the source: on an open set of\n`X'` over which a section `s` of `i_* ℱ` lifts to a section `s'` of `ℱ'`, the image in `ℱ'` of\n`c_{ℱ'}(a ⊗ s)` is the scalar multiple `a · s'`.",
      "statement": "noncomputable def firstOrderExtensionAction\n    (F K : SheafOfModules.{u}\n        (Stacks.SheafOfModules.Tensor.ringSheaf.{u, u, u} ⟨X.presheaf, X.IsSheaf⟩))\n        (hi : IsFirstOrderThickening i)\n    (E : CategoryTheory.Abelian.YonedaExtension\n      ((modulePushforward i).obj F) ((modulePushforward i).obj K) 0) :\n    { c : (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n        ⟨((X)).presheaf, ((X)).IsSheaf⟩).obj ((idealSheafPullback i))).obj (F)) ⟶ K //\n      ∀ (U : Opens X') (a : (AlgebraicGeometry.SheafOfModules.idealSheaf i).val.obj (op U))\n        (s : ((modulePushforward i).obj F).val.obj (op U)) (s' : E.Z.left.val.obj (op U)),\n        (E.g.val.app (op U)).hom s' = s →\n          (E.f.val.app (op U)).hom\n              ((((modulePushforward i).map c).val.app (op U)).hom\n                (((extensionTensorComparison i F).val.app (op U)).hom\n                  (toTensorSheafSection X' (AlgebraicGeometry.SheafOfModules.idealSheaf i)\n                    ((modulePushforward i).obj F) (op U)\n                    (a ⊗ₜ[X'.presheaf.obj (op U)] s)))) =\n            (show ((Stacks.SheafOfModules.Tensor.ringSheaf.{u, u, u}\n                ⟨X'.presheaf, X'.IsSheaf⟩).obj.obj (op U) : Type u) from\n              ((idealSheafι i).val.app (op U)).hom a) • s' }",
@@ -26817,7 +26817,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.trivialExtensionModule",
      "kind": "def",
-     "line": 779,
+     "line": 784,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (1).** The *trivial extension* `ℱ'_{c,triv}` of `ℱ` by\n`𝒦` attached to `c` and a trivialization `π`: the direct sum `ℱ ⊕ 𝒦`, carried to `X'` by `i_*`,\nwith the `𝒪_{X'}`-module structure built from the splitting of **Stacks 08LA** and the map `c`,\n\n    r · (m, n) = (r m, r n + c(d r ⊗ m)),\n\nwhere `d r = r - π^♯(i^♯ r)` is the derivation of the trivialization.",
      "statement": "noncomputable def trivialExtensionModule : SheafOfModules.{u} (structureSheafRing X')",
@@ -26831,7 +26831,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.trivialExtensionModule_smul",
      "kind": "theorem",
-     "line": 799,
+     "line": 804,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (1).** The `𝒪_{X'}`-module structure of the trivial\nextension: a section of `𝒪_{X'}` acts diagonally on `ℱ ⊕ 𝒦` and moves the `ℱ`-coordinate into\nthe `𝒦`-coordinate through `c` and the derivation of the trivialization. Together with\n`AlgebraicGeometry.RingedSpaceThickening.trivialExtensionModule`, whose sections over `U` are\nby construction the pairs `ℱ(i^{-1}U) × 𝒦(i^{-1}U)`, this is the whole content of part (1).",
      "statement": "theorem trivialExtensionModule_smul (U : (Opens X'.carrier)ᵒᵖ)\n    (r : (structureSheafRing X').obj.obj U)\n    (z : (trivialExtensionModule i π F K c hi).val.obj U) :\n    r • z = (r • z.1, r • z.2 +\n      extensionPairing i F K c U (trivializationDerivation i π hi.1.1 U r) z.1)",
@@ -26845,7 +26845,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.trivialExtensionShortComplex_shortExact",
      "kind": "theorem",
-     "line": 916,
+     "line": 921,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (2).** The trivial extension sits in a short exact\nsequence `0 ⟶ i_* 𝒦 ⟶ ℱ'_{c,triv} ⟶ i_* ℱ ⟶ 0` of `𝒪_{X'}`-modules: the inclusion of the\nsecond summand is a kernel of the projection onto the first.",
      "statement": "theorem trivialExtensionShortComplex_shortExact :\n    (trivialExtensionShortComplex i π F K c hi).ShortExact",
@@ -26859,7 +26859,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.trivialYonedaExtension",
      "kind": "def",
-     "line": 932,
+     "line": 937,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (2).** The trivial extension, read as an extension of\n`i_* ℱ` by `i_* 𝒦` in the sense of **Stacks 08L4**.",
      "statement": "noncomputable def trivialYonedaExtension :\n    CategoryTheory.Abelian.YonedaExtension ((modulePushforward i).obj F)\n      ((modulePushforward i).obj K) 0",
@@ -26873,7 +26873,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.trivialYonedaExtension_action",
      "kind": "theorem",
-     "line": 954,
+     "line": 959,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (2').** The canonical map of the trivial extension is the\nprescribed one: `c_{ℱ'_{c,triv}} = c`. This is what places `ℱ'_{c,triv}` in the set of\nextensions with `c = c_{ℱ'}` that part (4) of the remark puts in bijection with\n`Ext¹_{𝒪_X}(ℱ, 𝒦)`.",
      "statement": "theorem trivialYonedaExtension_action :\n    (firstOrderExtensionAction i F K hi (trivialYonedaExtension i π F K c hi)).1 = c",
@@ -26887,7 +26887,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.splitRestriction",
      "kind": "abbrev",
-     "line": 1002,
+     "line": 1007,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (3).** Reading a sheaf of `𝒪_{X'}`-modules as a sheaf of\n`𝒪_X`-modules along a trivialization: pushforward along the retraction.\n\nThis is the ringed-space form of the source's \"use `π^♯ : 𝒪_X ⟶ 𝒪_{X'}` to think of `ℱ'` as an\n`𝒪_X`-module\". On a single site one would restrict scalars along `π^♯`\n(`Stacks.SheafOfModules.restrictScalarsSplitIso`), but here `X` and `X'` carry different sites\n`Opens X` and `Opens X'`, so the reindexing of opens along the homeomorphism `π` has to be\ncarried along with the restriction of scalars — which is exactly what `π_*` does.",
      "statement": "noncomputable abbrev splitRestriction :\n    SheafOfModules.{u} (structureSheafRing X') ⥤ SheafOfModules.{u} (structureSheafRing X)",
@@ -26901,7 +26901,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.splitExtension",
      "kind": "def",
-     "line": 1048,
+     "line": 1053,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (3).** The extension `0 ⟶ i_* 𝒦 ⟶ ℱ' ⟶ i_* ℱ ⟶ 0` of\n`𝒪_{X'}`-modules, read as a short complex of `𝒪_X`-modules along the trivialization. Its outer\nterms are `𝒦` and `ℱ` themselves, by\n`AlgebraicGeometry.RingedSpaceThickening.splitRestrictionIso`.",
      "statement": "noncomputable def splitExtension : ShortComplex (SheafOfModules.{u} (structureSheafRing X))",
@@ -26915,7 +26915,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.splitExtension_shortExact",
      "kind": "theorem",
-     "line": 1077,
+     "line": 1082,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (3).** An extension across the thickening, read along the\ntrivialization, is again short exact — which is what makes the class `ξ_{ℱ'}` available.\n\nPushforward along `π.retraction` is left exact because it is a right adjoint\n(`RingedSpaceModuleAdjunction.modulePushforward_isRightAdjoint`) and right exact because the\nbase map of a trivialization is a homeomorphism\n(`Stacks.ClosedImmersion.preservesFiniteColimits_modulePushforward_of_isIso_base`), so the\nsequence maps across by `CategoryTheory.ShortComplex.ShortExact.map_of_exact`; the outer terms\nare then only reindexed by isomorphisms.",
      "statement": "theorem splitExtension_shortExact : (splitExtension i π F K E).ShortExact",
@@ -26929,7 +26929,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass",
      "kind": "def",
-     "line": 1093,
+     "line": 1098,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (3).** The class `ξ_{ℱ'} ∈ Ext¹_{𝒪_X}(ℱ, 𝒦)` of an\nextension of `ℱ` by `𝒦` across a trivialized first order thickening of ringed spaces: the\ntrivialization lets the extension be read as an extension of `𝒪_X`-modules, and this is the\nclass of that extension.",
      "statement": "noncomputable def underlyingExtensionClass\n    [HasExt.{e} (SheafOfModules.{u} (structureSheafRing X))] :\n    CategoryTheory.Abelian.Ext F K 1",
@@ -26943,7 +26943,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass_trivialYonedaExtension",
      "kind": "theorem",
-     "line": 1197,
+     "line": 1202,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (5).** The trivial extension maps to the zero class:\n`ξ_{ℱ'_{c,triv}} = 0` in `Ext¹_{𝒪_X}(ℱ, 𝒦)`.\n\nRead along the trivialization the sequence `0 ⟶ 𝒦 ⟶ ℱ ⊕ 𝒦 ⟶ ℱ ⟶ 0` splits, because the\nderivation `d` kills every scalar pulled back along `π` and so the correction term `c(d r ⊗ m)`\nin the action disappears — the projection onto the `𝒦`-summand, which is not `𝒪_{X'}`-linear,\nbecomes `𝒪_X`-linear. A split short exact sequence has zero class by\n`AlgebraicGeometry.RingedSpaceThickening.extClass_eq_zero_of_retraction`.",
      "statement": "theorem underlyingExtensionClass_trivialYonedaExtension\n    [HasExt.{e} (SheafOfModules.{u} (structureSheafRing X))] :\n    underlyingExtensionClass i π hi.1.1 F K (trivialYonedaExtension i π F K c hi) = 0",
@@ -26957,7 +26957,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.exists_iso_of_underlyingExtensionClass_eq",
      "kind": "theorem",
-     "line": 1380,
+     "line": 1385,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (4).** *Injectivity of `ℱ' ↦ ξ_{ℱ'}` on isomorphism\nclasses:* two extensions across the thickening with the same canonical map and the same class\n`ξ` are isomorphic as extensions, by an isomorphism of their middle terms compatible with both\nend terms.\n\nThis is `AlgebraicGeometry.RingedSpaceThickening.extClass_eq_of_underlyingExtensionClass_eq`\ntogether with the fact that two short exact sequences with the same class in `Ext¹` are\nisomorphic over the identity of both end terms\n(`CategoryTheory.Abelian.Ext.extClass_surjective_and_eq_iff_iso_and_baerSum`).",
      "statement": "theorem exists_iso_of_underlyingExtensionClass_eq\n    (E E' : Abelian.YonedaExtension ((modulePushforward i).obj F)\n      ((modulePushforward i).obj K) 0)\n    (hact : (firstOrderExtensionAction i F K hi E).val =\n      (firstOrderExtensionAction i F K hi E').val)\n    (hξ : underlyingExtensionClass i π hi.1.1 F K E =\n      underlyingExtensionClass i π hi.1.1 F K E') :\n    ∃ φ : E.Z.left ≅ E'.Z.left, E.f ≫ φ.hom = E'.f ∧ φ.hom ≫ E'.g = E.g",
@@ -26971,7 +26971,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.exists_yonedaExtension_underlyingExtensionClass_eq",
      "kind": "theorem",
-     "line": 1406,
+     "line": 1411,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (4).** *Surjectivity of `ℱ' ↦ ξ_{ℱ'}`:* every class\n`η ∈ Ext¹_{𝒪_X}(ℱ, 𝒦)` is the class `ξ_{ℱ'}` of an extension `ℱ'` as in **Stacks 08L4** whose\ncanonical map is the prescribed `c`.\n\nRealize `η` as an extension of `𝒪_X`-modules and push it forward along the thickening: its\nmiddle term is a direct image, so by **Stacks 08L7** it can be added to the trivial extension\n`ℱ'_{c,triv}` of part (1) without changing the canonical map, which is `c` by part (2'). The\nclass of the sum is `0 + η = η` by part (5) and additivity.",
      "statement": "theorem exists_yonedaExtension_underlyingExtensionClass_eq\n    (c : (((Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X)).presheaf, ((X)).IsSheaf⟩).obj\n      ((idealSheafPullback i))).obj (F)) ⟶ K) (η : Abelian.Ext.{e} F K 1) :\n    ∃ E : Abelian.YonedaExtension ((modulePushforward i).obj F)\n        ((modulePushforward i).obj K) 0,\n      (firstOrderExtensionAction i F K hi E).val = c ∧\n        underlyingExtensionClass i π hi.1.1 F K E = η",
@@ -26985,7 +26985,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.bijective_underlyingExtensionClass",
      "kind": "theorem",
-     "line": 1470,
+     "line": 1475,
      "private": false,
      "doc": "**Stacks Project, Tag 08LB, part (4).** `ℱ' ↦ ξ_{ℱ'}` *is a bijection* from the isomorphism\nclasses of extensions `0 ⟶ i_* 𝒦 ⟶ ℱ' ⟶ i_* ℱ ⟶ 0` as in **Stacks 08L4** with\n`c = c_{ℱ'}` onto `Ext¹_{𝒪_X}(ℱ, 𝒦)`.\n\nThe isomorphism classes are the elements of\n`AlgebraicGeometry.RingedSpaceThickening.extensionClassesWithAction`, i.e. are represented by\ntheir classes in `Ext¹_{𝒪_{X'}}(i_* ℱ, i_* 𝒦)`, and the map is\n`AlgebraicGeometry.RingedSpaceThickening.splitRestrictionExtHom`, which on the class of `ℱ'` is\n`ξ_{ℱ'}` by\n`AlgebraicGeometry.RingedSpaceThickening.underlyingExtensionClass_eq_splitRestrictionExtHom`.\nThe two halves of the statement, read on extensions rather than on classes, are\n`AlgebraicGeometry.RingedSpaceThickening.exists_yonedaExtension_underlyingExtensionClass_eq` and\n`AlgebraicGeometry.RingedSpaceThickening.exists_iso_of_underlyingExtensionClass_eq`.",
      "statement": "theorem bijective_underlyingExtensionClass\n    (c : (((Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X)).presheaf, ((X)).IsSheaf⟩).obj\n      ((idealSheafPullback i))).obj (F)) ⟶ K) :\n    Function.Bijective (fun ξ : ↥(extensionClassesWithAction i F K hi c) =>\n      splitRestrictionExtHom i π hi.1.1 F K ξ.1)",
@@ -27005,7 +27005,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.PushoutDescentData.extensionOne",
      "kind": "def",
-     "line": 1403,
+     "line": 1408,
      "private": false,
      "doc": "**Stacks Project, Tag 08LC.** The extension over the first thickening produced from an\nextension over the second: the pushout `ℱ'₂ ⊔_{𝒦₂} 𝒦₁` carries an `𝒪_{X'}`-module structure,\nbuilt by descending the action of `T = 𝒪'₂ ⋉ ℐ₁` twisted by `c₁` along the locally surjective\n`q : T ⟶ 𝒪_{X'}`, and sits in a short exact sequence `0 → i_* 𝒦₁ → ℱ'₁ → i_* ℱ → 0` of\n`𝒪_{X'}`-modules. Its middle term restricted along `q` is identified with the pushout by\n`middleIso`, compatibly with the two maps by `restrictScalars_extInclOne` and\n`restrictScalars_extQuotOne`.",
      "statement": "noncomputable def extensionOne :\n    CategoryTheory.Abelian.YonedaExtension ((modulePushforward i).obj dat.F)\n      ((modulePushforward i).obj dat.K₁) 0",
@@ -27019,7 +27019,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.PushoutDescentData.extensionOne_action",
      "kind": "theorem",
-     "line": 1491,
+     "line": 1496,
      "private": false,
      "doc": "**Stacks Project, Tag 08LC.** The canonical map of Tag 08L4 of the extension produced over\nthe first thickening is the prescribed `c₁`.",
      "statement": "theorem extensionOne_action :\n    (firstOrderExtensionAction i dat.F dat.K₁ hi (dat.extensionOne E₂ hi hE₂)).val = dat.c₁",
@@ -27203,7 +27203,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.isFlatOver_iff_baseToInfinitesimal_isIso",
      "kind": "theorem",
-     "line": 1865,
+     "line": 1869,
      "private": false,
      "doc": "**Stacks Project, Tag 08LI.** For a strict morphism of first-order thickenings of ringed\nspaces and an `𝒪_{X'}`-module `ℱ'` whose restriction `ℱ = i^* ℱ'` is flat over `S`, the module\n`ℱ'` is flat over `S'` if and only if the canonical map `f^* 𝒥 ⊗_{𝒪_X} ℱ ⟶ ℐℱ'` is an\nisomorphism.\n\nOne direction is `baseToInfinitesimal_isIso_of_isFlatOver`: flatness makes the ideal action\ninjective, and the map in question is `i^*` of an epimorphism which that injectivity turns into\nan isomorphism. For the other, invertibility makes the action of `(f')^* 𝒥` on `ℱ'` a\nmonomorphism, hence injective on every stalk after base change; the flatness of `ℱ` over `S`\nsupplies the quotient hypothesis of the square-zero local criterion, and strictness is what\nidentifies the relevant quotient of `𝒪_{X',x}` with `𝒪_{X,x}`.",
      "statement": "theorem isFlatOver_iff_baseToInfinitesimal_isIso (D : MorphismOfThickenings.{u})\n    (hi : IsFirstOrderThickening D.i) (ht : IsFirstOrderThickening D.t) (hs : D.IsStrict)\n    (F' : SheafOfModules.{u} (structureSheafRing D.X'))\n    (hF : AlgebraicGeometry.IsFlatOver D.f ((modulePullback D.i).obj F')) :\n    AlgebraicGeometry.IsFlatOver D.f' F' ↔ IsIso (baseToInfinitesimal D F')",
@@ -27222,7 +27222,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.baseToSourceIdealTensor_isIso",
      "kind": "theorem",
-     "line": 1954,
+     "line": 1958,
      "private": false,
      "doc": "**Stacks Project, Tag 08LI.** Under the hypotheses of the criterion and flatness of `ℱ'`\nover `S'`, the reduced canonical ideal map tensored with `ℱ` is an isomorphism: it is an\nepimorphism by strictness, and a monomorphism because the composite with the ideal action is\none.",
      "statement": "theorem baseToSourceIdealTensor_isIso (D : MorphismOfThickenings.{u})\n    (hi : IsFirstOrderThickening D.i) (ht : IsFirstOrderThickening D.t) (hs : D.IsStrict)\n    (F' : SheafOfModules.{u} (structureSheafRing D.X'))\n    (hF : AlgebraicGeometry.IsFlatOver D.f ((modulePullback D.i).obj F'))\n    (hF' : AlgebraicGeometry.IsFlatOver D.f' F') :\n    IsIso (baseToSourceIdealTensor D F')",
@@ -27236,7 +27236,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.sourceIdealActionImage_isIso",
      "kind": "theorem",
-     "line": 1974,
+     "line": 1978,
      "private": false,
      "doc": "**Stacks Project, Tag 08LI.** Under the hypotheses of the criterion and flatness of `ℱ'`\nover `S'`, the ideal action on the reduced source identifies `i^* ℐ ⊗_{𝒪_X} ℱ` with the ideal\nmultiple `ℐℱ'`.",
      "statement": "theorem sourceIdealActionImage_isIso (D : MorphismOfThickenings.{u})\n    (hi : IsFirstOrderThickening D.i) (ht : IsFirstOrderThickening D.t) (hs : D.IsStrict)\n    (F' : SheafOfModules.{u} (structureSheafRing D.X'))\n    (hF : AlgebraicGeometry.IsFlatOver D.f ((modulePullback D.i).obj F'))\n    (hF' : AlgebraicGeometry.IsFlatOver D.f' F') :\n    IsIso (sourceIdealActionImage D F')",
@@ -27256,7 +27256,7 @@
     {
      "name": "AlgebraicGeometry.RingedSpaceThickening.mapLift_isTorsor_tensor",
      "kind": "theorem",
-     "line": 2113,
+     "line": 2129,
      "private": false,
      "doc": "**Stacks Project, Tag 08LJ.** Let `(f, f')` be a morphism of thickenings with `i` a first\norder thickening, let `ℱ'` and `𝒢'` be `𝒪_{X'}`-modules, set `ℱ = i^* ℱ'` and `𝒢 = i^* 𝒢'`,\nand let `φ : ℱ ⟶ 𝒢` be `𝒪_X`-linear. If `𝒢'` is flat over `S'` and `(f, f')` is strict, the\nlifts of `φ` to an `𝒪_{X'}`-linear `φ' : ℱ' ⟶ 𝒢'` form, when nonempty, a principal homogeneous\nspace under `Hom_{𝒪_X}(ℱ, 𝒢 ⊗_{𝒪_X} f^* 𝒥)`, which acts through `infinitesimalTensorIso`: each\n`δ` translates a lift to a lift, and any two lifts are translated to one another by exactly one\n`δ`.\n\nThe group acts because `i^*` is additive and kills a map through `ℐ𝒢'`, which is\n`modulePullback_map_add_comp_infinitesimalι`. That the action is simply transitive is **Stacks\n08LH**, which gives the same conclusion for `Hom_{𝒪_X}(ℱ, ℐ𝒢')`, transported along **Stacks\n08LI**, which identifies `ℐ𝒢'` with `𝒢 ⊗_{𝒪_X} f^* 𝒥`.",
      "statement": "theorem mapLift_isTorsor_tensor (D : MorphismOfThickenings.{u})\n    (hi : IsFirstOrderThickening D.i) (hs : D.IsStrict)\n    (F' G' : SheafOfModules.{u} (structureSheafRing D.X'))\n    (hG' : AlgebraicGeometry.IsFlatOver D.f' G')\n    (φ : (modulePullback D.i).obj F' ⟶ (modulePullback D.i).obj G')\n    (hne : Nonempty (MapLift D.i F' G' φ)) :\n    (∀ (δ : (modulePullback D.i).obj F' ⟶ restrictionTensorBaseIdeal D G')\n        (φ₁ : MapLift D.i F' G' φ),\n        (modulePullback D.i).map\n            (infinitesimalHomEquiv D.i hi F' G'\n                  (δ ≫ (infinitesimalTensorIso D hs G' hG').hom) ≫ infinitesimalι D.i G' +\n                φ₁.1) =\n          φ) ∧\n      ∀ φ₁ φ₂ : MapLift D.i F' G' φ,\n        ∃! δ : (modulePullback D.i).obj F' ⟶ restrictionTensorBaseIdeal D G',\n          infinitesimalHomEquiv D.i hi F' G'\n                (δ ≫ (infinitesimalTensorIso D hs G' hG').hom) ≫ infinitesimalι D.i G' + φ₁.1 =\n              φ₂.1",
@@ -27841,10 +27841,10 @@
     {
      "name": "Stacks.SheafOfModules.FlatSquareZero.isFlat_iff_reduction_isFlat_and_multiplication_mono",
      "kind": "theorem",
-     "line": 2685,
+     "line": 2612,
      "private": false,
      "doc": "Flatness over a square-zero thickening is equivalent to flatness of the reduction and\ninjectivity of the canonical multiplication map from the kernel tensored with the reduction.\n\nHere `i` identifies `I` with the kernel of `f`, `nu` is multiplication\n`I ⊗[O'] F' ⟶ F'`, and `q` exhibits `F` as its cokernel.  The last\ndisplayed formula identifies `mu` with the canonical map\n`I ⊗[O] F ⟶ F'`.",
-     "statement": "public theorem isFlat_iff_reduction_isFlat_and_multiplication_mono\n    {O' O : Sheaf J CommRingCat.{w}} (f : O' ⟶ O)\n    (hf : Presheaf.IsLocallySurjective J f.hom)\n    (I : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf O))\n    (F' : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf O'))\n    (F : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf O))\n    (i : (SheafOfModules.restrictScalars (ringMap f)).obj I ⟶\n      SheafOfModules.unit (Stacks.SheafOfModules.Tensor.ringSheaf O'))\n    (hi_zero : ∀ (U : Cᵒᵖ) (a : I.val.obj U),\n      f.hom.app U (show O'.obj.obj U from i.val.app U a) = 0)\n    (hi_univ : ∀ (U : Cᵒᵖ) (x : O'.obj.obj U), f.hom.app U x = 0 →\n      ∃! a : I.val.obj U, (show O'.obj.obj U from i.val.app U a) = x)\n    (hsq : ∀ (U : Cᵒᵖ) (a b : I.val.obj U),\n      (show O'.obj.obj U from i.val.app U a) *\n        (show O'.obj.obj U from i.val.app U b) = 0)\n    (nu : (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} O').flip.obj F')).obj\n        ((SheafOfModules.restrictScalars (ringMap f)).obj I) ⟶ F')\n    (hnu : ∀ (U : Cᵒᵖ) (a : I.val.obj U) (x : F'.val.obj U),\n      nu.val.app U\n          (((PresheafOfModules.sheafificationAdjunction.{w, v, w, u} (R :=\n              Stacks.SheafOfModules.Tensor.ringSheaf\n              O')\n        (𝟙 (Stacks.SheafOfModules.Tensor.ringSheaf O').obj)).unit.app\n      (PresheafOfModules.tensorObj ((SheafOfModules.restrictScalars (ringMap f)).obj I).val\n          F'.val)).app U\n              (a ⊗ₜ[O'.obj.obj U] x)) =\n        (show (Stacks.SheafOfModules.Tensor.ringSheaf O').obj.obj U from\n          i.val.app U a) • x)\n    (q : F' ⟶ (SheafOfModules.restrictScalars (ringMap f)).obj F)\n    (hnuq : nu ≫ q = 0)\n    (hq : IsColimit (CokernelCofork.ofπ q hnuq))\n    (mu : (SheafOfModules.restrictScalars (ringMap f)).obj\n        ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} O).flip.obj F)).obj I) ⟶ F')\n    (hmu : ∀ (U : Cᵒᵖ) (a : I.val.obj U) (x : F'.val.obj U),\n      mu.val.app U\n          (((PresheafOfModules.sheafificationAdjunction.{w, v, w, u} (R :=\n              Stacks.SheafOfModules.Tensor.ringSheaf\n              O)\n        (𝟙 (Stacks.SheafOfModules.Tensor.ringSheaf O).obj)).unit.app\n      (PresheafOfModules.tensorObj I.val F.val)).app U\n            (a ⊗ₜ[O.obj.obj U] q.val.app U x)) =\n        (show (Stacks.SheafOfModules.Tensor.ringSheaf O').obj.obj U from\n          i.val.app U a) • x) :\n    AlgebraicGeometry.SheafOfModules.IsFlat F' ↔\n      (AlgebraicGeometry.SheafOfModules.IsFlat F ∧ Mono mu)",
+     "statement": "public theorem isFlat_iff_reduction_isFlat_and_multiplication_mono\n    {O' O : Sheaf J CommRingCat.{w}} (f : O' ⟶ O)\n    (hf : Presheaf.IsLocallySurjective J f.hom)\n    (I : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf O))\n    (F' : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf O'))\n    (F : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf O))\n    (i : (SheafOfModules.restrictScalars (ringMap f)).obj I ⟶\n      SheafOfModules.unit (Stacks.SheafOfModules.Tensor.ringSheaf O'))\n    (hi_zero : ∀ (U : Cᵒᵖ) (a : I.val.obj U),\n      f.hom.app U (show O'.obj.obj U from i.val.app U a) = 0)\n    (hi_univ : ∀ (U : Cᵒᵖ) (x : O'.obj.obj U), f.hom.app U x = 0 →\n      ∃! a : I.val.obj U, (show O'.obj.obj U from i.val.app U a) = x)\n    (hsq : ∀ (U : Cᵒᵖ) (a b : I.val.obj U),\n      (show O'.obj.obj U from i.val.app U a) *\n        (show O'.obj.obj U from i.val.app U b) = 0)\n    (nu : (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} O').flip.obj F')).obj\n        ((SheafOfModules.restrictScalars (ringMap f)).obj I) ⟶ F')\n    (hnu : ∀ (U : Cᵒᵖ) (a : I.val.obj U) (x : F'.val.obj U),\n      nu.val.app U\n          (((Stacks.SheafOfModules.Tensor.sheafificationForgetAdjunction O').unit.app\n      (PresheafOfModules.tensorObj ((SheafOfModules.restrictScalars (ringMap f)).obj I).val\n          F'.val)).app U\n              (a ⊗ₜ[O'.obj.obj U] x)) =\n        (show (Stacks.SheafOfModules.Tensor.ringSheaf O').obj.obj U from\n          i.val.app U a) • x)\n    (q : F' ⟶ (SheafOfModules.restrictScalars (ringMap f)).obj F)\n    (hnuq : nu ≫ q = 0)\n    (hq : IsColimit (CokernelCofork.ofπ q hnuq))\n    (mu : (SheafOfModules.restrictScalars (ringMap f)).obj\n        ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} O).flip.obj F)).obj I) ⟶ F')\n    (hmu : ∀ (U : Cᵒᵖ) (a : I.val.obj U) (x : F'.val.obj U),\n      mu.val.app U\n          (((Stacks.SheafOfModules.Tensor.sheafificationForgetAdjunction O).unit.app\n      (PresheafOfModules.tensorObj I.val F.val)).app U\n            (a ⊗ₜ[O.obj.obj U] q.val.app U x)) =\n        (show (Stacks.SheafOfModules.Tensor.ringSheaf O').obj.obj U from\n          i.val.app U a) • x) :\n    AlgebraicGeometry.SheafOfModules.IsFlat F' ↔\n      (AlgebraicGeometry.SheafOfModules.IsFlat F ∧ Mono mu)",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -28122,10 +28122,10 @@
     {
      "name": "Deformation.ToposThickening.extensionActionMap",
      "kind": "def",
-     "line": 1391,
+     "line": 1408,
      "private": false,
      "doc": "The canonical map `I ⊗[O] F → K`, characterized by multiplication by an\nideal section after lifting a section of `F` to the middle module.",
-     "statement": "public noncomputable def extensionActionMap\n    [X.J.HasSheafCompose (forget RingCat.{w})]\n    [Y.J.HasSheafCompose (forget RingCat.{w'})]\n    [X.J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]\n    [Y.J.HasSheafCompose (forget₂ CommRingCat.{w'} RingCat.{w'})]\n    {i : RingedToposHom X Y}\n    [Y.J.WEqualsLocallyBijective AddCommGrpCat.{w'}]\n    [HasSheafify Y.J AddCommGrpCat.{w'}]\n    [HasWeakSheafify Y.J AddCommGrpCat.{w'}]\n    (hi : FirstOrderThickening i)\n    {F K : SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O))}\n    (E : Abelian.YonedaExtension\n      ((SheafOfModules.restrictScalars\n        (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n            Stacks.SheafOfModules.Tensor.ringSheaf\n              ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n          (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj F)\n      ((SheafOfModules.restrictScalars\n        (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n            Stacks.SheafOfModules.Tensor.ringSheaf\n              ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n          (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj K) 0) :\n    { c : ((Stacks.SheafOfModules.Tensor.sheafTensor\n        ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F ⟶ K //\n      ∀ (U : Y.Cᵒᵖ) (a : hi.I.val.obj U) (x : E.Z.left.val.obj U),\n        E.f.val.app U\n            (c.val.app U\n              (((PresheafOfModules.sheafificationAdjunction\n                (R := Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor\n                  i.toToposHom).obj X.O))\n                (𝟙 (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor\n                  i.toToposHom).obj X.O)).obj)).unit.app\n                (PresheafOfModules.tensorObj hi.I.val F.val)).app U\n                (a ⊗ₜ[((pushforwardCommRingFunctor i.toToposHom).obj X.O).obj.obj U]\n                  E.g.val.app U x))) =\n          (show (Stacks.SheafOfModules.Tensor.ringSheaf Y.O).obj.obj U from\n            hi.incl.val.app U a) • x }",
+     "statement": "public noncomputable def extensionActionMap\n    [X.J.HasSheafCompose (forget RingCat.{w})]\n    [Y.J.HasSheafCompose (forget RingCat.{w'})]\n    [X.J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]\n    [Y.J.HasSheafCompose (forget₂ CommRingCat.{w'} RingCat.{w'})]\n    {i : RingedToposHom X Y}\n    [Y.J.WEqualsLocallyBijective AddCommGrpCat.{w'}]\n    [HasSheafify Y.J AddCommGrpCat.{w'}]\n    [HasWeakSheafify Y.J AddCommGrpCat.{w'}]\n    (hi : FirstOrderThickening i)\n    {F K : SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O))}\n    (E : Abelian.YonedaExtension\n      ((SheafOfModules.restrictScalars\n        (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n            Stacks.SheafOfModules.Tensor.ringSheaf\n              ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n          (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj F)\n      ((SheafOfModules.restrictScalars\n        (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n            Stacks.SheafOfModules.Tensor.ringSheaf\n              ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n          (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj K) 0) :\n    { c : ((Stacks.SheafOfModules.Tensor.sheafTensor\n        ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F ⟶ K //\n      ∀ (U : Y.Cᵒᵖ) (a : hi.I.val.obj U) (x : E.Z.left.val.obj U),\n        E.f.val.app U\n            (c.val.app U\n              (((Stacks.SheafOfModules.Tensor.sheafificationForgetAdjunction\n                ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).unit.app\n                (PresheafOfModules.tensorObj hi.I.val F.val)).app U\n                (a ⊗ₜ[((pushforwardCommRingFunctor i.toToposHom).obj X.O).obj.obj U]\n                  E.g.val.app U x))) =\n          (show (Stacks.SheafOfModules.Tensor.ringSheaf Y.O).obj.obj U from\n            hi.incl.val.app U a) • x }",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -28138,7 +28138,7 @@
     {
      "name": "CategoryTheory.Abelian.YonedaExtension",
      "file": "StacksFrontier/Deformation/ToposThickening/Basic.lean",
-     "line": 1386,
+     "line": 1403,
      "tier": "StacksFrontier",
      "comment": "",
      "ega": [],
@@ -28200,7 +28200,7 @@
     {
      "name": "Deformation.ToposThickening.obstructionClass",
      "kind": "def",
-     "line": 270,
+     "line": 267,
      "private": false,
      "doc": "The obstruction class in the first Ext group over the quotient structure sheaf. Its\nvanishing characterizes lifts of the prescribed end maps.",
      "statement": "noncomputable def obstructionClass\n    [HasExt.{e} (SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))]\n    (D : TwoExtensions i) (h : CompatibleActions D) :\n    Abelian.Ext D.F D.L 1",
@@ -28214,7 +28214,7 @@
     {
      "name": "Deformation.ToposThickening.obstructionClass_eq_zero_iff",
      "kind": "theorem",
-     "line": 280,
+     "line": 277,
      "private": false,
      "doc": "The obstruction vanishes exactly when the end maps extend to a map of the two\nextensions.",
      "statement": "theorem obstructionClass_eq_zero_iff\n    [HasExt.{e} (SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))]\n    (D : TwoExtensions i) (h : CompatibleActions D) :\n    obstructionClass D h = 0 ↔\n      ∃ φ' : D.firstExtension.Z.left ⟶ D.secondExtension.Z.left,\n        IsExtensionLift D φ'",
@@ -28234,7 +28234,7 @@
     {
      "name": "Deformation.ToposThickening.fixedActionExtensionClass_torsor",
      "kind": "theorem",
-     "line": 685,
+     "line": 660,
      "private": false,
      "doc": "**Stacks 08ME.** If some extension over a first order thickening of ringed topoi induces the\nprescribed action `c` of the square-zero ideal, then the isomorphism classes of extensions\ninducing `c` form a principal homogeneous space under the first `Ext` group over the quotient\nstructure sheaf.",
      "statement": "theorem fixedActionExtensionClass_torsor\n    [HasExt.{e} (SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))]\n    [HasExt.{e} (SheafOfModules.{w'} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O))]\n    (hi : FirstOrderThickening i)\n    (F K : SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))\n    (c : ((Stacks.SheafOfModules.Tensor.sheafTensor\n      ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F ⟶ K)\n    (h : Nonempty (FixedActionExtensionClass.{_, _, _, _, _, _, e} hi F K c)) :\n    Nonempty (AddTorsor (Abelian.Ext F K 1)\n      (FixedActionExtensionClass.{_, _, _, _, _, _, e} hi F K c))",
@@ -28268,7 +28268,7 @@
     {
      "name": "Deformation.ToposThickening.existenceObstructionClass",
      "kind": "def",
-     "line": 618,
+     "line": 603,
      "private": false,
      "doc": "**Stacks 08MF.** The obstruction to the existence of an extension over a first order\nthickening of ringed topoi inducing a prescribed action `c` of the square-zero ideal: a class in\nthe second `Ext` group over the quotient structure sheaf.",
      "statement": "noncomputable def existenceObstructionClass\n    [HasExt.{e} (SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))]\n    [HasExt.{e} (SheafOfModules.{w'} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O))]\n    (hi : FirstOrderThickening i)\n    (F K : SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))\n    (c : ((Stacks.SheafOfModules.Tensor.sheafTensor\n      ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F ⟶ K) :\n    Abelian.Ext F K 2",
@@ -28282,7 +28282,7 @@
     {
      "name": "Deformation.ToposThickening.existenceObstructionClass_eq_zero_iff",
      "kind": "theorem",
-     "line": 636,
+     "line": 621,
      "private": false,
      "doc": "**Stacks 08MF.** The obstruction class vanishes exactly when there is an extension of `F` by\n`K` over the first order thickening whose canonical action of the square-zero ideal is `c`.",
      "statement": "theorem existenceObstructionClass_eq_zero_iff\n    [HasExt.{e} (SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))]\n    [HasExt.{e} (SheafOfModules.{w'} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O))]\n    (hi : FirstOrderThickening i)\n    (F K : SheafOfModules.{w'}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))\n    (c : ((Stacks.SheafOfModules.Tensor.sheafTensor\n      ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F ⟶ K) :\n    existenceObstructionClass hi F K c = 0 ↔\n      ∃ E : Abelian.YonedaExtension\n        ((SheafOfModules.restrictScalars\n          (structureRingMap i)).obj F)\n        ((SheafOfModules.restrictScalars\n          (structureRingMap i)).obj K) 0,\n        (extensionActionMap hi E).1 = c",
@@ -28434,7 +28434,7 @@
     {
      "name": "Deformation.ToposThickening.trivialExtension_bijective_underlyingExtensionClass",
      "kind": "theorem",
-     "line": 901,
+     "line": 887,
      "private": false,
      "doc": "**Stacks 08MI.** Let `i : (Sh(C), O) ⟶ (Sh(D), O')` be a first order thickening of ringed\ntopoi with square-zero ideal `I`, and `π` a trivialization of it. Let `F`, `K` be `O`-modules and\n`c : I ⊗_O F ⟶ K` a map.\n\n* The trivial extension `F'_{c,triv} = F ⊕ K` (`trivialExtensionModule`, `trivialExtension`)\n  carries the `O'`-module structure `r · (m, k) = (q r · m, q r · k + c(d r ⊗ m))` built from\n  the splitting `O' = O ⊕ I` of `π` and from `c`, and it is an extension\n  `0 ⟶ K ⟶ F'_{c,triv} ⟶ F ⟶ 0` as in Stacks 08MB with `c_{F'_{c,triv}} = c`.\n* The class `ξ_{F'} ∈ Ext¹_O(F, K)` of an extension `F'`, obtained by reading `F'` as an\n  `O`-module through `π^♯` (`underlyingExtensionClass`), only depends on the class of `F'`\n  (through `splitRestrictionExtHom`), and `F' ↦ ξ_{F'}` is a bijection from the isomorphism\n  classes of extensions with `c_{F'} = c` onto `Ext¹_O(F, K)`. The isomorphism classes are\n  represented by their classes in `Ext¹_{O'}(F, K)` (`FixedActionExtensionClass`); the bijection is\n  also stated on extensions: every class is `ξ_{F'}` of an extension with `c_{F'} = c`, and two\n  such extensions with the same `ξ` are isomorphic as extensions.\n* The trivial extension maps to the zero class.",
      "statement": "theorem trivialExtension_bijective_underlyingExtensionClass\n    (c : ((Stacks.SheafOfModules.Tensor.sheafTensor\n      ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F ⟶ K) :\n    (∀ (U : Y.Cᵒᵖ) (r : (Stacks.SheafOfModules.Tensor.ringSheaf Y.O).obj.obj U)\n        (z : (trivialExtensionModule hi π F K c).val.obj U),\n        r • z = (structureApp i U r • z.1, structureApp i U r • z.2 +\n          extensionPairing hi F K c U (trivializationDerivation hi π U r) z.1)) ∧\n      (extensionActionMap hi (trivialExtension hi π F K c)).1 = c ∧\n      (∀ E : Abelian.YonedaExtension\n          ((SheafOfModules.restrictScalars\n            (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n      Stacks.SheafOfModules.Tensor.ringSheaf\n        ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n    (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj F)\n          ((SheafOfModules.restrictScalars\n            (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n      Stacks.SheafOfModules.Tensor.ringSheaf\n        ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n    (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj K) 0,\n        underlyingExtensionClass i hi π F K E =\n          splitRestrictionExtHom hi π F K (extensionClass F K E)) ∧\n      Function.Bijective (fun ξ : FixedActionExtensionClass.{_, _, _, _, _, _, e} hi F K c =>\n        splitRestrictionExtHom hi π F K ξ.1) ∧\n      (∀ η : Abelian.Ext F K 1, ∃ E : Abelian.YonedaExtension\n          ((SheafOfModules.restrictScalars\n            (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n      Stacks.SheafOfModules.Tensor.ringSheaf\n        ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n    (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj F)\n          ((SheafOfModules.restrictScalars\n            (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n      Stacks.SheafOfModules.Tensor.ringSheaf\n        ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n    (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj K) 0,\n        (extensionActionMap hi E).1 = c ∧ underlyingExtensionClass i hi π F K E = η) ∧\n      (∀ E E' : Abelian.YonedaExtension\n          ((SheafOfModules.restrictScalars\n            (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n      Stacks.SheafOfModules.Tensor.ringSheaf\n        ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n    (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj F)\n          ((SheafOfModules.restrictScalars\n            (show Stacks.SheafOfModules.Tensor.ringSheaf Y.O ⟶\n      Stacks.SheafOfModules.Tensor.ringSheaf\n        ((pushforwardCommRingFunctor i.toToposHom).obj X.O) from\n    (sheafCompose Y.J (forget₂ CommRingCat RingCat)).map i.fSharp)).obj K) 0,\n        (extensionActionMap hi E).1 = c → (extensionActionMap hi E').1 = c →\n        underlyingExtensionClass i hi π F K E = underlyingExtensionClass i hi π F K E' →\n        ∃ φ : E.Z.left ≅ E'.Z.left, E.f ≫ φ.hom = E'.f ∧ φ.hom ≫ E'.g = E.g) ∧\n      underlyingExtensionClass i hi π F K (trivialExtension hi π F K c) = 0",
@@ -28468,7 +28468,7 @@
     {
      "name": "Deformation.ToposThickening.MorphismOfFirstOrderThickenings.PushoutExtensionData.extensionOne_actionMap",
      "kind": "theorem",
-     "line": 506,
+     "line": 504,
      "private": false,
      "doc": "**Stacks Project, Tag 08MJ.** The canonical action map of the extension produced over the\nfirst thickening is the prescribed `c₁`.",
      "statement": "theorem extensionOne_actionMap :\n    (extensionActionMap D.first (dat.extensionOne E₂ hE₂)).1 = dat.c₁",
@@ -28830,7 +28830,7 @@
     {
      "name": "Deformation.ToposThickening.nonempty_addTorsor_flatLiftClass",
      "kind": "theorem",
-     "line": 476,
+     "line": 472,
      "private": false,
      "doc": "**Stacks 08MU.** Let `(f, f')` be a strict morphism of first order thickenings of ringed\ntopoi as in Situation 08M7 and let `ℱ` be an `O`-module flat over `O_ℬ`. If `ℱ` has at least one\nlift to an `O'`-module flat over `O_{ℬ'}`, then the isomorphism classes of such lifts form a\nprincipal homogeneous set under `Ext¹_O(ℱ, I ⊗_O ℱ)`.\n\nThe proof is the source's: Stacks 08MQ makes the canonical map `f^*J ⊗ ℱ ⟶ I ⊗ ℱ` an\nisomorphism, which identifies the lifts with the extensions of `ℱ` by `I ⊗_O ℱ` whose action map\nis the identity (`Deformation.ToposThickening.isFlatLiftClassCorrespondence`), and those form a\nprincipal homogeneous set by Stacks 08ME (through\n`Deformation.ToposThickening.flatLiftClass_torsor`). The same statement with the action of the\nsource's proof made explicit is `Deformation.ToposThickening.exists_addTorsor_flatLiftClass`.",
      "statement": "theorem nonempty_addTorsor_flatLiftClass\n    [HasExt.{e} (SheafOfModules.{w}\n      (Stacks.SheafOfModules.Tensor.ringSheaf ((pushforwardCommRingFunctor i.toToposHom).obj X.O)))]\n    [HasExt.{e} (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X'.O))]\n    (hstrict : (MorphismOfThickenings.ofFirstOrderThickenings i t f f' hi ht comm).IsStrict)\n    (hflat : IsFlatOverBase i f F) (hne : Nonempty (FlatLift i f' hi F)) :\n    Nonempty (AddTorsor\n      (Abelian.Ext.{e} F\n        (((Stacks.SheafOfModules.Tensor.sheafTensor.{u', v', w, w, w}\n          ((pushforwardCommRingFunctor i.toToposHom).obj X.O)).obj hi.I).obj F) 1)\n      (FlatLiftClass i f' hi F))",
@@ -31490,9 +31490,9 @@
     {
      "name": "CommAlgCat.free_kaehlerDifferential_polynomialSite",
      "kind": "theorem",
-     "line": 387,
+     "line": 388,
      "private": false,
-     "doc": "**The differentials of each object of `C_{B/A}` are free over it.** Every object `(P, α)` of\nthe site has `P` a polynomial algebra over `A`, so `Ω[P⁄A]` is free on the variables. This is the\nfirst sentence of the proof of Tag 08PU, the objectwise input to its step `Li^* = i^*`; the\nsheaf-level flatness is `CommAlgCat.polynomialRelativeDifferentials_isFlat`, and the step itself,\n`Li^*Ω_{𝒪/A} ≅ i^*Ω_{𝒪/A}` in `D(B̲)`, is `CommAlgCat.smallPolynomialDerivedPullbackDifferentialsIso`\nof `StacksFrontier/Cotangent/PolynomialAlgebraSiteDerivedPullbackDifferentials.lean`.",
+     "doc": "**The differentials of each object of `C_{B/A}` are free over it.** Every object `(P, α)` of\nthe site has `P` a polynomial algebra over `A`, so `Ω[P⁄A]` is free on the variables. This is the\nfirst sentence of the proof of Tag 08PU, the objectwise input to its step `Li^* = i^*`; the\nsheaf-level flatness is `CommAlgCat.polynomialRelativeDifferentials_isFlat`, and the step itself,\n`Li^*Ω_{𝒪/A} ≅ i^*Ω_{𝒪/A}` in `D(B̲)`, is\n`CommAlgCat.smallPolynomialDerivedPullbackDifferentialsIso`\nof `StacksFrontier/Cotangent/PolynomialAlgebraSiteDerivedPullbackDifferentials.lean`.",
      "statement": "theorem free_kaehlerDifferential_polynomialSite (X : polynomialSite A B) :\n    Module.Free (X.unop.obj.left : Type u) Ω[(X.unop.obj.left : Type u)⁄A]",
      "sorry": false,
      "ega": [],
@@ -31504,7 +31504,7 @@
     {
      "name": "CommAlgCat.standardResolutionCotangentMooreComplexIso",
      "kind": "def",
-     "line": 486,
+     "line": 487,
      "private": false,
      "doc": "**The Moore complex of `(i^*Ω_{𝒪/A})(P_•, ε)` is the complex of `L_{B/A}`.** For the\nstandard resolution of `B` over `A`, the Moore complex of the simplicial abelian group obtained\nby evaluating `i^*Ω_{𝒪/A}` on the cosimplicial object of the small model is the complex\nunderlying the cotangent complex of Tag 08PN, namely the alternating face map complex of\n`CommAlgCat.cotangentSimplicialModule` with its `B`-module structures forgotten.\n\nThis is the heart of Tag 08PU: an isomorphism of complexes, not merely of their homology.",
      "statement": "def standardResolutionCotangentMooreComplexIso :\n    (Stacks.ChaoticSite.cosimplicialMooreComplex\n          (standardResolutionSmallCosimplicialObject A B)).obj\n        (smallPolynomialCotangentSheaf A B (standardResolutionVarCardinal A B)).obj ≅\n      ((forget₂ (ModuleCat.{u} B) AddCommGrpCat.{u}).mapHomologicalComplex\n          (ComplexShape.down ℕ)).obj\n        ((alternatingFaceMapComplex (ModuleCat.{u} B)).obj\n          (cotangentSimplicialModule.{u, u} A B).object)",
@@ -31518,7 +31518,7 @@
     {
      "name": "CommAlgCat.standardResolutionLeftDerivedCotangentComplexIso",
      "kind": "def",
-     "line": 524,
+     "line": 525,
      "private": false,
      "doc": "**Tag 08PU at the small model of the restricted site `C_{B/A}`.** The sections at the point\nof `L_nπ_!(Ω_{𝒪/A} ⊗_𝒪 B̲)` are the degree `-n` cohomology of the cotangent complex `L_{B/A}` of\nTag 08PN, with its `B`-module structure forgotten; here `π` is the point morphism of the small\nmodel of the footnote-restricted site and `Lπ_!` is read degreewise, as the left derived functors\nof the `π_!` of Tag 08PF.\n\nThe proof is the source's: Tag 08PT computes `L_nπ_!` on the standard resolution\n(`CommAlgCat.standardResolutionLeftDerivedLowerShriekNatIso`), the evaluation of\n`Ω_{𝒪/A} ⊗_𝒪 B̲` there is the simplicial module defining `L_{B/A}`\n(`CommAlgCat.standardResolutionCotangentMooreComplexIso`), and the cotangent complex is the\nreindexing of that simplicial module's alternating face map complex. The step\n`Li^*Ω_{𝒪/A} = i^*Ω_{𝒪/A}` of the source is the flatness of `Ω_{𝒪/A}` over `𝒪`,\n`CommAlgCat.polynomialRelativeDifferentials_isFlat`; see the implementation notes for what\nseparates this statement from the source's isomorphism in `D(B)`.",
      "statement": "def standardResolutionLeftDerivedCotangentComplexIso (n : ℕ) :\n    (Stacks.ChaoticSite.pointSections.{u, u + 1, u} AddCommGrpCat.{u}).obj\n        (((Stacks.ChaoticSite.abelianPointLowerShriek\n              (smallBoundedPolynomialSite A B\n                (standardResolutionVarCardinal A B))).leftDerived n).obj\n          (smallPolynomialCotangentSheaf A B (standardResolutionVarCardinal A B))) ≅\n      (forget₂ (ModuleCat.{u} B) AddCommGrpCat.{u}).obj\n        ((cotangentComplex.{u, u} A B).homology (-(n : ℤ)))",
@@ -32554,7 +32554,7 @@
     {
      "name": "CommAlgCat.polynomialLeftDerivedZeroLowerShriekInverseImageIso",
      "kind": "def",
-     "line": 552,
+     "line": 553,
      "private": false,
      "doc": "**Tag 08QE at the small model of the restricted site `C_{B/A}`, in degree zero.** The\nsections at the point of `L_0π_!(π^{-1}M)` are the sections of `M`, for every abelian sheaf `M`\non the point; here `π` is the point morphism of the small model of the footnote-restricted site.\n\nThis is the source's proof: Tag 08PT computes `Lπ_!(π^{-1}M)` by `(π^{-1}M)(P_•, ε)` for the\nstandard resolution, and that is the constant simplicial object on `M`.",
      "statement": "def polynomialLeftDerivedZeroLowerShriekInverseImageIso\n    (M : Sheaf (GrothendieckTopology.trivial (Discrete PUnit.{u + 1})) AddCommGrpCat.{u}) :\n    (Stacks.ChaoticSite.pointSections.{u, u + 1, u} AddCommGrpCat.{u}).obj\n        (((Stacks.ChaoticSite.abelianPointLowerShriek\n              (smallBoundedPolynomialSite A B\n                (standardResolutionVarCardinal A B))).leftDerived 0).obj\n          ((Stacks.ChaoticSite.abelianPointInverseImage\n            (smallBoundedPolynomialSite A B\n              (standardResolutionVarCardinal A B))).obj M)) ≅\n      (Stacks.ChaoticSite.pointSections.{u, u + 1, u} AddCommGrpCat.{u}).obj M",
@@ -32568,7 +32568,7 @@
     {
      "name": "CommAlgCat.isZero_polynomialLeftDerivedSuccLowerShriekInverseImage",
      "kind": "theorem",
-     "line": 570,
+     "line": 571,
      "private": false,
      "doc": "**Tag 08QE at the small model of the restricted site `C_{B/A}`, in positive degrees.** The\nsections at the point of `L_nπ_!(π^{-1}M)` vanish for `n > 0`, so together with\n`CommAlgCat.polynomialLeftDerivedZeroLowerShriekInverseImageIso` this is the source's\n`Lπ_!(π^{-1}M) = M`, read degreewise.",
      "statement": "theorem isZero_polynomialLeftDerivedSuccLowerShriekInverseImage\n    (M : Sheaf (GrothendieckTopology.trivial (Discrete PUnit.{u + 1})) AddCommGrpCat.{u})\n    (n : ℕ) :\n    IsZero ((Stacks.ChaoticSite.pointSections.{u, u + 1, u} AddCommGrpCat.{u}).obj\n      (((Stacks.ChaoticSite.abelianPointLowerShriek\n            (smallBoundedPolynomialSite A B\n              (standardResolutionVarCardinal A B))).leftDerived (n + 1)).obj\n        ((Stacks.ChaoticSite.abelianPointInverseImage\n          (smallBoundedPolynomialSite A B\n            (standardResolutionVarCardinal A B))).obj M)))",
@@ -33196,7 +33196,7 @@
     {
      "name": "CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso",
      "kind": "def",
-     "line": 395,
+     "line": 396,
      "private": false,
      "doc": "**[Stacks, Tag 08QQ].** Let\n```\nA  --→  A'\n|       |\nB  --→  B'\n```\nbe a commutative square of rings which induces a quasi-isomorphism `B ⊗_A^𝐋 A' = B'` — that is,\n`Tor_i^A(A', B) = 0` for `i > 0` and the canonical map `A' ⊗_A B → B'` is bijective. Then the\nfunctoriality map induces an isomorphism\n\n`L_{B/A} ⊗^𝐋_B B' ⟶ L_{B'/A'}`\n\nin `D(B')`, where `- ⊗^𝐋_B B'` is the total derived extension-of-scalars functor of\n`StacksFrontier.Homology.Tor.DerivedExtensionScalars`.\n\nThe arrow is the source's. The cotangent complex is a bounded above complex of free modules, so\n`L_{B/A} ⊗^𝐋_B B'` is the degreewise base change `B' ⊗_B L_{B/A}`\n(`CommAlgCat.derivedExtensionScalarsCotangentComplexIso`), and on that the functoriality map of\n[Stacks, Tag 08PN] after extension of scalars is\n`CommAlgCat.cotangentExtendScalarsComplexMap`, a quasi-isomorphism by\n`CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap_unconditional`. That the isomorphism built\nhere is induced by the functoriality map and not merely some isomorphism between the two objects is\n`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso_hom`.",
      "statement": "def derivedCotangentComplexBaseChangeFunctorialityIso\n    (hTor : RingTheory.TorIndependence.TorIndependent A A' (B : Type u))\n    (hφ : Function.Bijective (baseChangeUnit b)) :\n    (CochainComplex.DerivedExtensionScalars.derivedExtensionScalarsGeneral\n          b.toRingHom).functor.obj (DerivedCategory.Q.obj (cotangentComplex.{u, u} A B)) ≅\n      DerivedCategory.Q.obj (cotangentComplex.{u, u} A' B')",
@@ -33210,7 +33210,7 @@
     {
      "name": "CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso_hom",
      "kind": "theorem",
-     "line": 412,
+     "line": 413,
      "private": false,
      "doc": "**The isomorphism of Tag 08QQ is the one the functoriality map induces.** Its underlying\nmorphism is the image in `D(B')` of `CommAlgCat.cotangentExtendScalarsComplexMap` — the\n`B'`-linear adjoint of the `B`-linear map `L_{B/A} ⟶ L_{B'/A'}` of [Stacks, Tag 08PN] — read\nafter the identification of `L_{B/A} ⊗^𝐋_B B'` with the degreewise base change `B' ⊗_B L_{B/A}`.",
      "statement": "theorem derivedCotangentComplexBaseChangeFunctorialityIso_hom\n    (hTor : RingTheory.TorIndependence.TorIndependent A A' (B : Type u))\n    (hφ : Function.Bijective (baseChangeUnit b)) :\n    (derivedCotangentComplexBaseChangeFunctorialityIso b hTor hφ).hom =\n      (derivedExtensionScalarsCotangentComplexIso b).hom ≫\n        DerivedCategory.Q.map (cotangentExtendScalarsComplexMap b)",
@@ -40849,7 +40849,7 @@
     {
      "name": "Deformation.ToposThickening.isFinitePresentation_iff_pullbackModules_of_isFlat",
      "kind": "theorem",
-     "line": 809,
+     "line": 813,
      "private": false,
      "doc": "**Stacks 08VU.** Let `(f, f')` be a morphism of first order thickenings of ringed topoi as\nin Situation 08M7, let `ℱ'` be an `O'`-module and set `ℱ = i^*ℱ'`. Assume that `ℱ'` is flat\nover `O_{ℬ'}` and that `(f, f')` is a strict morphism of thickenings. Then `ℱ'` is an\n`O'`-module of finite presentation if and only if `ℱ` is an `O`-module of finite\npresentation.\n\nFlatness of `ℱ'` over `O_{ℬ'}` is flatness of `ℱ'` read as an `(f')^{-1}O_{ℬ'}`-module, as in\n`Deformation.ToposThickening.HasFlatLift`, and `ℱ = i^*ℱ'` is the pullback of Stacks 03D6.\n\nThe direction (1) ⇒ (2) is Stacks 03DO and uses none of the hypotheses. For (2) ⇒ (1), Stacks\n03DM moves `ℱ` to the site of the thickening, where each local presentation of it lifts to one of\n`ℱ'`; flatness and strictness enter only through the injectivity of the action of `I` on `ℱ'`\n(`Deformation.ToposThickening.isIdealActionMono`). See the module docstring.",
      "statement": "theorem isFinitePresentation_iff_pullbackModules_of_isFlat\n    (i : RingedToposHom X X') (t : RingedToposHom S S') (f : RingedToposHom X S)\n    (f' : RingedToposHom X' S') (hi : FirstOrderThickening i) (ht : FirstOrderThickening t)\n    (comm : f'.comp i = t.comp f) (F' : SheafOfModules.{w} (ringSheaf X'.O))\n    (hflat : AlgebraicGeometry.SheafOfModules.IsFlat\n      ((SheafOfModules.restrictScalars\n        ((sheafCompose X'.J (forget₂ CommRingCat.{w} RingCat.{w})).map\n          f'.fSharpInverseImage)).obj F'))\n    (hstrict : (MorphismOfThickenings.ofFirstOrderThickenings i t f f' hi ht comm).IsStrict) :\n    F'.IsFinitePresentation ↔\n      (i.toRingedToposModulesHom.pullbackModules.obj F').IsFinitePresentation",
@@ -41125,7 +41125,7 @@
     {
      "name": "Algebra.Etale.tfae",
      "kind": "theorem",
-     "line": 293,
+     "line": 291,
      "private": false,
      "doc": "**Stacks 08WD.** Let `R → S` be a ring map. The following are equivalent:\n\n1. `R → S` is étale;\n2. `R → S` is flat and G-unramified;\n3. `R → S` is flat, unramified, and of finite presentation.",
      "statement": "public theorem Algebra.Etale.tfae (R S : Type*) [CommRing R] [CommRing S] [Algebra R S] :\n    List.TFAE\n      [Algebra.Etale R S,\n       Module.Flat R S ∧ Algebra.GUnramified R S,\n       Module.Flat R S ∧ Algebra.Unramified R S ∧ Algebra.FinitePresentation R S]",

@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.80 Blowing up and ample families of invertible modules
 
-Section 37.80 of the Stacks Project, [Tag 0GTR](https://stacks.math.columbia.edu/tag/0GTR). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 37.80 of the Stacks Project, [Tag 0GTR](https://stacks.math.columbia.edu/tag/0GTR). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GTS, a lemma
 
 [Tag 0GTS](https://stacks.math.columbia.edu/tag/0GTS) in the Stacks Project.
 
-**`Stacks.AmpleFamilyCartier.exists_isAmpleFamily_of_isAmpleOnComplement_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/AmpleFamilyCartier/AmpleFamily.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AmpleFamilyCartier/AmpleFamily.lean#L153).
+**`Stacks.AmpleFamilyCartier.exists_isAmpleFamily_of_isAmpleOnComplement_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/AmpleFamilyCartier/AmpleFamily.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AmpleFamilyCartier/AmpleFamily.lean#L153).
 
 > **[Stacks, Tag 0GTS].** Let `X` be a scheme, let `D 0, …, D (m-1)` be effective Cartier
 > divisors on `X` and `L 0, …, L (m-1)` invertible `𝒪_X`-modules such that the divisors have empty
@@ -35,7 +35,7 @@ theorem exists_isAmpleFamily_of_isAmpleOnComplement_cover {m : ℕ}
 
 [Tag 0GTT](https://stacks.math.columbia.edu/tag/0GTT) in the Stacks Project.
 
-**`Stacks.DenseOpenAdmissibleBlowup.exists_isCompact_dense_admissibleBlowup_isAmpleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DenseOpenAdmissibleBlowup/AmpleFamily.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DenseOpenAdmissibleBlowup/AmpleFamily.lean#L42).
+**`Stacks.DenseOpenAdmissibleBlowup.exists_isCompact_dense_admissibleBlowup_isAmpleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/DenseOpenAdmissibleBlowup/AmpleFamily.lean, line 42](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/DenseOpenAdmissibleBlowup/AmpleFamily.lean#L42).
 
 > **[Stacks, Tag 0GTT].** Let `X` be a quasi-compact and quasi-separated scheme with finitely
 > many irreducible components. There exist a quasi-compact dense open `U ⊆ X` and a `U`-admissible
@@ -54,7 +54,7 @@ public theorem exists_isCompact_dense_admissibleBlowup_isAmpleFamily
 
 [Tag 0GTU](https://stacks.math.columbia.edu/tag/0GTU) in the Stacks Project.
 
-**`Stacks.BlowupAmpleFamily.exists_finitePresentation_proper_completelyDecomposed_isAmpleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BlowupAmpleFamily/Noetherian.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BlowupAmpleFamily/Noetherian.lean#L187).
+**`Stacks.BlowupAmpleFamily.exists_finitePresentation_proper_completelyDecomposed_isAmpleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BlowupAmpleFamily/Noetherian.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BlowupAmpleFamily/Noetherian.lean#L187).
 
 > **[Stacks, Tag 0GTU].** Let `X` be a quasi-compact and quasi-separated scheme. There is a
 > morphism of schemes `f : Y ⟶ X` which is of finite presentation, proper and completely
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.80, Tag 0GTR](https://stacks.math.columbia.edu/tag/0GTR)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.62 Intersection products
 
-Section 42.62 of the Stacks Project, [Tag 0FC0](https://stacks.math.columbia.edu/tag/0FC0). 8 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.62 of the Stacks Project, [Tag 0FC0](https://stacks.math.columbia.edu/tag/0FC0). 8 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FC0, the section
 
 [Tag 0FC0](https://stacks.math.columbia.edu/tag/0FC0) in the Stacks Project.
 
-**`Stacks.Chow.smoothIntersectionProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean#L90). The attribute's comment: “X equidimensional of dimension d: α · β = Δ^!(α × β) in CH\_\{n+m-d}(Y ×\_X Z), with Δ^! the Gysin map of the diagonal of Stacks 0FBR, Stacks.Chow.diagonalGysinClass, and × the exterior product of Stacks 0FBV”.
+**`Stacks.Chow.smoothIntersectionProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean#L90). The attribute's comment: “X equidimensional of dimension d: α · β = Δ^!(α × β) in CH\_\{n+m-d}(Y ×\_X Z), with Δ^! the Gysin map of the diagonal of Stacks 0FBR, Stacks.Chow.diagonalGysinClass, and × the exterior product of Stacks 0FBV”.
 
 > **Stacks Project, Tag 0FC0.** The intersection product
 >
@@ -31,7 +31,7 @@ def smoothIntersectionProduct (n m : ℤ) :
       chowGroup C (pullback.fst a b ≫ (a ≫ sX)) (n + m - d)
 ```
 
-**`Stacks.Chow.smoothIntersectionProduct_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean#L100). The attribute's comment: “the defining formula α · β = Δ^!(α × β), with Δ^! the Gysin map of the diagonal”.
+**`Stacks.Chow.smoothIntersectionProduct_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean, line 100](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean#L100). The attribute's comment: “the defining formula α · β = Δ^!(α × β), with Δ^! the Gysin map of the diagonal”.
 
 > **Stacks Project, Tag 0FC0.** The defining formula `α · β = Δ^!(α × β)` of
 > `Stacks.Chow.smoothIntersectionProduct`: it is `Stacks.Chow.intersectionProduct` at the Gysin
@@ -45,7 +45,7 @@ theorem smoothIntersectionProduct_apply (n m : ℤ)
         (smoothDiagonalGysinClass C sX hd) n m t
 ```
 
-**`Stacks.Chow.smoothIntersectionProductBilin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean#L111). The attribute's comment: “the product α ↦ β ↦ α · β as a bilinear map, X equidimensional of dimension d”.
+**`Stacks.Chow.smoothIntersectionProductBilin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean#L111). The attribute's comment: “the product α ↦ β ↦ α · β as a bilinear map, X equidimensional of dimension d”.
 
 > **Stacks Project, Tag 0FC0.** The intersection product as a `ℤ`-bilinear map
 > `CH_n(Y) → CH_m(Z) → CH_{n+m-d}(Y ×_X Z)`, `α ↦ β ↦ α · β`, for `X` smooth of relative
@@ -57,7 +57,7 @@ def smoothIntersectionProductBilin (n m : ℤ) :
       chowGroup C (pullback.fst a b ≫ (a ≫ sX)) (n + m - d)
 ```
 
-**`Stacks.Chow.smoothIntersectionProductParts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean#L146). The attribute's comment: “X smooth of arbitrary dimension: α · β = Δ^!(α × β) in CH\_*(Y ×\_X Z), as the family over d of its parts in CH\_\{n+m-d}(Y\_d ×\_\{X\_d} Z\_d) over the open and closed parts X\_d of X of dimension d, each formed with the Gysin map of the diagonal of Stacks 0FBR”.
+**`Stacks.Chow.smoothIntersectionProductParts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SmoothIntersectionProduct.lean#L146). The attribute's comment: “X smooth of arbitrary dimension: α · β = Δ^!(α × β) in CH\_*(Y ×\_X Z), as the family over d of its parts in CH\_\{n+m-d}(Y\_d ×\_\{X\_d} Z\_d) over the open and closed parts X\_d of X of dimension d, each formed with the Gysin map of the diagonal of Stacks 0FBR”.
 
 > **Stacks Project, Tag 0FC0, for `X` of arbitrary dimension.** Let `X` be smooth over the base,
 > not necessarily equidimensional, with open and closed parts `X_d` of relative dimension `d`
@@ -83,7 +83,7 @@ def smoothIntersectionProductParts (n m : ℤ) :
 
 [Tag 0FC1](https://stacks.math.columbia.edu/tag/0FC1) in the Stacks Project.
 
-**`Stacks.Chow.isAssociativeIntersectionProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TripleIntersectionProduct.lean, line 655](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TripleIntersectionProduct.lean#L655). The attribute's comment: “associativity (α·β)·γ = α·(β·γ) of the Stacks 0FC0 product over a field, via the source's five-step chain; 0FBZ comes from this repository and the chain's fibre-product identification is proved here; carried are 0FBY in both variables (only its fundamental-class case is carried here) and 0FBP (needs the class half of 0FBJ), plus 02S1 and 02S2”.
+**`Stacks.Chow.isAssociativeIntersectionProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TripleIntersectionProduct.lean, line 655](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/TripleIntersectionProduct.lean#L655). The attribute's comment: “associativity (α·β)·γ = α·(β·γ) of the Stacks 0FC0 product over a field, via the source's five-step chain; 0FBZ comes from this repository and the chain's fibre-product identification is proved here; carried are 0FBY in both variables (only its fundamental-class case is carried here) and 0FBP (needs the class half of 0FBJ), plus 02S1 and 02S2”.
 
 > **Stacks Project, Tag 0FC1.** Associativity of the intersection product of Stacks 0FC0: for
 > `X` a scheme over a field `k` whose diagonal carries a Gysin class `Δ^!` of degree `d`, and `Y`,
@@ -119,7 +119,7 @@ theorem isAssociativeIntersectionProduct
       n m l hpp
 ```
 
-**`Stacks.Chow.isAssociativeIntersectionProduct_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TripleIntersectionProductExterior.lean, line 1218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TripleIntersectionProductExterior.lean#L1218). The attribute's comment: “the whole statement: associativity (α·β)·γ = α·(β·γ) in CH\_*(Y ×\_X Z ×\_X W) of the Stacks 0FC0 product for X smooth over a field of arbitrary dimension, Y, Z, W locally of finite type over X and arbitrary α, β, γ, the product Δ^!(α × β) formed with the Gysin class of the diagonal on the open and closed parts of X of constant dimension, as in Section 0FC0”.
+**`Stacks.Chow.isAssociativeIntersectionProduct_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TripleIntersectionProductExterior.lean, line 1218](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/TripleIntersectionProductExterior.lean#L1218). The attribute's comment: “the whole statement: associativity (α·β)·γ = α·(β·γ) in CH\_*(Y ×\_X Z ×\_X W) of the Stacks 0FC0 product for X smooth over a field of arbitrary dimension, Y, Z, W locally of finite type over X and arbitrary α, β, γ, the product Δ^!(α × β) formed with the Gysin class of the diagonal on the open and closed parts of X of constant dimension, as in Section 0FC0”.
 
 > **Stacks 0FC1.** Let `k` be a field, `X` smooth over `k` of arbitrary, not necessarily
 > constant, dimension, and `Y`, `Z`, `W` locally of finite type over `X`. The intersection product
@@ -183,7 +183,7 @@ theorem isAssociativeIntersectionProduct_canonical
 
 [Tag 0FC2](https://stacks.math.columbia.edu/tag/0FC2) in the Stacks Project.
 
-**`Stacks.Chow.chowCohomologyCapFundamentalClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean#L178). The attribute's comment: “the map A^p(X) → CH\_\{d-p}(X), c ↦ c ∩ [X]\_d, for an arbitrary degree d over a general Chow situation; neither its bijectivity nor the compatibility of composition with the intersection product is covered”.
+**`Stacks.Chow.chowCohomologyCapFundamentalClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean#L178). The attribute's comment: “the map A^p(X) → CH\_\{d-p}(X), c ↦ c ∩ [X]\_d, for an arbitrary degree d over a general Chow situation; neither its bijectivity nor the compatibility of composition with the intersection product is covered”.
 
 > **Stacks 0FC2.** The map `A^p(X) ⟶ CH_{d-p}(X)` of Stacks 0FC2: cap product of a bivariant
 > class for the identity of `X` with the fundamental class `[X]_d`, read through the collapse of
@@ -200,7 +200,7 @@ def chowCohomologyCapFundamentalClass :
     chowCohomologyComponent C G sX p →+ chowGroup C sX (d - p)
 ```
 
-**`Stacks.Chow.chowCohomologyCapFundamentalClass_injective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean#L224). The attribute's comment: “injectivity of the map c ↦ c ∩ [X]\_d, reduced by Stacks 02UC to the statement that a class killing [X]\_d kills the fundamental class of every integral scheme locally of finite type over X; the surjectivity of the map and the compatibility of composition with the intersection product are not covered”.
+**`Stacks.Chow.chowCohomologyCapFundamentalClass_injective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean, line 224](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean#L224). The attribute's comment: “injectivity of the map c ↦ c ∩ [X]\_d, reduced by Stacks 02UC to the statement that a class killing [X]\_d kills the fundamental class of every integral scheme locally of finite type over X; the surjectivity of the map and the compatibility of composition with the intersection product are not covered”.
 
 > **Stacks 0FC2, injectivity reduced to Stacks 02UC.** The map `A^p(X) ⟶ CH_{d-p}(X)` of
 > Stacks 0FC2 is injective exactly when every bivariant class killing the fundamental class `[X]_d`
@@ -220,7 +220,7 @@ theorem chowCohomologyCapFundamentalClass_injective_iff :
           c.CapsIntegralFundamentalClassesToZero C G sX sX (𝟙 X) (Category.id_comp sX) p
 ```
 
-**`Stacks.Chow.chowCohomologyCapFundamentalClass_injective_iff_hasBirationalModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean#L245). The attribute's comment: “injectivity of the map c ↦ c ∩ [X]\_d, reduced by clause (3) of Stacks 02UC to the existence of proper birational modifications capping to zero; the surjectivity of the map and the compatibility of composition with the intersection product are not covered”.
+**`Stacks.Chow.chowCohomologyCapFundamentalClass_injective_iff_hasBirationalModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean, line 245](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/SmoothCapFundamentalIso.lean#L245). The attribute's comment: “injectivity of the map c ↦ c ∩ [X]\_d, reduced by clause (3) of Stacks 02UC to the existence of proper birational modifications capping to zero; the surjectivity of the map and the compatibility of composition with the intersection product are not covered”.
 
 > **Stacks 0FC2, injectivity reduced to clause (3) of Stacks 02UC.** The same reduction as
 > `Stacks.Chow.chowCohomologyCapFundamentalClass_injective_iff`, with the criterion read through
@@ -235,7 +235,7 @@ theorem chowCohomologyCapFundamentalClass_injective_iff_hasBirationalModificatio
           c.HasBirationalModificationCappingToZero C G sX sX (𝟙 X) (Category.id_comp sX) p
 ```
 
-**`Stacks.Chow.chowCohomologyCapFundamentalClass_bijective_of_smooth_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean#L150). The attribute's comment: “first clause; equidimensional of dimension d read as of constant relative dimension d over k; bivariant classes are those of the Gysin system of invertible modules”.
+**`Stacks.Chow.chowCohomologyCapFundamentalClass_bijective_of_smooth_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean#L150). The attribute's comment: “first clause; equidimensional of dimension d read as of constant relative dimension d over k; bivariant classes are those of the Gysin system of invertible modules”.
 
 > **Stacks 0FC2, first clause.** Let `X` be smooth over a field `k`, of constant relative
 > dimension `d`, that is equidimensional of dimension `d`. Then
@@ -250,7 +250,7 @@ theorem chowCohomologyCapFundamentalClass_bijective_of_smooth_field (p : ℤ) :
       (gysinSystemOfInvertible (fieldChowSituation k)) sX d p)
 ```
 
-**`Stacks.Chow.chowCohomologyCapFundamentalClass_mulId_of_smooth_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean#L167). The attribute's comment: “second clause, with the intersection product of Stacks 0FC0 formed with the Gysin class Δ^! of the diagonal; equidimensional of dimension d read as of constant relative dimension d over k”.
+**`Stacks.Chow.chowCohomologyCapFundamentalClass_mulId_of_smooth_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean#L167). The attribute's comment: “second clause, with the intersection product of Stacks 0FC0 formed with the Gysin class Δ^! of the diagonal; equidimensional of dimension d read as of constant relative dimension d over k”.
 
 > **Stacks 0FC2, second clause.** Let `X` be smooth over a field `k`, of constant relative
 > dimension `d`. Via `Θ : A^p(X) ⟶ CH_{d-p}(X)`, `c ↦ c ∩ [X]_d`, composition of bivariant classes
@@ -291,7 +291,7 @@ theorem chowCohomologyCapFundamentalClass_mulId_of_smooth_field (p q : ℤ)
 
 [Tag 0FFB](https://stacks.math.columbia.edu/tag/0FFB) in the Stacks Project.
 
-**`Stacks.Chow.GysinMapExists.of_smooth_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/Factorization.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/Factorization.lean#L98). The attribute's comment: “the Gysin map exists for a morphism of schemes smooth over the base”.
+**`Stacks.Chow.GysinMapExists.of_smooth_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/Factorization.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/Factorization.lean#L98). The attribute's comment: “the Gysin map exists for a morphism of schemes smooth over the base”.
 
 > **Stacks 0FFB and Stacks 0FFC, first assertion.** The Gysin map exists for a morphism
 > `f : X ⟶ Y` over a base `S` whose source is smooth over `S`.
@@ -306,7 +306,7 @@ theorem GysinMapExists.of_smooth_source {X Y S : Scheme.{u}} (f : X ⟶ Y) (sY :
     (sX : X ⟶ S) [Smooth sX] (hbase : f ≫ sY = sX) : GysinMapExists f
 ```
 
-**`Stacks.Chow.codimensionGysin_codimensionIntersectionProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/SmoothIntersectionProductMixed.lean, line 975](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/SmoothIntersectionProductMixed.lean#L975). The attribute's comment: “the whole statement for a morphism `f` of schemes smooth over a field, of arbitrary dimension: its Gysin map `f^!` exists and `f^!(α · β) = f^!α · f^!β`, for `f^!` the Gysin map of `f` itself acting part by part and products formed part by part on the open and closed parts of constant dimension”.
+**`Stacks.Chow.codimensionGysin_codimensionIntersectionProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/SmoothIntersectionProductMixed.lean, line 975](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/SmoothIntersectionProductMixed.lean#L975). The attribute's comment: “the whole statement for a morphism `f` of schemes smooth over a field, of arbitrary dimension: its Gysin map `f^!` exists and `f^!(α · β) = f^!α · f^!β`, for `f^!` the Gysin map of `f` itself acting part by part and products formed part by part on the open and closed parts of constant dimension”.
 
 > **Stacks 0FFB: `f^!(α · β) = f^!α · f^!β`.** Let `f : X ⟶ Y` be a morphism of schemes
 > smooth over a field `k`, of arbitrary and not necessarily constant dimension. Then
@@ -342,7 +342,7 @@ theorem codimensionGysin_codimensionIntersectionProduct
 
 [Tag 0FFC](https://stacks.math.columbia.edu/tag/0FFC) in the Stacks Project.
 
-**`Stacks.Chow.GysinMapExists.of_smooth_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/Factorization.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/Factorization.lean#L98). The attribute's comment: “the Gysin map exists for a morphism of schemes smooth over the base”.
+**`Stacks.Chow.GysinMapExists.of_smooth_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/Factorization.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/Factorization.lean#L98). The attribute's comment: “the Gysin map exists for a morphism of schemes smooth over the base”.
 
 > **Stacks 0FFB and Stacks 0FFC, first assertion.** The Gysin map exists for a morphism
 > `f : X ⟶ Y` over a base `S` whose source is smooth over `S`.
@@ -357,7 +357,7 @@ theorem GysinMapExists.of_smooth_source {X Y S : Scheme.{u}} (f : X ⟶ Y) (sY :
     (sX : X ⟶ S) [Smooth sX] (hbase : f ≫ sY = sX) : GysinMapExists f
 ```
 
-**`Stacks.Chow.properChowPushforward_dimensionCodimensionIntersectionProduct_codimensionGysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/SmoothIntersectionProductMixed.lean, line 1053](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/SmoothIntersectionProductMixed.lean#L1053). The attribute's comment: “the whole statement for a proper morphism `f` of schemes smooth over a field, of arbitrary dimension: its Gysin map `f^!` exists and `f_*(α · f^!β) = f_*α · β`, for `f^!` the Gysin map of `f` itself acting part by part and products formed part by part on the open and closed parts of constant dimension”.
+**`Stacks.Chow.properChowPushforward_dimensionCodimensionIntersectionProduct_codimensionGysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/SmoothIntersectionProductMixed.lean, line 1053](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/SmoothIntersectionProductMixed.lean#L1053). The attribute's comment: “the whole statement for a proper morphism `f` of schemes smooth over a field, of arbitrary dimension: its Gysin map `f^!` exists and `f_*(α · f^!β) = f_*α · β`, for `f^!` the Gysin map of `f` itself acting part by part and products formed part by part on the open and closed parts of constant dimension”.
 
 > **Stacks 0FFC: the projection formula `f_*(α · f^!β) = f_*α · β`.** Let `f : X ⟶ Y` be a
 > proper morphism of schemes smooth over a field `k`, of arbitrary and not
@@ -397,7 +397,7 @@ theorem properChowPushforward_dimensionCodimensionIntersectionProduct_codimensio
 
 [Tag 0FFD](https://stacks.math.columbia.edu/tag/0FFD) in the Stacks Project.
 
-**`Stacks.Chow.Intersection.selfIntersectionProduct_diagonalGysinClass_mk_of_cohenMacaulayAtIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayIntersectionProduct.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayIntersectionProduct.lean#L1035).
+**`Stacks.Chow.Intersection.selfIntersectionProduct_diagonalGysinClass_mk_of_cohenMacaulayAtIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayIntersectionProduct.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayIntersectionProduct.lean#L1035).
 
 > **Stacks Project, Tag 0FFD.** Let `k` be a field, let `X` be an integral scheme smooth over
 > `k` of dimension `dX`, and let `Y, Z ⊆ X` be integral closed subschemes of dimensions `dY` and
@@ -440,7 +440,7 @@ theorem selfIntersectionProduct_diagonalGysinClass_mk_of_cohenMacaulayAtIntersec
         (pullback.fst i j ≫ i) d)
 ```
 
-**`Stacks.Chow.Intersection.diagonalPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean#L198). The attribute's comment: “the scheme-theoretic identification `Y ∩ Z = X ×_{Δ, X ×_k X} (Y ×_k Z)`”.
+**`Stacks.Chow.Intersection.diagonalPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean, line 198](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean#L198). The attribute's comment: “the scheme-theoretic identification `Y ∩ Z = X ×_{Δ, X ×_k X} (Y ×_k Z)`”.
 
 > **Stacks Project, Tag 0FFD.** The scheme-theoretic identification
 > `Y ∩ Z = X ×_{Δ, X ×_k X} (Y ×_k Z)` used by the source to recognise the source of the Gysin
@@ -452,7 +452,7 @@ def diagonalPullbackIso (p : X ⟶ Spec (.of k)) (i : Y ⟶ X) (j : Z ⟶ X) :
     (diagonalPullback p i j) ≅ (pullback i j : Scheme.{u})
 ```
 
-**`Stacks.Chow.Intersection.gysinFormulaHypotheses_of_cohenMacaulayAtIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean#L287). The attribute's comment: “the reduction of the lemma to Stacks 0FEA: the identification of the intersection with the diagonal pullback, and hypotheses (2), (3) and (4) of 0FEA at the diagonal of X → Spec k. Neither the conclusion [Y]·[Z] = [Y ∩ Z]\_d nor 0FEA itself is stated; carries ProductStalkCohenMacaulay for Stacks 045J. The docstring says what is covered in full”.
+**`Stacks.Chow.Intersection.gysinFormulaHypotheses_of_cohenMacaulayAtIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean, line 287](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean#L287). The attribute's comment: “the reduction of the lemma to Stacks 0FEA: the identification of the intersection with the diagonal pullback, and hypotheses (2), (3) and (4) of 0FEA at the diagonal of X → Spec k. Neither the conclusion [Y]·[Z] = [Y ∩ Z]\_d nor 0FEA itself is stated; carries ProductStalkCohenMacaulay for Stacks 045J. The docstring says what is covered in full”.
 
 > **Stacks Project, Tag 0FFD.** Let `k` be a field, let `X` be an integral scheme smooth over
 > `k` of dimension `dX`, and let `Y, Z ⊆ X` be integral closed subschemes of dimensions `dY` and
@@ -494,7 +494,7 @@ theorem gysinFormulaHypotheses_of_cohenMacaulayAtIntersection (k : Type u) [Fiel
     GysinFormulaHypotheses k p i j dY dZ d
 ```
 
-**`Stacks.Chow.Intersection.gysinFormulaHypotheses_of_cohenMacaulayAtIntersection'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean#L425). The attribute's comment: “the reduction of the lemma to Stacks 0FEA from hypotheses (1) and (2) alone: the identification of the intersection with the diagonal pullback, and hypotheses (2), (3) and (4) of 0FEA at the diagonal of X → Spec k. Nothing is carried. Neither the conclusion [Y]·[Z] = [Y ∩ Z]\_d nor 0FEA itself is stated, and hypothesis (1) of 0FEA, about the virtual normal sheaf, is not among the clauses. The docstring says what is covered in full”.
+**`Stacks.Chow.Intersection.gysinFormulaHypotheses_of_cohenMacaulayAtIntersection'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean, line 425](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Intersection/CohenMacaulayProperIntersection.lean#L425). The attribute's comment: “the reduction of the lemma to Stacks 0FEA from hypotheses (1) and (2) alone: the identification of the intersection with the diagonal pullback, and hypotheses (2), (3) and (4) of 0FEA at the diagonal of X → Spec k. Nothing is carried. Neither the conclusion [Y]·[Z] = [Y ∩ Z]\_d nor 0FEA itself is stated, and hypothesis (1) of 0FEA, about the virtual normal sheaf, is not among the clauses. The docstring says what is covered in full”.
 
 > **Stacks Project, Tag 0FFD.** Let `k` be a field, let `X` be an integral scheme smooth over
 > `k` of dimension `dX`, and let `Y, Z ⊆ X` be integral closed subschemes of dimensions `dY` and
@@ -536,7 +536,7 @@ public theorem gysinFormulaHypotheses_of_cohenMacaulayAtIntersection' (k : Type 
 
 [Tag 0FFE](https://stacks.math.columbia.edu/tag/0FFE) in the Stacks Project.
 
-**`Stacks.Chow.intersectionProduct_fundamentalChowClass_eq_pushforward_regularImmersionGysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/RegularImmersionIntersectionProduct.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/RegularImmersionIntersectionProduct.lean#L377). The attribute's comment: “the whole statement for a regular closed immersion i : Y → X with X smooth over a field, of arbitrary dimension, and Y equidimensional of dimension e: α · [Y]\_e = i\_*(i^!(α)) for every j and every α ∈ CH^j(X), the classes graded by codimension on the open and closed parts X\_d of X of constant dimension, both sides in CH\_\{e-j}(X); i^! is the Gysin map of i itself acting part by part, and the product is formed part by part on the X\_d”.
+**`Stacks.Chow.intersectionProduct_fundamentalChowClass_eq_pushforward_regularImmersionGysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/RegularImmersionIntersectionProduct.lean, line 377](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinLocalCompleteIntersection/RegularImmersionIntersectionProduct.lean#L377). The attribute's comment: “the whole statement for a regular closed immersion i : Y → X with X smooth over a field, of arbitrary dimension, and Y equidimensional of dimension e: α · [Y]\_e = i\_*(i^!(α)) for every j and every α ∈ CH^j(X), the classes graded by codimension on the open and closed parts X\_d of X of constant dimension, both sides in CH\_\{e-j}(X); i^! is the Gysin map of i itself acting part by part, and the product is formed part by part on the X\_d”.
 
 > **Stacks 0FFE: `α · [Y]_e = i_*(i^!α)`.** Let `k` be a field, let `X` be a scheme smooth over
 > `k`, of arbitrary and not necessarily constant dimension, and let `i : Y ⟶ X` be a regular closed
@@ -588,7 +588,7 @@ theorem intersectionProduct_fundamentalChowClass_eq_pushforward_regularImmersion
 
 [Tag 0FFF](https://stacks.math.columbia.edu/tag/0FFF) in the Stacks Project.
 
-**`Stacks.Chow.codimensionRationalChowEquiv_codimensionIntersectionProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/RationalIntersectionProduct.lean, line 913](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/RationalIntersectionProduct.lean#L913). The attribute's comment: “the whole lemma: for X smooth over k, quasi-compact, with affine diagonal, the identification CH^*(X) ⊗ Q ≅ CH\_*(X) ⊗ Q carries the product of 0FC0 tensored with Q, (q ⊗ α)(q' ⊗ β) = qq' ⊗ α · β, to the product of 0FEX”.
+**`Stacks.Chow.codimensionRationalChowEquiv_codimensionIntersectionProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/RationalIntersectionProduct.lean, line 913](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/RationalIntersectionProduct.lean#L913). The attribute's comment: “the whole lemma: for X smooth over k, quasi-compact, with affine diagonal, the identification CH^*(X) ⊗ Q ≅ CH\_*(X) ⊗ Q carries the product of 0FC0 tensored with Q, (q ⊗ α)(q' ⊗ β) = qq' ⊗ α · β, to the product of 0FEX”.
 
 > **Stacks Project, Tag 0FFF.** Let `k` be a field and let `X` be a smooth scheme over `k`
 > which is quasi-compact and has affine diagonal. Then the intersection product of Section 0FC0 on
@@ -621,4 +621,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.62, Tag 0FC0](https://stacks.math.columbia.edu/tag/0FC0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

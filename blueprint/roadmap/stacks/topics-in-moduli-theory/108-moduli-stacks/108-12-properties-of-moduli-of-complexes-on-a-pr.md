@@ -8,13 +8,13 @@ proof: formalized
 
 # 108.12 Properties of moduli of complexes on a proper morphism
 
-Section 108.12 of the Stacks Project, [Tag 0DPV](https://stacks.math.columbia.edu/tag/0DPV). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 108.12 of the Stacks Project, [Tag 0DPV](https://stacks.math.columbia.edu/tag/0DPV). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DPW, a lemma
 
 [Tag 0DPW](https://stacks.math.columbia.edu/tag/0DPW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesIsom_finitePresentation_and_affine_overQuasiCompactNegativeExtLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesDiagonalProved.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesDiagonalProved.lean#L401). The attribute's comment: “Corrected statement (Stacks erratum): the source asserts that the diagonal of Complexes\_\{X/B} over B is affine and of finite presentation; the 'affine' part is false (counterexample: X = P^1 over A^2\_k with complexes E = [O(-2) -s-> O], s = a(x^2 - y^2) + bxy, and E' = E ⊗ O(2), for which Isom(E, E') is empty over the origin and has a section over A^2 minus the origin, so is not affine over A^2). Formalized: the diagonal over B is representable by algebraic spaces and of finite presentation, and for (T, E), (T, E') the functor Isom(E, E') factors through the open W(E, E') ∩ W(E', E) of 0DLC, whose inclusion into T is quasi-compact, and is affine and of finite presentation over it; so the diagonal is quasi-affine and of finite presentation.”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesIsom_finitePresentation_and_affine_overQuasiCompactNegativeExtLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesDiagonalProved.lean, line 401](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/ComplexesDiagonalProved.lean#L401). The attribute's comment: “Corrected statement (Stacks erratum): the source asserts that the diagonal of Complexes\_\{X/B} over B is affine and of finite presentation; the 'affine' part is false (counterexample: X = P^1 over A^2\_k with complexes E = [O(-2) -s-> O], s = a(x^2 - y^2) + bxy, and E' = E ⊗ O(2), for which Isom(E, E') is empty over the origin and has a section over A^2 minus the origin, so is not affine over A^2). Formalized: the diagonal over B is representable by algebraic spaces and of finite presentation, and for (T, E), (T, E') the functor Isom(E, E') factors through the open W(E, E') ∩ W(E', E) of 0DLC, whose inclusion into T is quasi-compact, and is affine and of finite presentation over it; so the diagonal is quasi-affine and of finite presentation.”.
 
 > **Stacks 0DPW, corrected: the diagonal of `Complexes_{X/B}` over `B` is quasi-affine and of
 > finite presentation.**  Let `f : X ⟶ B` be proper, flat and of finite presentation
@@ -78,7 +78,7 @@ theorem complexesIsom_finitePresentation_and_affine_overQuasiCompactNegativeExtL
 
 [Tag 0DPX](https://stacks.math.columbia.edu/tag/0DPX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.isQuasiSeparated_and_isLocallyOfFinitePresentation_complexesAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesQuasiSeparatedLocallyFinitePresentation.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesQuasiSeparatedLocallyFinitePresentation.lean#L72).
+**`AlgebraicGeometry.Space.ComplexesSituation.isQuasiSeparated_and_isLocallyOfFinitePresentation_complexesAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesQuasiSeparatedLocallyFinitePresentation.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/ComplexesQuasiSeparatedLocallyFinitePresentation.lean#L72).
 
 > In Situation 0DLE (`f : X ⟶ B` proper, flat and of finite presentation), the morphism
 > `Complexes_{X/B} → B` is quasi-separated and locally of finite presentation. Here `Complexes_{X/B}`
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 108.12, Tag 0DPV](https://stacks.math.columbia.edu/tag/0DPV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

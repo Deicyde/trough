@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.21 Cartan-Eilenberg resolutions
 
-Section 13.21 of the Stacks Project, [Tag 015G](https://stacks.math.columbia.edu/tag/015G). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.21 of the Stacks Project, [Tag 015G](https://stacks.math.columbia.edu/tag/015G). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 015H, a definition
 
 [Tag 015H](https://stacks.math.columbia.edu/tag/015H) in the Stacks Project.
 
-**`CochainComplex.CartanEilenbergResolution`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/Basic.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/Basic.lean#L52). References: EGA 0 (11.4.2), “injective, bdd below”.
+**`CochainComplex.CartanEilenbergResolution`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/Basic.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/Basic.lean#L52). References: EGA 0 (11.4.2), “injective, bdd below”.
 
 > A Cartan-Eilenberg resolution of a cochain complex `K` in an abelian category: a double
 > complex `I` of injective objects, vanishing in first degrees `≪ 0` and in negative second
@@ -30,7 +30,7 @@ public structure CartanEilenbergResolution (K : CochainComplex C ℤ)
 
 [Tag 015I](https://stacks.math.columbia.edu/tag/015I) in the Stacks Project.
 
-**`CochainComplex.exists_cartanEilenbergResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/SpectralSequence.lean, line 751](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/SpectralSequence.lean#L751). References: EGA 0 (11.4.2), “bounded below case”; SGA 2 VIII (1.4), “existence of resolution”.
+**`CochainComplex.exists_cartanEilenbergResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/SpectralSequence.lean, line 751](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/SpectralSequence.lean#L751). References: EGA 0 (11.4.2), “bounded below case”; SGA 2 VIII (1.4), “existence of resolution”.
 
 > **Existence of Cartan-Eilenberg resolutions.** A cochain complex `K` over an abelian
 > category with enough injectives which is strictly `≥ n` admits a Cartan-Eilenberg
@@ -48,7 +48,7 @@ public theorem _root_.CochainComplex.exists_cartanEilenbergResolution {C : Type 
 
 [Tag 015J](https://stacks.math.columbia.edu/tag/015J) in the Stacks Project.
 
-**`CochainComplex.CartanEilenbergResolution.spectralSequences_rightDerivedPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/Convergence.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/Convergence.lean#L84). The attribute's comment: “the two spectral sequences are those of `Tot(F(I))` filtered by the first and the second coordinate; convergence to `H^*(RF(K^•))` is stated as convergence to `H^*(Tot(F(I)))` in the sense of 012U, with finite induced filtrations, together with an isomorphism `H^n(Tot(F(I))) ≅ H^n(RF(K^•))` and the abutment of both spectral sequences to `H^*(RF(K^•))`; `F` is only assumed additive”.
+**`CochainComplex.CartanEilenbergResolution.spectralSequences_rightDerivedPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/Convergence.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/CartanEilenbergResolutions/Convergence.lean#L84). The attribute's comment: “the two spectral sequences are those of `Tot(F(I))` filtered by the first and the second coordinate; convergence to `H^*(RF(K^•))` is stated as convergence to `H^*(Tot(F(I)))` in the sense of 012U, with finite induced filtrations, together with an isomorphism `H^n(Tot(F(I))) ≅ H^n(RF(K^•))` and the abutment of both spectral sequences to `H^*(RF(K^•))`; `F` is only assumed additive”.
 
 > **The spectral sequences of a Cartan-Eilenberg resolution** ([Stacks, Tag 015J]). Let
 > `F : 𝒜 ⥤ ℬ` be an additive functor of abelian categories, `𝒜` having enough injectives, let `K^•`
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.21, Tag 015G](https://stacks.math.columbia.edu/tag/015G)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

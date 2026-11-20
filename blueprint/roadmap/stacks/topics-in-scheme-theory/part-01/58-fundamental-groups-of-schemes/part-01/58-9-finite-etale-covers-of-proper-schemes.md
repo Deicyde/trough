@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.9 Finite étale covers of proper schemes
 
-Section 58.9 of the Stacks Project, [Tag 0BQC](https://stacks.math.columbia.edu/tag/0BQC). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 58.9 of the Stacks Project, [Tag 0BQC](https://stacks.math.columbia.edu/tag/0BQC). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0A48, a lemma
 
 [Tag 0A48](https://stacks.math.columbia.edu/tag/0A48) in the Stacks Project.
 
-**`AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_of_isFinite_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperFiniteCase.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperFiniteCase.lean#L244). The attribute's comment: “for a finite morphism `f : X ⟶ Spec A`, which is the case of a proper `f` in which no algebraization is needed”. References: SGA 3 X (4.0), “more general”; SGA 4 XII (5.9bis), “special case”; SGA 4 XIII (1.1), “partial”; SGA 4½ Arcata (4.2.2), “special case”; SGA 7 IX (2.2.4), “more general”.
+**`AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_of_isFinite_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperFiniteCase.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperFiniteCase.lean#L244). The attribute's comment: “for a finite morphism `f : X ⟶ Spec A`, which is the case of a proper `f` in which no algebraization is needed”. References: SGA 3 X (4.0), “more general”; SGA 4 XII (5.9bis), “special case”; SGA 4 XIII (1.1), “partial”; SGA 4½ Arcata (4.2.2), “special case”; SGA 7 IX (2.2.4), “more general”.
 
 > **Tag 0A48 for a finite morphism.** If `A` is a henselian local ring and `f : X ⟶ Spec A` is
 > finite, then base change to the closed fibre `X ×_{Spec A} Spec (A ⧸ 𝔪) ⟶ X` is an equivalence on
@@ -35,7 +35,7 @@ theorem isEquivalence_finiteEtaleBaseChange_of_isFinite_of_henselianLocalRing
         (Ideal.Quotient.mk (IsLocalRing.maximalIdeal A)))))).IsEquivalence
 ```
 
-**`AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_of_isProper_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperHenselianLimit.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperHenselianLimit.lean#L493). References: SGA 1 X (2.1), “more general”; SGA 3 X (4.0), “more general”; SGA 3 XXIV (8.1.2), “more general”; SGA 4 XII (5.9); SGA 4½ Arcata (4.2.1), “more general”; SGA 7 IX (2.2.4), “more general”; SGA 7 XIII (1.2.1), “more general”.
+**`AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_of_isProper_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperHenselianLimit.lean, line 493](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperHenselianLimit.lean#L493). References: SGA 1 X (2.1), “more general”; SGA 3 X (4.0), “more general”; SGA 3 XXIV (8.1.2), “more general”; SGA 4 XII (5.9); SGA 4½ Arcata (4.2.1), “more general”; SGA 7 IX (2.2.4), “more general”; SGA 7 XIII (1.2.1), “more general”.
 
 > **Stacks Project, Tag 0A48.** Let `A` be a henselian local ring and `X` a proper scheme over
 > `A` with closed fibre `X₀ = X ×_{Spec A} Spec (A ⧸ 𝔪)`. Then base change
@@ -58,7 +58,7 @@ theorem isEquivalence_finiteEtaleBaseChange_of_isProper_of_henselianLocalRing
 
 [Tag 0GS2](https://stacks.math.columbia.edu/tag/0GS2) in the Stacks Project.
 
-**`AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_of_isProper_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperHenselianPair.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperHenselianPair.lean#L465). The attribute's comment: “any henselian pair `(A, I)` and any proper `X` over `Spec A`, exactly as in the source; no Noetherian or G-ring hypothesis on `A`”. References: SGA 4 XII (6.13), “more general”.
+**`AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_of_isProper_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperHenselianPair.lean, line 465](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleProperHenselianPair.lean#L465). The attribute's comment: “any henselian pair `(A, I)` and any proper `X` over `Spec A`, exactly as in the source; no Noetherian or G-ring hypothesis on `A`”. References: SGA 4 XII (6.13), “more general”.
 
 > **Stacks Project, Tag 0GS2.** Let `(A, I)` be a henselian pair and let `X` be a proper scheme
 > over `A`, with closed fibre `X₀ = X ×_{Spec A} Spec (A ⧸ I)`. Then base change
@@ -81,7 +81,7 @@ theorem isEquivalence_finiteEtaleBaseChange_of_isProper_of_henselianPair (A : Ty
 
 [Tag 0A49](https://stacks.math.columbia.edu/tag/0A49) in the Stacks Project.
 
-**`AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_specMap_algebraMap_of_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleAlgClosedEquivalence.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleAlgClosedEquivalence.lean#L62). The attribute's comment: “Complete, under exactly the source's hypotheses: `k ⊆ k'` algebraically closed, `X` proper over `k`.”. References: SGA 1 IX (6.3), “more general”; SGA 1 X (1.8), “more general”.
+**`AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_specMap_algebraMap_of_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleAlgClosedEquivalence.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleAlgClosedEquivalence.lean#L62). The attribute's comment: “Complete, under exactly the source's hypotheses: `k ⊆ k'` algebraically closed, `X` proper over `k`.”. References: SGA 1 IX (6.3), “more general”; SGA 1 X (1.8), “more general”.
 
 > **Stacks Project, Tag 0A49.** Let `k ⊆ k'` be an extension of algebraically closed fields and
 > let `f : X ⟶ Spec k` be proper. Then base change along the projection `X_{k'} ⟶ X`, that is
@@ -109,4 +109,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.9, Tag 0BQC](https://stacks.math.columbia.edu/tag/0BQC)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

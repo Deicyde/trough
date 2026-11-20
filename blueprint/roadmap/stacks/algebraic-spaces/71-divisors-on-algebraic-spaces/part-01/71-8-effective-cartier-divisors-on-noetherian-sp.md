@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.8 Effective Cartier divisors on Noetherian spaces
 
-Section 71.8 of the Stacks Project, [Tag 0CPH](https://stacks.math.columbia.edu/tag/0CPH). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 71.8 of the Stacks Project, [Tag 0CPH](https://stacks.math.columbia.edu/tag/0CPH). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0B4G, a lemma
 
 [Tag 0B4G](https://stacks.math.columbia.edu/tag/0B4G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEffectiveCartierDivisor_hasPropertySk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorSerreCondition.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorSerreCondition.lean#L228).
+**`AlgebraicGeometry.Space.isEffectiveCartierDivisor_hasPropertySk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorSerreCondition.lean, line 228](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorSerreCondition.lean#L228).
 
 > **Stacks 0B4G.** Let `X` be a locally Noetherian algebraic space over a scheme `S`
 > satisfying Serre's condition `(S_k)`, and let `D ⊆ X` be an effective Cartier divisor.  Then
@@ -45,7 +45,7 @@ theorem isEffectiveCartierDivisor_hasPropertySk
 
 [Tag 0B4H](https://stacks.math.columbia.edu/tag/0B4H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isNormal_effectiveCartierDivisor_hasPropertySk_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorSerreCondition.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorSerreCondition.lean#L260).
+**`AlgebraicGeometry.Space.isNormal_effectiveCartierDivisor_hasPropertySk_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorSerreCondition.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorSerreCondition.lean#L260).
 
 > **Stacks 0B4H.** Let `X` be a locally Noetherian normal algebraic space over a scheme `S`
 > and let `D ⊆ X` be an effective Cartier divisor.  Then `D` satisfies Serre's condition
@@ -73,7 +73,7 @@ theorem isNormal_effectiveCartierDivisor_hasPropertySk_one
 
 [Tag 0DML](https://stacks.math.columbia.edu/tag/0DML) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isEffectiveCartierDivisor_compl_denseAffineOpen'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDenseAffineOpen.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDenseAffineOpen.lean#L401).
+**`AlgebraicGeometry.Space.exists_isEffectiveCartierDivisor_compl_denseAffineOpen'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDenseAffineOpen.lean, line 401](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDenseAffineOpen.lean#L401).
 
 > **Stacks Project, Tag 0DML.** Let `S` be a scheme and let `X` be a regular Noetherian
 > separated algebraic space over `S`.  Let `U ⊆ X` be a dense affine open subspace, presented by
@@ -106,7 +106,7 @@ theorem exists_isEffectiveCartierDivisor_compl_denseAffineOpen'
 
 [Tag 0DMM](https://stacks.math.columbia.edu/tag/0DMM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isEffectiveCartierDivisor_iso_differenceDivisorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleDivisorDifference.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleDivisorDifference.lean#L408).
+**`AlgebraicGeometry.Space.exists_isEffectiveCartierDivisor_iso_differenceDivisorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleDivisorDifference.lean, line 408](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleDivisorDifference.lean#L408).
 
 > **Stacks Project, Tag 0DMM.**  Let `S` be a scheme and let `X` be a regular Noetherian
 > separated algebraic space over `S`.  Then every invertible `𝒪_X`-module `L` is isomorphic to
@@ -140,7 +140,7 @@ theorem exists_isEffectiveCartierDivisor_iso_differenceDivisorSheaf
 
 [Tag 0DMC](https://stacks.math.columbia.edu/tag/0DMC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isEffectiveCartierDivisor_genericFibre_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierGenericFibreExtension.lean, line 960](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierGenericFibreExtension.lean#L960).
+**`AlgebraicGeometry.Space.exists_isEffectiveCartierDivisor_genericFibre_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierGenericFibreExtension.lean, line 960](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierGenericFibreExtension.lean#L960).
 
 > Let `R` be a valuation ring with fraction field `K`, and let `X` be an algebraic space over
 > `R` whose structure morphism `X → Spec R` is smooth. For every effective Cartier divisor
@@ -177,4 +177,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.8, Tag 0CPH](https://stacks.math.columbia.edu/tag/0CPH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

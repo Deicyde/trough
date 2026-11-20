@@ -8,13 +8,13 @@ proof: formalized
 
 # 81.5 Descending étale morphisms of algebraic spaces
 
-Section 81.5 of the Stacks Project, [Tag 0GFZ](https://stacks.math.columbia.edu/tag/0GFZ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 81.5 of the Stacks Project, [Tag 0GFZ](https://stacks.math.columbia.edu/tag/0GFZ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GG0, a lemma
 
 [Tag 0GG0](https://stacks.math.columbia.edu/tag/0GG0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEffective_and_exists_isEtale_iso_of_isProper_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EtaleEffectiveAlongProperUnconditional.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EtaleEffectiveAlongProperUnconditional.lean#L67). The attribute's comment: “the effectivity of the descent datum and the sharper form: an étale V ⟶ Y whose canonical descent datum is isomorphic to the given one”.
+**`AlgebraicGeometry.Space.isEffective_and_exists_isEtale_iso_of_isProper_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EtaleEffectiveAlongProperUnconditional.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/EtaleEffectiveAlongProperUnconditional.lean#L67). The attribute's comment: “the effectivity of the descent datum and the sharper form: an étale V ⟶ Y whose canonical descent datum is isomorphic to the given one”.
 
 > **Stacks 0GG0.** Let `f : X ⟶ Y` be a proper surjective morphism of algebraic spaces over
 > `S`. Any descent datum `(U/X, φ)` relative to `f` (Stacks 0ADG) with `U` étale over `X` is
@@ -38,7 +38,7 @@ theorem isEffective_and_exists_isEtale_iso_of_isProper_isSurjective
 
 [Tag 0GG1](https://stacks.math.columbia.edu/tag/0GG1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_spacesEtaleModificationRestriction_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleModificationProper.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleModificationProper.lean#L86).
+**`AlgebraicGeometry.Space.isEquivalence_spacesEtaleModificationRestriction_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleModificationProper.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleModificationProper.lean#L86).
 
 > **[Stacks, Tag 0GG1].** Let `S` be a scheme, let `f : Y ⟶ X` be a proper morphism of
 > algebraic spaces over `S`, let `i : Z ⟶ X` be a closed immersion, and let `E = Z ×_X Y` with
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.5, Tag 0GFZ](https://stacks.math.columbia.edu/tag/0GFZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

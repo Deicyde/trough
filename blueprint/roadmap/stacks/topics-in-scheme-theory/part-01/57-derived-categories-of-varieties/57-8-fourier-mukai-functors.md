@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.8 Fourier-Mukai functors
 
-Section 57.8 of the Stacks Project, [Tag 0FYP](https://stacks.math.columbia.edu/tag/0FYP). 9 tags here are carried by 40 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.8 of the Stacks Project, [Tag 0FYP](https://stacks.math.columbia.edu/tag/0FYP). 9 tags here are carried by 40 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FYQ, a definition
 
 [Tag 0FYQ](https://stacks.math.columbia.edu/tag/0FYQ) in the Stacks Project.
 
-**`AlgebraicGeometry.fourierMukai`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L201). The attribute's comment: “the Fourier-Mukai functor”.
+**`AlgebraicGeometry.fourierMukai`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L201). The attribute's comment: “the Fourier-Mukai functor”.
 
 > **Stacks Project, Tag 0FYQ (the functor).** The Fourier-Mukai functor
 > `Φ_K : D(𝒪_X) ⟶ D(𝒪_Y)` attached to a complex `K` on `X ×_S Y`, namely
@@ -25,7 +25,7 @@ def fourierMukai (K : DerivedCategory (Limits.pullback f g).Modules) :
     DerivedCategory X.Modules ⥤ DerivedCategory Y.Modules
 ```
 
-**`AlgebraicGeometry.isTriangulated_fourierMukai`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L239). The attribute's comment: “exactness of the Fourier-Mukai functor”.
+**`AlgebraicGeometry.isTriangulated_fourierMukai`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L239). The attribute's comment: “exactness of the Fourier-Mukai functor”.
 
 > **Stacks Project, Tag 0FYQ (exactness).** The Fourier-Mukai functor is an exact functor of
 > triangulated categories: the derived pullback along `pr₁` is exact by Stacks 06YJ, tensoring
@@ -37,7 +37,7 @@ instance isTriangulated_fourierMukai (K : DerivedCategory (Limits.pullback f g).
     (fourierMukai f g K).IsTriangulated
 ```
 
-**`AlgebraicGeometry.fourierMukaiOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L252). The attribute's comment: “the induced functor on a preserved pair of full subcategories”.
+**`AlgebraicGeometry.fourierMukaiOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 252](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L252). The attribute's comment: “the induced functor on a preserved pair of full subcategories”.
 
 > **Stacks Project, Tag 0FYQ (the induced functor).** Suppose `Φ_K` carries every object of
 > `D(𝒪_X)` with property `P` to an object of `D(𝒪_Y)` with property `Q`. Then it induces a functor
@@ -53,7 +53,7 @@ def fourierMukaiOn (K : DerivedCategory (Limits.pullback f g).Modules)
     P.FullSubcategory ⥤ Q.FullSubcategory
 ```
 
-**`AlgebraicGeometry.isTriangulated_fourierMukaiOn`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L283). The attribute's comment: “exactness of the induced functor”.
+**`AlgebraicGeometry.isTriangulated_fourierMukaiOn`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 283](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L283). The attribute's comment: “exactness of the induced functor”.
 
 > **Stacks Project, Tag 0FYQ (exactness of the induced functor).** On a preserved pair of
 > triangulated subcategories the induced functor is again exact, `Φ_K` being exact.
@@ -62,7 +62,7 @@ def fourierMukaiOn (K : DerivedCategory (Limits.pullback f g).Modules)
 instance isTriangulated_fourierMukaiOn : (fourierMukaiOn f g K P Q h).IsTriangulated
 ```
 
-**`AlgebraicGeometry.IsFourierMukaiKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L294). The attribute's comment: “the Fourier-Mukai kernel”.
+**`AlgebraicGeometry.IsFourierMukaiKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 294](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L294). The attribute's comment: “the Fourier-Mukai kernel”.
 
 > **Stacks Project, Tag 0FYQ (the kernel).** A complex `K` on `X ×_S Y` is a Fourier-Mukai
 > kernel for a functor `Φ : D(𝒪_X) ⟶ D(𝒪_Y)` when `Φ` is isomorphic to the Fourier-Mukai functor
@@ -73,7 +73,7 @@ def IsFourierMukaiKernel (Φ : DerivedCategory X.Modules ⥤ DerivedCategory Y.M
     (K : DerivedCategory (Limits.pullback f g).Modules) : Prop
 ```
 
-**`AlgebraicGeometry.IsFourierMukaiFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L302). The attribute's comment: “being a Fourier-Mukai functor”.
+**`AlgebraicGeometry.IsFourierMukaiFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean, line 302](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Basic.lean#L302). The attribute's comment: “being a Fourier-Mukai functor”.
 
 > **Stacks Project, Tag 0FYQ (the property of being a Fourier-Mukai functor).** A functor
 > `D(𝒪_X) ⟶ D(𝒪_Y)` is a Fourier-Mukai functor when some complex on `X ×_S Y` is a Fourier-Mukai
@@ -87,7 +87,7 @@ def IsFourierMukaiFunctor (Φ : DerivedCategory X.Modules ⥤ DerivedCategory Y.
 
 [Tag 0FYR](https://stacks.math.columbia.edu/tag/0FYR) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasicoherent_homology_fourierMukai`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/QuasiCoherent.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/QuasiCoherent.lean#L86).
+**`AlgebraicGeometry.isQuasicoherent_homology_fourierMukai`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/QuasiCoherent.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/QuasiCoherent.lean#L86).
 
 > **[Stacks, Tag 0FYR].** Let `S` be a scheme, let `X` and `Y` be schemes over `S` with
 > `f : X ⟶ S` quasi-compact and quasi-separated, and let `K` be a complex on `X ×_S Y` all of whose
@@ -115,7 +115,7 @@ theorem isQuasicoherent_homology_fourierMukai [QuasiCompact f] [QuasiSeparated f
 
 [Tag 0FYS](https://stacks.math.columbia.edu/tag/0FYS) in the Stacks Project.
 
-**`AlgebraicGeometry.fourierMukaiConvolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Composition.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Composition.lean#L317). The attribute's comment: “the convolution kernel `K''`”.
+**`AlgebraicGeometry.fourierMukaiConvolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Composition.lean, line 317](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Composition.lean#L317). The attribute's comment: “the convolution kernel `K''`”.
 
 > **The convolution kernel of [Stacks, Tag 0FYS]**:
 > `K'' = R pr_{13,*}(L pr_{12}^* K ⊗^𝐋_{𝒪_{X ×_S Y ×_S Z}} L pr_{23}^* K')`, a complex
@@ -126,7 +126,7 @@ def fourierMukaiConvolution (K : DerivedCategory (pullback f g).Modules)
     (K' : DerivedCategory (pullback g h).Modules) : DerivedCategory (pullback f h).Modules
 ```
 
-**`AlgebraicGeometry.isQuasicoherent_homology_fourierMukaiConvolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Composition.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Composition.lean#L458). The attribute's comment: “quasi-coherence of the convolution kernel; the clause making the statement of the lemma meaningful”.
+**`AlgebraicGeometry.isQuasicoherent_homology_fourierMukaiConvolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Composition.lean, line 458](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/Composition.lean#L458). The attribute's comment: “quasi-coherence of the convolution kernel; the clause making the statement of the lemma meaningful”.
 
 > **The convolution kernel has quasi-coherent cohomology sheaves**, so the Fourier-Mukai
 > functor it defines carries `D_QCoh(𝒪_X)` into `D_QCoh(𝒪_Z)` by [Stacks, Tag 0FYR]: pull back by
@@ -146,7 +146,7 @@ theorem isQuasicoherent_homology_fourierMukaiConvolution
       (fourierMukaiConvolution f g h K K')).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.quasiCoherentFourierMukaiCompNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/CompositionIso.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/CompositionIso.lean#L68). The attribute's comment: “composition of Fourier-Mukai functors, Phi\_\{K'} ∘ Phi\_K ≅ Phi\_\{K''} as a natural isomorphism of functors D\_QCoh(O\_X) to D\_QCoh(O\_Z), the source's equality of functors; with Stacks 08IB and 08EU discharged by their proofs”.
+**`AlgebraicGeometry.quasiCoherentFourierMukaiCompNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/CompositionIso.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/CompositionIso.lean#L68). The attribute's comment: “composition of Fourier-Mukai functors, Phi\_\{K'} ∘ Phi\_K ≅ Phi\_\{K''} as a natural isomorphism of functors D\_QCoh(O\_X) to D\_QCoh(O\_Z), the source's equality of functors; with Stacks 08IB and 08EU discharged by their proofs”.
 
 > **[Stacks, Tag 0FYS].**  Let `S` be a scheme and let `X`, `Y`, `Z` be schemes over `S`
 > with `f : X ⟶ S`, `g : Y ⟶ S` and `h : Z ⟶ S` quasi-compact and quasi-separated.  Let `K` on
@@ -180,7 +180,7 @@ def quasiCoherentFourierMukaiCompNatIso [Flat g] (htor : TorIndependent f h)
 
 [Tag 0FYT](https://stacks.math.columbia.edu/tag/0FYT) in the Stacks Project.
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isCoherent_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L266). The attribute's comment: “clause (1), with Tag 08EV's own inputs carried: its two residues, a bound below on L pr₁^* M ⊗ᴸ K, and the support and Tor-dimension clauses read on that tensor, not on K”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isCoherent_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 266](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L266). The attribute's comment: “clause (1), with Tag 08EV's own inputs carried: its two residues, a bound below on L pr₁^* M ⊗ᴸ K, and the support and Tor-dimension clauses read on that tensor, not on K”.
 
 > **[Stacks, Tag 0FYT], clause (1).** Let `S` be a Noetherian scheme, let `X ⟶ S` and
 > `Y ⟶ S` be of finite type and let `K` be an object of `D^b_{Coh}(𝒪_{X ×_S Y})`. Then `Φ_K` sends
@@ -244,7 +244,7 @@ theorem isPerfect_fourierMukai_of_isCoherent_kernel
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_flatProperSupportComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L340). The attribute's comment: “clause (2), routed through the Noetherian form Tag 0DJQ of Tag 0A1H: Y is assumed Noetherian, the terms of the complex coherent (Tag 01XZ), and Tag 08EV's residues carried”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_flatProperSupportComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L340). The attribute's comment: “clause (2), routed through the Noetherian form Tag 0DJQ of Tag 0A1H: Y is assumed Noetherian, the terms of the complex coherent (Tag 01XZ), and Tag 08EV's residues carried”.
 
 > **[Stacks, Tag 0FYT], clause (2), over a Noetherian `Y`.** Let `X ⟶ S` be of finite
 > presentation, let `𝒦^•` be a bounded complex of coherent `𝒪_{X ×_S Y}`-modules, flat over `Y`,
@@ -298,7 +298,7 @@ theorem isPerfect_fourierMukai_of_flatProperSupportComplex [IsNoetherian Y]
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfect_kernel_of_properFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L437). The attribute's comment: “clause (3), with Tag 08EV's two residues and its Tor-dimension clause for L pr₁^* M ⊗ᴸ K carried, and with Y assumed Noetherian”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfect_kernel_of_properFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 437](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L437). The attribute's comment: “clause (3), with Tag 08EV's two residues and its Tor-dimension clause for L pr₁^* M ⊗ᴸ K carried, and with Y assumed Noetherian”.
 
 > **[Stacks, Tag 0FYT], clause (3).** Let `X ⟶ S` be a proper flat morphism of finite
 > presentation and let `K` be a perfect object of `D(𝒪_{X ×_S Y})`. Then `Φ_K` sends
@@ -329,7 +329,7 @@ theorem isPerfect_fourierMukai_of_isPerfect_kernel_of_properFlat [IsNoetherian Y
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfect_kernel_of_noetherianBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L466). The attribute's comment: “clause (4), reduced to clause (3) by Tag 01TX; Tag 08EV's two residues and its Tor-dimension clause for L pr₁^* M ⊗ᴸ K are carried, and Y is assumed Noetherian”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfect_kernel_of_noetherianBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 466](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L466). The attribute's comment: “clause (4), reduced to clause (3) by Tag 01TX; Tag 08EV's two residues and its Tor-dimension clause for L pr₁^* M ⊗ᴸ K are carried, and Y is assumed Noetherian”.
 
 > **[Stacks, Tag 0FYT], clause (4).** Let `S` be Noetherian, let `X ⟶ S` be flat and proper
 > and let `K` be a perfect object of `D(𝒪_{X ×_S Y})`. Then `Φ_K` sends `D_perf(𝒪_X)` into
@@ -359,7 +359,7 @@ theorem isPerfect_fourierMukai_of_isPerfect_kernel_of_noetherianBase [IsNoetheri
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfectRelativeTo_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L551). The attribute's comment: “clause (5): K is Y-perfect; Tag 0DI4's own hypotheses are carried and Y is assumed Noetherian, Tag 0DJT being applied in its Noetherian-base form”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfectRelativeTo_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 551](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L551). The attribute's comment: “clause (5): K is Y-perfect; Tag 0DI4's own hypotheses are carried and Y is assumed Noetherian, Tag 0DJT being applied in its Noetherian-base form”.
 
 > **The common core of clauses (5) and (6) of [Stacks, Tag 0FYT].** Let `X ⟶ S` be proper,
 > flat and locally of finite presentation, let `Y` be Noetherian and let `K` be a `Y`-perfect
@@ -430,7 +430,7 @@ theorem isPerfect_fourierMukai_of_isPerfectRelativeTo_kernel [IsNoetherian Y]
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfectRelativeTo_kernel_of_noetherianBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L634). The attribute's comment: “clause (6), reduced to clause (5) by Tag 01TX part (1); Tag 0DI4's own hypotheses are carried and Y is assumed Noetherian”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfectRelativeTo_kernel_of_noetherianBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean, line 634](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservation.lean#L634). The attribute's comment: “clause (6), reduced to clause (5) by Tag 01TX part (1); Tag 0DI4's own hypotheses are carried and Y is assumed Noetherian”.
 
 > **[Stacks, Tag 0FYT], clause (6).** Let `S` be Noetherian, let `X ⟶ S` be flat and proper,
 > let `Y` be Noetherian and let `K` be a `Y`-perfect object of `D(𝒪_{X ×_S Y})`. Then `Φ_K` sends
@@ -487,7 +487,7 @@ theorem isPerfect_fourierMukai_of_isPerfectRelativeTo_kernel_of_noetherianBase [
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_boundedCoherent_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L177). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_boundedCoherent_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L177). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 0FYT], clause (1).** Let `S` be Noetherian, let `X ⟶ S` and `Y ⟶ S` be of
 > finite type and let `K ∈ D^b_{Coh}(𝒪_{X ×_S Y})` be such that the support of every `H^i(K)` is
@@ -513,7 +513,7 @@ theorem isPerfect_fourierMukai_of_boundedCoherent_kernel
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_flatProperSupportFinitelyPresented_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L226). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_flatProperSupportFinitelyPresented_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L226). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 0FYT], clause (2).** Let `X ⟶ S` be of finite presentation and let `K` be
 > represented by a bounded complex `𝒦^•` of finitely presented `𝒪_{X ×_S Y}`-modules, flat over
@@ -532,7 +532,7 @@ theorem isPerfect_fourierMukai_of_flatProperSupportFinitelyPresented_kernel
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfect_kernel_of_properFlatFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L255). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfect_kernel_of_properFlatFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L255). The attribute's comment: “part (3)”.
 
 > **[Stacks, Tag 0FYT], clause (3).** Let `X ⟶ S` be a proper flat morphism of finite
 > presentation and let `K` be perfect. Then `Φ_K` sends `D_perf(𝒪_X)` into `D_perf(𝒪_Y)`.
@@ -550,7 +550,7 @@ theorem isPerfect_fourierMukai_of_isPerfect_kernel_of_properFlatFinitePresentati
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfect_kernel_of_noetherian_properFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L273). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isPerfect_kernel_of_noetherian_properFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L273). The attribute's comment: “part (4)”.
 
 > **[Stacks, Tag 0FYT], clause (4).** Let `S` be Noetherian, let `X ⟶ S` be flat and proper and
 > let `K` be perfect. Then `Φ_K` sends `D_perf(𝒪_X)` into `D_perf(𝒪_Y)`.
@@ -567,7 +567,7 @@ theorem isPerfect_fourierMukai_of_isPerfect_kernel_of_noetherian_properFlat [IsN
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isRelativelyPerfect_kernel_of_properFlatFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L290). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isRelativelyPerfect_kernel_of_properFlatFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L290). The attribute's comment: “part (5)”.
 
 > **[Stacks, Tag 0FYT], clause (5).** Let `X ⟶ S` be a proper flat morphism of finite
 > presentation and let `K` be `Y`-perfect ([Stacks, Tag 0DI0]). Then `Φ_K` sends `D_perf(𝒪_X)`
@@ -585,7 +585,7 @@ theorem isPerfect_fourierMukai_of_isRelativelyPerfect_kernel_of_properFlatFinite
     IsPerfect (X := Y.toRingedSpace) ((fourierMukai f g K).obj M)
 ```
 
-**`AlgebraicGeometry.isPerfect_fourierMukai_of_isRelativelyPerfect_kernel_of_noetherian_properFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L308). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.isPerfect_fourierMukai_of_isRelativelyPerfect_kernel_of_noetherian_properFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectPreservationCriteria.lean#L308). The attribute's comment: “part (6)”.
 
 > **[Stacks, Tag 0FYT], clause (6).** Let `S` be Noetherian, let `X ⟶ S` be flat and proper and
 > let `K` be `Y`-perfect. Then `Φ_K` sends `D_perf(𝒪_X)` into `D_perf(𝒪_Y)`.
@@ -605,7 +605,7 @@ theorem isPerfect_fourierMukai_of_isRelativelyPerfect_kernel_of_noetherian_prope
 
 [Tag 0FYU](https://stacks.math.columbia.edu/tag/0FYU) in the Stacks Project.
 
-**`AlgebraicGeometry.fourierMukai_derivedCategoryBBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/BoundedCoherentConditions.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/BoundedCoherentConditions.lean#L543). The attribute's comment: “Φ\_K maps D^b\_Coh(O\_X) into D^b\_Coh(O\_Y) under each of (1)-(4); the support requirement is automatic when X → S is proper”. References: SGA 6 I (5.8.4), “5.8.4 b), special case”.
+**`AlgebraicGeometry.fourierMukai_derivedCategoryBBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/BoundedCoherentConditions.lean, line 543](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/BoundedCoherentConditions.lean#L543). The attribute's comment: “Φ\_K maps D^b\_Coh(O\_X) into D^b\_Coh(O\_Y) under each of (1)-(4); the support requirement is automatic when X → S is proper”. References: SGA 6 I (5.8.4), “5.8.4 b), special case”.
 
 > **[Stacks, Tag 0FYU].** Let `S` be a Noetherian scheme, let `X` and `Y` be schemes of finite
 > type over `S` and let `K ∈ D^b_Coh(𝒪_{X ×_S Y})`. The Fourier-Mukai functor `Φ_K` sends
@@ -665,7 +665,7 @@ theorem fourierMukai_derivedCategoryBBounded
 
 [Tag 0FYV](https://stacks.math.columbia.edu/tag/0FYV) in the Stacks Project.
 
-**`AlgebraicGeometry.diagonalKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernel.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernel.lean#L117). The attribute's comment: “the diagonal kernel `𝒪_Δ = RΔ_{X/S,*}𝒪_X` as an object of `D(𝒪_{X ×_S X})`; the clause that it is of finite type and flat over either projection is not covered, and the clause that `Φ_{𝒪_Δ}` is the identity functor of `D(𝒪_X)` is carried by `AlgebraicGeometry.fourierMukaiDiagonalKernelIso` in `FourierMukai/DiagonalKernelIdentity.lean`”.
+**`AlgebraicGeometry.diagonalKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernel.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernel.lean#L117). The attribute's comment: “the diagonal kernel `𝒪_Δ = RΔ_{X/S,*}𝒪_X` as an object of `D(𝒪_{X ×_S X})`; the clause that it is of finite type and flat over either projection is not covered, and the clause that `Φ_{𝒪_Δ}` is the identity functor of `D(𝒪_X)` is carried by `AlgebraicGeometry.fourierMukaiDiagonalKernelIso` in `FourierMukai/DiagonalKernelIdentity.lean`”.
 
 > **The diagonal kernel of [Stacks, Tag 0FYV]**: the object
 >
@@ -687,7 +687,7 @@ theorem fourierMukai_derivedCategoryBBounded
 def diagonalKernel : DerivedCategory (Limits.pullback f f).Modules
 ```
 
-**`AlgebraicGeometry.isQuasicoherent_homology_diagonalKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernel.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernel.lean#L130). The attribute's comment: “quasi-coherence of the diagonal kernel `𝒪_Δ`, for `f` separated”.
+**`AlgebraicGeometry.isQuasicoherent_homology_diagonalKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernel.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernel.lean#L130). The attribute's comment: “quasi-coherence of the diagonal kernel `𝒪_Δ`, for `f` separated”.
 
 > **The diagonal kernel of a separated morphism has quasi-coherent cohomology**, which is the
 > assertion of [Stacks, Tag 0FYV] that `𝒪_Δ` is a quasi-coherent `𝒪_{X ×_S X}`-module.
@@ -704,7 +704,7 @@ theorem isQuasicoherent_homology_diagonalKernel [IsSeparated f] (i : ℤ) :
       (diagonalKernel f)).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.fourierMukaiPullbackTensorDiagonalKernelIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean#L106). The attribute's comment: “the chain the example displays, `L pr_1^*(-) ⊗^𝐋 𝒪_Δ ≅ RΔ_*(-)`, as an isomorphism of functors, for `f` separated”.
+**`AlgebraicGeometry.fourierMukaiPullbackTensorDiagonalKernelIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean#L106). The attribute's comment: “the chain the example displays, `L pr_1^*(-) ⊗^𝐋 𝒪_Δ ≅ RΔ_*(-)`, as an isomorphism of functors, for `f` separated”.
 
 > **The chain [Stacks, Tag 0FYV] displays.**  For a separated morphism of schemes `f : X ⟶ S`
 > and any `M ∈ D(𝒪_X)`,
@@ -726,7 +726,7 @@ def fourierMukaiPullbackTensorDiagonalKernelIso :
       dpush (Limits.pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.fourierMukaiDiagonalKernelIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean#L131). The attribute's comment: “the Fourier-Mukai functor of the diagonal kernel is the identity, for `f` separated”.
+**`AlgebraicGeometry.fourierMukaiDiagonalKernelIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean#L131). The attribute's comment: “the Fourier-Mukai functor of the diagonal kernel is the identity, for `f` separated”.
 
 > **The closing assertion of [Stacks, Tag 0FYV].**  For a separated morphism of schemes
 > `f : X ⟶ S` the Fourier-Mukai functor of the diagonal kernel `𝒪_Δ = RΔ_{X/S,*}𝒪_X` is the
@@ -745,7 +745,7 @@ def fourierMukaiDiagonalKernelIso :
     fourierMukai f f (diagonalKernel f) ≅ 𝟭 (DerivedCategory X.Modules)
 ```
 
-**`AlgebraicGeometry.isFourierMukaiKernel_diagonalKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean#L141). The attribute's comment: “the diagonal kernel is a Fourier-Mukai kernel for the identity functor”.
+**`AlgebraicGeometry.isFourierMukaiKernel_diagonalKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalKernelIdentity.lean#L141). The attribute's comment: “the diagonal kernel is a Fourier-Mukai kernel for the identity functor”.
 
 > **`𝒪_Δ` is a Fourier-Mukai kernel for the identity functor**, in the sense of
 > `AlgebraicGeometry.IsFourierMukaiKernel`; this is [Stacks, Tag 0FYV] read through the
@@ -756,7 +756,7 @@ theorem isFourierMukaiKernel_diagonalKernel :
     IsFourierMukaiKernel f f (𝟭 (DerivedCategory X.Modules)) (diagonalKernel f)
 ```
 
-**`AlgebraicGeometry.diagonalModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L114). The attribute's comment: “the `𝒪_{X ×_S X}`-module `𝒪_Δ = Δ_{X/S,*}𝒪_X`”.
+**`AlgebraicGeometry.diagonalModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L114). The attribute's comment: “the `𝒪_{X ×_S X}`-module `𝒪_Δ = Δ_{X/S,*}𝒪_X`”.
 
 > **The structure sheaf of the diagonal, [Stacks, Tag 0FYV]**: the `𝒪_{X ×_S X}`-module
 >
@@ -772,7 +772,7 @@ theorem isFourierMukaiKernel_diagonalKernel :
 def diagonalModule : (Limits.pullback f f).Modules
 ```
 
-**`AlgebraicGeometry.diagonalModule_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L129). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X` is a quasi-coherent `𝒪_{X ×_S X}`-module, for `f` separated”.
+**`AlgebraicGeometry.diagonalModule_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L129). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X` is a quasi-coherent `𝒪_{X ×_S X}`-module, for `f` separated”.
 
 > **`𝒪_Δ` is a quasi-coherent `𝒪_{X ×_S X}`-module**, part of the assertion of
 > [Stacks, Tag 0FYV].  The diagonal of a separated morphism is a closed immersion, hence an
@@ -784,7 +784,7 @@ theorem diagonalModule_isQuasicoherent [IsSeparated f] :
     (diagonalModule f).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.diagonalModule_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L143). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X` is of finite type, for `f` separated”.
+**`AlgebraicGeometry.diagonalModule_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L143). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X` is of finite type, for `f` separated”.
 
 > **`𝒪_Δ` is of finite type**, part of the assertion of [Stacks, Tag 0FYV].  Finite type is
 > Mathlib's `SheafOfModules.IsFiniteType`, [Stacks, Tag 01B4]: locally generated by finitely many
@@ -800,7 +800,7 @@ theorem diagonalModule_isFiniteType [IsSeparated f] :
     (diagonalModule f).IsFiniteType
 ```
 
-**`AlgebraicGeometry.diagonalModule_isFlatOver_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L183). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X` is flat over `X` under the first projection, for `f` separated”.
+**`AlgebraicGeometry.diagonalModule_isFlatOver_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L183). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X` is flat over `X` under the first projection, for `f` separated”.
 
 > **`𝒪_Δ` is flat over `X` under the first projection**, part of the assertion of
 > [Stacks, Tag 0FYV].
@@ -810,7 +810,7 @@ theorem diagonalModule_isFlatOver_fst [IsSeparated f] :
     IsFlatOver (Limits.pullback.fst f f).toLRSHom.toShHom (diagonalModule f)
 ```
 
-**`AlgebraicGeometry.diagonalModule_isFlatOver_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L190). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X` is flat over `X` under the second projection, for `f` separated”.
+**`AlgebraicGeometry.diagonalModule_isFlatOver_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L190). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X` is flat over `X` under the second projection, for `f` separated”.
 
 > **`𝒪_Δ` is flat over `X` under the second projection**, part of the assertion of
 > [Stacks, Tag 0FYV].
@@ -820,7 +820,7 @@ theorem diagonalModule_isFlatOver_snd [IsSeparated f] :
     IsFlatOver (Limits.pullback.snd f f).toLRSHom.toShHom (diagonalModule f)
 ```
 
-**`AlgebraicGeometry.diagonalKernelIsoDiagonalModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L205). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X = RΔ_*𝒪_X`: the ordinary and the derived direct image of `𝒪_X` along the diagonal agree, for `f` separated”.
+**`AlgebraicGeometry.diagonalKernelIsoDiagonalModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L205). The attribute's comment: “`𝒪_Δ = Δ_*𝒪_X = RΔ_*𝒪_X`: the ordinary and the derived direct image of `𝒪_X` along the diagonal agree, for `f` separated”.
 
 > **`Δ_*𝒪_X = RΔ_*𝒪_X`**, the source's identification in [Stacks, Tag 0FYV]: for `f`
 > separated the diagonal kernel `𝒪_Δ = RΔ_*𝒪_X` of `AlgebraicGeometry.diagonalKernel` is the
@@ -838,13 +838,13 @@ def diagonalKernelIsoDiagonalModule [IsSeparated f] :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsSeparated.isClosedImmersion_diagonal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsSeparated.isClosedImmersion_diagonal#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L121) (StacksFrontier): “the diagonal `Δ : X ⟶ X ×_S X` of a separated morphism is a closed immersion”.
+- [`AlgebraicGeometry.IsSeparated.isClosedImmersion_diagonal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsSeparated.isClosedImmersion_diagonal#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/DiagonalModule.lean#L121) (StacksFrontier): “the diagonal `Δ : X ⟶ X ×_S X` of a separated morphism is a closed immersion”.
 
 ## Tag 0FYW, a lemma
 
 [Tag 0FYW](https://stacks.math.columbia.edu/tag/0FYW) in the Stacks Project.
 
-**`AlgebraicGeometry.fourierMukaiRightAdjointComparison_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RightAdjoint.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RightAdjoint.lean#L357).
+**`AlgebraicGeometry.fourierMukaiRightAdjointComparison_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RightAdjoint.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RightAdjoint.lean#L357).
 
 > **[Stacks, Tag 0FYW].** Let `X ⟶ S` and `Y ⟶ S` be morphisms of quasi-compact and
 > quasi-separated schemes. Let `Φ : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)` be the Fourier-Mukai functor of a
@@ -911,7 +911,7 @@ theorem fourierMukaiRightAdjointComparison_spec
 
 [Tag 0FYX](https://stacks.math.columbia.edu/tag/0FYX) in the Stacks Project.
 
-**`AlgebraicGeometry.fourierMukaiLeftAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/LeftAdjoint.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/LeftAdjoint.lean#L181).
+**`AlgebraicGeometry.fourierMukaiLeftAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/LeftAdjoint.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/LeftAdjoint.lean#L181).
 
 > **[Stacks, Tag 0FYX].** Let `S` be a Noetherian scheme, `g : Y ⟶ S` a flat proper Gorenstein
 > morphism and `f : X ⟶ S` a morphism of finite type. Let `K` be a perfect object of
@@ -945,7 +945,7 @@ def fourierMukaiLeftAdjunction (hfib : ∀ s : S, IsLocallyNoetherian (g.fiber s
 
 [Tag 0FYY](https://stacks.math.columbia.edu/tag/0FYY) in the Stacks Project.
 
-**`AlgebraicGeometry.perfectFourierMukaiOfProperFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean#L104). The attribute's comment: “(1): the Fourier-Mukai functor D\_perf(O\_X) -> D\_perf(O\_Y) of a perfect kernel, for X flat, proper and of finite presentation over S, which the source's S Noetherian and X, Y proper flat over S imply”.
+**`AlgebraicGeometry.perfectFourierMukaiOfProperFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean#L104). The attribute's comment: “(1): the Fourier-Mukai functor D\_perf(O\_X) -> D\_perf(O\_Y) of a perfect kernel, for X flat, proper and of finite presentation over S, which the source's S Noetherian and X, Y proper flat over S imply”.
 
 > **[Stacks, Tag 0FYY] (1).** For `f : X ⟶ S` flat, proper and of finite presentation and `K`
 > a perfect object of `D(𝒪_{X ×_S Y})`, the Fourier-Mukai functor `Φ_K` restricts to a functor
@@ -960,7 +960,7 @@ def perfectFourierMukaiOfProperFlat [Flat f] [IsProper f] [LocallyOfFinitePresen
     PerfectDerivedCategory X ⥤ PerfectDerivedCategory Y
 ```
 
-**`AlgebraicGeometry.perfectFourierMukaiOfProperFlatComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean#L131). The attribute's comment: “(2): Phi\_\{K'} o Phi\_K = Phi\_\{K''} on D\_perf with K'' the convolution of Lemma 0FYS, as a natural isomorphism; for X, Y flat, proper and of finite presentation over S and Z quasi-compact quasi-separated over S, which the source's S Noetherian and X, Y, Z proper flat over S imply”.
+**`AlgebraicGeometry.perfectFourierMukaiOfProperFlatComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean#L131). The attribute's comment: “(2): Phi\_\{K'} o Phi\_K = Phi\_\{K''} on D\_perf with K'' the convolution of Lemma 0FYS, as a natural isomorphism; for X, Y flat, proper and of finite presentation over S and Z quasi-compact quasi-separated over S, which the source's S Noetherian and X, Y, Z proper flat over S imply”.
 
 > **[Stacks, Tag 0FYY] (2).** Let `f : X ⟶ S` and `g : Y ⟶ S` be flat, proper and of finite
 > presentation and let `h : Z ⟶ S` be quasi-compact and quasi-separated. For perfect `K` on
@@ -982,7 +982,7 @@ def perfectFourierMukaiOfProperFlatComp [Flat f] [IsProper f] [LocallyOfFinitePr
           isPerfect_fourierMukaiConvolution_triple f g h K.property K'.property⟩
 ```
 
-**`AlgebraicGeometry.perfectFourierMukaiOfProperFlatRightAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean#L207). The attribute's comment: “(3): for X -> S Gorenstein, Phi\_\{K'} : D\_perf(O\_Y) -> D\_perf(O\_X) is right adjoint to Phi\_K, K' the pullback of Lpr\_1^* omega\_\{X/S} (x)^L K^dual by Y x\_S X -> X x\_S Y”.
+**`AlgebraicGeometry.perfectFourierMukaiOfProperFlatRightAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean#L207). The attribute's comment: “(3): for X -> S Gorenstein, Phi\_\{K'} : D\_perf(O\_Y) -> D\_perf(O\_X) is right adjoint to Phi\_K, K' the pullback of Lpr\_1^* omega\_\{X/S} (x)^L K^dual by Y x\_S X -> X x\_S Y”.
 
 > **[Stacks, Tag 0FYY] (3).** Let `S` be Noetherian, let `X` and `Y` be proper and flat over
 > `S`, let `X ⟶ S` be Gorenstein, and let `K` be a perfect object of `D(𝒪_{X ×_S Y})`. Then
@@ -1015,7 +1015,7 @@ def perfectFourierMukaiOfProperFlatRightAdjunction
           K.property⟩
 ```
 
-**`AlgebraicGeometry.perfectFourierMukaiOfProperFlatLeftAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean#L246). The attribute's comment: “(4): for Y -> S Gorenstein, Phi\_\{K''} : D\_perf(O\_Y) -> D\_perf(O\_X) is left adjoint to Phi\_K, K'' the pullback of Lpr\_2^* omega\_\{Y/S} (x)^L K^dual by Y x\_S X -> X x\_S Y”.
+**`AlgebraicGeometry.perfectFourierMukaiOfProperFlatLeftAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/PerfectFunctor.lean#L246). The attribute's comment: “(4): for Y -> S Gorenstein, Phi\_\{K''} : D\_perf(O\_Y) -> D\_perf(O\_X) is left adjoint to Phi\_K, K'' the pullback of Lpr\_2^* omega\_\{Y/S} (x)^L K^dual by Y x\_S X -> X x\_S Y”.
 
 > **[Stacks, Tag 0FYY] (4).** Let `S` be Noetherian, let `X` and `Y` be proper and flat over
 > `S`, let `Y ⟶ S` be Gorenstein, and let `K` be a perfect object of `D(𝒪_{X ×_S Y})`. Then
@@ -1050,4 +1050,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.8, Tag 0FYP](https://stacks.math.columbia.edu/tag/0FYP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

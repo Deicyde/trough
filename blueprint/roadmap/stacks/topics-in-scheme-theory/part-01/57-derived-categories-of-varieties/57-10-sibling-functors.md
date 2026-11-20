@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.10 Sibling functors
 
-Section 57.10 of the Stacks Project, [Tag 0FZS](https://stacks.math.columbia.edu/tag/0FZS). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.10 of the Stacks Project, [Tag 0FZS](https://stacks.math.columbia.edu/tag/0FZS). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FZT, a definition
 
 [Tag 0FZT](https://stacks.math.columbia.edu/tag/0FZT) in the Stacks Project.
 
-**`AlgebraicGeometry.AreSiblings`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Basic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Basic.lean#L67).
+**`AlgebraicGeometry.AreSiblings`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Basic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Basic.lean#L67).
 
 > **Stacks Project, Tag 0FZT.** Two exact functors from the bounded derived category of an
 > abelian category are **siblings** if their restrictions to the abelian category are naturally
@@ -29,7 +29,7 @@ public structure AreSiblings (F F' : DerivedCategory.Bounded A ⥤ D) [IsTriangu
 
 [Tag 0FZU](https://stacks.math.columbia.edu/tag/0FZU) in the Stacks Project.
 
-**`AlgebraicGeometry.areSiblings_of_restrictionIso_of_negative_ext`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Criterion.lean, line 753](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Criterion.lean#L753).
+**`AlgebraicGeometry.areSiblings_of_restrictionIso_of_negative_ext`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Criterion.lean, line 753](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Criterion.lean#L753).
 
 > **Stacks Project, Tag 0FZU.** Exact functors from the bounded derived category of an
 > abelian category are siblings if their restrictions to the abelian category are naturally
@@ -57,7 +57,7 @@ public lemma areSiblings_of_restrictionIso_of_negative_ext
 
 [Tag 0FZV](https://stacks.math.columbia.edu/tag/0FZV) in the Stacks Project.
 
-**`AlgebraicGeometry.essSurj_of_areSiblings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Transfer.lean, line 720](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Transfer.lean#L720). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.essSurj_of_areSiblings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Transfer.lean, line 720](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Transfer.lean#L720). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0FZV, part (1).** If two exact functors from a bounded
 > derived category are siblings and the first is essentially surjective, then the second is
@@ -68,7 +68,7 @@ public theorem essSurj_of_areSiblings (h : AreSiblings F F')
     (hF : F.EssSurj) : F'.EssSurj
 ```
 
-**`AlgebraicGeometry.fullyFaithful_of_areSiblings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Transfer.lean, line 731](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Transfer.lean#L731). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.fullyFaithful_of_areSiblings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Transfer.lean, line 731](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Transfer.lean#L731). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0FZV, part (2).** If two exact functors from a bounded
 > derived category are siblings and the first is fully faithful, then the second is fully
@@ -83,7 +83,7 @@ public theorem fullyFaithful_of_areSiblings (h : AreSiblings F F')
 
 [Tag 0GWF](https://stacks.math.columbia.edu/tag/0GWF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_negative_epimorphic_lift_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/NegativeObjects.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/NegativeObjects.lean#L117). The attribute's comment: “the case `X' = 0`, with no condition on the composition”.
+**`AlgebraicGeometry.exists_negative_epimorphic_lift_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/NegativeObjects.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/NegativeObjects.lean#L117). The attribute's comment: “the case `X' = 0`, with no condition on the composition”.
 
 > **Stacks Project, Tag 0GWG.** A map of bounded derived objects whose target has zero
 > cohomology in degree `b` can be killed by a map from a negative object in degree `b` which
@@ -106,7 +106,7 @@ public theorem exists_negative_epimorphic_lift_comp_eq_zero
 
 [Tag 0GWG](https://stacks.math.columbia.edu/tag/0GWG) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_negative_epimorphic_lift_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/NegativeObjects.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/NegativeObjects.lean#L117).
+**`AlgebraicGeometry.exists_negative_epimorphic_lift_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/NegativeObjects.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/NegativeObjects.lean#L117).
 
 > **Stacks Project, Tag 0GWG.** A map of bounded derived objects whose target has zero
 > cohomology in degree `b` can be killed by a map from a negative object in degree `b` which
@@ -129,7 +129,7 @@ public theorem exists_negative_epimorphic_lift_comp_eq_zero
 
 [Tag 0FZW](https://stacks.math.columbia.edu/tag/0FZW) in the Stacks Project.
 
-**`AlgebraicGeometry.iso_of_areSiblings_of_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Isomorphism.lean, line 1114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Isomorphism.lean#L1114).
+**`AlgebraicGeometry.iso_of_areSiblings_of_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Isomorphism.lean, line 1114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/Isomorphism.lean#L1114).
 
 > **Stacks Project, Tag 0FZW.** Sibling exact functors from a bounded derived category
 > are naturally isomorphic if the first is fully faithful and the source abelian category has
@@ -152,7 +152,7 @@ public theorem iso_of_areSiblings_of_fullyFaithful
 
 [Tag 0FZX](https://stacks.math.columbia.edu/tag/0FZX) in the Stacks Project.
 
-**`AlgebraicGeometry.shiftedRestrictionIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Support/ShiftedComparison.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Support/ShiftedComparison.lean#L57).
+**`AlgebraicGeometry.shiftedRestrictionIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Support/ShiftedComparison.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Support/ShiftedComparison.lean#L57).
 
 > **Stacks Project, Tag 0FZX.** The shifted comparison with a functor agreeing with the
 > identity on the heart commutes with morphisms between objects concentrated in the same degree.
@@ -173,4 +173,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.10, Tag 0FZS](https://stacks.math.columbia.edu/tag/0FZS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

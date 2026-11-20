@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.59 Sheaves and constructible functions
 
-Section 110.59 of the Stacks Project, [Tag 05LG](https://stacks.math.columbia.edu/tag/05LG). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.59 of the Stacks Project, [Tag 05LG](https://stacks.math.columbia.edu/tag/05LG). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05LH, a lemma
 
 [Tag 05LH](https://stacks.math.columbia.edu/tag/05LH) in the Stacks Project.
 
-**`Stacks.Examples.ConstructibleFunctionSheaf.exists_nonzero_limitPreserving_sheaf_vanishing_on_fields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Schemes/ConstructibleFunctionSheaf.lean, line 1423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Schemes/ConstructibleFunctionSheaf.lean#L1423).
+**`Stacks.Examples.ConstructibleFunctionSheaf.exists_nonzero_limitPreserving_sheaf_vanishing_on_fields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Schemes/ConstructibleFunctionSheaf.lean, line 1423](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Schemes/ConstructibleFunctionSheaf.lean#L1423).
 
 > A nonzero limit-preserving étale sheaf of abelian groups which vanishes on fields
 > and whose restriction maps along thickenings are isomorphisms.
@@ -41,4 +41,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.59, Tag 05LG](https://stacks.math.columbia.edu/tag/05LG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.16 Specialization maps
 
-Section 58.16 of the Stacks Project, [Tag 0BUP](https://stacks.math.columbia.edu/tag/0BUP). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 58.16 of the Stacks Project, [Tag 0BUP](https://stacks.math.columbia.edu/tag/0BUP). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BUP, the section
 
 [Tag 0BUP](https://stacks.math.columbia.edu/tag/0BUP) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_continuousMonoidHom_isSpecializationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapConstruction.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapConstruction.lean#L62). The attribute's comment: “the construction of the specialization map: for `f` proper with geometrically connected fibres, a specialization `s' ⇝ s` and geometric points `s̄'`, `s̄` over them, a continuous homomorphism `π₁(X_{s̄'}) → π₁(X_{s̄})` which is the composite `π₁(X_{s̄'}) → π₁(X_A) = π₁(X_{κ(s)^{sep}}) = π₁(X_{s̄})` of the source, recorded by `AlgebraicGeometry.IsSpecializationMap`. As in the source the map depends on the choice of the factorization `φ : s̄' → Spec A`, so this is stated as existence. The equality `π₁(X_A) = π₁(X_{s̄})` is proved from Stacks 0A48, 0BTW and 0A49 by `AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_fiberOverGeometricPointMap`.”.
+**`AlgebraicGeometry.exists_continuousMonoidHom_isSpecializationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapConstruction.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapConstruction.lean#L62). The attribute's comment: “the construction of the specialization map: for `f` proper with geometrically connected fibres, a specialization `s' ⇝ s` and geometric points `s̄'`, `s̄` over them, a continuous homomorphism `π₁(X_{s̄'}) → π₁(X_{s̄})` which is the composite `π₁(X_{s̄'}) → π₁(X_A) = π₁(X_{κ(s)^{sep}}) = π₁(X_{s̄})` of the source, recorded by `AlgebraicGeometry.IsSpecializationMap`. As in the source the map depends on the choice of the factorization `φ : s̄' → Spec A`, so this is stated as existence. The equality `π₁(X_A) = π₁(X_{s̄})` is proved from Stacks 0A48, 0BTW and 0A49 by `AlgebraicGeometry.isEquivalence_finiteEtaleBaseChange_fiberOverGeometricPointMap`.”.
 
 > **Stacks Project, Tag 0BUP.** Let `f : X ⟶ S` be a proper morphism with geometrically
 > connected fibres, let `s' ⇝ s` be a specialization of points of `S`, let `s̄'` and `s̄` be
@@ -42,7 +42,7 @@ theorem exists_continuousMonoidHom_isSpecializationMap (f : X ⟶ S) [IsProper f
 
 [Tag 0C0K](https://stacks.math.columbia.edu/tag/0C0K) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isSpecializationMap_comm_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapSquare.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapSquare.lean#L58). The attribute's comment: “The whole statement, under exactly the source's hypotheses.”.
+**`AlgebraicGeometry.exists_isSpecializationMap_comm_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapSquare.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapSquare.lean#L58). The attribute's comment: “The whole statement, under exactly the source's hypotheses.”.
 
 > **Stacks Project, Tag 0C0K.** Consider a commutative square of schemes with `a : Y ⟶ X` on
 > top, `g : Y ⟶ T` and `f : X ⟶ S` vertical and `b : T ⟶ S` on the bottom, where `f` and `g` are
@@ -78,7 +78,7 @@ theorem exists_isSpecializationMap_comm_square (a : Y ⟶ X) (g : Y ⟶ T) (f : 
 
 [Tag 0C0L](https://stacks.math.columbia.edu/tag/0C0L) in the Stacks Project.
 
-**`AlgebraicGeometry.isSpecializationMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMap.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMap.lean#L525).
+**`AlgebraicGeometry.isSpecializationMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMap.lean, line 525](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMap.lean#L525).
 
 > **Stacks Project, Tag 0C0L.** For a proper morphism with geometrically connected fibres and
 > specializations `s'' ⇝ s' ⇝ s`, the composite of a specialization map
@@ -104,7 +104,7 @@ theorem isSpecializationMap_comp (f : X ⟶ S) [IsProper f] [GeometricallyConnec
 
 [Tag 0C0M](https://stacks.math.columbia.edu/tag/0C0M) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isSpecializationMap_isomorphic_over_strictlyHenselianValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapValuationRing.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapValuationRing.lean#L297).
+**`AlgebraicGeometry.exists_isSpecializationMap_isomorphic_over_strictlyHenselianValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapValuationRing.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapValuationRing.lean#L297).
 
 > **Stacks Project, Tag 0C0M.** Let `f : X ⟶ S` be a proper morphism with geometrically
 > connected fibres, let `s'` and `s` be geometric points of `S` and let
@@ -152,7 +152,7 @@ theorem exists_isSpecializationMap_isomorphic_over_strictlyHenselianValuationRin
         ∀ γ, eo (sp γ) = spR (eη γ)
 ```
 
-**`AlgebraicGeometry.exists_valuationSubring_strictlyHenselian_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationValuationRing.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationValuationRing.lean#L97). The attribute's comment: “the existence of the strictly henselian valuation ring `R` over `S` with algebraically closed fraction field realizing the specialization, which is the only step the Stacks proof argues; the comparison `sp ≅ sp_R` of specialization maps of fundamental groups is not formalized, because the specialization map `sp` cannot be constructed in this library: its construction (Stacks 0BUP) is the composite of the functoriality map with the identifications of Stacks 0A48, 0BTW and 0A49, and none of those three is available here — 0BTW is proper base change over a henselian local ring, i.e. Stacks 0GS2, whose essential-surjectivity half is open (see `StacksFrontier.AlgebraicGeometry.FundamentalGroup.FiniteEtaleProperEquivalence`)”.
+**`AlgebraicGeometry.exists_valuationSubring_strictlyHenselian_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationValuationRing.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationValuationRing.lean#L97). The attribute's comment: “the existence of the strictly henselian valuation ring `R` over `S` with algebraically closed fraction field realizing the specialization, which is the only step the Stacks proof argues; the comparison `sp ≅ sp_R` of specialization maps of fundamental groups is not formalized, because the specialization map `sp` cannot be constructed in this library: its construction (Stacks 0BUP) is the composite of the functoriality map with the identifications of Stacks 0A48, 0BTW and 0A49, and none of those three is available here — 0BTW is proper base change over a henselian local ring, i.e. Stacks 0GS2, whose essential-surjectivity half is open (see `StacksFrontier.AlgebraicGeometry.FundamentalGroup.FiniteEtaleProperEquivalence`)”.
 
 > **Stacks Project, Tag 0C0M**, the existence of the valuation ring. Let `φ : Spec K ⟶ S` be a
 > geometric point of a scheme `S`, with `K` algebraically closed, and let the image of `φ`
@@ -175,7 +175,7 @@ theorem exists_valuationSubring_strictlyHenselian_of_specializes
 
 [Tag 0C0N](https://stacks.math.columbia.edu/tag/0C0N) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isSpecializationMap_isomorphic_over_strictlyHenselianDVR`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapStrictlyHenselianDiscreteValuationRing.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapStrictlyHenselianDiscreteValuationRing.lean#L69). The attribute's comment: “The full statement under the source's hypotheses, with no extra input: Tag 0A48 is supplied by `properHenselianFiniteEtaleEquivalence`. The source leaves "isomorphic" undefined; it is stated as a commutative square of isomorphisms of topological groups `eη`, `eo` with `eo ∘ sp = sp_R ∘ eη`. The ring `R` produced also has algebraically closed residue field.”.
+**`AlgebraicGeometry.exists_isSpecializationMap_isomorphic_over_strictlyHenselianDVR`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapStrictlyHenselianDiscreteValuationRing.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SpecializationMapStrictlyHenselianDiscreteValuationRing.lean#L69). The attribute's comment: “The full statement under the source's hypotheses, with no extra input: Tag 0A48 is supplied by `properHenselianFiniteEtaleEquivalence`. The source leaves "isomorphic" undefined; it is stated as a commutative square of isomorphisms of topological groups `eη`, `eo` with `eo ∘ sp = sp_R ∘ eη`. The ring `R` produced also has algebraically closed residue field.”.
 
 > **Stacks Project, Tag 0C0N.** Let `f : X ⟶ S` be a proper morphism with geometrically
 > connected fibres over a Noetherian scheme `S`, let `s'` and `s` be geometric points of `S` and let
@@ -228,4 +228,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.16, Tag 0BUP](https://stacks.math.columbia.edu/tag/0BUP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

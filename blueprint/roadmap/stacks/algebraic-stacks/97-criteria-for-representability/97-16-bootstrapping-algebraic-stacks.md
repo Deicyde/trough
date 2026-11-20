@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.16 Bootstrapping algebraic stacks
 
-Section 97.16 of the Stacks Project, [Tag 06DB](https://stacks.math.columbia.edu/tag/06DB). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 97.16 of the Stacks Project, [Tag 06DB](https://stacks.math.columbia.edu/tag/06DB). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06DC, a theorem
 
 [Tag 06DC](https://stacks.math.columbia.edu/tag/06DC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_of_flatCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatCoverAlgebraic.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatCoverAlgebraic.lean#L96). The attribute's comment: “a 1-morphism `F : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big fppf site of `S` with `𝒴` a stack; `𝒳` is a stack because it is representable by an algebraic space, and `𝒴` is a stack in groupoids by Stacks 02ZJ; clause (2) is read on every base change to an algebraic space; the diagonal of `𝒴` (Stacks 05XW) and the smooth surjective cover by the lci loci of the relative finite Hilbert stacks are proved, not assumed”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_of_flatCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatCoverAlgebraic.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatCoverAlgebraic.lean#L97). The attribute's comment: “a 1-morphism `F : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big fppf site of `S` with `𝒴` a stack; `𝒳` is a stack because it is representable by an algebraic space, and `𝒴` is a stack in groupoids by Stacks 02ZJ; clause (2) is read on every base change to an algebraic space; the diagonal of `𝒴` (Stacks 05XW) and the smooth surjective cover by the lci loci of the relative finite Hilbert stacks are proved, not assumed”.
 
 > **Artin's theorem on representability of flat groupoids.** Let `F : 𝒳 ⟶ 𝒴` be a 1-morphism
 > of categories fibred in groupoids over the big fppf site of `S`, with `𝒴` a stack. If `𝒳` is
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.16, Tag 06DB](https://stacks.math.columbia.edu/tag/06DB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

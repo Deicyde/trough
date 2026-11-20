@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.26 Homotopies
 
-Section 14.26 of the Stacks Project, [Tag 019J](https://stacks.math.columbia.edu/tag/019J). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 14.26 of the Stacks Project, [Tag 019J](https://stacks.math.columbia.edu/tag/019J). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 019K, a definition
 
 [Tag 019K](https://stacks.math.columbia.edu/tag/019K) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.IsHomotopy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L79). The attribute's comment: “item (1): a homotopy from a to b; item (2) is `Homotopic`”. References: SGA 4 Vbis (3.0.2).
+**`CategoryTheory.SimplicialObject.IsHomotopy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L79). The attribute's comment: “item (1): a homotopy from a to b; item (2) is `Homotopic`”. References: SGA 4 Vbis (3.0.2).
 
 > **Stacks 019K** (part 1).
 > Given simplicial objects `U`, `V` of a category `C` for which the product
@@ -30,7 +30,7 @@ Section 14.26 of the Stacks Project, [Tag 019J](https://stacks.math.columbia.edu
 public def IsHomotopy (h : U.copower Δ[1] ⟶ V) (a b : U ⟶ V) : Prop
 ```
 
-**`CategoryTheory.SimplicialObject.Homotopic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L94). The attribute's comment: “item (2): a and b are homotopic, in the same homotopy class”.
+**`CategoryTheory.SimplicialObject.Homotopic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L94). The attribute's comment: “item (2): a and b are homotopic, in the same homotopy class”.
 
 > **Stacks 019K** (part 2).
 > Two morphisms `a, b : U ⟶ V` of simplicial objects are *homotopic*, or *in the same homotopy
@@ -49,7 +49,7 @@ public def Homotopic (a b : U ⟶ V) : Prop
 
 [Tag 019L](https://stacks.math.columbia.edu/tag/019L) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.htpy_forward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L259).
+**`CategoryTheory.SimplicialObject.htpy_forward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L259).
 
 > **Stacks 019L**.
 > The components `h_{n, i}` of a homotopy `h : U × Δ[1] ⟶ V` from `a` to `b` satisfy the relations
@@ -62,7 +62,7 @@ theorem htpy_forward {U V : SimplicialObject C}
     HtpyRel a b (homotopyComponent h)
 ```
 
-**`CategoryTheory.SimplicialObject.htpy_converse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L448).
+**`CategoryTheory.SimplicialObject.htpy_converse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 448](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L448).
 
 > **Stacks 019L**.
 > Given a family of morphisms `hc n i : U_n ⟶ V_n` satisfying the relations `HtpyRel a b`, there is a
@@ -83,7 +83,7 @@ theorem htpy_converse {U V : SimplicialObject C}
 
 [Tag 019M](https://stacks.math.columbia.edu/tag/019M) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.IsHomotopy.exists_whiskerRight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L604). The attribute's comment: “the third claim for a single homotopy, under the weaker hypothesis that the two products with `Δ[1]` exist, with the transported homotopy given by the family `{F(h_{n, i})}`”.
+**`CategoryTheory.SimplicialObject.IsHomotopy.exists_whiskerRight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 604](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L604). The attribute's comment: “the third claim for a single homotopy, under the weaker hypothesis that the two products with `Δ[1]` exist, with the transported homotopy given by the family `{F(h_{n, i})}`”.
 
 > **Stacks 019M**.
 > Functors preserve homotopies of simplicial objects. Let `F : C ⥤ D` be any functor between any two
@@ -106,7 +106,7 @@ public theorem IsHomotopy.exists_whiskerRight {U V : SimplicialObject C}
         IsHomotopy l (Functor.whiskerRight a F) (Functor.whiskerRight b F)
 ```
 
-**`CategoryTheory.SimplicialObject.HtpyHomotopic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L634). The attribute's comment: “the definition: a homotopy from `a` to `b` is a family `hc` with `HtpyRel a b hc` (the relations of 019L, no assumption on `C`), and being homotopic is this equivalence closure. The remark's three claims are `HtpyRel.map`, `HtpyHomotopic.map` and `eqvGen_isHomotopy_whiskerRight`, the comparison with 019K being `eqvGen_isHomotopy_iff_htpyHomotopic`”.
+**`CategoryTheory.SimplicialObject.HtpyHomotopic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 634](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L634). The attribute's comment: “the definition: a homotopy from `a` to `b` is a family `hc` with `HtpyRel a b hc` (the relations of 019L, no assumption on `C`), and being homotopic is this equivalence closure. The remark's three claims are `HtpyRel.map`, `HtpyHomotopic.map` and `eqvGen_isHomotopy_whiskerRight`, the comparison with 019K being `eqvGen_isHomotopy_iff_htpyHomotopic`”.
 
 > **Stacks 019M** (the definition of being homotopic).
 > Let `C` be any category and let `a, b : U ⟶ V` be morphisms of simplicial objects of `C`. A
@@ -122,7 +122,7 @@ public theorem IsHomotopy.exists_whiskerRight {U V : SimplicialObject C}
 public def HtpyHomotopic {U V : SimplicialObject C} (a b : U ⟶ V) : Prop
 ```
 
-**`CategoryTheory.SimplicialObject.HtpyRel.map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 642](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L642). The attribute's comment: “first claim: `{F(h_{n, i})}` is a homotopy from `F(a)` to `F(b)`”.
+**`CategoryTheory.SimplicialObject.HtpyRel.map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 642](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L642). The attribute's comment: “first claim: `{F(h_{n, i})}` is a homotopy from `F(a)` to `F(b)`”.
 
 > **Stacks 019M** (a functor carries a homotopy to a homotopy).
 > Let `F : C ⥤ D` be any functor. If `{h_{n, i}}` is a homotopy from `a` to `b`, that is a family
@@ -138,7 +138,7 @@ public theorem HtpyRel.map {U V : SimplicialObject C} {a b : U ⟶ V}
       (fun n i => F.map (hc n i))
 ```
 
-**`CategoryTheory.SimplicialObject.HtpyHomotopic.map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 662](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L662). The attribute's comment: “second claim: if `a` and `b` are homotopic then so are `F(a)` and `F(b)`”.
+**`CategoryTheory.SimplicialObject.HtpyHomotopic.map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 662](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L662). The attribute's comment: “second claim: if `a` and `b` are homotopic then so are `F(a)` and `F(b)`”.
 
 > **Stacks 019M** (a functor carries homotopic morphisms to homotopic morphisms).
 > Let `F : C ⥤ D` be any functor. If `a` and `b` are homotopic, then so are `F(a)` and `F(b)`.
@@ -149,7 +149,7 @@ public theorem HtpyHomotopic.map {U V : SimplicialObject C} {a b : U ⟶ V}
     HtpyHomotopic (Functor.whiskerRight a F) (Functor.whiskerRight b F)
 ```
 
-**`CategoryTheory.SimplicialObject.eqvGen_isHomotopy_whiskerRight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L703). The attribute's comment: “third claim: when both categories have finite coproducts, functors preserve being homotopic in the sense of 019K, deduced through `eqvGen_isHomotopy_iff_htpyHomotopic`”.
+**`CategoryTheory.SimplicialObject.eqvGen_isHomotopy_whiskerRight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 703](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L703). The attribute's comment: “third claim: when both categories have finite coproducts, functors preserve being homotopic in the sense of 019K, deduced through `eqvGen_isHomotopy_iff_htpyHomotopic`”.
 
 > **Stacks 019M** (functors preserve the notion of homotopy of [Stacks, Tag 019K]).
 > Let `F : C ⥤ D` be any functor between categories having finite coproducts. If `a, b : U ⟶ V`
@@ -172,7 +172,7 @@ public theorem eqvGen_isHomotopy_whiskerRight [HasFiniteCoproducts C] [HasFinite
 
 [Tag 08RJ](https://stacks.math.columbia.edu/tag/08RJ) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.congruence_homotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 844](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L844).
+**`CategoryTheory.SimplicialObject.congruence_homotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 844](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L844).
 
 > **Stacks 08RJ**.
 > Let `C` be any category. Being homotopic — the equivalence relation on morphisms of simplicial
@@ -194,7 +194,7 @@ public theorem congruence_homotopic :
 
 [Tag 019N](https://stacks.math.columbia.edu/tag/019N) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.homotopyEquivalences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 765](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L765). The attribute's comment: “the first sentence; being homotopy equivalent, the second sentence, is the composite `∃ a : U ⟶ V, homotopyEquivalences C a` and gets no name, as in Mathlib for complexes, where it is `Nonempty (HomotopyEquiv K L)`. Stated as a `MorphismProperty`, the shape of the sibling `HomologicalComplex.homotopyEquivalences`; being homotopic is `Relation.EqvGen fun f g => Nonempty (Homotopy f g)` as in 019S”.
+**`CategoryTheory.SimplicialObject.homotopyEquivalences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean, line 765](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Basic.lean#L765). The attribute's comment: “the first sentence; being homotopy equivalent, the second sentence, is the composite `∃ a : U ⟶ V, homotopyEquivalences C a` and gets no name, as in Mathlib for complexes, where it is `Nonempty (HomotopyEquiv K L)`. Stated as a `MorphismProperty`, the shape of the sibling `HomologicalComplex.homotopyEquivalences`; being homotopic is `Relation.EqvGen fun f g => Nonempty (Homotopy f g)` as in 019S”.
 
 > **Stacks 019N** (the first sentence).
 > Let `C` be any category. A morphism `a : U ⟶ V` of simplicial objects of `C` is a *homotopy
@@ -212,7 +212,7 @@ public def homotopyEquivalences : MorphismProperty (SimplicialObject C)
 
 [Tag 08Q3](https://stacks.math.columbia.edu/tag/08Q3) in the Stacks Project.
 
-**`SSet.stdSimplex.homotopyEquivalences_hom_obj₀`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 837](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L837). The attribute's comment: “the homotopy equivalence, with the homotopy `𝟙 ⟹ f ≫ g` for `g` the last vertex; `g ≫ f = 𝟙` is `SSet.stdSimplex.ext₀`, as `Δ[0]` is terminal”.
+**`SSet.stdSimplex.homotopyEquivalences_hom_obj₀`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 837](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L837). The attribute's comment: “the homotopy equivalence, with the homotopy `𝟙 ⟹ f ≫ g` for `g` the last vertex; `g ≫ f = 𝟙` is `SSet.stdSimplex.ext₀`, as `Δ[0]` is terminal”.
 
 > The standard simplex `Δ[m]` is homotopy equivalent to `Δ[0]`. The unique morphism
 > `f : Δ[m] ⟶ Δ[0]` is a homotopy equivalence of simplicial objects ([Stacks, Tag 019N]): a
@@ -233,7 +233,7 @@ public theorem homotopyEquivalences_hom_obj₀ (m : ℕ) :
 
 [Tag 019O](https://stacks.math.columbia.edu/tag/019O) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.homotopyEquivalence_proj_cylinder`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L486). The attribute's comment: “the cylinder is any object with the universal property of `U × Δ[1]`, in place of a chosen construction, so that the source's finite coproducts on `C` are weakened to the coproducts making it up; the maps of [Stacks, Tag 017E] are pinned by their characterizing equations instead of being reconstructed; and the two homotopies are directed, as the source's proof produces them, which is stronger than the source's symmetric `are homotopic`”.
+**`CategoryTheory.SimplicialObject.homotopyEquivalence_proj_cylinder`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 486](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L486). The attribute's comment: “the cylinder is any object with the universal property of `U × Δ[1]`, in place of a chosen construction, so that the source's finite coproducts on `C` are weakened to the coproducts making it up; the maps of [Stacks, Tag 017E] are pinned by their characterizing equations instead of being reconstructed; and the two homotopies are directed, as the source's proof produces them, which is stronger than the source's symmetric `are homotopic`”.
 
 > The projection from the cylinder `U × Δ[1]` is a homotopy equivalence, with either vertex
 > inclusion as a homotopy inverse. Let `U` be a simplicial object of a category `C`, and let `X`
@@ -267,7 +267,7 @@ public theorem homotopyEquivalence_proj_cylinder
 
 [Tag 019P](https://stacks.math.columbia.edu/tag/019P) in the Stacks Project.
 
-**`CategoryTheory.Arrow.nonempty_homotopy_mapCechNerve_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 725](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L725). The attribute's comment: “the homotopy of the first sentence, in the generality of an arbitrary endomorphism `F` of the arrow `f` with `f.hom ≫ F.right = f.hom`, of which the source's self map is the case `F = (f.hom ≫ s, 𝟙 X)` for a section `s` of `f`; the self map is pinned as `Arrow.mapCechNerve F`, and the conclusion is the existence of a homotopy, which is stronger than the source's `homotopic` of 019M. The whole lemma, with the section `s` and both sentences, is `Arrow.nonempty_homotopy_mapCechNerve_id_and_homotopyEquivalences`”.
+**`CategoryTheory.Arrow.nonempty_homotopy_mapCechNerve_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 725](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L725). The attribute's comment: “the homotopy of the first sentence, in the generality of an arbitrary endomorphism `F` of the arrow `f` with `f.hom ≫ F.right = f.hom`, of which the source's self map is the case `F = (f.hom ≫ s, 𝟙 X)` for a section `s` of `f`; the self map is pinned as `Arrow.mapCechNerve F`, and the conclusion is the existence of a homotopy, which is stronger than the source's `homotopic` of 019M. The whole lemma, with the section `s` and both sentences, is `Arrow.nonempty_homotopy_mapCechNerve_id_and_homotopyEquivalences`”.
 
 > A self map of a Čech nerve which is the identity on the base is homotopic to the identity. Let
 > `f : Y ⟶ X` be an arrow of a category `C` whose iterated fibre products `Y ×_X ⋯ ×_X Y` exist, let
@@ -284,7 +284,7 @@ public theorem nonempty_homotopy_mapCechNerve_id {f : Arrow C}
     Nonempty (SimplicialObject.Homotopy (mapCechNerve F) (𝟙 f.cechNerve))
 ```
 
-**`CategoryTheory.Arrow.nonempty_homotopy_mapCechNerve_id_and_homotopyEquivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 751](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L751). The attribute's comment: “both sentences, for the section `s` of `f`: the self map `(s ∘ f)^{n + 1}` is `Arrow.mapCechNerve` of the arrow endomorphism `(f.hom ≫ s, 𝟙 X)`, its components being recorded in the first conjunct; the second conjunct is the homotopy to the identity, an existence of a homotopy, stronger than `homotopic` of 019M; the third says that the augmentation `f.augmentedCechNerve.hom : U ⟶ const X` is a homotopy equivalence in the sense of 019N, which is the source's `U` homotopy equivalent to the constant simplicial object `X` with the equivalence named. The fibre products of the source are those of Example 016E, the wide pullbacks `Y ×_X ⋯ ×_X Y` of `Arrow.cechNerve`. The third conjunct uses Mathlib's `Arrow.AugmentedCechNerve.extraDegeneracy` and `ExtraDegeneracy.homotopy`”.
+**`CategoryTheory.Arrow.nonempty_homotopy_mapCechNerve_id_and_homotopyEquivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 751](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L751). The attribute's comment: “both sentences, for the section `s` of `f`: the self map `(s ∘ f)^{n + 1}` is `Arrow.mapCechNerve` of the arrow endomorphism `(f.hom ≫ s, 𝟙 X)`, its components being recorded in the first conjunct; the second conjunct is the homotopy to the identity, an existence of a homotopy, stronger than `homotopic` of 019M; the third says that the augmentation `f.augmentedCechNerve.hom : U ⟶ const X` is a homotopy equivalence in the sense of 019N, which is the source's `U` homotopy equivalent to the constant simplicial object `X` with the equivalence named. The fibre products of the source are those of Example 016E, the wide pullbacks `Y ×_X ⋯ ×_X Y` of `Arrow.cechNerve`. The third conjunct uses Mathlib's `Arrow.AugmentedCechNerve.extraDegeneracy` and `ExtraDegeneracy.homotopy`”.
 
 > **Stacks 019P.** Let `f : Y ⟶ X` be an arrow of a category `C` whose iterated fibre products
 > `Y ×_X ⋯ ×_X Y` exist, with a section `s : X ⟶ Y`, so `s ≫ f = 𝟙 X`, and let `U = f.cechNerve` be
@@ -315,7 +315,7 @@ public theorem nonempty_homotopy_mapCechNerve_id_and_homotopyEquivalences {f : A
 
 [Tag 08Q4](https://stacks.math.columbia.edu/tag/08Q4) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.nonempty_homotopy_and_homotopyEquivalences_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 1044](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L1044). The attribute's comment: “the three conjuncts are parts (2), (3), (1), in that order. The products are pinned degreewise by limit fans, as in [Stacks, Tag 016Q], instead of by `HasProduct` in `SimplicialObject C`, and `f = ∏ a_t`, `g = ∏ b_t` by their characterizing equations. Part (1) is stated in the stronger form that the product of homotopy equivalences is one, the source's `homotopy equivalent` following by choice; part (3) is stated with the weaker hypothesis that only finitely many coordinates differ. See the module docstring”.
+**`CategoryTheory.SimplicialObject.nonempty_homotopy_and_homotopyEquivalences_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean, line 1044](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L1044). The attribute's comment: “the three conjuncts are parts (2), (3), (1), in that order. The products are pinned degreewise by limit fans, as in [Stacks, Tag 016Q], instead of by `HasProduct` in `SimplicialObject C`, and `f = ∏ a_t`, `g = ∏ b_t` by their characterizing equations. Part (1) is stated in the stronger form that the product of homotopy equivalences is one, the source's `homotopy equivalent` following by choice; part (3) is stated with the weaker hypothesis that only finitely many coordinates differ. See the module docstring”.
 
 > Products of homotopies and of homotopy equivalences of simplicial objects. Let `X t`, `Y t`
 > (`t : T`) be families of simplicial objects of a category `C`, and let `p t : P ⟶ X t` and
@@ -351,4 +351,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.26, Tag 019J](https://stacks.math.columbia.edu/tag/019J)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.11 Constructing w-contractible covers
 
-Section 61.11 of the Stacks Project, [Tag 0980](https://stacks.math.columbia.edu/tag/0980). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 61.11 of the Stacks Project, [Tag 0980](https://stacks.math.columbia.edu/tag/0980). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0981, a definition
 
 [Tag 0981](https://stacks.math.columbia.edu/tag/0981) in the Stacks Project.
 
-**`ProetaleWContractible.IsWContractible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/WeaklyContractible/WContractibleRings.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/WeaklyContractible/WContractibleRings.lean#L70).
+**`ProetaleWContractible.IsWContractible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/WeaklyContractible/WContractibleRings.lean, line 70](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/WeaklyContractible/WContractibleRings.lean#L70).
 
 > **Definition 4 (w-contractible ring; Stacks Tag `0981`).**
 > A ring `A` is *w-contractible* if every faithfully flat weakly etale ring map `A → B` has a
@@ -30,7 +30,7 @@ def IsWContractible.{w} (A : Type u) [CommRing A] : Prop
 
 [Tag 0982](https://stacks.math.columbia.edu/tag/0982) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.nonempty_algHom_of_ind_etale_of_isWContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WContractibleCharacterization.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WContractibleCharacterization.lean#L57). The attribute's comment: “(1) ⇒ (2)”.
+**`AlgebraicGeometry.ProEtale.nonempty_algHom_of_ind_etale_of_isWContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WContractibleCharacterization.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WContractibleCharacterization.lean#L57). The attribute's comment: “(1) ⇒ (2)”.
 
 > **Lemma 0982, (1) ⇒ (2).** A w-contractible ring retracts every faithfully flat ind-étale
 > algebra over it, ind-étaleness being taken in the categorical form
@@ -45,7 +45,7 @@ theorem nonempty_algHom_of_ind_etale_of_isWContractible (A : Type u) [CommRing A
     Nonempty (B →ₐ[A] A)
 ```
 
-**`AlgebraicGeometry.ProEtale.strictlyHenselian_atPrime_of_ind_etale_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WContractibleCharacterization.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WContractibleCharacterization.lean#L69). The attribute's comment: “(2) ⇒ (3)(c)”.
+**`AlgebraicGeometry.ProEtale.strictlyHenselian_atPrime_of_ind_etale_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WContractibleCharacterization.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WContractibleCharacterization.lean#L69). The attribute's comment: “(2) ⇒ (3)(c)”.
 
 > **Lemma 0982, the (3)(c) component of (2) ⇒ (3).** If every faithfully flat ind-étale
 > algebra over `A` has a retraction, then `A` localized at any maximal ideal is strictly
@@ -60,7 +60,7 @@ theorem strictlyHenselian_atPrime_of_ind_etale_retraction (A : Type u) [CommRing
     StrictlyHenselianLocalRing (Localization.AtPrime m)
 ```
 
-**`AlgebraicGeometry.ProEtale.localizationAtPrime_strictlyHenselian_of_isWContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCharacterization.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCharacterization.lean#L116). The attribute's comment: “(1) ⇒ (3)(c)”.
+**`AlgebraicGeometry.ProEtale.localizationAtPrime_strictlyHenselian_of_isWContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCharacterization.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCharacterization.lean#L116). The attribute's comment: “(1) ⇒ (3)(c)”.
 
 > The localization of a w-contractible ring at a maximal ideal is strictly henselian.
 
@@ -70,7 +70,7 @@ theorem localizationAtPrime_strictlyHenselian_of_isWContractible (A : Type u) [C
     StrictlyHenselianLocalRing (Localization.AtPrime m)
 ```
 
-**`AlgebraicGeometry.ProEtale.wContractible_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleTFAE.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleTFAE.lean#L233).
+**`AlgebraicGeometry.ProEtale.wContractible_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleTFAE.lean, line 233](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleTFAE.lean#L233).
 
 > **Stacks 0982.** For a commutative ring `A` the following are equivalent: `A` is
 > w-contractible; every faithfully flat ind-étale `A`-algebra admits a retraction; `Spec A` is
@@ -93,7 +93,7 @@ theorem wContractible_tfae (A : Type u) [CommRing A] :
 
 [Tag 0983](https://stacks.math.columbia.edu/tag/0983) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_faithfullyFlat_ind_etale_wContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCover.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCover.lean#L201).
+**`AlgebraicGeometry.ProEtale.exists_faithfullyFlat_ind_etale_wContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCover.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCover.lean#L201).
 
 > **Stacks 0983.** Every commutative ring has a faithfully flat ind-étale map to a
 > w-contractible ring.
@@ -112,7 +112,7 @@ theorem exists_faithfullyFlat_ind_etale_wContractible (A : Type u) [CommRing A] 
 
 [Tag 0984](https://stacks.math.columbia.edu/tag/0984) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_small_faithfullyFlat_ind_etale_wContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCoverCardinality.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCoverCardinality.lean#L278).
+**`AlgebraicGeometry.ProEtale.exists_small_faithfullyFlat_ind_etale_wContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCoverCardinality.lean, line 278](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCoverCardinality.lean#L278).
 
 > **Stacks 0984.** A ring of cardinality at most an infinite cardinal `κ` has a faithfully flat
 > ind-étale w-contractible extension of cardinality at most `κ ^ (2 ^ (2 ^ (2 ^ κ)))`.
@@ -134,7 +134,7 @@ theorem exists_small_faithfullyFlat_ind_etale_wContractible (A : Type u) [CommRi
 
 [Tag 0985](https://stacks.math.columbia.edu/tag/0985) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.extremallyDisconnected_primeSpectrum_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ExtremallyDisconnectedSpectrum.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ExtremallyDisconnectedSpectrum.lean#L532).
+**`AlgebraicGeometry.ProEtale.extremallyDisconnected_primeSpectrum_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ExtremallyDisconnectedSpectrum.lean, line 532](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ExtremallyDisconnectedSpectrum.lean#L532).
 
 > The spectrum of a quasi-finite, finitely presented algebra over a ring with separably closed
 > residue fields and Hausdorff extremally disconnected spectrum is extremally disconnected.
@@ -153,7 +153,7 @@ theorem extremallyDisconnected_primeSpectrum_of_quasiFinite
 
 [Tag 0986](https://stacks.math.columbia.edu/tag/0986) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isWContractible_of_finite_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleFinite.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleFinite.lean#L431).
+**`AlgebraicGeometry.ProEtale.isWContractible_of_finite_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleFinite.lean, line 431](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleFinite.lean#L431).
 
 > A finite, finitely presented algebra over a w-contractible ring is w-contractible.
 
@@ -169,7 +169,7 @@ public theorem isWContractible_of_finite_of_finitePresentation
 
 [Tag 0987](https://stacks.math.columbia.edu/tag/0987) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isWContractible_localizationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleLocalization.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleLocalization.lean#L61).
+**`AlgebraicGeometry.ProEtale.isWContractible_localizationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleLocalization.lean, line 61](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleLocalization.lean#L61).
 
 > The canonical localization along a finitely generated closed subset of the spectrum of
 > a w-contractible ring is w-contractible.
@@ -189,4 +189,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.11, Tag 0980](https://stacks.math.columbia.edu/tag/0980)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

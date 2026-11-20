@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.17 Restriction to a closed subscheme
 
-Section 58.17 of the Stacks Project, [Tag 0EJW](https://stacks.math.columbia.edu/tag/0EJW). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 58.17 of the Stacks Project, [Tag 0EJW](https://stacks.math.columbia.edu/tag/0EJW). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EL8, a lemma
 
 [Tag 0EL8](https://stacks.math.columbia.edu/tag/0EL8) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_of_completionFullyFaithfulOnFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionToClosedSubscheme.lean, line 1052](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionToClosedSubscheme.lean#L1052). The attribute's comment: “proved from full faithfulness of completion on the finite locally free coherent modules alone”.
+**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_of_completionFullyFaithfulOnFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionToClosedSubscheme.lean, line 1052](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionToClosedSubscheme.lean#L1052). The attribute's comment: “proved from full faithfulness of completion on the finite locally free coherent modules alone”.
 
 > Let `X` be a Noetherian scheme and `Y ⊆ X` a closed subscheme with ideal sheaf `I`. If the
 > completion functor `Coh(𝒪_X) ⟶ Coh(X, I)` is fully faithful on the full subcategory of finite
@@ -31,7 +31,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_of_completionFullyFaithfulOnF
 
 [Tag 0EL9](https://stacks.math.columbia.edu/tag/0EL9) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.finiteEtaleBaseChange_isEquivalence_of_completionEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionEquivalenceOfCompletion.lean, line 2984](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionEquivalenceOfCompletion.lean#L2984). The attribute's comment: “completion an equivalence on finite locally free objects implies restriction FEt\_X to FEt\_Y an equivalence”.
+**`Stacks.FundamentalGroup.finiteEtaleBaseChange_isEquivalence_of_completionEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionEquivalenceOfCompletion.lean, line 3021](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionEquivalenceOfCompletion.lean#L3021). The attribute's comment: “completion an equivalence on finite locally free objects implies restriction FEt\_X to FEt\_Y an equivalence”.
 
 > **[Stacks, Tag 0EL9].** Let `X` be a Noetherian scheme and `Y ⊆ X` a closed subscheme with
 > ideal sheaf `I`. If the completion functor `Coh(𝒪_X) ⥤ Coh(X, I)`, `ℱ ↦ ℱ^∧`, is an equivalence
@@ -55,7 +55,7 @@ public theorem finiteEtaleBaseChange_isEquivalence_of_completionEquivalence
 
 [Tag 0ELA](https://stacks.math.columbia.edu/tag/0ELA) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.finiteEtaleColimitFullyFaithful_of_completionFullyFaithfulComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SectionsExtendFromCompletion.lean, line 636](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SectionsExtendFromCompletion.lean#L636). The attribute's comment: “the full statement: full faithfulness of completion on the finite locally free objects of the neighbourhood colimit gives full faithfulness of restriction of finite étale covers”.
+**`Stacks.FundamentalGroup.finiteEtaleColimitFullyFaithful_of_completionFullyFaithfulComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SectionsExtendFromCompletion.lean, line 636](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SectionsExtendFromCompletion.lean#L636). The attribute's comment: “the full statement: full faithfulness of completion on the finite locally free objects of the neighbourhood colimit gives full faithfulness of restriction of finite étale covers”.
 
 > **[Stacks, Tag 0ELA].** Let `X` be a Noetherian scheme and let `Y ⊆ X` be a closed subscheme
 > with ideal sheaf `I`. Let `𝒱` be the set of open subschemes `V ⊆ X` containing `Y`, ordered by
@@ -86,7 +86,7 @@ theorem finiteEtaleColimitFullyFaithful_of_completionFullyFaithfulComplete [IsNo
 
 [Tag 0EK1](https://stacks.math.columbia.edu/tag/0EK1) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.restriction_isEquivalence_of_completionEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitEquivalenceOfCompletion.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitEquivalenceOfCompletion.lean#L99). The attribute's comment: “the colimit functor is an equivalence: fully faithful, and every finite étale cover of Y extends to a neighbourhood, assuming as in the tag that completion is an equivalence on finite locally free modules”.
+**`Stacks.FundamentalGroup.restriction_isEquivalence_of_completionEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitEquivalenceOfCompletion.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitEquivalenceOfCompletion.lean#L99). The attribute's comment: “the colimit functor is an equivalence: fully faithful, and every finite étale cover of Y extends to a neighbourhood, assuming as in the tag that completion is an equivalence on finite locally free modules”.
 
 > **[Stacks, Tag 0EK1].** Let `X` be a Noetherian scheme, `Y ⊆ X` a closed subscheme with ideal
 > sheaf `I`, and `𝒱` the open subschemes of `X` containing `Y`, ordered by reverse inclusion. If the
@@ -109,7 +109,7 @@ public theorem restriction_isEquivalence_of_completionEquivalence [IsNoetherian 
 
 [Tag 0EJX](https://stacks.math.columbia.edu/tag/0EJX) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.faithful_finiteEtaleRestriction_of_components_meet`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleMorphisms/Restriction.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleMorphisms/Restriction.lean#L102).
+**`Stacks.FundamentalGroup.faithful_finiteEtaleRestriction_of_components_meet`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleMorphisms/Restriction.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleMorphisms/Restriction.lean#L102).
 
 > **Stacks Project, Tag 0EJX.** Restriction of finite étale schemes to a closed subscheme
 > meeting every connected component is faithful.
@@ -127,7 +127,7 @@ public lemma faithful_finiteEtaleRestriction_of_components_meet
 
 [Tag 0EJZ](https://stacks.math.columbia.edu/tag/0EJZ) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_of_sectionsComplete_of_or`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionSectionwiseComplete.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionSectionwiseComplete.lean#L80).
+**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_of_sectionsComplete_of_or`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionSectionwiseComplete.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionSectionwiseComplete.lean#L80).
 
 > **[Stacks, Tag 0EJZ].** Let `X` be a Noetherian scheme and `Y ⊆ X` a closed subscheme, with
 > infinitesimal neighbourhoods `Y_n ⊆ X`. Assume one of the following holds:
@@ -152,7 +152,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_of_sectionsComplete_of_or
     Nonempty (finiteEtaleBaseChange i).FullyFaithful
 ```
 
-**`Stacks.FundamentalGroup.bijective_map_finiteEtaleBaseChange_of_sectionsComplete_of_or`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionSectionwiseComplete.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionSectionwiseComplete.lean#L105). The attribute's comment: “restated as bijectivity on hom sets”. References: SGA 2 X (2.5), “special case”.
+**`Stacks.FundamentalGroup.bijective_map_finiteEtaleBaseChange_of_sectionsComplete_of_or`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionSectionwiseComplete.lean, line 105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionSectionwiseComplete.lean#L105). The attribute's comment: “restated as bijectivity on hom sets”. References: SGA 2 X (2.5), “special case”.
 
 > **[Stacks, Tag 0EJZ], restated as bijectivity on hom sets.** Under any one of the three
 > conditions of
@@ -178,7 +178,7 @@ public theorem bijective_map_finiteEtaleBaseChange_of_sectionsComplete_of_or
 
 [Tag 0EK0](https://stacks.math.columbia.edu/tag/0EK0) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.finiteEtaleColimitFullyFaithful_of_neighbourhoodSectionsComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitFullyFaithful.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitFullyFaithful.lean#L82). The attribute's comment: “the full tag, unconditionally: X Noetherian, Y a closed subscheme, and any one of conditions (1), (2), (3) imply that colim\_V FEt\_V -> FEt\_Y is fully faithful; full faithfulness spelled through the directed-colimit description of the hom sets of colim\_V FEt\_V (as in Stacks 04AX)”.
+**`Stacks.FundamentalGroup.finiteEtaleColimitFullyFaithful_of_neighbourhoodSectionsComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitFullyFaithful.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitFullyFaithful.lean#L82). The attribute's comment: “the full tag, unconditionally: X Noetherian, Y a closed subscheme, and any one of conditions (1), (2), (3) imply that colim\_V FEt\_V -> FEt\_Y is fully faithful; full faithfulness spelled through the directed-colimit description of the hom sets of colim\_V FEt\_V (as in Stacks 04AX)”.
 
 > **[Stacks, Tag 0EK0].** Let `X` be a Noetherian scheme, `Y ⊆ X` a closed subscheme with
 > infinitesimal neighbourhoods `Y_n ⊆ X`, and `𝒱` the open subschemes of `X` containing `Y`,
@@ -213,4 +213,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.17, Tag 0EJW](https://stacks.math.columbia.edu/tag/0EJW)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

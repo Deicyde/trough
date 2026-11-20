@@ -8,13 +8,13 @@ proof: formalized
 
 # 103.12 Further remarks on quasi-coherent modules
 
-Section 103.12 of the Stacks Project, [Tag 0GQS](https://stacks.math.columbia.edu/tag/0GQS). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 103.12 of the Stacks Project, [Tag 0GQS](https://stacks.math.columbia.edu/tag/0GQS). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GQS, the section
 
 [Tag 0GQS](https://stacks.math.columbia.edu/tag/0GQS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.spaceRestriction_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceProperties.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceProperties.lean#L99). The attribute's comment: “all the items (1)-(12) of the section about the functors a, b, c, d”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.spaceRestriction_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceProperties.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpaceProperties.lean#L99). The attribute's comment: “all the items (1)-(12) of the section about the functors a, b, c, d”.
 
 > **Stacks 0GQS.** Let `f : 𝒰 ⟶ 𝒳` be a 1-morphism of algebraic stacks with `𝒰` the algebraic
 > stack of an algebraic space `U`; let `a : Mod(𝒳_étale, 𝒪_𝒳) ⥤ Mod(U_étale, 𝒪_U)`,
@@ -118,7 +118,7 @@ theorem spaceRestriction_properties :
 
 [Tag 0GQT](https://stacks.math.columbia.edu/tag/0GQT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.spaceChartRestrictionCoheratorInternalHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorInternalHomRestriction.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorInternalHomRestriction.lean#L105).
+**`AlgebraicGeometry.Stack.FlatFppf.spaceChartRestrictionCoheratorInternalHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorInternalHomRestriction.lean, line 105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorInternalHomRestriction.lean#L105).
 
 > **Stacks 0GQT.** Let `f : 𝒰 ⟶ 𝒳` be a flat 1-morphism of algebraic stacks with `𝒰` the
 > algebraic stack of an algebraic space `U`, and let `d : ℱ ↦ f^*ℱ|_{U_étale}` be the restriction of
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.12, Tag 0GQS](https://stacks.math.columbia.edu/tag/0GQS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

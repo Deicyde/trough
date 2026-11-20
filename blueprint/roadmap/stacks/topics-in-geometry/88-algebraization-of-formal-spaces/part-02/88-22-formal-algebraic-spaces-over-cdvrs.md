@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.22 Formal algebraic spaces over cdvrs
 
-Section 88.22 of the Stacks Project, [Tag 0GD7](https://stacks.math.columbia.edu/tag/0GD7). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 88.22 of the Stacks Project, [Tag 0GD7](https://stacks.math.columbia.edu/tag/0GD7). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GD8, a lemma
 
 [Tag 0GD8](https://stacks.math.columbia.edu/tag/0GD8) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_flatPart_of_isLocallyNoetherian_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatPartOverCdvrFull.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatPartOverCdvrFull.lean#L80).
+**`AlgebraicGeometry.FormalSpace.exists_flatPart_of_isLocallyNoetherian_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatPartOverCdvrFull.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatPartOverCdvrFull.lean#L80).
 
 > **Stacks 0GD8.** Let `A` be a complete discrete valuation ring, carrying its `𝔪`-adic
 > topology, and let `X` be a locally Noetherian formal algebraic space over `S` with a structure
@@ -51,7 +51,7 @@ theorem exists_flatPart_of_isLocallyNoetherian_of_isAdicComplete
 
 [Tag 0GD9](https://stacks.math.columbia.edu/tag/0GD9) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isIso_or_isInitial_flatPart_of_isRigEtale_of_isRigSurjective_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatPartRigEtaleDiagonalUnconditional.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatPartRigEtaleDiagonalUnconditional.lean#L103).
+**`AlgebraicGeometry.FormalSpace.isIso_or_isInitial_flatPart_of_isRigEtale_of_isRigSurjective_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FlatPartRigEtaleDiagonalUnconditional.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FlatPartRigEtaleDiagonalUnconditional.lean#L103).
 
 > **Stacks 0GD9.** Let `A` be a complete discrete valuation ring, carrying its `𝔪`-adic
 > topology, let `X` be a locally Noetherian formal algebraic space over `S` with a structure
@@ -86,7 +86,7 @@ theorem isIso_or_isInitial_flatPart_of_isRigEtale_of_isRigSurjective_diagonal
 
 [Tag 0GDA](https://stacks.math.columbia.edu/tag/0GDA) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_factorsAdicCompleteDvrPoints_of_rigEtale_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveRigEtaleDiagonalCriterion.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveRigEtaleDiagonalCriterion.lean#L162). The attribute's comment: “The whole statement, under exactly the source's hypotheses.”.
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_iff_factorsAdicCompleteDvrPoints_of_rigEtale_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveRigEtaleDiagonalCriterion.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveRigEtaleDiagonalCriterion.lean#L162). The attribute's comment: “The whole statement, under exactly the source's hypotheses.”.
 
 > **Stacks 0GDA.** Let `f : X ⟶ Y` be a morphism of formal algebraic spaces over `S` with `X`
 > and `Y` locally Noetherian, `f` locally of finite type, and the relative diagonal
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.22, Tag 0GD7](https://stacks.math.columbia.edu/tag/0GD7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

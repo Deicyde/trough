@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.11 Relative Proj
 
-Section 71.11 of the Stacks Project, [Tag 0848](https://stacks.math.columbia.edu/tag/0848). 12 tags here are carried by 51 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 71.11 of the Stacks Project, [Tag 0848](https://stacks.math.columbia.edu/tag/0848). 12 tags here are carried by 51 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0849, a situation
 
 [Tag 0849](https://stacks.math.columbia.edu/tag/0849) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean#L179).
+**`AlgebraicGeometry.Space.RelativeProjSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean, line 179](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean#L179).
 
 > **Stacks 0849.** A scheme `S`, an algebraic space `X` over `S`, and a quasi-coherent graded
 > `𝒪_X`-algebra, commutative and concentrated in nonnegative degrees: the data from which the
@@ -28,7 +28,7 @@ structure RelativeProjSituation
 
 [Tag 084A](https://stacks.math.columbia.edu/tag/084A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean#L97). The attribute's comment: “the functor F of quadruples for Situation 0849, constructed from the restriction datum f^*A of the situation: on a quasi-compact test scheme its value is the set of equivalence classes of quadruples (d, f, L, psi), on an arbitrary test scheme T the limit over the quasi-compact opens of T, with restriction maps the pullback of quadruples”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean#L97). The attribute's comment: “the functor F of quadruples for Situation 0849, constructed from the restriction datum f^*A of the situation: on a quasi-compact test scheme its value is the set of equivalence classes of quadruples (d, f, L, psi), on an arbitrary test scheme T the limit over the quasi-compact opens of T, with restriction maps the pullback of quadruples”.
 
 > **The functor `F` of Stacks 084A** for Situation 0849: on a test object `T` the limit, over
 > the quasi-compact test objects `W ⟶ T`, of the unions `F(W)` of the classes of quadruples
@@ -45,7 +45,7 @@ structure RelativeProjSituation
 def relativeProjFunctor : (BigFppfOver s.site s.base s.containsBase)ᵒᵖ ⥤ Type u
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjFunctorEquivF_map_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean#L240). The attribute's comment: “functoriality: on quasi-compact test schemes the restriction map of F along h : T' -> T sends the class of a quadruple (d, f, L, psi) to the class of its pullback (d, f o h, h^*L, h^*psi)”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjFunctorEquivF_map_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean, line 240](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean#L240). The attribute's comment: “functoriality: on quasi-compact test schemes the restriction map of F along h : T' -> T sends the class of a quadruple (d, f, L, psi) to the class of its pullback (d, f o h, h^*L, h^*psi)”.
 
 > **Stacks 084A, functoriality: the restriction map of `F` is the pullback of quadruples.**
 > For a morphism `τ : T' ⟶ T` of quasi-compact test objects and a point `x` of `F(T)` which is the
@@ -65,7 +65,7 @@ theorem relativeProjFunctorEquivF_map_mk {T T' : BigFppfOver s.site s.base s.con
         (s.quadrupleRestriction.quadrupleRestrict τ f (yoneda.map τ ≫ f) rfl P)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.bijective_restrictCompactOpens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean#L275). The attribute's comment: “for an arbitrary test scheme T, F(T) is the limit of F(V) over the quasi-compact opens V of T: restricting to the quasi-compact opens is a bijection onto the compatible systems of classes of quadruples over them”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.bijective_restrictCompactOpens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean#L275). The attribute's comment: “for an arbitrary test scheme T, F(T) is the limit of F(V) over the quasi-compact opens V of T: restricting to the quasi-compact opens is a bijection onto the compatible systems of classes of quadruples over them”.
 
 > **Stacks 084A: for an arbitrary test scheme `T`, `F(T) = lim\_\{V ⊆ T quasi-compact open}
 > F(V)`.**  The map sending a point `x` of `F(T)` to the family of its restrictions `x|\_V`, read as
@@ -78,7 +78,7 @@ theorem bijective_restrictCompactOpens (T : BigFppfOver s.site s.base s.contains
     Function.Bijective (s.restrictCompactOpens T)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjπ_app_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean#L304). The attribute's comment: “the morphism F -> X of functors sends the class of a quadruple (d, f, L, psi) to f”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjπ_app_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean, line 304](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorCompactOpens.lean#L304). The attribute's comment: “the morphism F -> X of functors sends the class of a quadruple (d, f, L, psi) to f”.
 
 > **Stacks 084A: the morphism `F ⟶ X` sends the quadruple `(d, f, ℒ, ψ)` to `f`.**  On a
 > quasi-compact test object `T`, a point of `F(T)` which is the class of a quadruple
@@ -94,7 +94,7 @@ theorem relativeProjπ_app_mk (T : BigFppfOver s.site s.base s.containsBase)
     s.relativeProjπ.app (op T) x = yonedaEquiv f
 ```
 
-**`AlgebraicGeometry.Space.GradedAlgebraPoints.F`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjQuadruples.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjQuadruples.lean#L187). The attribute's comment: “the value F(T) of the functor on a test object, as the union over d ≥ 1 of the quadruples (d, f : T → X, L, psi) modulo strict equivalence inside a degree and the equivalence of Tag 01NW across degrees, the restriction of the graded algebra to the scheme points of X being a datum; the functor F itself, with its restriction maps and the limit over the quasi-compact opens, is AlgebraicGeometry.Space.RelativeProjSituation.relativeProjFunctor”.
+**`AlgebraicGeometry.Space.GradedAlgebraPoints.F`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjQuadruples.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjQuadruples.lean#L187). The attribute's comment: “the value F(T) of the functor on a test object, as the union over d ≥ 1 of the quadruples (d, f : T → X, L, psi) modulo strict equivalence inside a degree and the equivalence of Tag 01NW across degrees, the restriction of the graded algebra to the scheme points of X being a datum; the functor F itself, with its restriction maps and the limit over the quasi-compact opens, is AlgebraicGeometry.Space.RelativeProjSituation.relativeProjFunctor”.
 
 > **Stacks 084A.** The value `F(T)` on a test object of the functor of quadruples of the
 > relative homogeneous spectrum of a quasi-coherent graded `𝒪_X`-algebra: the union over `d ≥ 1`
@@ -120,7 +120,7 @@ def F (T : BigFppfOver B S hS) : Type (u + 1)
 
 [Tag 084B](https://stacks.math.columbia.edu/tag/084B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isAlgebraicSpace_relativeProjFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean#L117). The attribute's comment: “first assertion: the functor F of Tag 084A is an algebraic space”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.isAlgebraicSpace_relativeProjFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean#L117). The attribute's comment: “first assertion: the functor F of Tag 084A is an algebraic space”.
 
 > **Stacks 084B, first assertion: the functor `F` of Stacks 084A is an algebraic space.**
 
@@ -129,7 +129,7 @@ theorem isAlgebraicSpace_relativeProjFunctor :
     IsAlgebraicSpace s.site s.base s.containsBase s.relativeProjFunctor
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean#L131). The attribute's comment: “second assertion: for every morphism g : Z -> X from a scheme of the site, a canonical isomorphism Proj\_Z(g^*A) = Z x\_X F, as a cartesian square”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean#L131). The attribute's comment: “second assertion: for every morphism g : Z -> X from a scheme of the site, a canonical isomorphism Proj\_Z(g^*A) = Z x\_X F, as a cartesian square”.
 
 > **Stacks 084B, second assertion: `Z ×_X F = Proj_Z(g^*𝒜)`.** For every scheme point
 > `g : Z → X` an object of the site whose scheme is the relative Proj of the restriction `g^*𝒜`
@@ -143,7 +143,7 @@ theorem isAlgebraicSpace_relativeProjFunctor :
 def relativeProjPoints : RelativeProjPoints s.site s.base s.containsBase s.relativeProjπ
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isPullback_projComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean#L149). The attribute's comment: “third assertion: the identifications Proj\_Z(g^*A) = Z x\_X F are compatible with further base change Z' -> Z, through the canonical base-change morphism of Tag 01O3”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.isPullback_projComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/AlgebraicSpace.lean#L149). The attribute's comment: “third assertion: the identifications Proj\_Z(g^*A) = Z x\_X F are compatible with further base change Z' -> Z, through the canonical base-change morphism of Tag 01O3”.
 
 > **Stacks 084B, third assertion: compatibility with further base change.** For a morphism
 > `h : Z' ⟶ Z` of test objects and a scheme point `g : Z → X`, the comparison morphism
@@ -175,7 +175,7 @@ theorem isPullback_projComparison {Z Z' : BigFppfOver s.site s.base s.containsBa
 
 [Tag 084C](https://stacks.math.columbia.edu/tag/084C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.Proj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean#L45). The attribute's comment: “Proj\_X(A): the algebraic space F of Tag 084B, with structure morphism pi”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.Proj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean, line 45](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean#L45). The attribute's comment: “Proj\_X(A): the algebraic space F of Tag 084B, with structure morphism pi”.
 
 > The relative homogeneous spectrum `Proj_X(𝒜)` of a quasi-coherent graded `𝒪_X`-algebra on
 > an algebraic space `X` over `S`: the algebraic space `F` of Stacks 084B, the functor of
@@ -185,7 +185,7 @@ theorem isPullback_projComparison {Z Z' : BigFppfOver s.site s.base s.containsBa
 def Proj : AlgebraicSpaces s.site s.base s.containsBase
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.π`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean#L50). The attribute's comment: “the structure morphism pi : Proj\_X(A) -> X”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.π`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean#L50). The attribute's comment: “the structure morphism pi : Proj\_X(A) -> X”.
 
 > The structure morphism `π : Proj_X(𝒜) ⟶ X` of the relative Proj.
 
@@ -193,7 +193,7 @@ def Proj : AlgebraicSpaces s.site s.base s.containsBase
 def π : s.Proj ⟶ s.space
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.baseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean#L78). The attribute's comment: “the canonical isomorphism gamma : Proj\_U(phi^*A) -> Proj\_X(A) x\_X U over U”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.baseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean#L78). The attribute's comment: “the canonical isomorphism gamma : Proj\_U(phi^*A) -> Proj\_X(A) x\_X U over U”.
 
 > For a scheme point `g : Z ⟶ X`, the canonical isomorphism
 > `γ : Proj_Z(g^*𝒜) ≅ Proj_X(𝒜) ×_X Z` of Stacks 084B; the scheme of
@@ -205,7 +205,7 @@ def baseChangeIso (Z : BigFppfOver s.site s.base s.containsBase)
     yoneda.obj (s.relativeProjPoints.fibre Z g) ≅ pullback s.π.hom g
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.chartPresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean#L311). The attribute's comment: “the etale covering P\_U -> Proj\_X(A) with P\_U x\_P P\_U = P\_R”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.chartPresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean, line 311](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Space.lean#L311). The attribute's comment: “the etale covering P\_U -> Proj\_X(A) with P\_U x\_P P\_U = P\_R”.
 
 > For an étale presentation `(U, R)` of `X`, the relative Projs `P_U = Proj_U(𝒜_U)` and
 > `P_R = Proj_R(𝒜_R)` form an étale presentation of `Proj_X(𝒜)`: the chart
@@ -221,7 +221,7 @@ def chartPresentation : Presentation s.site s.base s.containsBase s.Proj.1 s.Pro
 
 [Tag 084D](https://stacks.math.columbia.edu/tag/084D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.pointTwistAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L193). The attribute's comment: “the base-change clause: for every scheme point f : T -> X of the base, the sheaf of Z-graded algebras (+)\_\{n in Z} O(n) -- homogeneous pieces, multiplication and unit, which are the three fields of the type -- on the base change Proj\_T(f^*A) of the relative Proj, which d.fibreIso identifies with the scheme of T x\_X Proj\_X(A). It is Tag 01NR's graded algebra there, which is what the tag asks the base change to agree with. Quasi-coherence of the pieces is NOT part of this type; it is isQuasicoherent\_pointTwist below. The sheaf on Proj\_X(A) itself is NOT produced here”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.pointTwistAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 193](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L193). The attribute's comment: “the base-change clause: for every scheme point f : T -> X of the base, the sheaf of Z-graded algebras (+)\_\{n in Z} O(n) -- homogeneous pieces, multiplication and unit, which are the three fields of the type -- on the base change Proj\_T(f^*A) of the relative Proj, which d.fibreIso identifies with the scheme of T x\_X Proj\_X(A). It is Tag 01NR's graded algebra there, which is what the tag asks the base change to agree with. Quasi-coherence of the pieces is NOT part of this type; it is isQuasicoherent\_pointTwist below. The sheaf on Proj\_X(A) itself is NOT produced here”.
 
 > **Stacks 084D, clause (1), after base change to a scheme point of the base.**  The
 > quasi-coherent sheaf of `ℤ`-graded algebras `⨁_{n ∈ ℤ} 𝒪_{Proj_T(f^*𝒜)}(n)` on the base change
@@ -233,7 +233,7 @@ noncomputable def pointTwistAlgebra :
     SchemeGradedAlgebra (relativeProj (d.algebra T f)).scheme
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.isQuasicoherent_pointTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L206). The attribute's comment: “the base-change clause, quasi-coherence half: every homogeneous twist O(n) on the base change Proj\_T(f^*A) of the relative Proj along a scheme point f : T -> X of the base is a quasi-coherent module”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.isQuasicoherent_pointTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L206). The attribute's comment: “the base-change clause, quasi-coherence half: every homogeneous twist O(n) on the base change Proj\_T(f^*A) of the relative Proj along a scheme point f : T -> X of the base is a quasi-coherent module”.
 
 > **Stacks 084D, quasi-coherence of the twists after base change to a scheme point.**
 
@@ -241,7 +241,7 @@ noncomputable def pointTwistAlgebra :
 theorem isQuasicoherent_pointTwist (n : ℤ) : (d.pointTwist T f n).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.pointPsi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L241). The attribute's comment: “the base-change clause for psi: the degreewise maps of the canonical homomorphism psi : pi^*A -> (+)\_\{n >= 0} O(n) on the base change Proj\_T(f^*A) of the relative Proj along a scheme point f : T -> X of the base, in the adjoint form (f^*A)\_n -> (pi\_T)\_* O(n) that Tag 01NR produces psi in. This declaration is the family of maps and nothing more; that it preserves the unit, is multiplicative, and is Tag 01MP's homogeneous-section map on the charts are the three companion theorems pointPsi\_one, pointPsi\_mul and pointPsi\_chart below. psi on Proj\_X(A) itself is NOT produced here”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.pointPsi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L241). The attribute's comment: “the base-change clause for psi: the degreewise maps of the canonical homomorphism psi : pi^*A -> (+)\_\{n >= 0} O(n) on the base change Proj\_T(f^*A) of the relative Proj along a scheme point f : T -> X of the base, in the adjoint form (f^*A)\_n -> (pi\_T)\_* O(n) that Tag 01NR produces psi in. This declaration is the family of maps and nothing more; that it preserves the unit, is multiplicative, and is Tag 01MP's homogeneous-section map on the charts are the three companion theorems pointPsi\_one, pointPsi\_mul and pointPsi\_chart below. psi on Proj\_X(A) itself is NOT produced here”.
 
 > **Stacks 084D, clause (2), after base change to a scheme point of the base.**  The canonical
 > homomorphism of graded algebras `ψ : π^*𝒜 ⟶ ⨁_{n ≥ 0} 𝒪(n)`, read at the `T`-point `f` of `X` in
@@ -259,7 +259,7 @@ noncomputable def pointPsi (n : ℕ) :
         (d.pointTwist T f (n : ℤ))
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.pointPsiHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L304). The attribute's comment: “the base-change clause for psi as a homomorphism of graded algebras: on the base change Proj\_T(f^*A) of the relative Proj along a scheme point f : T -> X of the base, the canonical homomorphism psi : pi\_T^*(f^*A) -> (+)\_n O(n) of sheaves of Z-graded algebras (multiplicative by construction), whose degree-n components for n >= 0 are the adjoint transposes of pointPsi. psi on Proj\_X(A) itself is NOT produced here”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.pointPsiHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 304](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L304). The attribute's comment: “the base-change clause for psi as a homomorphism of graded algebras: on the base change Proj\_T(f^*A) of the relative Proj along a scheme point f : T -> X of the base, the canonical homomorphism psi : pi\_T^*(f^*A) -> (+)\_n O(n) of sheaves of Z-graded algebras (multiplicative by construction), whose degree-n components for n >= 0 are the adjoint transposes of pointPsi. psi on Proj\_X(A) itself is NOT produced here”.
 
 > **Stacks 084D, clause (2), after base change to a scheme point of the base, as a
 > homomorphism of graded algebras.**  The canonical homomorphism
@@ -284,7 +284,7 @@ noncomputable def pointPsiHom :
       d.pointTwistAlgebra T f
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.pointTwistTheta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L334). The attribute's comment: “the base-change clause is compatible with further base change: for g : Z -> T the inverse image of (+)\_d O\_\{Proj\_T(f^*A)}(d) along the base-change morphism is (+)\_d O\_\{Proj\_Z(g^*f^*A)}(d) as Z-graded algebras. This is Tag 01O3's theta, and it is the scheme-point case of the theta of Tag 085C”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.pointTwistTheta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 334](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L334). The attribute's comment: “the base-change clause is compatible with further base change: for g : Z -> T the inverse image of (+)\_d O\_\{Proj\_T(f^*A)}(d) along the base-change morphism is (+)\_d O\_\{Proj\_Z(g^*f^*A)}(d) as Z-graded algebras. This is Tag 01O3's theta, and it is the scheme-point case of the theta of Tag 085C”.
 
 > **Stacks 01O3 at a scheme point of the base: the base-change isomorphism `θ`.**  For a further
 > morphism of schemes `g : Z ⟶ T`, the inverse image along the base-change morphism
@@ -301,7 +301,7 @@ noncomputable def pointTwistTheta {Z : Scheme.{u}}
       Stacks.AlgebraicGeometry.Tag07ZGTwist.twistAlgebra ((d.algebra T f).pullback g)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.basePsi_pointTwistTheta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L356). The attribute's comment: “the base-change clause for psi, compatible with further base change: for g : Z -> T the base change along g of psi at the scheme point f, followed by Tag 01O3's theta (pointTwistTheta), is Tag 01NR's psi for Proj\_Z(g^*f^*A), degree by degree”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.basePsi_pointTwistTheta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean, line 356](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPointTwists.lean#L356). The attribute's comment: “the base-change clause for psi, compatible with further base change: for g : Z -> T the base change along g of psi at the scheme point f, followed by Tag 01O3's theta (pointTwistTheta), is Tag 01NR's psi for Proj\_Z(g^*f^*A), degree by degree”.
 
 > **The base-change clause of Stacks 084D for `ψ`, at a scheme point of the base.**  For a
 > further morphism of schemes `g : Z ⟶ T`, the base change along `g` of the homogeneous-section
@@ -329,7 +329,7 @@ theorem basePsi_pointTwistTheta {Z : Scheme.{u}} (g : Z ⟶ (BigFppfOver.toSchem
       (twistDataOfGradedAlgebra ((d.algebra T f).pullback g)).ψ k
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.twistGradedAlgebra_psi_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistDescent/TwistAlgebraOfProj.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistDescent/TwistAlgebraOfProj.lean#L321). The attribute's comment: “on the constructed relative Proj P = Proj\_X(A) itself: the quasi-coherent sheaf of Z-graded O\_P-algebras (+)\_n O\_P(n) (twistGradedAlgebra: pieces, quasi-coherence, multiplication, unit), the canonical psi : pi^*A -> (+)\_\{n >= 0} O\_P(n) as a homomorphism of graded algebras (multiplicative and unital), and for every scheme T -> X identifications of the base change with the graded algebra of Tag 01NR on Proj\_T(f^*A) carrying multiplication, unit and psi to those of Tag 01NR, natural in the scheme”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.twistGradedAlgebra_psi_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistDescent/TwistAlgebraOfProj.lean, line 321](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistDescent/TwistAlgebraOfProj.lean#L321). The attribute's comment: “on the constructed relative Proj P = Proj\_X(A) itself: the quasi-coherent sheaf of Z-graded O\_P-algebras (+)\_n O\_P(n) (twistGradedAlgebra: pieces, quasi-coherence, multiplication, unit), the canonical psi : pi^*A -> (+)\_\{n >= 0} O\_P(n) as a homomorphism of graded algebras (multiplicative and unital), and for every scheme T -> X identifications of the base change with the graded algebra of Tag 01NR on Proj\_T(f^*A) carrying multiplication, unit and psi to those of Tag 01NR, natural in the scheme”.
 
 > **Stacks 084D on the relative Proj `P = Proj_X(𝒜)` of Situation 0849.**  For any presentation
 > `X = U/R` used to construct the twists:
@@ -419,7 +419,7 @@ theorem twistGradedAlgebra_psi_baseChange :
 
 [Tag 085C](https://stacks.math.columbia.edu/tag/085C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GradedAlgebraPoints.F.baseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean#L155). The attribute's comment: “the canonical isomorphism r, as the bijection F'(T) ≃ X'(T) ×\_\{X(T)} F(T) of the proof, for every test object; the isomorphism theta of the twists is not stated”.
+**`AlgebraicGeometry.Space.GradedAlgebraPoints.F.baseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean#L155). The attribute's comment: “the canonical isomorphism r, as the bijection F'(T) ≃ X'(T) ×\_\{X(T)} F(T) of the proof, for every test object; the isomorphism theta of the twists is not stated”.
 
 > **Stacks 085C.** The canonical isomorphism `r : Proj_{X'}(g^*𝒜) ⟶ X' ×_X Proj_X(𝒜)`, on the
 > functor of quadruples: for every test object `T` a bijection `F'(T) ≃ X'(T) ×_{X(T)} F(T)`,
@@ -434,7 +434,7 @@ def F.baseChangeEquiv (r : GradedAlgebraPoints B S hS X) (g : X' ⟶ X)
     (r.comap g).F T ≃ {p : (yoneda.obj T ⟶ X') × r.F T // F.point r p.2 = p.1 ≫ g}
 ```
 
-**`AlgebraicGeometry.Space.GradedAlgebraPoints.F.baseChangeEquiv_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean#L167). The attribute's comment: “the map r sends a quadruple (d, f', L, psi) to the pair (f', (d, g f', L, psi))”.
+**`AlgebraicGeometry.Space.GradedAlgebraPoints.F.baseChangeEquiv_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean#L167). The attribute's comment: “the map r sends a quadruple (d, f', L, psi) to the pair (f', (d, g f', L, psi))”.
 
 > **Stacks 085C, the map `r` on a quadruple.** A quadruple `(d, f', ℒ, ψ)` of positive degree
 > for `g^*𝒜` goes to the `X'`-point `f'` together with the quadruple `(d, g ∘ f', ℒ, ψ)`
@@ -448,7 +448,7 @@ theorem F.baseChangeEquiv_mk (r : GradedAlgebraPoints B S hS X) (g : X' ⟶ X)
       ⟨(f, F.mk r (f ≫ g) hd P), rfl⟩
 ```
 
-**`AlgebraicGeometry.Space.GradedAlgebraPoints.F.baseChangeEquiv_symm_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean#L178). The attribute's comment: “the inverse of r sends (f', (d, g f', L, psi)) to the quadruple (d, f', L, psi)”.
+**`AlgebraicGeometry.Space.GradedAlgebraPoints.F.baseChangeEquiv_symm_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChange.lean#L178). The attribute's comment: “the inverse of r sends (f', (d, g f', L, psi)) to the quadruple (d, f', L, psi)”.
 
 > **Stacks 085C, the inverse of `r`.** The `X'`-point `f'` together with a quadruple
 > `(d, g ∘ f', ℒ, ψ)` for `𝒜` of positive degree goes back to the quadruple `(d, f', ℒ, ψ)`
@@ -462,7 +462,7 @@ theorem F.baseChangeEquiv_symm_mk (r : GradedAlgebraPoints B S hS X) (g : X' ⟶
       F.mk (r.comap g) f hd P
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.fibreBaseChangeTheta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L376). The attribute's comment: “the isomorphism theta over a scheme point f : T -> X' of X': an isomorphism of Z-graded algebras from the inverse image, along the base change of r to T (toScheme\_map\_pointEquivOver\_baseChangeIso), of (+)\_\{d in Z} O(d) on T x\_X Proj\_X(A) to (+)\_\{d in Z} O(d) on T x\_\{X'} Proj\_\{X'}(g^*A), both being Tag 084D's twists of Tag 01NR; theta as a map of sheaves on the algebraic space Proj\_\{X'}(g^*A) needs those twists on the space, i.e. 084B”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.fibreBaseChangeTheta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 376](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L376). The attribute's comment: “the isomorphism theta over a scheme point f : T -> X' of X': an isomorphism of Z-graded algebras from the inverse image, along the base change of r to T (toScheme\_map\_pointEquivOver\_baseChangeIso), of (+)\_\{d in Z} O(d) on T x\_X Proj\_X(A) to (+)\_\{d in Z} O(d) on T x\_\{X'} Proj\_\{X'}(g^*A), both being Tag 084D's twists of Tag 01NR; theta as a map of sheaves on the algebraic space Proj\_\{X'}(g^*A) needs those twists on the space, i.e. 084B”.
 
 > **Stacks 085C, the isomorphism `θ`, over a scheme point of `X'`.**
 >
@@ -488,7 +488,7 @@ def fibreBaseChangeTheta (T : BigFppfOver B S hS) (f : yoneda.obj T ⟶ X') :
       d'.fibreTwistAlgebra T f
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.pointPsiHom_heq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L552). The attribute's comment: “theta is compatible with psi: over a scheme point f : T -> X' the canonical homomorphism psi : pi\_T^*(f^*g^*A) -> (+)\_n O(n) of Tag 084D for Proj\_\{X'}(g^*A) is the one for Proj\_X(A) at f g, across the identification of the two restricted algebras”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.pointPsiHom_heq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 552](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L552). The attribute's comment: “theta is compatible with psi: over a scheme point f : T -> X' the canonical homomorphism psi : pi\_T^*(f^*g^*A) -> (+)\_n O(n) of Tag 084D for Proj\_\{X'}(g^*A) is the one for Proj\_X(A) at f g, across the identification of the two restricted algebras”.
 
 > **Stacks 085C: `θ` is compatible with `ψ`, over the scheme points of `X'`.**  Over a
 > `T`-point `f` of `X'`, the canonical homomorphism of graded algebras
@@ -505,7 +505,7 @@ theorem pointPsiHom_heq (T : BigFppfOver B S hS) (f : yoneda.obj T ⟶ X') :
     HEq (d'.pointPsiHom T f) (d.pointPsiHom T (f ≫ g))
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjBaseChangePoints.baseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L688). The attribute's comment: “the canonical isomorphism r : Proj\_\{X'}(g^*A) -> X' x\_X Proj\_X(A), as an isomorphism of presheaves on the big fppf site (that is, of algebraic spaces), natural in the test object; Proj\_X(A) and Proj\_\{X'}(g^*A) are given by Stacks 084B's presentations over the scheme points of the base, Proj\_X(A) not being constructed from A in this library (084B)”.
+**`AlgebraicGeometry.Space.RelativeProjBaseChangePoints.baseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 688](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L688). The attribute's comment: “the canonical isomorphism r : Proj\_\{X'}(g^*A) -> X' x\_X Proj\_X(A), as an isomorphism of presheaves on the big fppf site (that is, of algebraic spaces), natural in the test object; Proj\_X(A) and Proj\_\{X'}(g^*A) are given by Stacks 084B's presentations over the scheme points of the base, Proj\_X(A) not being constructed from A in this library (084B)”.
 
 > **Stacks 085C, the canonical isomorphism `r : Proj_{X'}(g^*𝒜) ⟶ X' ×_X Proj_X(𝒜)`, as an
 > isomorphism of algebraic spaces.**
@@ -529,7 +529,7 @@ theorem pointPsiHom_heq (T : BigFppfOver B S hS) (f : yoneda.obj T ⟶ X') :
 def baseChangeIso : P' ≅ pullback g π
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjBaseChangePoints.baseChangeIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L714). The attribute's comment: “r is an isomorphism over X': followed by the first projection X' x\_X Proj\_X(A) -> X' it is the structure morphism of Proj\_\{X'}(g^*A)”.
+**`AlgebraicGeometry.Space.RelativeProjBaseChangePoints.baseChangeIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 714](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L714). The attribute's comment: “r is an isomorphism over X': followed by the first projection X' x\_X Proj\_X(A) -> X' it is the structure morphism of Proj\_\{X'}(g^*A)”.
 
 > **Stacks 085C: `r` is a morphism over `X'`.**  The isomorphism
 > `r : Proj_{X'}(g^*𝒜) ⟶ X' ×_X Proj_X(𝒜)` followed by the first projection is the structure
@@ -539,7 +539,7 @@ def baseChangeIso : P' ≅ pullback g π
 theorem baseChangeIso_hom_fst : h.baseChangeIso.hom ≫ pullback.fst g π = π'
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjBaseChangePoints.baseChangeIso_hom_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 730](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L730). The attribute's comment: “the description of r over the scheme points of X': over a point f : T -> X' the base change of r is the identification of Proj\_T(f^*g^*A) = T x\_\{X'} Proj\_\{X'}(g^*A) with Proj\_T((g f)^*A) = T x\_X Proj\_X(A) given by Stacks 084B”.
+**`AlgebraicGeometry.Space.RelativeProjBaseChangePoints.baseChangeIso_hom_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 730](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L730). The attribute's comment: “the description of r over the scheme points of X': over a point f : T -> X' the base change of r is the identification of Proj\_T(f^*g^*A) = T x\_\{X'} Proj\_\{X'}(g^*A) with Proj\_T((g f)^*A) = T x\_X Proj\_X(A) given by Stacks 084B”.
 
 > **Stacks 085C: the description of `r` over the scheme points of `X'`.**  For a `T`-point `f`
 > of `X'`, a morphism `r : T' ⟶ T` and a `T'`-point `u` of `P' = Proj_{X'}(g^*𝒜)` over `f ∘ r`, the
@@ -559,7 +559,7 @@ theorem baseChangeIso_hom_snd (T : BigFppfOver B S hS) (f : yoneda.obj T ⟶ X')
       (baseChangePointEquiv d d' g h.algebra_eq T f r u).1
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjBaseChangePoints.toScheme_map_pointEquivOver_baseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 775](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L775). The attribute's comment: “theta is taken across r: over a scheme point f : T -> X' the morphism of schemes T x\_\{X'} Proj\_\{X'}(g^*A) -> T x\_X Proj\_X(A) over T that r induces through the cartesian squares of Stacks 084B is fibreBaseChangeIso, the morphism along which fibreBaseChangeTheta pulls back the twists”.
+**`AlgebraicGeometry.Space.RelativeProjBaseChangePoints.toScheme_map_pointEquivOver_baseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean, line 775](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjBaseChangePoints.lean#L775). The attribute's comment: “theta is taken across r: over a scheme point f : T -> X' the morphism of schemes T x\_\{X'} Proj\_\{X'}(g^*A) -> T x\_X Proj\_X(A) over T that r induces through the cartesian squares of Stacks 084B is fibreBaseChangeIso, the morphism along which fibreBaseChangeTheta pulls back the twists”.
 
 > **Stacks 085C: the isomorphism `θ` is taken across `r`.**  Over a `T`-point `f` of `X'`, the
 > morphism of schemes `T ×_{X'} Proj_{X'}(g^*𝒜) ⟶ T ×_X Proj_X(𝒜)` over `T` that `r` induces
@@ -579,7 +579,7 @@ theorem toScheme_map_pointEquivOver_baseChangeIso (T : BigFppfOver B S hS)
       (fibreBaseChangeIso d d' g h.algebra_eq T f).hom
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean#L170). The attribute's comment: “the isomorphism r on the constructed relative Proj: Proj\_\{X'}(g^*A) ≅ X' x\_X Proj\_X(A), over X' and compatible with the projections”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean#L170). The attribute's comment: “the isomorphism r on the constructed relative Proj: Proj\_\{X'}(g^*A) ≅ X' x\_X Proj\_X(A), over X' and compatible with the projections”.
 
 > **Stacks 085C, the isomorphism `r : Proj_{X'}(g^*𝒜) ⟶ X' ×_X Proj_X(𝒜)`**, for a morphism
 > `g : X' ⟶ X` of algebraic spaces over `S` and the quasi-coherent graded `𝒪_X`-algebra `𝒜` of
@@ -595,7 +595,7 @@ def relativeProjBaseChangeIso :
     (s.pullback g).relativeProjFunctor ≅ Limits.pullback g.hom s.relativeProjπ
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjBaseChangeIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean#L178). The attribute's comment: “r is an isomorphism over X', on the constructed relative Proj: r followed by the first projection X' x\_X Proj\_X(A) -> X' is the structure morphism Proj\_\{X'}(g^*A) -> X'”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjBaseChangeIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean#L178). The attribute's comment: “r is an isomorphism over X', on the constructed relative Proj: r followed by the first projection X' x\_X Proj\_X(A) -> X' is the structure morphism Proj\_\{X'}(g^*A) -> X'”.
 
 > **`r` is an isomorphism over `X'`.**
 
@@ -605,7 +605,7 @@ theorem relativeProjBaseChangeIso_hom_fst :
       (s.pullback g).relativeProjπ
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjBaseChangeIso_hom_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean#L187). The attribute's comment: “r on the constructed relative Proj sends the class of a quadruple (d', f', L', psi') to (f', (d', g f', L', psi')): followed by the second projection it is the morphism Proj\_\{X'}(g^*A) -> Proj\_X(A) of quadruples”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjBaseChangeIso_hom_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/BaseChange.lean#L187). The attribute's comment: “r on the constructed relative Proj sends the class of a quadruple (d', f', L', psi') to (f', (d', g f', L', psi')): followed by the second projection it is the morphism Proj\_\{X'}(g^*A) -> Proj\_X(A) of quadruples”.
 
 > **The second component of `r` is the morphism `(d', f', ℒ', ψ') ↦ (d', g ∘ f', ℒ', ψ')`.**
 
@@ -615,7 +615,7 @@ theorem relativeProjBaseChangeIso_hom_snd :
       s.relativeProjBaseChangeHom g
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.baseChangeTwistGradedAlgebraIsoOfPresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistDescent/BaseChangeThetaAlgebra.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistDescent/BaseChangeThetaAlgebra.lean#L363). The attribute's comment: “theta for every presentation X = U/R of X (and X' = U'\_0/R'\_0 of X'), the twists of Proj\_\{X'}(g^*A) descended along the presentation of X' over U'\_0 x\_X U: the isomorphism r^* pr\_2^* (+)\_\{d in Z} O\_\{Proj\_X(A)}(d) -> (+)\_\{d in Z} O\_\{Proj\_\{X'}(g^*A)}(d) of Z-graded O\_\{Proj\_\{X'}(g^*A)}-algebras”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.baseChangeTwistGradedAlgebraIsoOfPresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistDescent/BaseChangeThetaAlgebra.lean, line 363](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistDescent/BaseChangeThetaAlgebra.lean#L363). The attribute's comment: “theta for every presentation X = U/R of X (and X' = U'\_0/R'\_0 of X'), the twists of Proj\_\{X'}(g^*A) descended along the presentation of X' over U'\_0 x\_X U: the isomorphism r^* pr\_2^* (+)\_\{d in Z} O\_\{Proj\_X(A)}(d) -> (+)\_\{d in Z} O\_\{Proj\_\{X'}(g^*A)}(d) of Z-graded O\_\{Proj\_\{X'}(g^*A)}-algebras”.
 
 > **Stacks 085C, the isomorphism `θ` of graded algebras, for any presentations of `X` and
 > `X'`.**  For a presentation `X = U/R` the twists `𝒪_P(d)` of `P = Proj_X(𝒜)` are descended along
@@ -637,7 +637,7 @@ def baseChangeTwistGradedAlgebraIsoOfPresentation
 
 [Tag 084E](https://stacks.math.columbia.edu/tag/084E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean#L380). References: EGA II (8.14.1), “more general”.
+**`AlgebraicGeometry.Space.isSeparated_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean, line 380](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean#L380). References: EGA II (8.14.1), “more general”.
 
 > **Stacks 084E.** In the relative Proj situation of Stacks 0849, the structure morphism
 > `π : Proj_X(𝒜) ⟶ X` is separated.
@@ -652,7 +652,7 @@ theorem isSeparated_relativeProj {X P : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     IsSeparated B S hS π
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_relativeProj_of_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean#L303). The attribute's comment: “for a chart presentation whose chart situation is the restriction of the graded algebra of the space, rather than an unrelated situation on the chart”. References: EGA II (8.14.1), “more general”.
+**`AlgebraicGeometry.Space.isSeparated_relativeProj_of_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean, line 303](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean#L303). The attribute's comment: “for a chart presentation whose chart situation is the restriction of the graded algebra of the space, rather than an unrelated situation on the chart”. References: EGA II (8.14.1), “more general”.
 
 > **Stacks 084E, with the chart situation pinned to `𝒜`.** The structure morphism of the
 > relative Proj is separated, with no hypothesis on the graded algebra.
@@ -668,7 +668,7 @@ theorem isSeparated_relativeProj_of_chart
     IsSeparated s.site s.base s.containsBase π
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isSeparated_relativeProjπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Separated.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Separated.lean#L68). References: EGA II (8.14.1), “more general”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.isSeparated_relativeProjπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Separated.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Separated.lean#L68). References: EGA II (8.14.1), “more general”.
 
 > **Stacks 084E.** In Situation 0849 the structure morphism `π : Proj_X(𝒜) ⟶ X` of the
 > relative homogeneous spectrum is separated.
@@ -687,7 +687,7 @@ theorem isSeparated_relativeProjπ :
 
 [Tag 084F](https://stacks.math.columbia.edu/tag/084F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiCompact_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean#L397).
+**`AlgebraicGeometry.Space.isQuasiCompact_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean, line 397](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean#L397).
 
 > **Stacks 084F.** In the relative Proj situation of Stacks 0849, the structure morphism
 > `π : Proj_X(𝒜) ⟶ X` is quasi-compact if one of the following holds: `𝒜` is of finite type as a
@@ -708,7 +708,7 @@ theorem isQuasiCompact_relativeProj {X P : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
     IsQuasiCompact B S hS π
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_relativeProj_of_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean#L320). The attribute's comment: “with the three conditions read on the restriction of the graded algebra of the space to the chart, rather than on an unrelated situation on the chart”.
+**`AlgebraicGeometry.Space.isQuasiCompact_relativeProj_of_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean, line 320](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean#L320). The attribute's comment: “with the three conditions read on the restriction of the graded algebra of the space to the chart, rather than on an unrelated situation on the chart”.
 
 > **Stacks 084F, with the chart situation pinned to `𝒜`.** The structure morphism of the
 > relative Proj is quasi-compact as soon as the restriction `𝒜|_V` satisfies one of the three
@@ -729,7 +729,7 @@ theorem isQuasiCompact_relativeProj_of_chart
     IsQuasiCompact s.site s.base s.containsBase π
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isQuasiCompact_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/QuasiCompact.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/QuasiCompact.lean#L64).
+**`AlgebraicGeometry.Space.RelativeProjSituation.isQuasiCompact_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/QuasiCompact.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/QuasiCompact.lean#L64).
 
 > **Stacks 084F.** In Situation 0849 the structure morphism `π : Proj_X(𝒜) ⟶ X` is
 > quasi-compact if, étale locally on `X`, one of the following holds: `𝒜` is of finite type as an
@@ -751,7 +751,7 @@ theorem isQuasiCompact_π
 
 [Tag 084G](https://stacks.math.columbia.edu/tag/084G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteType_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean#L413).
+**`AlgebraicGeometry.Space.isFiniteType_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean, line 413](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProj.lean#L413).
 
 > **Stacks 084G.** In the relative Proj situation of Stacks 0849, if `𝒜` is of finite type as
 > a sheaf of `𝒪_X`-algebras then the structure morphism `π : Proj_X(𝒜) ⟶ X` is of finite type.
@@ -768,7 +768,7 @@ theorem isFiniteType_relativeProj {X P : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     IsFiniteType B S hS π
 ```
 
-**`AlgebraicGeometry.Space.isFiniteType_relativeProj_of_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean#L334). The attribute's comment: “with the finite type condition read on the restriction of the graded algebra of the space to the chart, rather than on an unrelated situation on the chart”.
+**`AlgebraicGeometry.Space.isFiniteType_relativeProj_of_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean, line 334](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean#L334). The attribute's comment: “with the finite type condition read on the restriction of the graded algebra of the space to the chart, rather than on an unrelated situation on the chart”.
 
 > **Stacks 084G, with the chart situation pinned to `𝒜`.** The structure morphism of the
 > relative Proj is of finite type as soon as the restriction `𝒜|_V` is of finite type as a sheaf of
@@ -782,7 +782,7 @@ theorem isFiniteType_relativeProj_of_chart
     IsFiniteType s.site s.base s.containsBase π
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isFiniteType_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FiniteType.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FiniteType.lean#L72).
+**`AlgebraicGeometry.Space.RelativeProjSituation.isFiniteType_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FiniteType.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FiniteType.lean#L72).
 
 > **Stacks 084G.** In Situation 0849, if `𝒜` is of finite type as a sheaf of `𝒪_X`-algebras,
 > the structure morphism `π : Proj_X(𝒜) ⟶ X` of the relative homogeneous spectrum is of finite
@@ -803,7 +803,7 @@ theorem isFiniteType_π
 
 [Tag 084H](https://stacks.math.columbia.edu/tag/084H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.universallyClosed_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/UniversallyClosed.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/UniversallyClosed.lean#L76).
+**`AlgebraicGeometry.Space.RelativeProjSituation.universallyClosed_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/UniversallyClosed.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/UniversallyClosed.lean#L76).
 
 > **Stacks 084H.** In Situation 0849, if `𝒪_X → 𝒜₀` is integral and `𝒜` is of finite type as
 > an `𝒜₀`-algebra, the structure morphism `π : Proj_X(𝒜) ⟶ X` of the relative homogeneous spectrum
@@ -822,7 +822,7 @@ theorem universallyClosed_π
     UniversallyClosed s.site s.base s.containsBase s.π.hom
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjUniversallyClosed.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjUniversallyClosed.lean#L126).
+**`AlgebraicGeometry.Space.universallyClosed_relativeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjUniversallyClosed.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjUniversallyClosed.lean#L126).
 
 > **Stacks 084H.** In the relative Proj situation of Stacks 0849, if the structure sheaf maps
 > integrally into `𝒜₀` and `𝒜` is of finite type as an `𝒜₀`-algebra, then the structure morphism
@@ -847,7 +847,7 @@ theorem universallyClosed_relativeProj {X P : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
 
 [Tag 084I](https://stacks.math.columbia.edu/tag/084I) in the Stacks Project.
 
-**`Stacks.RelativeProj.Situation.properFiniteType_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/FiniteTypeConditions.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProj/FiniteTypeConditions.lean#L176). The attribute's comment: “the equivalence of the two finite-type conditions, both read over every affine open of the base”.
+**`Stacks.RelativeProj.Situation.properFiniteType_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProj/FiniteTypeConditions.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/RelativeProj/FiniteTypeConditions.lean#L176). The attribute's comment: “the equivalence of the two finite-type conditions, both read over every affine open of the base”.
 
 > **Stacks 084I.** For a relative `Proj` situation the two finite type conditions are
 > equivalent: that the degree-zero part of the graded algebra is a finite type module over the
@@ -862,7 +862,7 @@ theorem properFiniteType_tfae :
         s.IsDegreeZeroFiniteType ∧ s.IsFiniteTypeOverBase]
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.properFiniteType_tfae_and_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFiniteTypeConditions.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFiniteTypeConditions.lean#L234). The attribute's comment: “both assertions for Situation 0849: the equivalence of the two finite-type conditions, with finite type of A\_0 the finite type O\_X-module condition on the small etale site and the two algebra conditions read on the restriction of A to every etale chart, and properness of the structure morphism of the relative Proj under them, the relative Proj entering through its Tag 084B chart presentation on the restriction of A”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.properFiniteType_tfae_and_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFiniteTypeConditions.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFiniteTypeConditions.lean#L234). The attribute's comment: “both assertions for Situation 0849: the equivalence of the two finite-type conditions, with finite type of A\_0 the finite type O\_X-module condition on the small etale site and the two algebra conditions read on the restriction of A to every etale chart, and properness of the structure morphism of the relative Proj under them, the relative Proj entering through its Tag 084B chart presentation on the restriction of A”.
 
 > **Stacks 084I.** In Situation 0849 — `X` an algebraic space over a scheme `S` and `𝒜` a
 > quasi-coherent graded `𝒪_X`-algebra — the following conditions are equivalent:
@@ -889,7 +889,7 @@ theorem properFiniteType_tfae_and_isProper :
             RelativeProjSituationChart s π → IsProper s.site s.base s.containsBase π)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.tfae_finiteType_and_isProper_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Proper.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Proper.lean#L169).
+**`AlgebraicGeometry.Space.RelativeProjSituation.tfae_finiteType_and_isProper_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Proper.lean, line 169](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/Proper.lean#L169).
 
 > **Stacks 084I.** In Situation 0849 — `X` an algebraic space over a scheme `S` and `𝒜` a
 > quasi-coherent graded `𝒪_X`-algebra — the following conditions are equivalent:
@@ -921,7 +921,7 @@ theorem tfae_finiteType_and_isProper_π :
 
 [Tag 085D](https://stacks.math.columbia.edu/tag/085D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjIsoF1OfGenerated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjF1Generated.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjF1Generated.lean#L442). The attribute's comment: “part (1), on the constructed relative Proj: for a quasi-coherent graded O\_X-algebra A on an algebraic space X generated as an A\_0-algebra by A\_1 (over every affine object V of the small etale site of X, the ring of sections of A over V is generated by its degree-one part over its degree-zero part), the relative Proj P = relativeProjFunctor of Tags 084A-084B represents the functor F\_1 of isomorphism classes of triples (f : T -> X, L invertible on T, psi : f^*A -> ⨁\_\{n >= 0} L^\{tensor n} a map of graded O\_T-algebras surjective in degree one), as a natural isomorphism of functors on the big fppf site; F\_1 is functorial by pullback of triples (relativeProjF1Functor)”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeProjIsoF1OfGenerated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjF1Generated.lean, line 442](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjF1Generated.lean#L442). The attribute's comment: “part (1), on the constructed relative Proj: for a quasi-coherent graded O\_X-algebra A on an algebraic space X generated as an A\_0-algebra by A\_1 (over every affine object V of the small etale site of X, the ring of sections of A over V is generated by its degree-one part over its degree-zero part), the relative Proj P = relativeProjFunctor of Tags 084A-084B represents the functor F\_1 of isomorphism classes of triples (f : T -> X, L invertible on T, psi : f^*A -> ⨁\_\{n >= 0} L^\{tensor n} a map of graded O\_T-algebras surjective in degree one), as a natural isomorphism of functors on the big fppf site; F\_1 is functorial by pullback of triples (relativeProjF1Functor)”.
 
 > **Stacks 085D, part (1), on the constructed relative Proj.** For a quasi-coherent graded
 > `𝒪_X`-algebra `𝒜` on an algebraic space `X` generated as an `𝒜₀`-algebra by `𝒜₁`
@@ -944,7 +944,7 @@ def relativeProjIsoF1OfGenerated (hgen : s.IsGeneratedInDegreeOne) :
     s.relativeProjFunctor ⋙ uliftFunctor.{u + 1} ≅ s.relativeProjF1Functor TA
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.epi_psiTwistHom_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean#L182). The attribute's comment: “(2): for a quasi-coherent graded O\_X-algebra A on an algebraic space X generated as an A\_0-algebra by A\_1 (s.IsGeneratedInDegreeOne), the canonical map psi\_1 : pi^*A\_1 -> O\_P(1) of Tag 084D (psiTwistHom) on the relative Proj P = Proj\_X(A) of Tags 084A-084B is surjective, i.e. an epimorphism of O\_P-modules on the small etale site of P”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.epi_psiTwistHom_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean#L184). The attribute's comment: “(2): for a quasi-coherent graded O\_X-algebra A on an algebraic space X generated as an A\_0-algebra by A\_1 (s.IsGeneratedInDegreeOne), the canonical map psi\_1 : pi^*A\_1 -> O\_P(1) of Tag 084D (psiTwistHom) on the relative Proj P = Proj\_X(A) of Tags 084A-084B is surjective, i.e. an epimorphism of O\_P-modules on the small etale site of P”.
 
 > **Stacks 085D (2).**  For a quasi-coherent graded `𝒪_X`-algebra `𝒜` on an algebraic space `X`
 > generated as an `𝒜₀`-algebra by `𝒜₁`, and `P = Proj_X(𝒜)` the relative Proj of
@@ -958,7 +958,7 @@ def relativeProjIsoF1OfGenerated (hgen : s.IsGeneratedInDegreeOne) :
 theorem epi_psiTwistHom_one (hgen : s.IsGeneratedInDegreeOne) : Epi (s.psiTwistHom Px 1)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isInvertibleModule_twistModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean#L211). The attribute's comment: “(3), invertibility: for a quasi-coherent graded O\_X-algebra A on an algebraic space X generated as an A\_0-algebra by A\_1 (s.IsGeneratedInDegreeOne), every twist O\_P(n), n in Z, of Tag 084D (twistModule) on the relative Proj P = Proj\_X(A) of Tags 084A-084B is an invertible O\_P-module on the small etale site of P”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.isInvertibleModule_twistModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean#L213). The attribute's comment: “(3), invertibility: for a quasi-coherent graded O\_X-algebra A on an algebraic space X generated as an A\_0-algebra by A\_1 (s.IsGeneratedInDegreeOne), every twist O\_P(n), n in Z, of Tag 084D (twistModule) on the relative Proj P = Proj\_X(A) of Tags 084A-084B is an invertible O\_P-module on the small etale site of P”.
 
 > **Stacks 085D (3), invertibility.**  For a quasi-coherent graded `𝒪_X`-algebra `𝒜` on an
 > algebraic space `X` generated as an `𝒜₀`-algebra by `𝒜₁`, and `P = Proj_X(𝒜)` the relative Proj
@@ -977,7 +977,7 @@ theorem isInvertibleModule_twistModule (hgen : s.IsGeneratedInDegreeOne) (n : �
       (s.twistModule Px n).obj
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isIso_mulSheaf_twistGradedAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean#L293). The attribute's comment: “(3), multiplication: for a quasi-coherent graded O\_X-algebra A on an algebraic space X generated as an A\_0-algebra by A\_1 (s.IsGeneratedInDegreeOne), the multiplication maps O\_P(n) (x)\_\{O\_P} O\_P(m) -> O\_P(n + m) of the graded algebra (+)\_\{n in Z} O\_P(n) of Tag 084D (twistGradedAlgebra) on the relative Proj P = Proj\_X(A) of Tags 084A-084B are isomorphisms for all integers n, m”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.isIso_mulSheaf_twistGradedAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjTwistsGenerated.lean#L295). The attribute's comment: “(3), multiplication: for a quasi-coherent graded O\_X-algebra A on an algebraic space X generated as an A\_0-algebra by A\_1 (s.IsGeneratedInDegreeOne), the multiplication maps O\_P(n) (x)\_\{O\_P} O\_P(m) -> O\_P(n + m) of the graded algebra (+)\_\{n in Z} O\_P(n) of Tag 084D (twistGradedAlgebra) on the relative Proj P = Proj\_X(A) of Tags 084A-084B are isomorphisms for all integers n, m”.
 
 > **Stacks 085D (3), multiplication.**  For a quasi-coherent graded `𝒪_X`-algebra `𝒜` on an
 > algebraic space `X` generated as an `𝒜₀`-algebra by `𝒜₁`, and `P = Proj_X(𝒜)` the relative Proj
@@ -1006,4 +1006,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.11, Tag 0848](https://stacks.math.columbia.edu/tag/0848)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

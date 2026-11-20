@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.20 Localization of morphisms of ringed sites
 
-Section 18.20 of the Stacks Project, [Tag 04IZ](https://stacks.math.columbia.edu/tag/04IZ). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 18.20 of the Stacks Project, [Tag 04IZ](https://stacks.math.columbia.edu/tag/04IZ). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04J0, a lemma
 
 [Tag 04J0](https://stacks.math.columbia.edu/tag/04J0) in the Stacks Project.
 
-**`Stacks.Cohomology.Localization.pushforwardTopos_comp_overFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/DerivedDirectImageAndRestriction.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/DerivedDirectImageAndRestriction.lean#L217). The attribute's comment: “(3): the identity `f'_* j_U^* = j_V^* f_*` on sheaves of modules”.
+**`Stacks.Cohomology.Localization.pushforwardTopos_comp_overFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/DerivedDirectImageAndRestriction.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/DerivedDirectImageAndRestriction.lean#L217). The attribute's comment: “(3): the identity `f'_* j_U^* = j_V^* f_*` on sheaves of modules”.
 
 > **Stacks 04J0, the identity `f'_* j_U^* = j_V^* f_*` on sheaves of modules**, which is also
 > the underived identity behind Stacks 0D6G: the direct image of a sheaf of modules along a morphism
@@ -31,7 +31,7 @@ theorem pushforwardTopos_comp_overFunctor :
         localizedPushforward f V
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.localized`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RingedSiteMorphismLocalization.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RingedSiteMorphismLocalization.lean#L62). The attribute's comment: “(1): the localized morphism of ringed sites, with its canonical structure map `(f')♯ = j_V^{-1}(f♯)`”.
+**`AlgebraicGeometry.RingedSite.Hom.localized`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RingedSiteMorphismLocalization.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Localization/RingedSiteMorphismLocalization.lean#L62). The attribute's comment: “(1): the localized morphism of ringed sites, with its canonical structure map `(f')♯ = j_V^{-1}(f♯)`”.
 
 > **Stacks 04J0.** The localization of a morphism of ringed sites at an object `V` of the
 > target: the underlying functor is `Over.post u`, a morphism of sites by Stacks 03CF clause (a),
@@ -46,7 +46,7 @@ noncomputable def localized :
     RingedSite.Hom (X.over (f.u.obj V)) (Y.over V)
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.localizedRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean#L133). The attribute's comment: “(1): the localized morphism of ringed topoi”.
+**`AlgebraicGeometry.RingedSite.Hom.localizedRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean#L133). The attribute's comment: “(1): the localized morphism of ringed topoi”.
 
 > The localized morphism of ringed *topoi* `(f', (f')♯) : (Sh(C/U), O_U) ⟶ (Sh(D/V), O'_V)`,
 > with `U = u(V)`.
@@ -57,7 +57,7 @@ noncomputable def Hom.localizedRingedToposHom (V : Y.C) :
       (ringedTopos (Y.over V))
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.overPullback_comp_localizedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean#L142). The attribute's comment: “(3): the identity `f'_* j_U^{-1} = j_V^{-1} f_*`”.
+**`AlgebraicGeometry.RingedSite.Hom.overPullback_comp_localizedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean#L142). The attribute's comment: “(3): the identity `f'_* j_U^{-1} = j_V^{-1} f_*`”.
 
 > The identity `f'_* j_U^{-1} = j_V^{-1} f_*`, as a strict equality of functors
 > `Sh(C) ⥤ Sh(D/V)`. This is Stacks 03CF's clause (d) read on the assembled morphisms of ringed
@@ -71,7 +71,7 @@ theorem Hom.overPullback_comp_localizedPushforward (V : Y.C) :
         (Y.localizationRingedToposHom V).toToposHom.inverseImage
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.localizedRingedSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean#L327). The attribute's comment: “(2): the commutative diagram of ringed topoi `(f, f♯) ∘ (j_U, j_U♯) ≅ (j_V, j_V♯) ∘ (f', (f')♯)`, as a 2-isomorphism of ringed topoi”.
+**`AlgebraicGeometry.RingedSite.Hom.localizedRingedSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean, line 327](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/LocalizedMorphism.lean#L327). The attribute's comment: “(2): the commutative diagram of ringed topoi `(f, f♯) ∘ (j_U, j_U♯) ≅ (j_V, j_V♯) ∘ (f', (f')♯)`, as a 2-isomorphism of ringed topoi”.
 
 > With `U = u(V)`, the square
 > ```
@@ -102,7 +102,7 @@ noncomputable def Hom.localizedRingedSquare (V : Y.C) :
 
 [Tag 04J1](https://stacks.math.columbia.edu/tag/04J1) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.Hom.relocalized`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedMorphism.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedMorphism.lean#L131). The attribute's comment: “the morphism `f_c` and its factorization as the morphism of 04J0 after the relocalization morphism of 04IY”.
+**`AlgebraicGeometry.RingedSite.Hom.relocalized`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedMorphism.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedMorphism.lean#L131). The attribute's comment: “the morphism `f_c` and its factorization as the morphism of 04J0 after the relocalization morphism of 04IY”.
 
 > **Stacks 04J1.** The morphism of ringed topoi
 > `(f_c, f_c♯) : (Sh(C/U), O_U) ⟶ (Sh(D/V), O'_V)` attached to a morphism of ringed sites
@@ -117,7 +117,7 @@ noncomputable def Hom.relocalized :
     AlgebraicGeometry.RingedToposHom (ringedTopos (X.over U)) (ringedTopos (Y.over V))
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.relocalizedLocalizationSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedMorphism.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedMorphism.lean#L152). The attribute's comment: “commutativity of the localization square, pasted from 04IY's triangle and the square of 04J0”.
+**`AlgebraicGeometry.RingedSite.Hom.relocalizedLocalizationSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedMorphism.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedMorphism.lean#L152). The attribute's comment: “commutativity of the localization square, pasted from 04IY's triangle and the square of 04J0”.
 
 > **Stacks 04J1**, the localization square: the square
 >
@@ -144,7 +144,7 @@ noncomputable def Hom.relocalizedLocalizationSquare :
         f.ringedToposHom (X.localizationRingedToposHom U))
 ```
 
-**`AlgebraicGeometry.RingedSite.Hom.relocalizedNaturalitySquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedNaturality.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedNaturality.lean#L151). The attribute's comment: “the final assertion: for `b : V' ⟶ V`, `a : U' ⟶ U` and `c'` with `a ≫ c = c' ≫ u(b)`, the induced square of ringed topoi on the slices commutes”.
+**`AlgebraicGeometry.RingedSite.Hom.relocalizedNaturalitySquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedNaturality.lean, line 151](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Modules/LocalizationRingedSites/RelocalizedNaturality.lean#L151). The attribute's comment: “the final assertion: for `b : V' ⟶ V`, `a : U' ⟶ U` and `c'` with `a ≫ c = c' ≫ u(b)`, the induced square of ringed topoi on the slices commutes”.
 
 > **Stacks 04J1**, the last assertion: for `a ≫ c = c' ≫ u(b)` the square
 >
@@ -182,4 +182,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.20, Tag 04IZ](https://stacks.math.columbia.edu/tag/04IZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

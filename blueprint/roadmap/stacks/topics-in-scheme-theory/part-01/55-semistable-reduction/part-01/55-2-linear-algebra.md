@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.2 Linear algebra
 
-Section 55.2 of the Stacks Project, [Tag 0C5T](https://stacks.math.columbia.edu/tag/0C5T). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 55.2 of the Stacks Project, [Tag 0C5T](https://stacks.math.columbia.edu/tag/0C5T). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0C5U, a lemma
 
 [Tag 0C5U](https://stacks.math.columbia.edu/tag/0C5U) in the Stacks Project.
 
-**`Matrix.det_ne_zero_of_sum_row_lt_diag_weighted`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L375). The attribute's comment: “part (2)”.
+**`Matrix.det_ne_zero_of_sum_row_lt_diag_weighted`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 375](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L375). The attribute's comment: “part (2)”.
 
 > **Stacks 0C5U, part (2).** A square matrix over a normed field whose diagonal strictly
 > dominates its off-diagonal entries after weighting the columns by a vector `m` has nonzero
@@ -34,13 +34,13 @@ public theorem det_ne_zero_of_sum_row_lt_diag_weighted {K n : Type*} [NormedFiel
 
 Declarations registered for the tag:
 
-- [`det_ne_zero_of_sum_row_lt_diag`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=det_ne_zero_of_sum_row_lt_diag#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L393) (StacksFrontier): “part (1)”.
+- [`det_ne_zero_of_sum_row_lt_diag`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=det_ne_zero_of_sum_row_lt_diag#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L393) (StacksFrontier): “part (1)”.
 
 ## Tag 0C5V, a lemma
 
 [Tag 0C5V](https://stacks.math.columbia.edu/tag/0C5V) in the Stacks Project.
 
-**`Matrix.ker_mulVecLin_eq_span_indicator`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L68). The attribute's comment: “adds `A.IsSymm`: the printed statement is false without it; a correction”.
+**`Matrix.ker_mulVecLin_eq_span_indicator`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L68). The attribute's comment: “adds `A.IsSymm`: the printed statement is false without it; a correction”.
 
 > The kernel of a symmetric matrix with nonnegative off-diagonal entries,
 > diagonally dominant relative to a positive vector `m`, is spanned by the
@@ -66,7 +66,7 @@ public lemma ker_mulVecLin_eq_span_indicator {n : ℕ}
         (∀ i ∈ I, -A i i * m i = ∑ j ∈ Finset.univ.erase i, A i j * m j)}
 ```
 
-**`Matrix.not_forall_ker_mulVecLin_eq_span_indicator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L211). The attribute's comment: “counterexample: the statement as printed is false without symmetry of `A`”.
+**`Matrix.not_forall_ker_mulVecLin_eq_span_indicator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 211](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L211). The attribute's comment: “counterexample: the statement as printed is false without symmetry of `A`”.
 
 > **Stacks 0C5V is false as printed.** Without symmetry of `A` the printed statement fails:
 > for `A = [[-1, 1], [0, 0]]` and `m = (1, 1)` every hypothesis holds, and `I = {2}` satisfies the
@@ -90,7 +90,7 @@ public theorem not_forall_ker_mulVecLin_eq_span_indicator :
 
 [Tag 0C5X](https://stacks.math.columbia.edu/tag/0C5X) in the Stacks Project.
 
-**`Matrix.dotProduct_mulVec_nonpos_of_positive_kernel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L302). The attribute's comment: “negative semidefiniteness”.
+**`Matrix.dotProduct_mulVec_nonpos_of_positive_kernel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 302](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L302). The attribute's comment: “negative semidefiniteness”.
 
 > A symmetric matrix with nonnegative off-diagonal entries which kills a
 > strictly positive vector has nonpositive associated quadratic form.
@@ -103,7 +103,7 @@ lemma dotProduct_mulVec_nonpos_of_positive_kernel
     x ⬝ᵥ (A *ᵥ x) ≤ 0
 ```
 
-**`Matrix.dotProduct_mulVec_eq_zero_iff_of_positive_kernel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L321). The attribute's comment: “equality case”.
+**`Matrix.dotProduct_mulVec_eq_zero_iff_of_positive_kernel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean, line 321](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiagonallyDominant.lean#L321). The attribute's comment: “equality case”.
 
 > If, in addition, no proper nonempty set of indices is disconnected from
 > its complement, the zero locus of the quadratic form is the line spanned by
@@ -123,7 +123,7 @@ lemma dotProduct_mulVec_eq_zero_iff_of_positive_kernel
 
 [Tag 0C6V](https://stacks.math.columbia.edu/tag/0C6V) in the Stacks Project.
 
-**`LinearMap.BilinForm.exists_injective_to_discriminantGroup_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean#L232). The attribute's comment: “the map to the discriminant group of A”.
+**`LinearMap.BilinForm.exists_injective_to_discriminantGroup_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean#L232). The attribute's comment: “the map to the discriminant group of A”.
 
 > **Stacks Project, Tag 0C6V (left-hand map).**  The quotient by a saturated
 > submodule and its orthogonal complement injects into the discriminant group of
@@ -143,7 +143,7 @@ public theorem exists_injective_to_discriminantGroup_left
           Function.Surjective q
 ```
 
-**`LinearMap.BilinForm.exists_injective_to_discriminantGroup_orthogonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean#L249). The attribute's comment: “the map to the discriminant group of B”.
+**`LinearMap.BilinForm.exists_injective_to_discriminantGroup_orthogonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean, line 249](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean#L249). The attribute's comment: “the map to the discriminant group of B”.
 
 > **Stacks Project, Tag 0C6V (right-hand map).**  The quotient by a saturated
 > submodule and its orthogonal complement injects into the discriminant group of
@@ -169,7 +169,7 @@ public theorem exists_injective_to_discriminantGroup_orthogonal
 
 [Tag 0C6W](https://stacks.math.columbia.edu/tag/0C6W) in the Stacks Project.
 
-**`LinearMap.BilinForm.torsionCokernelEquiv_discriminantGroup_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean#L282).
+**`LinearMap.BilinForm.torsionCokernelEquiv_discriminantGroup_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean, line 282](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/DiscriminantGroup.lean#L282).
 
 > **Stacks Project, Tag 0C6W.** For a pair of adjoint maps of positive
 > definite integral lattices, when the form on the source is unimodular, the
@@ -196,7 +196,7 @@ public theorem torsionCokernelEquiv_discriminantGroup_range
 
 [Tag 0C6X](https://stacks.math.columbia.edu/tag/0C6X) in the Stacks Project.
 
-**`Matrix.finrank_torsionBy_matrixCokernel_le_cycleRank`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/CycleRank.lean, line 1267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/CycleRank.lean#L1267).
+**`Matrix.finrank_torsionBy_matrixCokernel_le_cycleRank`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/CycleRank.lean, line 1267](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/LinearAlgebra/CycleRank.lean#L1267).
 
 > The prime torsion in the cokernel of a connected recurring symmetric
 > integer matrix has dimension at most the cycle rank of its support graph.
@@ -227,4 +227,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.2, Tag 0C5T](https://stacks.math.columbia.edu/tag/0C5T)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.47 Bertini theorems
 
-Section 33.47 of the Stacks Project, [Tag 0FD4](https://stacks.math.columbia.edu/tag/0FD4). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 33.47 of the Stacks Project, [Tag 0FD4](https://stacks.math.columbia.edu/tag/0FD4). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FD5, a lemma
 
 [Tag 0FD5](https://stacks.math.columbia.edu/tag/0FD5) in the Stacks Project.
 
-**`Stacks.SectionsVanishingOnSubscheme.exists_bound_generatesOffSupport_and_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VanishingSystemImmersion/Basic.lean, line 790](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/VanishingSystemImmersion/Basic.lean#L790).
+**`Stacks.SectionsVanishingOnSubscheme.exists_bound_generatesOffSupport_and_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VanishingSystemImmersion/Basic.lean, line 790](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/VanishingSystemImmersion/Basic.lean#L790).
 
 > **[Stacks, Tag 0FD5].** Let `k` be a field, let `X` be a proper scheme over `k`, let `ℒ` be an
 > ample invertible `𝒪_X`-module and let `Z ⊂ X` be the closed subscheme cut out by a quasi-coherent
@@ -50,7 +50,7 @@ theorem exists_bound_generatesOffSupport_and_isImmersion [IsProper f]
 
 [Tag 0G47](https://stacks.math.columbia.edu/tag/0G47) in the Stacks Project.
 
-**`Stacks.Bertini.FamilyDivisors.divisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCommonZeroSet.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCommonZeroSet.lean#L89). The attribute's comment: “the divisor of a vector of the linear system”.
+**`Stacks.Bertini.FamilyDivisors.divisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCommonZeroSet.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCommonZeroSet.lean#L89). The attribute's comment: “the divisor of a vector of the linear system”.
 
 > **The divisor `H_w = Z(ψ(w))`** cut out on `X` by a vector of the linear system, as a
 > quasi-coherent ideal sheaf.
@@ -59,7 +59,7 @@ theorem exists_bound_generatesOffSupport_and_isImmersion [IsProper f]
 def divisor (w : D.V) : D.X.IdealSheafData
 ```
 
-**`Stacks.Bertini.FamilyDivisors`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L94). The attribute's comment: “the standing situation”.
+**`Stacks.Bertini.FamilyDivisors`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L94). The attribute's comment: “the standing situation”.
 
 > **Stacks Project, Tag 0G47.** The standing situation of the Bertini theorems: a field `k`,
 > a scheme `X` over `k`, an invertible `𝒪_X`-module `L`, a finite dimensional `k`-vector space
@@ -69,7 +69,7 @@ def divisor (w : D.V) : D.X.IdealSheafData
 structure FamilyDivisors
 ```
 
-**`Stacks.Bertini.FamilyDivisors.universalSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L172). The attribute's comment: “the universal section”.
+**`Stacks.Bertini.FamilyDivisors.universalSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L172). The attribute's comment: “the universal section”.
 
 > **The universal section** `s_univ = Σᵢ xᵢ ψ(vᵢ)` of `pr₂^* L` on `𝔸^r_k ×_k X`, where
 > `x₁, …, x_r` are the coordinates of the parameter affine space.
@@ -79,7 +79,7 @@ def universalSection :
     Γ((Scheme.Modules.pullback D.parameterProjection).obj D.L, ⊤)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.universalDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L181). The attribute's comment: “the universal divisor”.
+**`Stacks.Bertini.FamilyDivisors.universalDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L181). The attribute's comment: “the universal divisor”.
 
 > **The universal divisor** `H_univ = Z(s_univ) ⊂ 𝔸^r_k ×_k X`, the zero scheme of the
 > universal section.
@@ -88,7 +88,7 @@ def universalSection :
 def universalDivisor : D.parameterSpace.IdealSheafData
 ```
 
-**`Stacks.Bertini.FamilyDivisors.specializedSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L206). The attribute's comment: “the section attached to a vector over an extension field”.
+**`Stacks.Bertini.FamilyDivisors.specializedSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L206). The attribute's comment: “the section attached to a vector over an extension field”.
 
 > **The section `ψ(v) = Σᵢ aᵢ ψ(vᵢ)`** of `L|_{X_{k'}}` attached to the vector
 > `v = Σᵢ aᵢ vᵢ` of `V ⊗_k k'` with coordinate tuple `a` over a field extension `k'/k`.
@@ -98,7 +98,7 @@ def specializedSection (a : Fin (Module.finrank D.k D.V) → K) :
     Γ((Scheme.Modules.pullback (D.baseChangeToX K)).obj D.L, ⊤)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.specializedDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L215). The attribute's comment: “the divisor attached to a vector over an extension field”.
+**`Stacks.Bertini.FamilyDivisors.specializedDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 215](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L215). The attribute's comment: “the divisor attached to a vector over an extension field”.
 
 > **The divisor `H_v = Z(ψ(v))`** on `X_{k'}` attached to the vector of `V ⊗_k k'` with
 > coordinate tuple `a`, as the zero scheme of the section it determines.
@@ -108,7 +108,7 @@ def specializedDivisor (a : Fin (Module.finrank D.k D.V) → K) :
     (D.baseChange K).IdealSheafData
 ```
 
-**`Stacks.Bertini.FamilyDivisors.specializedDivisor_eq_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L248). The attribute's comment: “the fibre of the universal divisor”.
+**`Stacks.Bertini.FamilyDivisors.specializedDivisor_eq_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L248). The attribute's comment: “the fibre of the universal divisor”.
 
 > **`H_v = H_{univ, v}`.** The divisor attached to a vector of `V ⊗_k k'` is the fibre of
 > the universal divisor over the corresponding `k'`-point of `𝔸^r_k`, as quasi-coherent sheaves
@@ -119,7 +119,7 @@ theorem specializedDivisor_eq_comap (a : Fin (Module.finrank D.k D.V) → K) :
     D.specializedDivisor K a = D.universalDivisor.comap (D.fibreParameterMap K a)
 ```
 
-**`Stacks.Bertini.FamilyDivisors.ForGeneral`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L268). The attribute's comment: “holding for general vectors”.
+**`Stacks.Bertini.FamilyDivisors.ForGeneral`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniFamilyDivisors.lean#L268). The attribute's comment: “holding for general vectors”.
 
 > **A property of vectors holds for general `v`** when there is one nonempty open
 > `U ⊂ 𝔸^r_k` such that `P` holds at every vector of `V ⊗_k k'` whose coordinate tuple gives a
@@ -134,7 +134,7 @@ def ForGeneral
 
 [Tag 0FD6](https://stacks.math.columbia.edu/tag/0FD6) in the Stacks Project.
 
-**`Stacks.Bertini.FamilyDivisors.forGeneral_smooth_specializedDivisor_of_isImmersion_canonicalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCanonicalImmersion.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCanonicalImmersion.lean#L131). The attribute's comment: “hypothesis (3) is stated on the canonical morphism phi\_(L, psi) : X -> P(V) of Tag 0FCY; arbitrary base field, any dim V”.
+**`Stacks.Bertini.FamilyDivisors.forGeneral_smooth_specializedDivisor_of_isImmersion_canonicalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCanonicalImmersion.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniCanonicalImmersion.lean#L131). The attribute's comment: “hypothesis (3) is stated on the canonical morphism phi\_(L, psi) : X -> P(V) of Tag 0FCY; arbitrary base field, any dim V”.
 
 > **[Stacks, Tag 0FD6].** In the standing situation of [Stacks, Tag 0G47] — a field `k`, a
 > scheme `X` over `k`, an invertible `𝒪_X`-module `L`, a finite dimensional `k`-vector space `V`
@@ -170,4 +170,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.47, Tag 0FD4](https://stacks.math.columbia.edu/tag/0FD4)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

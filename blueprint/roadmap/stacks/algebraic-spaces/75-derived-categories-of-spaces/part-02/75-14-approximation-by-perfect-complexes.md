@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.14 Approximation by perfect complexes
 
-Section 75.14 of the Stacks Project, [Tag 08HH](https://stacks.math.columbia.edu/tag/08HH). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 75.14 of the Stacks Project, [Tag 08HH](https://stacks.math.columbia.edu/tag/08HH). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08HI, a definition
 
 [Tag 08HI](https://stacks.math.columbia.edu/tag/08HI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ApproximationHolds`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Approximation.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Approximation.lean#L59).
+**`AlgebraicGeometry.Space.ApproximationHolds`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Approximation.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Approximation.lean#L59).
 
 > *Approximation holds* for the triple `(T, E, m)`: some perfect object of `D(𝒪_F)` supported on
 > `T` maps to `E` by a map inducing isomorphisms on cohomology in every degree above `m` and a
@@ -29,7 +29,7 @@ noncomputable abbrev ApproximationHolds (T : Set (points B S hS F))
 
 [Tag 08HJ](https://stacks.math.columbia.edu/tag/08HJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ApproximationByPerfectComplexes`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Approximation.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Approximation.lean#L74).
+**`AlgebraicGeometry.Space.ApproximationByPerfectComplexes`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Approximation.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Approximation.lean#L74).
 
 > *Approximation by perfect complexes holds* on `F`: for every closed `T ⊆ |F|` whose open
 > complement has quasi-compact inclusion there is an integer `r` such that approximation holds for
@@ -44,7 +44,7 @@ noncomputable abbrev ApproximationByPerfectComplexes : Prop
 
 [Tag 08HK](https://stacks.math.columbia.edu/tag/08HK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PushforwardOfSupportedPerfectCanonical.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PushforwardOfSupportedPerfectCanonical.lean#L131). The attribute's comment: “Rj\_*E is perfect in D(O\_X) for an elementary distinguished square and E perfect on V supported on j^\{-1}T”.
+**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PushforwardOfSupportedPerfectCanonical.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PushforwardOfSupportedPerfectCanonical.lean#L131). The attribute's comment: “Rj\_*E is perfect in D(O\_X) for an elementary distinguished square and E perfect on V supported on j^\{-1}T”.
 
 > **Stacks 08HK.**  Let `S` be a scheme, let `(U ⊆ X, j : V ⟶ X)` be an elementary
 > distinguished square of algebraic spaces over `S`, and set `T = |X| \ |U|`.  Let `E` be a
@@ -66,7 +66,7 @@ theorem isPerfect_derivedModulePushforward_of_cohomologySupportedOn
       ((derivedModulePushforward B S hS (edsEtaleHom B S hS hsq)).obj E)
 ```
 
-**`AlgebraicGeometry.Space.isPerfect_rightAdjoint_edsDerivedRestrictEtale_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean#L434).
+**`AlgebraicGeometry.Space.isPerfect_rightAdjoint_edsDerivedRestrictEtale_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean, line 434](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean#L434).
 
 > **Stacks 08HK.**  Let `S` be a scheme, let `(U ⊆ X, j : V ⟶ X)` be an elementary
 > distinguished square of algebraic spaces over `S`, and set `T = |X| \ |U|`.  Let `E` be a
@@ -93,7 +93,7 @@ theorem isPerfect_rightAdjoint_edsDerivedRestrictEtale_of_cohomologySupportedOn
 
 [Tag 08HL](https://stacks.math.columbia.edu/tag/08HL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.approximationHolds_of_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAcrossSquare.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAcrossSquare.lean#L90).
+**`AlgebraicGeometry.Space.approximationHolds_of_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAcrossSquare.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAcrossSquare.lean#L90).
 
 > **Stacks 08HL.**  Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of
 > algebraic spaces over a scheme `S`, let `T ⊆ |X| \ |U|` and let `(T, E, m)` be a triple as in
@@ -119,7 +119,7 @@ theorem approximationHolds_of_isElementaryDistinguishedSquare
     ApproximationHolds B S hS W.1 W.2 T E m
 ```
 
-**`AlgebraicGeometry.Space.approximationHolds_of_approximationHolds_edsEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationExtensionByZero.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationExtensionByZero.lean#L204). The attribute's comment: “for an elementary distinguished square (U ⊆ X, j : V ⟶ X), T ⊆ |X| \ |U| and a triple (T, E, m): approximation for (j^\{-1}T, E|\_V, m) with E|\_V = quasicoherentDerivedEtalePullback of E, together with H^i(E) supported on T for i ≥ m, gives approximation for (T, E, m); nothing else is bound. T is any subset of |X| \ |U|, closedness being unused”.
+**`AlgebraicGeometry.Space.approximationHolds_of_approximationHolds_edsEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationExtensionByZero.lean, line 204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationExtensionByZero.lean#L204). The attribute's comment: “for an elementary distinguished square (U ⊆ X, j : V ⟶ X), T ⊆ |X| \ |U| and a triple (T, E, m): approximation for (j^\{-1}T, E|\_V, m) with E|\_V = quasicoherentDerivedEtalePullback of E, together with H^i(E) supported on T for i ≥ m, gives approximation for (T, E, m); nothing else is bound. T is any subset of |X| \ |U|, closedness being unused”.
 
 > **Stacks 08HL.**  Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of
 > algebraic spaces over a scheme `S`, let `T ⊆ |X| \ |U|` and let `(T, E, m)` be a triple as in
@@ -153,7 +153,7 @@ theorem approximationHolds_of_approximationHolds_edsEtale
 
 [Tag 08HM](https://stacks.math.columbia.edu/tag/08HM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.approximationHolds_of_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAffine.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAffine.lean#L80). The attribute's comment: “first assertion: for X an algebraic space representable by an affine scheme, approximation holds for every triple (T, E, m) such that there exists an integer r ≥ 0 with E m-pseudo-coherent, H^i(E) supported on T for i ≥ m - r + 1 and X \ T a union of r affine opens”.
+**`AlgebraicGeometry.Space.approximationHolds_of_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAffine.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAffine.lean#L80). The attribute's comment: “first assertion: for X an algebraic space representable by an affine scheme, approximation holds for every triple (T, E, m) such that there exists an integer r ≥ 0 with E m-pseudo-coherent, H^i(E) supported on T for i ≥ m - r + 1 and X \ T a union of r affine opens”.
 
 > **Stacks 08HM.**  Let `S` be a scheme and let `X` be an algebraic space over `S` which is
 > representable by an affine scheme.  Then approximation holds (Stacks 08HI) for every triple
@@ -182,7 +182,7 @@ theorem approximationHolds_of_affineCover (hXa : IsAffineSpace B S hS X)
     ApproximationHolds B S hS X hX T E m
 ```
 
-**`AlgebraicGeometry.Space.approximationByPerfectComplexes_of_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAffine.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAffine.lean#L102). The attribute's comment: “second assertion: approximation by perfect complexes holds on an algebraic space representable by an affine scheme”.
+**`AlgebraicGeometry.Space.approximationByPerfectComplexes_of_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAffine.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationAffine.lean#L102). The attribute's comment: “second assertion: approximation by perfect complexes holds on an algebraic space representable by an affine scheme”.
 
 > **The "in particular" of Stacks 08HM**: approximation by perfect complexes (Stacks 08HJ)
 > holds on an algebraic space representable by an affine scheme.
@@ -194,7 +194,7 @@ theorem approximationByPerfectComplexes_of_affine (hXa : IsAffineSpace B S hS X)
     ApproximationByPerfectComplexes.{u, u} B S hS X hX
 ```
 
-**`AlgebraicGeometry.Space.approximationHolds_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIso.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIso.lean#L413). The attribute's comment: “first assertion: approximation holds for every triple (T, E, m) with E m-pseudo-coherent, H^i(E) supported on T for i ≥ m - r + 1 and X \ T a union of r affine opens, for X an algebraic space representable by an affine scheme”.
+**`AlgebraicGeometry.Space.approximationHolds_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIso.lean, line 413](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIso.lean#L413). The attribute's comment: “first assertion: approximation holds for every triple (T, E, m) with E m-pseudo-coherent, H^i(E) supported on T for i ≥ m - r + 1 and X \ T a union of r affine opens, for X an algebraic space representable by an affine scheme”.
 
 > **Stacks 08HM.**  Let `S` be a scheme and let `X` be an algebraic space over `S` which is
 > representable by an affine scheme.  Then approximation holds (Stacks 08HI) for every triple
@@ -224,7 +224,7 @@ theorem approximationHolds_of_isAffineSpace (hXa : IsAffineSpace B S hS F)
     ApproximationHolds B S hS F hF Z E m
 ```
 
-**`AlgebraicGeometry.Space.approximationByPerfectComplexes_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIso.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIso.lean#L445). The attribute's comment: “second assertion: approximation by perfect complexes holds on an algebraic space representable by an affine scheme”.
+**`AlgebraicGeometry.Space.approximationByPerfectComplexes_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIso.lean, line 445](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIso.lean#L445). The attribute's comment: “second assertion: approximation by perfect complexes holds on an algebraic space representable by an affine scheme”.
 
 > **The "in particular" of Stacks 08HM**: approximation by perfect complexes (Stacks 08HJ)
 > holds on an algebraic space representable by an affine scheme.
@@ -234,7 +234,7 @@ theorem approximationByPerfectComplexes_of_isAffineSpace (hXa : IsAffineSpace B 
     ApproximationByPerfectComplexes.{u, u} B S hS F hF
 ```
 
-**`AlgebraicGeometry.Space.approximationHolds_and_approximationByPerfectComplexes_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIsoTag.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIsoTag.lean#L60).
+**`AlgebraicGeometry.Space.approximationHolds_and_approximationByPerfectComplexes_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIsoTag.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationIsoTag.lean#L60).
 
 > **Stacks 08HM.**  Let `S` be a scheme and let `X` be an algebraic space over `S` which is
 > representable by an affine scheme.  Then
@@ -268,7 +268,7 @@ theorem approximationHolds_and_approximationByPerfectComplexes_of_isAffineSpace
 
 [Tag 08HN](https://stacks.math.columbia.edu/tag/08HN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.approximationByPerfectComplexes_of_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationSquare.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationSquare.lean#L136).
+**`AlgebraicGeometry.Space.approximationByPerfectComplexes_of_isElementaryDistinguishedSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationSquare.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationSquare.lean#L136).
 
 > **Stacks 08HN.**  Let `S` be a scheme and let `(U ⊆ X, j : V ⟶ X)` be an elementary
 > distinguished square of algebraic spaces over `S`, with `U` quasi-compact, `V` affine and
@@ -291,7 +291,7 @@ theorem approximationByPerfectComplexes_of_isElementaryDistinguishedSquare
 
 [Tag 08HP](https://stacks.math.columbia.edu/tag/08HP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.approximationByPerfectComplexes_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationQcqs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationQcqs.lean#L62).
+**`AlgebraicGeometry.Space.approximationByPerfectComplexes_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationQcqs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ApproximationQcqs.lean#L62).
 
 > **Stacks 08HP.**  Let `S` be a scheme and let `X` be a quasi-compact and quasi-separated
 > algebraic space over `S`.  Then approximation by perfect complexes holds on `X`.
@@ -310,4 +310,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.14, Tag 08HH](https://stacks.math.columbia.edu/tag/08HH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

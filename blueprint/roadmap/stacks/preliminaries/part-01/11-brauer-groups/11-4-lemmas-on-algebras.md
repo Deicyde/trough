@@ -8,13 +8,13 @@ proof: formalized
 
 # 11.4 Lemmas on algebras
 
-Section 11.4 of the Stacks Project, [Tag 0748](https://stacks.math.columbia.edu/tag/0748). 10 tags here are carried by 29 declarations of the repository (20 in StacksCore and 9 in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 11.4 of the Stacks Project, [Tag 0748](https://stacks.math.columbia.edu/tag/0748). 10 tags here are carried by 29 declarations of the repository (20 in StacksCore and 9 in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0749, a lemma
 
 [Tag 0749](https://stacks.math.columbia.edu/tag/0749) in the Stacks Project.
 
-**`centralizer_tensor_centralizer`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Algebra/Subalgebra/Centralizer.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Algebra/Subalgebra/Centralizer.lean#L73).
+**`centralizer_tensor_centralizer`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Algebra/Subalgebra/Centralizer.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Algebra/Algebra/Subalgebra/Centralizer.lean#L73).
 
 ```lean
 lemma centralizer_tensor_centralizer :
@@ -28,16 +28,16 @@ lemma centralizer_tensor_centralizer :
 
 Declarations registered for the tag:
 
-- [`Subalgebra.algebra`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Subalgebra.algebra#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Algebra/Subalgebra/Basic.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Algebra/Subalgebra/Basic.lean#L36) (StacksCore).
-- [`Subalgebra.isScalarTower_mid`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Subalgebra.isScalarTower_mid#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Algebra/Subalgebra/Basic.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Algebra/Subalgebra/Basic.lean#L37) (StacksCore).
-- [`FiniteDimensional.finiteDimensional_subalgebra`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FiniteDimensional.finiteDimensional_subalgebra#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/FiniteDimensional/Basic.lean, line 12](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/FiniteDimensional/Basic.lean#L12) (StacksCore).
-- [`IsSimpleRing.isField_center`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsSimpleRing.isField_center#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/SimpleRing/Field.lean, line 12](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/SimpleRing/Field.lean#L12) (StacksCore). References: EGA IV (2.5.8.8), “special case”.
+- [`Subalgebra.algebra`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Subalgebra.algebra#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Algebra/Subalgebra/Basic.lean, line 36](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Algebra/Algebra/Subalgebra/Basic.lean#L36) (StacksCore).
+- [`Subalgebra.isScalarTower_mid`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Subalgebra.isScalarTower_mid#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Algebra/Subalgebra/Basic.lean, line 37](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Algebra/Algebra/Subalgebra/Basic.lean#L37) (StacksCore).
+- [`FiniteDimensional.finiteDimensional_subalgebra`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FiniteDimensional.finiteDimensional_subalgebra#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/FiniteDimensional/Basic.lean, line 12](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/FiniteDimensional/Basic.lean#L12) (StacksCore).
+- [`IsSimpleRing.isField_center`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsSimpleRing.isField_center#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/SimpleRing/Field.lean, line 12](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/SimpleRing/Field.lean#L12) (StacksCore). References: EGA IV (2.5.8.8), “special case”.
 
 ## Tag 074B, a lemma
 
 [Tag 074B](https://stacks.math.columbia.edu/tag/074B) in the Stacks Project.
 
-**`TwoSidedIdeal.map_comap_includeRight`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L136).
+**`TwoSidedIdeal.map_comap_includeRight`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L136).
 
 > Let `A` be a central simple `K`-algebra and `B` any `K`-algebra. Then every two-sided ideal
 > of `A ⊗[K] B` is generated by its intersection with `1 ⊗ B`.
@@ -51,7 +51,7 @@ lemma map_comap_includeRight (I : TwoSidedIdeal (A ⊗[K] B)) :
     (I.comap (includeRight : B →ₐ[K] A ⊗[K] B)).map includeRight = I
 ```
 
-**`Submodule.eq_span_inter_range_one_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SimpleRing/TensorProductSubBimodule.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SimpleRing/TensorProductSubBimodule.lean#L104).
+**`Submodule.eq_span_inter_range_one_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SimpleRing/TensorProductSubBimodule.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/SimpleRing/TensorProductSubBimodule.lean#L104).
 
 > **Stacks 074B.** Let `V` be a `k`-vector space and let `D` be a central `k`-algebra which is a
 > skew field. Let `W ⊆ D ⊗[k] V` be a two-sided `D`-sub vector space: a `D`-submodule for the left
@@ -71,7 +71,7 @@ theorem eq_span_inter_range_one_tmul [Algebra.IsCentral k D] (W : Submodule D (D
 
 [Tag 074C](https://stacks.math.columbia.edu/tag/074C) in the Stacks Project.
 
-**`TwoSidedIdeal.orderIsoMapIncludeRight`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L178). The attribute's comment: “part 1”.
+**`TwoSidedIdeal.orderIsoMapIncludeRight`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L178). The attribute's comment: “part 1”.
 
 > This is a generalized version of stacks 074C part 1.
 
@@ -79,7 +79,7 @@ theorem eq_span_inter_range_one_tmul [Algebra.IsCentral k D] (W : Submodule D (D
 def orderIsoMapIncludeRight : TwoSidedIdeal B ≃o TwoSidedIdeal (A ⊗[K] B)
 ```
 
-**`Algebra.TensorProduct.isSimpleRing`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L192). The attribute's comment: “part 2”.
+**`Algebra.TensorProduct.isSimpleRing`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L192). The attribute's comment: “part 2”.
 
 > The tensor product of a central simple algebra and a simple algebra is simple.
 > This is slightly more general than the statement in the stacks project, which requires `A` to be
@@ -96,14 +96,14 @@ instance Algebra.TensorProduct.isSimpleRing [IsSimpleRing A] [Algebra.IsCentral 
 
 Declarations registered for the tag:
 
-- [`Matrix.subringCenter_eq_scalar_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Matrix.subringCenter_eq_scalar_map#doc) registered with `add_to_stacks` in [StacksCore/Data/Matrix/Basis.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Data/Matrix/Basis.lean#L10) (StacksCore): “3”.
-- [`TwoSidedIdeal.orderIsoMatrix`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TwoSidedIdeal.orderIsoMatrix#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/Matrix/Ideal.lean, line 12](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/Matrix/Ideal.lean#L12) (StacksCore): “2”.
+- [`Matrix.subringCenter_eq_scalar_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Matrix.subringCenter_eq_scalar_map#doc) registered with `add_to_stacks` in [StacksCore/Data/Matrix/Basis.lean, line 10](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Data/Matrix/Basis.lean#L10) (StacksCore): “3”.
+- [`TwoSidedIdeal.orderIsoMatrix`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TwoSidedIdeal.orderIsoMatrix#doc) registered with `add_to_stacks` in [StacksCore/LinearAlgebra/Matrix/Ideal.lean, line 12](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/Matrix/Ideal.lean#L12) (StacksCore): “2”.
 
 ## Tag 074E, a lemma
 
 [Tag 074E](https://stacks.math.columbia.edu/tag/074E) in the Stacks Project.
 
-**`Module.End.matAlgEquiv`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/End.lean#L104). The attribute's comment: “(4) second part”.
+**`Module.End.matAlgEquiv`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/End.lean#L104). The attribute's comment: “(4) second part”.
 
 > The `k`-algebra isomorphism between `End D D` and `End Mₙ(D) Dⁿ` induced by the Morita
 > equivalence between `D` and `Mₙ(D)`.
@@ -114,7 +114,7 @@ noncomputable def Module.End.matAlgEquiv (n : ℕ) [NeZero n] (D : Type w)
     Module.End D D ≃ₐ[k] Module.End (Matrix (Fin n) (Fin n) D) (Fin n → D)
 ```
 
-**`endSimpleModOfWedderburn`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/End.lean#L113). The attribute's comment: “(3) first part”.
+**`endSimpleModOfWedderburn`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/End.lean#L113). The attribute's comment: “(3) first part”.
 
 ```lean
 noncomputable def endSimpleModOfWedderburn (n : ℕ) [NeZero n] (D : Type w) [DivisionRing D]
@@ -123,14 +123,14 @@ noncomputable def endSimpleModOfWedderburn (n : ℕ) [NeZero n] (D : Type w) [Di
     Module.End A (Fin n → D) ≃ₐ[k] Dᵐᵒᵖ
 ```
 
-**`end_simple_mod_finite`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/End.lean#L141). The attribute's comment: “(5) part 2”.
+**`end_simple_mod_finite`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/End.lean#L141). The attribute's comment: “(5) part 2”.
 
 ```lean
 instance end_simple_mod_finite (M : Type v) [AddCommGroup M] [Module A M] [IsSimpleModule A M]
     [Module k M] [IsScalarTower k A M] : Module.Finite k (Module.End A M)
 ```
 
-**`endEndIso`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/End.lean#L258). The attribute's comment: “(6)”.
+**`endEndIso`**, a def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 258](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/End.lean#L258). The attribute's comment: “(6)”.
 
 ```lean
 noncomputable def endEndIso
@@ -139,7 +139,7 @@ noncomputable def endEndIso
     A ≃ₐ[k] Module.End (Module.End A M) M
 ```
 
-**`end_end_center_equiv`**, a private def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/End.lean#L266). The attribute's comment: “(5) part 3”.
+**`end_end_center_equiv`**, a private def in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 266](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/End.lean#L266). The attribute's comment: “(5) part 3”.
 
 ```lean
 private noncomputable def end_end_center_equiv (M : Type v) [AddCommGroup M]
@@ -147,7 +147,7 @@ private noncomputable def end_end_center_equiv (M : Type v) [AddCommGroup M]
     Subalgebra.center k (Module.End (Module.End A M) M) ≃ₐ[k] Subalgebra.center k A
 ```
 
-**`finrank_mul_finrank_end`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/End.lean#L293). The attribute's comment: “(5) part 4”.
+**`finrank_mul_finrank_end`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/End.lean, line 293](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/End.lean#L293). The attribute's comment: “(5) part 4”.
 
 ```lean
 theorem finrank_mul_finrank_end (M : Type v) [AddCommGroup M] [Module A M] [IsSimpleModule A M]
@@ -155,7 +155,7 @@ theorem finrank_mul_finrank_end (M : Type v) [AddCommGroup M] [Module A M] [IsSi
     Module.finrank k A * Module.finrank k (Module.End A M) = Module.finrank k M ^ 2
 ```
 
-**`simple_mod_of_wedderburn`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/Matrix.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/Matrix.lean#L20). The attribute's comment: “(4) first part”.
+**`simple_mod_of_wedderburn`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/Matrix.lean, line 20](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/Matrix.lean#L20). The attribute's comment: “(4) first part”.
 
 ```lean
 lemma simple_mod_of_wedderburn (k A : Type*) [Field k] [Ring A] [Algebra k A] {n : ℕ} [NeZero n]
@@ -164,7 +164,7 @@ lemma simple_mod_of_wedderburn (k A : Type*) [Field k] [Ring A] [Algebra k A] {n
     IsSimpleModule A (Fin n → D)
 ```
 
-**`linearEquiv_of_isSimpleModule_over_simple_ring`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/SimpleRing.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/SimpleRing.lean#L37). The attribute's comment: “(1)”. References: EGA IV (2.5.8.9), “special case”.
+**`linearEquiv_of_isSimpleModule_over_simple_ring`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/SimpleRing.lean, line 37](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/SimpleRing.lean#L37). The attribute's comment: “(1)”. References: EGA IV (2.5.8.9), “special case”.
 
 ```lean
 lemma linearEquiv_of_isSimpleModule_over_simple_ring [IsArtinianRing A] (M N : Type w)
@@ -172,7 +172,7 @@ lemma linearEquiv_of_isSimpleModule_over_simple_ring [IsArtinianRing A] (M N : T
     [IsSimpleModule A N] : Nonempty (M ≃ₗ[A] N)
 ```
 
-**`directSum_simple_module_over_simple_ring`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/SimpleRing.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/SimpleRing.lean#L53). The attribute's comment: “(2)”. References: EGA IV (2.5.8.9), “partial”.
+**`directSum_simple_module_over_simple_ring`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/SimpleRing.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/SimpleRing.lean#L53). The attribute's comment: “(2)”. References: EGA IV (2.5.8.9), “partial”.
 
 ```lean
 lemma directSum_simple_module_over_simple_ring [IsArtinianRing A] (M : Type v) [AddCommGroup M]
@@ -180,7 +180,7 @@ lemma directSum_simple_module_over_simple_ring [IsArtinianRing A] (M : Type v) [
     (ι : Type v), Nonempty (M ≃ₗ[A] (ι →₀ S))
 ```
 
-**`directSum_simple_module_over_simple_algebra`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/SimpleRing.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/SimpleRing.lean#L75). The attribute's comment: “(2)”. References: EGA IV (2.5.8.9), “partial”.
+**`directSum_simple_module_over_simple_algebra`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/SimpleRing.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/SimpleRing.lean#L75). The attribute's comment: “(2)”. References: EGA IV (2.5.8.9), “partial”.
 
 ```lean
 lemma directSum_simple_module_over_simple_algebra (M : Type v) [AddCommGroup M]
@@ -189,7 +189,7 @@ lemma directSum_simple_module_over_simple_algebra (M : Type v) [AddCommGroup M]
     Nonempty (M ≃ₗ[A] (ι →₀ S))
 ```
 
-**`linearEquiv_iff_finrank_eq_over_simple_ring`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/SimpleRing.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Morita/SimpleRing.lean#L104). The attribute's comment: “(3)”. References: EGA IV (2.5.8.9), “more general”.
+**`linearEquiv_iff_finrank_eq_over_simple_ring`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Morita/SimpleRing.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Morita/SimpleRing.lean#L104). The attribute's comment: “(3)”. References: EGA IV (2.5.8.9), “more general”.
 
 ```lean
 lemma linearEquiv_iff_finrank_eq_over_simple_ring
@@ -198,7 +198,7 @@ lemma linearEquiv_iff_finrank_eq_over_simple_ring
     [Module.Finite A N] : Nonempty (M ≃ₗ[A] N) ↔ Module.finrank k M = Module.finrank k N
 ```
 
-**`exists_isSimpleModule_and_linearEquiv_of_finite_simple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L44). The attribute's comment: “(1): existence and uniqueness of the simple module”.
+**`exists_isSimpleModule_and_linearEquiv_of_finite_simple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L44). The attribute's comment: “(1): existence and uniqueness of the simple module”.
 
 > Stacks 074E (1): a finite simple algebra `A` over a field has a simple module, and any two
 > simple `A`-modules are isomorphic.
@@ -210,7 +210,7 @@ theorem exists_isSimpleModule_and_linearEquiv_of_finite_simple :
       [IsSimpleModule A M] [IsSimpleModule A N], Nonempty (M ≃ₗ[A] N)
 ```
 
-**`isSimpleModule_and_end_algEquiv_of_wedderburn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L58). The attribute's comment: “(4): `Kⁿ` is simple with endomorphism algebra `Kᵐᵒᵖ`”.
+**`isSimpleModule_and_end_algEquiv_of_wedderburn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L58). The attribute's comment: “(4): `Kⁿ` is simple with endomorphism algebra `Kᵐᵒᵖ`”.
 
 > Stacks 074E (4): if `A ≃ₐ[k] Mₙ(K)` with `K` a skew field finite over `k`, then `Kⁿ` is a
 > simple `A`-module and `End_A(Kⁿ) ≃ₐ[k] Kᵐᵒᵖ`.
@@ -223,7 +223,7 @@ theorem isSimpleModule_and_end_algEquiv_of_wedderburn (n : ℕ) [NeZero n] (K : 
     IsSimpleModule A (Fin n → K) ∧ Nonempty (Module.End A (Fin n → K) ≃ₐ[k] Kᵐᵒᵖ)
 ```
 
-**`centerEquivCenterEnd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L96). The attribute's comment: “(5): the centers of `A` and `End_A(M)` agree”.
+**`centerEquivCenterEnd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L96). The attribute's comment: “(5): the centers of `A` and `End_A(M)` agree”.
 
 > Stacks 074E (5): the centers of `A` and of `L = Module.End A M` agree for a simple
 > `A`-module `M`.
@@ -233,7 +233,7 @@ noncomputable def centerEquivCenterEnd :
     Subalgebra.center k A ≃ₐ[k] Subalgebra.center k (Module.End A M)
 ```
 
-**`end_simple_module_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L118). The attribute's comment: “(5)”.
+**`end_simple_module_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L118). The attribute's comment: “(5)”.
 
 > Stacks 074E (5): for a simple module `M` over a finite simple `k`-algebra `A`, the algebra
 > `L = Module.End A M` is a skew field finite over `k` acting on `M`, the natural map
@@ -248,7 +248,7 @@ theorem end_simple_module_properties :
     Module.finrank k A * Module.finrank k (Module.End A M) = Module.finrank k M ^ 2
 ```
 
-**`exists_algEquiv_matrix_end_simple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L137). The attribute's comment: “(6): `End_A(N)` is a matrix algebra over `End_A(M)`”.
+**`exists_algEquiv_matrix_end_simple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L137). The attribute's comment: “(6): `End_A(N)` is a matrix algebra over `End_A(M)`”.
 
 > Stacks 074E (6): for a simple `A`-module `M` and a finite `A`-module `N`, the algebra
 > `Module.End A N` is a matrix algebra over the skew field `Module.End A M`.
@@ -258,7 +258,7 @@ theorem exists_algEquiv_matrix_end_simple [Module k M] [IsScalarTower k A M] :
     ∃ m : ℕ, Nonempty (Module.End A N ≃ₐ[k] Matrix (Fin m) (Fin m) (Module.End A M))
 ```
 
-**`toEndEndAlgHom_bijective_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L157). The attribute's comment: “(6): `A ≃ End_B(N)` for `N ≠ 0`; the zero module is excluded, see errata.md”.
+**`toEndEndAlgHom_bijective_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Morita/SimpleAlgebra.lean#L157). The attribute's comment: “(6): `A ≃ End_B(N)` for `N ≠ 0`; the zero module is excluded, see errata.md”.
 
 > Stacks 074E (6): for a nonzero finite `A`-module `N` and `B = Module.End A N`, the natural map
 > `A → Module.End B N` is a bijective `k`-algebra map.
@@ -272,7 +272,7 @@ theorem toEndEndAlgHom_bijective_of_finite [Nontrivial N] :
 
 [Tag 074F](https://stacks.math.columbia.edu/tag/074F) in the Stacks Project.
 
-**`Algebra.TensorProduct.isSimpleRing`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L192). The attribute's comment: “the first algebra is finite and central”.
+**`Algebra.TensorProduct.isSimpleRing`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L192). The attribute's comment: “the first algebra is finite and central”.
 
 > The tensor product of a central simple algebra and a simple algebra is simple.
 > This is slightly more general than the statement in the stacks project, which requires `A` to be
@@ -283,7 +283,7 @@ instance Algebra.TensorProduct.isSimpleRing [IsSimpleRing A] [Algebra.IsCentral 
     [IsSimpleRing B] : IsSimpleRing (A ⊗[K] B)
 ```
 
-**`Algebra.TensorProduct.isSimpleRing'`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L204). The attribute's comment: “the second algebra is finite and central”.
+**`Algebra.TensorProduct.isSimpleRing'`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/SimpleRing/TensorProduct.lean, line 204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/SimpleRing/TensorProduct.lean#L204). The attribute's comment: “the second algebra is finite and central”.
 
 > The tensor product of a simple algebra and a central simple algebra is simple.
 
@@ -296,13 +296,13 @@ instance Algebra.TensorProduct.isSimpleRing' [IsSimpleRing B] [Algebra.IsCentral
 
 [Tag 074G](https://stacks.math.columbia.edu/tag/074G) in the Stacks Project.
 
-**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Central/TensorProduct.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Central/TensorProduct.lean#L41). The attribute's comment: “part 2”.
+**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Central/TensorProduct.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Algebra/Central/TensorProduct.lean#L41). The attribute's comment: “part 2”.
 
 ```lean
 instance [Algebra.IsCentral k A] [Algebra.IsCentral k A'] : Algebra.IsCentral k (A ⊗[k] A')
 ```
 
-**`Algebra.TensorProduct.finite_isCentral_isSimpleRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Central/TensorProduct.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Central/TensorProduct.lean#L28). The attribute's comment: “finite, central and simple”.
+**`Algebra.TensorProduct.finite_isCentral_isSimpleRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Central/TensorProduct.lean, line 28](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Central/TensorProduct.lean#L28). The attribute's comment: “finite, central and simple”.
 
 > **Stacks 074G.** The tensor product of finite central simple algebras over a field `k` is
 > finite, central, and simple.
@@ -316,20 +316,20 @@ theorem Algebra.TensorProduct.finite_isCentral_isSimpleRing
 
 Declarations registered for the tag:
 
-- [`Module.Finite.tensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.tensorProduct#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/TensorProduct/Finite.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/TensorProduct/Finite.lean#L29) (StacksCore): “part 1”. References: EGA 0 (5.2.1), “special case”.
+- [`Module.Finite.tensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.tensorProduct#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/TensorProduct/Finite.lean, line 29](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/TensorProduct/Finite.lean#L29) (StacksCore): “part 1”. References: EGA 0 (5.2.1), “special case”.
 
 ## Tag 074H, a lemma
 
 [Tag 074H](https://stacks.math.columbia.edu/tag/074H) in the Stacks Project.
 
-**`Algebra.IsCentral.baseChange`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Central/TensorProduct.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Central/TensorProduct.lean#L45). The attribute's comment: “part 2”.
+**`Algebra.IsCentral.baseChange`**, an instance in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Central/TensorProduct.lean, line 45](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Algebra/Central/TensorProduct.lean#L45). The attribute's comment: “part 2”.
 
 ```lean
 instance Algebra.IsCentral.baseChange (L : Type*) [Field L] [Algebra k L] [Algebra.IsCentral k A] :
     Algebra.IsCentral L (L ⊗[k] A)
 ```
 
-**`Algebra.IsCentral.finiteDimensional_isCentral_isSimpleRing_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Central/BaseChangeSimple.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Central/BaseChangeSimple.lean#L29).
+**`Algebra.IsCentral.finiteDimensional_isCentral_isSimpleRing_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Central/BaseChangeSimple.lean, line 29](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Central/BaseChangeSimple.lean#L29).
 
 > **Stacks 074H.** If `A` is a finite central simple algebra over a field `k` and `L / k` is a
 > field extension, then `L ⊗[k] A` is a finite central simple algebra over `L`: it is
@@ -347,13 +347,13 @@ theorem Algebra.IsCentral.finiteDimensional_isCentral_isSimpleRing_baseChange (L
 
 Declarations registered for the tag:
 
-- [`Module.Finite.tensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.tensorProduct#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/TensorProduct/Finite.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/TensorProduct/Finite.lean#L30) (StacksCore): “part 1”. References: EGA 0 (5.2.1), “special case”.
+- [`Module.Finite.tensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Finite.tensorProduct#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/TensorProduct/Finite.lean, line 30](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/TensorProduct/Finite.lean#L30) (StacksCore): “part 1”. References: EGA 0 (5.2.1), “special case”.
 
 ## Tag 074I, a lemma
 
 [Tag 074I](https://stacks.math.columbia.edu/tag/074I) in the Stacks Project.
 
-**`centralSimpleTensorOp`**, a def in StacksCore (human-reviewed), declared in [StacksCore/Algebra/BrauerGroup/Basic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/BrauerGroup/Basic.lean#L44).
+**`centralSimpleTensorOp`**, a def in StacksCore (human-reviewed), declared in [StacksCore/Algebra/BrauerGroup/Basic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Algebra/BrauerGroup/Basic.lean#L44).
 
 ```lean
 noncomputable def centralSimpleTensorOp (n : ℕ) [IsSimpleRing A] [Algebra.IsCentral k A]
@@ -367,4 +367,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 11.4, Tag 0748](https://stacks.math.columbia.edu/tag/0748)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

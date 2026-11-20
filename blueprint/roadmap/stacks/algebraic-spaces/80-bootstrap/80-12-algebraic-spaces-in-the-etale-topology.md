@@ -8,13 +8,13 @@ proof: formalized
 
 # 80.12 Algebraic spaces in the étale topology
 
-Section 80.12 of the Stacks Project, [Tag 076L](https://stacks.math.columbia.edu/tag/076L). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 80.12 of the Stacks Project, [Tag 076L](https://stacks.math.columbia.edu/tag/076L). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 076M, a lemma
 
 [Tag 076M](https://stacks.math.columbia.edu/tag/076M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_isSheaf_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAlgebraicCriterionTag076M.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAlgebraicCriterionTag076M.lean#L80).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_isSheaf_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAlgebraicCriterionTag076M.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAlgebraicCriterionTag076M.lean#L80).
 
 > **Stacks 076M.** A presheaf of sets on the big fppf category over `S` which is a sheaf for
 > the chosen étale topology, whose diagonal is representable and which admits a surjective étale
@@ -45,7 +45,7 @@ theorem isAlgebraicSpace_of_isSheaf_etale (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 0BH4](https://stacks.math.columbia.edu/tag/0BH4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_isSheaf_etale_of_etale_space_atlas_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAtlasCriteria.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAtlasCriteria.lean#L112).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_isSheaf_etale_of_etale_space_atlas_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAtlasCriteria.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAtlasCriteria.lean#L112).
 
 > **Stacks 0BH4.** Let `F` be a presheaf of sets on the big category over `S`, which is the
 > common underlying category of the chosen big fppf and big étale sites. If `F` is a sheaf for the
@@ -72,7 +72,7 @@ theorem isAlgebraicSpace_of_isSheaf_etale_of_etale_space_atlas_unconditional
 
 [Tag 07WF](https://stacks.math.columbia.edu/tag/07WF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_isSheaf_etale_of_smooth_scheme_atlas_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAtlasCriteria.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAtlasCriteria.lean#L137).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_isSheaf_etale_of_smooth_scheme_atlas_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAtlasCriteria.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSheafAtlasCriteria.lean#L137).
 
 > **Stacks 07WF.** Let `F` be a presheaf of sets on the big category over `S`, which is the
 > common underlying category of the chosen big fppf and big étale sites. If `F` is a sheaf for the
@@ -107,7 +107,7 @@ theorem isAlgebraicSpace_of_isSheaf_etale_of_smooth_scheme_atlas_unconditional
 
 [Tag 0GE0](https://stacks.math.columbia.edu/tag/0GE0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_of_etaleSheaf_of_smooth_surjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleTopologyBootstrap.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleTopologyBootstrap.lean#L101).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_of_etaleSheaf_of_smooth_surjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleTopologyBootstrap.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleTopologyBootstrap.lean#L101).
 
 > Let `S` be a scheme contained in a big fppf site `B` and let `F` be a
 > presheaf on the common underlying category `Sch_α/S` of the big fppf and the big étale site of
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 80.12, Tag 076L](https://stacks.math.columbia.edu/tag/076L)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

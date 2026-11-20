@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.11 Finite type closed in finite presentation
 
-Section 70.11 of the Stacks Project, [Tag 07SP](https://stacks.math.columbia.edu/tag/07SP). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 70.11 of the Stacks Project, [Tag 07SP](https://stacks.math.columbia.edu/tag/07SP). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0870, a lemma
 
 [Tag 0870](https://stacks.math.columbia.edu/tag/0870) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_directed_limit_isFinitePresentation_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismDirectedLimit.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismDirectedLimit.lean#L52). The attribute's comment: “the whole statement, under the source's hypotheses only: a directed inverse system of algebraic spaces affine and of finite presentation over Y, with X its limit and the projections compatible with f”.
+**`AlgebraicGeometry.Space.exists_directed_limit_isFinitePresentation_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismDirectedLimit.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismDirectedLimit.lean#L52). The attribute's comment: “the whole statement, under the source's hypotheses only: a directed inverse system of algebraic spaces affine and of finite presentation over Y, with X its limit and the projections compatible with f”.
 
 > **Stacks 0870.** Let `S` be a scheme and let `f : X ⟶ Y` be an affine morphism of algebraic
 > spaces over `S`.  If `Y` is quasi-compact and quasi-separated, then `X` is a directed limit
@@ -47,7 +47,7 @@ theorem exists_directed_limit_isFinitePresentation_of_isAffineHom
 
 [Tag 09YA](https://stacks.math.columbia.edu/tag/09YA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.integralFiniteSystemOfIsIntegralHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralMorphismDirectedLimit.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralMorphismDirectedLimit.lean#L97).
+**`AlgebraicGeometry.Space.integralFiniteSystemOfIsIntegralHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralMorphismDirectedLimit.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/IntegralMorphismDirectedLimit.lean#L97).
 
 > **Stacks 09YA.** An integral morphism `f : X ⟶ Y` of algebraic spaces over `S`, with `Y`
 > quasi-compact and quasi-separated, presents `X` as a directed limit `X = lim X_i` of algebraic
@@ -72,7 +72,7 @@ def integralFiniteSystemOfIsIntegralHom (f : X ⟶ Y) (hX : IsAlgebraicSpace B S
 
 [Tag 07VR](https://stacks.math.columbia.edu/tag/07VR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_integralFiniteSystem_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteMorphismLimitSystem.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteMorphismLimitSystem.lean#L523). The attribute's comment: “finite X ⟶ Y, Y qcqs: X = lim of finite f.p. X\_i ⟶ Y, closed immersion transitions”.
+**`AlgebraicGeometry.Space.exists_integralFiniteSystem_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteMorphismLimitSystem.lean, line 523](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteMorphismLimitSystem.lean#L523). The attribute's comment: “finite X ⟶ Y, Y qcqs: X = lim of finite f.p. X\_i ⟶ Y, closed immersion transitions”.
 
 > **Stacks 07VR.** Let `S` be a scheme and let `f : X ⟶ Y` be a finite morphism of algebraic
 > spaces over `S`, with `Y` quasi-compact and quasi-separated.  Then `X` is the limit of a directed
@@ -102,7 +102,7 @@ theorem exists_integralFiniteSystem_of_isFinite {X Y : (BigFppfOver B S hS)ᵒ�
 
 [Tag 0A0U](https://stacks.math.columbia.edu/tag/0A0U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isLimit_closedSubspaces_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionFinitePresentationLimit.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionFinitePresentationLimit.lean#L106).
+**`AlgebraicGeometry.Space.exists_isLimit_closedSubspaces_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionFinitePresentationLimit.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionFinitePresentationLimit.lean#L106).
 
 > Let `S` be a scheme and let `f : X ⟶ Y` be a closed immersion of algebraic spaces over `S`,
 > with `Y` quasi-compact and quasi-separated. Then `X` is a directed limit `X = lim X_i`: there are a
@@ -128,7 +128,7 @@ theorem exists_isLimit_closedSubspaces_of_isClosedImmersion (Y : AlgebraicSpaces
         hle).extend (Subfunctor.toRange f)))
 ```
 
-**`AlgebraicGeometry.Space.hasClosedSubspaceApproximation_of_invariantIdeals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedSubspaceApproximation.lean, line 575](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedSubspaceApproximation.lean#L575). The attribute's comment: “given the approximating family of invariant ideal sheaves on a chart, which is Stacks 0829 for the ideal sheaf of `X` read on that chart”.
+**`AlgebraicGeometry.Space.hasClosedSubspaceApproximation_of_invariantIdeals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedSubspaceApproximation.lean, line 575](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedSubspaceApproximation.lean#L575). The attribute's comment: “given the approximating family of invariant ideal sheaves on a chart, which is Stacks 0829 for the ideal sheaf of `X` read on that chart”.
 
 > **Stacks 0A0U.** Let `S` be a scheme and let `X ⊆ Y` be a closed subspace of an algebraic
 > space `Y` over `S`.  Then `X` is a directed inverse limit `X = lim X_i` of closed subspaces of
@@ -157,7 +157,7 @@ theorem hasClosedSubspaceApproximation_of_invariantIdeals [Preorder I] [IsDirect
 
 [Tag 0871](https://stacks.math.columbia.edu/tag/0871) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFinitePresentation_isClosedImmersion_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasiAffineClosedInFinitePresentation.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasiAffineClosedInFinitePresentation.lean#L139). The attribute's comment: “for a target represented by a quasi-compact quasi-separated object of the site; a general algebraic-space target needs the unproved direction of 086S and Stacks 0870”.
+**`AlgebraicGeometry.Space.exists_isFinitePresentation_isClosedImmersion_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasiAffineClosedInFinitePresentation.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasiAffineClosedInFinitePresentation.lean#L139). The attribute's comment: “for a target represented by a quasi-compact quasi-separated object of the site; a general algebraic-space target needs the unproved direction of 086S and Stacks 0870”.
 
 > A morphism of algebraic spaces over `S` which is locally of finite type and quasi-affine,
 > whose target is the functor of points of a quasi-compact, quasi-separated scheme of the site, is a
@@ -176,7 +176,7 @@ theorem exists_isFinitePresentation_isClosedImmersion_of_isQuasiAffineHom
         IsClosedImmersion B S hS i ∧ i ≫ f' = f
 ```
 
-**`AlgebraicGeometry.Space.exists_isFinitePresentation_isClosedImmersion_of_isQuasiAffineHom_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasiAffineClosedInFinitePresentationQcqs.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasiAffineClosedInFinitePresentationQcqs.lean#L119).
+**`AlgebraicGeometry.Space.exists_isFinitePresentation_isClosedImmersion_of_isQuasiAffineHom_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasiAffineClosedInFinitePresentationQcqs.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasiAffineClosedInFinitePresentationQcqs.lean#L119).
 
 > Let `S` be a scheme and let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S` which is locally of finite type and quasi-affine, with `Y` quasi-compact and
@@ -201,13 +201,13 @@ theorem exists_isFinitePresentation_isClosedImmersion_of_isQuasiAffineHom_of_qcq
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.exists_isClosedImmersion_isFinitePresentation_of_isLocallyOfFiniteType`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeClosedInFinitePresentation.lean#L45), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeClosedInFinitePresentationTag.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeClosedInFinitePresentationTag.lean#L25) (StacksFrontier): “a morphism of algebraic spaces over `S`, locally of finite type, with source and target quasi-compact and quasi-separated, is a closed immersion `i : X ⟶ X'` followed by a morphism of finite presentation `f' : X' ⟶ Y` with `i ≫ f' = f`”.
+- [`AlgebraicGeometry.Space.exists_isClosedImmersion_isFinitePresentation_of_isLocallyOfFiniteType`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeClosedInFinitePresentation.lean#L45), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeClosedInFinitePresentationTag.lean, line 25](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeClosedInFinitePresentationTag.lean#L25) (StacksFrontier): “a morphism of algebraic spaces over `S`, locally of finite type, with source and target quasi-compact and quasi-separated, is a closed immersion `i : X ⟶ X'` followed by a morphism of finite presentation `f' : X' ⟶ Y` with `i ≫ f' = f`”.
 
 ## Tag 0873, a proposition
 
 [Tag 0873](https://stacks.math.columbia.edu/tag/0873) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isClosedImmersion_isSeparated_isFinitePresentation_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean#L196).
+**`AlgebraicGeometry.Space.exists_isClosedImmersion_isSeparated_isFinitePresentation_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean#L196).
 
 > Let `f : X ⟶ Y` be a separated morphism of finite type of algebraic spaces over `S`, with `Y`
 > quasi-compact and quasi-separated. Then there are a separated morphism of finite presentation
@@ -231,4 +231,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.11, Tag 07SP](https://stacks.math.columbia.edu/tag/07SP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

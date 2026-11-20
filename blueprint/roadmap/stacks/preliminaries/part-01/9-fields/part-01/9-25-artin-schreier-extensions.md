@@ -8,13 +8,13 @@ proof: formalized
 
 # 9.25 Artin-Schreier extensions
 
-Section 9.25 of the Stacks Project, [Tag 09I7](https://stacks.math.columbia.edu/tag/09I7). 1 tag here is carried by 1 declaration of the repository (in StacksCore), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 9.25 of the Stacks Project, [Tag 09I7](https://stacks.math.columbia.edu/tag/09I7). 1 tag here is carried by 1 declaration of the repository (in StacksCore), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09DY, a lemma
 
 [Tag 09DY](https://stacks.math.columbia.edu/tag/09DY) in the Stacks Project.
 
-**`IsGalois.exists_artinSchreier_of_finrank_eq_char`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/FieldTheory/ArtinSchreier.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/FieldTheory/ArtinSchreier.lean#L278).
+**`IsGalois.exists_artinSchreier_of_finrank_eq_char`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/FieldTheory/ArtinSchreier.lean, line 278](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/FieldTheory/ArtinSchreier.lean#L278).
 
 > **Stacks 09DY**.
 > Let `F` be a field of characteristic `p > 0` and let `K/F` be a Galois extension of degree `p`.
@@ -34,4 +34,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 9.25, Tag 09I7](https://stacks.math.columbia.edu/tag/09I7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

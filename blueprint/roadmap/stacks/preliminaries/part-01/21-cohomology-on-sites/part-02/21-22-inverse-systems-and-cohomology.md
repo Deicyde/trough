@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.22 Inverse systems and cohomology
 
-Section 21.22 of the Stacks Project, [Tag 0GYP](https://stacks.math.columbia.edu/tag/0GYP). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.22 of the Stacks Project, [Tag 0GYP](https://stacks.math.columbia.edu/tag/0GYP). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GYQ, a lemma
 
 [Tag 0GYQ](https://stacks.math.columbia.edu/tag/0GYQ) in the Stacks Project.
 
-**`Stacks.Cohomology.AdicInverseSystems.exists_uniform_stable_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/MittagLeffler.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/MittagLeffler.lean#L274). The attribute's comment: “the uniform shift of the footnote”. References: SGA 2 IX (2.1), “(iii)”.
+**`Stacks.Cohomology.AdicInverseSystems.exists_uniform_stable_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/MittagLeffler.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/MittagLeffler.lean#L274). The attribute's comment: “the uniform shift of the footnote”. References: SGA 2 IX (2.1), “(iii)”.
 
 > **Stacks Project, Tag 0GYQ**, the footnote: the images of `Hᵖ(C, F_k) → Hᵖ(C, Fᵢ)` are the
 > stable image already at `k = i + c`, for one `c` independent of `i`.
@@ -26,7 +26,7 @@ theorem exists_uniform_stable_image (hacc : WellFoundedGT (GradedSubmodule hF p)
         transitionImage (F ⋙ globalModuleCohomology.{u, v, r, w} O p) i (i + c) (by omega)
 ```
 
-**`Stacks.Cohomology.AdicInverseSystems.isMittagLefflerCategorical_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/MittagLeffler.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/MittagLeffler.lean#L308).
+**`Stacks.Cohomology.AdicInverseSystems.isMittagLefflerCategorical_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/MittagLeffler.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/MittagLeffler.lean#L308).
 
 > **Stacks Project, Tag 0GYQ.** For an inverse system of sheaves of modules on a site with
 > `Fₙ = Fₙ₊₁/IⁿFₙ₊₁`, the ascending chain condition on the graded submodules of
@@ -42,7 +42,7 @@ theorem isMittagLefflerCategorical_cohomology (hacc : WellFoundedGT (GradedSubmo
 
 [Tag 0GYR](https://stacks.math.columbia.edu/tag/0GYR) in the Stacks Project.
 
-**`Stacks.Cohomology.AdicInverseSystems.exists_uniform_stable_image_of_stableImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean#L134). The attribute's comment: “the footnote: a uniform shift `c` with `Im(Mₙ → M_{n-c})` the stable image”.
+**`Stacks.Cohomology.AdicInverseSystems.exists_uniform_stable_image_of_stableImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean#L134). The attribute's comment: “the footnote: a uniform shift `c` with `Im(Mₙ → M_{n-c})` the stable image”.
 
 > **Stacks Project, Tag 0GYR**, the footnote: the images of `Hᵖ(C, F_k) → Hᵖ(C, Fᵢ)` are the
 > stable image already at `k = i + c`, for one `c` independent of `i`. In Stacks' indexing
@@ -58,7 +58,7 @@ theorem exists_uniform_stable_image_of_stableImages
         transitionImage (F ⋙ globalModuleCohomology.{u, v, r, w} O p) i (i + c) (by omega)
 ```
 
-**`Stacks.Cohomology.AdicInverseSystems.isMittagLefflerCategorical_cohomology_of_stableImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean#L171). The attribute's comment: “the Mittag-Leffler condition; the footnote's uniform shift is `exists_uniform_stable_image_of_stableImages`”.
+**`Stacks.Cohomology.AdicInverseSystems.isMittagLefflerCategorical_cohomology_of_stableImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean#L171). The attribute's comment: “the Mittag-Leffler condition; the footnote's uniform shift is `exists_uniform_stable_image_of_stableImages`”.
 
 > **Stacks Project, Tag 0GYR.** For an inverse system of sheaves of modules on a site with
 > `Fₙ = Fₙ₊₁/IⁿFₙ₊₁`, the ascending chain condition on the graded submodules of `⨁ₙ Nₙ`, where
@@ -76,7 +76,7 @@ theorem isMittagLefflerCategorical_cohomology_of_stableImages
 
 [Tag 0GYS](https://stacks.math.columbia.edu/tag/0GYS) in the Stacks Project.
 
-**`Stacks.Cohomology.AdicInverseSystems.limitTopology_eq_adicModuleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/LimitTopology.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/LimitTopology.lean#L543).
+**`Stacks.Cohomology.AdicInverseSystems.limitTopology_eq_adicModuleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/LimitTopology.lean, line 543](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/LimitTopology.lean#L543).
 
 > **Stacks Project, Tag 0GYS.** For an inverse system of sheaves of modules on a site with
 > `Fₙ = Fₙ₊₁/IⁿFₙ₊₁`, the ascending chain condition on `⨁ₙ Hᵖ(C, IⁿFₙ₊₁)` as a graded
@@ -96,7 +96,7 @@ theorem limitTopology_eq_adicModuleTopology (hF : IsAdicQuotientSystem O I F) (p
 
 [Tag 0GYT](https://stacks.math.columbia.edu/tag/0GYT) in the Stacks Project.
 
-**`Stacks.Cohomology.AdicInverseSystems.limitTopology_eq_adicModuleTopology_of_stableImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean#L373).
+**`Stacks.Cohomology.AdicInverseSystems.limitTopology_eq_adicModuleTopology_of_stableImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/InverseSystems/AdicQuotientSystems/StableImages.lean#L373).
 
 > **Stacks Project, Tag 0GYT.** For an inverse system of sheaves of modules on a site with
 > `Fₙ = Fₙ₊₁/IⁿFₙ₊₁`, the ascending chain condition on `⨁ₙ Nₙ` as a graded `⨁ₙ Iⁿ/Iⁿ⁺¹`-module,
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.22, Tag 0GYP](https://stacks.math.columbia.edu/tag/0GYP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

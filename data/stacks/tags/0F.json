@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0F00",
@@ -4145,7 +4145,7 @@
      "line": 33,
      "private": false,
      "doc": "**Stacks 0F4E.** Let `(C, J)` be a site and `u : C ⥤ Type u` a functor whose category of\nneighbourhoods `u.Elements` (pairs `(U, x)` with `x ∈ u(U)`) is cofiltered. Then the stalk functor\n`Sh(C) ⥤ Set`, sending a sheaf `𝓕` to `colim_{(U, x) ∈ u.Elementsᵒᵖ} 𝓕(U)` (Stacks 04EH), is left\nexact, i.e. it preserves finite limits. Exactly the Stacks hypotheses: `u` is an arbitrary functor\nwith cofiltered category of neighbourhoods, and no covering condition on `u` is required.",
-     "statement": "theorem preservesFiniteLimits_sheafToPresheaf_comp_stalk\n    {C : Type u} [SmallCategory C] (J : GrothendieckTopology C)\n    (u : C ⥤ Type u) [IsCofiltered u.Elements] :\n    Limits.PreservesFiniteLimits (sheafToPresheaf J (Type u) ⋙\n      (Functor.whiskeringLeft _ _ (Type u)).obj (CategoryOfElements.π u).op ⋙ Limits.colim)",
+     "statement": "theorem preservesFiniteLimits_sheafToPresheaf_comp_stalk\n    {C : Type u} [SmallCategory C] (J : GrothendieckTopology C)\n    (u : C ⥤ Type u) [IsCofiltered u.Elements] :\n    Limits.PreservesFiniteLimits (sheafToPresheaf J (Type u) ⋙\n      (Functor.whiskeringLeft _ _ (Type u)).obj (Functor.Elements.π u).op ⋙ Limits.colim)",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -9693,7 +9693,7 @@
     {
      "name": "Stacks.Divisors.Eta.etaSectionsIso",
      "kind": "def",
-     "line": 861,
+     "line": 862,
      "private": false,
      "doc": "**[Stacks, Tag 0F8M], second assertion.** Let `Y` be a scheme, let `D ⊆ Y` be an effective\nCartier divisor with ideal sheaf `I ⊆ 𝒪_Y`, and let `F^•` be a complex of quasi-coherent\n`𝒪_Y`-modules whose terms are `I`-torsion free. If `U ⊆ Y` is affine open and `D ∩ U = V(f)`,\nthen `η_f(F^•(U))` is canonically isomorphic to `(η_I F^•)(U)`.",
      "statement": "noncomputable def etaSectionsIso (D : Y.IdealSheafData)\n    [Stacks.Divisors.IsEffectiveCartierDivisor D]\n    (F : CochainComplex (SheafOfModules.{u} Oᵧ) ℤ)\n    (_hqc : ∀ n : ℤ, (F.X n).IsQuasicoherent)\n    (htf : ∀ n : ℤ,\n      Stacks.IdealTorsion.IsIdealTorsionFree Y.toRingedSpace (idealSheafι D) (F.X n))\n    (U : Y.Opens) (_hU : IsAffineOpen U)\n    (g : (idealSheaf D).val.obj (op U))\n    (hg : Stacks.IdealTorsion.GeneratesIdealOn Y.toRingedSpace U g) :\n    EtaComplex.etaObject\n        (Stacks.IdealTorsion.Eta.generatorSection Y.toRingedSpace (idealSheafι D) U g)\n        (Stacks.IdealTorsion.Eta.sectionsComplex Y.toRingedSpace F U) ≅\n      Stacks.IdealTorsion.Eta.sectionsComplex Y.toRingedSpace\n        (etaObj Y.toRingedSpace (idealSheaf D) (idealSheafι D) F htf) U",
@@ -9727,7 +9727,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.etaCohomologyIso",
      "kind": "def",
-     "line": 1352,
+     "line": 1340,
      "private": false,
      "doc": "**Stacks Project, Tag 0F8N.**  In Situation 0GT4, for a complex `F` of `I`-torsion-free\n`O_X`-modules there is a canonical isomorphism\n`I^{⊗ n} ⊗ (H^n(F)/H^n(F)[I]) ≅ H^n(η_I F)` of cohomology sheaves, where `H^n(F)[I]` is the\nsubsheaf of `H^n(F)` annihilated by `I`, realized as the ideal-power annihilator subsheaf of\nTag 0GT5, and the quotient as the cokernel of its inclusion.",
      "statement": "public noncomputable def etaCohomologyIso (I : SheafOfModules.{u} Oₓ) (ι : I ⟶ 𝒪) [Mono ι]\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property I]\n    (F : CochainComplex (SheafOfModules.{u} Oₓ) ℤ)\n    (hF : ∀ n : ℤ, IsIdealTorsionFree X ι (F.X n))\n    (n : ℤ) :\n    idealPowerTerm X I n\n        (cokernel (idealPowerAnnihilatorSubsheaf X ι (F.homology n) 1).ι) ≅\n      (etaObj X I ι F hF).homology n",
@@ -9741,7 +9741,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.etaCohomologyIso_hom",
      "kind": "theorem",
-     "line": 1368,
+     "line": 1356,
      "private": false,
      "doc": "**Stacks Project, Tag 0F8N.**  The isomorphism of Tag 0F8N is the one the source writes\ndown: precomposed with the twisted quotient map it is `etaHomologyMap`, which by\n`etaHomologyMap_cycles` and `etaCyclesIso_hom_fst` sends a twisted cocycle `g ⊗ s` to the class\nof the cocycle of `η_I F` with underlying section `g s`.  Since the twisted quotient map is an\nepimorphism, this determines the isomorphism uniquely.",
      "statement": "public theorem etaCohomologyIso_hom (I : SheafOfModules.{u} Oₓ) (ι : I ⟶ 𝒪) [Mono ι]\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property I]\n    (F : CochainComplex (SheafOfModules.{u} Oₓ) ℤ)\n    (hF : ∀ n : ℤ, IsIdealTorsionFree X ι (F.X n))\n    (n : ℤ) :\n    idealPowerMap X I n\n        (cokernel.π (idealPowerAnnihilatorSubsheaf X ι (F.homology n) 1).ι) ≫\n      (etaCohomologyIso X I ι F hF n).hom = etaHomologyMap X I ι F hF n",
@@ -12674,7 +12674,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.IdealPowerTensorComparison.map_eq",
      "kind": "theorem",
-     "line": 1014,
+     "line": 996,
      "private": false,
      "doc": "Any two such comparisons agree in **every** integer degree, negative ones included: the\ndegree-`0` normalization starts the recursion, and the recursion runs downwards as well as\nupwards because tensoring by `I` is an equivalence, hence faithful.",
      "statement": "public theorem IdealPowerTensorComparison.map_eq (I L : SheafOfModules.{u} Oₓ)\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property I]\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property L]\n    (c d : IdealPowerTensorComparison X I L) (n : ℤ) (M : SheafOfModules.{u} Oₓ) :\n    c.map n M = d.map n M",
@@ -12688,7 +12688,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.etaTensorInvertible",
      "kind": "def",
-     "line": 1148,
+     "line": 1130,
      "private": false,
      "doc": "**Stacks Project, Tag 0F9W.** Décalage by an invertible ideal commutes with tensoring by an\ninvertible module: the décalage of `F ⊗ L` is canonically isomorphic to the décalage of `F`\ntensored by `L`.",
      "statement": "public noncomputable def etaTensorInvertible (I : SheafOfModules.{u} Oₓ) (ι : I ⟶ 𝒪) [Mono ι]\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property I]\n    (L : SheafOfModules.{u} Oₓ)\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property L]\n    (F : CochainComplex (SheafOfModules.{u} Oₓ) ℤ)\n    (hF : ∀ n : ℤ, IsIdealTorsionFree X ι (F.X n)) :\n    etaObj X I ι\n          ((((Stacks.SheafOfModules.Tensor.sheafTensor.{_, _, u, u, u} X.sheaf).flip.obj\n            L).mapHomologicalComplex\n            (ComplexShape.up ℤ)).obj F)\n          (fun n => idealTorsionFree_tensorInvertible X I ι L (F.X n) (hF n)) ≅\n        (((Stacks.SheafOfModules.Tensor.sheafTensor.{_, _, u, u, u} X.sheaf).flip.obj\n          L).mapHomologicalComplex\n          (ComplexShape.up ℤ)).obj (etaObj X I ι F hF)",
@@ -12702,7 +12702,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.etaTensorInvertible_fst",
      "kind": "theorem",
-     "line": 1195,
+     "line": 1177,
      "private": false,
      "doc": "On the first projection of the defining fibre product, the comparison of Tag 0F9W is the\ninterchange of the `n`-th ideal power with the invertible tensor factor.",
      "statement": "public theorem etaTensorInvertible_fst (I : SheafOfModules.{u} Oₓ) (ι : I ⟶ 𝒪) [Mono ι]\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property I]\n    (L : SheafOfModules.{u} Oₓ)\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property L]\n    (F : CochainComplex (SheafOfModules.{u} Oₓ) ℤ)\n    (hF : ∀ n : ℤ, IsIdealTorsionFree X ι (F.X n)) (n : ℤ) :\n    (etaTensorInvertible X I ι L F hF).hom.f n ≫\n        ((Stacks.SheafOfModules.Tensor.sheafTensor.{_, _, u, u, u} X.sheaf).flip.obj L).map\n          (X := etaTerm X I ι F n) (Y := idealPowerTerm X I n (F.X n))\n          (pullback.fst (idealPowerMap X I n (F.d n (n + 1)))\n            (idealPowerIncl X I ι n (F.X (n + 1)))) =\n      pullback.fst _ _ ≫ (idealPowerTensorIso X I L (F.X n) n).hom",
@@ -12716,7 +12716,7 @@
     {
      "name": "Stacks.IdealTorsion.Eta.etaTensorInvertible_snd",
      "kind": "theorem",
-     "line": 1212,
+     "line": 1194,
      "private": false,
      "doc": "On the second projection of the defining fibre product, the comparison of Tag 0F9W is the\ninterchange of the `(n+1)`-st ideal power with the invertible tensor factor.",
      "statement": "public theorem etaTensorInvertible_snd (I : SheafOfModules.{u} Oₓ) (ι : I ⟶ 𝒪) [Mono ι]\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property I]\n    (L : SheafOfModules.{u} Oₓ)\n    [Stacks.SheafOfModules.IsInvertible X.presheaf (Oₓ).property L]\n    (F : CochainComplex (SheafOfModules.{u} Oₓ) ℤ)\n    (hF : ∀ n : ℤ, IsIdealTorsionFree X ι (F.X n)) (n : ℤ) :\n    (etaTensorInvertible X I ι L F hF).hom.f n ≫\n        ((Stacks.SheafOfModules.Tensor.sheafTensor.{_, _, u, u, u} X.sheaf).flip.obj L).map\n          (X := etaTerm X I ι F n) (Y := idealPowerTerm X I (n + 1) (F.X (n + 1)))\n          (pullback.snd (idealPowerMap X I n (F.d n (n + 1)))\n            (idealPowerIncl X I ι n (F.X (n + 1)))) =\n      pullback.snd _ _ ≫ (idealPowerTensorIso X I L (F.X (n + 1)) (n + 1)).hom",
@@ -15810,7 +15810,7 @@
     {
      "name": "Stacks.Chow.blowupAtInfinity",
      "kind": "def",
-     "line": 225,
+     "line": 226,
      "private": false,
      "doc": "**The deformation space `W` of Stacks 0FBG**: the blowup of `𝐏¹_X` in the centre `∞(Z)`.",
      "statement": "def blowupAtInfinity : Scheme.{u}",
@@ -15824,7 +15824,7 @@
     {
      "name": "Stacks.Chow.blowupAtInfinityToLine",
      "kind": "def",
-     "line": 230,
+     "line": 231,
      "private": false,
      "doc": "**The structure morphism `b : W ⟶ 𝐏¹_X`** of the blowup at infinity.",
      "statement": "def blowupAtInfinityToLine : blowupAtInfinity ℐ ⟶ relativeProjectiveLine X",
@@ -15838,7 +15838,7 @@
     {
      "name": "Stacks.Chow.exceptionalIdealAtInfinity",
      "kind": "def",
-     "line": 240,
+     "line": 241,
      "private": false,
      "doc": "The ideal of the exceptional divisor `E ⊆ W`: the inverse image of the centre `∞(Z)`\nalong `b`.",
      "statement": "def exceptionalIdealAtInfinity : (blowupAtInfinity ℐ).IdealSheafData",
@@ -15852,7 +15852,7 @@
     {
      "name": "Stacks.Chow.fibreIdealAtInfinity",
      "kind": "def",
-     "line": 246,
+     "line": 247,
      "private": false,
      "doc": "The ideal of the fibre at infinity `W_∞ ⊆ W`: the inverse image along `b` of the divisor at\ninfinity `(𝐏¹_X)_∞`.",
      "statement": "def fibreIdealAtInfinity : (blowupAtInfinity ℐ).IdealSheafData",
@@ -15866,7 +15866,7 @@
     {
      "name": "Stacks.Chow.fibreIdealAtInfinity_le_exceptionalIdealAtInfinity",
      "kind": "theorem",
-     "line": 257,
+     "line": 258,
      "private": false,
      "doc": "`E` is contained in `W_∞`: the centre `∞(Z)` contains the divisor at infinity, so its\ninverse image along `b` does too.",
      "statement": "theorem fibreIdealAtInfinity_le_exceptionalIdealAtInfinity :\n    fibreIdealAtInfinity ℐ ≤ exceptionalIdealAtInfinity ℐ",
@@ -15880,7 +15880,7 @@
     {
      "name": "Stacks.Chow.isEffectiveCartierDivisor_fibreIdealAtInfinity",
      "kind": "theorem",
-     "line": 266,
+     "line": 267,
      "private": false,
      "doc": "The fibre at infinity `W_∞` is an effective Cartier divisor on `W`: the divisor at infinity\nof `𝐏¹_X` is one, and the inverse image of an effective Cartier divisor under a blowup is again\none.",
      "statement": "theorem isEffectiveCartierDivisor_fibreIdealAtInfinity :\n    Stacks.Divisors.IsEffectiveCartierDivisor (fibreIdealAtInfinity ℐ)",
@@ -15894,7 +15894,7 @@
     {
      "name": "Stacks.Chow.exists_isEffectiveCartierDivisor_fibreIdealAtInfinity_eq",
      "kind": "theorem",
-     "line": 276,
+     "line": 277,
      "private": false,
      "doc": "**The fibre at infinity decomposes as `W_∞ = D + E`.** Both `E` and `W_∞` are effective\nCartier divisors on `W` and `E ⊆ W_∞`, so `W_∞` is the sum of `E` and a third effective Cartier\ndivisor `D`, written in the ideal-sheaf presentation `ℐ_{W_∞} = ℐ_E · ℐ_D`. That `D` is the\ndivisor `X'` is `Stacks.Chow.eq_strictTransformIdealAtInfinity_of_mul_eq`.",
      "statement": "theorem exists_isEffectiveCartierDivisor_fibreIdealAtInfinity_eq :\n    ∃ D : (blowupAtInfinity ℐ).IdealSheafData,\n      Stacks.Divisors.IsEffectiveCartierDivisor D ∧\n        fibreIdealAtInfinity ℐ = exceptionalIdealAtInfinity ℐ * D",
@@ -15908,7 +15908,7 @@
     {
      "name": "Stacks.Chow.blowUpToBlowupAtInfinity",
      "kind": "def",
-     "line": 300,
+     "line": 301,
      "private": false,
      "doc": "**The closed immersion `X' ⟶ W`** of the commutative square of Stacks 0FBG: the blowup `X'`\nof `X` in `Z` is the classifying morphism of `X' ⟶ X ⟶ 𝐏¹_X` for the centre `∞(Z)`.",
      "statement": "def blowUpToBlowupAtInfinity : blowUp ℐ ⟶ blowupAtInfinity ℐ",
@@ -15922,7 +15922,7 @@
     {
      "name": "Stacks.Chow.blowUpToBlowupAtInfinity_comp",
      "kind": "theorem",
-     "line": 314,
+     "line": 315,
      "private": false,
      "doc": "The square of Stacks 0FBG commutes: `X' ⟶ W ⟶ 𝐏¹_X` equals `X' ⟶ X ⟶ 𝐏¹_X`.",
      "statement": "theorem blowUpToBlowupAtInfinity_comp :\n    blowUpToBlowupAtInfinity ℐ ≫ blowupAtInfinityToLine ℐ =\n      blowUpToBase ℐ ≫ lineInfinitySection X",
@@ -15936,7 +15936,7 @@
     {
      "name": "Stacks.Chow.comap_exceptionalIdealAtInfinity",
      "kind": "theorem",
-     "line": 330,
+     "line": 331,
      "private": false,
      "doc": "**Stacks 0FBG, assertion (3).** The inverse image of the exceptional divisor `E ⊆ W` on\n`X'` is the exceptional divisor of the blowup `X' ⟶ X` of `X` in `Z`; that is, `X' ∩ E` is the\nexceptional divisor of `X' ⟶ X`.",
      "statement": "theorem comap_exceptionalIdealAtInfinity :\n    (exceptionalIdealAtInfinity ℐ).comap (blowUpToBlowupAtInfinity ℐ) = exceptionalIdeal ℐ",
@@ -15950,7 +15950,7 @@
     {
      "name": "Stacks.Chow.lineToBlowupAtInfinity",
      "kind": "def",
-     "line": 375,
+     "line": 376,
      "private": false,
      "doc": "**Stacks 0FBG, assertion (8), the morphism.** The closed immersion `𝐏¹_Z ⟶ W`: the\nclassifying morphism for the centre `∞(Z)` of the inclusion `𝐏¹_Z ⟶ 𝐏¹_X`, along which `∞(Z)`\npulls back to the divisor at infinity of `𝐏¹_Z`.",
      "statement": "def lineToBlowupAtInfinity :\n    relativeProjectiveLine ℐ.subscheme ⟶ blowupAtInfinity ℐ",
@@ -15964,7 +15964,7 @@
     {
      "name": "Stacks.Chow.lineToBlowupAtInfinity_comp",
      "kind": "theorem",
-     "line": 388,
+     "line": 389,
      "private": false,
      "doc": "**Stacks 0FBG, assertion (8), the triangle.** The composite of `𝐏¹_Z ⟶ W` with `b` is the\ninclusion morphism `𝐏¹_Z ⟶ 𝐏¹_X`.",
      "statement": "theorem lineToBlowupAtInfinity_comp :\n    lineToBlowupAtInfinity ℐ ≫ blowupAtInfinityToLine ℐ =\n      projectiveLineBaseChange ℐ.subschemeι",
@@ -15978,7 +15978,7 @@
     {
      "name": "Stacks.Chow.isIso_blowupAtInfinityToLine_restrict",
      "kind": "theorem",
-     "line": 426,
+     "line": 427,
      "private": false,
      "doc": "**Stacks 0FBG, assertion (1).** The blowup at infinity is an isomorphism over\n`𝐀¹_X ∪ 𝐏¹_{X ∖ Z}`: that open misses the centre, and a blowup is an isomorphism over the\ncomplement of its centre.",
      "statement": "theorem isIso_blowupAtInfinityToLine_restrict :\n    IsIso (blowupAtInfinityToLine ℐ ∣_ isomorphismLocusAtInfinity ℐ)",
@@ -21707,7 +21707,7 @@
     {
      "name": "Stacks.Chow.SmoothFactorization.exists_refines_both",
      "kind": "theorem",
-     "line": 288,
+     "line": 290,
      "private": false,
      "doc": "**Stacks 0FF2, first step.** Any two factorizations of `f` as an immersion followed by a\nsmooth morphism are refined by a common one, namely the factorization through the fibre product\nof their intermediate schemes over `Y`. The independence of `f^!` therefore reduces to the case\nof a refining pair.",
      "statement": "theorem SmoothFactorization.exists_refines_both :\n    ∃ F'' : SmoothFactorization f, F''.Refines F ∧ F''.Refines F'",
@@ -21721,7 +21721,7 @@
     {
      "name": "Stacks.Chow.SmoothFactorization.isRegularImmersion_refinementSection",
      "kind": "theorem",
-     "line": 394,
+     "line": 396,
      "private": false,
      "doc": "**Stacks 0FF2, second step: regularity of `s`.** The section `s = (1, i')` of the smooth\nretraction `p̄` is a regular immersion, by Stacks 067R. Together with the regularity of `j` this\nis what makes both Gysin classes in the Stacks Project's identity `(i')^! = s^! ∘ j^!`\n(Stacks 0FF0) available.",
      "statement": "theorem SmoothFactorization.isRegularImmersion_refinementSection :\n    IsRegularImmersion (F.refinementSection p hp)",
@@ -30738,7 +30738,7 @@
      "line": 245,
      "private": false,
      "doc": "**Stacks Project, Tag 0FM2.** On the `(p, q)` summand of the total complex the wedge product\nsends a local pure tensor `ω ⊗ η` to the wedge product `ω ∧ η`.\n\nThe two sides live in the exterior powers of degrees `((p + q : ℕ) : ℤ)` and `(p : ℤ) + q`, which\nis why this is a heterogeneous equality.",
-     "statement": "theorem wedgeProduct_summand_unit_apply (p q : ℕ) (U : (Opens X.carrier)ᵒᵖ)\n    (ω : (deRhamTerm B p).val.obj U) (η : (deRhamTerm B q).val.obj U) :\n    HEq ((HomologicalComplex.ιMapBifunctor\n      (D := _root_.SheafOfModules.{u}\n        (Stacks.SheafOfModules.Tensor.ringSheaf.{u, u, u} A))\n            (deRhamComplex B D) (deRhamComplex B D)\n            (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u} A) (ComplexShape.up ℕ) p q\n              (p + q) rfl ≫\n          (wedgeProduct B D).f (p + q)).val.app U\n        (((PresheafOfModules.sheafificationAdjunction\n          (R := Stacks.SheafOfModules.Tensor.ringSheaf A)\n          (𝟙 (Stacks.SheafOfModules.Tensor.ringSheaf A).obj)).unit.app\n          (PresheafOfModules.tensorObj ((deRhamTerm B p)).val ((deRhamTerm B q)).val)).app U\n            (ω ⊗ₜ[A.obj.obj U] η)))\n      ((B.exterior.mul (p : ℤ) (q : ℤ)).app U ω η)",
+     "statement": "theorem wedgeProduct_summand_unit_apply (p q : ℕ) (U : (Opens X.carrier)ᵒᵖ)\n    (ω : (deRhamTerm B p).val.obj U) (η : (deRhamTerm B q).val.obj U) :\n    HEq ((HomologicalComplex.ιMapBifunctor\n      (D := _root_.SheafOfModules.{u}\n        (Stacks.SheafOfModules.Tensor.ringSheaf.{u, u, u} A))\n            (deRhamComplex B D) (deRhamComplex B D)\n            (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u} A) (ComplexShape.up ℕ) p q\n              (p + q) rfl ≫\n          (wedgeProduct B D).f (p + q)).val.app U\n        (((Stacks.SheafOfModules.Tensor.sheafificationAdjunction A).unit.app\n          (PresheafOfModules.tensorObj ((deRhamTerm B p)).val ((deRhamTerm B q)).val)).app U\n            (ω ⊗ₜ[A.obj.obj U] η)))\n      ((B.exterior.mul (p : ℤ) (q : ℤ)).app U ω η)",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -30783,7 +30783,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.wedgeProduct_summand_assoc",
      "kind": "theorem",
-     "line": 431,
+     "line": 429,
      "private": false,
      "doc": "**Stacks Project, Tag 0FM3.** The wedge product of Tag 0FM2 is **associative** on the summands\nof the total complex: the two bracketings of a triple wedge of local forms agree.\n\nThis is the associativity clause of the proof of Tag 0FM3, \"the fact that `∧` is associative\"; the\nassociativity of the cup product on `H^*_{dR}` is this together with Cohomology, Tag 0FP4.",
      "statement": "theorem wedgeProduct_summand_assoc (p q r : ℕ) (U : (Opens X.carrier)ᵒᵖ)\n    (ω : (deRhamTerm B p).val.obj U) (η : (deRhamTerm B q).val.obj U)\n    (ζ : (deRhamTerm B r).val.obj U) :\n    HEq (summandValue B D (wedgeProduct B D) (p + q) r U\n        (summandValue B D (wedgeProduct B D) p q U ω η) ζ)\n      (summandValue B D (wedgeProduct B D) p (q + r) U ω\n        (summandValue B D (wedgeProduct B D) q r U η ζ))",
@@ -30797,7 +30797,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.wedgeProduct_summand_comm",
      "kind": "theorem",
-     "line": 454,
+     "line": 452,
      "private": false,
      "doc": "**Stacks Project, Tag 0FM3.** The wedge product of Tag 0FM2 is **graded commutative** on the\nsummands of the total complex: on the local pure tensor `ω ⊗ η` of a `p`-form and a `q`-form its\nvalue is `(-1)^{pq}` times its value on `η ⊗ ω`.\n\nThis is the graded commutativity clause of the proof of Tag 0FM3, \"the fact that `∧` is graded\ncommutative\"; the graded commutativity of the cup product on `H^*_{dR}` is this together with\nCohomology, Tag 0FP5.",
      "statement": "theorem wedgeProduct_summand_comm (p q : ℕ) (U : (Opens X.carrier)ᵒᵖ)\n    (ω : (deRhamTerm B p).val.obj U) (η : (deRhamTerm B q).val.obj U) :\n    HEq (summandValue B D (wedgeProduct B D) p q U ω η)\n      ((-1 : ℤ) ^ (p * q) • summandValue B D (wedgeProduct B D) q p U η ω)",
@@ -32275,9 +32275,9 @@
     {
      "name": "CategoryTheory.Adjunction.existsUnique_homEquiv_of_isRightDerivedValueAt",
      "kind": "theorem",
-     "line": 610,
+     "line": 611,
      "private": false,
-     "doc": "**Stacks 0FND**: deriving adjoints. Let `F : 𝒟 ⥤ 𝒟'` be right adjoint to `G : 𝒟' ⥤ 𝒟`, let\n`S`, `S'` be classes of morphisms of `𝒟`, `𝒟'` admitting left, resp. right fractions, and let\n`Q : 𝒟 ⥤ S⁻¹𝒟` and `Q' : 𝒟' ⥤ (S')⁻¹𝒟'` be localization functors. Let `K` be an object of `𝒟`\nat which the right derived functor `RF` of `Q' ∘ F` is defined, with value `RF(K) = c.pt`, and\nlet `M` be an object of `𝒟'` at which the left derived functor `LG` of `Q ∘ G` is defined, with\nvalue `LG(M) = d.pt.unop` (the left derived value is the right derived value of the opposite\nfunctors, as in Stacks 05S9). Then there is a unique bijection\n`Hom_{(S')⁻¹𝒟'}(M, RF(K)) ≃ Hom_{S⁻¹𝒟}(LG(M), K)` compatible with the fractions computing the\ntwo sides: for every index `s : K ⟶ I` of the ind-object defining `RF(K)`, every index\n`t : P ⟶ M` of the pro-object defining `LG(M)` and every `f : P ⟶ F(I)`, a morphism\n`ψ : M ⟶ RF(K)` satisfies `Q'(t) ≫ ψ = Q'(f) ≫ (coprojection at s)` if and only if its image\nsatisfies `φ(ψ) ≫ Q(s) = (projection at t) ≫ Q(f^♯)`, where `f^♯ : G(P) ⟶ I` is adjoint\nto `f`.\n\nThe source's further assertion that this bijection is functorial in both variables is proved in\n`StacksFrontier.CategoryTheory.Localization.DerivingAdjointsNaturality`, where the bijection is named\n`CategoryTheory.Adjunction.derivedHomEquiv`: `derivedHomEquiv_naturality` for morphisms of `𝒟`\nand `𝒟'`, and `derivedHomEquiv_comp_eq_comp`, `derivedHomEquiv_comp_eq_comp_left` for morphisms\nof `S⁻¹𝒟` and `(S')⁻¹𝒟'`.",
+     "doc": "**Stacks 0FND**: deriving adjoints. Let `F : 𝒟 ⥤ 𝒟'` be right adjoint to `G : 𝒟' ⥤ 𝒟`, let\n`S`, `S'` be classes of morphisms of `𝒟`, `𝒟'` admitting left, resp. right fractions, and let\n`Q : 𝒟 ⥤ S⁻¹𝒟` and `Q' : 𝒟' ⥤ (S')⁻¹𝒟'` be localization functors. Let `K` be an object of `𝒟`\nat which the right derived functor `RF` of `Q' ∘ F` is defined, with value `RF(K) = c.pt`, and\nlet `M` be an object of `𝒟'` at which the left derived functor `LG` of `Q ∘ G` is defined, with\nvalue `LG(M) = d.pt.unop` (the left derived value is the right derived value of the opposite\nfunctors, as in Stacks 05S9). Then there is a unique bijection\n`Hom_{(S')⁻¹𝒟'}(M, RF(K)) ≃ Hom_{S⁻¹𝒟}(LG(M), K)` compatible with the fractions computing the\ntwo sides: for every index `s : K ⟶ I` of the ind-object defining `RF(K)`, every index\n`t : P ⟶ M` of the pro-object defining `LG(M)` and every `f : P ⟶ F(I)`, a morphism\n`ψ : M ⟶ RF(K)` satisfies `Q'(t) ≫ ψ = Q'(f) ≫ (coprojection at s)` if and only if its image\nsatisfies `φ(ψ) ≫ Q(s) = (projection at t) ≫ Q(f^♯)`, where `f^♯ : G(P) ⟶ I` is adjoint\nto `f`.\n\nThe source's further assertion that this bijection is functorial in both variables is proved in\n`StacksFrontier.CategoryTheory.Localization.DerivingAdjointsNaturality`, where the bijection is\nnamed\n`CategoryTheory.Adjunction.derivedHomEquiv`: `derivedHomEquiv_naturality` for morphisms of `𝒟`\nand `𝒟'`, and `derivedHomEquiv_comp_eq_comp`, `derivedHomEquiv_comp_eq_comp_left` for morphisms\nof `S⁻¹𝒟` and `(S')⁻¹𝒟'`.",
      "statement": "theorem existsUnique_homEquiv_of_isRightDerivedValueAt\n    {D : Type u₁} [Category.{v₁} D] {D' : Type u₂} [Category.{v₂} D']\n    {SD : Type u₃} [Category.{v₃} SD] {SD' : Type u₄} [Category.{v₄} SD']\n    {F : D ⥤ D'} {G : D' ⥤ D} (adj : G ⊣ F)\n    (S : MorphismProperty D) (S' : MorphismProperty D')\n    [S.HasLeftCalculusOfFractions] [S'.HasRightCalculusOfFractions]\n    (Q : D ⥤ SD) [Q.IsLocalization S] (Q' : D' ⥤ SD') [Q'.IsLocalization S']\n    (K : D) (M : D')\n    (c : Cocone (MorphismProperty.Under.forget S ⊤ K ⋙ Under.forget K ⋙ F ⋙ Q'))\n    (hc : (F ⋙ Q').IsRightDerivedValueAt S K c)\n    (d : Cocone (MorphismProperty.Under.forget S'.op ⊤ (Opposite.op M) ⋙\n      Under.forget (Opposite.op M) ⋙ (G ⋙ Q).op))\n    (hd : (G ⋙ Q).op.IsRightDerivedValueAt S'.op (Opposite.op M) d) :\n    ∃! φ : (Q'.obj M ⟶ c.pt) ≃ (d.pt.unop ⟶ Q.obj K),\n      ∀ (s : S.Under ⊤ K) (t : S'.op.Under ⊤ (Opposite.op M))\n        (f : t.right.unop ⟶ F.obj s.right) (ψ : Q'.obj M ⟶ c.pt),\n        Q'.map t.hom.unop ≫ ψ = Q'.map f ≫ c.ι.app s ↔\n          φ ψ ≫ Q.map s.hom = (d.ι.app t).unop ≫ Q.map ((adj.homEquiv _ _).symm f)",
      "sorry": false,
      "ega": [],
@@ -32630,7 +32630,7 @@
     {
      "name": "Stacks.SheafOfModules.exactPairingDualSheafOfRetract",
      "kind": "def",
-     "line": 782,
+     "line": 783,
      "private": false,
      "doc": "**Stacks Project, Tag 0FNV.** Let `𝒪` be a sheaf of commutative rings on a site `(C, J)` and\nlet `F` be a sheaf of `𝒪`-modules which is locally a direct summand of a finite free sheaf of\nmodules: on the members of a family covering the final object, `F` restricts to a retract of\n`SheafOfModules.free (I k)` with `I k` finite. Then the dual\n`F^∨ = SheafHom(F, 𝒪)`, with the canonical coevaluation `𝒪 ⟶ F ⊗ F^∨` and the canonical\nevaluation `F^∨ ⊗ F ⟶ 𝒪`, is a **left dual** of `F` in the monoidal category of sheaves of\n`𝒪`-modules of Tag 01CA.\n\nThe retracts are converted into the dual bases that the canonical coevaluation is built from by\n`Stacks.SheafOfModules.FiniteDualBasis.ofRetract`, and the two snake identities are\n`Stacks.SheafOfModules.coevaluation_evaluation_dualSheaf` and\n`evaluation_coevaluation_dualSheaf`.",
      "statement": "noncomputable def exactPairingDualSheafOfRetract\n    (h : ∀ k, Retract (F.over (X k))\n      (free (R := (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪).over (X k)) (I\n        k))) :\n    ExactPairing F (dualSheaf 𝒪 h𝒪 F)",
@@ -32686,7 +32686,7 @@
     {
      "name": "Stacks.SheafOfModules.OnSpace.dualSheaf_isLeftDual",
      "kind": "theorem",
-     "line": 475,
+     "line": 472,
      "private": false,
      "doc": "**Stacks Project, Tag 0FNV.** For a sheaf of modules which is locally a direct summand of\na finite free module, its internal-Hom dual, with the canonical coevaluation and evaluation, is\na left dual.\n\nThe monoidal structure is exhibited together with the equations identifying its unit, its\ntensor product on objects and on morphisms, and its pairing morphisms, with the canonical\nsheaf constructions.",
      "statement": "theorem dualSheaf_isLeftDual\n    (F : SheafOfModules.{u} (structureSheafRing X))\n    (hF : IsLocallyFiniteFreeSummand X F) :\n    ∃ (M : MonoidalCategory (SheafOfModules.{u} (structureSheafRing X))),\n      letI := M\n      ∃ (hunit : 𝟙_ (SheafOfModules.{u} (structureSheafRing X)) =\n          SheafOfModules.unit (structureSheafRing X))\n        (htensor : ∀ A B : SheafOfModules.{u} (structureSheafRing X),\n          A ⊗ B = (((Stacks.SheafOfModules.Tensor.sheafTensor\n            ⟨((X)).presheaf, ((X)).IsSheaf⟩).obj (A)).obj (B)))\n        (_htensorMap : ∀ {A A' B B' : SheafOfModules.{u} (structureSheafRing X)}\n          (f : A ⟶ A') (g : B ⟶ B'),\n          eqToHom (htensor A B).symm ≫ (f ⊗ₘ g) ≫ eqToHom (htensor A' B') =\n            ((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor\n              ⟨((X)).presheaf, ((X)).IsSheaf⟩)).map\n              ((f, g) : (_, _) ⟶ (_, _))))\n        (p : ExactPairing F (dualSheaf X F)),\n        @ExactPairing.coevaluation _ _ _ _ _ p =\n          eqToHom hunit ≫ coevaluation X F hF ≫\n            eqToHom (htensor F (dualSheaf X F)).symm ∧\n        @ExactPairing.evaluation _ _ _ _ _ p =\n          eqToHom (htensor (dualSheaf X F) F) ≫ evaluation X F ≫ eqToHom hunit.symm",
@@ -32700,7 +32700,7 @@
     {
      "name": "Stacks.SheafOfModules.OnSpace.tensorDualToEndomorphism_tmul_apply",
      "kind": "theorem",
-     "line": 583,
+     "line": 593,
      "private": false,
      "doc": "On a local pure tensor of a section `f` and a local functional `lam`, the canonical\nmorphism is the rank-one endomorphism `g ↦ lam(g) • f`. The formula is recorded on every\nobject `V` of the slice site over `U`, so it determines the resulting section of the\ninternal hom.",
      "statement": "theorem tensorDualToEndomorphism_tmul_apply\n    (F : SheafOfModules.{u} (structureSheafRing X))\n    (U : TopologicalSpace.Opens X.carrier)\n    (f : F.val.obj (op U)) (lam : (dualSheaf X F).val.obj (op U))\n    (V : (Over U)ᵒᵖ) (g : F.val.obj (op V.unop.left)) :\n    ((((tensorDualToEndomorphism X F).val.app (op U)).hom\n      (toTensorSheafSection X F (dualSheaf X F) (op U)\n        (f ⊗ₜ[X.presheaf.obj (op U)] lam))).app V).hom g =\n      dualValue X F lam V g • (F.val.map V.unop.hom.op).hom f",
@@ -32714,7 +32714,7 @@
     {
      "name": "Stacks.SheafOfModules.OnSpace.tensorDualToEndomorphism_isIso",
      "kind": "theorem",
-     "line": 601,
+     "line": 610,
      "private": false,
      "doc": "**Stacks 0FNV.** If `F` is locally a direct summand of a finite free module, the\ncanonical rank-one-operator morphism `F ⊗ F^∨ ⟶ SheafHom(F, F)` is an isomorphism.",
      "statement": "theorem tensorDualToEndomorphism_isIso\n    (F : SheafOfModules.{u} (structureSheafRing X))\n    (hF : IsLocallyFiniteFreeSummand X F) :\n    IsIso (tensorDualToEndomorphism X F)",
@@ -32761,7 +32761,7 @@
     {
      "name": "Stacks.SheafOfModules.tensorDualToEndomorphism_toTensorSheafSection",
      "kind": "theorem",
-     "line": 646,
+     "line": 659,
      "private": false,
      "doc": "**The canonical morphism on a local pure tensor is the rank-one operator.** This pins the\nmorphism down: its value on the image of `f ⊗ lam` is the endomorphism `g ↦ lam(g) • f`.",
      "statement": "theorem tensorDualToEndomorphism_toTensorSheafSection\n    (F : SheafOfModules.{max u v} (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪))\n      (U : Cᵒᵖ)\n    (f : F.val.obj U) (lam : (dualSheaf 𝒪 h𝒪 F).val.obj U) :\n    ((tensorDualToEndomorphism 𝒪 h𝒪 F).val.app U).hom\n        (toTensorSheafSection 𝒪 h𝒪 F (dualSheaf 𝒪 h𝒪 F) U\n          (f ⊗ₜ[(Stacks.SheafOfModules.TensorSheafification.structureRingPresheaf 𝒪).obj U] lam)) =\n      rankOneSection 𝒪 h𝒪 (U := U.unop) f lam",
@@ -32775,7 +32775,7 @@
     {
      "name": "Stacks.SheafOfModules.isIso_tensorDualToEndomorphism",
      "kind": "theorem",
-     "line": 685,
+     "line": 695,
      "private": false,
      "doc": "**`F ⊗ F^∨ ⟶ SheafHom(F, F)` is an isomorphism** when `F` has finite dual bases on a family\ncovering the final object — that is, when `F` is locally a direct summand of a finite free sheaf\nof modules.",
      "statement": "theorem isIso_tensorDualToEndomorphism {K : Type*} {X : K → C} (hX : J.CoversTop X)\n    {I : K → Type*} [∀ k, Fintype (I k)]\n    (b : ∀ k, FiniteDualBasis 𝒪 h𝒪 F (X k) (I k)) :\n    IsIso (tensorDualToEndomorphism 𝒪 h𝒪 F)",
@@ -32794,7 +32794,7 @@
     {
      "name": "Stacks.SheafOfModules.coevaluation",
      "kind": "def",
-     "line": 711,
+     "line": 713,
      "private": false,
      "doc": "**The canonical coevaluation `𝒪 ⟶ F ⊗ F^∨`** of a sheaf of modules which is locally a\ndirect summand of a finite free sheaf of modules: the inverse image of the identity\nendomorphism under the rank-one isomorphism `F ⊗ F^∨ ≅ SheafHom(F, F)`.",
      "statement": "noncomputable def coevaluation\n    (F : SheafOfModules.{max u v} (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪))\n    {K : Type*} {X : K → C} (hX : J.CoversTop X) {I : K → Type*} [∀ k, Fintype (I k)]\n    (b : ∀ k, FiniteDualBasis 𝒪 h𝒪 F (X k) (I k)) :\n    SheafOfModules.unit (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪) ⟶\n      ((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, max u v, max u v, max u v}\n        ⟨𝒪, Presheaf.isSheaf_of_isSheaf_comp _ 𝒪 (forget₂ CommRingCat RingCat) h𝒪⟩).obj F).obj\n          (dualSheaf 𝒪 h𝒪 F)",
@@ -32808,7 +32808,7 @@
     {
      "name": "Stacks.SheafOfModules.coevaluation_app_one_eq_sum_of_dualBasis",
      "kind": "theorem",
-     "line": 748,
+     "line": 750,
      "private": false,
      "doc": "**The local formula for the canonical coevaluation.** On an object `U` over which `F` has a\nfinite dual basis `(e i, lam i)`, the value of the coevaluation at the unit section is\n`∑ i, e i ⊗ lam i`.\n\nBecause the left-hand side does not mention the dual basis, this also says that the displayed\nsum is **independent of the chosen dual basis** — equivalently, of the chosen finite-free\nretract, since a retract `i ≫ p = 𝟙` of `F|_U` onto a finite free sheaf of modules yields the\ndual basis `e j = p(e_j)`, `lam j = e_j^* ∘ i`.",
      "statement": "theorem coevaluation_app_one_eq_sum_of_dualBasis\n    (F : SheafOfModules.{max u v} (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪))\n    {K : Type*} {X : K → C} (hX : J.CoversTop X) {I : K → Type*} [∀ k, Fintype (I k)]\n    (b : ∀ k, FiniteDualBasis 𝒪 h𝒪 F (X k) (I k))\n    (U : C) {I' : Type*} [Fintype I'] (c : FiniteDualBasis 𝒪 h𝒪 F U I') :\n    ((coevaluation 𝒪 h𝒪 F hX b).val.app (op U)).hom\n        (1 : (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪).obj.obj (op U)) =\n      ∑ i : I', toTensorSheafSection 𝒪 h𝒪 F (dualSheaf 𝒪 h𝒪 F) (op U)\n        (c.e i ⊗ₜ[(Stacks.SheafOfModules.TensorSheafification.structureRingPresheaf 𝒪).obj (op U)]\n          c.lam i)",
@@ -32856,7 +32856,7 @@
     {
      "name": "Stacks.SheafOfModules.OnSpace.isLocallyFiniteFreeSummand_of_exactPairing",
      "kind": "theorem",
-     "line": 449,
+     "line": 446,
      "private": false,
      "doc": "**Stacks Project, Tag 0FNW (1)**, with no coherence hypotheses: a sheaf of modules with a\nleft dual in the monoidal category of `O_X`-modules is locally a direct summand of a finite\nfree module.\n\nThe three coherence hypotheses of\n`Stacks.SheafOfModules.isLocallyFiniteFreeSummand_of_exactPairing` — which constrain the\nsupplied monoidal instance on local pure tensors — are discharged here against the constructed\nmonoidal structure by `associator_tmul`, `leftUnitor_tmul` and `rightUnitor_tmul`.",
      "statement": "theorem isLocallyFiniteFreeSummand_of_exactPairing\n    (F G : SheafOfModules.{u} (structureSheafRing X))\n    (p : ExactPairing F G) :\n    IsLocallyFiniteFreeSummand X F",
@@ -32947,7 +32947,7 @@
     {
      "name": "Stacks.SheafOfModules.tensorDualToEndomorphism_toTensorSheafSection",
      "kind": "theorem",
-     "line": 646,
+     "line": 659,
      "private": false,
      "doc": "**The canonical morphism on a local pure tensor is the rank-one operator.** This pins the\nmorphism down: its value on the image of `f ⊗ lam` is the endomorphism `g ↦ lam(g) • f`.",
      "statement": "theorem tensorDualToEndomorphism_toTensorSheafSection\n    (F : SheafOfModules.{max u v} (Stacks.SheafOfModules.TensorSheafification.structureSheaf 𝒪 h𝒪))\n      (U : Cᵒᵖ)\n    (f : F.val.obj U) (lam : (dualSheaf 𝒪 h𝒪 F).val.obj U) :\n    ((tensorDualToEndomorphism 𝒪 h𝒪 F).val.app U).hom\n        (toTensorSheafSection 𝒪 h𝒪 F (dualSheaf 𝒪 h𝒪 F) U\n          (f ⊗ₜ[(Stacks.SheafOfModules.TensorSheafification.structureRingPresheaf 𝒪).obj U] lam)) =\n      rankOneSection 𝒪 h𝒪 (U := U.unop) f lam",
@@ -33009,7 +33009,7 @@
     {
      "name": "Stacks.SheafOfModules.exists_cover_retract_finiteFree_of_exactPairing_tensorSheaf",
      "kind": "theorem",
-     "line": 329,
+     "line": 394,
      "private": false,
      "doc": "Let `(C, O)` be a ringed site and let `F` be a sheaf of `O`-modules with a left dual `G` for\nthe monoidal structure given by the tensor product sheaf. Then every object `U` of the site has\na covering on whose members `F` restricts to a direct summand of a finite free module.",
      "statement": "theorem exists_cover_retract_finiteFree_of_exactPairing_tensorSheaf\n    [HasSheafify J AddCommGrpCat.{w}]\n    [∀ V : C, HasWeakSheafify (J.over V) AddCommGrpCat.{w}]\n    [∀ V : C, (J.over V).WEqualsLocallyBijective AddCommGrpCat.{w}]\n    (p : ExactPairing F G) (U : C) :\n    ∃ S : Sieve U, S ∈ J U ∧\n      ∀ (V : C) (i : V ⟶ U), S i →\n        ∃ I : Type w, Finite I ∧\n          Nonempty (Retract (F.over V)\n            (SheafOfModules.free (R := (Stacks.SheafOfModules.TensorSheafification.structureSheaf O\n              hO).over V) I))",
@@ -40244,7 +40244,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra",
      "kind": "def",
-     "line": 430,
+     "line": 428,
      "private": false,
      "doc": "The relative de Rham complex of `φ`, with wedge multiplication and the unit of the exterior\nalgebra, as a sheaf of differential graded `A`-algebras.",
      "statement": "noncomputable def deRhamDifferentialGradedAlgebra :\n    _root_.SheafOfModules.DifferentialGradedAlgebra.{u, u} (underlyingRingSheaf A)",
@@ -40258,7 +40258,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_complex",
      "kind": "theorem",
-     "line": 496,
+     "line": 494,
      "private": false,
      "doc": "The complex underlying the relative de Rham differential graded algebra is the relative de\nRham complex, extended by zero to negative degrees.",
      "statement": "theorem deRhamDifferentialGradedAlgebra_complex :\n    (deRhamDifferentialGradedAlgebra B D).complex = deRhamComplexInt B D",
@@ -40272,7 +40272,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_mul",
      "kind": "theorem",
-     "line": 502,
+     "line": 500,
      "private": false,
      "doc": "Multiplication in the relative de Rham differential graded algebra is wedge multiplication of\ndifferential forms, on every pair of homogeneous local sections.",
      "statement": "theorem deRhamDifferentialGradedAlgebra_mul (p q : ℕ) (U : (Opens X.carrier)ᵒᵖ)\n    (ω : ((deRhamDifferentialGradedAlgebra B D).complex.X (p : ℤ)).val.obj U)\n    (η : ((deRhamDifferentialGradedAlgebra B D).complex.X (q : ℤ)).val.obj U)\n    (ω' : (B.exteriorPower p).val.obj U) (η' : (B.exteriorPower q).val.obj U)\n    (hω : HEq ω ω') (hη : HEq η η') :\n    HEq (((deRhamDifferentialGradedAlgebra B D).mul (p : ℤ) (q : ℤ)).app U ω η)\n      (formProduct B p q U ω' η')",
@@ -40286,7 +40286,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_one",
      "kind": "theorem",
-     "line": 515,
+     "line": 513,
      "private": false,
      "doc": "The unit of the relative de Rham differential graded algebra is the unit of the exterior\nalgebra of `Ω`.",
      "statement": "theorem deRhamDifferentialGradedAlgebra_one (U : (Opens X.carrier)ᵒᵖ) :\n    HEq ((deRhamDifferentialGradedAlgebra B D).one.eval U) (B.exterior.one.eval U)",
@@ -46182,7 +46182,7 @@
     {
      "name": "AlgebraicGeometry.integralTransformQcohFunctorLift",
      "kind": "def",
-     "line": 1967,
+     "line": 1966,
      "private": false,
      "doc": "**Stacks Project, Tag 0FZD.** For `X` affine, the integral transform of a quasi-coherent\nkernel on `X ×_R Y`, as a functor of the kernel, with codomain the `R`-linear right exact\nfunctors from quasi-coherent modules on `X` to quasi-coherent modules on `Y` which commute with\narbitrary direct sums.",
      "statement": "noncomputable def integralTransformQcohFunctorLift\n    (R : Type u) [CommRing R] (X Y : Over (Spec (.of R))) [IsAffine X.left] :\n    (SheafOfModules.isQuasicoherent\n      (pullback X.hom Y.hom).ringCatSheaf).FullSubcategory ⥤\n      (rightExactLinearCoproductFunctor R X Y).FullSubcategory",
@@ -46196,7 +46196,7 @@
     {
      "name": "AlgebraicGeometry.integralTransformQcohFunctorLift_obj_obj",
      "kind": "theorem",
-     "line": 1979,
+     "line": 1978,
      "private": false,
      "doc": "**Stacks Project, Tag 0FZD.** For `X` affine, the integral transform of a quasi-coherent\nkernel on `X ×_R Y` is, on objects, the functor `F ↦ pr_{2,*}(pr_1^* F ⊗ K)` of Tag 0FZB.",
      "statement": "theorem integralTransformQcohFunctorLift_obj_obj\n    (R : Type u) [CommRing R] (X Y : Over (Spec (.of R))) [IsAffine X.left]\n    (K : (SheafOfModules.isQuasicoherent\n      (pullback X.hom Y.hom).ringCatSheaf).FullSubcategory) :\n    ((integralTransformQcohFunctorLift R X Y).obj K).obj =\n      quasicoherentIntegralTransform R X Y K",
@@ -46210,7 +46210,7 @@
     {
      "name": "AlgebraicGeometry.faithful_integralTransformQcohFunctorLift",
      "kind": "theorem",
-     "line": 1989,
+     "line": 1988,
      "private": false,
      "doc": "**Stacks Project, Tag 0FZD.** For `X` affine, the functor sending a quasi-coherent kernel\non `X ×_R Y` to its integral transform is faithful.",
      "statement": "theorem faithful_integralTransformQcohFunctorLift\n    (R : Type u) [CommRing R] (X Y : Over (Spec (.of R))) [IsAffine X.left] :\n    (integralTransformQcohFunctorLift R X Y).Faithful",
@@ -46224,7 +46224,7 @@
     {
      "name": "AlgebraicGeometry.full_integralTransformQcohFunctorLift",
      "kind": "theorem",
-     "line": 2010,
+     "line": 2009,
      "private": false,
      "doc": "**Stacks Project, Tag 0FZD.** For `X` affine, the functor sending a quasi-coherent kernel\non `X ×_R Y` to its integral transform is full.",
      "statement": "theorem full_integralTransformQcohFunctorLift\n    (R : Type u) [CommRing R] (X Y : Over (Spec (.of R))) [IsAffine X.left] :\n    (integralTransformQcohFunctorLift R X Y).Full",
@@ -46238,7 +46238,7 @@
     {
      "name": "AlgebraicGeometry.essSurj_integralTransformQcohFunctorLift",
      "kind": "theorem",
-     "line": 2032,
+     "line": 2031,
      "private": false,
      "doc": "**Stacks Project, Tag 0FZD.** For `X` affine, every `R`-linear right exact functor from\nquasi-coherent modules on `X` to quasi-coherent modules on `Y` which commutes with arbitrary\ndirect sums is the integral transform of a quasi-coherent kernel on `X ×_R Y`.",
      "statement": "theorem essSurj_integralTransformQcohFunctorLift\n    (R : Type u) [CommRing R] (X Y : Over (Spec (.of R))) [IsAffine X.left] :\n    (integralTransformQcohFunctorLift R X Y).EssSurj",
@@ -46252,7 +46252,7 @@
     {
      "name": "AlgebraicGeometry.integralTransformQcohEquivalence",
      "kind": "def",
-     "line": 2044,
+     "line": 2043,
      "private": false,
      "doc": "**Stacks Project, Tag 0FZD.** For `X` affine, the integral transform of a quasi-coherent\nkernel is an equivalence from the quasi-coherent modules on `X ×_R Y` to the `R`-linear right\nexact functors from quasi-coherent modules on `X` to quasi-coherent modules on `Y` which\ncommute with arbitrary direct sums.",
      "statement": "noncomputable def integralTransformQcohEquivalence\n    (R : Type u) [CommRing R] (X Y : Over (Spec (.of R))) [IsAffine X.left] :\n    (SheafOfModules.isQuasicoherent (pullback X.hom Y.hom).ringCatSheaf).FullSubcategory ≌\n      (rightExactLinearCoproductFunctor R X Y).FullSubcategory",
@@ -46266,7 +46266,7 @@
     {
      "name": "AlgebraicGeometry.integralTransformQcohEquivalence_functor_obj_obj",
      "kind": "theorem",
-     "line": 2057,
+     "line": 2056,
      "private": false,
      "doc": "**Stacks Project, Tag 0FZD.** The equivalence sends a quasi-coherent kernel on `X ×_R Y`\nto its integral transform `F ↦ pr_{2,*}(pr_1^* F ⊗ K)`.",
      "statement": "theorem integralTransformQcohEquivalence_functor_obj_obj\n    (R : Type u) [CommRing R] (X Y : Over (Spec (.of R))) [IsAffine X.left]\n    (K : (SheafOfModules.isQuasicoherent\n      (pullback X.hom Y.hom).ringCatSheaf).FullSubcategory) :\n    ((integralTransformQcohEquivalence R X Y).functor.obj K).obj =\n      quasicoherentIntegralTransform R X Y K",
@@ -46286,7 +46286,7 @@
     {
      "name": "Stacks.AlgebraicGeometry.ProjectionFormula.isIso_projectionFormulaMap",
      "kind": "theorem",
-     "line": 470,
+     "line": 455,
      "private": false,
      "doc": "Let `h : T ⟶ S` be an affine morphism of schemes, `G` a quasi-coherent `𝒪_T`-module and `H` a\nquasi-coherent `𝒪_S`-module. Then the canonical projection-formula morphism\n\n`h_*G ⊗_{𝒪_S} H ⟶ h_*(G ⊗_{𝒪_T} h^*H)`\n\nis invertible.",
      "statement": "theorem isIso_projectionFormulaMap [IsAffineHom h] (hG : G.IsQuasicoherent)\n    (hH : H.IsQuasicoherent) : IsIso (projectionFormulaMap h G H)",
@@ -46394,7 +46394,7 @@
     {
      "name": "AlgebraicGeometry.isZero_rightDerived_pushforward_baseChangeKernel",
      "kind": "theorem",
-     "line": 536,
+     "line": 529,
      "private": false,
      "doc": "**Higher direct images of an integral-transform kernel after base change.**  Let `R` be a\nring, let `X` and `Y` be schemes over `R` with the structure morphism of `X` quasi-compact and\nquasi-separated, and let `K` be a quasi-coherent kernel on `X ×_R Y` satisfying the two\nconditions of Tag 0FZH part (2).  Then for every scheme `T` over `R`,\n`R ^q pr_{13,*}(pr_{12}^*F ⊗ pr_{23}^*K) = 0` for every quasi-coherent `F` on `T ×_R X` and\nevery `q > 0`.",
      "statement": "theorem isZero_rightDerived_pushforward_baseChangeKernel (T X Y : Over (Spec (.of R)))\n    [QuasiCompact X.hom] [QuasiSeparated X.hom]\n    (K : Scheme.QuasicoherentModules (pullback X.hom Y.hom))\n    (hK : integralTransformExactKernel R X Y K)\n    (F : Scheme.QuasicoherentModules (baseChangeSourceOver R T X).left) (q : ℕ) (hq : 0 < q) :\n    IsZero (((Scheme.Modules.pushforward (baseChangeTargetMap R T X Y)).rightDerived q).obj\n      ((integralTransformIntegrand R (baseChangeSourceOver R T X) Y\n        (baseChangeKernel R T X Y K)).obj F))",

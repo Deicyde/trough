@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.41 Quasi-coherent objects in the derived category
 
-Section 36.41 of the Stacks Project, [Tag 0GZY](https://stacks.math.columbia.edu/tag/0GZY). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 36.41 of the Stacks Project, [Tag 0GZY](https://stacks.math.columbia.edu/tag/0GZY). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GZZ, a lemma
 
 [Tag 0GZZ](https://stacks.math.columbia.edu/tag/0GZZ) in the Stacks Project.
 
-**`AlgebraicGeometry.smallAffineChaoticDerivedQuasiCoherentEquivQC`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean#L238). The attribute's comment: “the equivalence (4) ≃ (5)”.
+**`AlgebraicGeometry.smallAffineChaoticDerivedQuasiCoherentEquivQC`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean, line 238](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean#L238). The attribute's comment: “the equivalence (4) ≃ (5)”.
 
 > **Stacks 0GZZ, the equivalence of (4) and (5).** For a scheme `S`, the derived category of
 > modules on the small affine site `S_affine` with quasi-coherent cohomology sheaves is
@@ -38,7 +38,7 @@ def smallAffineChaoticDerivedQuasiCoherentEquivQC
       QC.{w} bc
 ```
 
-**`AlgebraicGeometry.smallAffineChaoticDerivedQuasiCoherentEquivQC_functor_comp_ι`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean#L262). The attribute's comment: “the equivalence (4) ≃ (5) is the canonical one”.
+**`AlgebraicGeometry.smallAffineChaoticDerivedQuasiCoherentEquivQC_functor_comp_ι`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean, line 262](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean#L262). The attribute's comment: “the equivalence (4) ≃ (5) is the canonical one”.
 
 > **Stacks 0GZZ, the equivalence of (4) and (5), as a commuting triangle.** The comparison
 > `D_QCoh(S_affine, 𝒪) ≌ QC(S_affine, 𝒪)` is the canonical one: it commutes with the inclusions
@@ -52,7 +52,7 @@ def smallAffineChaoticDerivedQuasiCoherentEquivQC_functor_comp_ι
       (qcohCohomologyProperty.{w} (smallAffineChaoticRingedSite B S hS)).ι
 ```
 
-**`AlgebraicGeometry.smallAffineChaotic_qcohCohomologyProperty_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean#L319). The attribute's comment: “(4) and (5) are triangulated, for a scheme in `Scheme.{0}`”.
+**`AlgebraicGeometry.smallAffineChaotic_qcohCohomologyProperty_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean, line 319](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjects.lean#L319). The attribute's comment: “(4) and (5) are triangulated, for a scheme in `Scheme.{0}`”.
 
 > **Stacks 0GZZ, triangulatedness of (4) and (5).** For a scheme in `Scheme.{0}`,
 > `D_QCoh(S_affine, 𝒪)` is a triangulated subcategory of `D(S_affine, 𝒪)`: it is the same
@@ -73,7 +73,7 @@ theorem smallAffineChaotic_qcohCohomologyProperty_isTriangulated :
       (qcohCohomologyProperty.{0} (smallAffineChaoticRingedSite B₀ S₀ hS₀))
 ```
 
-**`AlgebraicGeometry.smallAffineChaotic_qcohCohomologyProperty_isTriangulated_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjectsSupplement.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjectsSupplement.lean#L82). The attribute's comment: “(4) and (5) are triangulated”.
+**`AlgebraicGeometry.smallAffineChaotic_qcohCohomologyProperty_isTriangulated_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjectsSupplement.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteQuasiCoherentObjectsSupplement.lean#L82). The attribute's comment: “(4) and (5) are triangulated”.
 
 > **Stacks 0GZZ, triangulatedness of (4) and (5).** For an arbitrary scheme `S`,
 > `D_QCoh(S_affine, 𝒪)` is a triangulated subcategory of `D(S_affine, 𝒪)`: it is the same
@@ -90,7 +90,7 @@ theorem smallAffineChaotic_qcohCohomologyProperty_isTriangulated_univ :
       (qcohCohomologyProperty.{w} (smallAffineChaoticRingedSite B S hS))
 ```
 
-**`AlgebraicGeometry.Scheme.nonempty_quasicoherentDerived_linearTriangulatedEquivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/QuasiCoherentObjectsExactEquivalences.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/QuasiCoherentObjectsExactEquivalences.lean#L597).
+**`AlgebraicGeometry.Scheme.nonempty_quasicoherentDerived_linearTriangulatedEquivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/QuasiCoherentObjectsExactEquivalences.lean, line 597](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedQCoh/QuasiCoherentObjectsExactEquivalences.lean#L597).
 
 > **Stacks 0GZZ.** Let `X` be a scheme, and let `Sch_Zar` be a big Zariski site containing it.
 > There are canonical exact equivalences between the following triangulated categories:
@@ -184,7 +184,7 @@ theorem Scheme.nonempty_quasicoherentDerived_linearTriangulatedEquivalences :
 
 [Tag 0H00](https://stacks.math.columbia.edu/tag/0H00) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.affineBigSiteQuasiCoherentDerivedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/SchemeQC/AffineBigSiteEquivalence.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/SchemeQC/AffineBigSiteEquivalence.lean#L92).
+**`AlgebraicGeometry.Stack.affineBigSiteQuasiCoherentDerivedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/SchemeQC/AffineBigSiteEquivalence.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/SchemeQC/AffineBigSiteEquivalence.lean#L92).
 
 > **Stacks 0H00.** Let `S` be a scheme in a big fppf site `B`. Then `QC((Aff/S), O)` — the
 > triangulated category of quasi-coherent objects (Stacks 0GYV) of the derived category of
@@ -216,4 +216,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.41, Tag 0GZY](https://stacks.math.columbia.edu/tag/0GZY)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

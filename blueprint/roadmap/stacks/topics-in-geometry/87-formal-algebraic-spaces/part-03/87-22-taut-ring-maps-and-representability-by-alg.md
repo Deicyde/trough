@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.22 Taut ring maps and representability by algebraic spaces
 
-Section 87.22 of the Stacks Project, [Tag 0GBQ](https://stacks.math.columbia.edu/tag/0GBQ). 2 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.22 of the Stacks Project, [Tag 0GBQ](https://stacks.math.columbia.edu/tag/0GBQ). 2 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0ANJ, a lemma
 
 [Tag 0ANJ](https://stacks.math.columbia.edu/tag/0ANJ) in the Stacks Project.
 
-**`TopologicalRing.isTaut_iff_forall_exists_isQuotientDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteType/WeakIdealConditions.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/FiniteType/WeakIdealConditions.lean#L515). The attribute's comment: “(a) ⇔ (b)”.
+**`TopologicalRing.isTaut_iff_forall_exists_isQuotientDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteType/WeakIdealConditions.lean, line 515](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/FiniteType/WeakIdealConditions.lean#L515). The attribute's comment: “(a) ⇔ (b)”.
 
 > **Stacks 0ANJ**, (a) ⇔ (b) as stated: for a continuous arrow `B → A` of weakly admissible
 > linearly topologized rings with `B` having a countable fundamental system of neighbourhoods of
@@ -26,7 +26,7 @@ Section 87.22 of the Stacks Project, [Tag 0GBQ](https://stacks.math.columbia.edu
 theorem isTaut_iff_forall_exists_isQuotientDiagram {A B : Type u}
     [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] [IsLinearTopology A A]
     [CommRing B] [TopologicalSpace B] [IsTopologicalRing B] [IsLinearTopology B B]
-    (f : B →+* A) (hf : Continuous f)
+    (f : B →+* A)
     (hA : TopologicalRing.IsWeaklyAdmissible A) (hB : TopologicalRing.IsWeaklyAdmissible B)
     (hBcount : (nhds (0 : B)).IsCountablyGenerated) :
     RingHom.IsTaut f ↔
@@ -36,7 +36,7 @@ theorem isTaut_iff_forall_exists_isQuotientDiagram {A B : Type u}
           RingHom.QuotientDiagram.IsQuotientDiagram f J hJ.2.1 π t σ
 ```
 
-**`RingHom.QuotientDiagram.isTaut_iff_exists_isQuotientDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/QuotientDiagram.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/QuotientDiagram.lean#L496). The attribute's comment: “(a) ⇔ (b), for a given fundamental sequence”.
+**`RingHom.QuotientDiagram.isTaut_iff_exists_isQuotientDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/QuotientDiagram.lean, line 496](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/QuotientDiagram.lean#L496). The attribute's comment: “(a) ⇔ (b), for a given fundamental sequence”.
 
 > A continuous arrow `B → A` of weakly admissible linearly topologized rings is taut if and only
 > if, for the given decreasing fundamental sequence `J n` of weak ideals of definition of `B`, there
@@ -47,8 +47,7 @@ theorem isTaut_iff_forall_exists_isQuotientDiagram {A B : Type u}
 public theorem isTaut_iff_exists_isQuotientDiagram.{u} {A B : Type u}
     [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] [IsLinearTopology A A]
     [CommRing B] [TopologicalSpace B] [IsTopologicalRing B] [IsLinearTopology B B]
-    (f : B →+* A) (_hf : Continuous f)
-    (hA : TopologicalRing.IsWeaklyAdmissible A) (_hB : TopologicalRing.IsWeaklyAdmissible B)
+    (f : B →+* A) (hA : TopologicalRing.IsWeaklyAdmissible A)
     (J : ℕ → Ideal B) (hJ : IsFundamentalSequence J) :
     RingHom.IsTaut f ↔
       ∃ (Aₙ : ℕ → Type u) (_ : ∀ n, CommRing (Aₙ n)) (_ : ∀ n, TopologicalSpace (Aₙ n))
@@ -56,7 +55,7 @@ public theorem isTaut_iff_exists_isQuotientDiagram.{u} {A B : Type u}
         IsQuotientDiagram f J hJ.2.1 π t σ
 ```
 
-**`TopologicalRing.isTaut_localizationPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L200). The attribute's comment: “taut\_is\_local\_property”.
+**`TopologicalRing.isTaut_localizationPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L200). The attribute's comment: “taut\_is\_local\_property”.
 
 > Tautness ascends along a completed étale localization diagram of countably indexed weakly
 > admissible rings.
@@ -69,7 +68,7 @@ public theorem isTaut_localizationPreserves :
         (f : B →+* A) ↦ RingHom.IsTaut f)
 ```
 
-**`TopologicalRing.isTaut_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L216). The attribute's comment: “taut\_is\_local\_property”.
+**`TopologicalRing.isTaut_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 216](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L216). The attribute's comment: “taut\_is\_local\_property”.
 
 > Tautness descends along a completed étale localization diagram whose upper horizontal ring
 > map is faithfully flat.
@@ -82,7 +81,7 @@ public theorem isTaut_faithfullyFlatDescent :
         (f : B →+* A) ↦ RingHom.IsTaut f)
 ```
 
-**`TopologicalRing.isTaut_finiteProductPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L251). The attribute's comment: “taut\_is\_local\_property”.
+**`TopologicalRing.isTaut_finiteProductPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 251](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L251). The attribute's comment: “taut\_is\_local\_property”.
 
 > Tautness is preserved by finite products of targets.
 
@@ -94,7 +93,7 @@ public theorem isTaut_finiteProductPreserves :
         (f : B →+* A) ↦ RingHom.IsTaut f)
 ```
 
-**`TopologicalRing.isTaut_isomorphismInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalRefined.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalRefined.lean#L69). The attribute's comment: “taut\_is\_local\_property”.
+**`TopologicalRing.isTaut_isomorphismInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalRefined.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalRefined.lean#L69). The attribute's comment: “taut\_is\_local\_property”.
 
 > Tautness does not depend on the chosen presentations of the source and the target of a
 > continuous homomorphism: pre- and post-composing with bicontinuous ring isomorphisms preserves
@@ -109,7 +108,7 @@ public theorem isTaut_isomorphismInvariant :
       IsCountablyWeaklyAdmissible
 ```
 
-**`TopologicalRing.isTaut_completedMap_of_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean#L59). The attribute's comment: “axiom 0AND for tautness, the completed corners in WAdm^count by 0ANB”.
+**`TopologicalRing.isTaut_completedMap_of_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean#L59). The attribute's comment: “axiom 0AND for tautness, the completed corners in WAdm^count by 0ANB”.
 
 > **Stacks 0ANJ**, axiom 0AND for tautness, with the hypotheses of Situation 0CBA only.
 > Given a diagram (0ANC) — `A`, `B` countably indexed weakly admissible, `A → A'` and `B → B'`
@@ -126,7 +125,7 @@ public theorem isTaut_completedMap_of_isTaut {A B A' B' : Type u}
     (h : RingHom.IsTaut D.map) : RingHom.IsTaut D.completedMap
 ```
 
-**`TopologicalRing.isTaut_map_of_isTaut_completedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean#L74). The attribute's comment: “axiom 0ANE for tautness, the completed corners in WAdm^count by 0ANB”.
+**`TopologicalRing.isTaut_map_of_isTaut_completedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean#L74). The attribute's comment: “axiom 0ANE for tautness, the completed corners in WAdm^count by 0ANB”.
 
 > **Stacks 0ANJ**, axiom 0ANE for tautness, with the hypotheses of Situation 0CBA only.
 > Given a diagram (0ANC) whose map `A → A'` is faithfully flat, if `φ' : (B')^∧ → (A')^∧` is taut
@@ -142,7 +141,7 @@ public theorem isTaut_map_of_isTaut_completedMap {A B A' B' : Type u}
     RingHom.IsTaut D.map
 ```
 
-**`TopologicalRing.isTaut_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean#L89). The attribute's comment: “axiom 0ANF for tautness”.
+**`TopologicalRing.isTaut_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalUnconditional.lean#L89). The attribute's comment: “axiom 0ANF for tautness”.
 
 > **Stacks 0ANJ**, axiom 0ANF for tautness, stated once: if `B → A_i` are taut arrows of
 > `WAdm^{count}` for `i` in a finite index set, then `B → ∏ A_i` is taut.
@@ -162,7 +161,7 @@ public theorem isTaut_pi {B : Type u} [CommRing B] [TopologicalSpace B] [IsTopol
 
 [Tag 0ANK](https://stacks.math.columbia.edu/tag/0ANK) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.tfae_isTautOnEveryAffineEtaleDiagram_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TautMorphismRepresentabilityUnconditional.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TautMorphismRepresentabilityUnconditional.lean#L97). The attribute's comment: “the equivalence of the four conditions for X and Y locally countably indexed; Stacks 0AJ3 enters through isFormalAlgebraicSpace\_pullback\_chart\_of\_etale, Stacks 0AKX through hasAffineEtaleChartProperty\_iff\_hasAffineEtaleAtlasWithProperty\_of\_mem, Stacks 0AN5 through isRepresentableByAlgebraicSpacesULift\_iff\_hasTautOnAffineChartMap, Stacks 0AQ0 through isTautOnEveryAffineEtaleDiagram\_of\_isRepresentableByAlgebraicSpaces and Stacks 0AN4 through isRepresentableByAlgebraicSpacesULift\_of\_etaleCover\_comp”.
+**`AlgebraicGeometry.FormalSpace.tfae_isTautOnEveryAffineEtaleDiagram_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TautMorphismRepresentabilityUnconditional.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TautMorphismRepresentabilityUnconditional.lean#L97). The attribute's comment: “the equivalence of the four conditions for X and Y locally countably indexed; Stacks 0AJ3 enters through isFormalAlgebraicSpace\_pullback\_chart\_of\_etale, Stacks 0AKX through hasAffineEtaleChartProperty\_iff\_hasAffineEtaleAtlasWithProperty\_of\_mem, Stacks 0AN5 through isRepresentableByAlgebraicSpacesULift\_iff\_hasTautOnAffineChartMap, Stacks 0AQ0 through isTautOnEveryAffineEtaleDiagram\_of\_isRepresentableByAlgebraicSpaces and Stacks 0AN4 through isRepresentableByAlgebraicSpacesULift\_of\_etaleCover\_comp”.
 
 > **Stacks 0ANK.** Let `f : X ⟶ Y` be a morphism of locally countably indexed formal
 > algebraic spaces over `S`. The following are equivalent:
@@ -195,4 +194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.22, Tag 0GBQ](https://stacks.math.columbia.edu/tag/0GBQ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

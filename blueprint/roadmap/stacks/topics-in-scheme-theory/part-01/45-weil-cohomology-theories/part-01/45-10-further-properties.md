@@ -8,13 +8,13 @@ proof: formalized
 
 # 45.10 Further properties
 
-Section 45.10 of the Stacks Project, [Tag 0FHN](https://stacks.math.columbia.edu/tag/0FHN). 9 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 45.10 of the Stacks Project, [Tag 0FHN](https://stacks.math.columbia.edu/tag/0FHN). 9 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FHP, a lemma
 
 [Tag 0FHP](https://stacks.math.columbia.edu/tag/0FHP) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.trace_pt_eq_add_comp_pullTw`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DisjointUnionTrace.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DisjointUnionTrace.lean#L60).
+**`Stacks.WeilCohomology.WeilData.trace_pt_eq_add_comp_pullTw`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DisjointUnionTrace.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DisjointUnionTrace.lean#L60).
 
 > **Stacks Project, Tag 0FHP.** Let `X` and `Y` be nonempty smooth projective schemes over `k`,
 > both equidimensional of dimension `d`, and let `c` be a coproduct `X ⨿ Y` with coprojections
@@ -31,7 +31,7 @@ theorem trace_pt_eq_add_comp_pullTw (hA : W.PoincareDuality) (hB : W.Kunneth)
         W.trace Y d hY ∘ₗ W.pullTw (Y := c.pt) c.inr _ _
 ```
 
-**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.integration_eq_add_comp_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/TraceDisjointUnion.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/TraceDisjointUnion.lean#L186).
+**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.integration_eq_add_comp_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/TraceDisjointUnion.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/TraceDisjointUnion.lean#L186).
 
 > **Stacks Project, Tag 0FHP.** Additivity of the trace map over a disjoint union:
 > `∫_{X ⨿ Y} = ∫_X + ∫_Y`, as an identity between linear functionals on `H^{2d}(X ⨿ Y)`, the two
@@ -57,7 +57,7 @@ theorem integration_eq_add_comp_pullback (i : X ⟶ Z) (j : Y ⟶ Z)
 
 [Tag 0FHQ](https://stacks.math.columbia.edu/tag/0FHQ) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.grade_eq_bot_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 814](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L814). The attribute's comment: “part (1): H^i(X) = 0 for i ≠ 0, over the actual category of smooth projective schemes and the actual Weil data (D0)-(D3) satisfying (A), (B), (C)”.
+**`Stacks.WeilCohomology.WeilData.grade_eq_bot_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 814](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L814). The attribute's comment: “part (1): H^i(X) = 0 for i ≠ 0, over the actual category of smooth projective schemes and the actual Weil data (D0)-(D3) satisfying (A), (B), (C)”.
 
 > **Stacks 0FHQ (1)**: for data (D0)–(D3) satisfying (A), (B), (C) and `X` a smooth projective
 > scheme of dimension zero over `k`, `H^i(X) = 0` for `i ≠ 0`.
@@ -66,7 +66,7 @@ theorem integration_eq_add_comp_pullback (i : X ⟶ Z) (j : Y ⟶ Z)
 theorem grade_eq_bot_of_dimension_zero {n : ℤ} (hn : n ≠ 0) : W.grade X n = ⊥
 ```
 
-**`Stacks.WeilCohomology.WeilData.finiteDimensional_H0_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 825](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L825). The attribute's comment: “part (2), finiteness: H^0(X) is finite dimensional over F”.
+**`Stacks.WeilCohomology.WeilData.finiteDimensional_H0_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 825](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L825). The attribute's comment: “part (2), finiteness: H^0(X) is finite dimensional over F”.
 
 > **Stacks 0FHQ (2), finiteness**: `H^0(X)` is a finite `F`-algebra, `X` of dimension zero.
 
@@ -74,7 +74,7 @@ theorem grade_eq_bot_of_dimension_zero {n : ℤ} (hn : n ≠ 0) : W.grade X n = 
 theorem finiteDimensional_H0_of_dimension_zero : FiniteDimensional F (W.H0 X)
 ```
 
-**`Stacks.WeilCohomology.WeilData.finrank_grade_zero_eq_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 839](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L839). The attribute's comment: “part (3): dim\_F H^0(X) = deg(X → Spec k)”.
+**`Stacks.WeilCohomology.WeilData.finrank_grade_zero_eq_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 839](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L839). The attribute's comment: “part (3): dim\_F H^0(X) = deg(X → Spec k)”.
 
 > **Stacks 0FHQ (3)**: `dim_F H^0(X) = deg(X → Spec k)`, the degree being the rank of the finite
 > flat structure morphism at the point of `Spec k` (Stacks 02KA, `Scheme.Hom.finrank`).
@@ -84,7 +84,7 @@ theorem finrank_grade_zero_eq_degree (s : Spec (.of k)) :
     Module.finrank F (W.grade X 0) = X.obj.hom.finrank s
 ```
 
-**`Stacks.WeilCohomology.WeilData.isSeparable_H0_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 1039](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L1039). The attribute's comment: “part (2), separability: H^0(X) is a separable F-algebra”.
+**`Stacks.WeilCohomology.WeilData.isSeparable_H0_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 1039](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L1039). The attribute's comment: “part (2), separability: H^0(X) is a separable F-algebra”.
 
 > **Stacks 0FHQ (2), separability**: `H^0(X)` is a separable `F`-algebra, `X` of dimension
 > zero.
@@ -93,7 +93,7 @@ theorem finrank_grade_zero_eq_degree (s : Spec (.of k)) :
 theorem isSeparable_H0_of_dimension_zero : Algebra.IsSeparable F (W.H0 X)
 ```
 
-**`Stacks.WeilCohomology.WeilData.traceZero_eq_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 1047](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L1047). The attribute's comment: “part (4): ∫\_X : H^0(X) → F is the trace map”.
+**`Stacks.WeilCohomology.WeilData.traceZero_eq_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 1047](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L1047). The attribute's comment: “part (4): ∫\_X : H^0(X) → F is the trace map”.
 
 > **Stacks 0FHQ (4)**: `∫_X : H^0(X) → F` is the trace map of the `F`-algebra `H^0(X)`; here
 > `a ∈ H^0(X)` enters `∫_X` through `H^0(X)(0) = H^0(X) ⊗_F F(0)`.
@@ -104,7 +104,7 @@ theorem traceZero_eq_trace (a : W.H0 X) :
         ((W.twCoord X _ _).symm ⟨a.1, a.2⟩) = Algebra.trace F (W.H0 X) a
 ```
 
-**`Stacks.WeilCohomology.WeilData.trace_cycleClass_fundamentalClass_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 1061](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L1061). The attribute's comment: “part (6): ∫\_X γ([X]) = deg(X → Spec k)”.
+**`Stacks.WeilCohomology.WeilData.trace_cycleClass_fundamentalClass_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 1061](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L1061). The attribute's comment: “part (6): ∫\_X γ([X]) = deg(X → Spec k)”.
 
 > **Stacks 0FHQ (6)**: `∫_X γ([X]) = deg(X → Spec k)`.
 
@@ -114,7 +114,7 @@ theorem trace_cycleClass_fundamentalClass_of_dimension_zero (s : Spec (.of k)) :
         (W.cycleClass X 0 (fundamentalClass X)) = (X.obj.hom.finrank s : F)
 ```
 
-**`Stacks.WeilCohomology.subsingleton_cohomology_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L277). The attribute's comment: “part (1): H^i(X) = 0 for i ≠ 0”.
+**`Stacks.WeilCohomology.subsingleton_cohomology_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 277](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L277). The attribute's comment: “part (1): H^i(X) = 0 for i ≠ 0”.
 
 > **Stacks Project, Tag 0FHQ, part (1).** The cohomology of a smooth projective scheme of
 > dimension zero over the base field vanishes in every nonzero degree.
@@ -123,7 +123,7 @@ theorem trace_cycleClass_fundamentalClass_of_dimension_zero (s : Spec (.of k)) :
 theorem subsingleton_cohomology_of_dimension_zero (i : ℤ) (hi : i ≠ 0) : Subsingleton (HX i)
 ```
 
-**`Stacks.WeilCohomology.finrank_cohomology_zero_eq_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L287). The attribute's comment: “part (3): dim\_F H^0(X) = deg(X → Spec k)”.
+**`Stacks.WeilCohomology.finrank_cohomology_zero_eq_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 287](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L287). The attribute's comment: “part (3): dim\_F H^0(X) = deg(X → Spec k)”.
 
 > **Stacks Project, Tag 0FHQ, part (3).** The degree-zero cohomology of a smooth projective
 > scheme `X` of dimension zero over the base field has dimension `deg(X → Spec(k))` over the
@@ -134,7 +134,7 @@ theorem subsingleton_cohomology_of_dimension_zero (i : ℤ) (hi : i ≠ 0) : Sub
 theorem finrank_cohomology_zero_eq_degree : Module.finrank F (HX 0) = n
 ```
 
-**`Stacks.WeilCohomology.integration_eq_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L331). The attribute's comment: “part (4): ∫\_X is the trace map”.
+**`Stacks.WeilCohomology.integration_eq_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 331](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L331). The attribute's comment: “part (4): ∫\_X is the trace map”.
 
 > **Stacks Project, Tag 0FHQ, part (4).** Integration on a smooth projective scheme of
 > dimension zero over the base field is the trace map of the `F`-algebra `H^0(X)`.
@@ -148,7 +148,7 @@ theorem finrank_cohomology_zero_eq_degree : Module.finrank F (HX 0) = n
 theorem integration_eq_trace : integration = Algebra.trace F A
 ```
 
-**`Stacks.WeilCohomology.isSeparable_cohomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L384). The attribute's comment: “part (2): H^0(X) is a finite separable F-algebra”.
+**`Stacks.WeilCohomology.isSeparable_cohomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 384](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L384). The attribute's comment: “part (2): H^0(X) is a finite separable F-algebra”.
 
 > **Stacks Project, Tag 0FHQ, part (2).** The degree-zero cohomology of a smooth projective
 > scheme of dimension zero over the base field is a finite separable algebra over the coefficient
@@ -164,7 +164,7 @@ theorem integration_eq_trace : integration = Algebra.trace F A
 theorem isSeparable_cohomology_zero : Algebra.IsSeparable F A
 ```
 
-**`Stacks.WeilCohomology.cycleClass_fundamental_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L477). The attribute's comment: “part (5): γ([X]) = 1”.
+**`Stacks.WeilCohomology.cycleClass_fundamental_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 477](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L477). The attribute's comment: “part (5): γ([X]) = 1”.
 
 > **Stacks Project, Tag 0FHQ, part (5).** The cycle class of the fundamental class of a
 > nonempty smooth projective scheme over the base field is the unit of its cohomology algebra.
@@ -178,7 +178,7 @@ theorem isSeparable_cohomology_zero : Algebra.IsSeparable F A
 theorem cycleClass_fundamental_eq_one : cycleClass fundamental = 1
 ```
 
-**`Stacks.WeilCohomology.integration_cycleClass_eq_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L512). The attribute's comment: “part (6): ∫\_X γ([X]) = deg(X → Spec k)”.
+**`Stacks.WeilCohomology.integration_cycleClass_eq_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean, line 512](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DimensionZero.lean#L512). The attribute's comment: “part (6): ∫\_X γ([X]) = deg(X → Spec k)”.
 
 > **Stacks Project, Tag 0FHQ, part (6).** Integration of the cycle class of the fundamental
 > class of a smooth projective scheme of dimension zero over the base field is its degree over
@@ -194,13 +194,13 @@ theorem integration_cycleClass_eq_degree : integration (cycleClass fundamental) 
 
 Declarations registered for the tag:
 
-- [`Stacks.WeilCohomology.WeilData.cycleClass_fundamentalClass`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassFundamental.lean#L142), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 1076](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L1076) (StacksFrontier): “part (5): γ([X]) = 1, by 0FHF, for every smooth projective X”.
+- [`Stacks.WeilCohomology.WeilData.cycleClass_fundamentalClass`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassFundamental.lean#L142), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean, line 1076](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/DimensionZero.lean#L1076) (StacksFrontier): “part (5): γ([X]) = 1, by 0FHF, for every smooth projective X”.
 
 ## Tag 0FHR, a lemma
 
 [Tag 0FHR](https://stacks.math.columbia.edu/tag/0FHR) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.trace_cycleClass_eq_codimensionDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ZeroCycleTraceDegree.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ZeroCycleTraceDegree.lean#L252).
+**`Stacks.WeilCohomology.WeilData.trace_cycleClass_eq_codimensionDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ZeroCycleTraceDegree.lean, line 252](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ZeroCycleTraceDegree.lean#L252).
 
 > **Stacks 0FHR.** Assume given data (D0)–(D3) satisfying (A), (B) and (C), and let `X` be a
 > nonempty smooth projective scheme over `k`, equidimensional of dimension `d`. Then the diagram
@@ -220,7 +220,7 @@ theorem trace_cycleClass_eq_codimensionDegree
 
 [Tag 0FHS](https://stacks.math.columbia.edu/tag/0FHS) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.finsum_negOnePow_finrank_eq_codimensionDegree_diag_mul_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/EulerCharacteristic.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/EulerCharacteristic.lean#L305). The attribute's comment: “the whole lemma: for (D0)-(D3) satisfying (A), (B), (C), F of characteristic 0, and X nonempty smooth projective over k, equidimensional of dimension d: the Euler characteristic ∑\_i (-1)^i dim\_F H^i(X) (over all i ∈ ℤ, of finite support) equals deg(Δ·Δ) for the intersection product of Tag 0FC0 of the class of the diagonal with itself in CH^\{2d}(X × X), which equals deg(c\_d(T\_\{X/k}) ∩ [X]) for the tangent sheaf T\_\{X/k} = Hom(Ω\_\{X/k}, O\_X)”. References: SGA 7 XVI (2.1), “partial”.
+**`Stacks.WeilCohomology.WeilData.finsum_negOnePow_finrank_eq_codimensionDegree_diag_mul_diag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/EulerCharacteristic.lean, line 305](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/EulerCharacteristic.lean#L305). The attribute's comment: “the whole lemma: for (D0)-(D3) satisfying (A), (B), (C), F of characteristic 0, and X nonempty smooth projective over k, equidimensional of dimension d: the Euler characteristic ∑\_i (-1)^i dim\_F H^i(X) (over all i ∈ ℤ, of finite support) equals deg(Δ·Δ) for the intersection product of Tag 0FC0 of the class of the diagonal with itself in CH^\{2d}(X × X), which equals deg(c\_d(T\_\{X/k}) ∩ [X]) for the tangent sheaf T\_\{X/k} = Hom(Ω\_\{X/k}, O\_X)”. References: SGA 7 XVI (2.1), “partial”.
 
 > **Stacks 0FHS.** Assume given (D0), (D1), (D2) and (D3) satisfying (A), (B) and (C), with `F`
 > of characteristic zero. Let `X` be a nonempty smooth projective scheme over `k`, equidimensional of
@@ -268,7 +268,7 @@ theorem finsum_negOnePow_finrank_eq_codimensionDegree_diag_mul_diag :
 
 [Tag 0FHT](https://stacks.math.columbia.edu/tag/0FHT) in the Stacks Project.
 
-**`AlgHom.exists_algEquiv_comp_eq_of_trace_sub_trace_eq_zsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/Basic.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/Basic.lean#L458). The attribute's comment: “as printed the tag concludes σ = σ' from surjectivity of σ and σ' alone; `Stacks.WeilCohomology.not_traceRelationStatement` refutes that with F = ℝ, F' = A = ℂ, σ = id and σ' = complex conjugation. This declaration is the corrected statement, under the source's own hypotheses: σ' = θ ∘ σ for an F-algebra automorphism θ of F', equivalently Tr ∘ σ = Tr ∘ σ' together with ker σ = ker σ'”.
+**`AlgHom.exists_algEquiv_comp_eq_of_trace_sub_trace_eq_zsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/Basic.lean, line 458](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/Basic.lean#L458). The attribute's comment: “as printed the tag concludes σ = σ' from surjectivity of σ and σ' alone; `Stacks.WeilCohomology.not_traceRelationStatement` refutes that with F = ℝ, F' = A = ℂ, σ = id and σ' = complex conjugation. This declaration is the corrected statement, under the source's own hypotheses: σ' = θ ∘ σ for an F-algebra automorphism θ of F', equivalently Tr ∘ σ = Tr ∘ σ' together with ker σ = ker σ'”.
 
 > **Stacks Project, Tag 0FHT**, in the corrected form recorded as a Stacks erratum.
 >
@@ -314,7 +314,7 @@ theorem AlgHom.exists_algEquiv_comp_eq_of_trace_sub_trace_eq_zsmul
 
 [Tag 0FHU](https://stacks.math.columbia.edu/tag/0FHU) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.rationalPointChowClass_sub_ne_zsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RationalPointIndivisibility.lean, line 1165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RationalPointIndivisibility.lean#L1165). The attribute's comment: “for X smooth projective over a finite separable k'/k, viewed over k, with the actual CH\_0(X) over k', the data (D0)-(D3) and axioms (A), (B), (C) over the actual category of smooth projective k-schemes; γ(x) is the family of the classes γ([x]) in every codimension”.
+**`Stacks.WeilCohomology.WeilData.rationalPointChowClass_sub_ne_zsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RationalPointIndivisibility.lean, line 1165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RationalPointIndivisibility.lean#L1165). The attribute's comment: “for X smooth projective over a finite separable k'/k, viewed over k, with the actual CH\_0(X) over k', the data (D0)-(D3) and axioms (A), (B), (C) over the actual category of smooth projective k-schemes; γ(x) is the family of the classes γ([x]) in every codimension”.
 
 > **Stacks Project, Tag 0FHU.** Assume given (D0), (D1), (D2) and (D3) satisfying (A), (B) and
 > (C). Let `k'/k` be a finite separable extension, let `X` be a smooth projective scheme over `k'`
@@ -350,7 +350,7 @@ theorem rationalPointChowClass_sub_ne_zsmul [CharZero F] (hA : W.PoincareDuality
     rationalPointChowClass k' p x hx - rationalPointChowClass k' p x' hx' ≠ n • c
 ```
 
-**`Stacks.WeilCohomology.rationalPointChowClass_sub_ne_zsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/RationalPoints.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/RationalPoints.lean#L183). The attribute's comment: “(D0)-(D3), (A)-(C) as explicit arguments is the source's own hypothesis and this directory's convention, not a restriction; but `hsep` (Stacks 0FH5, not proved here) and `htrace`, `htrace'` (∫\_X a ∪ γ([x]) = trace of i^*a, via 0FHG, 0FHB, 0FHQ(4)) are carried rather than derived, as is the reduction to irreducible `X`. Generalizations: no smoothness or projectivity on `p`; only `pair.flip` injectivity is used of (A)(b)”.
+**`Stacks.WeilCohomology.rationalPointChowClass_sub_ne_zsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/RationalPoints.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/RationalPoints.lean#L183). The attribute's comment: “(D0)-(D3), (A)-(C) as explicit arguments is the source's own hypothesis and this directory's convention, not a restriction; but `hsep` (Stacks 0FH5, not proved here) and `htrace`, `htrace'` (∫\_X a ∪ γ([x]) = trace of i^*a, via 0FHG, 0FHB, 0FHQ(4)) are carried rather than derived, as is the reduction to irreducible `X`. Generalizations: no smoothness or projectivity on `p`; only `pair.flip` injectivity is used of (A)(b)”.
 
 > **Stacks Project, Tag 0FHU.** Let `H^*` be a Weil cohomology theory with coefficient field
 > `F` of characteristic zero, let `k'/k` be a finite separable extension and let `X` be a smooth
@@ -421,7 +421,7 @@ theorem rationalPointChowClass_sub_ne_zsmul
 
 [Tag 0FHV](https://stacks.math.columbia.edu/tag/0FHV) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.exists_cycleClass_comp_eq_comp_chowDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/PointClassDegree.lean, line 553](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/PointClassDegree.lean#L553). The attribute's comment: “for X smooth projective and geometrically irreducible over a finite separable k'/k, viewed over k, with the actual CH\_0(X) over k' and its degree, the data (D0)-(D3) and axioms (A), (B), (C) over the actual category of smooth projective k-schemes”.
+**`Stacks.WeilCohomology.WeilData.exists_cycleClass_comp_eq_comp_chowDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/PointClassDegree.lean, line 553](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/PointClassDegree.lean#L553). The attribute's comment: “for X smooth projective and geometrically irreducible over a finite separable k'/k, viewed over k, with the actual CH\_0(X) over k' and its degree, the data (D0)-(D3) and axioms (A), (B), (C) over the actual category of smooth projective k-schemes”.
 
 > **Stacks Project, Tag 0FHV.** Assume given (D0), (D1), (D2) and (D3) satisfying (A), (B) and
 > (C). Let `k'/k` be a finite separable extension and let `X` be a geometrically irreducible smooth
@@ -463,7 +463,7 @@ theorem exists_cycleClass_comp_eq_comp_chowDegree [CharZero F]
 
 [Tag 0FHW](https://stacks.math.columbia.edu/tag/0FHW) in the Stacks Project.
 
-**`Stacks.WeilCohomology.injective_pullback_of_isDominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DominantPullback.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DominantPullback.lean#L171).
+**`Stacks.WeilCohomology.injective_pullback_of_isDominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DominantPullback.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/DominantPullback.lean#L171).
 
 > **Stacks Project, Tag 0FHW.** Let `f : X ⟶ Y` be a dominant morphism of irreducible smooth
 > projective schemes over a field `k`, and let `H^*` be a Weil cohomology theory over `k` with
@@ -536,7 +536,7 @@ theorem injective_pullback_of_isDominant {k : Type u} [Field k] {F : Type*} [Fie
 
 [Tag 0FHX](https://stacks.math.columbia.edu/tag/0FHX) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.bijective_scalarExtensionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ScalarExtension.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ScalarExtension.lean#L695). The attribute's comment: “H^*(X) ⊗\_\{H^0(Spec k')} H^0(Spec k'') = H^*(X ×\_\{Spec k'} Spec k'') for the actual Weil data, X smooth projective over k', k''/k'/k finite separable”.
+**`Stacks.WeilCohomology.WeilData.bijective_scalarExtensionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ScalarExtension.lean, line 695](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ScalarExtension.lean#L695). The attribute's comment: “H^*(X) ⊗\_\{H^0(Spec k')} H^0(Spec k'') = H^*(X ×\_\{Spec k'} Spec k'') for the actual Weil data, X smooth projective over k', k''/k'/k finite separable”.
 
 > **Stacks Project, Tag 0FHX.** Assume given `(D0)`–`(D3)` satisfying `(A)`, `(B)` and `(C)`.
 > Let `k''/k'/k` be finite separable algebras and let `X` be a smooth projective scheme over `k'`.
@@ -554,7 +554,7 @@ theorem bijective_scalarExtensionMap [CharZero F] (hA : W.PoincareDuality) (hB :
     Function.Bijective (W.scalarExtensionMap π hπ (k'' := k''))
 ```
 
-**`Stacks.WeilCohomology.WeilData.scalarExtensionAlgEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ScalarExtension.lean, line 706](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ScalarExtension.lean#L706). The attribute's comment: “the H^0(Spec k')-algebra isomorphism H^*(X) ⊗\_\{H^0(Spec k')} H^0(Spec k'') ≃ H^*(X ×\_\{Spec k'} Spec k'') for the actual Weil data”.
+**`Stacks.WeilCohomology.WeilData.scalarExtensionAlgEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ScalarExtension.lean, line 706](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ScalarExtension.lean#L706). The attribute's comment: “the H^0(Spec k')-algebra isomorphism H^*(X) ⊗\_\{H^0(Spec k')} H^0(Spec k'') ≃ H^*(X ×\_\{Spec k'} Spec k'') for the actual Weil data”.
 
 > **Stacks Project, Tag 0FHX**, as an isomorphism of `H^0(Spec k')`-algebras:
 > `H^*(X) ⊗_{H^0(Spec k')} H^0(Spec k'') ≃ H^*(X ×_{Spec k'} Spec k'')`,
@@ -567,7 +567,7 @@ def scalarExtensionAlgEquiv [CharZero F] (hA : W.PoincareDuality) (hB : W.Kunnet
       W.H (baseChangeObj k π hπ (k'' := k''))
 ```
 
-**`Stacks.WeilCohomology.bijective_scalarExtensionHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/ScalarExtension.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/ScalarExtension.lean#L223). The attribute's comment: “the comparison map is bijective”.
+**`Stacks.WeilCohomology.bijective_scalarExtensionHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/ScalarExtension.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/ScalarExtension.lean#L223). The attribute's comment: “the comparison map is bijective”.
 
 > **Stacks Project, Tag 0FHX.** Let `k''/k'/k` be finite separable algebras and let `X` be a
 > smooth projective scheme over `k'`. Then the canonical map
@@ -595,7 +595,7 @@ theorem bijective_scalarExtensionHom (fM : M →ₐ[A] N₁)
     Function.Bijective (scalarExtensionHom (B := B) fM)
 ```
 
-**`Stacks.WeilCohomology.scalarExtensionEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/ScalarExtension.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/ScalarExtension.lean#L245). The attribute's comment: “the scalar extension isomorphism”.
+**`Stacks.WeilCohomology.scalarExtensionEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/ScalarExtension.lean, line 245](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/FurtherProperties/ScalarExtension.lean#L245). The attribute's comment: “the scalar extension isomorphism”.
 
 > **Stacks Project, Tag 0FHX.** The scalar extension isomorphism
 >
@@ -624,4 +624,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 45.10, Tag 0FHN](https://stacks.math.columbia.edu/tag/0FHN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

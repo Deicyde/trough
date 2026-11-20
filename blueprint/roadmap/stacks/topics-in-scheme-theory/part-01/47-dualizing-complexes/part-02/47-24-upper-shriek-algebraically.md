@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.24 Upper shriek algebraically
 
-Section 47.24 of the Stacks Project, [Tag 0BZI](https://stacks.math.columbia.edu/tag/0BZI). 11 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 47.24 of the Stacks Project, [Tag 0BZI](https://stacks.math.columbia.edu/tag/0BZI). 11 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BZJ, a lemma
 
 [Tag 0BZJ](https://stacks.math.columbia.edu/tag/0BZJ) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/PolynomialEvalDualityProof.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/PolynomialEvalDualityProof.lean#L146).
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/PolynomialEvalDualityProof.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/PolynomialEvalDualityProof.lean#L146).
 
 > **Stacks 0BZJ.** The algebraic upper shriek functors attached to any two polynomial
 > presentations of the same finite type homomorphism are naturally isomorphic, so `f^!` is well
@@ -33,7 +33,7 @@ theorem nonempty_upperShriekFunctor_iso {R A : Type u} [CommRing R] [CommRing A]
 
 [Tag 0BZK](https://stacks.math.columbia.edu/tag/0BZK) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.upperShriekFunctor_isBoundedBelow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L92). The attribute's comment: “(1), the statement that φ^! maps D⁺(R) into D⁺(A)”.
+**`Dualizing.PolynomialPresentation.upperShriekFunctor_isBoundedBelow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L92). The attribute's comment: “(1), the statement that φ^! maps D⁺(R) into D⁺(A)”.
 
 > Algebraic upper shriek carries cohomologically bounded-below complexes to cohomologically
 > bounded-below complexes.
@@ -44,7 +44,7 @@ theorem upperShriekFunctor_isBoundedBelow (p : PolynomialPresentation f)
     DerivedCategoryB.IsBoundedBelow (p.upperShriekFunctor.{u, v}.obj K)
 ```
 
-**`Dualizing.PolynomialPresentation.upperShriekFunctor_derivedCategoryBPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L142). The attribute's comment: “(1), the statement that φ^! maps D⁺\_Coh(R) into D⁺\_Coh(A)”.
+**`Dualizing.PolynomialPresentation.upperShriekFunctor_derivedCategoryBPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L142). The attribute's comment: “(1), the statement that φ^! maps D⁺\_Coh(R) into D⁺\_Coh(A)”.
 
 > Algebraic upper shriek along a finite type homomorphism of Noetherian rings carries
 > bounded-below complexes with coherent cohomology to bounded-below complexes with coherent
@@ -60,7 +60,7 @@ theorem upperShriekFunctor_derivedCategoryBPlus [IsNoetherianRing R] [IsNoetheri
       (p.upperShriekFunctor.{u, v}.obj K)
 ```
 
-**`Dualizing.upperShriekFunctor_isBoundedAbove_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L283). The attribute's comment: “(2), the statement that φ^! maps D⁻(R) into D⁻(A)”.
+**`Dualizing.upperShriekFunctor_isBoundedAbove_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 283](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L283). The attribute's comment: “(2), the statement that φ^! maps D⁻(R) into D⁻(A)”.
 
 > Algebraic upper shriek along a perfect homomorphism of Noetherian rings carries cohomologically
 > bounded-above complexes to cohomologically bounded-above complexes.
@@ -72,7 +72,7 @@ theorem upperShriekFunctor_isBoundedAbove_of_perfect
     DerivedCategoryB.IsBoundedAbove (p.upperShriekFunctor.{u, v}.obj K)
 ```
 
-**`Dualizing.upperShriekFunctor_derivedCategoryBMinus_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L295). The attribute's comment: “(2), the statement that φ^! maps D⁻\_Coh(R) into D⁻\_Coh(A)”.
+**`Dualizing.upperShriekFunctor_derivedCategoryBMinus_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L295). The attribute's comment: “(2), the statement that φ^! maps D⁻\_Coh(R) into D⁻\_Coh(A)”.
 
 > Algebraic upper shriek along a perfect homomorphism of Noetherian rings carries bounded-above
 > complexes with coherent cohomology to bounded-above complexes with coherent cohomology.
@@ -88,7 +88,7 @@ theorem upperShriekFunctor_derivedCategoryBMinus_of_perfect
       (p.upperShriekFunctor.{u, v}.obj K)
 ```
 
-**`Dualizing.upperShriekFunctor_derivedCategoryBBounded_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L311). The attribute's comment: “(2), the statement that φ^! maps Dᵇ\_Coh(R) into Dᵇ\_Coh(A)”.
+**`Dualizing.upperShriekFunctor_derivedCategoryBBounded_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 311](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L311). The attribute's comment: “(2), the statement that φ^! maps Dᵇ\_Coh(R) into Dᵇ\_Coh(A)”.
 
 > Algebraic upper shriek along a perfect homomorphism of Noetherian rings carries bounded
 > complexes with coherent cohomology to bounded complexes with coherent cohomology.
@@ -108,7 +108,7 @@ theorem upperShriekFunctor_derivedCategoryBBounded_of_perfect
 
 [Tag 0BZL](https://stacks.math.columbia.edu/tag/0BZL) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.upperShriekFunctor_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Dualizing.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/Dualizing.lean#L57).
+**`Dualizing.PolynomialPresentation.upperShriekFunctor_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Dualizing.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/Dualizing.lean#L57).
 
 > **Stacks Project, Tag 0BZL.** Algebraic upper shriek along a finite type homomorphism of
 > Noetherian rings carries a dualizing complex to a dualizing complex.
@@ -124,7 +124,7 @@ theorem upperShriekFunctor_isDualizingComplex [IsNoetherianRing R] [IsNoetherian
 
 [Tag 0BZN](https://stacks.math.columbia.edu/tag/0BZN) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.isIso_upperShriekFlatBaseChange_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatBaseChangeIso.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatBaseChangeIso.lean#L228).
+**`Dualizing.PolynomialPresentation.isIso_upperShriekFlatBaseChange_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatBaseChangeIso.lean, line 228](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatBaseChangeIso.lean#L228).
 
 > Let `R` be Noetherian, let `R → R'` be flat, let `φ : R → A` be of finite type, presented by
 > `p`, and let `φ' : R' → A' = R' ⊗_R A` be its base change. The flat-base-change map
@@ -144,7 +144,7 @@ theorem PolynomialPresentation.isIso_upperShriekFlatBaseChange_app [IsNoetherian
 
 [Tag 0BZR](https://stacks.math.columbia.edu/tag/0BZR) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_comp_iso_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/TorIndependentBaseChangeIso.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/TorIndependentBaseChangeIso.lean#L370).
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_comp_iso_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/TorIndependentBaseChangeIso.lean, line 370](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/TorIndependentBaseChangeIso.lean#L370).
 
 > **Stacks 0BZR.**  Let `R → R'` be a ring homomorphism, let `φ : R → A` be a perfect ring map
 > such that `A` and `R'` are Tor independent over `R`, and let `φ' : R' → A' = R' ⊗_R A` be the
@@ -188,7 +188,7 @@ theorem PolynomialPresentation.nonempty_upperShriekFunctor_comp_iso_of_torIndepe
 
 [Tag 0BZS](https://stacks.math.columbia.edu/tag/0BZS) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_comp_iso_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatAlgebraBaseChangeIso.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatAlgebraBaseChangeIso.lean#L257).
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_comp_iso_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatAlgebraBaseChangeIso.lean, line 257](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatAlgebraBaseChangeIso.lean#L257).
 
 > **Stacks 0BZS.**  Let `R` be a Noetherian ring and `R → R'` any homomorphism, let
 > `φ : R → A` be flat of finite type, presented by `p`, and let `φ' : R' → A' = R' ⊗_R A` be the
@@ -230,7 +230,7 @@ theorem PolynomialPresentation.nonempty_upperShriekFunctor_comp_iso_of_flat
 
 [Tag 0BZT](https://stacks.math.columbia.edu/tag/0BZT) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.exists_upperShriekComp_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/CompositionFiniteType.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/CompositionFiniteType.lean#L178).
+**`Dualizing.PolynomialPresentation.exists_upperShriekComp_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/CompositionFiniteType.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/CompositionFiniteType.lean#L178).
 
 > **Stacks Project, Tag 0BZT.**  Let `a : R →+* A` and `b : A →+* B` be homomorphisms of finite
 > type with `R` Noetherian, let `p` be any polynomial presentation of `a`, `q` any polynomial
@@ -262,7 +262,7 @@ theorem exists_upperShriekComp_of_finiteType [IsNoetherianRing R] {a : R →+* A
 
 [Tag 0C0G](https://stacks.math.columbia.edu/tag/0C0G) in the Stacks Project.
 
-**`Dualizing.upperShriekFunctor_iso_derivedHom_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Finite.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/Finite.lean#L159). The attribute's comment: “for a finite φ of Noetherian rings, at an arbitrary polynomial presentation, at module universe equal to the ring universe”.
+**`Dualizing.upperShriekFunctor_iso_derivedHom_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Finite.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/Finite.lean#L159). The attribute's comment: “for a finite φ of Noetherian rings, at an arbitrary polynomial presentation, at module universe equal to the ring universe”.
 
 > **Stacks Project, Tag 0C0G for a finite `φ`.**  Let `φ : R →+* A` be a finite homomorphism
 > and let `p` be any polynomial presentation of `φ`.  Then the algebraic upper
@@ -298,7 +298,7 @@ theorem upperShriekFunctor_iso_derivedHom_of_finite (φ : R →+* A) (hφ : φ.F
 
 [Tag 0C0H](https://stacks.math.columbia.edu/tag/0C0H) in the Stacks Project.
 
-**`Dualizing.upperShriekFunctor_iso_derivedTensorProduct_away_and_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatEpimorphism.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatEpimorphism.lean#L582).
+**`Dualizing.upperShriekFunctor_iso_derivedTensorProduct_away_and_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatEpimorphism.lean, line 582](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/FlatEpimorphism.lean#L582).
 
 > **[Stacks, Tag 0C0H].**  Let `R` be a ring.
 >
@@ -333,7 +333,7 @@ theorem upperShriekFunctor_iso_derivedTensorProduct_away_and_of_isOpenImmersion
 
 [Tag 0BZU](https://stacks.math.columbia.edu/tag/0BZU) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.upperShriekFunctor_iso_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean#L449). The attribute's comment: “at an arbitrary polynomial presentation and an arbitrary module universe”.
+**`Dualizing.PolynomialPresentation.upperShriekFunctor_iso_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean, line 449](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean#L449). The attribute's comment: “at an arbitrary polynomial presentation and an arbitrary module universe”.
 
 > **Stacks 0BZU.** Let `φ : R → A` be a ring homomorphism, let `p` be a
 > polynomial presentation of `φ` with polynomial algebra `P` and surjection `ψ : P → A`, and assume
@@ -366,7 +366,7 @@ public theorem upperShriekFunctor_iso_derivedTensorProduct
       derivedTensorProductOver.{u, v} f (p.upperShriekFunctor.{u, v}.obj R₀))
 ```
 
-**`Dualizing.PolynomialPresentation.upperShriekFunctor_iso_derivedTensorProduct_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean#L525). The attribute's comment: “for a perfect homomorphism, at an arbitrary polynomial presentation and an arbitrary module universe”.
+**`Dualizing.PolynomialPresentation.upperShriekFunctor_iso_derivedTensorProduct_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean, line 525](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean#L525). The attribute's comment: “for a perfect homomorphism, at an arbitrary polynomial presentation and an arbitrary module universe”.
 
 > **Stacks 0BZU.** Let `φ : R → A` be a perfect ring homomorphism and let `p` be
 > a polynomial presentation of `φ`.  Then the algebraic upper shriek functor of `p` is derived
@@ -393,7 +393,7 @@ public theorem upperShriekFunctor_iso_derivedTensorProduct_of_perfect
       derivedTensorProductOver.{u, v} f (p.upperShriekFunctor.{u, v}.obj R₀))
 ```
 
-**`Dualizing.PolynomialPresentation.tensorFormulaOfPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean#L657). The attribute's comment: “at an arbitrary polynomial presentation and an arbitrary module universe, with the tensor formula built as an isomorphism at a constructed tensor factor whose class in D(A) is the value of upper shriek at R”.
+**`Dualizing.PolynomialPresentation.tensorFormulaOfPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean, line 657](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensor.lean#L657). The attribute's comment: “at an arbitrary polynomial presentation and an arbitrary module universe, with the tensor formula built as an isomorphism at a constructed tensor factor whose class in D(A) is the value of upper shriek at R”.
 
 > **Stacks 0BZU with the isomorphism built, from perfectness alone.** Let `φ : R → A` be a ring
 > homomorphism and `p` a polynomial presentation of `φ` whose polynomial algebra
@@ -415,7 +415,7 @@ public def tensorFormulaOfPerfect
     TensorFormula.{u, v} p
 ```
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L131). The attribute's comment: “at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor\_iso\_derivedTensorProduct”.
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L131). The attribute's comment: “at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor\_iso\_derivedTensorProduct”.
 
 > **Stacks 0BZU, with no carried hypothesis.** Let `φ : R → A` be a ring homomorphism and `p` a
 > polynomial presentation of it whose polynomial algebra makes `A` a perfect
@@ -441,7 +441,7 @@ theorem nonempty_upperShriekFunctor_iso_derivedTensorProduct
       derivedTensorProductOver.{u, u} f (p.upperShriekFunctor.{u, u}.obj R₀))
 ```
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L159). The attribute's comment: “for a perfect homomorphism, at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor\_iso\_derivedTensorProduct\_of\_perfect”.
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L159). The attribute's comment: “for a perfect homomorphism, at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor\_iso\_derivedTensorProduct\_of\_perfect”.
 
 > **Stacks 0BZU for a perfect homomorphism, with no carried hypothesis.** Let `φ : R → A` be a
 > perfect ring homomorphism and `p` a polynomial presentation of it. Then the
@@ -468,7 +468,7 @@ theorem nonempty_upperShriekFunctor_iso_derivedTensorProduct_of_perfect
       derivedTensorProductOver.{u, u} f (p.upperShriekFunctor.{u, u}.obj R₀))
 ```
 
-**`Dualizing.PolynomialPresentation.tensorFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L190). The attribute's comment: “at an arbitrary polynomial presentation, at module universe equal to the ring universe, with no carried hypothesis, and with the isomorphism built rather than shown to exist — at the constructed tensor factor of Tag 08YU, whose class in D(A) is the value of upper shriek at R rather than a prescribed representative of it”.
+**`Dualizing.PolynomialPresentation.tensorFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L190). The attribute's comment: “at an arbitrary polynomial presentation, at module universe equal to the ring universe, with no carried hypothesis, and with the isomorphism built rather than shown to exist — at the constructed tensor factor of Tag 08YU, whose class in D(A) is the value of upper shriek at R rather than a prescribed representative of it”.
 
 > **Stacks 0BZU with the isomorphism built, and no carried hypothesis.** Same hypotheses as
 > `Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct`, but the
@@ -492,7 +492,7 @@ def tensorFormula (p : PolynomialPresentation f)
 
 [Tag 0E9L](https://stacks.math.columbia.edu/tag/0E9L) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_natIso_dualizingDerivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean#L193). The attribute's comment: “in general: an arbitrary finite-type φ of Noetherian rings at an arbitrary polynomial presentation, as an isomorphism of functors on D\_Coh(A), with no surjectivity and no projection-formula keystone”.
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_natIso_dualizingDerivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean, line 193](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean#L193). The attribute's comment: “in general: an arbitrary finite-type φ of Noetherian rings at an arbitrary polynomial presentation, as an isomorphism of functors on D\_Coh(A), with no surjectivity and no projection-formula keystone”.
 
 > **[Stacks, Tag 0E9L] for an arbitrary finite-type `φ`, as an isomorphism of functors on
 > `D_Coh(A)`.**  Let `φ : A →+* B` be a homomorphism of finite type with `A` Noetherian, let `p` be
@@ -528,7 +528,7 @@ theorem nonempty_upperShriekFunctor_natIso_dualizingDerivedHom [IsNoetherianRing
         (totalDerivedExtension φ) ω (p.upperShriekFunctor.{u, u}.obj ω))
 ```
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_natIso_dualizingDerivedHom_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean#L254). The attribute's comment: “in general, at an arbitrary model of derived base change as well as an arbitrary polynomial presentation”.
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_natIso_dualizingDerivedHom_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean#L254). The attribute's comment: “in general, at an arbitrary model of derived base change as well as an arbitrary polynomial presentation”.
 
 > **[Stacks, Tag 0E9L] in general, at an arbitrary model of derived base change.**  This is
 > `Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_natIso_dualizingDerivedHom` with the
@@ -556,4 +556,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.24, Tag 0BZI](https://stacks.math.columbia.edu/tag/0BZI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

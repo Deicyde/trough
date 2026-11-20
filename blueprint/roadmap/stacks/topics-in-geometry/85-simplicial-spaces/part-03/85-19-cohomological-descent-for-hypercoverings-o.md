@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.19 Cohomological descent for hypercoverings of an object
 
-Section 85.19 of the Stacks Project, [Tag 0D8J](https://stacks.math.columbia.edu/tag/0D8J). 4 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 85.19 of the Stacks Project, [Tag 0D8J](https://stacks.math.columbia.edu/tag/0D8J). 4 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0D8K, a lemma
 
 [Tag 0D8K](https://stacks.math.columbia.edu/tag/0D8K) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactQcSite.mem_essImage_iff_isCartesianSheaf_qcAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L338). The attribute's comment: “part (1) for a hypercovering augmentation of the quasi-compact site LC\_qc”.
+**`Stacks.Topology.LocallyQuasiCompactQcSite.mem_essImage_iff_isCartesianSheaf_qcAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L338). The attribute's comment: “part (1) for a hypercovering augmentation of the quasi-compact site LC\_qc”.
 
 > **Stacks 0D8K (1) for a hypercovering augmentation of `LC_qc`.** Let `a : U ⟶ Y` be a
 > hypercovering augmentation of an object `Y` of the quasi-compact site, in the sense of
@@ -40,7 +40,7 @@ theorem mem_essImage_iff_isCartesianSheaf_qcAugmentation {Y : S.category}
         (S.smallAssociatedSimplicialObject U a)).IsCartesianSheaf E
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactQcSite.mem_essImage_iff_isCartesianAbSheaf_qcAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L357). The attribute's comment: “part (2) for a hypercovering augmentation of the quasi-compact site LC\_qc”.
+**`Stacks.Topology.LocallyQuasiCompactQcSite.mem_essImage_iff_isCartesianAbSheaf_qcAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L357). The attribute's comment: “part (2) for a hypercovering augmentation of the quasi-compact site LC\_qc”.
 
 > **Stacks 0D8K (2) for a hypercovering augmentation of `LC_qc`.** The same for sheaves of
 > abelian groups: on the total site of the associated simplicial semi-representable object carried
@@ -62,7 +62,7 @@ theorem mem_essImage_iff_isCartesianAbSheaf_qcAugmentation {Y : S.category}
         (S.smallAssociatedSimplicialObject U a)).IsCartesianAbSheaf G
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.faithful_inverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L222). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is faithful”.
+**`CategoryTheory.SimplicialSemiRepresentable.faithful_inverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 222](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L222). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is faithful”.
 
 > **Stacks 0D8K (1), the faithfulness half.** For a hypercovering `K` of `X` the inverse image
 > `a^{-1} : Sh(C/X) ⥤ Sh((C/K)_total)` of the augmentation is faithful.
@@ -75,7 +75,7 @@ theorem faithful_inverseImage_over (hK : IsHypercovering P K) :
     (totalLocalizationMorphism (P.toGrothendieck.over X) K).inverseImage.Faithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.faithful_totalInverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L230). The attribute's comment: “part (1): a^\{-1} of Stacks 0D70 on sheaves of sets is faithful”.
+**`CategoryTheory.SimplicialSemiRepresentable.faithful_totalInverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 230](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L230). The attribute's comment: “part (1): a^\{-1} of Stacks 0D70 on sheaves of sets is faithful”.
 
 > **Stacks 0D8K (1), the faithfulness half**, for the inverse image of the morphism of topoi
 > which Stacks 0D70 attaches to the augmentation. By Stacks 0D8B that functor is isomorphic to
@@ -87,7 +87,7 @@ theorem faithful_totalInverseImage_over (hK : IsHypercovering P K) :
       (augmentation (P.toGrothendieck.over X) K).totalMorphismOfTopoi.inverseImage
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.faithful_abelianInverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L243). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is faithful”.
+**`CategoryTheory.SimplicialSemiRepresentable.faithful_abelianInverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L243). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is faithful”.
 
 > **Stacks 0D8K (2), the faithfulness half.** For a hypercovering `K` of `X` the inverse image
 > `a^{-1} : Ab(C/X) ⥤ Ab((C/K)_total)` of the augmentation — restriction along `j_total` on abelian
@@ -103,7 +103,7 @@ theorem faithful_abelianInverseImage_over (hK : IsHypercovering P K) :
       (P.toGrothendieck.over X)).Faithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.full_inverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L259). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is full”.
+**`CategoryTheory.SimplicialSemiRepresentable.full_inverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L259). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is full”.
 
 > **Stacks 0D8K (1), the fullness half.** For a hypercovering `K` of `X` the inverse image
 > `a^{-1} : Sh(C/X) ⥤ Sh((C/K)_total)` of the augmentation is full.
@@ -118,7 +118,7 @@ theorem full_inverseImage_over (hK : IsHypercovering P K) :
     (totalLocalizationMorphism (P.toGrothendieck.over X) K).inverseImage.Full
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_unit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L277). The attribute's comment: “part (1): the unit E = a\_*a⁻¹E on sheaves of sets is an isomorphism”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_unit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 277](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L277). The attribute's comment: “part (1): the unit E = a\_*a⁻¹E on sheaves of sets is an isomorphism”.
 
 > **Stacks 0D8K (1), the degree-zero identification `E = a_* a^{-1} E`.** For a hypercovering
 > `K` of `X` and every sheaf of sets `E` on `C/X` the canonical map `E ⟶ a_* a^{-1} E` is an
@@ -132,7 +132,7 @@ theorem isIso_unit_over (hK : IsHypercovering P K) :
     IsIso (totalLocalizationMorphism (P.toGrothendieck.over X) K).adj.unit
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.full_abelianInverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L288). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is full”.
+**`CategoryTheory.SimplicialSemiRepresentable.full_abelianInverseImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L288). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is full”.
 
 > **Stacks 0D8K (2), the fullness half.** The inverse image
 > `a^{-1} : Ab(C/X) ⥤ Ab((C/K)_total)` of the augmentation is full.
@@ -147,7 +147,7 @@ theorem full_abelianInverseImage_over (hK : IsHypercovering P K) :
       (P.toGrothendieck.over X)).Full
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianUnit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L300). The attribute's comment: “part (2): the unit M = a\_*a⁻¹M on abelian sheaves is an isomorphism”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianUnit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L300). The attribute's comment: “part (2): the unit M = a\_*a⁻¹M on abelian sheaves is an isomorphism”.
 
 > **Stacks 0D8K (2), the degree-zero identification `M = a_* a^{-1} M`** on sheaves of abelian
 > groups: for a hypercovering `K` of `X` and every sheaf of abelian groups `M` on `C/X` the
@@ -159,7 +159,7 @@ theorem isIso_abelianUnit_over (hK : IsHypercovering P K) :
     IsIso (abelianTotalAdjunction (P.toGrothendieck.over X) K).unit
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isCartesianSheaf_of_mem_essImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L314). The attribute's comment: “part (1): the essential image of a^\{-1} consists of cartesian sheaves of sets”.
+**`CategoryTheory.SimplicialSemiRepresentable.isCartesianSheaf_of_mem_essImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L314). The attribute's comment: “part (1): the essential image of a^\{-1} consists of cartesian sheaves of sets”.
 
 > **Stacks 0D8K (1), the inclusion of the essential image in the cartesian sheaves.** Every
 > sheaf of sets on the total site `(C/K)_total` isomorphic to an inverse image along the
@@ -175,7 +175,7 @@ theorem isCartesianSheaf_of_mem_essImage_over (J : GrothendieckTopology C)
     (situation (J.over X) K).IsCartesianSheaf F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isCartesianAbSheaf_of_mem_essImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L328). The attribute's comment: “part (2): the essential image of a^\{-1} consists of cartesian abelian sheaves”.
+**`CategoryTheory.SimplicialSemiRepresentable.isCartesianAbSheaf_of_mem_essImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDescent.lean#L328). The attribute's comment: “part (2): the essential image of a^\{-1} consists of cartesian abelian sheaves”.
 
 > **Stacks 0D8K (2), the inclusion of the essential image in the cartesian sheaves.** Every
 > sheaf of abelian groups on the total site `(C/K)_total` isomorphic to an inverse image along the
@@ -193,7 +193,7 @@ theorem isCartesianAbSheaf_of_mem_essImage_over (J : GrothendieckTopology C)
     (situation (J.over X) K).IsCartesianAbSheaf F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.essImage_of_isCartesianSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L159). The attribute's comment: “part (1): every cartesian sheaf of sets on the total site is an a^\{-1}E”.
+**`CategoryTheory.SimplicialSemiRepresentable.essImage_of_isCartesianSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L159). The attribute's comment: “part (1): every cartesian sheaf of sets on the total site is an a^\{-1}E”.
 
 > **Stacks 0D8K (1), essential surjectivity onto the cartesian sheaves of sets**, for
 > restriction along the localization functor `j_total` of a hypercovering `K` of an object `X`:
@@ -216,7 +216,7 @@ theorem essImage_of_isCartesianSheaf_over (hK : IsHypercovering P K) :
         (totalLocalizationMorphism (P.toGrothendieck.over X) K).inverseImage.essImage E
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_inverseImage_iff_isCartesianSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L176). The attribute's comment: “part (1): the essential image of a^\{-1} on sheaves of sets is exactly the cartesian sheaves of sets”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_inverseImage_iff_isCartesianSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L176). The attribute's comment: “part (1): the essential image of a^\{-1} on sheaves of sets is exactly the cartesian sheaves of sets”.
 
 > **Stacks 0D8K (1), the essential image is exactly the cartesian sheaves of sets**, for
 > restriction along `j_total` for a hypercovering of an object `X`. One inclusion is
@@ -230,7 +230,7 @@ theorem mem_essImage_inverseImage_iff_isCartesianSheaf_over (hK : IsHypercoverin
       (situation (P.toGrothendieck.over X) K).IsCartesianSheaf E
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_counit_app_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L190). The attribute's comment: “part (1): a^\{-1} a\_* F = F for cartesian F on sheaves of sets”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_counit_app_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L190). The attribute's comment: “part (1): a^\{-1} a\_* F = F for cartesian F on sheaves of sets”.
 
 > **Stacks 0D8K (1), `a_*` is a quasi-inverse on the cartesian sheaves of sets.** For a
 > cartesian sheaf of sets `F` on the total site of a hypercovering of an object `X` the counit
@@ -246,7 +246,7 @@ theorem isIso_counit_app_over (hK : IsHypercovering P K)
     IsIso ((totalLocalizationMorphism (P.toGrothendieck.over X) K).adj.counit.app E)
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.essImage_situationTotalInverseImage_of_isCartesianSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L223). The attribute's comment: “part (1): every cartesian sheaf of sets is an a^\{-1}E for the a of Stacks 0D70 at the simplicial-site situation of C/X”.
+**`CategoryTheory.SimplicialSemiRepresentable.essImage_situationTotalInverseImage_of_isCartesianSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L223). The attribute's comment: “part (1): every cartesian sheaf of sets is an a^\{-1}E for the a of Stacks 0D70 at the simplicial-site situation of C/X”.
 
 > **Stacks 0D8K (1), essential surjectivity onto the cartesian sheaves of sets**, for the
 > inverse image of the total augmentation as Stacks 0D70 constructs it from the simplicial-site
@@ -265,7 +265,7 @@ theorem essImage_situationTotalInverseImage_of_isCartesianSheaf_over (hK : IsHyp
       (situationAugmentation (P.toGrothendieck.over X) K)).inverseImage.essImage E
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_situationTotalInverseImage_iff_isCartesianSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L241). The attribute's comment: “part (1): the essential image of the a^\{-1} of Stacks 0D70 at the simplicial-site situation of C/X is exactly the cartesian sheaves of sets”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_situationTotalInverseImage_iff_isCartesianSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescent.lean#L241). The attribute's comment: “part (1): the essential image of the a^\{-1} of Stacks 0D70 at the simplicial-site situation of C/X is exactly the cartesian sheaves of sets”.
 
 > **Stacks 0D8K (1), the essential image is exactly the cartesian sheaves of sets**, for the
 > inverse image of the morphism of topoi of Stacks 0D70 at the simplicial-site situation of `C/X`.
@@ -282,7 +282,7 @@ theorem mem_essImage_situationTotalInverseImage_iff_isCartesianSheaf_over
       (situation (P.toGrothendieck.over X) K).IsCartesianSheaf E
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.essImage_of_isCartesianAbSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L179). The attribute's comment: “part (2): every cartesian abelian sheaf on the total site is an a^\{-1}G”.
+**`CategoryTheory.SimplicialSemiRepresentable.essImage_of_isCartesianAbSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 179](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L179). The attribute's comment: “part (2): every cartesian abelian sheaf on the total site is an a^\{-1}G”.
 
 > For a hypercovering `L` of an object `X`, every cartesian sheaf of abelian groups on the
 > total site is isomorphic to the restriction along the localization functor `j_total` of a sheaf of
@@ -297,7 +297,7 @@ theorem essImage_of_isCartesianAbSheaf_over (hL : IsHypercovering P L) :
           (P.toGrothendieck.over X)).essImage G
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_abelianInverseImage_iff_isCartesianAbSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L196). The attribute's comment: “part (2): the essential image of a^\{-1} on abelian sheaves is exactly the cartesian abelian sheaves”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_abelianInverseImage_iff_isCartesianAbSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L196). The attribute's comment: “part (2): the essential image of a^\{-1} on abelian sheaves is exactly the cartesian abelian sheaves”.
 
 > For a hypercovering `L` of an object `X`, the essential image of restriction of abelian
 > sheaves along `j_total` is exactly the cartesian abelian sheaves.
@@ -311,7 +311,7 @@ theorem mem_essImage_abelianInverseImage_iff_isCartesianAbSheaf_over (hL : IsHyp
       (situation (P.toGrothendieck.over X) L).IsCartesianAbSheaf G
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianCounit_app_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L208). The attribute's comment: “part (2): a^\{-1} a\_* F = F for cartesian F on abelian sheaves”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianCounit_app_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L208). The attribute's comment: “part (2): a^\{-1} a\_* F = F for cartesian F on abelian sheaves”.
 
 > For a cartesian sheaf of abelian groups `ℱ` on the total site of a hypercovering of an
 > object `X`, the counit `a⁻¹ a_* ℱ ⟶ ℱ` is an isomorphism.
@@ -323,7 +323,7 @@ theorem isIso_abelianCounit_app_over (hL : IsHypercovering P L)
     IsIso ((abelianTotalAdjunction (P.toGrothendieck.over X) L).counit.app G)
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.essImage_situationTotalInverseImageAb_of_isCartesianAbSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L221). The attribute's comment: “part (2): every cartesian abelian sheaf is an a^\{-1}G for the a of Stacks 0D70 at the simplicial-site situation of C/X”.
+**`CategoryTheory.SimplicialSemiRepresentable.essImage_situationTotalInverseImageAb_of_isCartesianAbSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 221](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L221). The attribute's comment: “part (2): every cartesian abelian sheaf is an a^\{-1}G for the a of Stacks 0D70 at the simplicial-site situation of C/X”.
 
 > For a hypercovering `L` of an object `X`, every cartesian abelian sheaf on the total site
 > lies in the essential image of the abelian inverse image of the total augmentation which
@@ -339,7 +339,7 @@ theorem essImage_situationTotalInverseImageAb_of_isCartesianAbSheaf_over
       (situationAugmentation (P.toGrothendieck.over X) L)).essImage G
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_situationTotalInverseImageAb_iff_isCartesianAbSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L237). The attribute's comment: “part (2): the essential image of the a^\{-1} of Stacks 0D70 at the simplicial-site situation of C/X is exactly the cartesian abelian sheaves”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_situationTotalInverseImageAb_iff_isCartesianAbSheaf_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringSituationDescentAb.lean#L237). The attribute's comment: “part (2): the essential image of the a^\{-1} of Stacks 0D70 at the simplicial-site situation of C/X is exactly the cartesian abelian sheaves”.
 
 > For a hypercovering `L` of an object `X`, the essential image of the abelian inverse image of
 > the morphism of topoi of Stacks 0D70 at the simplicial-site situation of `C/X` is exactly the
@@ -355,7 +355,7 @@ theorem mem_essImage_situationTotalInverseImageAb_iff_isCartesianAbSheaf_over
       (situation (P.toGrothendieck.over X) L).IsCartesianAbSheaf G
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_situationTotalAdjunctionUnit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringUnit.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringUnit.lean#L383). The attribute's comment: “part (1): the unit E = a\_*a⁻¹E of the morphism of topoi of Stacks 0D70 on sheaves of sets is an isomorphism”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_situationTotalAdjunctionUnit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringUnit.lean, line 383](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringUnit.lean#L383). The attribute's comment: “part (1): the unit E = a\_*a⁻¹E of the morphism of topoi of Stacks 0D70 on sheaves of sets is an isomorphism”.
 
 > **Stacks 0D8K (1), the degree-zero identification `E = a_* a^{-1} E`**, for the morphism of
 > topoi which Stacks 0D70 attaches to the *simplicial-site situation* of a hypercovering `K` of an
@@ -372,7 +372,7 @@ theorem isIso_situationTotalAdjunctionUnit_over (hK : IsHypercovering P K) :
       (situationAugmentation (P.toGrothendieck.over X) K)).adj.unit
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_situationAbelianTotalAdjunctionUnit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringUnit.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringUnit.lean#L400). The attribute's comment: “part (2): the unit M = a\_*a⁻¹M of the morphism of topoi of Stacks 0D70 on abelian sheaves is an isomorphism”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_situationAbelianTotalAdjunctionUnit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringUnit.lean, line 400](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringUnit.lean#L400). The attribute's comment: “part (2): the unit M = a\_*a⁻¹M of the morphism of topoi of Stacks 0D70 on abelian sheaves is an isomorphism”.
 
 > **Stacks 0D8K (2), the degree-zero identification `M = a_* a^{-1} M`** on sheaves of abelian
 > groups, for the morphism of topoi which Stacks 0D70 attaches to the *simplicial-site situation*
@@ -394,7 +394,7 @@ theorem isIso_situationAbelianTotalAdjunctionUnit_over (hK : IsHypercovering P K
 
 [Tag 0D8L](https://stacks.math.columbia.edu/tag/0D8L) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_derivedAugmentationUnitOver_app_of_isHypercovering_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedPushforwardUnconditional.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedPushforwardUnconditional.lean#L142). The attribute's comment: “for a hypercovering K of X, the map E → Ra\_*a⁻¹E is an isomorphism for every E in D(C/X)”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_derivedAugmentationUnitOver_app_of_isHypercovering_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedPushforwardUnconditional.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedPushforwardUnconditional.lean#L142). The attribute's comment: “for a hypercovering K of X, the map E → Ra\_*a⁻¹E is an isomorphism for every E in D(C/X)”.
 
 > For a hypercovering `K` of an object `X` of a site `C` with fibre products, the canonical map
 > `E ⟶ Ra_* a⁻¹ E` is invertible at every object `E` of the unbounded derived category of abelian
@@ -412,7 +412,7 @@ theorem isIso_derivedAugmentationUnitOver_app_of_isHypercovering_unconditional
 
 [Tag 09X7](https://stacks.math.columbia.edu/tag/09X7) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedGlobalSectionsInverseImageIsoOverOfHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean#L88). The attribute's comment: “RΓ(X, E) ≅ RΓ((C/K)\_total, a⁻¹E) for E ∈ D(C/X), K a hypercovering of X”.
+**`CategoryTheory.SimplicialSemiRepresentable.derivedGlobalSectionsInverseImageIsoOverOfHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean#L88). The attribute's comment: “RΓ(X, E) ≅ RΓ((C/K)\_total, a⁻¹E) for E ∈ D(C/X), K a hypercovering of X”.
 
 > Let `C` be a site with fibre products, `X` an object of `C`, `K` a hypercovering of `X` and
 > `a : Sh((C/K)_total) ⟶ Sh(C/X)` the augmentation of the simplicial family of sites
@@ -435,7 +435,7 @@ def derivedGlobalSectionsInverseImageIsoOverOfHypercovering :
 
 [Tag 0D8M](https://stacks.math.columbia.edu/tag/0D8M) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceOverOfHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean#L111).
+**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceOverOfHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean#L111).
 
 > Let `C` be a site with fibre products, `X` an object of `C`, `K` a hypercovering of `X`, `a`
 > the augmentation of the simplicial family of sites `n ↦ (C/X)/K_n`, and `𝒜 ⊂ Ab((C/K)_total)` the
@@ -458,7 +458,7 @@ def derivedTotalInverseImageEquivalenceOverOfHypercovering :
         ((situationOver P K).IsCartesianAbSheaf)).FullSubcategory
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceOverOfHypercovering_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean#L126). The attribute's comment: “the forward functor of the equivalence is a⁻¹”.
+**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceOverOfHypercovering_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean#L126). The attribute's comment: “the forward functor of the equivalence is a⁻¹”.
 
 > The forward functor of `derivedTotalInverseImageEquivalenceOverOfHypercovering` is the
 > restriction of the derived inverse image `a⁻¹` to the bounded below subcategories.
@@ -470,7 +470,7 @@ theorem derivedTotalInverseImageEquivalenceOverOfHypercovering_functor :
         (P.toGrothendieck.over X) (augmentationOver P K)
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceOverOfHypercovering_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean#L136). The attribute's comment: “the quasi-inverse of the equivalence is Ra\_*”.
+**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceOverOfHypercovering_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedDescentUnconditional.lean#L136). The attribute's comment: “the quasi-inverse of the equivalence is Ra\_*”.
 
 > The quasi-inverse of `derivedTotalInverseImageEquivalenceOverOfHypercovering` is the
 > restriction of the derived direct image `Ra_*` to the bounded below subcategories.
@@ -489,4 +489,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.19, Tag 0D8J](https://stacks.math.columbia.edu/tag/0D8J)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

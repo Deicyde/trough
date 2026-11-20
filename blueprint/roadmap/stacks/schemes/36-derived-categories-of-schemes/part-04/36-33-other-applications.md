@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.33 Other applications
 
-Section 36.33 of the Stacks Project, [Tag 0CRN](https://stacks.math.columbia.edu/tag/0CRN). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 36.33 of the Stacks Project, [Tag 0CRN](https://stacks.math.columbia.edu/tag/0CRN). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EX6, a lemma
 
 [Tag 0EX6](https://stacks.math.columbia.edu/tag/0EX6) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherentBaseCohomology.isCoherent_rightDerived_moduleGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/CoherentBaseCohomologyUnconditional.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/CoherentBaseCohomologyUnconditional.lean#L80). The attribute's comment: “Hⁱ(X, G) as the right derived functors of global sections, i ≥ 0”.
+**`Stacks.AlgebraicGeometry.CoherentBaseCohomology.isCoherent_rightDerived_moduleGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/CoherentBaseCohomologyUnconditional.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/CoherentBaseCohomologyUnconditional.lean#L80). The attribute's comment: “Hⁱ(X, G) as the right derived functors of global sections, i ≥ 0”.
 
 > **[Stacks, Tag 0EX6].** Let `R` be a coherent ring, let `f : X ⟶ Spec R` be of finite
 > presentation and let `G` be an `𝒪_X`-module of finite presentation, flat over `R`, whose support
@@ -57,7 +57,7 @@ theorem isCoherent_rightDerived_moduleGlobalSections
 
 [Tag 0CRP](https://stacks.math.columbia.edu/tag/0CRP) in the Stacks Project.
 
-**`Stacks.Cohomology.CountableSections.countable_cohomology_derivedTensor_and_ext_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CountableExtAndTensor.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/CountableExtAndTensor.lean#L336).
+**`Stacks.Cohomology.CountableSections.countable_cohomology_derivedTensor_and_ext_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CountableExtAndTensor.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/CountableExtAndTensor.lean#L336).
 
 > **[Stacks, Tag 0CRP].** Let `X` be a quasi-compact and quasi-separated scheme. Let `K` be an
 > object of `D_QCoh(𝒪_X)` such that the cohomology sheaves `H^i(K)` have countable sets of
@@ -85,7 +85,7 @@ theorem countable_cohomology_derivedTensor_and_ext_of_isCompact [QuasiSeparatedS
         ((Scheme.Modules.restrictFunctor U.ι).mapDerivedCategory.obj K) i)
 ```
 
-**`Stacks.Cohomology.CountableSections.countable_cohomology_derivedTensor_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CountableOverQuasiCompactOpens.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/CountableOverQuasiCompactOpens.lean#L178). The attribute's comment: “countability of H^i(U, K ⊗^L E) over every quasi-compact open, from countable sections of the cohomology sheaves of K ⊗^L E over affine opens. Two inputs are hypotheses rather than proved. First, that the cohomology of an affine open is the sections of the cohomology sheaves there: the library has this only at another model of the derived category. Second, that the cohomology sheaves of K ⊗^L E inherit countable sections over affine opens from those of K when E is perfect, which is why perfectness of E does not appear. The Ext^i(E|\_U, K|\_U) half is not covered: it needs the isomorphism K ⊗^L E^∨ ≅ RHom(E, K) for perfect E, which is unproved here”.
+**`Stacks.Cohomology.CountableSections.countable_cohomology_derivedTensor_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CountableOverQuasiCompactOpens.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/CountableOverQuasiCompactOpens.lean#L178). The attribute's comment: “countability of H^i(U, K ⊗^L E) over every quasi-compact open, from countable sections of the cohomology sheaves of K ⊗^L E over affine opens. Two inputs are hypotheses rather than proved. First, that the cohomology of an affine open is the sections of the cohomology sheaves there: the library has this only at another model of the derived category. Second, that the cohomology sheaves of K ⊗^L E inherit countable sections over affine opens from those of K when E is perfect, which is why perfectness of E does not appear. The Ext^i(E|\_U, K|\_U) half is not covered: it needs the isomorphism K ⊗^L E^∨ ≅ RHom(E, K) for perfect E, which is unproved here”.
 
 > Let `X` be a quasi-separated scheme and let `K` and `E` be objects of `D(𝒪_X)`. Suppose the
 > cohomology sheaves of `K ⊗^L E` have countable sets of sections over affine opens, and that over
@@ -113,7 +113,7 @@ theorem countable_cohomology_derivedTensor_of_isCompact (X : Scheme.{u}) [QuasiS
 
 [Tag 0CRQ](https://stacks.math.columbia.edu/tag/0CRQ) in the Stacks Project.
 
-**`Stacks.Cohomology.CountableSections.exists_isHomotopyColimit_isPerfect_iff_countable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CountablePerfectHomotopyColimit.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/CountablePerfectHomotopyColimit.lean#L395).
+**`Stacks.Cohomology.CountableSections.exists_isHomotopyColimit_isPerfect_iff_countable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CountablePerfectHomotopyColimit.lean, line 395](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/CountablePerfectHomotopyColimit.lean#L395).
 
 > **[Stacks, Tag 0CRQ].** Let `X` be a quasi-compact and quasi-separated scheme such that the
 > sets of sections of `𝒪_X` over affine opens are countable. Let `K` be an object of
@@ -142,7 +142,7 @@ theorem exists_isHomotopyColimit_isPerfect_iff_countable {X : Scheme.{u}} [Compa
 
 [Tag 0CRR](https://stacks.math.columbia.edu/tag/0CRR) in the Stacks Project.
 
-**`Stacks.Cohomology.CountableSections.exists_isHomotopyColimitWith_derivedGlobalSectionsOver_derivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/FlatPushforwardHomHomotopyColimit.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/FlatPushforwardHomHomotopyColimit.lean#L107). The attribute's comment: “(1)”.
+**`Stacks.Cohomology.CountableSections.exists_isHomotopyColimitWith_derivedGlobalSectionsOver_derivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/FlatPushforwardHomHomotopyColimit.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/FlatPushforwardHomHomotopyColimit.lean#L107). The attribute's comment: “(1)”.
 
 > Let `A` be a ring, `X` a scheme of finite presentation over `A` (`p : X ⟶ Spec A`) and
 > `f : U ⟶ X` flat of finite presentation. There are an inverse system `L : ℕᵒᵖ ⥤ D(𝒪_X)` of perfect
@@ -187,7 +187,7 @@ theorem exists_isHomotopyColimitWith_derivedGlobalSectionsOver_derivedSheafHom
           (fun n => (d n).app K)
 ```
 
-**`Stacks.Cohomology.CountableSections.exists_isHomotopyColimitWith_derivedGlobalSectionsOver_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/FlatPushforwardSectionsHomotopyColimit.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/FlatPushforwardSectionsHomotopyColimit.lean#L306). The attribute's comment: “(2)”.
+**`Stacks.Cohomology.CountableSections.exists_isHomotopyColimitWith_derivedGlobalSectionsOver_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/FlatPushforwardSectionsHomotopyColimit.lean, line 306](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/FlatPushforwardSectionsHomotopyColimit.lean#L306). The attribute's comment: “(2)”.
 
 > **[Stacks, Tag 0CRR] (2).** Let `A` be a ring, `X` a scheme of finite presentation over `A`
 > and `f : U ⟶ X` a flat morphism of finite presentation. Then there is a system `E : ℕ ⥤ D(𝒪_X)`
@@ -239,4 +239,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.33, Tag 0CRN](https://stacks.math.columbia.edu/tag/0CRN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

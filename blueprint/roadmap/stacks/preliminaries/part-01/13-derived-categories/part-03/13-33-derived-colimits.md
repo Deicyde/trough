@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.33 Derived colimits
 
-Section 13.33 of the Stacks Project, [Tag 0A5K](https://stacks.math.columbia.edu/tag/0A5K). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.33 of the Stacks Project, [Tag 0A5K](https://stacks.math.columbia.edu/tag/0A5K). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 090Z, a definition
 
 [Tag 090Z](https://stacks.math.columbia.edu/tag/090Z) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.IsHomotopyColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomotopyColimit.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/HomotopyColimit.lean#L88).
+**`CategoryTheory.Pretriangulated.IsHomotopyColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomotopyColimit.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/HomotopyColimit.lean#L88).
 
 > An object `K` of a pre-triangulated category `D` is a **derived colimit**, or **homotopy
 > colimit**, of a system of objects `F : ℕ ⥤ D` whose direct sum `∐ F.obj` exists — written
@@ -32,7 +32,7 @@ public def IsHomotopyColimit (F : ℕ ⥤ D) [HasCoproduct F.obj] (K : D) : Prop
 
 [Tag 0CRH](https://stacks.math.columbia.edu/tag/0CRH) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_iso_of_isHomotopyColimitWithCoprojections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomotopyColimitCoprojections.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/HomotopyColimitCoprojections.lean#L180).
+**`CategoryTheory.Pretriangulated.exists_iso_of_isHomotopyColimitWithCoprojections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomotopyColimitCoprojections.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/HomotopyColimitCoprojections.lean#L180).
 
 > **[Stacks, Tag 0CRH]: a derived colimit datum is unique up to a compatible isomorphism.**
 > Let `(Kₙ, fₙ)` be a system of objects of a pre-triangulated category whose direct sum exists, and
@@ -58,7 +58,7 @@ theorem exists_iso_of_isHomotopyColimitWithCoprojections {F : ℕ ⥤ D} [HasCop
 
 [Tag 0CRI](https://stacks.math.columbia.edu/tag/0CRI) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_hom_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L461).
+**`CategoryTheory.Pretriangulated.exists_hom_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 461](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L461).
 
 > **Stacks 0CRI.** A morphism of sequential systems induces a morphism between chosen
 > homotopy colimits. It commutes with every canonical coprojection and completes the morphism of
@@ -80,7 +80,7 @@ public theorem exists_hom_of_isHomotopyColimit {F G : ℕ ⥤ D} [HasCoproduct F
 
 [Tag 0CRJ](https://stacks.math.columbia.edu/tag/0CRJ) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_iso_of_isHomotopyColimit_of_strictMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 831](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L831).
+**`CategoryTheory.Pretriangulated.exists_iso_of_isHomotopyColimit_of_strictMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 831](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L831).
 
 > **Stacks 0CRJ**. Let `F : ℕ ⥤ D` be a system of objects `K m = F.obj m` of a
 > pre-triangulated category, let `n : ℕ → ℕ` be strictly increasing, and assume the direct sums
@@ -112,7 +112,7 @@ public theorem exists_iso_of_isHomotopyColimit_of_strictMono
 
 [Tag 0A5L](https://stacks.math.columbia.edu/tag/0A5L) in the Stacks Project.
 
-**`derivedCategory_termwiseDirectSum_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Coproducts.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Coproducts.lean#L1015).
+**`derivedCategory_termwiseDirectSum_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Coproducts.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Coproducts.lean#L1015).
 
 > **Stacks Tag 0A5L**, the concrete identification of the coproduct in `D(A)`: for a countable
 > family `K : J → CochainComplex A ℤ`, the termwise direct sum `∐ K`, with the images under `Q` of
@@ -130,7 +130,7 @@ theorem derivedCategory_termwiseDirectSum_isColimit
       ((DerivedCategory.Q (C := A)).mapCocone (Cofan.mk (∐ K) (Sigma.ι K))))
 ```
 
-**`derivedCategory_hasCountableCoproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Coproducts.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Coproducts.lean#L1029).
+**`derivedCategory_hasCountableCoproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Coproducts.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Coproducts.lean#L1029).
 
 > **Stacks Tag 0A5L**: if the abelian category `A` has exact countable direct sums then its
 > derived category `D(A)` has countable direct sums.
@@ -148,7 +148,7 @@ theorem derivedCategory_hasCountableCoproducts
 
 [Tag 093W](https://stacks.math.columbia.edu/tag/093W) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.shortExact_oneSubShift_piMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedColimits.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedColimits.lean#L157). The attribute's comment: “sheaf differential graded modules”.
+**`SheafOfModules.DifferentialGradedModule.shortExact_oneSubShift_piMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedColimits.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedColimits.lean#L157). The attribute's comment: “sheaf differential graded modules”.
 
 > **Lemma 093W for sheaf differential graded modules.** For a system `M₀ → M₁ → ⋯` of right
 > differential graded `A`-modules over a sheaf of differential graded algebras, the sequence
@@ -167,7 +167,7 @@ theorem shortExact_oneSubShift_piMap (F : ℕ ⥤ DifferentialGradedModule.{u, v
       (ShortComplex.mk (oneSubShift F) (piMap F) hw).ShortExact
 ```
 
-**`DifferentialGradedModule.shortExact_oneSubShift_piMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean#L255). The attribute's comment: “differential graded modules”.
+**`DifferentialGradedModule.shortExact_oneSubShift_piMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean#L255). The attribute's comment: “differential graded modules”.
 
 > **Lemma 093W for differential graded modules.** For a system `M₀ → M₁ → ⋯` of right
 > differential graded `A`-modules the sequence
@@ -179,7 +179,7 @@ theorem shortExact_oneSubShift_piMap :
       (ShortComplex.mk (oneSubShift F) (piMap F) w).ShortExact
 ```
 
-**`Stacks.CountableCoproducts.hasColimitsOfShape_discrete_of_hasColimitsOfShape_nat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean#L182).
+**`Stacks.CountableCoproducts.hasColimitsOfShape_discrete_of_hasColimitsOfShape_nat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean, line 182](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean#L182).
 
 > **Countable direct sums exist.** If colimits over `ℕ` exist in `A`, then every countable
 > family of objects has a coproduct, i.e. `A` has colimits of shape `Discrete ℕ`.
@@ -190,7 +190,7 @@ theorem hasColimitsOfShape_discrete_of_hasColimitsOfShape_nat
     HasColimitsOfShape (Discrete ℕ) A
 ```
 
-**`Stacks.CountableCoproducts.preservesFiniteLimits_colim_discrete_of_hasColimitsOfShape_nat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean#L194).
+**`Stacks.CountableCoproducts.preservesFiniteLimits_colim_discrete_of_hasColimitsOfShape_nat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean#L194).
 
 > **Countable direct sums are exact.** If colimits over `ℕ` exist and are exact in `A`, then the
 > countable-coproduct functor `colim : (Discrete ℕ ⥤ A) ⥤ A` preserves finite limits — which, for a
@@ -204,7 +204,7 @@ theorem preservesFiniteLimits_colim_discrete_of_hasColimitsOfShape_nat
     PreservesFiniteLimits (colim : (Discrete ℕ ⥤ A) ⥤ A)
 ```
 
-**`Stacks.CountableCoproducts.shortExact_oneSubShift_piMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean#L546).
+**`Stacks.CountableCoproducts.shortExact_oneSubShift_piMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean, line 546](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Abelian/GrothendieckAxioms/CountableCoproducts.lean#L546).
 
 > **The presentation of the colimit: Lemma 093W(2).** For every system over `ℕ` in an abelian
 > category with countable direct sums and colimits over `ℕ` that are exact, the sequence
@@ -223,7 +223,7 @@ theorem shortExact_oneSubShift_piMap
 
 [Tag 0949](https://stacks.math.columbia.edu/tag/0949) in the Stacks Project.
 
-**`DerivedCategory.isHomotopyColimit_Q_obj_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L425).
+**`DerivedCategory.isHomotopyColimit_Q_obj_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 425](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L425).
 
 > **Stacks 0949**. Let `A` be an abelian category in which colimits over `ℕ` exist and are
 > exact, and let `L : ℕ ⥤ CochainComplex A ℤ` be a system of complexes of `A`. Then the image
@@ -242,7 +242,7 @@ public theorem DerivedCategory.isHomotopyColimit_Q_obj_colimit {A : Type u} [Cat
 
 [Tag 0CRK](https://stacks.math.columbia.edu/tag/0CRK) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_iso_colimit_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L243).
+**`CategoryTheory.Pretriangulated.exists_iso_colimit_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L243).
 
 > **Stacks 0CRK**. Let `F : ℕ ⥤ D` be a system of objects `K n = F.obj n` of a pre-triangulated
 > category whose direct sum `∐ K n` exists, let `A` be an abelian category in which colimits over
@@ -267,7 +267,7 @@ public theorem exists_iso_colimit_of_isHomotopyColimit
 
 [Tag 094A](https://stacks.math.columbia.edu/tag/094A) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_iso_colimit_preadditiveCoyoneda_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L327).
+**`CategoryTheory.Pretriangulated.exists_iso_colimit_preadditiveCoyoneda_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean, line 327](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedColimits.lean#L327).
 
 > **Stacks 094A**. Let `F : ℕ ⥤ D` be a system of objects `L n = F.obj n` of a pre-triangulated
 > category whose direct sum `∐ L n` exists, and let `K` be an object of `D` such that
@@ -300,4 +300,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.33, Tag 0A5K](https://stacks.math.columbia.edu/tag/0A5K)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 107.6 The dimension of the local ring
 
-Section 107.6 of the Stacks Project, [Tag 0DS7](https://stacks.math.columbia.edu/tag/0DS7). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 107.6 of the Stacks Project, [Tag 0DS7](https://stacks.math.columbia.edu/tag/0DS7). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DS8, a lemma
 
 [Tag 0DS8](https://stacks.math.columbia.edu/tag/0DS8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.ringKrullDim_relation_eq_add_ringKrullDim_sourceFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L286). The attribute's comment: “the dimension formula for the source projection”.
+**`AlgebraicGeometry.Stack.ringKrullDim_relation_eq_add_ringKrullDim_sourceFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 286](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L286). The attribute's comment: “the dimension formula for the source projection”.
 
 > **Stacks 0DS8**, the dimension formula. For a smooth 1-morphism `f : U ⟶ 𝒳` from a scheme to
 > a locally Noetherian algebraic stack and a presented self-intersection `R = U ×_𝒳 U` with source
@@ -34,7 +34,7 @@ theorem ringKrullDim_relation_eq_add_ringKrullDim_sourceFibre
         ringKrullDim (sourceFibreEtaleLocalRing B S hS U f sq R eU eR hR r)
 ```
 
-**`AlgebraicGeometry.Stack.ringKrullDim_chart_add_relation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L329). The attribute's comment: “the dimension-difference identity”.
+**`AlgebraicGeometry.Stack.ringKrullDim_chart_add_relation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 329](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L329). The attribute's comment: “the dimension-difference identity”.
 
 > **Stacks 0DS8.** The identity
 > `dim(𝒪_{U,s(r)}) - dim(𝒪_{R_u,r}) = 2 dim(𝒪_{U,s(r)}) - dim(𝒪_{R,r})`, recorded in the
@@ -61,7 +61,7 @@ theorem ringKrullDim_chart_add_relation_eq
 
 [Tag 0DS9](https://stacks.math.columbia.edu/tag/0DS9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasLocalRingDimensionAtEveryChart_of_hasLocalRingDimensionAtSomeChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartComparison.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartComparison.lean#L358). The attribute's comment: “condition (1) implies condition (2)”.
+**`AlgebraicGeometry.Stack.hasLocalRingDimensionAtEveryChart_of_hasLocalRingDimensionAtSomeChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartComparison.lean, line 358](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartComparison.lean#L358). The attribute's comment: “condition (1) implies condition (2)”.
 
 > **Stacks 0DS9, condition (1) implies condition (2).** If some scheme of the site carries a
 > smooth 1-morphism to a locally Noetherian algebraic stack `𝒳` and a finite type point above the
@@ -83,7 +83,7 @@ theorem hasLocalRingDimensionAtEveryChart_of_hasLocalRingDimensionAtSomeChart
     HasLocalRingDimensionAtEveryChart.{u, w} B S hS 𝒳 h𝒳 x hx d
 ```
 
-**`AlgebraicGeometry.Stack.hasLocalRingDimensionAtSomeChart_iff_hasLocalRingDimensionAtEveryChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartComparison.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartComparison.lean#L387). The attribute's comment: “the equivalence of the two conditions”.
+**`AlgebraicGeometry.Stack.hasLocalRingDimensionAtSomeChart_iff_hasLocalRingDimensionAtEveryChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartComparison.lean, line 387](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartComparison.lean#L387). The attribute's comment: “the equivalence of the two conditions”.
 
 > **Stacks 0DS9.** For a locally Noetherian algebraic stack `𝒳`, a finite type point
 > `x ∈ |𝒳|` and an integer `d`, the two conditions
@@ -110,7 +110,7 @@ theorem hasLocalRingDimensionAtSomeChart_iff_hasLocalRingDimensionAtEveryChart
       HasLocalRingDimensionAtEveryChart.{u, w} B S hS 𝒳 h𝒳 x hx d
 ```
 
-**`AlgebraicGeometry.Stack.hasLocalRingDimensionAtSomeChart_of_hasLocalRingDimensionAtEveryChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartIndependence.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartIndependence.lean#L493). The attribute's comment: “condition (2) implies condition (1)”.
+**`AlgebraicGeometry.Stack.hasLocalRingDimensionAtSomeChart_of_hasLocalRingDimensionAtEveryChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartIndependence.lean, line 493](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionChartIndependence.lean#L493). The attribute's comment: “condition (2) implies condition (1)”.
 
 > **Stacks 0DS9, condition (2) implies condition (1).** If every smooth chart of a locally
 > Noetherian algebraic stack `𝒳` carrying a finite type point above `x` measures the invariant of
@@ -130,7 +130,7 @@ theorem hasLocalRingDimensionAtSomeChart_of_hasLocalRingDimensionAtEveryChart
     HasLocalRingDimensionAtSomeChart.{u, w} B S hS 𝒳 h𝒳 x hx d
 ```
 
-**`AlgebraicGeometry.Stack.hasRelationLocalRingDimension_transport_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionSquareIndependence.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionSquareIndependence.lean#L248). The attribute's comment: “the invariant of the two conditions does not depend on the presented self-intersection”.
+**`AlgebraicGeometry.Stack.hasRelationLocalRingDimension_transport_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionSquareIndependence.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionSquareIndependence.lean#L248). The attribute's comment: “the invariant of the two conditions does not depend on the presented self-intersection”.
 
 > **The invariant of Stacks 0DSA does not depend on the presented self-intersection.** Let a
 > smooth chart `g : V ⟶ 𝒳` be given, and let its self-intersection be presented twice over — by a
@@ -165,7 +165,7 @@ theorem hasRelationLocalRingDimension_transport_twoFibreProduct
           (selfIntersectionDiagonalMap B S hS V g T' Q' eV eQ' δ') ν) d
 ```
 
-**`AlgebraicGeometry.Stack.exists_iff_forall_geometricPoint_hasChartLocalRingDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L394). The attribute's comment: “the two conditions, over the geometric point above a point of the relation”.
+**`AlgebraicGeometry.Stack.exists_iff_forall_geometricPoint_hasChartLocalRingDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L394). The attribute's comment: “the two conditions, over the geometric point above a point of the relation”.
 
 > **Stacks 0DS9, for the choice of geometric point.** The existential and the universal
 > condition over the geometric points above a point `ρ` of the relation are equivalent: some
@@ -184,7 +184,7 @@ theorem exists_iff_forall_geometricPoint_hasChartLocalRingDimension
         HasChartLocalRingDimension B S hS U f sq R eU eR r d
 ```
 
-**`AlgebraicGeometry.Stack.exists_hasChartLocalRingDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L419). The attribute's comment: “the invariant of the two conditions is a well-defined integer at a smooth chart”.
+**`AlgebraicGeometry.Stack.exists_hasChartLocalRingDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 419](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L419). The attribute's comment: “the invariant of the two conditions is a well-defined integer at a smooth chart”.
 
 > **Stacks 0DS9, well-definedness of the invariant.** At a geometric point of a presented
 > self-intersection of a smooth chart of a locally Noetherian algebraic stack the invariant
@@ -206,7 +206,7 @@ theorem exists_hasChartLocalRingDimension
 
 [Tag 0DSA](https://stacks.math.columbia.edu/tag/0DSA) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HasLocalRingDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L478).
+**`AlgebraicGeometry.Stack.HasLocalRingDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean, line 478](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SmoothPresentationLocalRingDimension.lean#L478).
 
 > **Stacks 0DSA.** The dimension of the local ring of a locally Noetherian algebraic stack `𝒳`
 > at a finite type point `x ∈ |𝒳|` *is* the integer `d` when condition (1) of Stacks 0DS9 holds:
@@ -229,7 +229,7 @@ def HasLocalRingDimension (𝒳 : AlgebraicStacks.{u, w} B S hS)
 
 [Tag 0DSB](https://stacks.math.columbia.edu/tag/0DSB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasLocalRingDimensionAtSomeChart_iff_of_versalCogroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionVersalChart.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionVersalChart.lean#L134).
+**`AlgebraicGeometry.Stack.hasLocalRingDimensionAtSomeChart_iff_of_versalCogroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionVersalChart.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalRingDimensionVersalChart.lean#L134).
 
 > **Stacks 0DSB.** Let `𝒳` be an algebraic stack, locally of finite type over a locally
 > Noetherian scheme `S` (Situation 0DQU), and let `x₀ : Spec k ⟶ 𝒳` be a morphism, `k` a field of
@@ -285,4 +285,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 107.6, Tag 0DS7](https://stacks.math.columbia.edu/tag/0DS7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

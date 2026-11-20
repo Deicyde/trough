@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.15 The completion functor
 
-Section 52.15 of the Stacks Project, [Tag 0EKN](https://stacks.math.columbia.edu/tag/0EKN). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.15 of the Stacks Project, [Tag 0EKN](https://stacks.math.columbia.edu/tag/0EKN). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EKP, a lemma
 
 [Tag 0EKP](https://stacks.math.columbia.edu/tag/0EKP) in the Stacks Project.
 
-**`Stacks.Algebraization.quasiAffine_sectionsComplete_implies_amplePower_sectionsComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Basic.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Basic.lean#L357). The attribute's comment: “(1) implies (2)”.
+**`Stacks.Algebraization.quasiAffine_sectionsComplete_implies_amplePower_sectionsComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Basic.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Basic.lean#L357). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 0EKP, (1) implies (2).** On a quasi-affine scheme the structure sheaf is itself an
 > ample invertible module, and every tensor power of it is again the structure sheaf, so section
@@ -36,7 +36,7 @@ public theorem quasiAffine_sectionsComplete_implies_amplePower_sectionsComplete
               (structureSheafRing X.toRingedSpace).property L (m : ℤ))
 ```
 
-**`Stacks.Algebraization.sectionsComplete_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Chain.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Chain.lean#L148).
+**`Stacks.Algebraization.sectionsComplete_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Chain.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Chain.lean#L148).
 
 > Let `X` be a Noetherian scheme, let `Y ⊆ X` be a closed subscheme and let `Y_n ⊆ X` be the
 > `n`-th infinitesimal neighbourhood of `Y` in `X`. Consider the conditions
@@ -66,7 +66,7 @@ public theorem sectionsComplete_chain {X Y : Scheme.{u}} (i : Y ⟶ X) [IsClosed
 
 [Tag 0EK2](https://stacks.math.columbia.edu/tag/0EK2) in the Stacks Project.
 
-**`Stacks.Algebraization.NeighbourhoodCompletion.implications_among_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/NeighbourhoodCompletion.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/NeighbourhoodCompletion.lean#L269).
+**`Stacks.Algebraization.NeighbourhoodCompletion.implications_among_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/NeighbourhoodCompletion.lean, line 269](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/NeighbourhoodCompletion.lean#L269).
 
 > **[Stacks, Tag 0EK2].** Let `X` be a Noetherian scheme and let `Y ⊂ X` be a closed subscheme
 > with ideal sheaf `ℐ ⊂ 𝒪_X`. Let `Y_n ⊂ X` be the `n`-th infinitesimal neighbourhood of `Y` in `X`,
@@ -97,7 +97,7 @@ public theorem implications_among_conditions [IsNoetherian X] :
       (CompletionFullyFaithfulComplete i → FiniteLocallyFreeComplete i)
 ```
 
-**`Stacks.Algebraization.quasiAffine_neighbourhoodSectionsComplete_implies_amplePower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Neighbourhoods.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Neighbourhoods.lean#L248). The attribute's comment: “(1) implies (2)”.
+**`Stacks.Algebraization.quasiAffine_neighbourhoodSectionsComplete_implies_amplePower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Neighbourhoods.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/Neighbourhoods.lean#L248). The attribute's comment: “(1) implies (2)”.
 
 > **Condition (1) implies condition (2).** Let `i : Y ⟶ X` be a closed immersion into a
 > Noetherian quasi-affine scheme such that the colimit of the sections of `𝒪_X` over the open
@@ -125,7 +125,7 @@ public theorem quasiAffine_neighbourhoodSectionsComplete_implies_amplePower
 
 [Tag 0EIQ](https://stacks.math.columbia.edu/tag/0EIQ) in the Stacks Project.
 
-**`Stacks.Coherent.coherentAdicToPro_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicPro.lean, line 1144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicPro.lean#L1144).
+**`Stacks.Coherent.coherentAdicToPro_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicPro.lean, line 1144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentAdicPro.lean#L1144).
 
 > A coherent adic system has exactly the morphisms of its associated
 > pro-quasi-coherent object.
@@ -140,7 +140,7 @@ public theorem coherentAdicToPro_fullyFaithful
 
 [Tag 0EKQ](https://stacks.math.columbia.edu/tag/0EKQ) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFullyFaithful_of_associatedPrimes_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/DimensionDepthCriterion.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/DimensionDepthCriterion.lean#L256).
+**`Stacks.Algebraization.completionFullyFaithful_of_associatedPrimes_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/DimensionDepthCriterion.lean, line 256](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/DimensionDepthCriterion.lean#L256).
 
 > **Stacks 0EKQ.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A` and let
 > `U = Spec(A) ∖ V(𝔞)`. Assume
@@ -177,7 +177,7 @@ theorem completionFullyFaithful_of_associatedPrimes_of_depth
       (idealSheafNearVanishing A I a)
 ```
 
-**`Stacks.Algebraization.completionFullyFaithfulOnFiniteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/InternalHomCriterion.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/InternalHomCriterion.lean#L170). The attribute's comment: “REDUCED, not proved: full faithfulness on the finite locally free objects holds exactly when the formal-functions comparison is an isomorphism for the internal homs. That half is Stacks 0EIG, which the library has at Stacks 0EG2's hypotheses and for another spelling of the comparison; it is neither proved nor assumed here, being one side of this equivalence. Conditions (1)-(3) of the tag are not consumed”.
+**`Stacks.Algebraization.completionFullyFaithfulOnFiniteLocallyFree_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/InternalHomCriterion.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/InternalHomCriterion.lean#L170). The attribute's comment: “REDUCED, not proved: full faithfulness on the finite locally free objects holds exactly when the formal-functions comparison is an isomorphism for the internal homs. That half is Stacks 0EIG, which the library has at Stacks 0EG2's hypotheses and for another spelling of the comparison; it is neither proved nor assumed here, being one side of this equivalence. Conditions (1)-(3) of the tag are not consumed”.
 
 > **Stacks 0EKQ, reduced to the theorem on formal functions in degree zero.** For ideals
 > `I ⊆ 𝔞` of a Noetherian ring `A` and `U = Spec(A) ∖ V(𝔞)`, completion along `I𝒪_U` is fully
@@ -201,7 +201,7 @@ public theorem completionFullyFaithfulOnFiniteLocallyFree_iff
 
 [Tag 0EKS](https://stacks.math.columbia.edu/tag/0EKS) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFullyFaithful_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/AnnihilatedCriterion.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/AnnihilatedCriterion.lean#L91).
+**`Stacks.Algebraization.completionFullyFaithful_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/AnnihilatedCriterion.lean, line 91](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/AnnihilatedCriterion.lean#L91).
 
 > Let `A` be a Noetherian ring, let `f ∈ 𝔞 ⊆ A` and let `U = Spec(A) ∖ V(𝔞)`. If `A` is
 > `f`-adically complete and `H¹_𝔞(A)` and `H²_𝔞(A)` are annihilated by powers of `f`, then the
@@ -219,7 +219,7 @@ public theorem completionFullyFaithful_of_annihilated (hf : f ∈ a)
       (complementPrincipalIdealSheaf A a f)
 ```
 
-**`Stacks.Algebraization.completionFullyFaithfulOnFiniteLocallyFree_of_isAdicComplete_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/CompleteCriteria.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/CompleteCriteria.lean#L78).
+**`Stacks.Algebraization.completionFullyFaithfulOnFiniteLocallyFree_of_isAdicComplete_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/CompleteCriteria.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/CompleteCriteria.lean#L78).
 
 > **[Stacks, Tag 0EKS].** Let `A` be a Noetherian ring, let `f ∈ 𝔞 ⊆ A` and let
 > `U = Spec(A) ∖ V(𝔞)`. If `A` is `f`-adically complete and `H¹_𝔞(A)` and `H²_𝔞(A)` are
@@ -248,7 +248,7 @@ public theorem completionFullyFaithfulOnFiniteLocallyFree_of_isAdicComplete_of_a
 
 [Tag 0EKT](https://stacks.math.columbia.edu/tag/0EKT) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFullyFaithfulOnFiniteLocallyFree_of_isAdicComplete_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/CompleteCriteria.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/CompleteCriteria.lean#L108).
+**`Stacks.Algebraization.completionFullyFaithfulOnFiniteLocallyFree_of_isAdicComplete_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/CompleteCriteria.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/CompleteCriteria.lean#L108).
 
 > **[Stacks, Tag 0EKT].** Let `A` be a Noetherian ring, let `f ∈ 𝔞 ⊆ A` and let
 > `U = Spec(A) ∖ V(𝔞)`. Assume
@@ -285,7 +285,7 @@ public theorem completionFullyFaithfulOnFiniteLocallyFree_of_isAdicComplete_of_d
       (complementPrincipalIdealSheaf A a f)
 ```
 
-**`Stacks.Algebraization.completionFullyFaithful_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/DepthCriterion.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/DepthCriterion.lean#L206).
+**`Stacks.Algebraization.completionFullyFaithful_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/DepthCriterion.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/DepthCriterion.lean#L206).
 
 > **Stacks 0EKT.** Let `A` be a Noetherian ring, let `f ∈ 𝔞 ⊆ A` and let
 > `U = Spec(A) ∖ V(𝔞)`. If `A` has a dualizing complex and is `f`-adically complete, and if
@@ -316,7 +316,7 @@ public theorem completionFullyFaithful_of_depth (A : Type u) [CommRing A] [IsNoe
 
 [Tag 0EKU](https://stacks.math.columbia.edu/tag/0EKU) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFullyFaithful_finiteLocallyFree_on`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHomsOnBijective.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHomsOnBijective.lean#L120).
+**`Stacks.Algebraization.completionFullyFaithful_finiteLocallyFree_on`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHomsOnBijective.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHomsOnBijective.lean#L120).
 
 > **Stacks 0EKU.** Let `I ⊆ 𝔞 ⊆ A` be ideals of a Noetherian ring `A`, put
 > `U = Spec(A) ∖ V(𝔞)` and let `𝒱` be the set of open subschemes of `U` containing `U ∩ V(I)`,
@@ -360,7 +360,7 @@ theorem completionFullyFaithful_finiteLocallyFree_on (hIa : I ≤ a)
 
 [Tag 0EKV](https://stacks.math.columbia.edu/tag/0EKV) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFullyFaithfulComplete_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/PrincipalFullyFaithful.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/PrincipalFullyFaithful.lean#L189).
+**`Stacks.Algebraization.completionFullyFaithfulComplete_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/PrincipalFullyFaithful.lean, line 189](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFullyFaithful/PrincipalFullyFaithful.lean#L189).
 
 > **[Stacks, Tag 0EKV].** Let `A` be a Noetherian ring, let `f ∈ 𝔞 ⊆ A`, put
 > `U = Spec(A) ∖ V(𝔞)` and let `𝒱` be the open subschemes of `U` containing `U ∩ V(f)`, ordered by
@@ -407,7 +407,7 @@ public theorem completionFullyFaithfulComplete_principal (hf : f ∈ a)
 
 [Tag 0EIV](https://stacks.math.columbia.edu/tag/0EIV) in the Stacks Project.
 
-**`Stacks.Algebraization.NeighbourhoodHoms.sectionsNearVanishing_internalHomNear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHoms.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHoms.lean#L402). The attribute's comment: “at the member V = U: the source is the colimit over the whole family”.
+**`Stacks.Algebraization.NeighbourhoodHoms.sectionsNearVanishing_internalHomNear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHoms.lean, line 402](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHoms.lean#L402). The attribute's comment: “at the member V = U: the source is the colimit over the whole family”.
 
 > **The source of the comparison of Stacks 0EIV is the colimit of the morphisms of the
 > restrictions.** A section of the internal hom `SheafHom(𝒢, ℱ)` over an open neighbourhood `V`
@@ -424,7 +424,7 @@ public theorem sectionsNearVanishing_internalHomNear
           F.obj.val)
 ```
 
-**`Stacks.Algebraization.NeighbourhoodHoms.nbhdHomComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHoms.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHoms.lean#L422). The attribute's comment: “at V = U: the canonical map from germs of morphisms to the completions”.
+**`Stacks.Algebraization.NeighbourhoodHoms.nbhdHomComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHoms.lean, line 422](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHoms.lean#L422). The attribute's comment: “at V = U: the canonical map from germs of morphisms to the completions”.
 
 > **The map of Stacks 0EIV.** The canonical map from the morphisms `𝒢|_{V'} ⟶ ℱ|_{V'}`
 > defined on arbitrarily small open neighbourhoods `V'` of the formal locus `U ∩ V(I)` to the
@@ -446,7 +446,7 @@ public def nbhdHomComparison :
           (idealSheafNearVanishing A I a)).obj F)
 ```
 
-**`Stacks.Algebraization.nbhdHomComparisonOn_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHomsOnBijective.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHomsOnBijective.lean#L89).
+**`Stacks.Algebraization.nbhdHomComparisonOn_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHomsOnBijective.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionFunctor/NeighbourhoodHomsOnBijective.lean#L89).
 
 > **Stacks 0EIV.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A`, put `U = Spec(A) ∖ V(𝔞)` and
 > let `𝒱` be the set of open subschemes of `U` containing `U ∩ V(I)`, ordered by reverse inclusion.
@@ -478,4 +478,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.15, Tag 0EKN](https://stacks.math.columbia.edu/tag/0EKN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

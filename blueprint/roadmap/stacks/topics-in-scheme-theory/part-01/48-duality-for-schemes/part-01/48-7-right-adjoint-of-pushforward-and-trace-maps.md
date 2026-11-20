@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.7 Right adjoint of pushforward and trace maps
 
-Section 48.7 of the Stacks Project, [Tag 0AWG](https://stacks.math.columbia.edu/tag/0AWG). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 48.7 of the Stacks Project, [Tag 0AWG](https://stacks.math.columbia.edu/tag/0AWG). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AWG, the section
 
 [Tag 0AWG](https://stacks.math.columbia.edu/tag/0AWG) in the Stacks Project.
 
-**`Stacks.Duality.qcqsTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean#L71). The attribute's comment: “the trace map Tr\_f : Rf\_* ∘ a ⟶ id of a morphism of quasi-compact and quasi-separated schemes, the counit of the adjunction Rf\_* ⊣ a of Tag 0A9E”.
+**`Stacks.Duality.qcqsTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean#L71). The attribute's comment: “the trace map Tr\_f : Rf\_* ∘ a ⟶ id of a morphism of quasi-compact and quasi-separated schemes, the counit of the adjunction Rf\_* ⊣ a of Tag 0A9E”.
 
 > **The trace map `Tr_f : Rf_* ∘ a ⟶ id`** of a morphism `f : X ⟶ Y` of quasi-compact and
 > quasi-separated schemes, where `a` is the right adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`
@@ -27,7 +27,7 @@ def qcqsTrace :
       𝟭 _
 ```
 
-**`Stacks.Duality.twistedInverseImageAdjunction_homEquiv_symm_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean#L91). The attribute's comment: “the bijection Hom\_X(L, a(K)) ⟶ Hom\_Y(Rf\_*L, K) characterizing the right adjoint is φ ↦ Tr\_\{f,K} ∘ Rf\_*φ”.
+**`Stacks.Duality.twistedInverseImageAdjunction_homEquiv_symm_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean, line 91](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean#L91). The attribute's comment: “the bijection Hom\_X(L, a(K)) ⟶ Hom\_Y(Rf\_*L, K) characterizing the right adjoint is φ ↦ Tr\_\{f,K} ∘ Rf\_*φ”.
 
 > **The trace map characterizes the right adjoint.** For a morphism `f : X ⟶ Y` of
 > quasi-compact and quasi-separated schemes, the bijection
@@ -50,7 +50,7 @@ theorem twistedInverseImageAdjunction_homEquiv_symm_qcqs (L : quasiCoherentDeriv
 
 [Tag 0B6J](https://stacks.math.columbia.edu/tag/0B6J) in the Stacks Project.
 
-**`Stacks.Duality.map_trace_eq_baseChange_comp_trace_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean#L79).
+**`Stacks.Duality.map_trace_eq_baseChange_comp_trace_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean#L79).
 
 > **[Stacks, Tag 0B6J] (trace map and base change).** For a cartesian square of
 > quasi-compact and quasi-separated schemes with `f` and `g` Tor independent, the maps
@@ -90,7 +90,7 @@ theorem map_trace_eq_baseChange_comp_trace_of_torIndependent (sq : IsPullback g'
 
 [Tag 0B6K](https://stacks.math.columbia.edu/tag/0B6K) in the Stacks Project.
 
-**`Stacks.Duality.map_unit_comp_baseChange_comp_baseChange_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean#L117).
+**`Stacks.Duality.map_unit_comp_baseChange_comp_baseChange_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean#L117).
 
 > **[Stacks, Tag 0B6K] (unit and base change).** For a cartesian square of quasi-compact and
 > quasi-separated schemes with `f` and `g` Tor independent, the maps
@@ -130,7 +130,7 @@ theorem map_unit_comp_baseChange_comp_baseChange_of_torIndependent (sq : IsPullb
 
 [Tag 0B6L](https://stacks.math.columbia.edu/tag/0B6L) in the Stacks Project.
 
-**`AlgebraicGeometry.qcqsTrace_specMap_app_derivedTilde`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/AffineTrace.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/AffineTrace.lean#L291). The attribute's comment: “the trace map Tr\_f of f = Spec(S) → Spec(R) is, under a(K~) ≅ RHom\_R(S, K)~ and Rf\_*(M~) ≅ (M\_R)~, the map RHom\_R(S, K) → K of the derived restriction–Hom adjunction”.
+**`AlgebraicGeometry.qcqsTrace_specMap_app_derivedTilde`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/AffineTrace.lean, line 291](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/AffineTrace.lean#L291). The attribute's comment: “the trace map Tr\_f of f = Spec(S) → Spec(R) is, under a(K~) ≅ RHom\_R(S, K)~ and Rf\_*(M~) ≅ (M\_R)~, the map RHom\_R(S, K) → K of the derived restriction–Hom adjunction”.
 
 > **Stacks 0B6L.** Let `φ : R ⟶ S` be a ring map, `Y = Spec R`, `X = Spec S` and
 > `f = Spec φ : X ⟶ Y`, and let `a` be the right adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`.
@@ -157,7 +157,7 @@ theorem qcqsTrace_specMap_app_derivedTilde (K : DerivedCategory (ModuleCat.{u} R
           ((Dualizing.AnyModel.derivedHomAdjunction φ.hom).counit.app K)
 ```
 
-**`AlgebraicGeometry.qcqsTrace_specMap_app_derivedTilde_Qh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/AffineTrace.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/AffineTrace.lean#L318). The attribute's comment: “on complexes: through Hom\_R(S, K) → RHom\_R(S, K), the trace is the map Hom\_R(S, K) → K induced by R → S, an isomorphism for K K-injective”.
+**`AlgebraicGeometry.qcqsTrace_specMap_app_derivedTilde_Qh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/AffineTrace.lean, line 318](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/AffineTrace.lean#L318). The attribute's comment: “on complexes: through Hom\_R(S, K) → RHom\_R(S, K), the trace is the map Hom\_R(S, K) → K induced by R → S, an isomorphism for K K-injective”.
 
 > **Stacks 0B6L, on complexes: the trace is induced by `R ⟶ S`.** Let `φ : R ⟶ S`,
 > `f = Spec φ`, and let `K` be a complex of `R`-modules. Through the comparison
@@ -196,4 +196,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.7, Tag 0AWG](https://stacks.math.columbia.edu/tag/0AWG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

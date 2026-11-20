@@ -8,13 +8,13 @@ proof: formalized
 
 # 12.23 Spectral sequences: filtered differential objects
 
-Section 12.23 of the Stacks Project, [Tag 012A](https://stacks.math.columbia.edu/tag/012A). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 12.23 of the Stacks Project, [Tag 012A](https://stacks.math.columbia.edu/tag/012A). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 012B, a definition
 
 [Tag 012B](https://stacks.math.columbia.edu/tag/012B) in the Stacks Project.
 
-**`FilteredDifferentialObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean#L70). The attribute's comment: “the filtered object `(K, F)` is `toFilteredObjectForDifferential` (Definition 0121: a `ℤ`-indexed decreasing filtration by subobjects); `d` is an endomorphism of filtered objects (`d_respects`) with `d ≫ d = 0` (`d_squared`)”.
+**`FilteredDifferentialObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean, line 70](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean#L70). The attribute's comment: “the filtered object `(K, F)` is `toFilteredObjectForDifferential` (Definition 0121: a `ℤ`-indexed decreasing filtration by subobjects); `d` is an endomorphism of filtered objects (`d_respects`) with `d ≫ d = 0` (`d_squared`)”.
 
 > A *filtered differential object* `(K, F, d)` of an abelian category `A` is a filtered object
 > `(K, F)` of `A` endowed with an endomorphism `d : (K, F) → (K, F)` whose square is zero:
@@ -28,7 +28,7 @@ structure FilteredDifferentialObject extends FilteredObjectForDifferential C
 
 [Tag 012C](https://stacks.math.columbia.edu/tag/012C) in the Stacks Project.
 
-**`FilteredDifferentialObject.exists_page_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L208).
+**`FilteredDifferentialObject.exists_page_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L208).
 
 > The object `E_r^p` of the `r`-th page is `Z_r^p / B_r^p`, where, inside `gr^p K`,
 > `Z_r^p = (F^p K ∩ d⁻¹(F^{p + r} K) + F^{p + 1} K) / F^{p + 1} K` and
@@ -45,7 +45,7 @@ theorem exists_page_iso (r p : ℤ) :
         (le_sup_left : X.pageCycles r p ≤ X.pageCycles r p ⊔ X.F (p + 1)) ≫ cokernel.π _
 ```
 
-**`FilteredDifferentialObject.spectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L465).
+**`FilteredDifferentialObject.spectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 465](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L465).
 
 > The spectral sequence `(E_r, d_r)_{r ≥ 0}` associated to a filtered differential object
 > `(K, F, d)`: its `r`-th page is the graded object `E_r^p = Z_r^p / (D_r^p ∩ Z_r^p)` with the
@@ -56,7 +56,7 @@ theorem exists_page_iso (r p : ℤ) :
 noncomputable def spectralSequence : SpectralSequence A (fun r => ComplexShape.up' r) 0
 ```
 
-**`FilteredDifferentialObject.π_spectralSequence_d`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L476).
+**`FilteredDifferentialObject.π_spectralSequence_d`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L476).
 
 > The differential `d_r^p : E_r^p ⟶ E_r^{p + r}` of the spectral sequence is induced by
 > `d : Z_r^p ⟶ Z_r^{p + r}`.
@@ -66,7 +66,7 @@ lemma π_spectralSequence_d (r : ℤ) (hr : 0 ≤ r) (p p' : ℤ) (h : p + r = p
     cokernel.π _ ≫ (X.spectralSequence.page r hr).d p p' = X.pageδ r p p' h ≫ cokernel.π _
 ```
 
-**`FilteredDifferentialObject.homologyπ_spectralSequence_iso_hom`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L483).
+**`FilteredDifferentialObject.homologyπ_spectralSequence_iso_hom`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 483](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L483).
 
 > The page-turn isomorphism of the spectral sequence sends the class of an `r`-cycle represented
 > by `x ∈ Z_{r + 1}^p` to the class of `x` in `E_{r + 1}^p`.
@@ -81,7 +81,7 @@ lemma homologyπ_spectralSequence_iso_hom (r : ℤ) (hr : 0 ≤ r) (p : ℤ) {T 
       x ≫ cokernel.π _
 ```
 
-**`FilteredDifferentialObject.pageZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L535).
+**`FilteredDifferentialObject.pageZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 535](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L535).
 
 > `E_0^p = gr^p K`.
 
@@ -89,7 +89,7 @@ lemma homologyπ_spectralSequence_iso_hom (r : ℤ) (hr : 0 ≤ r) (p : ℤ) {T 
 noncomputable def pageZeroIso (p : ℤ) : X.page 0 p ≅ (X.gr p).X
 ```
 
-**`FilteredDifferentialObject.spectralSequence_d_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 554](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L554).
+**`FilteredDifferentialObject.spectralSequence_d_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 554](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L554).
 
 > Under `E_0^p = gr^p K`, the differential `d_0^p` is `gr^p(d)`.
 
@@ -99,7 +99,7 @@ lemma spectralSequence_d_zero (p : ℤ) :
       (X.pageZeroIso p).hom ≫ (X.gr p).d
 ```
 
-**`FilteredDifferentialObject.pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L603).
+**`FilteredDifferentialObject.pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 603](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L603).
 
 > `E_1^p = H(gr^p K, gr^p(d))`.
 
@@ -111,7 +111,7 @@ noncomputable def pageOneIso (p : ℤ) : X.page 1 p ≅ (X.gr p).homology
 
 [Tag 012D](https://stacks.math.columbia.edu/tag/012D) in the Stacks Project.
 
-**`FilteredDifferentialObject.spectralSequence_d_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 747](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L747).
+**`FilteredDifferentialObject.spectralSequence_d_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 747](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L747).
 
 > Under the identifications `E_1^p = H(gr^p K)` and `E_1^{p + 1} = H(gr^{p + 1} K)`, the
 > differential `d_1^p` of the spectral sequence is the boundary map in homology of the short exact
@@ -127,7 +127,7 @@ theorem spectralSequence_d_one (p : ℤ) :
 
 [Tag 012E](https://stacks.math.columbia.edu/tag/012E) in the Stacks Project.
 
-**`FilteredDifferentialObject.inducedFiltration`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean#L159).
+**`FilteredDifferentialObject.inducedFiltration`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean#L159).
 
 > The `p`-th step of the induced filtration on `H(K, d)` is
 > `F^p H(K, d) := Im (H(F^p K, d) ⟶ H(K, d))`.
@@ -140,7 +140,7 @@ noncomputable def inducedFiltration (p : ℤ) : Subobject X.homology
 
 [Tag 012F](https://stacks.math.columbia.edu/tag/012F) in the Stacks Project.
 
-**`CategoryTheory.gr_homology_isSubquotient_stablePage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean#L394).
+**`CategoryTheory.gr_homology_isSubquotient_stablePage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean#L394).
 
 > Let `(K, F, d)` be a filtered differential object of an abelian category, let
 > `p : ℤ`, and suppose the stable cycles `Z_∞^p` and boundaries `B_∞^p` in degree `p` exist, i.e.
@@ -180,7 +180,7 @@ public theorem gr_homology_isSubquotient_stablePage {C : Type u} [Category.{v} C
 
 [Tag 012I](https://stacks.math.columbia.edu/tag/012I) in the Stacks Project.
 
-**`FilteredDifferentialObject.WeaklyConverges`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 852](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L852). The attribute's comment: “weakly\_converges”.
+**`FilteredDifferentialObject.WeaklyConverges`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 852](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L852). The attribute's comment: “weakly\_converges”.
 
 > The spectral sequence of `(K, F, d)` *weakly converges* to `H(K)` (Stacks 012I): for every `p`
 > the limit term `E_∞^p = Z_∞^p / B_∞^p` exists, i.e. the numerators of the cycles have an
@@ -192,7 +192,7 @@ public theorem gr_homology_isSubquotient_stablePage {C : Type u} [Category.{v} C
 def WeaklyConverges : Prop
 ```
 
-**`FilteredDifferentialObject.Abuts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 868](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L868). The attribute's comment: “abuts”.
+**`FilteredDifferentialObject.Abuts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 868](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L868). The attribute's comment: “abuts”.
 
 > The spectral sequence of `(K, F, d)` *abuts* to `H(K)` (Stacks 012I): it weakly converges and
 > the induced filtration on `H(K)` is separated, `⋂_p F^p H(K) = 0`, and exhaustive,
@@ -206,7 +206,7 @@ def Abuts : Prop
 
 [Tag 012J](https://stacks.math.columbia.edu/tag/012J) in the Stacks Project.
 
-**`FilteredDifferentialObject.weaklyConverges_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 960](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L960). The attribute's comment: “(1)”.
+**`FilteredDifferentialObject.weaklyConverges_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 960](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L960). The attribute's comment: “(1)”.
 
 > The spectral sequence of a filtered differential object weakly converges to `H(K)` if and only
 > if equality holds in (012G) and (012H) for every `p`: the intersection of the numerators of the
@@ -219,7 +219,7 @@ theorem weaklyConverges_iff : X.WeaklyConverges ↔ ∀ p : ℤ,
     IsLUB (Set.range (X.boundariesNumerator p)) (X.stableBoundariesBound p)
 ```
 
-**`FilteredDifferentialObject.abuts_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L1096). The attribute's comment: “(2)”.
+**`FilteredDifferentialObject.abuts_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObjectSpectralSequence.lean#L1096). The attribute's comment: “(2)”.
 
 > The spectral sequence of a filtered differential object abuts to `H(K)` if and only if it
 > weakly converges to `H(K)`, `⋂_p ((Ker(d) ∩ F^p K) + Im(d)) = Im(d)` and
@@ -240,4 +240,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.23, Tag 012A](https://stacks.math.columbia.edu/tag/012A)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

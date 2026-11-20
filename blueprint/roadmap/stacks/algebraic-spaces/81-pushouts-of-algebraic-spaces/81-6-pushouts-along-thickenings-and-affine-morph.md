@@ -8,13 +8,13 @@ proof: formalized
 
 # 81.6 Pushouts along thickenings and affine morphisms
 
-Section 81.6 of the Stacks Project, [Tag 07SW](https://stacks.math.columbia.edu/tag/07SW). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 81.6 of the Stacks Project, [Tag 07SW](https://stacks.math.columbia.edu/tag/07SW). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07SY, a lemma
 
 [Tag 07SY](https://stacks.math.columbia.edu/tag/07SY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPushout_algebraicSpaces_of_isThickening_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffine.lean, line 1087](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffine.lean#L1087).
+**`AlgebraicGeometry.Space.isPushout_algebraicSpaces_of_isThickening_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffine.lean, line 1087](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffine.lean#L1087).
 
 > **Stacks 07SY.** The pushout `Y' = Y ⨿_X X'` of a thickening `X ⟶ X'` and an affine morphism
 > `X ⟶ Y` of schemes over `S` is also a pushout in the category of algebraic spaces over `S`. The
@@ -51,7 +51,7 @@ public theorem isPushout_algebraicSpaces_of_isThickening_of_isAffineHom
 
 [Tag 07VX](https://stacks.math.columbia.edu/tag/07VX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_hasPushout_isThickeningHom_inr_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTag.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTag.lean#L59).
+**`AlgebraicGeometry.Space.exists_hasPushout_isThickeningHom_inr_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTag.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTag.lean#L59).
 
 > **Stacks 07VX.**  Let `i : X ⟶ X'` be a thickening and `f : X ⟶ Y` an affine morphism of
 > algebraic spaces over `S`.  Then
@@ -92,7 +92,7 @@ theorem exists_hasPushout_isThickeningHom_inr_isPullback_appTop
                 rw [← Φ.map_comp, ← Φ.map_comp, hw₀]))))
 ```
 
-**`AlgebraicGeometry.Space.pushout_spec_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L66).
+**`AlgebraicGeometry.Space.pushout_spec_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L66).
 
 > **[Stacks Project, Tag 07VX].** Let `i : X ⟶ X'` be a thickening of algebraic spaces over
 > `S` and `f : X ⟶ Y` an affine morphism. The pushout `Y' = Y ⨿_X X'` exists in the category of
@@ -122,7 +122,7 @@ theorem pushout_spec_of_isThickeningHom :
           (Scheme.Γ.map ((BigFppfOver.toScheme B S hS).map jX').op))
 ```
 
-**`AlgebraicGeometry.Space.hasPushout_of_isThickeningHom_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean#L119). The attribute's comment: “existence of the pushout”.
+**`AlgebraicGeometry.Space.hasPushout_of_isThickeningHom_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean#L119). The attribute's comment: “existence of the pushout”.
 
 > **Stacks 07VX, existence.** A thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` of
 > algebraic spaces over `S` have a pushout `Y' = Y ⨿_X X'` in the category of algebraic spaces over
@@ -134,7 +134,7 @@ theorem hasPushout_of_isThickeningHom_of_isAffineHom
     (hi : IsThickeningHom B S hS i) (hf : IsAffineHom B S hS f.hom) : HasPushout i f
 ```
 
-**`AlgebraicGeometry.Space.pushout_inr_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean#L126). The attribute's comment: “the pushout is a thickening of Y”.
+**`AlgebraicGeometry.Space.pushout_inr_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean#L126). The attribute's comment: “the pushout is a thickening of Y”.
 
 > **Stacks 07VX, `Y' = Y ⨿_X X'` is a thickening of `Y`.**
 
@@ -145,7 +145,7 @@ theorem pushout_inr_isThickeningHom
     IsThickeningHom B S hS (pushout.inr i f)
 ```
 
-**`AlgebraicGeometry.Space.pushout_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean#L142). The attribute's comment: “the structure sheaf”.
+**`AlgebraicGeometry.Space.pushout_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTheorem.lean#L142). The attribute's comment: “the structure sheaf”.
 
 > **Stacks 07VX, the structure sheaf.** `𝒪_{Y'} = 𝒪_Y ×_{f_*𝒪_X} f'_*𝒪_{X'}` as sheaves on the
 > small étale site of `Y'`, evaluated on each of its objects: for a scheme `W` étale over `Y'`
@@ -182,7 +182,7 @@ theorem pushout_isPullback_appTop
 
 [Tag 07VY](https://stacks.math.columbia.edu/tag/07VY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pushoutGluing_spec_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L91).
+**`AlgebraicGeometry.Space.pushoutGluing_spec_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 91](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L91).
 
 > **[Stacks Project, Tag 07VY].** Let `i : X ⟶ X'` be a thickening of algebraic spaces over
 > `S`, `f : X ⟶ Y` an affine morphism and `Y' = Y ⨿_X X'`. The base-change functor
@@ -219,7 +219,7 @@ theorem pushoutGluing_spec_of_isThickeningHom :
 
 [Tag 07VZ](https://stacks.math.columbia.edu/tag/07VZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPullback_right_of_isPullback_of_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CartesianSquareDescent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CartesianSquareDescent.lean#L157).
+**`AlgebraicGeometry.Space.isPullback_right_of_isPullback_of_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CartesianSquareDescent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CartesianSquareDescent.lean#L157).
 
 > **Stacks 07VZ.** Let `S` be a scheme and let `A, B, C, D, E, F` be algebraic spaces over `S`
 > sitting in a commutative diagram with rows `A ⟶ C ⟶ E` and `B ⟶ D ⟶ F` and vertical maps
@@ -242,7 +242,7 @@ theorem isPullback_right_of_isPullback_of_surjective_etale
 
 [Tag 07W0](https://stacks.math.columbia.edu/tag/07W0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_pushoutGluingAdjunction_unit_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L165).
+**`AlgebraicGeometry.Space.isIso_pushoutGluingAdjunction_unit_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L165).
 
 > **[Stacks Project, Tag 07W0].** Let `i : X ⟶ X'` be a thickening of algebraic spaces over
 > `S`, `f : X ⟶ Y` an affine morphism, `Y' = Y ⨿_X X'`, and let `G ⊣ F` be the gluing adjunction
@@ -265,7 +265,7 @@ theorem isIso_pushoutGluingAdjunction_unit_of_isThickeningHom :
 
 [Tag 07W1](https://stacks.math.columbia.edu/tag/07W1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_etaleChartCube`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L190).
+**`AlgebraicGeometry.Space.exists_etaleChartCube`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L190).
 
 > **[Stacks Project, Tag 07W1]**, equation 81.6.5.1 of the proof of Stacks 07W0. Let
 > `i : X ⟶ X'` be a thickening of algebraic spaces over `S` and `f : X ⟶ Y` an affine morphism.
@@ -301,7 +301,7 @@ theorem exists_etaleChartCube
 
 [Tag 07W2](https://stacks.math.columbia.edu/tag/07W2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_etaleChartCube_gluingData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L221).
+**`AlgebraicGeometry.Space.exists_etaleChartCube_gluingData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 221](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L221).
 
 > **[Stacks Project, Tag 07W2]**, equation 81.6.5.2 of the proof of Stacks 07W0. Let
 > `i : X ⟶ X'` be a thickening of algebraic spaces over `S`, `f : X ⟶ Y` an affine morphism and
@@ -343,7 +343,7 @@ theorem exists_etaleChartCube_gluingData
 
 [Tag 08KV](https://stacks.math.columbia.edu/tag/08KV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PushoutModules.isFiniteType_iff_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFiniteModules.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFiniteModules.lean#L179). The attribute's comment: “(a)”.
+**`AlgebraicGeometry.Space.PushoutModules.isFiniteType_iff_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFiniteModules.lean, line 179](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFiniteModules.lean#L179). The attribute's comment: “(a)”.
 
 > **Stacks Project, Tag 08KV (a).**  Let `i : X ⟶ X'` be a thickening and `f : X ⟶ Y` an affine
 > morphism of algebraic spaces over `S`, let `Y' = Y ⨿_X X'` be their pushout (Stacks 07VX) and
@@ -373,7 +373,7 @@ theorem isFiniteType_iff_restrict :
             M.property).obj M).obj.ambient.IsFiniteType
 ```
 
-**`AlgebraicGeometry.Space.PushoutModules.isFinitePresentationOnSite_iff_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFiniteModules.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFiniteModules.lean#L309). The attribute's comment: “(b)”.
+**`AlgebraicGeometry.Space.PushoutModules.isFinitePresentationOnSite_iff_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFiniteModules.lean, line 309](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFiniteModules.lean#L309). The attribute's comment: “(b)”.
 
 > **Stacks Project, Tag 08KV (b).**  Let `i : X ⟶ X'` be a thickening and `f : X ⟶ Y` an affine
 > morphism of algebraic spaces over `S`, let `Y' = Y ⨿_X X'` be their pushout (Stacks 07VX) and
@@ -407,7 +407,7 @@ theorem isFinitePresentationOnSite_iff_restrict :
               M.property).obj M).obj.ambient)
 ```
 
-**`AlgebraicGeometry.Space.PushoutModules.isEquivalence_flatRestrictionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFlatModules.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFlatModules.lean#L357). The attribute's comment: “the equivalence”.
+**`AlgebraicGeometry.Space.PushoutModules.isEquivalence_flatRestrictionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFlatModules.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutFlatModules.lean#L357). The attribute's comment: “the equivalence”.
 
 > **Stacks Project, Tag 08KV, the equivalence.**  Let `i : X ⟶ X'` be a thickening and
 > `f : X ⟶ Y` an affine morphism of algebraic spaces over `S`, let `Y' = Y ⨿_X X'` be their pushout
@@ -439,7 +439,7 @@ theorem isEquivalence_flatRestrictionFunctor :
         (FlatQuasicoherentTriple i f g).FullSubcategory)).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.PushoutModules.isEquivalence_flatRestrictionFunctor_and_finiteness_iff_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutModulesTag.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutModulesTag.lean#L77).
+**`AlgebraicGeometry.Space.PushoutModules.isEquivalence_flatRestrictionFunctor_and_finiteness_iff_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutModulesTag.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningPushoutModulesTag.lean#L77).
 
 > Let `i : X ⟶ X'` be a thickening and `f : X ⟶ Y` an affine morphism of algebraic spaces over
 > `S`, let `Y' = Y ⨿_X X'` be their pushout (Stacks 07VX) and let `g : V' ⟶ Y'` be a morphism, with
@@ -513,7 +513,7 @@ theorem isEquivalence_flatRestrictionFunctor_and_finiteness_iff_restrict :
 
 [Tag 07W3](https://stacks.math.columbia.edu/tag/07W3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pushoutGluing_flat_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L125).
+**`AlgebraicGeometry.Space.pushoutGluing_flat_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ThickeningAffinePushoutTags.lean#L125).
 
 > **[Stacks Project, Tag 07W3].** Let `i : X ⟶ X'` be a thickening of algebraic spaces over
 > `S`, `f : X ⟶ Y` an affine morphism, `Y' = Y ⨿_X X'` and `G ⊣ F` the gluing adjunction of
@@ -567,4 +567,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.6, Tag 07SW](https://stacks.math.columbia.edu/tag/07SW)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

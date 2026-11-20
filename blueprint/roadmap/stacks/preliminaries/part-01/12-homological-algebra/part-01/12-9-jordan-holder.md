@@ -8,7 +8,7 @@ proof: formalized
 
 # 12.9 Jordan-Hölder
 
-Section 12.9 of the Stacks Project, [Tag 0FCD](https://stacks.math.columbia.edu/tag/0FCD). 7 tags here are carried by 10 declarations of the repository (7 in StacksCore and 3 in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 12.9 of the Stacks Project, [Tag 0FCD](https://stacks.math.columbia.edu/tag/0FCD). 7 tags here are carried by 10 declarations of the repository (7 in StacksCore and 3 in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FCE, a definition
 
@@ -16,13 +16,13 @@ Section 12.9 of the Stacks Project, [Tag 0FCD](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Simple`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Simple#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Simple.lean, line 7](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Simple.lean#L7) (StacksCore).
+- [`CategoryTheory.Simple`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Simple#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Simple.lean, line 7](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Simple.lean#L7) (StacksCore).
 
 ## Tag 0FCF, a definition
 
 [Tag 0FCF](https://stacks.math.columbia.edu/tag/0FCF) in the Stacks Project.
 
-**`CategoryTheory.IsArtinianCategory`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/ArtinianCategory.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Abelian/ArtinianCategory.lean#L37). The attribute's comment: “part (2): an abelian category is Artinian if every object is Artinian; part (1) is mathlib's `IsArtinianObject`”.
+**`CategoryTheory.IsArtinianCategory`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/ArtinianCategory.lean, line 37](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Abelian/ArtinianCategory.lean#L37). The attribute's comment: “part (2): an abelian category is Artinian if every object is Artinian; part (1) is mathlib's `IsArtinianObject`”.
 
 > An abelian category is *Artinian* if every object is Artinian, i.e. satisfies the
 > descending chain condition on subobjects. Unlike mathlib's `Artinian`, no smallness
@@ -36,7 +36,7 @@ class IsArtinianCategory [Abelian C] : Prop
 
 [Tag 0FCG](https://stacks.math.columbia.edu/tag/0FCG) in the Stacks Project.
 
-**`CategoryTheory.IsNoetherianAbelianCategory`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Noetherian.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Noetherian.lean#L36). The attribute's comment: “(2): an abelian category is Noetherian if every object is Noetherian.”.
+**`CategoryTheory.IsNoetherianAbelianCategory`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Noetherian.lean, line 36](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Noetherian.lean#L36). The attribute's comment: “(2): an abelian category is Noetherian if every object is Noetherian.”.
 
 > An abelian category is Noetherian if every object of it is Noetherian, i.e. satisfies the
 > ascending chain condition on subobjects. Unlike Mathlib's `CategoryTheory.Noetherian`, no
@@ -50,19 +50,19 @@ class IsNoetherianAbelianCategory [Abelian C] : Prop
 
 [Tag 0FCH](https://stacks.math.columbia.edu/tag/0FCH) in the Stacks Project.
 
-**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/ArtinianObject.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Subobject/ArtinianObject.lean#L55). The attribute's comment: “=>”.
+**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/ArtinianObject.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Subobject/ArtinianObject.lean#L55). The attribute's comment: “=>”.
 
 ```lean
 instance : CategoryTheory.isArtinianObject.IsClosedUnderQuotients (C := C)
 ```
 
-**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/ArtinianObject.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Subobject/ArtinianObject.lean#L81). The attribute's comment: “<=”.
+**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/ArtinianObject.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Subobject/ArtinianObject.lean#L81). The attribute's comment: “<=”.
 
 ```lean
 instance : CategoryTheory.isArtinianObject.IsClosedUnderExtensions (C := C)
 ```
 
-**`CategoryTheory.isArtinianObject_iff_of_shortExact`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/ArtinianObject.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Subobject/ArtinianObject.lean#L93).
+**`CategoryTheory.isArtinianObject_iff_of_shortExact`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/ArtinianObject.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Subobject/ArtinianObject.lean#L93).
 
 > **Stacks 0FCH**: for a short exact sequence `0 ⟶ A₁ ⟶ A₂ ⟶ A₃ ⟶ 0` in an abelian
 > category, `A₂` is Artinian if and only if `A₁` and `A₃` are Artinian.
@@ -74,25 +74,25 @@ lemma isArtinianObject_iff_of_shortExact {S : ShortComplex C} (hS : S.ShortExact
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.instIsClosedUnderSubobjectsIsArtinianObject`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.instIsClosedUnderSubobjectsIsArtinianObject#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Subobject/ArtinianObject.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Subobject/ArtinianObject.lean#L29) (StacksCore): “=>”.
+- [`CategoryTheory.instIsClosedUnderSubobjectsIsArtinianObject`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.instIsClosedUnderSubobjectsIsArtinianObject#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Subobject/ArtinianObject.lean, line 29](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Subobject/ArtinianObject.lean#L29) (StacksCore): “=>”.
 
 ## Tag 0FCI, a lemma
 
 [Tag 0FCI](https://stacks.math.columbia.edu/tag/0FCI) in the Stacks Project.
 
-**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/NoetherianObject.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Subobject/NoetherianObject.lean#L44). The attribute's comment: “=>”.
+**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/NoetherianObject.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Subobject/NoetherianObject.lean#L44). The attribute's comment: “=>”.
 
 ```lean
 instance : CategoryTheory.isNoetherianObject.IsClosedUnderQuotients (C := C)
 ```
 
-**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/NoetherianObject.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Subobject/NoetherianObject.lean#L62). The attribute's comment: “<=”.
+**An instance with no name** in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/NoetherianObject.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Subobject/NoetherianObject.lean#L62). The attribute's comment: “<=”.
 
 ```lean
 instance : CategoryTheory.isNoetherianObject.IsClosedUnderExtensions (C := C)
 ```
 
-**`CategoryTheory.isNoetherianObject_iff_of_shortExact`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/NoetherianObject.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Subobject/NoetherianObject.lean#L74).
+**`CategoryTheory.isNoetherianObject_iff_of_shortExact`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Subobject/NoetherianObject.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Subobject/NoetherianObject.lean#L74).
 
 > **Stacks 0FCI**: for a short exact sequence `0 ⟶ A₁ ⟶ A₂ ⟶ A₃ ⟶ 0` in an abelian
 > category, `A₂` is Noetherian if and only if `A₁` and `A₃` are Noetherian.
@@ -104,13 +104,13 @@ lemma isNoetherianObject_iff_of_shortExact {S : ShortComplex C} (hS : S.ShortExa
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.instIsClosedUnderSubobjectsIsNoetherianObject`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.instIsClosedUnderSubobjectsIsNoetherianObject#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Subobject/NoetherianObject.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Subobject/NoetherianObject.lean#L17) (StacksCore): “=>”. References: SGA 4 VI (1.30.1), “more general”.
+- [`CategoryTheory.instIsClosedUnderSubobjectsIsNoetherianObject`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.instIsClosedUnderSubobjectsIsNoetherianObject#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Subobject/NoetherianObject.lean, line 17](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Subobject/NoetherianObject.lean#L17) (StacksCore): “=>”. References: SGA 4 VI (1.30.1), “more general”.
 
 ## Tag 0FCJ, a lemma
 
 [Tag 0FCJ](https://stacks.math.columbia.edu/tag/0FCJ) in the Stacks Project.
 
-**`CategoryTheory.isArtinianObject_and_isNoetherianObject_iff_exists_filtration`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Abelian/JordanHolder.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Abelian/JordanHolder.lean#L114).
+**`CategoryTheory.isArtinianObject_and_isNoetherianObject_iff_exists_filtration`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Abelian/JordanHolder.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Abelian/JordanHolder.lean#L114).
 
 > **Stacks 0FCJ**: an object of an abelian category is Artinian and Noetherian if and
 > only if it admits a finite filtration by subobjects with simple successive quotients.
@@ -127,7 +127,7 @@ lemma isArtinianObject_and_isNoetherianObject_iff_exists_filtration (X : C) :
 
 [Tag 0FCK](https://stacks.math.columbia.edu/tag/0FCK) in the Stacks Project.
 
-**`CategoryTheory.Subobject.jordan_holder`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/JordanHolder.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Abelian/JordanHolder.lean#L132). The attribute's comment: “the quotient `a (i + 1) / a i` is indexed by `i : Fin n`; the Artinian and Noetherian hypothesis of Stacks follows from the filtrations by 0FCJ and is not assumed”.
+**`CategoryTheory.Subobject.jordan_holder`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/JordanHolder.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Abelian/JordanHolder.lean#L132). The attribute's comment: “the quotient `a (i + 1) / a i` is indexed by `i : Fin n`; the Artinian and Noetherian hypothesis of Stacks follows from the filtrations by 0FCJ and is not assumed”.
 
 > **Stacks 0FCK (Jordan–Hölder).** Let `X` be an object of an abelian category with two
 > filtrations `0 = a 0 ⊆ a 1 ⊆ ⋯ ⊆ a n = X` and `0 = b 0 ⊆ b 1 ⊆ ⋯ ⊆ b m = X` by subobjects whose
@@ -152,7 +152,7 @@ theorem jordan_holder (a : ℕ → Subobject X) (n : ℕ) (ha : ∀ i, i < n →
 
 Declarations registered for the tag:
 
-- [`CompositionSeries.jordan_holder`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CompositionSeries.jordan_holder#doc) registered with `add_to_stacks` in [StacksCore/Order/JordanHolder.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Order/JordanHolder.lean#L8) (StacksCore).
+- [`CompositionSeries.jordan_holder`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CompositionSeries.jordan_holder#doc) registered with `add_to_stacks` in [StacksCore/Order/JordanHolder.lean, line 8](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/Order/JordanHolder.lean#L8) (StacksCore).
 
 ## Depends on
 
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.9, Tag 0FCD](https://stacks.math.columbia.edu/tag/0FCD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

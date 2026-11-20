@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.63 Associated primes
 
-Section 10.63 of the Stacks Project, [Tag 00L9](https://stacks.math.columbia.edu/tag/00L9). 19 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.63 of the Stacks Project, [Tag 00L9](https://stacks.math.columbia.edu/tag/00L9). 19 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00LA, a definition
 
 [Tag 00LA](https://stacks.math.columbia.edu/tag/00LA) in the Stacks Project.
 
-**`IsAssociatedPrimeStacks`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean#L50). References: SGA 2 III (1.1), “Ass M clause”.
+**`IsAssociatedPrimeStacks`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean#L50). References: SGA 2 III (1.1), “Ass M clause”.
 
 > **Stacks 00LA**.
 > A prime ideal `p` of `R` is associated to the `R`-module `M` when it is the
@@ -28,7 +28,7 @@ def IsAssociatedPrimeStacks (p : Ideal R) : Prop
 
 [Tag 0586](https://stacks.math.columbia.edu/tag/0586) in the Stacks Project.
 
-**`assPrimes_subset_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean#L137). References: SGA 2 III (1.2), “(ii) ⇒ (i)”.
+**`assPrimes_subset_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean#L137). References: SGA 2 III (1.2), “(ii) ⇒ (i)”.
 
 > **Stacks Tag 0586.** Every associated prime of `M` lies in the support of `M`:
 > `Ass(M) ⊆ Supp(M)`. Here `Module.support R M` is the set of primes `p` at which
@@ -43,7 +43,7 @@ theorem assPrimes_subset_support (R M : Type*) [CommRing R] [AddCommGroup M] [Mo
 
 [Tag 02M3](https://stacks.math.columbia.edu/tag/02M3) in the Stacks Project.
 
-**`assStacks_subset_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean#L159). The attribute's comment: “(1) Ass(M') ⊆ Ass(M) for a short exact sequence 0 → M' → M → M'' → 0 over any commutative ring, with Ass the set of primes equal to the annihilator of an element (00LA)”.
+**`assStacks_subset_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean#L159). The attribute's comment: “(1) Ass(M') ⊆ Ass(M) for a short exact sequence 0 → M' → M → M'' → 0 over any commutative ring, with Ass the set of primes equal to the annihilator of an element (00LA)”.
 
 > **Stacks 02M3, first inclusion.** Let `0 → X → Y → Z → 0` be a short exact sequence of modules
 > over a commutative ring `S`. Then `Ass(X) ⊆ Ass(Y)`, where `Ass = assStacks` is the set of primes
@@ -57,7 +57,7 @@ theorem _root_.assStacks_subset_of_shortExact {f : X →ₗ[S] Y} {g : Y →ₗ[
     _root_.assStacks S X ⊆ _root_.assStacks S Y
 ```
 
-**`assStacks_subset_union_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean#L173). The attribute's comment: “(2) Ass(M) ⊆ Ass(M') ∪ Ass(M'') for a short exact sequence 0 → M' → M → M'' → 0 over any commutative ring, with Ass the set of primes equal to the annihilator of an element (00LA)”.
+**`assStacks_subset_union_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean#L173). The attribute's comment: “(2) Ass(M) ⊆ Ass(M') ∪ Ass(M'') for a short exact sequence 0 → M' → M → M'' → 0 over any commutative ring, with Ass the set of primes equal to the annihilator of an element (00LA)”.
 
 > **Stacks 02M3, second inclusion.** Let `0 → X → Y → Z → 0` be a short exact sequence of
 > modules over a commutative ring `S`. Then `Ass(Y) ⊆ Ass(X) ∪ Ass(Z)`, where `Ass = assStacks` is
@@ -72,7 +72,7 @@ theorem _root_.assStacks_subset_union_of_shortExact {f : X →ₗ[S] Y} {g : Y �
     _root_.assStacks S Y ⊆ _root_.assStacks S X ∪ _root_.assStacks S Z
 ```
 
-**`assStacks_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean#L187). The attribute's comment: “(3) Ass(M' ⊕ M'') = Ass(M') ∪ Ass(M'') over any commutative ring, the direct sum being the product M' × M'' and Ass the set of primes equal to the annihilator of an element (00LA)”.
+**`assStacks_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean#L187). The attribute's comment: “(3) Ass(M' ⊕ M'') = Ass(M') ∪ Ass(M'') over any commutative ring, the direct sum being the product M' × M'' and Ass the set of primes equal to the annihilator of an element (00LA)”.
 
 > **Stacks 02M3, direct sum.** For modules `X` and `Z` over a commutative ring `S`,
 > `Ass(X ⊕ Z) = Ass(X) ∪ Ass(Z)`, where `Ass = assStacks` is the set of primes that are the
@@ -90,7 +90,7 @@ theorem _root_.assStacks_prod :
 
 [Tag 00LB](https://stacks.math.columbia.edu/tag/00LB) in the Stacks Project.
 
-**`ass_subset_of_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Filtration.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Filtration.lean#L205).
+**`ass_subset_of_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Filtration.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Filtration.lean#L205).
 
 > **Stacks Tag 00LB.** If `M` admits a finite filtration by `R`-submodules
 > `0 = M_0 ⊆ M_1 ⊆ ... ⊆ M_n = M` whose successive quotients `M_i / M_{i-1}` are
@@ -115,7 +115,7 @@ theorem ass_subset_of_filtration
 
 [Tag 02CE](https://stacks.math.columbia.edu/tag/02CE) in the Stacks Project.
 
-**`Module.setOf_minimal_support_eq_setOf_minimal_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L137). The attribute's comment: “Parts (1) and (2); the equality with part (3) is the first conclusion of Stacks 00L7, which the source's own proof cites for that step.”.
+**`Module.setOf_minimal_support_eq_setOf_minimal_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L137). The attribute's comment: “Parts (1) and (2); the equality with part (3) is the first conclusion of Stacks 00L7, which the source's own proof cites for that step.”.
 
 > Let `R` be a Noetherian ring and `M` a finite `R`-module. The primes minimal in `Supp(M)` are
 > exactly the primes minimal in `Ass(M)`.
@@ -133,14 +133,14 @@ public theorem setOf_minimal_support_eq_setOf_minimal_associatedPrimes {R M : Ty
 
 Declarations registered for the tag:
 
-- [`associatedPrimes.eq_empty_of_subsingleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=associatedPrimes.eq_empty_of_subsingleton#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean#L128) (StacksFrontier): “the direction M = 0 implies Ass(M) = 0”.
-- [`associatedPrimes.nonempty`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=associatedPrimes.nonempty#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean#L130) (StacksFrontier): “the converse, contrapositively: a nontrivial module has an associated prime”.
+- [`associatedPrimes.eq_empty_of_subsingleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=associatedPrimes.eq_empty_of_subsingleton#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean#L128) (StacksFrontier): “the direction M = 0 implies Ass(M) = 0”.
+- [`associatedPrimes.nonempty`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=associatedPrimes.nonempty#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean#L130) (StacksFrontier): “the converse, contrapositively: a nontrivial module has an associated prime”.
 
 ## Tag 05BV, a lemma
 
 [Tag 05BV](https://stacks.math.columbia.edu/tag/05BV) in the Stacks Project.
 
-**`Module.mem_associatedPrimes_of_minimal_mem_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L244).
+**`Module.mem_associatedPrimes_of_minimal_mem_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L244).
 
 > Let `R` be a Noetherian ring and let `M` be an `R`-module. Any prime `𝔭` which is minimal among
 > the elements of the support of `M` is an associated prime of `M`.
@@ -158,14 +158,14 @@ public theorem Module.mem_associatedPrimes_of_minimal_mem_support {R : Type*} [C
 
 Declarations registered for the tag:
 
-- [`biUnion_associatedPrimes_eq_zero_divisors`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=biUnion_associatedPrimes_eq_zero_divisors#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L265) (StacksFrontier). References: EGA IV (20.2.13), “S”.
-- [`biUnion_associatedPrimes_eq_compl_regular`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=biUnion_associatedPrimes_eq_compl_regular#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L267) (StacksFrontier): “the same union, phrased via `IsSMulRegular`”. References: EGA IV (20.2.13), “S”.
+- [`biUnion_associatedPrimes_eq_zero_divisors`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=biUnion_associatedPrimes_eq_zero_divisors#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 265](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L265) (StacksFrontier). References: EGA IV (20.2.13), “S”.
+- [`biUnion_associatedPrimes_eq_compl_regular`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=biUnion_associatedPrimes_eq_compl_regular#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 267](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L267) (StacksFrontier): “the same union, phrased via `IsSMulRegular`”. References: EGA IV (20.2.13), “S”.
 
 ## Tag 0B52, a lemma
 
 [Tag 0B52](https://stacks.math.columbia.edu/tag/0B52) in the Stacks Project.
 
-**`Module.supportDim_quotSMulTop_le_and_le_succ_and_eq_of_notMem_minimal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/Regular.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullDimension/Regular.lean#L92). The attribute's comment: “both inequalities, the equality case, and the nonzerodivisor example”.
+**`Module.supportDim_quotSMulTop_le_and_le_succ_and_eq_of_notMem_minimal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/Regular.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/KrullDimension/Regular.lean#L92). The attribute's comment: “both inequalities, the equality case, and the nonzerodivisor example”.
 
 > **Stacks 0B52.** Let `R` be a Noetherian local ring, `M` a finite `R`-module and `x ∈ 𝔪`.
 > Then `dim Supp(M/xM) ≤ dim Supp(M) ≤ dim Supp(M/xM) + 1`. If `x` is not in any of the minimal
@@ -187,7 +187,7 @@ theorem supportDim_quotSMulTop_le_and_le_succ_and_eq_of_notMem_minimal
 
 [Tag 05BW](https://stacks.math.columbia.edu/tag/05BW) in the Stacks Project.
 
-**`spec_image_ass_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean#L335). References: EGA IV (3.1.10.1), “Contraction inclusion”.
+**`spec_image_ass_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean, line 335](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean#L335). References: EGA IV (3.1.10.1), “Contraction inclusion”.
 
 > Stacks Tag 05BW (Lemma 10.63.11): for a ring map `φ : R → S` and an
 > `S`-module `M` viewed as an `R`-module via restriction of scalars along `φ`
@@ -206,7 +206,7 @@ theorem spec_image_ass_subset
 
 [Tag 05BX](https://stacks.math.columbia.edu/tag/05BX) in the Stacks Project.
 
-**`assExact_not_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean#L546).
+**`assExact_not_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean, line 546](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean#L546).
 
 > Together, the two statements above witness the failure of functoriality of
 > associated primes along `algebraMap k (S k)`: `Ass_k(S) ≠ ∅` while `Ass_S(S) = ∅`.
@@ -220,7 +220,7 @@ theorem assExact_not_functorial (k : Type*) [Field k] :
 
 [Tag 05DZ](https://stacks.math.columbia.edu/tag/05DZ) in the Stacks Project.
 
-**`Module.associatedPrimes.image_comap_associatedPrimes_eq_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean#L263).
+**`Module.associatedPrimes.image_comap_associatedPrimes_eq_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean, line 263](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Functoriality.lean#L263).
 
 > **Stacks 05DZ.** Let `S` be an `R`-algebra and let `M` be an `S`-module, viewed as an
 > `R`-module through `algebraMap R S`. If `S` is Noetherian, then contracting ideals along
@@ -241,7 +241,7 @@ public theorem Module.associatedPrimes.image_comap_associatedPrimes_eq_associate
 
 [Tag 05BY](https://stacks.math.columbia.edu/tag/05BY) in the Stacks Project.
 
-**`Stacks.AssociatedPrimes.main_theorem_05by`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean#L223).
+**`Stacks.AssociatedPrimes.main_theorem_05by`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean#L223).
 
 > **Stacks Tag 05BY.** Contraction along `π : R → R ⧸ I` carries the associated primes
 > of `M` over `R ⧸ I` onto the associated primes of `M` over `R`.
@@ -256,7 +256,7 @@ theorem main_theorem_05by :
 
 [Tag 0310](https://stacks.math.columbia.edu/tag/0310) in the Stacks Project.
 
-**`Stacks.AssociatedPrimes.map_mem_assPrimes_atPrime_and_converse_of_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean#L227).
+**`Stacks.AssociatedPrimes.map_mem_assPrimes_atPrime_and_converse_of_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean#L227).
 
 > **Stacks 0310.** Let `R` be a ring, `M` an `R`-module and `p ⊆ R` a prime, with `R_p` and
 > `M_p` the localizations at `p` (given by `IsLocalization.AtPrime` and `IsLocalizedModule`).
@@ -274,7 +274,7 @@ theorem map_mem_assPrimes_atPrime_and_converse_of_fg :
 
 [Tag 05BZ](https://stacks.math.columbia.edu/tag/05BZ) in the Stacks Project.
 
-**`Stacks.AssociatedPrimes.assPrimes_eq_image_comap_assPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean#L95). The attribute's comment: “(1)”.
+**`Stacks.AssociatedPrimes.assPrimes_eq_image_comap_assPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean#L95). The attribute's comment: “(1)”.
 
 > **Stacks 05BZ (1).** For `R'` a localization `S⁻¹R` and any `R'`-module `M'` (in particular
 > `M' = S⁻¹M`), the associated primes of `M'` over `R` are the contractions along
@@ -286,7 +286,7 @@ theorem assPrimes_eq_image_comap_assPrimes :
     assPrimes R M' = Ideal.comap (algebraMap R R') '' assPrimes R' M'
 ```
 
-**`Stacks.AssociatedPrimes.assPrimes_inter_image_comap_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean#L136). The attribute's comment: “(2)”.
+**`Stacks.AssociatedPrimes.assPrimes_inter_image_comap_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean#L136). The attribute's comment: “(2)”.
 
 > **Stacks 05BZ (2).** Via the canonical injection `Spec(S⁻¹R) → Spec(R)`, whose image is
 > `Ideal.comap (algebraMap R R') '' {J | J.IsPrime}`, we have
@@ -297,7 +297,7 @@ theorem assPrimes_inter_image_comap_subset :
     assPrimes R M ∩ Ideal.comap (algebraMap R R') '' {J | J.IsPrime} ⊆ assPrimes R M'
 ```
 
-**`Stacks.AssociatedPrimes.assPrimes_inter_image_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean#L149). The attribute's comment: “(3)”.
+**`Stacks.AssociatedPrimes.assPrimes_inter_image_comap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/LocalizationSpectrum.lean#L149). The attribute's comment: “(3)”.
 
 > **Stacks 05BZ (3).** If `R` is Noetherian, the inclusion of Stacks 05BZ (2) is an equality:
 > `Ass_R(M) ∩ Spec(S⁻¹R) = Ass_R(S⁻¹M)`.
@@ -311,7 +311,7 @@ theorem assPrimes_inter_image_comap_eq [IsNoetherianRing R] :
 
 [Tag 05C0](https://stacks.math.columbia.edu/tag/05C0) in the Stacks Project.
 
-**`AssLocalization.assPrimes_localizedModule_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Localization.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Localization.lean#L130).
+**`AssLocalization.assPrimes_localizedModule_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Localization.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Localization.lean#L130).
 
 > **Stacks Tag 05C0 / Lemma 10.63.17.**
 > If every element of the multiplicative subset `S` is a nonzerodivisor on the
@@ -328,7 +328,7 @@ theorem assPrimes_localizedModule_eq (S : Submonoid R) (hS : AllNonZeroDivisorsO
 
 [Tag 00LL](https://stacks.math.columbia.edu/tag/00LL) in the Stacks Project.
 
-**`Ideal.exists_mem_isSMulRegular_iff_forall_associatedPrimes_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean#L115). References: SGA 2 III (2.1), “(ii) <=> (iv)”.
+**`Ideal.exists_mem_isSMulRegular_iff_forall_associatedPrimes_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean#L115). References: SGA 2 III (2.1), “(ii) <=> (iv)”.
 
 > Let `R` be a Noetherian ring, `M` an `R`-module with finitely many associated primes and
 > `I ⊆ R` an ideal. Then `I` contains an element that is a nonzerodivisor on `M` if and only if `I`
@@ -346,7 +346,7 @@ public theorem Ideal.exists_mem_isSMulRegular_iff_forall_associatedPrimes_not_le
 
 [Tag 0311](https://stacks.math.columbia.edu/tag/0311) in the Stacks Project.
 
-**`zero_at_ass_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L162).
+**`zero_at_ass_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Support.lean#L162).
 
 > Over a Noetherian ring, the canonical map from $M$ into the product of its localizations at
 > associated primes is injective.
@@ -361,7 +361,7 @@ theorem zero_at_ass_zero (R : Type*) [CommRing R] [IsNoetherianRing R]
 
 [Tag 0GEC](https://stacks.math.columbia.edu/tag/0GEC) in the Stacks Project.
 
-**`exists_mem_nonZeroDivisors_not_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean#L159). References: SGA 3 VIA (1.1.2), “special case”.
+**`exists_mem_nonZeroDivisors_not_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Basic.lean#L159). References: SGA 3 VIA (1.1.2), “special case”.
 
 > For a finite type algebra `S` over a field `k` with `0 < dim S`, some element of `S` is
 > simultaneously a nonzerodivisor and a nonunit.
@@ -379,4 +379,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.63, Tag 00L9](https://stacks.math.columbia.edu/tag/00L9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

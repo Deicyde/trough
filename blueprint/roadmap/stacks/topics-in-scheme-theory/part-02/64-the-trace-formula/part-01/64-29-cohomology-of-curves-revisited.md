@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.29 Cohomology of curves, revisited
 
-Section 64.29 of the Stacks Project, [Tag 03VJ](https://stacks.math.columbia.edu/tag/03VJ). 3 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 64.29 of the Stacks Project, [Tag 03VJ](https://stacks.math.columbia.edu/tag/03VJ). 3 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03VK, a lemma
 
 [Tag 03VK](https://stacks.math.columbia.edu/tag/03VK) in the Stacks Project.
 
-**`AlgebraicGeometry.compactSupportCanonicalTwistEquiv_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCanonicalTwistGalois.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCanonicalTwistGalois.lean#L316).
+**`AlgebraicGeometry.compactSupportCanonicalTwistEquiv_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCanonicalTwistGalois.lean, line 316](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCanonicalTwistGalois.lean#L316).
 
 > **`H²_c(X_k̄, ℱ_ρ) = M_{π₁(X_k̄, η̄)}(-1)` canonically, as `Gal(k^{sep}/k)`-modules.**
 > Let `X` be a geometrically connected smooth curve over a field `k` (`f : X ⟶ Spec k`), `k̄` an
@@ -78,7 +78,7 @@ theorem compactSupportCanonicalTwistEquiv_galois (σ : kbar ≃ₐ[k] kbar)
         (compactSupportCanonicalTwistEquiv B X f kbar Λ y j hn ρ x)
 ```
 
-**`Stacks.EtaleCohomology.compactlySupportedCohomologyTwo_galoisIso_tateTwistCoinvariants`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportTateTwistCoinvariants.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportTateTwistCoinvariants.lean#L472). The attribute's comment: “the Galois-module conclusion, obtained from an equivariant nondegenerate pairing with μ\_n coefficients. The right-hand side (M)\_\{π₁(X\_k̄,η̄)}(-1) is constructed: coinvariants of Tag 03UD for the geometric fundamental group, the residual Gal(k^sep/k)-action through the fundamental exact sequence, and the Tate twist by -1 as the source defines it, χ\_cycl(σ)⁻¹ composed with σ; the left-hand side is H²\_c of Tag 0GJZ. Four inputs are explicit hypotheses because this library has no statement for them: the sheaf ℱ\_ρ attached to ρ, which is Tag 0DV5 part (1), that is Tag 03RV and hence Tag 0245, so the sheaf is a variable and its link to ρ is carried by the pairing; the Galois action on H²\_c and its compatibility, Tag 03ST in degree two, of which only degree zero is available here, through Tag 03Q9; the fundamental exact sequence, Tags 03VJ, 0BTX and 0BNE, carried by the normal subgroup N and the isomorphism φ; and the trace isomorphism H²\_c(X\_k̄, μ\_n) = ℤ/nℤ quoted inside the source's proof, carried by the nondegeneracy of the pairing. Tag 0F7I being absent, the compactification is an explicit argument as in Tag 0GJZ, and Xbar is pinned as the base change X ×\_k k^sep by hbase. What is proved is that these inputs produce the twisted equivariant isomorphism: the Tate twist and the Galois equivariance of the identification”.
+**`Stacks.EtaleCohomology.compactlySupportedCohomologyTwo_galoisIso_tateTwistCoinvariants`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportTateTwistCoinvariants.lean, line 473](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportTateTwistCoinvariants.lean#L473). The attribute's comment: “the Galois-module conclusion, obtained from an equivariant nondegenerate pairing with μ\_n coefficients. The right-hand side (M)\_\{π₁(X\_k̄,η̄)}(-1) is constructed: coinvariants of Tag 03UD for the geometric fundamental group, the residual Gal(k^sep/k)-action through the fundamental exact sequence, and the Tate twist by -1 as the source defines it, χ\_cycl(σ)⁻¹ composed with σ; the left-hand side is H²\_c of Tag 0GJZ. Four inputs are explicit hypotheses because this library has no statement for them: the sheaf ℱ\_ρ attached to ρ, which is Tag 0DV5 part (1), that is Tag 03RV and hence Tag 0245, so the sheaf is a variable and its link to ρ is carried by the pairing; the Galois action on H²\_c and its compatibility, Tag 03ST in degree two, of which only degree zero is available here, through Tag 03Q9; the fundamental exact sequence, Tags 03VJ, 0BTX and 0BNE, carried by the normal subgroup N and the isomorphism φ; and the trace isomorphism H²\_c(X\_k̄, μ\_n) = ℤ/nℤ quoted inside the source's proof, carried by the nondegeneracy of the pairing. Tag 0F7I being absent, the compactification is an explicit argument as in Tag 0GJZ, and Xbar is pinned as the base change X ×\_k k^sep by hbase. What is proved is that these inputs produce the twisted equivariant isomorphism: the Tate twist and the Galois equivariance of the identification”.
 
 > **Stacks Project, Tag 03VK, as an isomorphism of `Gal(k^{sep}/k)`-modules.**
 >
@@ -136,7 +136,7 @@ public theorem compactlySupportedCohomologyTwo_galoisIso_tateTwistCoinvariants
 
 [Tag 03VL](https://stacks.math.columbia.edu/tag/03VL) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_curveCompactlySupportedCohomologyZero_of_not_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CurveRepresentationCohomology.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CurveRepresentationCohomology.lean#L130). The attribute's comment: “H⁰\_c(X\_k̄, ℱ\_ρ) = 0 if X is not projective, H\_c in the sense of Tag 0GJZ, for every algebraic extension K of k in place of k̄”. References: SGA 5 VII (7.1.1), “b), special case”.
+**`AlgebraicGeometry.isZero_curveCompactlySupportedCohomologyZero_of_not_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CurveRepresentationCohomology.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CurveRepresentationCohomology.lean#L130). The attribute's comment: “H⁰\_c(X\_k̄, ℱ\_ρ) = 0 if X is not projective, H\_c in the sense of Tag 0GJZ, for every algebraic extension K of k in place of k̄”. References: SGA 5 VII (7.1.1), “b), special case”.
 
 > **Stacks Project, Tag 03VL, last assertion: `H⁰_c(X_K, ℱ_ρ) = 0` if `X` is not
 > projective.** For a geometrically connected smooth curve `X` over `k` which is not projective,
@@ -164,7 +164,7 @@ theorem isZero_curveCompactlySupportedCohomologyZero_of_not_isProjective
               (contains_fieldBaseChange_of_isCurve B X f K)).hom) Λ f K).obj M)))
 ```
 
-**`AlgebraicGeometry.geometricGlobalSectionsInvariantsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean#L298). The attribute's comment: “H⁰(X\_k̄, ℱ\_ρ) = M^\{π₁(X\_k̄,η̄)}: the canonical identification, by evaluation at η̄”.
+**`AlgebraicGeometry.geometricGlobalSectionsInvariantsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean#L298). The attribute's comment: “H⁰(X\_k̄, ℱ\_ρ) = M^\{π₁(X\_k̄,η̄)}: the canonical identification, by evaluation at η̄”.
 
 > **Stacks Project, Tag 03VL, degree zero, canonically: `H⁰(X_k̄, ℱ_ρ) = M^{π₁(X_k̄, η̄)}`.** The
 > evaluation at the geometric point `η̄` of `X_k̄` identifies the global sections of the restriction
@@ -190,7 +190,7 @@ def geometricGlobalSectionsInvariantsEquiv (ρ : letI := connectedSpace_of_isCur
               y)).obj ρ))
 ```
 
-**`AlgebraicGeometry.geometricGlobalSectionsInvariantsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean#L332). The attribute's comment: “H⁰(X\_k̄, ℱ\_ρ) = M^\{π₁(X\_k̄,η̄)} functorially in ρ”.
+**`AlgebraicGeometry.geometricGlobalSectionsInvariantsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean, line 332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean#L332). The attribute's comment: “H⁰(X\_k̄, ℱ\_ρ) = M^\{π₁(X\_k̄,η̄)} functorially in ρ”.
 
 > **Stacks Project, Tag 03VL, degree zero: the identification is natural in `ρ`.** For
 > `φ : ρ ⟶ ρ'`, it carries the map induced by `φ` on global sections to `φ` on invariants.
@@ -214,7 +214,7 @@ theorem geometricGlobalSectionsInvariantsEquiv_naturality
       φ.hom.hom.hom.hom.hom (geometricGlobalSectionsInvariantsEquiv B X f kbar Λ y ρ z).1
 ```
 
-**`AlgebraicGeometry.geometricGlobalSectionsInvariantsEquiv_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean#L357). The attribute's comment: “H⁰(X\_k̄, ℱ\_ρ) = M^\{π₁(X\_k̄,η̄)} as Gal(k̄/k) = π₁(X,η̄)/π₁(X\_k̄,η̄)-modules”.
+**`AlgebraicGeometry.geometricGlobalSectionsInvariantsEquiv_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricGlobalSectionsCanonical.lean#L357). The attribute's comment: “H⁰(X\_k̄, ℱ\_ρ) = M^\{π₁(X\_k̄,η̄)} as Gal(k̄/k) = π₁(X,η̄)/π₁(X\_k̄,η̄)-modules”.
 
 > **Stacks Project, Tag 03VL, degree zero: the identification is Galois-equivariant.** For
 > `γ ∈ π₁(X, η̄)` with image `σ ∈ Aut(k̄/k) = π₁(X, η̄)/π₁(X_k̄, η̄)`, it carries the action of `σ`
@@ -241,7 +241,7 @@ theorem geometricGlobalSectionsInvariantsEquiv_galois (ρ : letI := connectedSpa
         (geometricGlobalSectionsInvariantsEquiv B X f kbar Λ y ρ z).1
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.subsingleton_rationalGeometricCompactlySupportedCohomology_zero_of_not_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LisseCompactSupportZero.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LisseCompactSupportZero.lean#L202). The attribute's comment: “last assertion: H^0\_c(X\_kbar, F\_rho) = 0 when X is not projective (here: not proper over k)”.
+**`Stacks.EtaleCohomology.LAdicSheaf.subsingleton_rationalGeometricCompactlySupportedCohomology_zero_of_not_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LisseCompactSupportZero.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LisseCompactSupportZero.lean#L202). The attribute's comment: “last assertion: H^0\_c(X\_kbar, F\_rho) = 0 when X is not projective (here: not proper over k)”.
 
 > **Stacks Project, Tag 03VL, last assertion: if `X` is not projective, then
 > `H⁰_c(X_k̄, ℱ_ρ) = 0`.** Here `X` is a smooth geometrically connected curve over the finite field
@@ -259,7 +259,7 @@ theorem LAdicSheaf.subsingleton_rationalGeometricCompactlySupportedCohomology_ze
       (LAdicSheaf.representationSheaf B X x τ hτ) 0)
 ```
 
-**`Stacks.EtaleCohomology.compactlySupportedSections_eq_bot_of_not_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LocallyConstantCompactSupport.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LocallyConstantCompactSupport.lean#L321). The attribute's comment: “the non-projective assertion H^0\_c = 0, at the level of the sections of proper support of Tag 0F72: for an arbitrary locally constant abelian sheaf in place of the sheaf ℱ\_ρ attached to a representation, which needs part (1) of Tag 0DV5 and hence Tag 0245, and on an integral scheme not proper over the base field in place of a non-projective geometrically connected smooth curve. The identification of these sections with H^0\_c is Tag 0GK1, not available here; the two projective assertions of the tag are not proved, nor is the Tate twist they carry”. References: SGA 4½ Sommes trig (1.18), “Clause b)”.
+**`Stacks.EtaleCohomology.compactlySupportedSections_eq_bot_of_not_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LocallyConstantCompactSupport.lean, line 321](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LocallyConstantCompactSupport.lean#L321). The attribute's comment: “the non-projective assertion H^0\_c = 0, at the level of the sections of proper support of Tag 0F72: for an arbitrary locally constant abelian sheaf in place of the sheaf ℱ\_ρ attached to a representation, which needs part (1) of Tag 0DV5 and hence Tag 0245, and on an integral scheme not proper over the base field in place of a non-projective geometrically connected smooth curve. The identification of these sections with H^0\_c is Tag 0GK1, not available here; the two projective assertions of the tag are not proved, nor is the Tate twist they carry”. References: SGA 4½ Sommes trig (1.18), “Clause b)”.
 
 > On an integral scheme which is not proper over the base field, a global section of a locally
 > constant abelian sheaf on the small étale site whose support is proper over the base field is
@@ -271,7 +271,7 @@ public theorem compactlySupportedSections_eq_bot_of_not_isProper [IsIntegral X]
     compactlySupportedSections k X f B hX F = ⊥
 ```
 
-**`AlgebraicGeometry.properCurveCompactSupportTwoEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/Remark03VL.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/Remark03VL.lean#L113). The attribute's comment: “H²\_c(X\_k̄, ℱ\_ρ) = M\_\{π₁(X\_k̄,η̄)}(-1) for X projective (here: proper): the root-of-unity free (ζ-independent) Λ-linear identification, M(-1) being Hom(μ\_n, M); functoriality in ρ is properCurveCompactSupportTwoEquiv\_naturality”.
+**`AlgebraicGeometry.properCurveCompactSupportTwoEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/Remark03VL.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/Remark03VL.lean#L113). The attribute's comment: “H²\_c(X\_k̄, ℱ\_ρ) = M\_\{π₁(X\_k̄,η̄)}(-1) for X projective (here: proper): the root-of-unity free (ζ-independent) Λ-linear identification, M(-1) being Hom(μ\_n, M); functoriality in ρ is properCurveCompactSupportTwoEquiv\_naturality”.
 
 > **Stacks Project, Tag 03VL, degree two: `H²_c(X_k̄, ℱ_ρ) = M_{π₁(X_k̄, η̄)}(-1)` for `X`
 > projective.** For a geometrically connected smooth proper curve `X` over a field `k`, an
@@ -298,7 +298,7 @@ def properCurveCompactSupportTwoEquiv [IsProper f]
         Stacks.Trace.coinvariants (geometricRepresentation B X f kbar Λ y ρ))
 ```
 
-**`AlgebraicGeometry.properCurveCompactSupportTwoEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/Remark03VL.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/Remark03VL.lean#L131). The attribute's comment: “H²\_c(X\_k̄, ℱ\_ρ) = M\_\{π₁(X\_k̄,η̄)}(-1) is functorial in ρ”.
+**`AlgebraicGeometry.properCurveCompactSupportTwoEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/Remark03VL.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/Remark03VL.lean#L131). The attribute's comment: “H²\_c(X\_k̄, ℱ\_ρ) = M\_\{π₁(X\_k̄,η̄)}(-1) is functorial in ρ”.
 
 > **Stacks Project, Tag 03VL, degree two, functoriality in `ρ`.** For `v : ρ ⟶ ρ'`, the
 > identification `H²_c(X_k̄, ℱ_ρ) = M_{π₁(X_k̄, η̄)}(-1)` carries the map induced by `v` on `H²_c` to
@@ -330,7 +330,7 @@ theorem properCurveCompactSupportTwoEquiv_naturality [IsProper f]
 
 [Tag 03VM](https://stacks.math.columbia.edu/tag/03VM) in the Stacks Project.
 
-**`AlgebraicGeometry.compactSupportGroupHomologyTwistIsoOfNotIsoProjectiveLine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyGaloisNotProjectiveLine.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyGaloisNotProjectiveLine.lean#L46). The attribute's comment: “second assertion: `H_c^{2-i}(X_k̄, ℱ_ρ) ≅ H_i(π₁(X_k̄, η̄), M)(-1)` as homological δ-functors in `(M, ρ)`”.
+**`AlgebraicGeometry.compactSupportGroupHomologyTwistIsoOfNotIsoProjectiveLine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyGaloisNotProjectiveLine.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyGaloisNotProjectiveLine.lean#L46). The attribute's comment: “second assertion: `H_c^{2-i}(X_k̄, ℱ_ρ) ≅ H_i(π₁(X_k̄, η̄), M)(-1)` as homological δ-functors in `(M, ρ)`”.
 
 > When `X_k̄ ≇ ℙ¹_k̄`, the isomorphism `H_c^{2-i}(X_k̄, ℱ_ρ) ≅ H_i(π₁(X_k̄, η̄), M)(-1)` of
 > homological δ-functors, extending the choice-free identification
@@ -348,7 +348,7 @@ def compactSupportGroupHomologyTwistIsoOfNotIsoProjectiveLine :
       geometricGroupHomologyTwist B X f K Λ y (isUnit_card_fieldBaseChange K Λ hΛ)
 ```
 
-**`AlgebraicGeometry.compactSupportGroupHomologyTwistIsoOfNotIsoProjectiveLine_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyGaloisNotProjectiveLine.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyGaloisNotProjectiveLine.lean#L76). The attribute's comment: “second assertion, Galois action: the isomorphism `H_c^{2-i}(X_k̄, ℱ_ρ) ≅ H_i(π₁(X_k̄, η̄), M)(-1)` commutes with every `σ ∈ Aut_k(k̄)`”.
+**`AlgebraicGeometry.compactSupportGroupHomologyTwistIsoOfNotIsoProjectiveLine_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyGaloisNotProjectiveLine.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyGaloisNotProjectiveLine.lean#L76). The attribute's comment: “second assertion, Galois action: the isomorphism `H_c^{2-i}(X_k̄, ℱ_ρ) ≅ H_i(π₁(X_k̄, η̄), M)(-1)` commutes with every `σ ∈ Aut_k(k̄)`”.
 
 > The isomorphism `H_c^{2-i}(X_k̄, ℱ_ρ) ≅ H_i(π₁(X_k̄, η̄), M)(-1)` is
 > `Gal(k^{sep}/k)`-equivariant: for every `σ ∈ Aut_k(k̄)` the action of `σ` on `H_c^{2-i}(X_k̄, ℱ_ρ)`
@@ -376,7 +376,7 @@ theorem compactSupportGroupHomologyTwistIsoOfNotIsoProjectiveLine_galois (σ : K
             (isUnit_natCard_mulOpposite Λ hΛ) hP)
 ```
 
-**`AlgebraicGeometry.isUniversal_compactSupportRepresentationHomology_of_not_iso_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyNotProjectiveLine.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyNotProjectiveLine.lean#L59). The attribute's comment: “first assertion: `(M, ρ) ↦ H_c^{2-i}(X_k̄, ℱ_ρ)` is a universal homological δ-functor, i.e. the left derived functors of `(M, ρ) ↦ H_c^2(X_k̄, ℱ_ρ)`”.
+**`AlgebraicGeometry.isUniversal_compactSupportRepresentationHomology_of_not_iso_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyNotProjectiveLine.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportGroupHomologyNotProjectiveLine.lean#L59). The attribute's comment: “first assertion: `(M, ρ) ↦ H_c^{2-i}(X_k̄, ℱ_ρ)` is a universal homological δ-functor, i.e. the left derived functors of `(M, ρ) ↦ H_c^2(X_k̄, ℱ_ρ)`”.
 
 > **`(M, ρ) ↦ H_c^{2-i}(X_k̄, ℱ_ρ)` are the left derived functors of
 > `(M, ρ) ↦ H_c^2(X_k̄, ℱ_ρ)`**: they form a universal homological δ-functor, for `X_k̄ ≇ ℙ¹_k̄` and
@@ -391,7 +391,7 @@ theorem isUniversal_compactSupportRepresentationHomology_of_not_iso_projectiveLi
       Λ f j K).IsUniversal
 ```
 
-**`AlgebraicGeometry.compactSupportDerivedHomologyIsoOfAlgClosure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/DerivedVersionsAlgClosure.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/DerivedVersionsAlgClosure.lean#L207). The attribute's comment: “third assertion (the derived version of the homological half): `RΓ_c(X_k̄, ℱ_ρ) ≅ LH₀(π₁(X_k̄, η̄), M(-1))[-2]` in the derived category of `Λ[[Aut(k̄/k)]]`-modules, natural in `(M, ρ)`, for an arbitrary base field `k`”.
+**`AlgebraicGeometry.compactSupportDerivedHomologyIsoOfAlgClosure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/DerivedVersionsAlgClosure.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/DerivedVersionsAlgClosure.lean#L207). The attribute's comment: “third assertion (the derived version of the homological half): `RΓ_c(X_k̄, ℱ_ρ) ≅ LH₀(π₁(X_k̄, η̄), M(-1))[-2]` in the derived category of `Λ[[Aut(k̄/k)]]`-modules, natural in `(M, ρ)`, for an arbitrary base field `k`”.
 
 > **Tag 03VM, homological derived clause, over any field:
 > `RΓ_c(X_k̄, ℱ_ρ) ≅ LH₀(π₁(X_k̄, η̄), M(-1))[-2]`** in the derived category of
@@ -413,7 +413,7 @@ def compactSupportDerivedHomologyIsoOfAlgClosure (j : CompactificationOf (Over.m
       perfectClosureDerivedHomologyTwist B X f K y Λ ⋙ shiftFunctor _ (-2 : ℤ)
 ```
 
-**`AlgebraicGeometry.geometricGaloisDerivedKernelInvariantsIsoOfAlgClosure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/DerivedVersionsAlgClosureGroup.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/DerivedVersionsAlgClosureGroup.lean#L481). The attribute's comment: “sixth assertion (the derived version of the cohomological half) with the Galois action: `RH⁰(π₁(X_k̄, η̄), M) ≅ RΓ^{Gal}(X_k̄, ℱ_ρ)` in the derived category of discrete `Λ`-modules with continuous `Aut(k̄/k)`-action, natural in `(M, ρ)`, for an arbitrary base field `k`”.
+**`AlgebraicGeometry.geometricGaloisDerivedKernelInvariantsIsoOfAlgClosure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/DerivedVersionsAlgClosureGroup.lean, line 482](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/DerivedVersionsAlgClosureGroup.lean#L482). The attribute's comment: “sixth assertion (the derived version of the cohomological half) with the Galois action: `RH⁰(π₁(X_k̄, η̄), M) ≅ RΓ^{Gal}(X_k̄, ℱ_ρ)` in the derived category of discrete `Λ`-modules with continuous `Aut(k̄/k)`-action, natural in `(M, ρ)`, for an arbitrary base field `k`”.
 
 > **Tag 03VM, the derived version of the cohomological half with its Galois action, over any
 > field, with the group side defined from `X` over `k`**: for a geometrically connected smooth curve
@@ -439,7 +439,7 @@ def geometricGaloisDerivedKernelInvariantsIsoOfAlgClosure (hΛ : IsUnit ((Nat.ca
       perfectClosureGaloisDerivedSections B X f K y Λ
 ```
 
-**`AlgebraicGeometry.geometricDerivedInvariantsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean#L1075). The attribute's comment: “sixth assertion (the derived version of the cohomological half): `RΓ(π₁(X_k̄, η̄), M) ≅ RΓ(X_k̄, ℱ_ρ)`, natural in `(M, ρ)`”.
+**`AlgebraicGeometry.geometricDerivedInvariantsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean#L1075). The attribute's comment: “sixth assertion (the derived version of the cohomological half): `RΓ(π₁(X_k̄, η̄), M) ≅ RΓ(X_k̄, ℱ_ρ)`, natural in `(M, ρ)`”.
 
 > **The derived version of `H^i(X_{k̄}, ℱ_ρ) = H^i(π₁(X_{k̄}), M)`** ([Stacks, Tag 03VM],
 > "Moreover, in this case there is a derived version too"): for a geometrically connected smooth
@@ -479,8 +479,8 @@ def geometricDerivedInvariantsIso
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isIso_geometricComparison_of_not_iso_projectiveLine`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricRepresentationCohomologyNotProjectiveLine.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean, line 1174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean#L1174) (StacksFrontier): “fifth assertion: `H^i(X_k̄, ℱ_ρ) = H^i(π₁(X_k̄, η̄), M)`, the comparison of δ-functors being an isomorphism”.
-- [`AlgebraicGeometry.isUniversal_geometricRepresentationCohomology_of_not_iso_projectiveLine`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricRepresentationCohomologyNotProjectiveLine.lean#L96), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean, line 1178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean#L1178) (StacksFrontier): “fourth assertion: `(M, ρ) ↦ H^i(X_k̄, ℱ_ρ)` is a universal δ-functor, i.e. the right derived functors of `(M, ρ) ↦ M^{π₁(X_k̄, η̄)}`”.
+- [`AlgebraicGeometry.isIso_geometricComparison_of_not_iso_projectiveLine`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricRepresentationCohomologyNotProjectiveLine.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean, line 1174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean#L1174) (StacksFrontier): “fifth assertion: `H^i(X_k̄, ℱ_ρ) = H^i(π₁(X_k̄, η̄), M)`, the comparison of δ-functors being an isomorphism”.
+- [`AlgebraicGeometry.isUniversal_geometricRepresentationCohomology_of_not_iso_projectiveLine`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricRepresentationCohomologyNotProjectiveLine.lean#L96), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean, line 1178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricDerivedInvariants.lean#L1178) (StacksFrontier): “fourth assertion: `(M, ρ) ↦ H^i(X_k̄, ℱ_ρ)` is a universal δ-functor, i.e. the right derived functors of `(M, ρ) ↦ M^{π₁(X_k̄, η̄)}`”.
 
 ## Depends on
 
@@ -489,4 +489,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.29, Tag 03VJ](https://stacks.math.columbia.edu/tag/03VJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

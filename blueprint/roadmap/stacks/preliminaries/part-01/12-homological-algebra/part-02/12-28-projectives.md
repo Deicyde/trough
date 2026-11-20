@@ -8,7 +8,7 @@ proof: formalized
 
 # 12.28 Projectives
 
-Section 12.28 of the Stacks Project, [Tag 013A](https://stacks.math.columbia.edu/tag/013A). 5 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 12.28 of the Stacks Project, [Tag 013A](https://stacks.math.columbia.edu/tag/013A). 5 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 013B, a definition
 
@@ -16,13 +16,13 @@ Section 12.28 of the Stacks Project, [Tag 013A](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Projective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Projective#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean#L23) (StacksFrontier). References: SGA 4 IV (2.6), “partial”; SGA 4 IV (7.6); SGA 6 I (1.2).
+- [`CategoryTheory.Projective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Projective#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean, line 23](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean#L23) (StacksFrontier). References: SGA 4 IV (2.6), “partial”; SGA 4 IV (7.6); SGA 6 I (1.2).
 
 ## Tag 013C, a lemma
 
 [Tag 013C](https://stacks.math.columbia.edu/tag/013C) in the Stacks Project.
 
-**`projective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Projective/Characterization.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/Projective/Characterization.lean#L56). The attribute's comment: “the four conditions as `List.TFAE`; (4) uses Mathlib's `Abelian.Ext P A 1` for the Yoneda `Ext`, via `CategoryTheory.projective_iff_subsingleton_ext_one`”.
+**`projective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Projective/Characterization.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Preadditive/Projective/Characterization.lean#L56). The attribute's comment: “the four conditions as `List.TFAE`; (4) uses Mathlib's `Abelian.Ext P A 1` for the Yoneda `Ext`, via `CategoryTheory.projective_iff_subsingleton_ext_one`”.
 
 > **Stacks 013C.** Let `𝒜` be an abelian category and `P` an object of `𝒜`. The following
 > are equivalent:
@@ -49,7 +49,7 @@ theorem projective_tfae [HasExt.{w} 𝒜] (P : 𝒜) :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Projective.instSigmaObj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Projective.instSigmaObj#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean, line 27](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean#L27) (StacksFrontier).
+- [`CategoryTheory.Projective.instSigmaObj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Projective.instSigmaObj#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean, line 27](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean#L27) (StacksFrontier).
 
 ## Tag 013E, a definition
 
@@ -57,13 +57,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.EnoughProjectives`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.EnoughProjectives#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean#L28) (StacksFrontier). References: SGA 4 II (6.9).
+- [`CategoryTheory.EnoughProjectives`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.EnoughProjectives#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean, line 28](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean#L28) (StacksFrontier). References: SGA 4 II (6.9).
 
 ## Tag 013F, a definition
 
 [Tag 013F](https://stacks.math.columbia.edu/tag/013F) in the Stacks Project.
 
-**`HasFunctorialProjectiveSurjections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean#L208).
+**`HasFunctorialProjectiveSurjections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Preadditive/Projective/Basic.lean#L208).
 
 > An abelian category `𝒜` *has functorial projective surjections* if there
 > exists a functor `P : 𝒜 ⥤ Arrow 𝒜` satisfying conditions (1), (2) and (3)
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.28, Tag 013A](https://stacks.math.columbia.edu/tag/013A)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

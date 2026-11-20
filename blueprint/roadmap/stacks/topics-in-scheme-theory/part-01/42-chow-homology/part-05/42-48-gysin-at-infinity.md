@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.48 Gysin at infinity
 
-Section 42.48 of the Stacks Project, [Tag 0FAP](https://stacks.math.columbia.edu/tag/0FAP). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.48 of the Stacks Project, [Tag 0FAP](https://stacks.math.columbia.edu/tag/0FAP). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0F9J, a lemma
 
 [Tag 0F9J](https://stacks.math.columbia.edu/tag/0F9J) in the Stacks Project.
 
-**`Stacks.Chow.gysinCapOfLift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean#L270). The attribute's comment: “construction of the cap operation from a lift and a zero-scheme presentation”.
+**`Stacks.Chow.gysinCapOfLift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean, line 270](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean#L270). The attribute's comment: “construction of the cap operation from a lift and a zero-scheme presentation”.
 
 > The cap operation `C ∩ - : A_k(T) ⟶ A_k(W_∞ ×_X T)` built
 > from a choice of lift: given a homomorphism `lift : A_k(T) ⟶ A_{k+1}(W ×_X T)` and a presentation
@@ -40,7 +40,7 @@ def gysinCapOfLift (C : ChowSituation.{u}) (G : GysinSystem C) {X W T : Scheme.{
     chowGroup C (g ≫ f) k →+ chowGroup C (modificationInfinityBaseChangeOver f b g) k
 ```
 
-**`Stacks.Chow.gysinCapOfLift_eq_of_gysin_pushforward_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean#L315). The attribute's comment: “independence of the chosen lift”.
+**`Stacks.Chow.gysinCapOfLift_eq_of_gysin_pushforward_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean, line 315](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean#L315). The attribute's comment: “independence of the chosen lift”.
 
 > Two lifts whose difference is pushed forward from the fibre at infinity give the same cap
 > operation, as soon as the Gysin map of `s` kills everything pushed forward from the fibre at
@@ -80,7 +80,7 @@ theorem gysinCapOfLift_eq_of_gysin_pushforward_eq_zero (C : ChowSituation.{u})
       gysinCapOfLift C G f b g k L s e he lift'
 ```
 
-**`Stacks.Chow.GysinAtInfinityData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean#L360). The attribute's comment: “statement: the canonical class in A⁰(W\_∞ ⟶ X) and its pushforward identity”.
+**`Stacks.Chow.GysinAtInfinityData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean, line 360](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity.lean#L360). The attribute's comment: “statement: the canonical class in A⁰(W\_∞ ⟶ X) and its pushforward identity”.
 
 > The conclusion of the Gysin-at-infinity lemma, for a proper morphism
 > `b : W ⟶ 𝐏¹_X` which is an isomorphism over the standard affine chart `𝐀¹_X`: a degree-zero
@@ -93,7 +93,7 @@ structure GysinAtInfinityData (C : ChowSituation.{u}) (G : GysinSystem C) {X W :
     (_hA : IsIso (pullback.snd b (projectiveLineAffineChart f)))
 ```
 
-**`Stacks.Chow.GysinAtInfinity.gysinAtInfinity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/Statement.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/Statement.lean#L109).
+**`Stacks.Chow.GysinAtInfinity.gysinAtInfinity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/Statement.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/Statement.lean#L109).
 
 > **Stacks 0F9J.** Let `X` be locally of finite type over the base of chapter 42 and let
 > `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over `𝐀¹_X`, with fibre at infinity
@@ -127,7 +127,7 @@ theorem gysinAtInfinity :
             (properPushforwardFactorsThroughRationalEquivalence_of_isProper C _ _ _ _ k) α
 ```
 
-**`Stacks.Chow.gysinAtInfinityClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityClass.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityClass.lean#L64). The attribute's comment: “the canonical bivariant class C in A⁰(W\_∞ ⟶ X)”.
+**`Stacks.Chow.gysinAtInfinityClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityClass.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityClass.lean#L64). The attribute's comment: “the canonical bivariant class C in A⁰(W\_∞ ⟶ X)”.
 
 > **Stacks 0F9J, the class at infinity.** The degree-zero bivariant class
 > `C ∈ A⁰(W_∞ ⟶ X)` whose cap operation on a test scheme `T ⟶ X` is `α ↦ i_∞^* β` for a lift `β`
@@ -139,7 +139,7 @@ def gysinAtInfinityClass :
       (modificationProjectionAtInfinity f b) rfl 0
 ```
 
-**`Stacks.Chow.gysinAtInfinityData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityClass.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityClass.lean#L112). The attribute's comment: “the class C in A⁰(W\_∞ ⟶ X) with i\_\{∞,*}(C ∩ α) = i\_\{0,*} α, built from the cap operation i\_∞^* of a lift and its three bivariance laws”.
+**`Stacks.Chow.gysinAtInfinityData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityClass.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityClass.lean#L112). The attribute's comment: “the class C in A⁰(W\_∞ ⟶ X) with i\_\{∞,*}(C ∩ α) = i\_\{0,*} α, built from the cap operation i\_∞^* of a lift and its three bivariance laws”.
 
 > **Stacks 0F9J.** The class at infinity `C ∈ A⁰(W_∞ ⟶ X)` of `Stacks.Chow.gysinAtInfinityClass`
 > together with the identity `i_{∞,*}(C ∩ α) = i_{0,*} α` on every test scheme locally of finite
@@ -149,7 +149,7 @@ def gysinAtInfinityClass :
 def gysinAtInfinityData : GysinAtInfinityData C (gysinSystemOfInvertible C) f b hA
 ```
 
-**`Stacks.Chow.gysinCapAtInfinity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityLift.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityLift.lean#L702). The attribute's comment: “the cap operation of the class at infinity on a test scheme: i\_∞^* of a lift”.
+**`Stacks.Chow.gysinCapAtInfinity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityLift.lean, line 702](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityLift.lean#L702). The attribute's comment: “the cap operation of the class at infinity on a test scheme: i\_∞^* of a lift”.
 
 > **Stacks 0F9J, the cap operation.** `C ∩ - : A_k(T) ⟶ A_k(W_∞ ×_X T)`, `α ↦ i_∞^* β` for a
 > lift `β` of `α` (`Stacks.Chow.IsModificationLift`). A lift is chosen; by
@@ -161,7 +161,7 @@ def gysinCapAtInfinity :
     chowGroup C (g ≫ f) k →+ chowGroup C (modificationInfinityBaseChangeOver f b g) k
 ```
 
-**`Stacks.Chow.gysinCapAtInfinity_eq_of_isModificationLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityLift.lean, line 726](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityLift.lean#L726). The attribute's comment: “independence of the chosen lift: C ∩ α = i\_∞^* β for every lift β of α”.
+**`Stacks.Chow.gysinCapAtInfinity_eq_of_isModificationLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityLift.lean, line 726](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityLift.lean#L726). The attribute's comment: “independence of the chosen lift: C ∩ α = i\_∞^* β for every lift β of α”.
 
 > **Stacks 0F9J, independence of the chosen lift.** The cap operation is `i_∞^* β` for *every*
 > lift `β` of `α`: two lifts differ by a class supported on the fibre at infinity (Stacks 02RX), and
@@ -175,7 +175,7 @@ theorem gysinCapAtInfinity_eq_of_isModificationLift (α : chowGroup C (g ≫ f) 
     gysinCapAtInfinity C f b hA g k α = modificationInfinityGysin C f b g k β
 ```
 
-**`Stacks.Chow.GysinAtInfinityCapPresentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityPresentation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityPresentation.lean#L56). The attribute's comment: “the construction of the class at infinity, as a presentation of its cap operation by a lift and a Gysin step”.
+**`Stacks.Chow.GysinAtInfinityCapPresentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityPresentation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityPresentation.lean#L56). The attribute's comment: “the construction of the class at infinity, as a presentation of its cap operation by a lift and a Gysin step”.
 
 > A presentation of the cap operation of the Gysin class at infinity `C ∈ A⁰(W_∞ ⟶ X)` as
 > the composite of a lift with the Gysin map of the divisor at infinity: on every test scheme
@@ -193,7 +193,7 @@ structure GysinAtInfinityCapPresentation (C : ChowSituation.{u}) (G : GysinSyste
     (D : GysinAtInfinityData C G f b hA)
 ```
 
-**`Stacks.Chow.chowPushforward_gysinCapOfLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityPushforward.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityPushforward.lean#L736). The attribute's comment: “the pushforward identity i\_\{∞,*}(C ∩ α) = i\_\{0,*} α on every test scheme locally of finite type over X”.
+**`Stacks.Chow.chowPushforward_gysinCapOfLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityPushforward.lean, line 736](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityPushforward.lean#L736). The attribute's comment: “the pushforward identity i\_\{∞,*}(C ∩ α) = i\_\{0,*} α on every test scheme locally of finite type over X”.
 
 > **Stacks 0F9J, the pushforward identity.** On every test scheme `g : T ⟶ X` locally of finite
 > type, `i_{∞,*}(C ∩ α) = i_{0,*} α` in `A_k(W ×_X T)`, for the cap operation
@@ -222,7 +222,7 @@ theorem chowPushforward_gysinCapOfLift
 
 [Tag 0GUH](https://stacks.math.columbia.edu/tag/0GUH) in the Stacks Project.
 
-**`Stacks.Chow.GysinAtInfinity.gysinAtInfinityClass_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/BaseChange.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/BaseChange.lean#L585). The attribute's comment: “the class C' constructed as in Lemma 0F9J from the base change b' of b along X' ⟶ X is the restriction (Remark 0F9Z) of the class C constructed from b, read on W'\_∞ along the canonical identification W\_∞ ×\_X X' ≅ W'\_∞”.
+**`Stacks.Chow.GysinAtInfinity.gysinAtInfinityClass_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/BaseChange.lean, line 585](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/BaseChange.lean#L585). The attribute's comment: “the class C' constructed as in Lemma 0F9J from the base change b' of b along X' ⟶ X is the restriction (Remark 0F9Z) of the class C constructed from b, read on W'\_∞ along the canonical identification W\_∞ ×\_X X' ≅ W'\_∞”.
 
 > **Stacks 0GUH.** Let `X` be locally of finite type over the base of chapter 42, let
 > `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over `𝐀¹_X`, and let `C ∈ A⁰(W_∞ ⟶ X)` be the class
@@ -254,7 +254,7 @@ theorem gysinAtInfinityClass_baseChange
           (modificationProjectionAtInfinity f b) rfl q 0 (gysinAtInfinityClass C f b hA))
 ```
 
-**`Stacks.Chow.gysinAtInfinityClass_restrictedModification_eq_bivariantRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityRestrictedBaseChange.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityRestrictedBaseChange.lean#L288). The attribute's comment: “the class C' of Lemma 0F9J for the base change b' is the restriction of C”.
+**`Stacks.Chow.gysinAtInfinityClass_restrictedModification_eq_bivariantRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityRestrictedBaseChange.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinityRestrictedBaseChange.lean#L288). The attribute's comment: “the class C' of Lemma 0F9J for the base change b' is the restriction of C”.
 
 > In the setting of Stacks 0F9J let `q : X' ⟶ X` be locally of finite type and let
 > `b' : W' = W ×_{𝐏¹_X} 𝐏¹_{X'} ⟶ 𝐏¹_{X'}` and `i'_∞ : W'_∞ ⟶ W'` be the base changes of `b` and
@@ -288,7 +288,7 @@ theorem gysinAtInfinityClass_restrictedModification_eq_bivariantRestriction :
 
 [Tag 0FAQ](https://stacks.math.columbia.edu/tag/0FAQ) in the Stacks Project.
 
-**`Stacks.Chow.gysinAtInfinityClass_properPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinAtInfinityClassProperPushforward.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinAtInfinityClassProperPushforward.lean#L206). The attribute's comment: “g\_\{∞,*} ∘ C' = C for the canonical classes of Lemma 0F9J”.
+**`Stacks.Chow.gysinAtInfinityClass_properPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinAtInfinityClassProperPushforward.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/GysinAtInfinityClassProperPushforward.lean#L206). The attribute's comment: “g\_\{∞,*} ∘ C' = C for the canonical classes of Lemma 0F9J”.
 
 > **Stacks 0FAQ.** Let `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over `𝐀¹_X`, and let
 > `g : W' ⟶ W` be proper and an isomorphism over `𝐀¹_X`. Let `C' ∈ A⁰(W'_∞ ⟶ X)` and
@@ -309,7 +309,7 @@ theorem gysinAtInfinityClass_properPushforward :
       gysinAtInfinityClass C f b hA
 ```
 
-**`Stacks.Chow.GysinAtInfinity.properPushforward_gysinAtInfinityClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/ProperModification.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/ProperModification.lean#L606).
+**`Stacks.Chow.GysinAtInfinity.properPushforward_gysinAtInfinityClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/ProperModification.lean, line 606](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/ProperModification.lean#L606).
 
 > **Stacks 0FAQ.** Let `X` be locally of finite type over the base of chapter 42, let
 > `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over `𝐀¹_X`, and let `g : W' ⟶ W` be proper and an
@@ -344,7 +344,7 @@ theorem properPushforward_gysinAtInfinityClass
 
 [Tag 0FAR](https://stacks.math.columbia.edu/tag/0FAR) in the Stacks Project.
 
-**`Stacks.Chow.GysinAtInfinity.gysinAtInfinity_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/RetractionClass.lean, line 738](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/RetractionClass.lean#L738). The attribute's comment: “C ∘ (W\_∞ → X)\_* ∘ i\_∞^* = i\_∞^*: as bivariant classes over W, res(C) ∘ (i\_∞,* ∘ i\_∞^*) = Γ\_* ∘ i\_∞^* in A¹(W\_∞ ×\_X W → W), on every test scheme W' → W; and as the operation β ↦ C ∩ (W\_∞ → X)\_* i\_∞^* β on A\_\{k+1}(W ×\_X T) for T → X”.
+**`Stacks.Chow.GysinAtInfinity.gysinAtInfinity_retraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/RetractionClass.lean, line 738](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/RetractionClass.lean#L738). The attribute's comment: “C ∘ (W\_∞ → X)\_* ∘ i\_∞^* = i\_∞^*: as bivariant classes over W, res(C) ∘ (i\_∞,* ∘ i\_∞^*) = Γ\_* ∘ i\_∞^* in A¹(W\_∞ ×\_X W → W), on every test scheme W' → W; and as the operation β ↦ C ∩ (W\_∞ → X)\_* i\_∞^* β on A\_\{k+1}(W ×\_X T) for T → X”.
 
 > **Stacks 0FAR.** Let `X` be locally of finite type over the base of chapter 42, let
 > `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over `𝐀¹_X`, let `i_∞ : W_∞ ⟶ W` be the fibre at
@@ -386,7 +386,7 @@ theorem gysinAtInfinity_retraction :
         chowGroupDegreeEquiv C _ (sub_zero k).symm (infinityGysin C f b g k β)
 ```
 
-**`Stacks.Chow.gysinCapOfLift_chowPush_modificationInfinityGysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/GysinAtInfinityRestriction.lean, line 679](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/GysinAtInfinityRestriction.lean#L679). The attribute's comment: “C ∘ (W\_∞ ⟶ X)\_* ∘ i\_∞^* = i\_∞^*, on every test scheme T ⟶ X”.
+**`Stacks.Chow.gysinCapOfLift_chowPush_modificationInfinityGysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/GysinAtInfinityRestriction.lean, line 679](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/GysinAtInfinityRestriction.lean#L679). The attribute's comment: “C ∘ (W\_∞ ⟶ X)\_* ∘ i\_∞^* = i\_∞^*, on every test scheme T ⟶ X”.
 
 > In the situation of Stacks 0F9J, `C ∘ (W_∞ ⟶ X)_* ∘ i_∞^* = i_∞^*`, on every test scheme
 > `g : T ⟶ X`: for `β ∈ A_{k+1}(W ×_X T)`, the cap operation of the class `C` of Stacks 0F9J on the
@@ -408,7 +408,7 @@ theorem gysinCapOfLift_chowPush_modificationInfinityGysin (k : ℤ)
 
 [Tag 0FAS](https://stacks.math.columbia.edu/tag/0FAS) in the Stacks Project.
 
-**`Stacks.Chow.GysinAtInfinity.gysinAtInfinityClass_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/Commuting.lean, line 790](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/Commuting.lean#L790). The attribute's comment: “C ∘ c = c ∘ C in A^p(W\_∞ ×\_X Y → X) for the class C of 0F9J and every c in A^p(Y → X), as an equality of bivariant classes after the symmetry W\_∞ ×\_X Y ≅ Y ×\_X W\_∞”.
+**`Stacks.Chow.GysinAtInfinity.gysinAtInfinityClass_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/Commuting.lean, line 790](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GysinAtInfinity/Commuting.lean#L790). The attribute's comment: “C ∘ c = c ∘ C in A^p(W\_∞ ×\_X Y → X) for the class C of 0F9J and every c in A^p(Y → X), as an equality of bivariant classes after the symmetry W\_∞ ×\_X Y ≅ Y ×\_X W\_∞”.
 
 > **Stacks 0FAS.** Let `(S, δ)` be as in Situation 02QL, let `X` be locally of finite type over
 > `S`, let `b : W ⟶ 𝐏¹_X` be a proper morphism which is an isomorphism over `𝐀¹_X`, and let
@@ -438,7 +438,7 @@ theorem gysinAtInfinityClass_comp_comm {sY : Y ⟶ C.S} [LocallyOfFiniteType sY]
         (pullbackSymmetry_hom_comp_snd_comp (modificationProjectionAtInfinity f b) fY)
 ```
 
-**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_gysinAtInfinityClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L155). The attribute's comment: “C ∘ c = c ∘ C in A^*(W\_∞ ×\_X Y → X), for every c in A^*(Y → X)”.
+**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_gysinAtInfinityClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L155). The attribute's comment: “C ∘ c = c ∘ C in A^*(W\_∞ ×\_X Y → X), for every c in A^*(Y → X)”.
 
 > Let `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over `𝐀¹_X`, let `C ∈ A⁰(W_∞ ⟶ X)` be the class
 > of Stacks 0F9J, let `fY : Y ⟶ X` be locally of finite type and let `c ∈ A^*(Y ⟶ X)`. Then
@@ -495,4 +495,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.48, Tag 0FAP](https://stacks.math.columbia.edu/tag/0FAP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

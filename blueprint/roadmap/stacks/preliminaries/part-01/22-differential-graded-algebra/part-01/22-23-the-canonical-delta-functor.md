@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.23 The canonical delta-functor
 
-Section 22.23 of the Stacks Project, [Tag 09KZ](https://stacks.math.columbia.edu/tag/09KZ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 22.23 of the Stacks Project, [Tag 09KZ](https://stacks.math.columbia.edu/tag/09KZ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09L0, a lemma
 
 [Tag 09L0](https://stacks.math.columbia.edu/tag/09L0) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_deltaFunctorStructure_δ_eq_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctorStacksSign.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctorStacksSign.lean#L156). The attribute's comment: “delta-functor structure with δ = -p ∘ q⁻¹, Stacks sign convention”.
+**`DifferentialGradedModule.exists_deltaFunctorStructure_δ_eq_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctorStacksSign.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/CanonicalDeltaFunctorStacksSign.lean#L156). The attribute's comment: “delta-functor structure with δ = -p ∘ q⁻¹, Stacks sign convention”.
 
 > **Stacks Project, Tag 09L0**, in the sign convention of the Stacks project. *"Let `(A, d)` be
 > a differential graded algebra. The functor `Mod_{(A, d)} → D(A, d)` defined has the natural
@@ -65,7 +65,7 @@ theorem exists_deltaFunctorStructure_δ_eq_neg :
 
 [Tag 0CRL](https://stacks.math.columbia.edu/tag/0CRL) in the Stacks Project.
 
-**`DifferentialGradedModule.isHomotopyColimit_toDerivedCategory_obj_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean#L298).
+**`DifferentialGradedModule.isHomotopyColimit_toDerivedCategory_obj_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedColimits.lean#L298).
 
 > Let `(A, d)` be a differential graded algebra and `Mₙ` a system of differential graded
 > modules. Then the derived colimit `hocolim Mₙ` in `D(A, d)` is represented by the differential
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.23, Tag 09KZ](https://stacks.math.columbia.edu/tag/09KZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

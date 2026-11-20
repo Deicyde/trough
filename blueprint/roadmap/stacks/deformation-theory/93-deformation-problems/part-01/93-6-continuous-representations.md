@@ -8,13 +8,13 @@ proof: formalized
 
 # 93.6 Continuous representations
 
-Section 93.6 of the Stacks Project, [Tag 0DVU](https://stacks.math.columbia.edu/tag/0DVU). 4 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 93.6 of the Stacks Project, [Tag 0DVU](https://stacks.math.columbia.edu/tag/0DVU). 4 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0D3K, an example
 
 [Tag 0D3K](https://stacks.math.columbia.edu/tag/0D3K) in the Stacks Project.
 
-**`Deformation.Examples.continuous_representation_iff_continuousSMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentations.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentations.lean#L45). The attribute's comment: “continuity\_equivalence”.
+**`Deformation.Examples.continuous_representation_iff_continuousSMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentations.lean, line 45](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentations.lean#L45). The attribute's comment: “continuity\_equivalence”.
 
 > For a finitely generated module over a semiring, a representation is continuous into the
 > discrete general linear group if and only if the induced action on the discrete module is
@@ -31,7 +31,7 @@ public theorem continuous_representation_iff_continuousSMul
     Continuous ρ ↔ ContinuousSMul Γ M
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.continuousObjects`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L114). The attribute's comment: “continuous\_representation\_category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.continuousObjects`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L114). The attribute's comment: “continuous\_representation\_category”.
 
 > The objects of the category of finite projective representations of Stacks 0D3J whose
 > representation is continuous. The category `ℱ` of Stacks 0D3K is the full subcategory they
@@ -43,7 +43,7 @@ public def continuousObjects (Λ : Type u) (k : Type w) (Γ : Type*) [CommRing �
     ObjectProperty (FiniteProjectiveRepresentation.{u, v, w, m} Λ k Γ)
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.continuousProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L152). The attribute's comment: “continuous\_representation\_category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.continuousProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L152). The attribute's comment: “continuous\_representation\_category”.
 
 > The functor remembering only the coefficient algebra of a continuous finite projective
 > representation.
@@ -54,7 +54,7 @@ public def continuousProjection :
       ArtinianLocalAlgCat.{u, v, w} Λ k
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.continuousProjection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L175). The attribute's comment: “continuous\_representation\_category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.continuousProjection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L175). The attribute's comment: “continuous\_representation\_category”.
 
 > The category of continuous finite projective representations is cofibered in groupoids
 > over the category of Artinian local coefficient algebras: the pushforward of a continuous
@@ -69,7 +69,7 @@ public theorem continuousProjection_isCofiberedInGroupoids
     IsCofiberedInGroupoids (continuousProjection.{u, v, w, m} (Λ := Λ) (k := k) (Γ := Γ))
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.continuousSpecialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L186). The attribute's comment: “continuous\_representation\_deformation\_category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.continuousSpecialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L186). The attribute's comment: “continuous\_representation\_deformation\_category”.
 
 > The continuous representation `(V, ρ₀)` over the residue field `k`, viewed as the
 > special-fibre object `(k, V, ρ₀)` of the category of continuous representations.
@@ -81,7 +81,7 @@ public noncomputable def continuousSpecialFiber (V : Type m) [AddCommGroup V] [M
     (continuousObjects.{u, w, w, m} Λ k Γ).FullSubcategory
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.continuousDeformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L195). The attribute's comment: “continuous\_representation\_deformation\_category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.continuousDeformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofibered.lean#L195). The attribute's comment: “continuous\_representation\_deformation\_category”.
 
 > The category of deformations of a finite-dimensional continuous representation of `Γ`.
 
@@ -91,7 +91,7 @@ public abbrev continuousDeformationCategory (V : Type m) [AddCommGroup V]
     (hρ₀ : IsContinuousRepresentation ρ₀)
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.isCofiberedInGroupoids_continuousProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofiberedUnconditional.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofiberedUnconditional.lean#L115). The attribute's comment: “continuous\_representation\_category: p is cofibred in groupoids”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.isCofiberedInGroupoids_continuousProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofiberedUnconditional.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsCofiberedUnconditional.lean#L115). The attribute's comment: “continuous\_representation\_category: p is cofibred in groupoids”.
 
 > The functor `p : ℱ → 𝒞_Λ` sending a continuous finite projective representation `(A, M, ρ)`
 > of the topological group `Γ` to its coefficient algebra `A` is cofibered in groupoids, for an
@@ -103,7 +103,7 @@ public theorem isCofiberedInGroupoids_continuousProjection :
     IsCofiberedInGroupoids (continuousProjection.{u, v, w, m} (Λ := Λ) (k := k) (Γ := Γ))
 ```
 
-**`Deformation.Examples.isContinuousRepresentation_iff_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsGModule.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsGModule.lean#L59). The attribute's comment: “continuity\_equivalence”.
+**`Deformation.Examples.isContinuousRepresentation_iff_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsGModule.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsGModule.lean#L59). The attribute's comment: “continuity\_equivalence”.
 
 > **The footnote of Stacks 0D3K.** For a finite module over a commutative ring, a
 > representation of a topological group is continuous into the general linear group with the
@@ -123,7 +123,7 @@ public theorem isContinuousRepresentation_iff_isContinuous
 
 [Tag 0DVV](https://stacks.math.columbia.edu/tag/0DVV) in the Stacks Project.
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.satisfiesRS_continuousProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsRimSchlessinger.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsRimSchlessinger.lean#L167). The attribute's comment: “Rim-Schlessinger condition”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.satisfiesRS_continuousProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsRimSchlessinger.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsRimSchlessinger.lean#L167). The attribute's comment: “Rim-Schlessinger condition”.
 
 > Continuous finite projective representations of a topological group satisfy the
 > Rim–Schlessinger condition.
@@ -135,7 +135,7 @@ public theorem satisfiesRS_continuousProjection {Λ : Type u} {k : Type w} {Γ :
       (continuousProjection.{u, v, w, max v m} (Λ := Λ) (k := k) (Γ := Γ))
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.isDeformationCategory_continuousDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsRimSchlessinger.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsRimSchlessinger.lean#L187). The attribute's comment: “deformation category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.isDeformationCategory_continuousDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsRimSchlessinger.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsRimSchlessinger.lean#L187). The attribute's comment: “deformation category”.
 
 > The deformations of a finite-dimensional continuous representation of a topological group
 > form a deformation category.
@@ -155,7 +155,7 @@ public theorem isDeformationCategory_continuousDeformationCategory {Λ : Type u}
 
 [Tag 0DVW](https://stacks.math.columbia.edu/tag/0DVW) in the Stacks Project.
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.finiteDimensional_continuousTangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsInfinitesimalAutomorphisms.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsInfinitesimalAutomorphisms.lean#L425). The attribute's comment: “the tangent space is finite dimensional”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.finiteDimensional_continuousTangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsInfinitesimalAutomorphisms.lean, line 425](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsInfinitesimalAutomorphisms.lean#L425). The attribute's comment: “the tangent space is finite dimensional”.
 
 > **Stacks 0DVW**, the tangent clause: for a topologically finitely generated topological
 > group `Γ` the tangent space of the deformation category of a finite-dimensional continuous
@@ -186,7 +186,7 @@ public theorem finiteDimensional_continuousTangentSpace
       (Deformation.isomorphismClasses 𝓕 hD.predeformation.cofibered))
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.localizedAutomorphismTangentLinearEquivH0`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean#L174). The attribute's comment: “`Inf(Def_{V,ρ₀}) = H⁰(Γ, End_k(V))` as `k`-vector spaces, for the natural `k`-vector space structure of Stacks 06JX on `Inf`”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.localizedAutomorphismTangentLinearEquivH0`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean, line 174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean#L174). The attribute's comment: “`Inf(Def_{V,ρ₀}) = H⁰(Γ, End_k(V))` as `k`-vector spaces, for the natural `k`-vector space structure of Stacks 06JX on `Inf`”.
 
 > **Stacks 0DVW**, the clause `Inf(Def_{V,ρ₀}) = H⁰(Γ, End_k(V))`, as `k`-vector spaces. For a
 > finite-dimensional continuous representation `ρ₀` of a topological group, the infinitesimal
@@ -212,7 +212,7 @@ def localizedAutomorphismTangentLinearEquivH0 :
       groupCohomology (Rep.of (Representation.linHom ρ₀ ρ₀)) 0
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.finiteDimensional_continuousLocalizedAutomorphismTangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean#L266). The attribute's comment: “`Inf(Def_{V,ρ₀})` is always finite dimensional, for the natural `k`-vector space structure of Stacks 06JX”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.finiteDimensional_continuousLocalizedAutomorphismTangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean, line 266](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean#L266). The attribute's comment: “`Inf(Def_{V,ρ₀})` is always finite dimensional, for the natural `k`-vector space structure of Stacks 06JX”.
 
 > **Stacks 0DVW**, the clause that `Inf(Def_{V,ρ₀})` is *always* finite dimensional, for its
 > natural `k`-vector space structure of Stacks 06JX: no hypothesis on `Γ` is needed, because
@@ -228,7 +228,7 @@ theorem finiteDimensional_continuousLocalizedAutomorphismTangent :
     FiniteDimensional k (localizedAutomorphismFunctorTangent P)
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.continuousRepresentation_tangentSpace_and_infinitesimalAutomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean#L302). The attribute's comment: “all four clauses: `T Def = H¹(Γ, End_k(V))`, `Inf(Def) = H⁰(Γ, End_k(V))` for the natural `k`-vector space structure of Stacks 06JX on `Inf`, `Inf(Def)` always finite dimensional, `T Def` finite dimensional for topologically finitely generated `Γ`”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.continuousRepresentation_tangentSpace_and_infinitesimalAutomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean, line 302](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsNaturalInf.lean#L302). The attribute's comment: “all four clauses: `T Def = H¹(Γ, End_k(V))`, `Inf(Def) = H⁰(Γ, End_k(V))` for the natural `k`-vector space structure of Stacks 06JX on `Inf`, `Inf(Def)` always finite dimensional, `T Def` finite dimensional for topologically finitely generated `Γ`”.
 
 > **Stacks 0DVW.** Let `ρ₀ : Γ → GL_k(V)` be a finite-dimensional continuous representation of
 > a topological group, and `Def_{V,ρ₀}` the deformation category of Stacks 0D3K. Then
@@ -288,7 +288,7 @@ theorem continuousRepresentation_tangentSpace_and_infinitesimalAutomorphisms
           (isomorphismClasses 𝓕 hD.predeformation.cofibered)))
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.tangentSpaceEquivContinuousCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsTangentSpace.lean, line 814](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsTangentSpace.lean#L814). The attribute's comment: “tangent\_space”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.tangentSpaceEquivContinuousCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsTangentSpace.lean, line 814](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsTangentSpace.lean#L814). The attribute's comment: “tangent\_space”.
 
 > **Stacks 0DVW, the tangent clause.** For a finite-dimensional continuous representation
 > `ρ₀ : Γ → GL_k(V)` of a topological group, the tangent space of the deformation category of
@@ -336,7 +336,7 @@ def tangentSpaceEquivContinuousCohomology [IsTopologicalGroup Γ]
 
 [Tag 0ET2](https://stacks.math.columbia.edu/tag/0ET2) in the Stacks Project.
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.exists_hull_continuousIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsHull.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsHull.lean#L529). The attribute's comment: “the functor has a hull”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.exists_hull_continuousIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsHull.lean, line 529](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsHull.lean#L529). The attribute's comment: “the functor has a hull”.
 
 > **Stacks 0ET2**, the hull: the functor of isomorphism classes of deformations of a
 > finite-dimensional continuous representation of a topologically finitely generated group over a
@@ -364,7 +364,7 @@ public theorem exists_hull_continuousIsomorphismClasses
         HasBijectiveDifferential (categoryOfElements_projection_isCofibered F) ξ
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.isProrepresentableULift_continuousIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsHull.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsHull.lean#L581). The attribute's comment: “prorepresentability”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.isProrepresentableULift_continuousIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsHull.lean, line 581](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Linear/ContinuousRepresentationsHull.lean#L581). The attribute's comment: “prorepresentability”.
 
 > **Stacks 0ET2**, prorepresentability: the functor of isomorphism classes of deformations of
 > a finite-dimensional continuous representation of a topologically finitely generated group over
@@ -398,4 +398,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 93.6, Tag 0DVU](https://stacks.math.columbia.edu/tag/0DVU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

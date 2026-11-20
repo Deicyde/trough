@@ -8,13 +8,13 @@ proof: formalized
 
 # 100.11 Residual gerbes
 
-Section 100.11 of the Stacks Project, [Tag 06ML](https://stacks.math.columbia.edu/tag/06ML). 14 tags here are carried by 52 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 100.11 of the Stacks Project, [Tag 06ML](https://stacks.math.columbia.edu/tag/06ML). 14 tags here are carried by 52 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06MM, a lemma
 
 [Tag 06MM](https://stacks.math.columbia.edu/tag/06MM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isFlat_of_fieldSpectrum_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FieldSpectrumCoverFlat.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FieldSpectrumCoverFlat.lean#L104). The attribute's comment: “flatness”.
+**`AlgebraicGeometry.Stack.isFlat_of_fieldSpectrum_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FieldSpectrumCoverFlat.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FieldSpectrumCoverFlat.lean#L104). The attribute's comment: “flatness”.
 
 > **Stacks 06MM, flatness.** Let `𝒵` be an algebraic stack over `S` admitting a surjective flat
 > 1-morphism from the algebraic stack of the spectrum of a field. Then every 1-morphism to `𝒵` from
@@ -37,7 +37,7 @@ theorem isFlat_of_fieldSpectrum_cover (𝒵 : AlgebraicStacks.{u, w} B S hS)
     AlgebraicStacks.IsFlat B S hS g
 ```
 
-**`AlgebraicGeometry.Stack.isSurjective_of_fieldSpectrum_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FieldSpectrumCoverSurjective.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FieldSpectrumCoverSurjective.lean#L90). The attribute's comment: “surjectivity”.
+**`AlgebraicGeometry.Stack.isSurjective_of_fieldSpectrum_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FieldSpectrumCoverSurjective.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FieldSpectrumCoverSurjective.lean#L90). The attribute's comment: “surjectivity”.
 
 > **Stacks 06MM, surjectivity.** Let `𝒵` be an algebraic stack over `S` admitting a surjective
 > 1-morphism from the algebraic stack of the spectrum of a field. Then every 1-morphism to `𝒵` from
@@ -60,7 +60,7 @@ theorem isSurjective_of_fieldSpectrum_cover (𝒵 : AlgebraicStacks.{u, w} B S h
 
 [Tag 06MN](https://stacks.math.columbia.edu/tag/06MN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.tfae_isReducedWithUniquePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointStack.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointStack.lean#L426).
+**`AlgebraicGeometry.Stack.tfae_isReducedWithUniquePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointStack.lean, line 426](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointStack.lean#L426).
 
 > For an algebraic stack `𝒵` over `S` the following are equivalent:
 >
@@ -80,7 +80,7 @@ theorem tfae_isReducedWithUniquePoint (𝒵 : AlgebraicStacks.{u, w} B S hS) :
 
 [Tag 06MP](https://stacks.math.columbia.edu/tag/06MP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isReducedLocallyNoetherianWithUniquePoint_iff_hasLocallyOfFinitePresentationFlatFieldSpectrumCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointStackFinitePresentation.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointStackFinitePresentation.lean#L136).
+**`AlgebraicGeometry.Stack.isReducedLocallyNoetherianWithUniquePoint_iff_hasLocallyOfFinitePresentationFlatFieldSpectrumCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointStackFinitePresentation.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointStackFinitePresentation.lean#L136).
 
 > For an algebraic stack `𝒵` over `S` the following are equivalent:
 >
@@ -100,7 +100,7 @@ theorem
 
 [Tag 06MQ](https://stacks.math.columbia.edu/tag/06MQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isEmpty_points_or_isEquivalenceOver_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeMonomorphism.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeMonomorphism.lean#L453).
+**`AlgebraicGeometry.Stack.isEmpty_points_or_isEquivalenceOver_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeMonomorphism.lean, line 453](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeMonomorphism.lean#L453).
 
 > **Stacks 06MQ.** Let `f : 𝒵' ⟶ 𝒵` be a monomorphism of algebraic stacks over `S` and assume
 > that `𝒵` admits a 1-morphism from the algebraic stack of the spectrum of a field which is locally
@@ -124,7 +124,7 @@ theorem isEmpty_points_or_isEquivalenceOver_of_isMonomorphism
 
 [Tag 06MR](https://stacks.math.columbia.edu/tag/06MR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.existsUnique_reducedLocallyNoetherianUniquePointSubstack_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointSubstackLocalImage.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointSubstackLocalImage.lean#L109).
+**`AlgebraicGeometry.Stack.existsUnique_reducedLocallyNoetherianUniquePointSubstack_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointSubstackLocalImage.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ReducedUniquePointSubstackLocalImage.lean#L109).
 
 > **Stacks 06MR.** Let `𝒵` be an algebraic stack over `S` satisfying the equivalent conditions of
 > **Stacks 06MN**, read as its condition (1): `𝒵` is reduced and `|𝒵|` is a singleton. Then there is
@@ -156,7 +156,7 @@ theorem existsUnique_reducedLocallyNoetherianUniquePointSubstack_isMonomorphism
 
 [Tag 06MS](https://stacks.math.columbia.edu/tag/06MS) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalGaloisQuotient.selfFiberProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L167). The attribute's comment: “the self-fibre-product U of Spec(ℚ̄) over Spec(ℚ), over its second factor”.
+**`AlgebraicGeometry.RationalGaloisQuotient.selfFiberProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L167). The attribute's comment: “the self-fibre-product U of Spec(ℚ̄) over Spec(ℚ), over its second factor”.
 
 > **Stacks 06MS.** The self-fibre-product `U = Spec(ℚ̄) ×_{Spec(ℚ)} Spec(ℚ̄)`, as a scheme
 > over `Spec(ℚ̄)` through its second projection.
@@ -165,7 +165,7 @@ theorem existsUnique_reducedLocallyNoetherianUniquePointSubstack_isMonomorphism
 abbrev selfFiberProduct : Over cover.left
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.not_isLocallyNoetherian_selfFiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L229). The attribute's comment: “the cover U is not locally Noetherian, the source's non-noetherianity of X read on its atlas”.
+**`AlgebraicGeometry.RationalGaloisQuotient.not_isLocallyNoetherian_selfFiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L229). The attribute's comment: “the cover U is not locally Noetherian, the source's non-noetherianity of X read on its atlas”.
 
 > **Stacks 06MS.** The self-fibre-product `U` is not locally Noetherian: `ℚ̄ ⊗_ℚ ℚ̄` is a
 > ring of Krull dimension zero, so a Noetherian one would be Artinian and have finitely many
@@ -176,7 +176,7 @@ theorem not_isLocallyNoetherian_selfFiberProduct :
     ¬ IsLocallyNoetherian selfFiberProduct.left
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isClosed_singleton_selfFiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L246). The attribute's comment: “every point of U is closed”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isClosed_singleton_selfFiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L246). The attribute's comment: “every point of U is closed”.
 
 > **Stacks 06MS.** Every point of the self-fibre-product `U` is closed: `ℚ̄ ⊗_ℚ ℚ̄` is
 > integral over the field `ℚ̄`, so each of its primes is maximal.
@@ -186,7 +186,7 @@ theorem isClosed_singleton_selfFiberProduct (x : selfFiberProduct.left) :
     IsClosed ({x} : Set selfFiberProduct.left)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.galoisGroupEquivSelfFiberProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L312). The attribute's comment: “U = Gal(ℚ̄/ℚ) × Spec(ℚ̄) on points: the points of U are in bijection with the absolute Galois group”.
+**`AlgebraicGeometry.RationalGaloisQuotient.galoisGroupEquivSelfFiberProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 312](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L312). The attribute's comment: “U = Gal(ℚ̄/ℚ) × Spec(ℚ̄) on points: the points of U are in bijection with the absolute Galois group”.
 
 > **Stacks 06MS.** The points of `U = Spec(ℚ̄) ×_{Spec(ℚ)} Spec(ℚ̄)` are in bijection with
 > `Gal(ℚ̄/ℚ)`: `σ` goes to the point cut out by the kernel of `x ⊗ y ↦ σ(x) y`. This is the source's
@@ -196,7 +196,7 @@ theorem isClosed_singleton_selfFiberProduct (x : selfFiberProduct.left) :
 def galoisGroupEquivSelfFiberProduct : galoisGroup ≃ selfFiberProduct.left
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.selfFiberProductAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L324). The attribute's comment: “the action of the absolute Galois group on U over Spec(ℚ̄)”.
+**`AlgebraicGeometry.RationalGaloisQuotient.selfFiberProductAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 324](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L324). The attribute's comment: “the action of the absolute Galois group on U over Spec(ℚ̄)”.
 
 > **Stacks 06MS.** The action of `Gal(ℚ̄/ℚ)` on the self-fibre-product `U` over `Spec(ℚ̄)`:
 > the base change along the structure morphism of `Spec(ℚ̄)` of the Galois action on `Spec(ℚ̄)`,
@@ -206,7 +206,7 @@ def galoisGroupEquivSelfFiberProduct : galoisGroup ≃ selfFiberProduct.left
 def selfFiberProductAction : galoisGroup →* Aut selfFiberProduct
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.constantGaloisGroupScheme`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L332). The attribute's comment: “G: the absolute Galois group with the discrete topology as a constant group scheme over Spec(ℚ̄)”.
+**`AlgebraicGeometry.RationalGaloisQuotient.constantGaloisGroupScheme`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L332). The attribute's comment: “G: the absolute Galois group with the discrete topology as a constant group scheme over Spec(ℚ̄)”.
 
 > **Stacks 06MS.** The absolute Galois group of `ℚ` with the discrete topology, viewed as a
 > constant group scheme over `Spec(ℚ̄)` as in **Stacks 03YW**. This is the group scheme `G` the
@@ -216,7 +216,7 @@ def selfFiberProductAction : galoisGroup →* Aut selfFiberProduct
 abbrev constantGaloisGroupScheme : Grp (Over cover.left)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.selfFiberProductAction_actsFreely`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L344). The attribute's comment: “G acts freely on U”.
+**`AlgebraicGeometry.RationalGaloisQuotient.selfFiberProductAction_actsFreely`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 344](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L344). The attribute's comment: “G acts freely on U”.
 
 > **Stacks 06MS.** The Galois group acts freely on the self-fibre-product `U`: the first
 > projection `U ⟶ Spec(ℚ̄)` is equivariant, and the Galois action on `Spec(ℚ̄)` is already free by
@@ -228,7 +228,7 @@ theorem selfFiberProductAction_actsFreely :
       (selfFiberProductAction B₀ hQ hK)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.selfFiberProductAction_transitive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L408). The attribute's comment: “G acts transitively on U”.
+**`AlgebraicGeometry.RationalGaloisQuotient.selfFiberProductAction_transitive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 408](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L408). The attribute's comment: “G acts transitively on U”.
 
 > **Stacks 06MS.** The Galois group acts transitively on the points of `U`: every prime of
 > `ℚ̄ ⊗_ℚ ℚ̄` is the kernel of `x ⊗ y ↦ τ(x) y` for some Galois element `τ`, and `σ` moves the
@@ -239,7 +239,7 @@ theorem selfFiberProductAction_transitive (x y : selfFiberProduct.left) :
     ∃ σ : galoisGroup, (selfFiberProductAction B₀ hQ hK σ).asIso.hom.left x = y
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.constantGaloisGroupSchemeAction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L428). The attribute's comment: “the action of G, as the constant group scheme over Spec(ℚ̄), on U”.
+**`AlgebraicGeometry.RationalGaloisQuotient.constantGaloisGroupSchemeAction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 428](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L428). The attribute's comment: “the action of G, as the constant group scheme over Spec(ℚ̄), on U”.
 
 > **Stacks 06MS.** The action of `G`, viewed as the constant group scheme over `Spec(ℚ̄)` of
 > **Stacks 03YW**, on `U` (**Stacks 022Z**): the action map `G ×_{Spec(ℚ̄)} U ⟶ U` which on the
@@ -249,7 +249,7 @@ theorem selfFiberProductAction_transitive (x y : selfFiberProduct.left) :
 abbrev constantGaloisGroupSchemeAction : ModObj constantGaloisGroupScheme.X selfFiberProduct
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.constantGaloisGroupSchemeAction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L436). The attribute's comment: “the action of the constant group scheme G on U is the Galois action on summands and on constant points”.
+**`AlgebraicGeometry.RationalGaloisQuotient.constantGaloisGroupSchemeAction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L436). The attribute's comment: “the action of the constant group scheme G on U is the Galois action on summands and on constant points”.
 
 > **Stacks 06MS.** The action of the constant group scheme `G` on `U` restricts, on the summand
 > of `G ×_{Spec(ℚ̄)} U` indexed by `σ ∈ Gal(ℚ̄/ℚ)`, to the automorphism `selfFiberProductAction σ`;
@@ -266,7 +266,7 @@ theorem constantGaloisGroupSchemeAction_eq (σ : galoisGroup) :
           x ≫ (selfFiberProductAction B₀ hQ hK σ).asIso.hom
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isFreeAction_constantGaloisGroupSchemeAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L450). The attribute's comment: “the constant group scheme G acts freely on U”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isFreeAction_constantGaloisGroupSchemeAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L450). The attribute's comment: “the constant group scheme G acts freely on U”.
 
 > **Stacks 06MS.** The constant group scheme `G` acts freely on `U`, in the sense of
 > **Stacks 07S1**: for every scheme `T` over `Spec(ℚ̄)` the group `G(T)` of locally constant maps
@@ -278,7 +278,7 @@ theorem isFreeAction_constantGaloisGroupSchemeAction :
     IsFreeAction constantGaloisGroupScheme.X selfFiberProduct
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.exists_smul_eq_constantGaloisGroupSchemeAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L459). The attribute's comment: “the constant group scheme G acts transitively on U”.
+**`AlgebraicGeometry.RationalGaloisQuotient.exists_smul_eq_constantGaloisGroupSchemeAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 459](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L459). The attribute's comment: “the constant group scheme G acts transitively on U”.
 
 > **Stacks 06MS.** The constant group scheme `G` acts transitively on `U`: for any two points
 > `u, v` of `U` some point of `G ×_{Spec(ℚ̄)} U` lies over `u` under the projection and over `v`
@@ -292,7 +292,7 @@ theorem exists_smul_eq_constantGaloisGroupSchemeAction (u v : selfFiberProduct.l
         (γ[constantGaloisGroupScheme.X, selfFiberProduct]).left z = v
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.galoisSelfProductQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L531). The attribute's comment: “X = U/G, the fppf sheaf quotient”.
+**`AlgebraicGeometry.RationalGaloisQuotient.galoisSelfProductQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 531](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L531). The attribute's comment: “X = U/G, the fppf sheaf quotient”.
 
 > **Stacks 06MS.** The algebraic space `X = U/G` of the example: the fppf sheaf quotient of
 > the self-fibre-product by the Galois action, as in **Stacks 02Z3**.
@@ -301,7 +301,7 @@ theorem exists_smul_eq_constantGaloisGroupSchemeAction (u v : selfFiberProduct.l
 abbrev galoisSelfProductQuotient : (BigFppfOver B cover.left hS)ᵒᵖ ⥤ Type 0
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isAlgebraicSpace_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L538). The attribute's comment: “X is an algebraic space”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isAlgebraicSpace_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 538](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L538). The attribute's comment: “X is an algebraic space”.
 
 > **Stacks 06MS.** `X = U/G` is an algebraic space over `Spec(ℚ̄)`; this is the source's
 > remark that the example is even an algebraic space.
@@ -311,7 +311,7 @@ theorem isAlgebraicSpace_galoisSelfProductQuotient :
     IsAlgebraicSpace B cover.left hS (galoisSelfProductQuotient B₀ hQ hK B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.not_isLocallyNoetherian_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L581). The attribute's comment: “X is not locally Noetherian, the failure Definition 06MU excludes”.
+**`AlgebraicGeometry.RationalGaloisQuotient.not_isLocallyNoetherian_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 581](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L581). The attribute's comment: “X is not locally Noetherian, the failure Definition 06MU excludes”.
 
 > **Stacks 06MS.** `X` is not locally Noetherian: `U ⟶ X` is an étale atlas, and an
 > étale-local property of an algebraic space holds on every étale chart as soon as it holds at
@@ -324,7 +324,7 @@ theorem not_isLocallyNoetherian_galoisSelfProductQuotient :
       (fun T : Scheme.{0} ↦ IsLocallyNoetherian T)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.canonicalPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L595). The attribute's comment: “the morphism x : Spec(ℚ̄) ⟶ U ⟶ X”.
+**`AlgebraicGeometry.RationalGaloisQuotient.canonicalPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 595](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L595). The attribute's comment: “the morphism x : Spec(ℚ̄) ⟶ U ⟶ X”.
 
 > **Stacks 06MS.** The morphism `x : Spec(ℚ̄) ⟶ U ⟶ X` of the example: the diagonal followed
 > by the projection onto the quotient.
@@ -334,7 +334,7 @@ def canonicalPoint :
     yoneda.obj (Space.baseTerminal B cover.left hS) ⟶ galoisSelfProductQuotient B₀ hQ hK B hS hU
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.not_isIso_canonicalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L603). The attribute's comment: “x is not an isomorphism”.
+**`AlgebraicGeometry.RationalGaloisQuotient.not_isIso_canonicalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 603](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L603). The attribute's comment: “x is not an isomorphism”.
 
 > **Stacks 06MS, the point of the example.** The morphism `x : Spec(ℚ̄) ⟶ X` is *not* an
 > isomorphism. If it were, `X` would be represented by `Spec(ℚ̄)`, hence locally Noetherian; but
@@ -344,7 +344,7 @@ def canonicalPoint :
 theorem not_isIso_canonicalPoint : ¬ IsIso (canonicalPoint B₀ hQ hK B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isReduced_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L613). The attribute's comment: “X is reduced”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isReduced_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 613](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L613). The attribute's comment: “X is reduced”.
 
 > **Stacks 06MS.** `X` is reduced, witnessed by the reduced étale atlas `U ⟶ X`.
 
@@ -355,7 +355,7 @@ theorem isReduced_galoisSelfProductQuotient :
       (fun T : Scheme.{0} ↦ IsReduced T)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.not_isNoetherian_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L624). The attribute's comment: “X is non-noetherian”.
+**`AlgebraicGeometry.RationalGaloisQuotient.not_isNoetherian_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 624](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L624). The attribute's comment: “X is non-noetherian”.
 
 > **Stacks 06MS.** `X` is not a Noetherian algebraic space in the sense of **Stacks 03EA**,
 > because it is not locally Noetherian.
@@ -365,7 +365,7 @@ theorem not_isNoetherian_galoisSelfProductQuotient (hZ : B.Contains (⊤_ Scheme
     ¬ Space.IsNoetherian B cover.left hS hZ (galoisSelfProductQuotient B₀ hQ hK B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.mono_canonicalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L632). The attribute's comment: “x is a monomorphism”.
+**`AlgebraicGeometry.RationalGaloisQuotient.mono_canonicalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 632](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L632). The attribute's comment: “x is a monomorphism”.
 
 > **Stacks 06MS.** The morphism `x : Spec(ℚ̄) ⟶ X` is a monomorphism, because `Spec(ℚ̄)` is
 > the terminal object of the big fppf site over `Spec(ℚ̄)`: this is the source's remark that `x`
@@ -375,7 +375,7 @@ theorem not_isNoetherian_galoisSelfProductQuotient (hZ : B.Contains (⊤_ Scheme
 theorem mono_canonicalPoint : Mono (canonicalPoint B₀ hQ hK B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.nonempty_points_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L648). The attribute's comment: “X has a point”.
+**`AlgebraicGeometry.RationalGaloisQuotient.nonempty_points_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 648](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L648). The attribute's comment: “X has a point”.
 
 > **Stacks 06MS.** `X` has a point, namely the class of `x`; with
 > `AlgebraicGeometry.RationalGaloisQuotient.subsingleton_points_galoisSelfProductQuotient` it is the
@@ -386,7 +386,7 @@ theorem nonempty_points_galoisSelfProductQuotient :
     Nonempty (Space.points B cover.left hS (galoisSelfProductQuotient B₀ hQ hK B hS hU))
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isFiniteTypePoint_canonicalFieldPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 656](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L656). The attribute's comment: “x is a (locally) finite type point of X”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isFiniteTypePoint_canonicalFieldPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 656](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L656). The attribute's comment: “x is a (locally) finite type point of X”.
 
 > **Stacks 06MS.** The class of `x` is a finite type point of `X` in the sense of
 > **Stacks 06EG**: it is the image of the closed point of `U` cut out by the diagonal under the
@@ -398,7 +398,7 @@ theorem isFiniteTypePoint_canonicalFieldPoint :
       ((canonicalFieldPoint B₀ hQ hK B hS hU).class B cover.left hS _)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.eq_class_canonicalFieldPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L722). The attribute's comment: “X has exactly one point, namely the class of x”.
+**`AlgebraicGeometry.RationalGaloisQuotient.eq_class_canonicalFieldPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 722](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L722). The attribute's comment: “X has exactly one point, namely the class of x”.
 
 > **Stacks 06MS.** The algebraic space `X = U/G` has exactly one point, and it is the class of
 > `x : Spec(ℚ̄) ⟶ X`.
@@ -409,7 +409,7 @@ theorem eq_class_canonicalFieldPoint
     p = (canonicalFieldPoint B₀ hQ hK B hS hU).class B cover.left hS _
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.nonempty_unique_points_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L729). The attribute's comment: “X has exactly one point”.
+**`AlgebraicGeometry.RationalGaloisQuotient.nonempty_unique_points_galoisSelfProductQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 729](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L729). The attribute's comment: “X has exactly one point”.
 
 > **Stacks 06MS.** The space of points of `X = U/G` is a singleton.
 
@@ -419,7 +419,7 @@ theorem nonempty_unique_points_galoisSelfProductQuotient :
       (Space.points B cover.left hS (galoisSelfProductQuotient B₀ hQ hK B hS hU)))
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.not_isEquivalence_substackInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 777](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L777). The attribute's comment: “the morphism Stacks 06MR constructs for X is not an isomorphism: for every object property of X satisfying the conditions of Stacks 06MR, its substack inclusion is not an equivalence over the big fppf site”.
+**`AlgebraicGeometry.RationalGaloisQuotient.not_isEquivalence_substackInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 777](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L777). The attribute's comment: “the morphism Stacks 06MR constructs for X is not an isomorphism: for every object property of X satisfying the conditions of Stacks 06MR, its substack inclusion is not an equivalence over the big fppf site”.
 
 > **Stacks 06MS, the assertion about the morphism of Stacks 06MR.** Let `P` be any object
 > property of `X` of the kind **Stacks 06MR** produces, that is one which is closed under
@@ -447,7 +447,7 @@ theorem not_isEquivalence_substackInclusion
         hP.2.choose).hom)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isReducedWithUniquePoint_quotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 797](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L797). The attribute's comment: “X, as an algebraic stack, is reduced with exactly one point: the hypothesis of Lemma 06MR”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isReducedWithUniquePoint_quotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 797](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L797). The attribute's comment: “X, as an algebraic stack, is reduced with exactly one point: the hypothesis of Lemma 06MR”.
 
 > **Stacks 06MS.** `X`, as an algebraic stack, satisfies the hypothesis of **Stacks 06MR**,
 > condition (1) of **Stacks 06MN**: it is reduced and its space of points is a singleton.
@@ -457,7 +457,7 @@ theorem isReducedWithUniquePoint_quotientStack :
     Stack.IsReducedWithUniquePoint B cover.left hS (quotientStack.{w} B₀ hQ hK B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isMonomorphism_canonicalPointStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 842](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L842). The attribute's comment: “x is a monomorphism of algebraic stacks”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isMonomorphism_canonicalPointStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 842](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L842). The attribute's comment: “x is a monomorphism of algebraic stacks”.
 
 > **Stacks 06MS.** `x : Spec(ℚ̄) ⟶ X` is a monomorphism of algebraic stacks in the sense of
 > **Stacks 04ZW**: it is fully faithful because `x` is a monomorphism of sheaves, and a fully
@@ -469,7 +469,7 @@ theorem isMonomorphism_canonicalPointStack :
       (canonicalPointStack.{w} B₀ hQ hK B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isReducedLocallyNoetherianUniquePointSubstack_canonicalPointSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 874](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L874). The attribute's comment: “x is the morphism constructed in Lemma 06MR, and it is not an isomorphism: the substack of X cut out by x is closed under isomorphism, algebraic and satisfies the conditions of 06MP, x factors through its inclusion by an equivalence, and that inclusion is not an equivalence”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isReducedLocallyNoetherianUniquePointSubstack_canonicalPointSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 874](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L874). The attribute's comment: “x is the morphism constructed in Lemma 06MR, and it is not an isomorphism: the substack of X cut out by x is closed under isomorphism, algebraic and satisfies the conditions of 06MP, x factors through its inclusion by an equivalence, and that inclusion is not an equivalence”.
 
 > **Stacks 06MS: `x` is the morphism constructed in Lemma 06MR.** The strictly full
 > subcategory of `X` cut out by `x : Spec(ℚ̄) ⟶ X` is a substack of the kind **Stacks 06MR**
@@ -499,7 +499,7 @@ theorem isReducedLocallyNoetherianUniquePointSubstack_canonicalPointSubstack :
               (canonicalPointSubstack.{w} B₀ hQ hK B hS hU) hP).hom)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isReducedLocallyNoetherianUniquePointSubstack_iff_eq_canonicalPointSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 911](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L911). The attribute's comment: “x is the morphism constructed in Lemma 06MR: the substack cut out by x is the unique strictly full subcategory of X which is an algebraic stack satisfying the conditions of 06MP”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isReducedLocallyNoetherianUniquePointSubstack_iff_eq_canonicalPointSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 911](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L911). The attribute's comment: “x is the morphism constructed in Lemma 06MR: the substack cut out by x is the unique strictly full subcategory of X which is an algebraic stack satisfying the conditions of 06MP”.
 
 > **Stacks 06MS: `x` is the morphism constructed in Lemma 06MR.** The substack of `X` cut out
 > by `x : Spec(ℚ̄) ⟶ X` is *the* strictly full subcategory of `X` which Stacks 06MR produces: a
@@ -519,7 +519,7 @@ theorem isReducedLocallyNoetherianUniquePointSubstack_iff_eq_canonicalPointSubst
       Q = canonicalPointSubstack.{w} B₀ hQ hK B hS hU
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.le_canonicalPointSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 932](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L932). The attribute's comment: “x is the morphism constructed in Lemma 06MR: every strictly full subcategory of X with the properties of Lemma 06MR is contained in the substack cut out by x”.
+**`AlgebraicGeometry.RationalGaloisQuotient.le_canonicalPointSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 932](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L932). The attribute's comment: “x is the morphism constructed in Lemma 06MR: every strictly full subcategory of X with the properties of Lemma 06MR is contained in the substack cut out by x”.
 
 > **Stacks 06MS: `x` is the morphism constructed in Lemma 06MR, the uniqueness half.** Every
 > strictly full subcategory of `X` of the kind **Stacks 06MR** produces — closed under isomorphism,
@@ -538,7 +538,7 @@ theorem le_canonicalPointSubstack
     Q ≤ canonicalPointSubstack.{w} B₀ hQ hK B hS hU
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isResidualGerbeAt_canonicalPointSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 947](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L947). The attribute's comment: “Spec(ℚ̄) ⟶ X is the residual gerbe of X at x”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isResidualGerbeAt_canonicalPointSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 947](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L947). The attribute's comment: “Spec(ℚ̄) ⟶ X is the residual gerbe of X at x”.
 
 > **Stacks 06MS: `Spec(ℚ̄) ⟶ X` is the residual gerbe of `X` at `x`.** The residual gerbe of
 > `X` at `x` exists in the sense of **Stacks 06MU (1)** — `x : Spec(ℚ̄) ⟶ X` is a monomorphism from
@@ -556,7 +556,7 @@ theorem isResidualGerbeAt_canonicalPointSubstack :
         (canonicalPointSubstack.{w} B₀ hQ hK B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.isLocallyOfFiniteType_canonicalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 968](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L968). The attribute's comment: “x : Spec(ℚ̄) ⟶ U ⟶ X is locally of finite type”.
+**`AlgebraicGeometry.RationalGaloisQuotient.isLocallyOfFiniteType_canonicalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 968](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L968). The attribute's comment: “x : Spec(ℚ̄) ⟶ U ⟶ X is locally of finite type”.
 
 > **Stacks 06MS.** `x : Spec(ℚ̄) ⟶ U ⟶ X` is locally of finite type: the diagonal
 > `Spec(ℚ̄) ⟶ U` is a closed immersion, `U` being separated over `Spec(ℚ̄)`, and `U ⟶ X` is étale.
@@ -566,7 +566,7 @@ theorem isLocallyOfFiniteType_canonicalPoint :
     Space.IsLocallyOfFiniteType B cover.left hS (canonicalPoint B₀ hQ hK B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.ne_and_isReducedUniquePointSubstackAt_canonicalPointSubstack_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 1067](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L1067). The attribute's comment: “imposing that residual gerbes are locally Noetherian is necessary in Definition 06MU: without that clause the substack cut out by x and all of X are two distinct reduced one-point substacks over x with monomorphic inclusions, and only the first is locally Noetherian”.
+**`AlgebraicGeometry.RationalGaloisQuotient.ne_and_isReducedUniquePointSubstackAt_canonicalPointSubstack_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean, line 1067](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeNotIsomorphismExample.lean#L1067). The attribute's comment: “imposing that residual gerbes are locally Noetherian is necessary in Definition 06MU: without that clause the substack cut out by x and all of X are two distinct reduced one-point substacks over x with monomorphic inclusions, and only the first is locally Noetherian”.
 
 > **Stacks 06MS: imposing that residual gerbes be locally Noetherian is necessary in
 > Definition 06MU.** Drop the local Noetherianity clause from the specification
@@ -600,7 +600,7 @@ theorem ne_and_isReducedUniquePointSubstackAt_canonicalPointSubstack_top :
 
 [Tag 06MT](https://stacks.math.columbia.edu/tag/06MT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.tfae_hasSingletonPointMonomorphism_and_existsUnique_isResidualGerbeAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeExistsUnique.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeExistsUnique.lean#L288). The attribute's comment: “the equivalence of conditions (1), (2) and (3), and the existence and uniqueness of the strictly full subcategory Z\_x of X which is a reduced, locally Noetherian algebraic stack whose space of points is a singleton mapping to x”.
+**`AlgebraicGeometry.Stack.tfae_hasSingletonPointMonomorphism_and_existsUnique_isResidualGerbeAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeExistsUnique.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeExistsUnique.lean#L289). The attribute's comment: “the equivalence of conditions (1), (2) and (3), and the existence and uniqueness of the strictly full subcategory Z\_x of X which is a reduced, locally Noetherian algebraic stack whose space of points is a singleton mapping to x”.
 
 > **Stacks 06MT.** Let `𝒳` be an algebraic stack over `S` and let `x` be a point of `|𝒳|`. The
 > following are equivalent:
@@ -633,7 +633,7 @@ theorem tfae_hasSingletonPointMonomorphism_and_existsUnique_isResidualGerbeAt
 
 [Tag 06MU](https://stacks.math.columbia.edu/tag/06MU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HasReducedSingletonPointMonomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean#L166). The attribute's comment: “part (1), the existence of the residual gerbe of X at x, read as condition (2) of the three equivalent conditions of Stacks 06MT”.
+**`AlgebraicGeometry.Stack.HasReducedSingletonPointMonomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean#L166). The attribute's comment: “part (1), the existence of the residual gerbe of X at x, read as condition (2) of the three equivalent conditions of Stacks 06MT”.
 
 > **Condition (2) of Stacks 06MT.** The one-point substack of condition (1) can be chosen
 > reduced.
@@ -645,7 +645,7 @@ abbrev HasReducedSingletonPointMonomorphism
     (x : points B S hS 𝒳.val.val (Classical.choose 𝒳.property)) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.residualGerbe`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean#L264). The attribute's comment: “part (2), the residual gerbe as an algebraic stack: the strictly full subcategory of X cut out by an object property meeting the specification IsResidualGerbeAt of Stacks 06MT”.
+**`AlgebraicGeometry.Stack.residualGerbe`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean, line 265](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean#L265). The attribute's comment: “part (2), the residual gerbe as an algebraic stack: the strictly full subcategory of X cut out by an object property meeting the specification IsResidualGerbeAt of Stacks 06MT”.
 
 > **Stacks 06MU, part (2): the residual gerbe of `𝒳` at `x`, as an algebraic stack.** The
 > source takes it to be the strictly full subcategory `𝒵_x ⊂ 𝒳` produced by **Stacks 06MT**, that
@@ -664,7 +664,8 @@ abbrev HasReducedSingletonPointMonomorphism
 > in "*the* residual gerbe", is the final assertion of Stacks 06MT; the library proves it as
 > `AlgebraicGeometry.Stack.eq_of_isResidualGerbeAt_of_bootstrap`, and existence together
 > with uniqueness under the equivalent conditions as
-> `AlgebraicGeometry.Stack.existsUnique_isResidualGerbeAt` of `StacksFrontier.AlgebraicGeometry.Stacks.ResidualGerbeExistsUnique`.
+> `AlgebraicGeometry.Stack.existsUnique_isResidualGerbeAt` of
+> `StacksFrontier.AlgebraicGeometry.Stacks.ResidualGerbeExistsUnique`.
 
 ```lean
 abbrev residualGerbe
@@ -675,7 +676,7 @@ abbrev residualGerbe
     AlgebraicStacks.{u, w} B S hS
 ```
 
-**`AlgebraicGeometry.Stack.residualGerbeInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean#L287). The attribute's comment: “part (2), the inclusion of the residual gerbe into X as a strictly full subcategory”.
+**`AlgebraicGeometry.Stack.residualGerbeInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean#L288). The attribute's comment: “part (2), the inclusion of the residual gerbe into X as a strictly full subcategory”.
 
 > **Stacks 06MU, part (2): the inclusion of the residual gerbe of `𝒳` at `x`.** The residual
 > gerbe is a *strictly full subcategory* of `𝒳`, and this is the inclusion 1-morphism `𝒵_x ⟶ 𝒳`
@@ -704,7 +705,7 @@ def residualGerbeInclusion
 
 [Tag 0H21](https://stacks.math.columbia.edu/tag/0H21) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isMonomorphism_and_isResidualGerbeAt_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeSchemePoint.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeSchemePoint.lean#L272). The attribute's comment: “the scheme case: the monomorphism x ⟶ X out of the spectrum of the residue field at a point x of a scheme X is the residual gerbe of X at x”.
+**`AlgebraicGeometry.Stack.isMonomorphism_and_isResidualGerbeAt_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeSchemePoint.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeSchemePoint.lean#L272). The attribute's comment: “the scheme case: the monomorphism x ⟶ X out of the spectrum of the residue field at a point x of a scheme X is the residual gerbe of X at x”.
 
 > **Stacks 0H21, assertion (1).** Let `X` be an object of the big fppf site of `S`, let `x` be a
 > point of its underlying scheme and assume the spectrum of the residue field `κ(x)` lies in the
@@ -729,7 +730,7 @@ theorem isMonomorphism_and_isResidualGerbeAt_residueField
           (schemeStackMap.{u, w} B S hS (residueFieldInclusion B S hS X x hx)).hom).essImage
 ```
 
-**`AlgebraicGeometry.Stack.hasSingletonPointMonomorphism_algebraicSpaceStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeSchemePoint.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeSchemePoint.lean#L299). The attribute's comment: “the algebraic space case: the residual gerbe at a point of an algebraic space, called the residual space, always exists”.
+**`AlgebraicGeometry.Stack.hasSingletonPointMonomorphism_algebraicSpaceStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeSchemePoint.lean, line 299](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeSchemePoint.lean#L299). The attribute's comment: “the algebraic space case: the residual gerbe at a point of an algebraic space, called the residual space, always exists”.
 
 > **Stacks 0H21, assertion (2).** Let `F` be an algebraic space over `S` and let `x` be a point
 > of `|F|`. Then the residual gerbe of `F` at `x` — the *residual space* at `x` — exists: the
@@ -752,7 +753,7 @@ theorem hasSingletonPointMonomorphism_algebraicSpaceStack
 
 [Tag 06MV](https://stacks.math.columbia.edu/tag/06MV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRegularStack_of_isReducedLocallyNoetherianWithUniquePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RegularSingletonStack.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RegularSingletonStack.lean#L129).
+**`AlgebraicGeometry.Stack.isRegularStack_of_isReducedLocallyNoetherianWithUniquePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RegularSingletonStack.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RegularSingletonStack.lean#L129).
 
 > A reduced, locally Noetherian algebraic stack over `S` whose space of points of
 > **Stacks 04XG** is a singleton is regular.
@@ -774,7 +775,7 @@ theorem isRegularStack_of_isReducedLocallyNoetherianWithUniquePoint
 
 [Tag 06MW](https://stacks.math.columbia.edu/tag/06MW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_factorization_of_isResidualGerbeAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFieldPointFactorization.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFieldPointFactorization.lean#L229).
+**`AlgebraicGeometry.Stack.exists_factorization_of_isResidualGerbeAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFieldPointFactorization.lean, line 229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFieldPointFactorization.lean#L229).
 
 > **Stacks 06MW.** Let `𝒳` be an algebraic stack over `S`, let `x` be a point of `|𝒳|` and
 > assume the residual gerbe `𝒵_x` of `𝒳` at `x` exists, i.e. an object property `P` of `𝒳`
@@ -807,7 +808,7 @@ theorem exists_factorization_of_isResidualGerbeAt
 
 [Tag 06MX](https://stacks.math.columbia.edu/tag/06MX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isResidualGerbeAt_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFromMonomorphism.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFromMonomorphism.lean#L210). The attribute's comment: “with the equivalent conditions of Stacks 06MP read as its CONDITION (2), `Dualizing`-style condition (1) being unavailable here: the library proves only (2) => (1) of 06MP, its (1) => (2) resting on fppf descent of flatness (05VY, 06Q0) which is not carried, and there is no transport of `IsReducedStack`/`IsLocallyNoetherianStack` — both `HasPropertyOnSomeSchemeAtlas` — along an equivalence over the site. Otherwise unconditional. The uniqueness of the subcategory is NOT claimed: that is Stacks 06MR, which carries the representability hypothesis of 04Y5 (2) => (3)”.
+**`AlgebraicGeometry.Stack.exists_isResidualGerbeAt_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFromMonomorphism.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFromMonomorphism.lean#L210). The attribute's comment: “with the equivalent conditions of Stacks 06MP read as its CONDITION (2), `Dualizing`-style condition (1) being unavailable here: the library proves only (2) => (1) of 06MP, its (1) => (2) resting on fppf descent of flatness (05VY, 06Q0) which is not carried, and there is no transport of `IsReducedStack`/`IsLocallyNoetherianStack` — both `HasPropertyOnSomeSchemeAtlas` — along an equivalence over the site. Otherwise unconditional. The uniqueness of the subcategory is NOT claimed: that is Stacks 06MR, which carries the representability hypothesis of 04Y5 (2) => (3)”.
 
 > **Stacks 06MX.** Let `𝒳` be an algebraic stack over `S`, let `x` be a point of its space of
 > points of **Stacks 04XG**, let `𝒵` be an algebraic stack over `S` satisfying condition (2) of
@@ -844,7 +845,7 @@ theorem exists_isResidualGerbeAt_of_isMonomorphism
 
 [Tag 0DTH](https://stacks.math.columbia.edu/tag/0DTH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.residualGerbeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean#L121). The attribute's comment: “the 1-morphism induced between substacks whose objects f carries into one another”.
+**`AlgebraicGeometry.Stack.residualGerbeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean#L121). The attribute's comment: “the 1-morphism induced between substacks whose objects f carries into one another”.
 
 > **The 1-morphism induced by `f` on residual gerbes, Stacks 0DTH.** Let `f : 𝒳 ⟶ 𝒴` be a
 > 1-morphism of algebraic stacks over `S`, let `P` cut out a substack `𝒵_x` of `𝒳` and let `Q` cut
@@ -866,7 +867,7 @@ def residualGerbeMap
     fullSubcategoryAlgebraicStack 𝒳 P hP ⟶ fullSubcategoryAlgebraicStack 𝒴 Q hQ
 ```
 
-**`AlgebraicGeometry.Stack.residualGerbeMap_comp_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean#L138). The attribute's comment: “the commutativity of the square for that 1-morphism”.
+**`AlgebraicGeometry.Stack.residualGerbeMap_comp_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean#L138). The attribute's comment: “the commutativity of the square for that 1-morphism”.
 
 > **The commutative square of Stacks 0DTH.** The induced 1-morphism `𝒵_x ⟶ 𝒵_y` composed with
 > the inclusion of `𝒵_y` into `𝒴` is the inclusion of `𝒵_x` into `𝒳` composed with `f`.
@@ -883,7 +884,7 @@ theorem residualGerbeMap_comp_inclusion
       fullSubcategoryInclusion 𝒳 P hP ≫ f
 ```
 
-**`AlgebraicGeometry.Stack.residualGerbeMap_comp_inclusion_of_isResidualGerbeAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean#L211).
+**`AlgebraicGeometry.Stack.residualGerbeMap_comp_inclusion_of_isResidualGerbeAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean, line 211](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeFunctoriality.lean#L211).
 
 > **Stacks 0DTH.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`, let `x` be a
 > point of `𝒳` and let `y` be its image under `f`. Assume the residual gerbes of `𝒳` at `x` and of
@@ -918,7 +919,7 @@ theorem residualGerbeMap_comp_inclusion_of_isResidualGerbeAt
 
 [Tag 0DTI](https://stacks.math.columbia.edu/tag/0DTI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isEquivalenceOver_residualGerbeMap_of_hasSelfProductEquivalenceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeIsomorphism.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeIsomorphism.lean#L354).
+**`AlgebraicGeometry.Stack.isEquivalenceOver_residualGerbeMap_of_hasSelfProductEquivalenceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeIsomorphism.lean, line 354](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeIsomorphism.lean#L354).
 
 > **Stacks 0DTI.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`, let `x` be a
 > point of `|𝒳|` and let the object properties `P` of `𝒳` and `Q` of `𝒴` be residual gerbes of `𝒳`
@@ -967,4 +968,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 100.11, Tag 06ML](https://stacks.math.columbia.edu/tag/06ML)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

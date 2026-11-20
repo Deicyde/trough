@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.21 Cohomology in the affine case
 
-Section 60.21 of the Stacks Project, [Tag 07LE](https://stacks.math.columbia.edu/tag/07LE). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 60.21 of the Stacks Project, [Tag 07LE](https://stacks.math.columbia.edu/tag/07LE). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07JN, a proposition
 
 [Tag 07JN](https://stacks.math.columbia.edu/tag/07JN) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.wholeSpaceSystemDerivedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/WholeSpaceSystemDerived.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/WholeSpaceSystemDerived.lean#L226). The attribute's comment: “the complex M(0) → M(1) → M(2) → ⋯ of the system (X, T(n)\_e, δ(n)) computes RΓ(Cris(X/S), F): an isomorphism M(•) ≅ RΓ(Cris(X/S), F) in D⁺(Ab), the Čech comparison through an injective resolution, for F locally quasi-coherent with c\_f locally surjective along closed immersions, X and S affine”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.wholeSpaceSystemDerivedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/WholeSpaceSystemDerived.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/WholeSpaceSystemDerived.lean#L226). The attribute's comment: “the complex M(0) → M(1) → M(2) → ⋯ of the system (X, T(n)\_e, δ(n)) computes RΓ(Cris(X/S), F): an isomorphism M(•) ≅ RΓ(Cris(X/S), F) in D⁺(Ab), the Čech comparison through an injective resolution, for F locally quasi-coherent with c\_f locally surjective along closed immersions, X and S affine”.
 
 > **[Stacks, Proposition 60.20.1, Tag 07JN]: the complex `M(0) → M(1) → M(2) → ⋯` computes
 > `RΓ(Cris(X/S), F)`**, as an isomorphism in the bounded below derived category `D⁺(Ab)`:
@@ -51,7 +51,7 @@ def wholeSpaceSystemDerivedIso :
 
 [Tag 07LF](https://stacks.math.columbia.edu/tag/07LF) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.vanishing07LF`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LevelFormsCosimplicialIso.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LevelFormsCosimplicialIso.lean#L486). The attribute's comment: “the vanishing of the cohomology of F ⊗ Ω^i for i > 0, X and S affine”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.vanishing07LF`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LevelFormsCosimplicialIso.lean, line 486](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LevelFormsCosimplicialIso.lean#L486). The attribute's comment: “the vanishing of the cohomology of F ⊗ Ω^i for i > 0, X and S affine”.
 
 > **[Stacks, Lemma 60.19.3, Tag 07LF].**  Let `(p, (S, I, γ), X)` be a global crystalline
 > situation with `X` and `S` affine, and let `F` be a sheaf of `𝒪_{X/S}`-modules on the small
@@ -75,7 +75,7 @@ theorem vanishing07LF (S : GlobalCrystallineSituation.{u}) : Vanishing07LF S
 
 [Tag 07LG](https://stacks.math.columbia.edu/tag/07LG) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairDeRhamDerivedPlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalDeRhamDerived07LG.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalDeRhamDerived07LG.lean#L133). The attribute's comment: “for any surjective polynomial presentation A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (by default the tautological one): an isomorphism M ⊗^∧\_D Ω*\_D ≅ RΓ(Cris(X/S), F) in D⁺(Ab), through the double complex M(b) ⊗^∧\_\{D(b)} Ω^a\_\{D(b)} and the comparison of 07JN, for F a crystal in quasi-coherent modules and (M, ∇) its module with connection”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairDeRhamDerivedPlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalDeRhamDerived07LG.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalDeRhamDerived07LG.lean#L133). The attribute's comment: “for any surjective polynomial presentation A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (by default the tautological one): an isomorphism M ⊗^∧\_D Ω*\_D ≅ RΓ(Cris(X/S), F) in D⁺(Ab), through the double complex M(b) ⊗^∧\_\{D(b)} Ω^a\_\{D(b)} and the comparison of 07JN, for F a crystal in quasi-coherent modules and (M, ∇) its module with connection”.
 
 > **[Stacks, Proposition 60.21.3, Tag 07LG]: the complex `M ⊗^∧_D Ω^*_D` computes
 > `RΓ(Cris(X/S), ℱ)`**, as an isomorphism in the bounded below derived category `D⁺(Ab)`:
@@ -106,7 +106,7 @@ def crystalPairDeRhamDerivedPlusIso :
 
 [Tag 07LH](https://stacks.math.columbia.edu/tag/07LH) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.smoothPresentationPairDerivedPlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothPresentationDerived07LH.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothPresentationDerived07LH.lean#L171). The attribute's comment: “for A -> P' smooth and P' -> C surjective, D' the p-adically completed divided power envelope and (M', nabla') the pair over D' corresponding to F (the base change of the pair of 07JG, for any polynomial presentation A[x\_i] -> C of the system with a variable (WholeSpacePresentation S hp, by default the tautological one), along any augmentation-compatible divided power map D -> D'), the complex M' ⊗^∧\_\{D'} Ω*\_\{D'} computes RΓ(Cris(X/S), F): an isomorphism M' ⊗^∧\_\{D'} Ω*\_\{D'} ≅ RΓ(Cris(X/S), F) in D⁺(Ab), the base change to D inverted followed by 07LG in the derived category”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.smoothPresentationPairDerivedPlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothPresentationDerived07LH.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothPresentationDerived07LH.lean#L171). The attribute's comment: “for A -> P' smooth and P' -> C surjective, D' the p-adically completed divided power envelope and (M', nabla') the pair over D' corresponding to F (the base change of the pair of 07JG, for any polynomial presentation A[x\_i] -> C of the system with a variable (WholeSpacePresentation S hp, by default the tautological one), along any augmentation-compatible divided power map D -> D'), the complex M' ⊗^∧\_\{D'} Ω*\_\{D'} computes RΓ(Cris(X/S), F): an isomorphism M' ⊗^∧\_\{D'} Ω*\_\{D'} ≅ RΓ(Cris(X/S), F) in D⁺(Ab), the base change to D inverted followed by 07LG in the derived category”.
 
 > **[Stacks, Lemma 60.21.4, Tag 07LH]**: in the situation of
 > [Stacks, Proposition 60.21.3, Tag 07LG] (`X` and `S` affine, `p` nilpotent on `X`), let `ℱ` be a
@@ -143,4 +143,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.21, Tag 07LE](https://stacks.math.columbia.edu/tag/07LE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

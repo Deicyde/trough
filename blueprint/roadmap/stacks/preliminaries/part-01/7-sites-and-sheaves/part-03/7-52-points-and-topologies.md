@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.52 Points and topologies
 
-Section 7.52 of the Stacks Project, [Tag 00ZS](https://stacks.math.columbia.edu/tag/00ZS). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 7.52 of the Stacks Project, [Tag 00ZS](https://stacks.math.columbia.edu/tag/00ZS). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00ZT, a definition
 
 [Tag 00ZT](https://stacks.math.columbia.edu/tag/00ZT) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.IsPointOfTopology`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OfTopology.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/OfTopology.lean#L98). The attribute's comment: “Stacks' definition of a point of a topology, on `u : C ⥤ Type w` with the stalk taken as the colimit over the category of elements of `u`; a Mathlib point gives one, see `GrothendieckTopology.Point.isPointOfTopology`.”.
+**`CategoryTheory.GrothendieckTopology.IsPointOfTopology`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OfTopology.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Point/OfTopology.lean#L98). The attribute's comment: “Stacks' definition of a point of a topology, on `u : C ⥤ Type w` with the stalk taken as the colimit over the category of elements of `u`; a Mathlib point gives one, see `GrothendieckTopology.Point.isPointOfTopology`.”.
 
 > **Stacks 00ZT.** A *point of the topology* `J` on `C` is a functor `u : C ⥤ Type w` such
 > that
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.52, Tag 00ZS](https://stacks.math.columbia.edu/tag/00ZS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.69 Spectral sequences for Ext
 
-Section 15.69 of the Stacks Project, [Tag 0AVG](https://stacks.math.columbia.edu/tag/0AVG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.69 of the Stacks Project, [Tag 0AVG](https://stacks.math.columbia.edu/tag/0AVG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AVH, an equation
 
 [Tag 0AVH](https://stacks.math.columbia.edu/tag/0AVH) in the Stacks Project.
 
-**`StacksDraft.ExtSpectralSequence.exists_ext_homology_spectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Ext/SpectralSequence.lean, line 794](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Ext/SpectralSequence.lean#L794).
+**`StacksDraft.ExtSpectralSequence.exists_ext_homology_spectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Ext/SpectralSequence.lean, line 794](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/Ext/SpectralSequence.lean#L794).
 
 > **Stacks 0AVH.** For `M` in an abelian category with enough injectives and `K` in its bounded
 > below derived category, there is a filtered complex `T` of abelian groups, together with the
@@ -107,7 +107,7 @@ public theorem exists_ext_homology_spectralSequence
 
 [Tag 0AVI](https://stacks.math.columbia.edu/tag/0AVI) in the Stacks Project.
 
-**`StacksDraft.ExtSpectralSequence.exists_ext_complex_spectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Ext/SpectralSequence.lean, line 633](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Ext/SpectralSequence.lean#L633).
+**`StacksDraft.ExtSpectralSequence.exists_ext_complex_spectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Ext/SpectralSequence.lean, line 633](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/Ext/SpectralSequence.lean#L633).
 
 > **Stacks 0AVI.** If a bounded below complex `K` represents an object of the bounded below
 > derived category, there is a cohomological spectral sequence
@@ -143,4 +143,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.69, Tag 0AVG](https://stacks.math.columbia.edu/tag/0AVG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

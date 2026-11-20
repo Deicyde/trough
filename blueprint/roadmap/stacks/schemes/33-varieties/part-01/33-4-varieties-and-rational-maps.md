@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.4 Varieties and rational maps
 
-Section 33.4 of the Stacks Project, [Tag 0BXM](https://stacks.math.columbia.edu/tag/0BXM). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 33.4 of the Stacks Project, [Tag 0BXM](https://stacks.math.columbia.edu/tag/0BXM). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BXN, a theorem
 
 [Tag 0BXN](https://stacks.math.columbia.edu/tag/0BXN) in the Stacks Project.
 
-**`AlgebraicGeometry.varietyEquivalenceFinitelyGeneratedFieldExtensionOpposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/FunctionFieldEquivalence/Equivalence.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Varieties/FunctionFieldEquivalence/Equivalence.lean#L85).
+**`AlgebraicGeometry.varietyEquivalenceFinitelyGeneratedFieldExtensionOpposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/FunctionFieldEquivalence/Equivalence.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Varieties/FunctionFieldEquivalence/Equivalence.lean#L85).
 
 > **Stacks Project, Tag 0BXN.** Varieties and dominant rational maps over a field are
 > contravariantly equivalent to finitely generated field extensions of that field.
@@ -29,7 +29,7 @@ noncomputable def varietyEquivalenceFinitelyGeneratedFieldExtensionOpposite
 
 [Tag 0BXP](https://stacks.math.columbia.edu/tag/0BXP) in the Stacks Project.
 
-**`AlgebraicGeometry.Variety.nonempty_iso_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/BirationalVariety.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/BirationalVariety.lean#L140). The attribute's comment: “Item (1), birationality of varieties, which the source defines as Spec(k)-birationality in the sense of Tag 0A20, is isomorphism in `AlgebraicGeometry.Variety k`, the category of varieties over `k` and dominant rational maps of Tag 0BXN. The function field in item (2) is the stalk at the generic point with its `k`-algebra structure from Tag 0BXN. The opens in items (3) and (4) are nonempty, as varieties are, and the isomorphism and the morphism commute with the structure morphisms to `Spec k`.”.
+**`AlgebraicGeometry.Variety.nonempty_iso_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/BirationalVariety.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/BirationalVariety.lean#L140). The attribute's comment: “Item (1), birationality of varieties, which the source defines as Spec(k)-birationality in the sense of Tag 0A20, is isomorphism in `AlgebraicGeometry.Variety k`, the category of varieties over `k` and dominant rational maps of Tag 0BXN. The function field in item (2) is the stalk at the generic point with its `k`-algebra structure from Tag 0BXN. The opens in items (3) and (4) are nonempty, as varieties are, and the isomorphism and the morphism commute with the structure morphisms to `Spec k`.”.
 
 > **Stacks Project, Tag 0BXP.** Let `X` and `Y` be varieties over a field `k`. The following
 > are equivalent:
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.4, Tag 0BXM](https://stacks.math.columbia.edu/tag/0BXM)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

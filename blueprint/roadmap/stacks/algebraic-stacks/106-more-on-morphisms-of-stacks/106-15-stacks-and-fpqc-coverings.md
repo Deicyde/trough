@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.15 Stacks and fpqc coverings
 
-Section 106.15 of the Stacks Project, [Tag 0GRG](https://stacks.math.columbia.edu/tag/0GRG). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.15 of the Stacks Project, [Tag 0GRG](https://stacks.math.columbia.edu/tag/0GRG). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GRH, a proposition
 
 [Tag 0GRH](https://stacks.math.columbia.edu/tag/0GRH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isStack_fpqc_of_isQuasiAffineHom_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FpqcDescent/Stack.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FpqcDescent/Stack.lean#L159).
+**`AlgebraicGeometry.Stack.isStack_fpqc_of_isQuasiAffineHom_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FpqcDescent/Stack.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FpqcDescent/Stack.lean#L159).
 
 > **Stacks 0GRH.** An algebraic stack `𝒳` over `S` with quasi-affine diagonal satisfies descent
 > for fpqc coverings: it is a stack for the fpqc topology of the big fppf site over `S`.
@@ -28,7 +28,7 @@ theorem isStack_fpqc_of_isQuasiAffineHom_diagonal
       ((Scheme.fpqcPrecoverage.comap (BigFppfOver.toScheme B S hS)).toGrothendieck)
 ```
 
-**`AlgebraicGeometry.Stack.isMorSheaf_fpqc_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomSpaceFpqcSheaf.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IsomSpaceFpqcSheaf.lean#L131). The attribute's comment: “the full-faithfulness half of the proof: condition (2) of the fpqc stack condition, that the presheaves Mor(x, y) = Isom(x, y) of an algebraic stack are sheaves for the fpqc topology. No hypothesis on the diagonal is carried: representability of the diagonal by algebraic spaces, which every algebraic stack has, already suffices for this half, so the quasi-affine diagonal of the source and the ind-quasi-affine diagonal of its footnote are both dropped. The essential-surjectivity half, effectivity of fpqc descent data, is not formalized.”.
+**`AlgebraicGeometry.Stack.isMorSheaf_fpqc_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomSpaceFpqcSheaf.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/IsomSpaceFpqcSheaf.lean#L131). The attribute's comment: “the full-faithfulness half of the proof: condition (2) of the fpqc stack condition, that the presheaves Mor(x, y) = Isom(x, y) of an algebraic stack are sheaves for the fpqc topology. No hypothesis on the diagonal is carried: representability of the diagonal by algebraic spaces, which every algebraic stack has, already suffices for this half, so the quasi-affine diagonal of the source and the ind-quasi-affine diagonal of its footnote are both dropped. The essential-surjectivity half, effectivity of fpqc descent data, is not formalized.”.
 
 > **The full-faithfulness half of Stacks 0GRH**: condition (2) of the fpqc stack condition for
 > an algebraic stack. For every scheme `U` over `S` and all objects `x`, `y` of the fibre of an
@@ -52,4 +52,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.15, Tag 0GRG](https://stacks.math.columbia.edu/tag/0GRG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

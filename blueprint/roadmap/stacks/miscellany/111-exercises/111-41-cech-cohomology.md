@@ -8,13 +8,13 @@ proof: formalized
 
 # 111.41 Čech Cohomology
 
-Section 111.41 of the Stacks Project, [Tag 02AO](https://stacks.math.columbia.edu/tag/02AO). 1 tag here is carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 111.41 of the Stacks Project, [Tag 02AO](https://stacks.math.columbia.edu/tag/02AO). 1 tag here is carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02AP, a definition
 
 [Tag 02AP](https://stacks.math.columbia.edu/tag/02AP) in the Stacks Project.
 
-**`Stacks.Cohomology.CechBoundary.exists_covering_localLifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L124). The attribute's comment: “existence of a covering with lifts”.
+**`Stacks.Cohomology.CechBoundary.exists_covering_localLifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L124). The attribute's comment: “existence of a covering with lifts”.
 
 > If `ψ : ℱ₂ ⟶ ℱ₃` is locally surjective for the topology of open covers, then every section `τ`
 > of `ℱ₃` over an open `W` admits an open covering of `W` together with a `0`-cochain of `ℱ₂`
@@ -28,7 +28,7 @@ theorem exists_covering_localLifts {W : Opens X} (τ : ToType (ℱ₃.obj (op W)
         ψ.app (op (inter U₀ i)) (lift i) = restr ℱ₃ (inter_le_of_eq_iSup hU₀ i) τ
 ```
 
-**`Stacks.Cohomology.CechBoundary.deltaCochain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L318). The attribute's comment: “the assignment `(i₀, i₁) ↦ τ̃_{i₀}|_{U_{i₀i₁}} - τ̃_{i₁}|_{U_{i₀i₁}}`”.
+**`Stacks.Cohomology.CechBoundary.deltaCochain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 318](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L318). The attribute's comment: “the assignment `(i₀, i₁) ↦ τ̃_{i₀}|_{U_{i₀i₁}} - τ̃_{i₁}|_{U_{i₀i₁}}`”.
 
 > The Čech `1`-cochain `(i₀, i₁) ↦ τ̃_{i₀}|_{U_{i₀i₁}} - τ̃_{i₁}|_{U_{i₀i₁}}` attached to a
 > `0`-cochain `τ̃`: the assignment of Stacks 02AP. It is the negative of the Čech coboundary of `τ̃`
@@ -39,7 +39,7 @@ def deltaCochain {ℱ : TopCat.Presheaf AddCommGrpCat.{v} X} (t : Cochain U ℱ 
     Cochain U ℱ 1
 ```
 
-**`Stacks.Cohomology.CechBoundary.exists_cocycle_deltaCochain_of_localLifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L365). The attribute's comment: “the cocycle `(i₀, i₁) ↦ τ̃_{i₀} - τ̃_{i₁}` with values in `ℱ₁`”.
+**`Stacks.Cohomology.CechBoundary.exists_cocycle_deltaCochain_of_localLifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 365](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L365). The attribute's comment: “the cocycle `(i₀, i₁) ↦ τ̃_{i₀} - τ̃_{i₁}` with values in `ℱ₁`”.
 
 > **Stacks 02AP, the cocycle.** Let `φ : ℱ₁ ⟶ ℱ₂` be injective on sections and
 > `ℱ₁ → ℱ₂ → ℱ₃` exact in the middle on sections. If `τ` is a section of `ℱ₃` over `W` and `τ̃` is a
@@ -55,7 +55,7 @@ theorem exists_cocycle_deltaCochain_of_localLifts
     ∃ c : cocycles1 U ℱ₁, push U φ 1 (c : Cochain U ℱ₁ 1) = deltaCochain U lift
 ```
 
-**`Stacks.Cohomology.CechBoundary.cls_eq_of_push_eq_deltaCochain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L380). The attribute's comment: “the class `δ(τ)` does not depend on the lifts”.
+**`Stacks.Cohomology.CechBoundary.cls_eq_of_push_eq_deltaCochain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 380](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L380). The attribute's comment: “the class `δ(τ)` does not depend on the lifts”.
 
 > **Stacks 02AP, independence of the lifts.** Let `φ : ℱ₁ ⟶ ℱ₂` be injective on sections and
 > `ℱ₁ → ℱ₂ → ℱ₃` exact in the middle on sections. Two systems of lifts of the same section give
@@ -75,7 +75,7 @@ theorem cls_eq_of_push_eq_deltaCochain
     cls U ℱ₁ c = cls U ℱ₁ c'
 ```
 
-**`Stacks.Cohomology.CechBoundary.cls_add_of_push_eq_deltaCochain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L400). The attribute's comment: “additivity of the boundary map `δ`”.
+**`Stacks.Cohomology.CechBoundary.cls_add_of_push_eq_deltaCochain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 400](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L400). The attribute's comment: “additivity of the boundary map `δ`”.
 
 > **Stacks 02AP, additivity of `δ`.** Let `φ : ℱ₁ ⟶ ℱ₂` be injective on sections. The class of
 > the cocycle `(i₀, i₁) ↦ τ̃_{i₀} - τ̃_{i₁}` attached to the sum of two systems of local lifts is the
@@ -91,7 +91,7 @@ theorem cls_add_of_push_eq_deltaCochain
     cls U ℱ₁ d = cls U ℱ₁ c + cls U ℱ₁ c'
 ```
 
-**`Stacks.Cohomology.CechBoundary.cls_eq_of_refinement_of_push_eq_deltaCochain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L420). The attribute's comment: “the class `δ(τ)` agrees on a given common refinement of two coverings”.
+**`Stacks.Cohomology.CechBoundary.cls_eq_of_refinement_of_push_eq_deltaCochain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 420](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L420). The attribute's comment: “the class `δ(τ)` agrees on a given common refinement of two coverings”.
 
 > **Stacks 02AP, independence of the covering on a common refinement.** Let `φ : ℱ₁ ⟶ ℱ₂` be
 > injective on sections and `ℱ₁ → ℱ₂ → ℱ₃` exact in the middle on sections. Let `𝒰` and `𝒰'` be
@@ -118,7 +118,7 @@ theorem cls_eq_of_refinement_of_push_eq_deltaCochain
       refinementCechH1 U' V r' hr' ℱ₁ (cls U' ℱ₁ c')
 ```
 
-**`Stacks.Cohomology.CechBoundary.exists_common_refinement_cls_eq_of_push_eq_deltaCochain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L448). The attribute's comment: “the class `δ(τ)` does not depend on the covering”.
+**`Stacks.Cohomology.CechBoundary.exists_common_refinement_cls_eq_of_push_eq_deltaCochain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean, line 448](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/BoundaryCocycle.lean#L448). The attribute's comment: “the class `δ(τ)` does not depend on the covering”.
 
 > **Stacks 02AP, independence of the covering.** Let `φ : ℱ₁ ⟶ ℱ₂` be injective on sections
 > and `ℱ₁ → ℱ₂ → ℱ₃` exact in the middle on sections. Two families of opens covering `W`, each with
@@ -152,4 +152,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 111.41, Tag 02AO](https://stacks.math.columbia.edu/tag/02AO)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

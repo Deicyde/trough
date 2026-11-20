@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.13 Right adjoint of pushforward for perfect proper morphisms
 
-Section 48.13 of the Stacks Project, [Tag 0AA9](https://stacks.math.columbia.edu/tag/0AA9). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 48.13 of the Stacks Project, [Tag 0AA9](https://stacks.math.columbia.edu/tag/0AA9). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0A9R, a lemma
 
 [Tag 0A9R](https://stacks.math.columbia.edu/tag/0A9R) in the Stacks Project.
 
-**`Stacks.Duality.preservesColimitsOfShape_rightAdjoint_quasiCoherentDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsPerfectProper.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsPerfectProper.lean#L111).
+**`Stacks.Duality.preservesColimitsOfShape_rightAdjoint_quasiCoherentDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsPerfectProper.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsPerfectProper.lean#L111).
 
 > Let `f : X ⟶ Y` be a perfect proper morphism of Noetherian schemes and let `a` be a right
 > adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`. Then `a` commutes with direct sums.
@@ -28,7 +28,7 @@ theorem preservesColimitsOfShape_rightAdjoint_quasiCoherentDerivedPushforward [I
     PreservesColimitsOfShape (Discrete J) a
 ```
 
-**`Stacks.Duality.preservesColimitsOfShape_twistedInverseImage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsPerfectProper.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsPerfectProper.lean#L123).
+**`Stacks.Duality.preservesColimitsOfShape_twistedInverseImage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsPerfectProper.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsPerfectProper.lean#L123).
 
 > For a perfect proper morphism of Noetherian schemes `f : X ⟶ Y`, the twisted inverse image
 > `f^× : D_QCoh(𝒪_Y) ⥤ D_QCoh(𝒪_X)`, the right adjoint `twistedInverseImage f` of `Rf_*`, commutes
@@ -41,7 +41,7 @@ instance preservesColimitsOfShape_twistedInverseImage [IsNoetherian X] [IsNoethe
       (twistedInverseImage f (isQuasicoherent_homology_derivedPushforward_of_qcqs f))
 ```
 
-**`Stacks.Duality.preservesCoproducts_twistedInverseImage_of_perfect_proper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsUnconditional.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsUnconditional.lean#L73). The attribute's comment: “a = f^× commutes with direct sums indexed by every type J in the universe of X and Y, the universe of the hom-sets of D\_QCoh”.
+**`Stacks.Duality.preservesCoproducts_twistedInverseImage_of_perfect_proper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsUnconditional.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/RightAdjointDirectSumsUnconditional.lean#L73). The attribute's comment: “a = f^× commutes with direct sums indexed by every type J in the universe of X and Y, the universe of the hom-sets of D\_QCoh”.
 
 > **[Stacks, Tag 0A9R].** Let `f : X ⟶ Y` be a perfect proper morphism of Noetherian schemes.
 > The twisted inverse image `a = f^×`, the right adjoint of
@@ -59,7 +59,7 @@ theorem preservesCoproducts_twistedInverseImage_of_perfect_proper (J : Type u) :
 
 [Tag 0AAA](https://stacks.math.columbia.edu/tag/0AAA) in the Stacks Project.
 
-**`Stacks.Duality.isIso_twistedInverseImageRestrictionMap_app_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean#L69). The attribute's comment: “(2) variant: for a supplied cartesian square with open immersion `j`; the tag is `isIso_qcqsTwistedInverseImageRestrictionMap_app_of_perfect`”.
+**`Stacks.Duality.isIso_twistedInverseImageRestrictionMap_app_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean#L69). The attribute's comment: “(2) variant: for a supplied cartesian square with open immersion `j`; the tag is `isIso_qcqsTwistedInverseImageRestrictionMap_app_of_perfect`”.
 
 > **[Stacks, Tag 0AAA] (2), for a supplied cartesian square.** Let `f : X ⟶ Y` be a perfect
 > proper morphism of Noetherian schemes and `j : V ⟶ Y` an open immersion, with base change
@@ -90,7 +90,7 @@ theorem isIso_twistedInverseImageRestrictionMap_app_of_perfect (sq : IsPullback 
       sq).app K)
 ```
 
-**`Stacks.Duality.isIso_qcqsTwistedInverseImageRestrictionMap_app_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean#L101). The attribute's comment: “(2)”.
+**`Stacks.Duality.isIso_qcqsTwistedInverseImageRestrictionMap_app_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean#L101). The attribute's comment: “(2)”.
 
 > **[Stacks, Tag 0AAA] (2).** Let `f : X ⟶ Y` be a perfect proper morphism of Noetherian
 > schemes and `V ⊆ Y` an open, with `U = f⁻¹(V)`. The map `(j')^* ∘ a ⟶ a' ∘ j^*` of
@@ -105,7 +105,7 @@ theorem isIso_qcqsTwistedInverseImageRestrictionMap_app_of_perfect (V : Y.Opens)
     IsIso ((qcqsTwistedInverseImageRestrictionMap f V).app K)
 ```
 
-**`Stacks.Duality.isZero_derivedRestrict_twistedInverseImage_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean#L149). The attribute's comment: “(1)”.
+**`Stacks.Duality.isZero_derivedRestrict_twistedInverseImage_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperPerfectSupport.lean#L149). The attribute's comment: “(1)”.
 
 > **[Stacks, Tag 0AAA] (1).** Let `f : X ⟶ Y` be a perfect proper morphism of Noetherian
 > schemes, with `a` the right adjoint of `Rf_*` on `D_QCoh`. For every closed `T ⊆ Y`, if
@@ -128,7 +128,7 @@ theorem isZero_derivedRestrict_twistedInverseImage_of_perfect (W : Y.Opens)
 
 [Tag 0A9U](https://stacks.math.columbia.edu/tag/0A9U) in the Stacks Project.
 
-**`Stacks.Duality.isIso_twistedInverseImageCompareWithPullback_of_perfect_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonPerfectProper.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonPerfectProper.lean#L62).
+**`Stacks.Duality.isIso_twistedInverseImageCompareWithPullback_of_perfect_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonPerfectProper.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonPerfectProper.lean#L62).
 
 > **Stacks Project, Tag 0A9U (Lemma 48.13.3).** Let `f : X ⟶ Y` be a perfect proper morphism of
 > Noetherian schemes. The map `Lf^*K ⊗ᴸ_{𝒪_X} a(𝒪_Y) ⟶ a(K)` of [Stacks, Tag 0A9S] is an
@@ -143,7 +143,7 @@ theorem isIso_twistedInverseImageCompareWithPullback_of_perfect_of_isProper
       (quasiCoherentDerivedTensorRightUnitor Y) K)
 ```
 
-**`Stacks.Duality.isIso_compareWithPullback_twistedInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonUnconditional.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonUnconditional.lean#L204). The attribute's comment: “complete: X, Y Noetherian, f perfect and proper, every K in D\_QCoh(𝒪\_Y)”.
+**`Stacks.Duality.isIso_compareWithPullback_twistedInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonUnconditional.lean, line 204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonUnconditional.lean#L204). The attribute's comment: “complete: X, Y Noetherian, f perfect and proper, every K in D\_QCoh(𝒪\_Y)”.
 
 > Let `f : X ⟶ Y` be a perfect proper morphism of Noetherian schemes and
 > let `a = f^×` be the right adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)` ([Stacks, Tag 0A9E]).
@@ -166,7 +166,7 @@ theorem isIso_compareWithPullback_twistedInverseImage [IsNoetherian X] [IsNoethe
 
 [Tag 0BZG](https://stacks.math.columbia.edu/tag/0BZG) in the Stacks Project.
 
-**`Stacks.Duality.isIso_torIndependentTwistedInverseImageBaseChange_app_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/PerfectBaseChange.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/PerfectBaseChange.lean#L157).
+**`Stacks.Duality.isIso_torIndependentTwistedInverseImageBaseChange_app_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/PerfectBaseChange.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/PerfectBaseChange.lean#L157).
 
 > **[Stacks, Tag 0BZG].** Let `f : X ⟶ Y` be a perfect proper morphism of Noetherian schemes and
 > `g : Y' ⟶ Y` a morphism with `Y'` Noetherian, and let `X' = X ×_Y Y'`, with projections
@@ -195,4 +195,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.13, Tag 0AA9](https://stacks.math.columbia.edu/tag/0AA9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

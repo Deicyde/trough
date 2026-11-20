@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.33 Maps out of affine formal schemes
 
-Section 87.33 of the Stacks Project, [Tag 0AQE](https://stacks.math.columbia.edu/tag/0AQE). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.33 of the Stacks Project, [Tag 0AQE](https://stacks.math.columbia.edu/tag/0AQE). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AQF, a lemma
 
 [Tag 0AQF](https://stacks.math.columbia.edu/tag/0AQF) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_formalSpectrumToSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAffine.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAffine.lean#L180). The attribute's comment: “canonical map”.
+**`AlgebraicGeometry.FormalSpace.exists_formalSpectrumToSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAffine.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAffine.lean#L180). The attribute's comment: “canonical map”.
 
 > The canonical formal-to-ordinary-spectrum map exists and restricts to the
 > quotient-spectrum map at every stage.
@@ -35,7 +35,7 @@ public theorem exists_formalSpectrumToSpec
               (stageToSpec D hAS fA J (hcompat J)))
 ```
 
-**`AlgebraicGeometry.FormalSpace.bijective_map_into_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAffine.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAffine.lean#L495). The attribute's comment: “bijectivity”.
+**`AlgebraicGeometry.FormalSpace.bijective_map_into_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAffine.lean, line 495](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAffine.lean#L495). The attribute's comment: “bijectivity”.
 
 > For an affine target over `S`, restriction to the quotient spectra is a
 > bijection on morphisms over `S`. The ordinary spectrum need not belong to the
@@ -58,7 +58,7 @@ public theorem bijective_map_into_affine
 
 [Tag 0AQG](https://stacks.math.columbia.edu/tag/0AQG) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.existsUnique_equiv_specHom_formalSpectrumHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToScheme.lean, line 610](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToScheme.lean#L610). References: SGA 3 XV (1.4).
+**`AlgebraicGeometry.FormalSpace.existsUnique_equiv_specHom_formalSpectrumHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToScheme.lean, line 610](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToScheme.lean#L610). References: SGA 3 XV (1.4).
 
 > The canonical bijection between maps from a spectrum and from its formal
 > spectrum to an `S`-scheme, characterized by restriction to every weak quotient.
@@ -94,7 +94,7 @@ public theorem existsUnique_equiv_specHom_formalSpectrumHom
 
 [Tag 0AQH](https://stacks.math.columbia.edu/tag/0AQH) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.injective_map_into_algebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean#L289). The attribute's comment: “injectivity”. References: SGA 3 XV (1.4), “injectivity of (*)”; SGA 3 XI (3.3), “injectivity”.
+**`AlgebraicGeometry.FormalSpace.injective_map_into_algebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean#L289). The attribute's comment: “injectivity”. References: SGA 3 XV (1.4), “injectivity of (*)”; SGA 3 XI (3.3), “injectivity”.
 
 > **The injectivity half of Stacks 0AQH**, in the shape of the bijectivity statement:
 > restriction along the canonical map `Spf R ⟶ Spec R` is injective on morphisms to an
@@ -121,7 +121,7 @@ public theorem injective_map_into_algebraicSpace
       formalSpectrumToSpec D hRS p hp ≫ f)
 ```
 
-**`AlgebraicGeometry.FormalSpace.surjective_map_into_algebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean, line 2886](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean#L2886). The attribute's comment: “surjectivity”.
+**`AlgebraicGeometry.FormalSpace.surjective_map_into_algebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean, line 2886](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean#L2886). The attribute's comment: “surjectivity”.
 
 > **The surjectivity half of Stacks 0AQH.** Restriction along the canonical map
 > `Spf R ⟶ Spec R` hits every morphism from the formal spectrum of a Noetherian complete local
@@ -149,7 +149,7 @@ public theorem surjective_map_into_algebraicSpace
       formalSpectrumToSpec D hRS p hp ≫ f)
 ```
 
-**`AlgebraicGeometry.FormalSpace.bijective_map_into_algebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean, line 2908](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean#L2908).
+**`AlgebraicGeometry.FormalSpace.bijective_map_into_algebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean, line 2908](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsToAlgebraicSpace.lean#L2908).
 
 > **Stacks 0AQH.** For `R` a Noetherian complete local `S`-algebra and `X` an algebraic
 > space over `S`, restriction along `Spf R ⟶ Spec R` is a bijection
@@ -178,7 +178,7 @@ public theorem bijective_map_into_algebraicSpace
 
 [Tag 0GBU](https://stacks.math.columbia.edu/tag/0GBU) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.existsUnique_algebraization_of_adic_into_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletion.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletion.lean#L369). The attribute's comment: “The algebraization, its existence and uniqueness, and both inclusions of its fibre condition g⁻¹(T) = \{𝔪}, the second of them by Krull's intersection theorem.”.
+**`AlgebraicGeometry.FormalSpace.existsUnique_algebraization_of_adic_into_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletion.lean, line 369](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletion.lean#L369). The attribute's comment: “The algebraization, its existence and uniqueness, and both inclusions of its fibre condition g⁻¹(T) = \{𝔪}, the second of them by Krull's intersection theorem.”.
 
 > **Stacks 0GBU.** Let `S` be a scheme, `X` an algebraic space over `S` and `T` a closed
 > set of points of `X` whose complementary open subspace has quasi-compact inclusion into `X`.
@@ -222,7 +222,7 @@ public theorem existsUnique_algebraization_of_adic_into_completion
           (Sheaf.sectionEquiv (BigFppfOver.topology B S hS) g).down
 ```
 
-**`AlgebraicGeometry.FormalSpace.adicCompletionHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean, line 628](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean#L628). The attribute's comment: “The bijection between adic morphisms Spf R ⟶ X\_\{/T} and morphisms g : Spec R ⟶ X with g⁻¹(T) = \{𝔪}.”.
+**`AlgebraicGeometry.FormalSpace.adicCompletionHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean, line 628](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean#L628). The attribute's comment: “The bijection between adic morphisms Spf R ⟶ X\_\{/T} and morphisms g : Spec R ⟶ X with g⁻¹(T) = \{𝔪}.”.
 
 > **Stacks 0GBU.** Let `S` be a scheme, `X` an algebraic space over `S` and `T` a closed set of
 > points of `X` whose complementary open subspace has quasi-compact inclusion into `X`. Let `R` be
@@ -263,7 +263,7 @@ def adicCompletionHomEquiv
           (Sheaf.sectionEquiv (BigFppfOver.topology B S hS) g).down }
 ```
 
-**`AlgebraicGeometry.FormalSpace.adicCompletionHomEquiv_apply_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean#L703). The attribute's comment: “The bijection is the correspondence: p ↦ g exactly when g restricts on Spf R to p followed by X\_\{/T} ⟶ X.”.
+**`AlgebraicGeometry.FormalSpace.adicCompletionHomEquiv_apply_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean, line 703](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean#L703). The attribute's comment: “The bijection is the correspondence: p ↦ g exactly when g restricts on Spf R to p followed by X\_\{/T} ⟶ X.”.
 
 > **Stacks 0GBU, the correspondence.** The bijection `adicCompletionHomEquiv` sends an adic
 > `p : Spf R ⟶ X_{/T}` to `g : Spec R ⟶ X` with `g⁻¹(T) = {𝔪}` exactly when `g` restricts on
@@ -304,4 +304,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.33, Tag 0AQE](https://stacks.math.columbia.edu/tag/0AQE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

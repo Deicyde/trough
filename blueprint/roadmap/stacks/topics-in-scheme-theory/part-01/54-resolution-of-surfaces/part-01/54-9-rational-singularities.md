@@ -8,13 +8,13 @@ proof: formalized
 
 # 54.9 Rational singularities
 
-Section 54.9 of the Stacks Project, [Tag 0B4V](https://stacks.math.columbia.edu/tag/0B4V). 8 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 54.9 of the Stacks Project, [Tag 0B4V](https://stacks.math.columbia.edu/tag/0B4V). 8 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0B4W, a situation
 
 [Tag 0B4W](https://stacks.math.columbia.edu/tag/0B4W) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalSingularitySituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/Basic.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/Basic.lean#L52).
+**`AlgebraicGeometry.RationalSingularitySituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/Basic.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/Basic.lean#L52).
 
 > **Stacks Project, Tag 0B4W.** A local normal Nagata domain of dimension two defining a
 > rational singularity, a normal modification of its spectrum, and an enumeration of the
@@ -28,7 +28,7 @@ structure RationalSingularitySituation
 
 [Tag 0B4X](https://stacks.math.columbia.edu/tag/0B4X) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalSingularitySituation.isZero_cohomology_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/QuasicoherentCohomologyExtra.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/QuasicoherentCohomologyExtra.lean#L95).
+**`AlgebraicGeometry.RationalSingularitySituation.isZero_cohomology_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/QuasicoherentCohomologyExtra.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/QuasicoherentCohomologyExtra.lean#L96).
 
 > **[Stacks, Tag 0B4X].** In Situation [Stacks, Tag 0B4W], let `ℱ` be a quasi-coherent
 > `𝒪_X`-module. Then
@@ -51,7 +51,7 @@ theorem isZero_cohomology_of_isQuasicoherent (F : S.X.Modules) [F.IsQuasicoheren
 
 [Tag 0B4Y](https://stacks.math.columbia.edu/tag/0B4Y) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalSingularitySituation.isZero_firstCohomology_exceptionalIdealPow_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalIdealPowersExtra.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalIdealPowersExtra.lean#L81). The attribute's comment: “the conclusion H¹(X, 𝓘ⁿ) = 0 for all n”.
+**`AlgebraicGeometry.RationalSingularitySituation.isZero_firstCohomology_exceptionalIdealPow_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalIdealPowersExtra.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalIdealPowersExtra.lean#L81). The attribute's comment: “the conclusion H¹(X, 𝓘ⁿ) = 0 for all n”.
 
 > In Situation [Stacks, Tag 0B4W], `H¹(X, 𝓘ⁿ) = 0` for every `n`, where `𝓘` is the ideal
 > sheaf of the special fibre `E = X_s`.
@@ -62,7 +62,7 @@ theorem isZero_firstCohomology_exceptionalIdealPow_unconditional (n : ℕ) :
       (S.exceptionalIdealPow n))
 ```
 
-**`AlgebraicGeometry.RationalSingularitySituation.idealSheafGlobalSections_exceptionalIdealPow_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalIdealPowersExtra.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalIdealPowersExtra.lean#L109). The attribute's comment: “the conclusion H⁰(X, 𝓘ⁿ) = 𝔪ⁿ for all n, under the source's own further requirement that the special fibre be an effective Cartier divisor (hE)”.
+**`AlgebraicGeometry.RationalSingularitySituation.idealSheafGlobalSections_exceptionalIdealPow_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalIdealPowersExtra.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalIdealPowersExtra.lean#L109). The attribute's comment: “the conclusion H⁰(X, 𝓘ⁿ) = 𝔪ⁿ for all n, under the source's own further requirement that the special fibre be an effective Cartier divisor (hE)”.
 
 > In Situation [Stacks, Tag 0B4W] with the special fibre `E = X_s` an effective Cartier
 > divisor, `H⁰(X, 𝓘ⁿ) = 𝔪ⁿ` for every `n`: the global sections of `𝓘ⁿ` are exactly the image of
@@ -79,7 +79,7 @@ theorem idealSheafGlobalSections_exceptionalIdealPow_unconditional
 
 [Tag 0B4Z](https://stacks.math.columbia.edu/tag/0B4Z) in the Stacks Project.
 
-**`AlgebraicGeometry.isNormal_blowUp_maximalIdeal_rationalSingularitySituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormal.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormal.lean#L255). The attribute's comment: “In Situation 0B4W the blowup of Spec(A) in the maximal ideal is normal”.
+**`AlgebraicGeometry.isNormal_blowUp_maximalIdeal_rationalSingularitySituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormal.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormal.lean#L255). The attribute's comment: “In Situation 0B4W the blowup of Spec(A) in the maximal ideal is normal”.
 
 > In Situation [Stacks, Tag 0B4W] the blowup of `Spec(A)` in the maximal ideal is a normal
 > scheme.
@@ -95,7 +95,7 @@ theorem isNormal_blowUp_maximalIdeal_rationalSingularitySituation
 
 [Tag 0B63](https://stacks.math.columbia.edu/tag/0B63) in the Stacks Project.
 
-**`AlgebraicGeometry.isProper_exceptionalDivisorToCentre_residuePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurve.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurve.lean#L202). The attribute's comment: “clause (1): the exceptional curve is proper over the residue field”.
+**`AlgebraicGeometry.isProper_exceptionalDivisorToCentre_residuePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurve.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurve.lean#L203). The attribute's comment: “clause (1): the exceptional curve is proper over the residue field”.
 
 > **[Stacks, Tag 0B63] clause (1), properness.** The exceptional divisor of the blowup of the
 > spectrum of a Noetherian local ring in its maximal ideal is proper over the residue field.
@@ -106,7 +106,7 @@ theorem isProper_exceptionalDivisorToCentre_residuePoint (A : Type u) [CommRing 
     IsProper (exceptionalDivisorToCentre (residuePoint A))
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_exceptionalDivisor_residuePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurve.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurve.lean#L283). The attribute's comment: “clause (1): the exceptional curve has dimension one”.
+**`AlgebraicGeometry.topologicalKrullDim_exceptionalDivisor_residuePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurve.lean, line 284](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurve.lean#L284). The attribute's comment: “clause (1): the exceptional curve has dimension one”.
 
 > **[Stacks, Tag 0B63] clause (1), the dimension.** The exceptional divisor of the blowup of
 > the spectrum of a two-dimensional Noetherian local domain in its maximal ideal is a curve.
@@ -117,7 +117,7 @@ theorem topologicalKrullDim_exceptionalDivisor_residuePoint (A : Type u) [CommRi
     topologicalKrullDim (exceptionalDivisor (residuePoint A).ker) = 1
 ```
 
-**`AlgebraicGeometry.isProper_and_topologicalKrullDim_eq_one_and_isCohenMacaulay_exceptionalDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurveCohenMacaulay.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurveCohenMacaulay.lean#L40). The attribute's comment: “clause (1)”.
+**`AlgebraicGeometry.isProper_and_topologicalKrullDim_eq_one_and_isCohenMacaulay_exceptionalDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurveCohenMacaulay.lean, line 40](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurveCohenMacaulay.lean#L40). The attribute's comment: “clause (1)”.
 
 > In Situation [Stacks, Tag 0B4W], let `X` be the blowup of `Spec(A)` in the maximal ideal and
 > `E ⊆ X` its exceptional divisor. Then `E` is a proper Cohen–Macaulay curve over the residue field
@@ -135,7 +135,7 @@ theorem isProper_and_topologicalKrullDim_eq_one_and_isCohenMacaulay_exceptionalD
       IsCohenMacaulay (exceptionalDivisor (residuePoint S.A).ker)
 ```
 
-**`AlgebraicGeometry.isCohenMacaulay_exceptionalDivisor_residuePoint_of_situation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurveSupplement.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurveSupplement.lean#L66). The attribute's comment: “clause (1): in Situation 0B4W the exceptional curve of the blowup in the maximal ideal is Cohen-Macaulay”.
+**`AlgebraicGeometry.isCohenMacaulay_exceptionalDivisor_residuePoint_of_situation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurveSupplement.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalCurveSupplement.lean#L66). The attribute's comment: “clause (1): in Situation 0B4W the exceptional curve of the blowup in the maximal ideal is Cohen-Macaulay”.
 
 > **[Stacks, Tag 0B63] clause (1), Cohen–Macaulayness.** In Situation [Stacks, Tag 0B4W] the
 > exceptional divisor of the blowup of `Spec(A)` in the maximal ideal is Cohen–Macaulay.
@@ -151,7 +151,7 @@ theorem isCohenMacaulay_exceptionalDivisor_residuePoint_of_situation
     IsCohenMacaulay (exceptionalDivisor (residuePoint S.A).ker)
 ```
 
-**`AlgebraicGeometry.BlowUpDualizing.isZero_firstCohomology_curveTwistSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistCohomology.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistCohomology.lean#L254). The attribute's comment: “clause (4): H^1(E, O\_E(n)) = 0 for n >= 0”.
+**`AlgebraicGeometry.BlowUpDualizing.isZero_firstCohomology_curveTwistSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistCohomology.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistCohomology.lean#L254). The attribute's comment: “clause (4): H^1(E, O\_E(n)) = 0 for n >= 0”.
 
 > **`H¹(E, 𝒪_E(n)) = 0` for every `n ≥ 0`.**
 >
@@ -167,7 +167,7 @@ theorem isZero_firstCohomology_curveTwistSheaf (n : ℕ) :
         (exceptionalCurve S.A)).rightDerived 1).obj (curveTwistSheaf S.A (n : ℤ)))
 ```
 
-**`AlgebraicGeometry.BlowUpDualizing.one_le_invertibleCurveDegree_and_isRegularLocalRing_of_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistDegree.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistDegree.lean#L317). The attribute's comment: “clause (3)”.
+**`AlgebraicGeometry.BlowUpDualizing.one_le_invertibleCurveDegree_and_isRegularLocalRing_of_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistDegree.lean, line 317](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistDegree.lean#L317). The attribute's comment: “clause (3)”.
 
 > In Situation [Stacks, Tag 0B4W], with `E` the exceptional curve of the blowup of `Spec(A)` in
 > the maximal ideal and `𝒪_E(1)` the restriction of `𝒪_X(1)`, `deg 𝒪_E(1) ≥ 1`, and equality holds
@@ -185,7 +185,7 @@ theorem one_le_invertibleCurveDegree_and_isRegularLocalRing_of_eq_one :
           (curveTwistSheaf S.A 1) = 1 → IsRegularLocalRing S.A)
 ```
 
-**`AlgebraicGeometry.BlowUpDualizing.nonempty_curveTwistSheafSections_iso_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistSections.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistSections.lean#L473). The attribute's comment: “clause (5): H^0(E, O\_E(n)) = m^n/m^(n+1) for every n >= 0”.
+**`AlgebraicGeometry.BlowUpDualizing.nonempty_curveTwistSheafSections_iso_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistSections.lean, line 473](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistSections.lean#L473). The attribute's comment: “clause (5): H^0(E, O\_E(n)) = m^n/m^(n+1) for every n >= 0”.
 
 > **`H⁰(E, 𝒪_E(n)) = 𝔪ⁿ/𝔪ⁿ⁺¹` for every `n ≥ 0`.**
 >
@@ -221,7 +221,7 @@ theorem nonempty_curveTwistSheafSections_iso_gradedPiece (n : ℕ) :
           Submodule S.A (IsLocalRing.maximalIdeal S.A ^ n : Ideal S.A))))
 ```
 
-**`AlgebraicGeometry.isRelativelyVeryAmple_curveTwistSheaf_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistVeryAmple.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistVeryAmple.lean#L82). The attribute's comment: “clause (2): the first twist on the exceptional curve is very ample over the residue field”.
+**`AlgebraicGeometry.isRelativelyVeryAmple_curveTwistSheaf_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistVeryAmple.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/ExceptionalTwistVeryAmple.lean#L82). The attribute's comment: “clause (2): the first twist on the exceptional curve is very ample over the residue field”.
 
 > **[Stacks, Tag 0B63] clause (2).** For a Noetherian local ring `(A, 𝔪, κ)`, with `X` the
 > blowup of `Spec(A)` in `𝔪` and `E ⊆ X` the exceptional divisor, the first twist `𝒪_E(1)` is very
@@ -242,7 +242,7 @@ theorem isRelativelyVeryAmple_curveTwistSheaf_one (A : Type u) [CommRing A] [IsL
 
 [Tag 0BBU](https://stacks.math.columbia.edu/tag/0BBU) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalSingularitySituation.bijective_normalizedTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedDualizingTrace.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedDualizingTrace.lean#L105). The attribute's comment: “the trace H^0(X, omega\_X) -> omega\_A of the dualizing module normalized relative to omega\_A (Remark 0B4R: f^!(omega\_A) = omega\_X in degree zero) is an isomorphism; the canonical map f^*omega\_A -> omega\_X is normalizedPullbackMap”.
+**`AlgebraicGeometry.RationalSingularitySituation.bijective_normalizedTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedDualizingTrace.lean, line 105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedDualizingTrace.lean#L105). The attribute's comment: “the trace H^0(X, omega\_X) -> omega\_A of the dualizing module normalized relative to omega\_A (Remark 0B4R: f^!(omega\_A) = omega\_X in degree zero) is an isomorphism; the canonical map f^*omega\_A -> omega\_X is normalizedPullbackMap”.
 
 > **Stacks Project, Tag 0BBU.** In Situation [Stacks, Tag 0B4W], let `ω_A` be a dualizing
 > module of `A` and let `ω_X` be the dualizing module of `X` normalized relative to `ω_A`
@@ -261,7 +261,7 @@ theorem bijective_normalizedTrace (_hωA : Stacks.Duality.IsDualizingRingModule 
     Function.Bijective (S.normalizedTrace e).hom
 ```
 
-**`AlgebraicGeometry.RationalSingularitySituation.normalizedPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedDualizingTrace.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedDualizingTrace.lean#L141). The attribute's comment: “the canonical map f^*omega\_A -> omega\_X induced by the trace isomorphism, for the dualizing module normalized relative to omega\_A”.
+**`AlgebraicGeometry.RationalSingularitySituation.normalizedPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedDualizingTrace.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/NormalizedDualizingTrace.lean#L141). The attribute's comment: “the canonical map f^*omega\_A -> omega\_X induced by the trace isomorphism, for the dualizing module normalized relative to omega\_A”.
 
 > **Stacks Project, Tag 0BBU, the canonical map.** The map `f^*ω_A ⟶ ω_X` induced by the trace
 > isomorphism of the normalized dualizing module: the adjunct, under
@@ -278,7 +278,7 @@ def normalizedPullbackMap (hωA : Stacks.Duality.IsDualizingRingModule S.A ωA)
 
 [Tag 0B64](https://stacks.math.columbia.edu/tag/0B64) in the Stacks Project.
 
-**`AlgebraicGeometry.BlowUpDualizing.nonempty_dualizingSheafOverField_iso_curveTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExceptionalDualizingSheafIdentification.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ExceptionalDualizingSheafIdentification.lean#L232). The attribute's comment: “clause (1) in Situation 0B4W: for omega\_A a dualizing module for A and omega\_X the dualizing module of the blowup X of Spec(A) in the maximal ideal, normalized relative to omega\_A as in Remark 0B4R (DualizingNormalization: omega\_X dualizing with f^!(omega\_A) = omega\_X in degree zero), omega\_E = omega\_X|\_E tensor O\_E(-1), omega\_E the dualizing sheaf dualizingSheafOverField g of the exceptional curve E as a proper curve over kappa. The source's route, Lemmas 0AA4 and 0A9X, is followed: the adjunction formula and the normal sheaf O\_E(-1) give H^1(a(omega\_X)) = omega\_X|\_E tensor O\_E(-1), and the propagation of the normalization along g ; j = i ; f identifies H^1(a(omega\_X)) with dualizingSheafOverField g. The non-regularity of A is not used and not assumed (a generalization). Nothing is carried”.
+**`AlgebraicGeometry.BlowUpDualizing.nonempty_dualizingSheafOverField_iso_curveTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExceptionalDualizingSheafIdentification.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/ExceptionalDualizingSheafIdentification.lean#L232). The attribute's comment: “clause (1) in Situation 0B4W: for omega\_A a dualizing module for A and omega\_X the dualizing module of the blowup X of Spec(A) in the maximal ideal, normalized relative to omega\_A as in Remark 0B4R (DualizingNormalization: omega\_X dualizing with f^!(omega\_A) = omega\_X in degree zero), omega\_E = omega\_X|\_E tensor O\_E(-1), omega\_E the dualizing sheaf dualizingSheafOverField g of the exceptional curve E as a proper curve over kappa. The source's route, Lemmas 0AA4 and 0A9X, is followed: the adjunction formula and the normal sheaf O\_E(-1) give H^1(a(omega\_X)) = omega\_X|\_E tensor O\_E(-1), and the propagation of the normalization along g ; j = i ; f identifies H^1(a(omega\_X)) with dualizingSheafOverField g. The non-regularity of A is not used and not assumed (a generalization). Nothing is carried”.
 
 > **[Stacks, Tag 0B64], clause (1).** In Situation [Stacks, Tag 0B4W] let `X` be the blowup of
 > `Spec(A)` in the maximal ideal with exceptional divisor `i : E ⟶ X`, let `ω_A` be a dualizing
@@ -304,7 +304,7 @@ theorem nonempty_dualizingSheafOverField_iso_curveTwist
       curveTwist S.A ((Scheme.Modules.pullback (exceptionalImmersion S.A)).obj ωX) (-1))
 ```
 
-**`AlgebraicGeometry.BlowUpDualizing.epi_normalizedPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormalizedDualizingGeneration.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormalizedDualizingGeneration.lean#L324). The attribute's comment: “clause (3) in Situation 0B4W with A not regular: for omega\_A a dualizing module for A and omega\_X the dualizing module of the blowup X of Spec(A) in the maximal ideal, normalized relative to omega\_A as in Remark 0B4R (DualizingNormalization: omega\_X dualizing with f^!(omega\_A) = omega\_X in degree zero), the canonical map f^*omega\_A -> omega\_X of Tag 0BBU (normalizedPullbackMap) is surjective. The source's route: Tag 0B5H at E (via Tag 0E32 to kappa-bar, clause (2) of Tag 0B63 for very ampleness, clause (3) of Tag 0B63 for the degree) gives global generation of omega\_X|\_E = omega\_E(1) (clause (1)); H^1(X, omega\_X(1)) = 0 (clause (2), from that generation) lifts it to Gamma(X, omega\_X) = omega\_A; surjectivity is detected on the closed fibre. Nothing is carried”.
+**`AlgebraicGeometry.BlowUpDualizing.epi_normalizedPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormalizedDualizingGeneration.lean, line 324](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormalizedDualizingGeneration.lean#L324). The attribute's comment: “clause (3) in Situation 0B4W with A not regular: for omega\_A a dualizing module for A and omega\_X the dualizing module of the blowup X of Spec(A) in the maximal ideal, normalized relative to omega\_A as in Remark 0B4R (DualizingNormalization: omega\_X dualizing with f^!(omega\_A) = omega\_X in degree zero), the canonical map f^*omega\_A -> omega\_X of Tag 0BBU (normalizedPullbackMap) is surjective. The source's route: Tag 0B5H at E (via Tag 0E32 to kappa-bar, clause (2) of Tag 0B63 for very ampleness, clause (3) of Tag 0B63 for the degree) gives global generation of omega\_X|\_E = omega\_E(1) (clause (1)); H^1(X, omega\_X(1)) = 0 (clause (2), from that generation) lifts it to Gamma(X, omega\_X) = omega\_A; surjectivity is detected on the closed fibre. Nothing is carried”.
 
 > **[Stacks, Tag 0B64], clause (3).** In Situation [Stacks, Tag 0B4W] assume `A` is not
 > regular, let `ω_A` be a dualizing module for `A`, let `X` be the blowup of `Spec(A)` in the
@@ -332,7 +332,7 @@ theorem epi_normalizedPullbackMap
     Epi ((rationalSingularitySituationBlowUp S).normalizedPullbackMap hωA N.normalizedIso)
 ```
 
-**`AlgebraicGeometry.BlowUpDualizing.isZero_firstCohomology_schemeTwist_of_dualizingNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormalizedDualizingGeneration.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormalizedDualizingGeneration.lean#L354). The attribute's comment: “clause (2)”.
+**`AlgebraicGeometry.BlowUpDualizing.isZero_firstCohomology_schemeTwist_of_dualizingNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormalizedDualizingGeneration.lean, line 354](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/BlowUpNormalizedDualizingGeneration.lean#L354). The attribute's comment: “clause (2)”.
 
 > **[Stacks, Tag 0B64], clause (2).** In Situation [Stacks, Tag 0B4W] assume `A` is not
 > regular, let `ω_A` be a dualizing module for `A`, let `X` be the blowup of `Spec(A)` in the
@@ -364,7 +364,7 @@ theorem isZero_firstCohomology_schemeTwist_of_dualizingNormalization
 
 [Tag 0BBV](https://stacks.math.columbia.edu/tag/0BBV) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_singularPointBlowupChain_isDualizingModule_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/InvertibleDualizingBlowupSequence.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/InvertibleDualizingBlowupSequence.lean#L45).
+**`AlgebraicGeometry.exists_singularPointBlowupChain_isDualizingModule_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/InvertibleDualizingBlowupSequence.lean, line 45](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalSingularities/InvertibleDualizingBlowupSequence.lean#L45).
 
 > Let `A` be a local normal Nagata domain of dimension two which defines a rational singularity
 > and has a dualizing complex. Then there is a finite sequence of blowups in singular closed points
@@ -391,4 +391,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.9, Tag 0B4V](https://stacks.math.columbia.edu/tag/0B4V)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

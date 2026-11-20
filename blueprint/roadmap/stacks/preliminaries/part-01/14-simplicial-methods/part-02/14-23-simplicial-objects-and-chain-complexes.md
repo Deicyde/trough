@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.23 Simplicial objects and chain complexes
 
-Section 14.23 of the Stacks Project, [Tag 0194](https://stacks.math.columbia.edu/tag/0194). 9 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 14.23 of the Stacks Project, [Tag 0194](https://stacks.math.columbia.edu/tag/0194). 9 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0195, a lemma
 
 [Tag 0195](https://stacks.math.columbia.edu/tag/0195) in the Stacks Project.
 
-**`AlgebraicTopology.alternatingFaceMapComplex_preservesHomology`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L373).
+**`AlgebraicTopology.alternatingFaceMapComplex_preservesHomology`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L373).
 
 > **Stacks 0195**.
 > The Moore complex functor `s : Simp(C) ⥤ Ch_{≥0}(C)`, sending a simplicial object `U` of a
@@ -30,7 +30,7 @@ public instance alternatingFaceMapComplex_preservesHomology :
 
 [Tag 0196](https://stacks.math.columbia.edu/tag/0196) in the Stacks Project.
 
-**`AlgebraicTopology.acyclic_alternatingFaceMapComplex_emEobj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 700](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L700).
+**`AlgebraicTopology.acyclic_alternatingFaceMapComplex_emEobj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 700](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L700).
 
 > **Stacks 0196**.
 > Let `𝒜` be an abelian category, let `A` be an object of `𝒜` and let `k ≥ 0` be an integer. The
@@ -49,7 +49,7 @@ public theorem acyclic_alternatingFaceMapComplex_emEobj :
 
 [Tag 0197](https://stacks.math.columbia.edu/tag/0197) in the Stacks Project.
 
-**`AlgebraicTopology.homology_alternatingFaceMapComplex_eilenbergMacLane`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplexEilenbergMacLane.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/MooreComplexEilenbergMacLane.lean#L57).
+**`AlgebraicTopology.homology_alternatingFaceMapComplex_eilenbergMacLane`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplexEilenbergMacLane.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/MooreComplexEilenbergMacLane.lean#L57).
 
 > **Stacks 0197**.
 > Let `C` be an abelian category, let `A` be an object of `C` and let `k ≥ 0` be an integer. The
@@ -70,14 +70,14 @@ public theorem homology_alternatingFaceMapComplex_eilenbergMacLane (A : C) (k : 
 
 Declarations registered for the tag:
 
-- [`AlgebraicTopology.inclusionOfMooreComplexMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicTopology.inclusionOfMooreComplexMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L77) (StacksFrontier): “the morphism of complexes N(U) -> s(U)”.
-- [`AlgebraicTopology.inclusionOfMooreComplexMap_f`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicTopology.inclusionOfMooreComplexMap_f#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L79) (StacksFrontier): “its components are the inclusions N(U\_n) -> U\_n”.
+- [`AlgebraicTopology.inclusionOfMooreComplexMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicTopology.inclusionOfMooreComplexMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch14.lean#L77) (StacksFrontier): “the morphism of complexes N(U) -> s(U)”.
+- [`AlgebraicTopology.inclusionOfMooreComplexMap_f`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicTopology.inclusionOfMooreComplexMap_f#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch14.lean#L79) (StacksFrontier): “its components are the inclusions N(U\_n) -> U\_n”.
 
 ## Tag 0199, a lemma
 
 [Tag 0199](https://stacks.math.columbia.edu/tag/0199) in the Stacks Project.
 
-**`AlgebraicTopology.isIsomorphic_normalizedMooreComplex_eilenbergMacLane_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L778).
+**`AlgebraicTopology.isIsomorphic_normalizedMooreComplex_eilenbergMacLane_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 778](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L778).
 
 > **Stacks 0199**.
 > The normalized complex `N(K(A, k))` of the Eilenberg-MacLane object `K(A, k) = i_{k!}U` of an
@@ -94,7 +94,7 @@ public theorem isIsomorphic_normalizedMooreComplex_eilenbergMacLane_single (A : 
 
 [Tag 019A](https://stacks.math.columbia.edu/tag/019A) in the Stacks Project.
 
-**`AlgebraicTopology.exists_degenerateComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 828](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L828).
+**`AlgebraicTopology.exists_degenerateComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 828](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L828).
 
 > **Stacks 019A**.
 > Let `A` be an abelian category. The canonical morphism of chain complexes `N(U) ⟶ s(U)` from the
@@ -114,7 +114,7 @@ public theorem exists_degenerateComplex :
 
 [Tag 0FKI](https://stacks.math.columbia.edu/tag/0FKI) in the Stacks Project.
 
-**`AlgebraicTopology.exists_degenerateComplex_eq_sup_imageSubobject_σ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L252).
+**`AlgebraicTopology.exists_degenerateComplex_eq_sup_imageSubobject_σ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 252](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L252).
 
 > **Stacks 0FKI**.
 > Let `A` be an abelian category. The functorial splitting `s(U) = N(U) ⊕ D(U)` of the Moore complex
@@ -139,7 +139,7 @@ public theorem exists_degenerateComplex_eq_sup_imageSubobject_σ :
 
 [Tag 019B](https://stacks.math.columbia.edu/tag/019B) in the Stacks Project.
 
-**`AlgebraicTopology.exactFunctor_normalizedMooreComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 913](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L913).
+**`AlgebraicTopology.exactFunctor_normalizedMooreComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplex.lean, line 913](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/MooreComplex.lean#L913).
 
 > **Stacks 019B**.
 > The normalized complex functor `N : Simp(C) ⥤ Ch_{≥0}(C)` of an abelian category `C` is exact, i.e.
@@ -154,7 +154,7 @@ public theorem exactFunctor_normalizedMooreComplex :
 
 [Tag 019C](https://stacks.math.columbia.edu/tag/019C) in the Stacks Project.
 
-**`AlgebraicTopology.quasiIso_inclusionOfMooreComplexMap_and_acyclic_degenerateComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplexQuasiIso.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/MooreComplexQuasiIso.lean#L70).
+**`AlgebraicTopology.quasiIso_inclusionOfMooreComplexMap_and_acyclic_degenerateComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/MooreComplexQuasiIso.lean, line 70](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/MooreComplexQuasiIso.lean#L70).
 
 > Let `A` be an abelian category and let `V` be a simplicial object of `A`. The canonical
 > morphism of chain complexes `N(V) ⟶ s(V)` is a quasi-isomorphism, and for every functorial
@@ -177,4 +177,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.23, Tag 0194](https://stacks.math.columbia.edu/tag/0194)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

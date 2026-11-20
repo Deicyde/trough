@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.122 Determinants of endomorphisms of finite length modules
 
-Section 15.122 of the Stacks Project, [Tag 0GSX](https://stacks.math.columbia.edu/tag/0GSX). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.122 of the Stacks Project, [Tag 0GSX](https://stacks.math.columbia.edu/tag/0GSX). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GSY, a lemma
 
 [Tag 0GSY](https://stacks.math.columbia.edu/tag/0GSY) in the Stacks Project.
 
-**`FiniteLengthEndomorphism.det_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 724](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L724). The attribute's comment: “multiplicativity of the residue-field determinant”.
+**`FiniteLengthEndomorphism.det_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 724](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L724). The attribute's comment: “multiplicativity of the residue-field determinant”.
 
 > Determinant is multiplicative in an equivariant short exact sequence.
 
@@ -30,7 +30,7 @@ public theorem det_exact (M₁ : Type v₁) (M₂ : Type v₂) (M₃ : Type v₃
     det R h₂ φ₂ = det R h₁ φ₁ * det R h₃ φ₃
 ```
 
-**`FiniteLengthEndomorphism.trace_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L737). The attribute's comment: “additivity of the residue-field trace”.
+**`FiniteLengthEndomorphism.trace_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 737](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L737). The attribute's comment: “additivity of the residue-field trace”.
 
 > Trace is additive in an equivariant short exact sequence.
 
@@ -46,7 +46,7 @@ public theorem trace_exact (M₁ : Type v₁) (M₂ : Type v₂) (M₃ : Type v�
     trace R h₂ φ₂ = trace R h₁ φ₁ + trace R h₃ φ₃
 ```
 
-**`FiniteLengthEndomorphism.charpoly_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L750). The attribute's comment: “multiplicativity of the residue-field characteristic polynomial”.
+**`FiniteLengthEndomorphism.charpoly_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 750](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L750). The attribute's comment: “multiplicativity of the residue-field characteristic polynomial”.
 
 > Characteristic polynomial is multiplicative in an equivariant short exact sequence.
 
@@ -66,7 +66,7 @@ public theorem charpoly_exact (M₁ : Type v₁) (M₂ : Type v₂) (M₃ : Type
 
 [Tag 0GSZ](https://stacks.math.columbia.edu/tag/0GSZ) in the Stacks Project.
 
-**`FiniteLengthEndomorphism.multiplication_det_eq_norm_pow_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 926](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L926).
+**`FiniteLengthEndomorphism.multiplication_det_eq_norm_pow_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 926](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L926).
 
 > For a local homomorphism of local rings with finite residue-field extension, the determinant
 > over the source residue field of multiplication by `u` on a finite-length target module is the
@@ -95,7 +95,7 @@ public theorem multiplication_det_eq_norm_pow_length
 
 [Tag 0GT0](https://stacks.math.columbia.edu/tag/0GT0) in the Stacks Project.
 
-**`FiniteLengthEndomorphism.map_det_pow_eq_det_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 1340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L1340).
+**`FiniteLengthEndomorphism.map_det_pow_eq_det_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean, line 1340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Module/FiniteLength/Determinant.lean#L1340).
 
 > **Stacks 0GT0.** Under a flat local homomorphism `R → S` whose closed fibre has finite
 > length `m`, the determinant of a finite-length module endomorphism after scalar extension is the
@@ -124,4 +124,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.122, Tag 0GSX](https://stacks.math.columbia.edu/tag/0GSX)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

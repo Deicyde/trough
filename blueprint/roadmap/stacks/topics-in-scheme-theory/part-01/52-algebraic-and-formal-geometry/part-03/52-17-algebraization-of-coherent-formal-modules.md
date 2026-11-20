@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.17 Algebraization of coherent formal modules, II
 
-Section 52.17 of the Stacks Project, [Tag 0EIT](https://stacks.math.columbia.edu/tag/0EIT). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.17 of the Stacks Project, [Tag 0EIT](https://stacks.math.columbia.edu/tag/0EIT). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EIU, a lemma
 
 [Tag 0EIU](https://stacks.math.columbia.edu/tag/0EIU) in the Stacks Project.
 
-**`Stacks.Algebraization.isCompletion_iff_isCompletion_of_isKernelCokernelAnnihilatedByPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/AnnihilatedComparison.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/AnnihilatedComparison.lean#L274). The attribute's comment: “part (2): membership in the essential image of the completion functor”.
+**`Stacks.Algebraization.isCompletion_iff_isCompletion_of_isKernelCokernelAnnihilatedByPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/AnnihilatedComparison.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/AnnihilatedComparison.lean#L274). The attribute's comment: “part (2): membership in the essential image of the completion functor”.
 
 > **Stacks 0EIU part (2).** In Situation 0EHC, let `α : (F_n) ⟶ (F'_n)` be a morphism of
 > `Coh(U, I𝒪_U)` whose levelwise kernels and cokernels are annihilated by a power of `I𝒪_U`. Then
@@ -32,7 +32,7 @@ public theorem isCompletion_iff_isCompletion_of_isKernelCokernelAnnihilatedByPow
       (completionFunctor S.U.toScheme (S.Yι.ker.comap S.U.ι)).essImage G
 ```
 
-**`Stacks.Algebraization.extendsToX_iff_extendsToX_of_isKernelCokernelAnnihilatedByPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/AnnihilatedComparison.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/AnnihilatedComparison.lean#L297). The attribute's comment: “part (1): extendability to the whole of X”.
+**`Stacks.Algebraization.extendsToX_iff_extendsToX_of_isKernelCokernelAnnihilatedByPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/AnnihilatedComparison.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/AnnihilatedComparison.lean#L297). The attribute's comment: “part (1): extendability to the whole of X”.
 
 > **Stacks 0EIU part (1).** In Situation 0EHC, let `α : (F_n) ⟶ (F'_n)` be a morphism of
 > `Coh(U, I𝒪_U)` whose levelwise kernels and cokernels are annihilated by a power of `I𝒪_U`. Then
@@ -61,7 +61,7 @@ public theorem extendsToX_iff_extendsToX_of_isKernelCokernelAnnihilatedByPower
 
 [Tag 0EHF](https://stacks.math.columbia.edu/tag/0EHF) in the Stacks Project.
 
-**`Stacks.Algebraization.epi_canonicalComparison_of_mittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/MittagLefflerCriterion.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/MittagLefflerCriterion.lean#L714).
+**`Stacks.Algebraization.epi_canonicalComparison_of_mittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/MittagLefflerCriterion.lean, line 714](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/MittagLefflerCriterion.lean#L714).
 
 > **Stacks Project, Tag 0EHF.** If the inverse system `H⁰(U, F_n)` is Mittag-Leffler, every
 > canonical comparison map `(M / Iⁿ⁺¹M)^~|_U ⟶ F_n` is surjective.
@@ -76,7 +76,7 @@ public theorem epi_canonicalComparison_of_mittagLeffler
 
 [Tag 0EHG](https://stacks.math.columbia.edu/tag/0EHG) in the Stacks Project.
 
-**`Stacks.Algebraization.limitQuotientSheaves_isCoherentAdicSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean#L261). The attribute's comment: “coherent inverse system”.
+**`Stacks.Algebraization.limitQuotientSheaves_isCoherentAdicSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean#L261). The attribute's comment: “coherent inverse system”.
 
 > **Stacks Project, Tag 0EHG (1).** If the limit topology on `M = limₙ H⁰(U, F_n)` agrees with
 > its `I`-adic topology, then the restrictions `G_n|_U = (M/Iⁿ⁺¹M)^~|_U` form a coherent `I`-adic
@@ -87,7 +87,7 @@ public theorem limitQuotientSheaves_isCoherentAdicSystem (h : LimitTopologyAgree
     Stacks.Coherent.IsCoherentAdicSystem (idealOnOpen S) (limitQuotientSheaves S F)
 ```
 
-**`Stacks.Algebraization.comparison_hom_app_limitSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean#L336). The attribute's comment: “canonical comparison”.
+**`Stacks.Algebraization.comparison_hom_app_limitSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean#L336). The attribute's comment: “canonical comparison”.
 
 > **Stacks Project, Tag 0EHG (the comparison is the canonical one).** On sections over `U`,
 > the comparison sends the section of `G_n|_U` induced by an element `m` of the inverse limit
@@ -104,7 +104,7 @@ public theorem comparison_hom_app_limitSection (h : LimitTopologyAgrees S F) (n 
       (limit.π (globalSectionsSystem S F) (op n)).hom m
 ```
 
-**`Stacks.Algebraization.mono_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean#L386). The attribute's comment: “injective comparison”.
+**`Stacks.Algebraization.mono_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/LimitQuotientComparison.lean#L386). The attribute's comment: “injective comparison”.
 
 > **Stacks Project, Tag 0EHG (2).** The canonical comparison `(G_n|_U) ⟶ (F_n)` is a
 > monomorphism in the abelian category `Coh(U, I 𝒪_U)`.
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.17, Tag 0EIT](https://stacks.math.columbia.edu/tag/0EIT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

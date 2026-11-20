@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.55 Calculating some classes
 
-Section 42.55 of the Stacks Project, [Tag 0FED](https://stacks.math.columbia.edu/tag/0FED). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.55 of the Stacks Project, [Tag 0FED](https://stacks.math.columbia.edu/tag/0FED). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FEE, a lemma
 
 [Tag 0FEE](https://stacks.math.columbia.edu/tag/0FEE) in the Stacks Project.
 
-**`Stacks.Chow.homComponent_exteriorPowerChernAltProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernAlternatingProduct.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernAlternatingProduct.lean#L184). The attribute's comment: “the whole lemma, for the library's Chern classes: c(wedge^n E) is the total Chern class totalChern of Stacks 0B7H, the product is the ordered product of units in the ring TotalChowClass = prod\_\{p >= 0} A^p(Y) of total Chow cohomology classes, and '= 1 - (r-1)! c\_r(E) + ...' is the equality of homogeneous components in every degree <= r. The splitting principle is proved, not assumed: Stacks 02UL via exists\_splittingMorphism\_basechange\_unconditional, the Chern roots of the exterior powers via 02UI and 02UJ (totalChern\_exteriorPower\_of\_hasQuotients)”.
+**`Stacks.Chow.homComponent_exteriorPowerChernAltProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernAlternatingProduct.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernAlternatingProduct.lean#L184). The attribute's comment: “the whole lemma, for the library's Chern classes: c(wedge^n E) is the total Chern class totalChern of Stacks 0B7H, the product is the ordered product of units in the ring TotalChowClass = prod\_\{p >= 0} A^p(Y) of total Chow cohomology classes, and '= 1 - (r-1)! c\_r(E) + ...' is the equality of homogeneous components in every degree <= r. The splitting principle is proved, not assumed: Stacks 02UL via exists\_splittingMorphism\_basechange\_unconditional, the Chern roots of the exterior powers via 02UI and 02UJ (totalChern\_exteriorPower\_of\_hasQuotients)”.
 
 > **Stacks 0FEE.** For a finite locally free module `ℰ` of rank `r ≥ 1` on `Y`, the alternating
 > product `∏_{n = 0}^{r} c(⋀ⁿ ℰ)^{(-1)ⁿ}` of the total Chern classes of its exterior powers, in the
@@ -29,7 +29,7 @@ theorem homComponent_exteriorPowerChernAltProd (hr : r ≠ 0) {t : ℕ} (ht : t 
         (1 - (r - 1).factorial • TotalChowClass.homComponent r (totalChern C sY V r))
 ```
 
-**`Stacks.Chow.homPart_altExteriorTotalChern`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernClasses.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernClasses.lean#L723). The attribute's comment: “the lemma as stated, for every X locally of finite type over S and every finite locally free E of rank r >= 1, with no further hypothesis. The alternating product is altExteriorTotalChern C sX E r, the ordered product of the units totalChernUnit of the exterior powers in the ring TotalChowClass C sX of total Chow cohomology classes; c\_i(E) is TotalChowClass.homComponent i (totalChern C sX E r). The + ... of the source is read as asserting nothing above degree r, as its proof does”.
+**`Stacks.Chow.homPart_altExteriorTotalChern`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernClasses.lean, line 723](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernClasses.lean#L723). The attribute's comment: “the lemma as stated, for every X locally of finite type over S and every finite locally free E of rank r >= 1, with no further hypothesis. The alternating product is altExteriorTotalChern C sX E r, the ordered product of the units totalChernUnit of the exterior powers in the ring TotalChowClass C sX of total Chow cohomology classes; c\_i(E) is TotalChowClass.homComponent i (totalChern C sX E r). The + ... of the source is read as asserting nothing above degree r, as its proof does”.
 
 > **Stacks 0FEE.** Let `ℰ` be a finite locally free `𝒪_X`-module of rank `r ≥ 1`. Then
 >
@@ -57,7 +57,7 @@ theorem homPart_altExteriorTotalChern (E : X.Modules) {r : ℕ}
         -(Nat.factorial (r - 1) • TotalChowClass.homComponent r (totalChern C sX E r))
 ```
 
-**`Stacks.Chow.altExteriorChernProduct_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernProduct.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernProduct.lean#L306). The attribute's comment: “the whole lemma, in the carried ring A^*(X)^∧ of Stacks 0FE0 where the inverses c(E)^\{-1} exist. CARRIED: the Chern roots, i.e. the display c(wedge^n E) = prod\_\{i\_1 < ... < i\_n} (1 + x\_\{i\_1} + ... + x\_\{i\_n}) of the source proof, i.e. the splitting principle: Stacks 02UK, 02UL and the product form of 02UJ; see the module doc. The computation is proved”.
+**`Stacks.Chow.altExteriorChernProduct_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernProduct.lean, line 306](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/ExteriorPowerChernProduct.lean#L306). The attribute's comment: “the whole lemma, in the carried ring A^*(X)^∧ of Stacks 0FE0 where the inverses c(E)^\{-1} exist. CARRIED: the Chern roots, i.e. the display c(wedge^n E) = prod\_\{i\_1 < ... < i\_n} (1 + x\_\{i\_1} + ... + x\_\{i\_n}) of the source proof, i.e. the splitting principle: Stacks 02UK, 02UL and the product form of 02UJ; see the module doc. The computation is proved”.
 
 > **Stacks 0FEE.** For `ℰ` locally free of rank `r ≥ 1` with Chern roots `t`, the alternating
 > product `∏_{n = 0}^{r} c(⋀ⁿ ℰ)^{(-1)ⁿ}` has vanishing components in the degrees `1, …, r-1` and
@@ -80,7 +80,7 @@ theorem altExteriorChernProduct_apply (D : TotalChernClassSeries C G sX R) (E : 
 
 [Tag 0FEF](https://stacks.math.columbia.edu/tag/0FEF) in the Stacks Project.
 
-**`Stacks.Chow.ProjectiveCompletion.bivariantClass_zeroSecObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveCompletionChern/ZeroSectionBivariant.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveCompletionChern/ZeroSectionBivariant.lean#L573). The attribute's comment: “clause (2), as an equality of bivariant classes after composing with any c ∈ A^*(E → X₀)”.
+**`Stacks.Chow.ProjectiveCompletion.bivariantClass_zeroSecObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveCompletionChern/ZeroSectionBivariant.lean, line 573](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveCompletionChern/ZeroSectionBivariant.lean#L573). The attribute's comment: “clause (2), as an equality of bivariant classes after composing with any c ∈ A^*(E → X₀)”.
 
 > **Stacks 0FEF (2), as an equality of bivariant classes.** Let `π : E ⟶ X` be the projective
 > completion of a locally free module `𝒞` of rank `r`, `i : X ⟶ E` its zero section,
@@ -133,7 +133,7 @@ theorem bivariantClass_zeroSecObject {X₀ : Scheme.{u}} (sX₀ : X₀ ⟶ C.S) 
                 (relativeDimension_of_isOpenImmersion _)) c))
 ```
 
-**`Stacks.Chow.ProjectiveCompletion.chernClasses_zeroSecObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveCompletionChern/ZeroSectionProjection.lean, line 834](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveCompletionChern/ZeroSectionProjection.lean#L834). The attribute's comment: “both conclusions: (1) c\_t(i\_*O\_X) = 0 for t = 1, ..., r - 1; (2) p^* o pi\_* o c\_r(i\_*O\_X) = (-1)^(r-1) (r-1)! j^*, as an identity of operations at every test scheme E' -> E on which the left side is defined, namely every base change E' = E x\_X X' of pi along f : X' -> X locally of finite type (any cartesian square), with C' = C x\_E E' any cartesian square: p'^* pi'\_* (c\_r(i\_*O\_X) cap alpha) = (-1)^(r-1) (r-1)! j'^* alpha for alpha in A\_k(E'). In the bivariant conventions c\_r(i\_*O\_X) lies in A^r(E -> E) and the pushforward of 0EPK needs a class over a morphism factoring through pi, so the left side is not a composite of bivariant classes in A^0(C -> E); its operation exists exactly on these test schemes, which are those on which the source's proof compares the two sides”.
+**`Stacks.Chow.ProjectiveCompletion.chernClasses_zeroSecObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveCompletionChern/ZeroSectionProjection.lean, line 834](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveCompletionChern/ZeroSectionProjection.lean#L834). The attribute's comment: “both conclusions: (1) c\_t(i\_*O\_X) = 0 for t = 1, ..., r - 1; (2) p^* o pi\_* o c\_r(i\_*O\_X) = (-1)^(r-1) (r-1)! j^*, as an identity of operations at every test scheme E' -> E on which the left side is defined, namely every base change E' = E x\_X X' of pi along f : X' -> X locally of finite type (any cartesian square), with C' = C x\_E E' any cartesian square: p'^* pi'\_* (c\_r(i\_*O\_X) cap alpha) = (-1)^(r-1) (r-1)! j'^* alpha for alpha in A\_k(E'). In the bivariant conventions c\_r(i\_*O\_X) lies in A^r(E -> E) and the pushforward of 0EPK needs a class over a morphism factoring through pi, so the left side is not a composite of bivariant classes in A^0(C -> E); its operation exists exactly on these test schemes, which are those on which the source's proof compares the two sides”.
 
 > **Stacks 0FEF.** Let `𝒞` be a locally free `𝒪_X`-module of rank `r` on `X` locally of finite
 > type over the base of chapter 42, `π : E = Proj_X(Sym^*(𝒞)[T]) ⟶ X` its projective completion with
@@ -193,7 +193,7 @@ theorem chernClasses_zeroSecObject :
                 (relativeDimension_of_isOpenImmersion _) k) α)
 ```
 
-**`Stacks.Chow.chernClass_pushforward_zeroSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSectionKoszul/ChernClassZeroSection.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ZeroSectionKoszul/ChernClassZeroSection.lean#L260). The attribute's comment: “the whole lemma, for r ≥ 1 (the source's (r-1)! presupposes it): c\_t(i\_*O\_X) = 0 for 0 < t < r, and p^* ∘ π\_* ∘ c\_r(i\_*O\_X) = (-1)^\{r-1}(r-1)! j^* on every test scheme X' ×\_X E ⟶ E, which are the test schemes on which the composite p^* ∘ π\_* ∘ c\_r is defined”.
+**`Stacks.Chow.chernClass_pushforward_zeroSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ZeroSectionKoszul/ChernClassZeroSection.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ZeroSectionKoszul/ChernClassZeroSection.lean#L260). The attribute's comment: “the whole lemma, for r ≥ 1 (the source's (r-1)! presupposes it): c\_t(i\_*O\_X) = 0 for 0 < t < r, and p^* ∘ π\_* ∘ c\_r(i\_*O\_X) = (-1)^\{r-1}(r-1)! j^* on every test scheme X' ×\_X E ⟶ E, which are the test schemes on which the composite p^* ∘ π\_* ∘ c\_r is defined”.
 
 > **Stacks 0FEF.** Let `X` be locally of finite type over the base `S` of chapter 42, `𝒞` a
 > finite locally free `𝒪_X`-module of rank `r ≥ 1`, `π : E = 𝐏(𝒞 ⊕ 𝒪_X) ⟶ X` the projective
@@ -275,7 +275,7 @@ theorem chernClass_pushforward_zeroSection (C : ChowSituation.{u}) {X : Scheme.{
 
 [Tag 0FEG](https://stacks.math.columbia.edu/tag/0FEG) in the Stacks Project.
 
-**`Stacks.Chow.isRegularImmersionChernFormula_regularImmersionStructureSheafSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/RegularImmersionChernFormula.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/RegularImmersionChernFormula.lean#L111). The attribute's comment: “the whole lemma: c\_t(Z → X, i\_*O\_Z) = 0 for 0 < t < r and c\_r(Z → X, i\_*O\_Z) = (-1)^\{r-1}(r-1)! c(Z → X, N), for X quasi-compact or with quasi-compact irreducible components and r ≥ 1 (presupposed by (r-1)!)”.
+**`Stacks.Chow.isRegularImmersionChernFormula_regularImmersionStructureSheafSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/RegularImmersionChernFormula.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/RegularImmersionChernFormula.lean#L111). The attribute's comment: “the whole lemma: c\_t(Z → X, i\_*O\_Z) = 0 for 0 < t < r and c\_r(Z → X, i\_*O\_Z) = (-1)^\{r-1}(r-1)! c(Z → X, N), for X quasi-compact or with quasi-compact irreducible components and r ≥ 1 (presupposed by (r-1)!)”.
 
 > Let `i : Z ⟶ X` be a regular closed immersion of codimension `r ≥ 1` of schemes locally of
 > finite type over the base of chapter 42, with `X` quasi-compact or with quasi-compact irreducible
@@ -296,7 +296,7 @@ theorem isRegularImmersionChernFormula_regularImmersionStructureSheafSituation (
 
 [Tag 0FEH](https://stacks.math.columbia.edu/tag/0FEH) in the Stacks Project.
 
-**`Stacks.Chow.regularImmersionStructureSheafSituation_capFundamentalClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/RegularImmersionChernFormula.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/RegularImmersionChernFormula.lean#L146). The attribute's comment: “all four parts, for X quasi-compact or with quasi-compact irreducible components, r ≥ 1 and dim\_δ(X) ≤ n (the source's dim\_δ(X) = n)”.
+**`Stacks.Chow.regularImmersionStructureSheafSituation_capFundamentalClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/RegularImmersionChernFormula.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/RegularImmersionChernFormula.lean#L146). The attribute's comment: “all four parts, for X quasi-compact or with quasi-compact irreducible components, r ≥ 1 and dim\_δ(X) ≤ n (the source's dim\_δ(X) = n)”.
 
 > Let `i : Z ⟶ X` be a regular closed immersion of codimension `r ≥ 1` of schemes locally of
 > finite type over the base, `X` quasi-compact or with quasi-compact irreducible components, and
@@ -341,4 +341,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.55, Tag 0FED](https://stacks.math.columbia.edu/tag/0FED)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)
