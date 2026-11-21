@@ -347,7 +347,7 @@ def generate() -> dict[Path, str]:
         chapters[riemann_hypothesis.ID] = f"{riemann_hypothesis.ID}/README.md"
         lean_links[riemann_hypothesis.ID] = rh_links
         rs = Counter(rh_built.stats)
-        blueprint_rows.append((riemann_hypothesis.TITLE, "INVENTORIED",
+        blueprint_rows.append((riemann_hypothesis.TITLE, "DECOMPOSED",
                                f"[{rs['theorems']} claimed theorems](../roadmap/riemann-hypothesis/README.md), one "
                                f"article each, and {rs['files']:,} source files counted on a page per top-level folder "
                                "and a part per large second-level folder."))
